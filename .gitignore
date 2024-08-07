@@ -1,3 +1,4 @@
 DB/Opens/*
 Logs/ErrorLogs/*
 *.pyc
+Scripts/a.py
