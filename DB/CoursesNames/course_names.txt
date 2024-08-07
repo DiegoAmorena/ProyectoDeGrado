@@ -1,0 +1,134 @@
+Actividad Introductoria
+Administración General para Ingenieros
+Algoritmos Evolutivos
+Análisis Estadístico de Datos Climáticos
+Análisis y Diseño de Algoritmos Distribuidos en Redes
+Antenas y Propagación
+Aplicaciones de la Teoría de la Información al Procesamiento de Imágenes
+Aplicaciones del Álgebra Lineal
+Aplicaciones Solidarias Basadas en Sistemas de Gestión de Contenido
+Aprendizaje Profundo para el Análisis de Imágenes Biomédicas
+Arquitectura de Computadoras
+Bases de Datos No Relacionales
+Biblioteca
+Biomecánica de la Rodilla en Rehabilitación y Deporte
+Cálculo 1
+Cálculo 2
+Cálculo 3
+Cálculo Diferencial e Integral en una Variable
+Cálculo Diferencial e Integral en Varias Variables
+Cálculo Vectorial
+Calidad de Datos e Información
+Códigos para Corrección de Errores
+Comportamiento Mecánico de Materiales 1
+Comportamiento Mecánico de Materiales 2
+Compresión de Datos sin Pérdida
+Computación 1
+Computación de Alta Performance
+Computación Gráfica Avanzada
+Construcción Formal de Programas en Teoría de Tipos
+Desarrollo de la Criptografía, con enfoque en Latino América
+Diseño de Circuitos Integrados CMOS Analógicos y Mixtos
+Diseño Hidrológico
+Diseño Lógico
+Economía
+Ecuaciones Diferenciales
+Edición de Tesis y Artículos Usando LaTeX
+El Negocio del Software
+Electromagnetismo
+Electrónica 1
+Electrónica 2
+Electrónica Avanzada 1
+Electrónica de Potencia
+Electrónica Fundamental
+Electrotécnica
+Electrotécnica 1
+Elementos de Máquinas
+Elementos de Mecánica de los Fluidos
+Energía 1
+Energía Solar Térmica
+Ensayos Eléctricos y Equipamiento de Media Tensión
+Estimación y Predicción en Series Temporales
+Estructuras de Madera
+Física 1
+Física 2
+Física 3
+Física Experimental 1 y 2: Un Giro en la Enseñanza
+Física Térmica
+Fundamentos de Aprendizaje Automático
+Fundamentos de Bases de Datos
+Fundamentos de Ingeniería de Software
+Fundamentos de la Seguridad Informática
+Fundamentos de Programación Entera
+Generadores de Vapor
+Geometría y Álgebra Lineal 1
+Geometría y Álgebra Lineal 2
+Gramáticas Formales para el Lenguaje Natural
+Hidrodinámica Naval
+Hormigón Estructural 2
+IMAGINARY Conference 2018
+Ingeniería Biomédica
+Iniciación a la Producción Audiovisual y Multimedia
+Instalaciones Eléctricas
+Introducción a Bases de Datos
+Introducción a la Física Moderna
+Introducción a la Ingeniería Biomédica
+Introducción a la Ingeniería de Producción
+Introducción a la Ingeniería de Software
+Introducción a la Ingeniería Química
+Introducción a la Investigación de Operaciones
+Introducción a la Teoría de la Información
+Introducción a los Microprocesadores
+Introducción al Procesamiento de Lenguaje Natural
+Lógica
+Máquinas Eléctricas
+Matemática 2
+Matemática Discreta 1
+Matemática Discreta 2
+Mecánica Aplicada
+Mecánica Newtoniana
+Metalurgia Física
+Métodos Numéricos
+Modelado Cuantitativo para Problemas de Producción
+Muestreo y Procesamiento Digital de Señales
+Núcleo de Red de Telecomunicaciones
+Optimización bajo Incertidumbre
+Paralelización de Aplicaciones de Alto Rendimiento Utilizando Arquitecturas Híbridas
+Principios de Química General
+Probabilidad y Estadística
+Procesadores Multicore Masivos
+Procesamiento digital de señales de audio
+Programación 1
+Programación 2
+Programación 3
+Programación 4
+Programación Lógica
+Programación para Ingeniería Eléctrica
+Propagación en Entornos Urbanos
+Recuperación de Información y Recomendaciones en la Web
+Red de Acceso
+Redes de Computadoras
+Redes de Datos
+Redes de Datos 2
+Señales y Sistemas
+Sistemas de Información para el Análisis de Grandes Volúmenes de Datos
+Sistemas Embebidos para Tiempo Real
+Sistemas Lineales 1
+Sistemas Lineales 2
+Sistemas Operativos
+Sistemas y Control
+Subestaciones de Media Tensión
+Taller de Aprendizaje Automático
+Taller de Introducción a las Ciencias de la Atmósfera
+Taller de Programación
+Taller de Sistemas Ciber Físicos
+Talleres de Matemática en UDeLaR
+Tecnologías de Redes y Servicios de Telecomunicaciones
+Teoría de Circuitos
+Teoría de Lenguajes
+Teoría del Buque
+Teoría, Algoritmos y Aplicaciones de Gestión Logística
+VI Coloquio de Matemática
+Vibraciones Y Ondas
+Workshop en Sistemas Ciber-Físicos 2022
+Workshop on Groups, Geometry and Dynamics, July 2018
