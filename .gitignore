@@ -1,4 +1,3 @@
-DB/Opens/*
-Logs/ErrorLogs/*
+*.mp4
 *.pyc
 Scripts/a.py
