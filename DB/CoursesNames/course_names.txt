@@ -110,6 +110,7 @@ Red de Acceso
 Redes de Computadoras
 Redes de Datos
 Redes de Datos 2
+Resistencia de Materiales 1
 Señales y Sistemas
 Sistemas de Información para el Análisis de Grandes Volúmenes de Datos
 Sistemas Embebidos para Tiempo Real
