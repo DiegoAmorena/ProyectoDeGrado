@@ -69,9 +69,9 @@ class VideoDownloader:
         if actual_size != expected_size:
             self.logger.log_message(f"File {video_path} size mismatch: expected {expected_size / 1024 / 1024 / 1024:.2f} GB, got {actual_size / 1024 / 1024 / 1024:.2f} GB")
             return False
-        #if not self.is_download_complete(video_path):
-            #self.logger.log_message(f"File {video_path} is not playable.")
-            #return False
+        if not self.is_download_complete(video_path):
+            self.logger.log_message(f"File {video_path} is not playable.")
+            return False
         return True
 
     def process_course(self, course_name):
@@ -97,15 +97,22 @@ class VideoDownloader:
                 video_path = course_path / f"{course_name}_{formatted_nn}.mp4"
                 video_url = self.base_url.format(course=course_name, nn=formatted_nn)
 
-                if video_path.exists():
+                # Initialize expected_size to a default value
+                expected_size = 0
+                try:
                     response = requests.head(video_url)
                     expected_size = int(response.headers.get('content-length', 0))
-                    
+                except Exception as e:
+                    self.logger.log_message(f"Failed to get expected size for {video_url}: {str(e)}")
+                    continue  # Skip this video if we can't determine the expected size
+
+                if video_path.exists():
                     if not self.validate_existing_file(video_path, expected_size):
                         self.logger.log_message(f"File {video_path} failed validation, redownloading.")
                         os.remove(video_path)
                     else:
                         self.logger.log_message(f"File {video_path} passed validation checks.")
+                        self.transcriber.transcribe_video(video_path, course_name)
                         continue
 
                 if total_downloaded >= self.total_max_size:
@@ -122,9 +129,9 @@ class VideoDownloader:
                     if total_downloaded >= self.total_max_size:
                         break
 
-                    #if not self.is_download_complete(video_path):
-                    #    self.logger.log_message(f"File {video_path} is not playable, skipping transcription.")
-                    #    continue
+                    if not self.is_download_complete(video_path):
+                        self.logger.log_message(f"File {video_path} is not playable, skipping transcription.")
+                        continue
 
                     self.transcriber.transcribe_video(video_path, course_name)
 

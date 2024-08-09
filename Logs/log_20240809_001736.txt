@@ -1,0 +1,97 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+File ..\DB\Opens\actint\actint_01.mp4 passed validation checks.
+File ..\DB\Opens\actint\actint_02.mp4 passed validation checks.
+Course: actint, Files: 0, Directory size: 2.41 GB
+File ..\DB\Opens\agpi\agpi_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_02.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_03.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_04.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_05.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_06.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_07.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_08.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_09.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_10.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_11.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_12.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_13.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_14.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_15.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_16.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_17.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_18.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_19.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_20.mp4 size mismatch: expected 0.26 GB, got 0.13 GB
+File ..\DB\Opens\agpi\agpi_20.mp4 failed validation, redownloading.
+File ..\DB\Opens\agpi\agpi_21.mp4 size mismatch: expected 0.17 GB, got 0.03 GB
+File ..\DB\Opens\agpi\agpi_21.mp4 failed validation, redownloading.
+File ..\DB\Opens\agpi\agpi_22.mp4 size mismatch: expected 0.15 GB, got 0.03 GB
+File ..\DB\Opens\agpi\agpi_22.mp4 failed validation, redownloading.
+File ..\DB\Opens\agpi\agpi_23.mp4 size mismatch: expected 0.21 GB, got 0.00 GB
+File ..\DB\Opens\agpi\agpi_23.mp4 failed validation, redownloading.
+File ..\DB\Opens\agpi\agpi_24.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_25.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_26.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_27.mp4 passed validation checks.
+Course: agpi, Files: 4, Directory size: 4.65 GB
+File ..\DB\Opens\ae\ae_01.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_02.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_03.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_04.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_05.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_06.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_07.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_08.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_09.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_10.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_11.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_12.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_13.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_14.mp4 passed validation checks.
+Course: ae, Files: 0, Directory size: 5.00 GB
+File ..\DB\Opens\aedc\aedc_01.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_02.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_03.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_04.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_05.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_06.mp4 size mismatch: expected 0.24 GB, got 0.19 GB
+File ..\DB\Opens\aedc\aedc_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\aedc\aedc_07.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_08.mp4 size mismatch: expected 0.26 GB, got 0.20 GB
+File ..\DB\Opens\aedc\aedc_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\aedc\aedc_09.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_10.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_11.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_12.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_13.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_14.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_15.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_16.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_17.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_18.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_19.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_20.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_21.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_22.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_23.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_24.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_25.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_26.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_27.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_28.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_29.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_30.mp4 passed validation checks.
+Course: aedc, Files: 2, Directory size: 5.47 GB
+File ..\DB\Opens\adadr\adadr_01.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_02.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_03.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_05.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_06.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_07.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_09.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_10.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_12.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_15.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_16.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_18.mp4 passed validation checks.
+Course: adadr, Files: 0, Directory size: 2.65 GB

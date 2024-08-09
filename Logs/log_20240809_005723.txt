@@ -1,0 +1,217 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+File ..\DB\Opens\actint\actint_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_01.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_01.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_01.mp4 passed validation checks.
+File ..\DB\Opens\actint\actint_02.mp4 passed validation checks.
+Course: actint, Files: 0, Directory size: 2.41 GB
+Finished processing course: actint
+File ..\DB\Opens\agpi\agpi_02.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_02.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_03.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_03.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_02.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_02.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_04.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_03.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_03.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_04.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_05.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_05.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_04.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_05.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_06.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_05.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_06.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_06.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_06.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_07.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_07.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_07.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_09.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_08.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_08.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_10.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_09.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_10.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_12.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_15.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_16.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_11.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_09.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_07.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_12.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_18.mp4 passed validation checks.
+Course: adadr, Files: 0, Directory size: 2.65 GB
+Finished processing course: adadr
+File ..\DB\Opens\ayp\ayp_01.mp4 size mismatch: expected 0.63 GB, got 0.53 GB
+File ..\DB\Opens\ayp\ayp_01.mp4 failed validation, redownloading.
+Error processing course ayp: [WinError 32] The process cannot access the file because it is being used by another process: '..\\DB\\Opens\\ayp\\ayp_01.mp4'
+File ..\DB\Opens\aedc\aedc_08.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_10.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_13.mp4 passed validation checks.
+File ..\DB\Opens\atipi\atipi_01.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_09.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_11.mp4 passed validation checks.
+File ..\DB\Opens\atipi\atipi_02.mp4 size mismatch: expected 0.17 GB, got 0.04 GB
+File ..\DB\Opens\atipi\atipi_02.mp4 failed validation, redownloading.
+Error processing course atipi: [WinError 32] The process cannot access the file because it is being used by another process: '..\\DB\\Opens\\atipi\\atipi_02.mp4'
+File ..\DB\Opens\aali\aali_01.mp4 size mismatch: expected 0.64 GB, got 0.03 GB
+File ..\DB\Opens\aali\aali_01.mp4 failed validation, redownloading.
+Error processing course aali: [WinError 32] The process cannot access the file because it is being used by another process: '..\\DB\\Opens\\aali\\aali_01.mp4'
+File ..\DB\Opens\asbsgc\asbsgc_01.mp4 size mismatch: expected 0.04 GB, got 0.01 GB
+File ..\DB\Opens\asbsgc\asbsgc_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\ae\ae_14.mp4 passed validation checks.
+Course: ae, Files: 0, Directory size: 5.00 GB
+Finished processing course: ae
+File ..\DB\Opens\aedc\aedc_10.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_12.mp4 passed validation checks.
+File ..\DB\Opens\asbsgc\asbsgc_02.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_13.mp4 passed validation checks.
+File ..\DB\Opens\asbsgc\asbsgc_03.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_11.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_12.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_14.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_13.mp4 passed validation checks.
+File ..\DB\Opens\asbsgc\asbsgc_04.mp4 size mismatch: expected 0.08 GB, got 0.06 GB
+File ..\DB\Opens\asbsgc\asbsgc_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\agpi\agpi_15.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_14.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_15.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_16.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_16.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_17.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_17.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_18.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_19.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_20.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_21.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_18.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_19.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_22.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_20.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_21.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_23.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_24.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_22.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_25.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_23.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_26.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_24.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_27.mp4 passed validation checks.
+Course: agpi, Files: 0, Directory size: 4.45 GB
+Finished processing course: agpi
+File ..\DB\Opens\aedc\aedc_25.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_26.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_27.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_28.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_29.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_30.mp4 passed validation checks.
+Course: aedc, Files: 0, Directory size: 5.08 GB
+Finished processing course: aedc
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_05.mp4: ('Connection broken: IncompleteRead(3817222 bytes read, 1796041439 more expected)', IncompleteRead(3817222 bytes read, 1796041439 more expected))
+Error processing course asbsgc: [WinError 32] The process cannot access the file because it is being used by another process: '..\\DB\\Opens\\asbsgc\\asbsgc_04.mp4'
+File ..\DB\Opens\biblioteca\biblioteca_01.mp4 size mismatch: expected 1.23 GB, got 0.01 GB
+File ..\DB\Opens\biblioteca\biblioteca_01.mp4 failed validation, redownloading.
+Error processing course biblioteca: [WinError 32] The process cannot access the file because it is being used by another process: '..\\DB\\Opens\\biblioteca\\biblioteca_01.mp4'
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_02.mp4: ('Connection broken: IncompleteRead(11812614 bytes read, 1741363422 more expected)', IncompleteRead(11812614 bytes read, 1741363422 more expected))
+Failed to download https://open.fing.edu.uy/media/dlbioim/dlbioim_03.mp4: ('Connection broken: IncompleteRead(34422534 bytes read, 1076377456 more expected)', IncompleteRead(34422534 bytes read, 1076377456 more expected))
+Failed to download https://open.fing.edu.uy/media/dlbioim/dlbioim_04.mp4: ('Connection broken: IncompleteRead(23183110 bytes read, 1145813338 more expected)', IncompleteRead(23183110 bytes read, 1145813338 more expected))
+Failed to download https://open.fing.edu.uy/media/bdnr/bdnr_06.mp4: ('Connection broken: IncompleteRead(21479176 bytes read, 142081631 more expected)', IncompleteRead(21479176 bytes read, 142081631 more expected))
+Failed to download https://open.fing.edu.uy/media/bdnr/bdnr_01.mp4: ('Connection broken: IncompleteRead(19037959 bytes read, 251827485 more expected)', IncompleteRead(19037959 bytes read, 251827485 more expected))
+Failed to download https://open.fing.edu.uy/media/bdnr/bdnr_04.mp4: ('Connection broken: IncompleteRead(99417864 bytes read, 62601746 more expected)', IncompleteRead(99417864 bytes read, 62601746 more expected))
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_01.mp4: ('Connection broken: IncompleteRead(77020934 bytes read, 1479776327 more expected)', IncompleteRead(77020934 bytes read, 1479776327 more expected))
+Failed to download https://open.fing.edu.uy/media/dlbioim/dlbioim_05.mp4: ('Connection broken: IncompleteRead(31686406 bytes read, 1079558467 more expected)', IncompleteRead(31686406 bytes read, 1079558467 more expected))
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_07.mp4: ('Connection broken: IncompleteRead(21266182 bytes read, 1648173571 more expected)', IncompleteRead(21266182 bytes read, 1648173571 more expected))
+Failed to download https://open.fing.edu.uy/media/brrd/brrd_04.mp4: ('Connection broken: IncompleteRead(53690119 bytes read, 380645385 more expected)', IncompleteRead(53690119 bytes read, 380645385 more expected))
+Failed to download https://open.fing.edu.uy/media/bdnr/bdnr_03.mp4: ('Connection broken: IncompleteRead(150929160 bytes read, 29450138 more expected)', IncompleteRead(150929160 bytes read, 29450138 more expected))
+Failed to download https://open.fing.edu.uy/media/bdnr/bdnr_09.mp4: ('Connection broken: IncompleteRead(8224521 bytes read, 86886455 more expected)', IncompleteRead(8224521 bytes read, 86886455 more expected))
+Failed to download https://open.fing.edu.uy/media/bdnr/bdnr_08.mp4: ('Connection broken: IncompleteRead(24706824 bytes read, 122742825 more expected)', IncompleteRead(24706824 bytes read, 122742825 more expected))
+Failed to download https://open.fing.edu.uy/media/bdnr/bdnr_05.mp4: ('Connection broken: IncompleteRead(43646728 bytes read, 78960878 more expected)', IncompleteRead(43646728 bytes read, 78960878 more expected))
+Course: bdnr, Files: 1, Directory size: 0.07 GB
+Finished processing course: bdnr
+File ..\DB\Opens\c1\c1_01.mp4 size mismatch: expected 0.21 GB, got 0.04 GB
+File ..\DB\Opens\c1\c1_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_02.mp4 size mismatch: expected 0.16 GB, got 0.12 GB
+File ..\DB\Opens\c1\c1_02.mp4 failed validation, redownloading.
+Failed to download https://open.fing.edu.uy/media/brrd/brrd_01.mp4: ('Connection broken: IncompleteRead(37224198 bytes read, 1321998254 more expected)', IncompleteRead(37224198 bytes read, 1321998254 more expected))
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_09.mp4: ('Connection broken: IncompleteRead(23904006 bytes read, 1874996837 more expected)', IncompleteRead(23904006 bytes read, 1874996837 more expected))
+Course: dlbioim, Files: 2, Directory size: 1.77 GB
+Finished processing course: dlbioim
+Failed to download https://open.fing.edu.uy/media/c2/c2_01.mp4. Status code: 404
+File ..\DB\Opens\c2\c2_02.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_03.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_04.mp4 size mismatch: expected 0.22 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_05.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_06.mp4 size mismatch: expected 0.22 GB, got 0.00 GB
+File ..\DB\Opens\c2\c2_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_07.mp4 size mismatch: expected 0.21 GB, got 0.02 GB
+File ..\DB\Opens\c2\c2_07.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_08.mp4 size mismatch: expected 0.21 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_09.mp4 size mismatch: expected 0.22 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_09.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_10.mp4 size mismatch: expected 0.23 GB, got 0.04 GB
+File ..\DB\Opens\c2\c2_10.mp4 failed validation, redownloading.
+Failed to download https://open.fing.edu.uy/media/c2/c2_06.mp4: ('Connection broken: IncompleteRead(7487240 bytes read, 230783437 more expected)', IncompleteRead(7487240 bytes read, 230783437 more expected))
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_10.mp4: ('Connection broken: IncompleteRead(81338118 bytes read, 1877013218 more expected)', IncompleteRead(81338118 bytes read, 1877013218 more expected))
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_03.mp4: ('Connection broken: IncompleteRead(457506566 bytes read, 1058814366 more expected)', IncompleteRead(457506566 bytes read, 1058814366 more expected))
+Failed to download https://open.fing.edu.uy/media/c2/c2_08.mp4: ('Connection broken: IncompleteRead(69435144 bytes read, 151413096 more expected)', IncompleteRead(69435144 bytes read, 151413096 more expected))
+Error processing course c2: [WinError 32] The process cannot access the file because it is being used by another process: '..\\DB\\Opens\\c2\\c2_10.mp4'
+File ..\DB\Opens\c3\c3_01.mp4 size mismatch: expected 0.19 GB, got 0.01 GB
+File ..\DB\Opens\c3\c3_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_02.mp4 passed validation checks.
+File ..\DB\Opens\c3\c3_03.mp4 size mismatch: expected 0.29 GB, got 0.17 GB
+File ..\DB\Opens\c3\c3_03.mp4 failed validation, redownloading.
+Failed to download https://open.fing.edu.uy/media/c1/c1_01.mp4: ('Connection broken: IncompleteRead(177143560 bytes read, 47925483 more expected)', IncompleteRead(177143560 bytes read, 47925483 more expected))
+Error processing course c1: [WinError 32] The process cannot access the file because it is being used by another process: '..\\DB\\Opens\\c1\\c1_02.mp4'
+Failed to download https://open.fing.edu.uy/media/civ/civ_01.mp4: ('Connection broken: IncompleteRead(3784455 bytes read, 483937179 more expected)', IncompleteRead(3784455 bytes read, 483937179 more expected))
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+Failed to download https://open.fing.edu.uy/media/civ/civ_03.mp4: ('Connection broken: IncompleteRead(6930183 bytes read, 389892192 more expected)', IncompleteRead(6930183 bytes read, 389892192 more expected))
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_11.mp4: ('Connection broken: IncompleteRead(26656518 bytes read, 1782619328 more expected)', IncompleteRead(26656518 bytes read, 1782619328 more expected))
+Failed to download https://open.fing.edu.uy/media/c3/c3_01.mp4: ('Connection broken: IncompleteRead(5275400 bytes read, 202175925 more expected)', IncompleteRead(5275400 bytes read, 202175925 more expected))
+Error processing course c3: [WinError 32] The process cannot access the file because it is being used by another process: '..\\DB\\Opens\\c3\\c3_03.mp4'
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_01.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_03.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_02.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_04.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_05.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_06.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_07.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_08.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_09.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_10.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_11.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_12.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_14.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_13.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_15.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_17.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_16.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_18.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_20.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_22.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_21.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_23.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_25.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_26.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_27.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_30.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_29.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_28.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_31.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_33.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_32.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_36.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_35.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_12.mp4: ('Connection broken: IncompleteRead(13778694 bytes read, 2006031697 more expected)', IncompleteRead(13778694 bytes read, 2006031697 more expected))
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_34.mp4: ('Connection broken: IncompleteRead(5324551 bytes read, 556784589 more expected)', IncompleteRead(5324551 bytes read, 556784589 more expected))
+Failed to download https://open.fing.edu.uy/media/civ/civ_02.mp4: ('Connection broken: IncompleteRead(22871815 bytes read, 559436178 more expected)', IncompleteRead(22871815 bytes read, 559436178 more expected))
+Failed to download https://open.fing.edu.uy/media/civ/civ_04.mp4: ('Connection broken: IncompleteRead(20709127 bytes read, 535140717 more expected)', IncompleteRead(20709127 bytes read, 535140717 more expected))
+Failed to download https://open.fing.edu.uy/media/civ/civ_08.mp4: ('Connection broken: IncompleteRead(11452167 bytes read, 471714679 more expected)', IncompleteRead(11452167 bytes read, 471714679 more expected))
+Failed to download https://open.fing.edu.uy/media/civ/civ_07.mp4: ('Connection broken: IncompleteRead(29916935 bytes read, 496944288 more expected)', IncompleteRead(29916935 bytes read, 496944288 more expected))
+Failed to download https://open.fing.edu.uy/media/cdivv-2022/cdivv-2022_24.mp4: ('Connection broken: IncompleteRead(26345222 bytes read, 1042525386 more expected)', IncompleteRead(26345222 bytes read, 1042525386 more expected))
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_13.mp4: ('Connection broken: IncompleteRead(45022982 bytes read, 1253638442 more expected)', IncompleteRead(45022982 bytes read, 1253638442 more expected))
+Failed to download https://open.fing.edu.uy/media/arqcomp/arqcomp_16.mp4: ('Connection broken: IncompleteRead(13975302 bytes read, 1572346450 more expected)', IncompleteRead(13975302 bytes read, 1572346450 more expected))
