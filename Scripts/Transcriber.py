@@ -2,7 +2,7 @@ import whisper
 from pathlib import Path
 
 class Transcriber:
-    def __init__(self, logger, transcription_path="../DB/Transcripciones/", model_name="medium"):
+    def __init__(self, logger, transcription_path="../DB/Transcripciones/", model_name="tiny"):
         self.logger = logger
         self.transcription_path = transcription_path
         self.model_name = model_name
@@ -14,14 +14,17 @@ class Transcriber:
             spanish_path = Path(self.transcription_path) / course_name / "es" / f"{video_stem}_{self.model_name}.txt"
             autodetect_path = Path(self.transcription_path) / course_name / "ad" / f"{video_stem}_{self.model_name}.txt"
 
-            # Create directories if they do not exist
-            spanish_path.parent.mkdir(parents=True, exist_ok=True)
-            autodetect_path.parent.mkdir(parents=True, exist_ok=True)
-
             # Ensure file exists before processing
             if not video_path.exists():
                 self.logger.log_message(f"File not found: {video_path}")
                 return
+
+            # Skip if transcriptions already exist
+            if spanish_path.exists() and autodetect_path.exists():
+                self.logger.log_message(f"Transcriptions already exist for {video_stem}, skipping...")
+                return
+
+            self.logger.log_message(f"Starting transcription for {video_stem} using model {self.model_name}.")
 
             # Perform the transcription
             result = self.model.transcribe(str(video_path))
@@ -42,3 +45,4 @@ class Transcriber:
 
         except Exception as e:
             self.logger.log_message(f"Failed to transcribe {video_path}: {str(e)}")
+

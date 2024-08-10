@@ -1,0 +1,585 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+File ..\DB\Opens\actint\actint_01.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_01.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_01.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\actint\actint_01.mp4: The size of tensor a (9) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\ae\ae_01.mp4: The size of tensor a (12) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\actint\actint_02.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_02.mp4: The size of tensor a (98) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\actint\actint_02.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+Course: actint, Files: 0, Directory size: 2.41 GB
+Finished processing course: actint
+File ..\DB\Opens\adadr\adadr_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_03.mp4: The size of tensor a (89) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_04.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_01.mp4: The size of tensor a (107) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_01.mp4: The size of tensor a (234) must match the size of tensor b (124) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_02.mp4: The size of tensor a (143) must match the size of tensor b (142) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_02.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_02.mp4: The size of tensor a (27) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_03.mp4: The size of tensor a (70) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_04.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_03.mp4: The size of tensor a (105) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_03.mp4: The size of tensor a (145) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_04.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_04.mp4: The size of tensor a (173) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_05.mp4: The size of tensor a (203) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_04.mp4: The size of tensor a (236) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_05.mp4: The size of tensor a (230) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_06.mp4: The size of tensor a (246) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_05.mp4: The size of tensor a (282) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_06.mp4: The size of tensor a (230) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_07.mp4: The size of tensor a (233) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_09.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_06.mp4: The size of tensor a (281) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_07.mp4: The size of tensor a (230) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_08.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_09.mp4: The size of tensor a (233) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_10.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_07.mp4: The size of tensor a (283) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_08.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_04.mp4: The size of tensor a (228) must match the size of tensor b (227) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_08.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_09.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_08.mp4: The size of tensor a (79) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_09.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_10.mp4: The size of tensor a (78) must match the size of tensor b (77) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_12.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_09.mp4: The size of tensor a (29) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_10.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_09.mp4: The size of tensor a (14) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_10.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_05.mp4: The size of tensor a (90) must match the size of tensor b (72) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_10.mp4: The size of tensor a (33) must match the size of tensor b (32) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_11.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_12.mp4: The size of tensor a (55) must match the size of tensor b (52) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_15.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_06.mp4: The size of tensor a (101) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_10.mp4: The size of tensor a (114) must match the size of tensor b (91) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_11.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_15.mp4: The size of tensor a (136) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_16.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_07.mp4: The size of tensor a (199) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_08.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_16.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\adadr\adadr_18.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_11.mp4: The size of tensor a (10) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_12.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_11.mp4: The size of tensor a (65) must match the size of tensor b (25) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_12.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_12.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_13.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_08.mp4: The size of tensor a (61) must match the size of tensor b (51) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_09.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_12.mp4: The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_13.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_09.mp4: The size of tensor a (115) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_10.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_13.mp4: The size of tensor a (119) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_14.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\adadr\adadr_18.mp4: The size of tensor a (116) must match the size of tensor b (115) at non-singleton dimension 3
+Course: adadr, Files: 0, Directory size: 2.65 GB
+Finished processing course: adadr
+File ..\DB\Opens\ayp\ayp_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_10.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_11.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_13.mp4: The size of tensor a (116) must match the size of tensor b (43) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_14.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_14.mp4: The size of tensor a (95) must match the size of tensor b (94) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_15.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_01.mp4: The size of tensor a (33) must match the size of tensor b (8) at non-singleton dimension 3
+File ..\DB\Opens\ayp\ayp_02.mp4 size mismatch: expected 0.87 GB, got 0.01 GB
+File ..\DB\Opens\ayp\ayp_02.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_03.mp4 size mismatch: expected 0.51 GB, got 0.02 GB
+File ..\DB\Opens\ayp\ayp_03.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_04.mp4 size mismatch: expected 0.71 GB, got 0.30 GB
+File ..\DB\Opens\ayp\ayp_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_05.mp4 size mismatch: expected 0.48 GB, got 0.01 GB
+File ..\DB\Opens\ayp\ayp_05.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_06.mp4 size mismatch: expected 0.49 GB, got 0.02 GB
+File ..\DB\Opens\ayp\ayp_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_07.mp4: The size of tensor a (45) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ayp\ayp_08.mp4 size mismatch: expected 0.59 GB, got 0.03 GB
+File ..\DB\Opens\ayp\ayp_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_09.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_11.mp4: The size of tensor a (91) must match the size of tensor b (46) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_12.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_14.mp4: The size of tensor a (124) must match the size of tensor b (3) at non-singleton dimension 3
+Course: ae, Files: 0, Directory size: 5.00 GB
+Finished processing course: ae
+File ..\DB\Opens\atipi\atipi_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_09.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ayp\ayp_10.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\atipi\atipi_01.mp4: The size of tensor a (44) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\atipi\atipi_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_15.mp4: The size of tensor a (224) must match the size of tensor b (142) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_16.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_12.mp4: The size of tensor a (103) must match the size of tensor b (102) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_13.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_16.mp4: The size of tensor a (30) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_17.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_10.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 77] but got: [16, 78].
+File ..\DB\Opens\ayp\ayp_11.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_13.mp4: The size of tensor a (55) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_14.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\atipi\atipi_02.mp4: The size of tensor a (53) must match the size of tensor b (52) at non-singleton dimension 3
+File ..\DB\Opens\atipi\atipi_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_11.mp4: The size of tensor a (17) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ayp\ayp_12.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_14.mp4: The size of tensor a (23) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_15.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\atipi\atipi_03.mp4: The size of tensor a (53) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\atipi\atipi_04.mp4 size mismatch: expected 0.23 GB, got 0.01 GB
+File ..\DB\Opens\atipi\atipi_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\atipi\atipi_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_17.mp4: The size of tensor a (49) must match the size of tensor b (48) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_18.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_12.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ayp\ayp_13.mp4 size mismatch: expected 1.34 GB, got 0.51 GB
+File ..\DB\Opens\ayp\ayp_13.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_14.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\atipi\atipi_05.mp4: The size of tensor a (51) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\atipi\atipi_06.mp4 size mismatch: expected 0.23 GB, got 0.06 GB
+File ..\DB\Opens\atipi\atipi_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\atipi\atipi_06.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\agpi\agpi_15.mp4: The size of tensor a (165) must match the size of tensor b (110) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_16.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_14.mp4: The size of tensor a (189) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ayp\ayp_15.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_18.mp4: The size of tensor a (87) must match the size of tensor b (86) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_19.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_16.mp4: The size of tensor a (58) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_17.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_15.mp4: The size of tensor a (79) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ayp\ayp_16.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_19.mp4: The size of tensor a (81) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_20.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\atipi\atipi_06.mp4: The size of tensor a (78) must match the size of tensor b (77) at non-singleton dimension 3
+Course: atipi, Files: 2, Directory size: 1.38 GB
+Finished processing course: atipi
+File ..\DB\Opens\aali\aali_01.mp4 size mismatch: expected 0.64 GB, got 0.01 GB
+File ..\DB\Opens\aali\aali_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_16.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ayp\ayp_17.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_17.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_18.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_02.mp4: The size of tensor a (9) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_20.mp4: The size of tensor a (17) must match the size of tensor b (14) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_21.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_18.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_19.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_03.mp4: The size of tensor a (9) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_04.mp4 size mismatch: expected 0.69 GB, got 0.11 GB
+File ..\DB\Opens\aali\aali_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_17.mp4: The size of tensor a (27) must match the size of tensor b (23) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_21.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 55] but got: [16, 83].
+Failed to transcribe ..\DB\Opens\agpi\agpi_19.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 83] but got: [16, 55].
+File ..\DB\Opens\agpi\agpi_20.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_18.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_22.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_18.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 4] but got: [16, 5].
+File ..\DB\Opens\ayp\ayp_19.mp4 size mismatch: expected 0.29 GB, got 0.00 GB
+File ..\DB\Opens\ayp\ayp_19.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_20.mp4 size mismatch: expected 0.31 GB, got 0.21 GB
+File ..\DB\Opens\ayp\ayp_20.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_21.mp4 size mismatch: expected 0.31 GB, got 0.01 GB
+File ..\DB\Opens\ayp\ayp_21.mp4 failed validation, redownloading.
+File ..\DB\Opens\ayp\ayp_21.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\ayp\ayp_21.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\ayp\ayp_21.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\aali\aali_05.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 5] but got: [16, 6].
+File ..\DB\Opens\aali\aali_06.mp4 size mismatch: expected 0.80 GB, got 0.03 GB
+File ..\DB\Opens\aali\aali_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_07.mp4 size mismatch: expected 0.67 GB, got 0.01 GB
+File ..\DB\Opens\aali\aali_07.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_08.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_22.mp4: The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_23.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_08.mp4: The size of tensor a (29) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_09.mp4 size mismatch: expected 0.74 GB, got 0.50 GB
+File ..\DB\Opens\aali\aali_09.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_10.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_20.mp4: The size of tensor a (13) must match the size of tensor b (12) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_21.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_10.mp4: The size of tensor a (22) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_11.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_21.mp4: The size of tensor a (25) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_22.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_21.mp4: The size of tensor a (82) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aali\aali_11.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_12.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_23.mp4: The size of tensor a (155) must match the size of tensor b (91) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_24.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_22.mp4: The size of tensor a (83) must match the size of tensor b (79) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_23.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_21.mp4: The size of tensor a (51) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_24.mp4: The size of tensor a (57) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_25.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_12.mp4: The size of tensor a (84) must match the size of tensor b (81) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\agpi\agpi_23.mp4: The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_13.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_24.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_25.mp4: The size of tensor a (23) must match the size of tensor b (20) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_26.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_13.mp4: The size of tensor a (26) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_14.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_21.mp4: The size of tensor a (81) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_26.mp4: The size of tensor a (99) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_27.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_14.mp4: The size of tensor a (112) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_15.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_27.mp4: The size of tensor a (8) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_28.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_24.mp4: The size of tensor a (122) must match the size of tensor b (119) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_25.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_21.mp4: The size of tensor a (181) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aali\aali_15.mp4: The size of tensor a (110) must match the size of tensor b (99) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_16.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_25.mp4: The size of tensor a (119) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_26.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_16.mp4: The size of tensor a (29) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_17.mp4 size mismatch: expected 0.81 GB, got 0.01 GB
+File ..\DB\Opens\aali\aali_17.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_18.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_26.mp4: The size of tensor a (32) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_27.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_21.mp4: The size of tensor a (90) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aali\aali_18.mp4: The size of tensor a (125) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_19.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_27.mp4: The size of tensor a (128) must match the size of tensor b (3) at non-singleton dimension 3
+Course: agpi, Files: 0, Directory size: 4.45 GB
+Finished processing course: agpi
+File ..\DB\Opens\asbsgc\asbsgc_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_21.mp4: The size of tensor a (178) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_28.mp4: The size of tensor a (180) must match the size of tensor b (179) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_29.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_19.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_20.mp4 size mismatch: expected 0.76 GB, got 0.00 GB
+File ..\DB\Opens\aali\aali_20.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_21.mp4 size mismatch: expected 1.27 GB, got 0.55 GB
+File ..\DB\Opens\aali\aali_21.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_22.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\asbsgc\asbsgc_01.mp4: The size of tensor a (25) must match the size of tensor b (24) at non-singleton dimension 3
+File ..\DB\Opens\asbsgc\asbsgc_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_29.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_30.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ayp\ayp_21.mp4: The size of tensor a (53) must match the size of tensor b (3) at non-singleton dimension 3
+Course: ayp, Files: 10, Directory size: 12.16 GB
+Finished processing course: ayp
+File ..\DB\Opens\dlbioim\dlbioim_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_22.mp4: The size of tensor a (121) must match the size of tensor b (77) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_23.mp4 size mismatch: expected 0.70 GB, got 0.01 GB
+File ..\DB\Opens\aali\aali_23.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_24.mp4 size mismatch: expected 0.80 GB, got 0.01 GB
+File ..\DB\Opens\aali\aali_24.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_25.mp4 size mismatch: expected 0.96 GB, got 0.01 GB
+File ..\DB\Opens\aali\aali_25.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_26.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_30.mp4: The size of tensor a (125) must match the size of tensor b (3) at non-singleton dimension 3
+Course: aedc, Files: 0, Directory size: 5.08 GB
+Finished processing course: aedc
+File ..\DB\Opens\arqcomp\arqcomp_01.mp4 size mismatch: expected 1.45 GB, got 0.07 GB
+File ..\DB\Opens\arqcomp\arqcomp_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_02.mp4 size mismatch: expected 1.63 GB, got 0.01 GB
+File ..\DB\Opens\arqcomp\arqcomp_02.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_03.mp4 size mismatch: expected 1.41 GB, got 0.43 GB
+File ..\DB\Opens\arqcomp\arqcomp_03.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_04.mp4 size mismatch: expected 1.84 GB, got 1.26 GB
+File ..\DB\Opens\arqcomp\arqcomp_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_05.mp4 size mismatch: expected 1.68 GB, got 0.00 GB
+File ..\DB\Opens\arqcomp\arqcomp_05.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_26.mp4: The size of tensor a (146) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aali\aali_27.mp4 size mismatch: expected 0.79 GB, got 0.00 GB
+File ..\DB\Opens\aali\aali_27.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_28.mp4 size mismatch: expected 0.93 GB, got 0.01 GB
+File ..\DB\Opens\aali\aali_28.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_28.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\aali\aali_28.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\aali\aali_28.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\aali\aali_28.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\aali\aali_28.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\aali\aali_28.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\aali\aali_28.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\dlbioim\dlbioim_01.mp4: The size of tensor a (152) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\dlbioim\dlbioim_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\arqcomp\arqcomp_06.mp4: The size of tensor a (187) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\arqcomp\arqcomp_07.mp4 size mismatch: expected 1.55 GB, got 0.02 GB
+File ..\DB\Opens\arqcomp\arqcomp_07.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_08.mp4 size mismatch: expected 1.43 GB, got 0.94 GB
+File ..\DB\Opens\arqcomp\arqcomp_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_09.mp4 size mismatch: expected 1.77 GB, got 0.02 GB
+File ..\DB\Opens\arqcomp\arqcomp_09.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_10.mp4 size mismatch: expected 1.82 GB, got 0.08 GB
+File ..\DB\Opens\arqcomp\arqcomp_10.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_11.mp4 size mismatch: expected 1.69 GB, got 0.02 GB
+File ..\DB\Opens\arqcomp\arqcomp_11.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_12.mp4 size mismatch: expected 1.88 GB, got 0.01 GB
+File ..\DB\Opens\arqcomp\arqcomp_12.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_13.mp4 size mismatch: expected 1.21 GB, got 0.04 GB
+File ..\DB\Opens\arqcomp\arqcomp_13.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_14.mp4 size mismatch: expected 1.63 GB, got 0.36 GB
+File ..\DB\Opens\arqcomp\arqcomp_14.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_15.mp4 size mismatch: expected 1.38 GB, got 0.76 GB
+File ..\DB\Opens\arqcomp\arqcomp_15.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_16.mp4 size mismatch: expected 1.48 GB, got 0.01 GB
+File ..\DB\Opens\arqcomp\arqcomp_16.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_17.mp4 size mismatch: expected 1.49 GB, got 0.00 GB
+File ..\DB\Opens\arqcomp\arqcomp_17.mp4 failed validation, redownloading.
+Failed to transcribe ..\DB\Opens\dlbioim\dlbioim_02.mp4: The size of tensor a (246) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\dlbioim\dlbioim_03.mp4 size mismatch: expected 1.03 GB, got 0.01 GB
+File ..\DB\Opens\dlbioim\dlbioim_03.mp4 failed validation, redownloading.
+File ..\DB\Opens\dlbioim\dlbioim_04.mp4 size mismatch: expected 1.09 GB, got 0.00 GB
+File ..\DB\Opens\dlbioim\dlbioim_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\dlbioim\dlbioim_05.mp4 size mismatch: expected 1.03 GB, got 0.00 GB
+File ..\DB\Opens\dlbioim\dlbioim_05.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_28.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\aali\aali_28.mp4: The size of tensor a (391) must match the size of tensor b (94) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aali\aali_28.mp4: The size of tensor a (302) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\asbsgc\asbsgc_02.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 605] but got: [16, 303].
+File ..\DB\Opens\asbsgc\asbsgc_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aali\aali_28.mp4: The size of tensor a (11) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\aali\aali_28.mp4: The size of tensor a (36) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\dlbioim\dlbioim_05.mp4: The size of tensor a (131) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\dlbioim\dlbioim_05.mp4: The size of tensor a (230) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aali\aali_28.mp4: The size of tensor a (230) must match the size of tensor b (3) at non-singleton dimension 3
+Course: aali, Files: 13, Directory size: 22.38 GB
+Finished processing course: aali
+File ..\DB\Opens\bdnr\bdnr_01.mp4 size mismatch: expected 0.25 GB, got 0.02 GB
+File ..\DB\Opens\bdnr\bdnr_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\bdnr\bdnr_03.mp4 size mismatch: expected 0.17 GB, got 0.14 GB
+File ..\DB\Opens\bdnr\bdnr_03.mp4 failed validation, redownloading.
+File ..\DB\Opens\bdnr\bdnr_04.mp4 size mismatch: expected 0.15 GB, got 0.09 GB
+File ..\DB\Opens\bdnr\bdnr_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\bdnr\bdnr_05.mp4 size mismatch: expected 0.11 GB, got 0.04 GB
+File ..\DB\Opens\bdnr\bdnr_05.mp4 failed validation, redownloading.
+File ..\DB\Opens\bdnr\bdnr_06.mp4 size mismatch: expected 0.15 GB, got 0.02 GB
+File ..\DB\Opens\bdnr\bdnr_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\bdnr\bdnr_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\bdnr\bdnr_07.mp4: The size of tensor a (251) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\bdnr\bdnr_08.mp4 size mismatch: expected 0.14 GB, got 0.02 GB
+File ..\DB\Opens\bdnr\bdnr_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\bdnr\bdnr_09.mp4 size mismatch: expected 0.09 GB, got 0.01 GB
+File ..\DB\Opens\bdnr\bdnr_09.mp4 failed validation, redownloading.
+File ..\DB\Opens\bdnr\bdnr_09.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\bdnr\bdnr_09.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\bdnr\bdnr_09.mp4: The size of tensor a (249) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\bdnr\bdnr_09.mp4: The size of tensor a (230) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\bdnr\bdnr_09.mp4: The size of tensor a (251) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\bdnr\bdnr_09.mp4: The size of tensor a (277) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\dlbioim\dlbioim_05.mp4: The size of tensor a (304) must match the size of tensor b (22) at non-singleton dimension 3
+Course: dlbioim, Files: 3, Directory size: 4.94 GB
+Finished processing course: dlbioim
+File ..\DB\Opens\biblioteca\biblioteca_01.mp4 size mismatch: expected 1.23 GB, got 0.01 GB
+File ..\DB\Opens\biblioteca\biblioteca_01.mp4 failed validation, redownloading.
+Failed to transcribe ..\DB\Opens\bdnr\bdnr_09.mp4: The size of tensor a (307) must match the size of tensor b (3) at non-singleton dimension 3
+Course: bdnr, Files: 7, Directory size: 1.48 GB
+Finished processing course: bdnr
+File ..\DB\Opens\brrd\brrd_01.mp4 size mismatch: expected 1.27 GB, got 0.03 GB
+File ..\DB\Opens\brrd\brrd_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\brrd\brrd_02.mp4 size mismatch: expected 1.74 GB, got 1.58 GB
+File ..\DB\Opens\brrd\brrd_02.mp4 failed validation, redownloading.
+File ..\DB\Opens\brrd\brrd_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\brrd\brrd_03.mp4: The size of tensor a (291) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\brrd\brrd_04.mp4 size mismatch: expected 0.40 GB, got 0.05 GB
+File ..\DB\Opens\brrd\brrd_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\brrd\brrd_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\brrd\brrd_05.mp4: The size of tensor a (283) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\asbsgc\asbsgc_03.mp4: The size of tensor a (297) must match the size of tensor b (227) at non-singleton dimension 3
+File ..\DB\Opens\asbsgc\asbsgc_04.mp4 size mismatch: expected 0.08 GB, got 0.03 GB
+File ..\DB\Opens\asbsgc\asbsgc_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\asbsgc\asbsgc_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\brrd\brrd_05.mp4: The size of tensor a (86) must match the size of tensor b (85) at non-singleton dimension 3
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\biblioteca\biblioteca_01.mp4: The size of tensor a (231) must match the size of tensor b (3) at non-singleton dimension 3
+Course: biblioteca, Files: 1, Directory size: 1.25 GB
+Finished processing course: biblioteca
+File ..\DB\Opens\c1\c1_01.mp4 size mismatch: expected 0.21 GB, got 0.16 GB
+File ..\DB\Opens\c1\c1_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c1\c1_02.mp4: The size of tensor a (230) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c1\c1_03.mp4 size mismatch: expected 0.18 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_03.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_04.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c1\c1_04.mp4: The size of tensor a (232) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c1\c1_05.mp4 size mismatch: expected 0.25 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_05.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c1\c1_06.mp4: The size of tensor a (253) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c1\c1_07.mp4 size mismatch: expected 0.32 GB, got 0.00 GB
+File ..\DB\Opens\c1\c1_07.mp4 failed validation, redownloading.
+Failed to download https://open.fing.edu.uy/media/c1/c1_08.mp4. Status code: 404
+Failed to download https://open.fing.edu.uy/media/c1/c1_09.mp4. Status code: 404
+File ..\DB\Opens\c1\c1_10.mp4 size mismatch: expected 0.21 GB, got 0.03 GB
+File ..\DB\Opens\c1\c1_10.mp4 failed validation, redownloading.
+Failed to download https://open.fing.edu.uy/media/c1/c1_12.mp4. Status code: 404
+File ..\DB\Opens\c1\c1_13.mp4 size mismatch: expected 0.24 GB, got 0.06 GB
+File ..\DB\Opens\c1\c1_13.mp4 failed validation, redownloading.
+Failed to download https://open.fing.edu.uy/media/c1/c1_11.mp4. Status code: 404
+File ..\DB\Opens\c1\c1_14.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c1\c1_14.mp4: The size of tensor a (283) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c1\c1_15.mp4 size mismatch: expected 0.23 GB, got 0.06 GB
+File ..\DB\Opens\c1\c1_15.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_16.mp4 size mismatch: expected 0.26 GB, got 0.03 GB
+File ..\DB\Opens\c1\c1_16.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_17.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\asbsgc\asbsgc_05.mp4: The size of tensor a (228) must match the size of tensor b (227) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\brrd\brrd_05.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\c1\c1_17.mp4: The size of tensor a (100) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c1\c1_18.mp4 size mismatch: expected 0.24 GB, got 0.02 GB
+File ..\DB\Opens\c1\c1_18.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_19.mp4 size mismatch: expected 0.24 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_19.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_20.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c1\c1_20.mp4: The size of tensor a (222) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c1\c1_21.mp4 size mismatch: expected 0.23 GB, got 0.00 GB
+File ..\DB\Opens\c1\c1_21.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_22.mp4 size mismatch: expected 0.20 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_22.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_23.mp4 size mismatch: expected 0.21 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_23.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_24.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c1\c1_24.mp4: The size of tensor a (276) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c1\c1_25.mp4 size mismatch: expected 0.25 GB, got 0.00 GB
+File ..\DB\Opens\c1\c1_25.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_26.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\brrd\brrd_05.mp4: The size of tensor a (243) must match the size of tensor b (3) at non-singleton dimension 3
+Course: brrd, Files: 3, Directory size: 5.73 GB
+Finished processing course: brrd
+Failed to download https://open.fing.edu.uy/media/c2/c2_01.mp4. Status code: 404
+File ..\DB\Opens\c2\c2_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c1\c1_26.mp4: The size of tensor a (279) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c1\c1_27.mp4 size mismatch: expected 0.24 GB, got 0.02 GB
+File ..\DB\Opens\c1\c1_27.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_28.mp4 size mismatch: expected 0.24 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_28.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_29.mp4 size mismatch: expected 0.25 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_29.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_30.mp4 size mismatch: expected 0.24 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_30.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_31.mp4 size mismatch: expected 0.21 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_31.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_32.mp4 size mismatch: expected 0.24 GB, got 0.02 GB
+File ..\DB\Opens\c1\c1_32.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_33.mp4 size mismatch: expected 0.25 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_33.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_34.mp4 size mismatch: expected 0.26 GB, got 0.09 GB
+File ..\DB\Opens\c1\c1_34.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_35.mp4 size mismatch: expected 0.23 GB, got 0.02 GB
+File ..\DB\Opens\c1\c1_35.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_36.mp4 size mismatch: expected 0.25 GB, got 0.02 GB
+File ..\DB\Opens\c1\c1_36.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_37.mp4 size mismatch: expected 0.25 GB, got 0.01 GB
+File ..\DB\Opens\c1\c1_37.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_38.mp4 size mismatch: expected 0.25 GB, got 0.02 GB
+File ..\DB\Opens\c1\c1_38.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_39.mp4 size mismatch: expected 0.24 GB, got 0.00 GB
+File ..\DB\Opens\c1\c1_39.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\c2\c2_02.mp4: The size of tensor a (254) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c2\c2_03.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\c2\c2_03.mp4: The size of tensor a (287) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c2\c2_04.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\c2\c2_04.mp4: The size of tensor a (303) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c2\c2_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\asbsgc\asbsgc_05.mp4: The size of tensor a (228) must match the size of tensor b (227) at non-singleton dimension 3
+Course: asbsgc, Files: 1, Directory size: 0.52 GB
+Finished processing course: asbsgc
+File ..\DB\Opens\c3\c3_01.mp4 size mismatch: expected 0.19 GB, got 0.00 GB
+File ..\DB\Opens\c3\c3_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_02.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+File ..\DB\Opens\c1\c1_39.mp4 is not playable, skipping transcription.
+Failed to transcribe ..\DB\Opens\c3\c3_02.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\c3\c3_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c2\c2_05.mp4: The size of tensor a (36) must match the size of tensor b (35) at non-singleton dimension 3
+File ..\DB\Opens\c2\c2_06.mp4 size mismatch: expected 0.22 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\c3\c3_03.mp4: The size of tensor a (43) must match the size of tensor b (40) at non-singleton dimension 3
+File ..\DB\Opens\c3\c3_04.mp4 size mismatch: expected 0.33 GB, got 0.03 GB
+File ..\DB\Opens\c3\c3_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_05.mp4 size mismatch: expected 0.32 GB, got 0.04 GB
+File ..\DB\Opens\c3\c3_05.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_06.mp4 size mismatch: expected 0.30 GB, got 0.03 GB
+File ..\DB\Opens\c3\c3_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_07.mp4 size mismatch: expected 0.32 GB, got 0.01 GB
+File ..\DB\Opens\c3\c3_07.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_08.mp4 size mismatch: expected 0.31 GB, got 0.01 GB
+File ..\DB\Opens\c3\c3_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_09.mp4 size mismatch: expected 0.30 GB, got 0.01 GB
+File ..\DB\Opens\c3\c3_09.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_10.mp4 size mismatch: expected 0.37 GB, got 0.20 GB
+File ..\DB\Opens\c3\c3_10.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_11.mp4 size mismatch: expected 0.30 GB, got 0.01 GB
+File ..\DB\Opens\c3\c3_11.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_12.mp4 size mismatch: expected 0.27 GB, got 0.03 GB
+File ..\DB\Opens\c3\c3_12.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_13.mp4 size mismatch: expected 0.10 GB, got 0.01 GB
+File ..\DB\Opens\c3\c3_13.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_14.mp4 size mismatch: expected 0.30 GB, got 0.23 GB
+File ..\DB\Opens\c3\c3_14.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_15.mp4 size mismatch: expected 0.29 GB, got 0.04 GB
+File ..\DB\Opens\c3\c3_15.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_16.mp4 size mismatch: expected 0.22 GB, got 0.01 GB
+File ..\DB\Opens\c3\c3_16.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_17.mp4 size mismatch: expected 0.17 GB, got 0.00 GB
+File ..\DB\Opens\c3\c3_17.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_18.mp4 size mismatch: expected 0.22 GB, got 0.02 GB
+File ..\DB\Opens\c3\c3_18.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_19.mp4 size mismatch: expected 0.23 GB, got 0.00 GB
+File ..\DB\Opens\c3\c3_19.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_19.mp4 is not playable, skipping transcription.

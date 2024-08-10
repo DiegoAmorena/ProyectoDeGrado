@@ -1,0 +1,51 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+File ..\DB\Opens\agpi\agpi_01.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_01.mp4 passed validation checks.
+File ..\DB\Opens\actint\actint_01.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_01.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\ae\ae_01.mp4: The size of tensor a (9) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_01.mp4: The size of tensor a (12) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_02.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_02.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_02.mp4: The size of tensor a (103) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_02.mp4: The size of tensor a (120) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_02.mp4: The size of tensor a (123) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_03.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_03.mp4: The size of tensor a (198) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_04.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_03.mp4: The size of tensor a (235) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_04.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_03.mp4: The size of tensor a (244) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_04.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_04.mp4: The size of tensor a (248) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_04.mp4: The size of tensor a (277) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_04.mp4: The size of tensor a (297) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_05.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\actint\actint_01.mp4: The size of tensor a (228) must match the size of tensor b (227) at non-singleton dimension 3
+File ..\DB\Opens\actint\actint_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_05.mp4: The size of tensor a (17) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_05.mp4: The size of tensor a (44) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_05.mp4: The size of tensor a (47) must match the size of tensor b (46) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_06.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\aedc\aedc_06.mp4: The size of tensor a (78) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\aedc\aedc_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_06.mp4: The size of tensor a (89) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_06.mp4: The size of tensor a (213) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_07.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\actint\actint_02.mp4: The size of tensor a (7) must match the size of tensor b (3) at non-singleton dimension 3
+Course: actint, Files: 0, Directory size: 2.41 GB
+Finished processing course: actint
+File ..\DB\Opens\adadr\adadr_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_07.mp4: The size of tensor a (12) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\ae\ae_08.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\agpi\agpi_07.mp4: The size of tensor a (123) must match the size of tensor b (3) at non-singleton dimension 3
+File ..\DB\Opens\agpi\agpi_08.mp4 passed validation checks.

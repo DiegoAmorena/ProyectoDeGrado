@@ -1,0 +1,192 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+Skipping validation for ..\DB\Opens\ae\ae_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\actint\actint_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\actint\actint_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_05.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\actint\actint_02.mp4: The size of tensor a (17) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_04.mp4: The size of tensor a (21) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_06.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\ae\ae_05.mp4: The size of tensor a (24) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_06.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\agpi\agpi_02.mp4: The size of tensor a (27) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_06.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\agpi\agpi_01.mp4: The size of tensor a (30) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_07.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\agpi\agpi_04.mp4: The size of tensor a (33) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_08.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\aedc\aedc_05.mp4: The size of tensor a (36) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_07.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\agpi\agpi_05.mp4: The size of tensor a (40) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_09.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\ae\ae_03.mp4: The size of tensor a (47) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_07.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\ae\ae_01.mp4: The size of tensor a (50) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_08.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\aedc\aedc_01.mp4: The size of tensor a (55) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_08.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\aedc\aedc_02.mp4: The size of tensor a (62) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_03.mp4: The size of tensor a (65) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_10.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\ae\ae_02.mp4: The size of tensor a (70) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_09.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\ae\ae_04.mp4: The size of tensor a (75) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_10.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\actint\actint_01.mp4: The size of tensor a (82) must match the size of tensor b (3) at non-singleton dimension 3
+Course: actint, Files: 2, Directory size: 2.41 GB
+Finished processing course: actint
+Skipping validation for ..\DB\Opens\adadr\adadr_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_06.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\ae\ae_06.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 88] but got: [16, 87].
+Skipping validation for ..\DB\Opens\ae\ae_11.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\agpi\agpi_06.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 39] but got: [16, 42].
+Failed to transcribe ..\DB\Opens\agpi\agpi_07.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 39] but got: [16, 41].
+Skipping validation for ..\DB\Opens\agpi\agpi_11.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\agpi\agpi_08.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 39] but got: [16, 40].
+Skipping validation for ..\DB\Opens\agpi\agpi_10.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_13.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\adadr\adadr_02.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 89] but got: [16, 90].
+Failed to transcribe ..\DB\Opens\aedc\aedc_07.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 89] but got: [16, 88].
+Skipping validation for ..\DB\Opens\aedc\aedc_11.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_07.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\ae\ae_08.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 40] but got: [16, 43].
+Skipping validation for ..\DB\Opens\ae\ae_12.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\aedc\aedc_09.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 90] but got: [16, 91].
+Skipping validation for ..\DB\Opens\aedc\aedc_12.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\adadr\adadr_06.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 91] but got: [16, 92].
+Skipping validation for ..\DB\Opens\adadr\adadr_09.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\aedc\aedc_06.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 92] but got: [16, 93].
+Skipping validation for ..\DB\Opens\aedc\aedc_13.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\adadr\adadr_03.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 93] but got: [16, 94].
+Skipping validation for ..\DB\Opens\adadr\adadr_10.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\adadr\adadr_10.mp4: Failed to load audio: ffmpeg version 7.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59.  8.100 / 59.  8.100
+  libavcodec     61.  3.100 / 61.  3.100
+  libavformat    61.  1.100 / 61.  1.100
+  libavdevice    61.  1.100 / 61.  1.100
+  libavfilter    10.  1.100 / 10.  1.100
+  libswscale      8.  1.100 /  8.  1.100
+  libswresample   5.  1.100 /  5.  1.100
+  libpostproc    58.  1.100 / 58.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '..\DB\Opens\adadr\adadr_10.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.45.100
+  Duration: 00:41:16.77, start: 0.000000, bitrate: 301 kb/s
+  Chapters:
+    Chapter #0:0: start 0.000000, end 52.680000
+      Metadata:
+        title           : Recording Started
+    Chapter #0:1: start 52.680000, end 2470.520000
+      Metadata:
+        title           : Sharing Started
+    Chapter #0:2: start 2470.520000, end 2476.760000
+      Metadata:
+        title           : Sharing Stopped
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1952x1080, 176 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+      Metadata:
+        handler_name    : H.264/AVC video
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 32000 Hz, mono, fltp, 119 kb/s (default)
+      Metadata:
+        handler_name    : AAC audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng): Data: bin_data (text / 0x74786574)
+      Metadata:
+        handler_name    : SubtitleHandler
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Output #0, s16le, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.1.100
+  Chapters:
+    Chapter #0:0: start 0.000000, end 52.680000
+      Metadata:
+        title           : Recording Started
+    Chapter #0:1: start 52.680000, end 2470.520000
+      Metadata:
+        title           : Sharing Started
+    Chapter #0:2: start 2470.520000, end 2476.760000
+      Metadata:
+        title           : Sharing Stopped
+  Stream #0:0(und): Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s (default)
+      Metadata:
+        handler_name    : AAC audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 pcm_s16le
+size=       0KiB time=00:00:00.25 bitrate=   0.0kbits/s speed=0.244x    size=     488KiB time=00:00:15.64 bitrate= 255.5kbits/s speed=9.96x    size=     489KiB time=00:00:15.67 bitrate= 255.5kbits/s speed=7.45x    size=    1009KiB time=00:00:32.31 bitrate= 255.7kbits/s speed=12.3x    
+ands: isomiso2avc1mp41
+    encoder         : Lavf61.1.100
+  Chapters:
+    Chapter #0:0: start 0.000000, end 1691.280000
+      Metadata:
+        title           : Recording Started
+    Chapter #0:1: start 1691.280000, end 4766.680000
+      Metadata:
+        title           : Sharing Started
+    Chapter #0:2: start 4766.680000, end 4826.440000
+      Metadata:
+        title           : Sharing Stopped
+    Chapter #0:3: start 4826.440000, end 5218.440000
+      Metadata:
+        title           : Sharing Started
+    Chapter #0:4: start 5218.440000, end 5224.920000
+      Metadata:
+        title           : Sharing Stopped
+    Chapter #0:5: start 5224.920000, end 5479.560000
+      Metadata:
+        title           : Sharing Started
+    Chapter #0:6: start 5479.560000, end 5493.280000
+      Metadata:
+        title           : Sharing Stopped
+    Chapter #0:7: start 5493.280000, end 5542.480000
+      Metadata:
+        title           : Sharing Started
+    Chapter #0:8: start 5542.480000, end 5676.080000
+      Metadata:
+        title           : Sharing Stopped
+    Chapter #0:9: start 5676.080000, end 5836.760000
+      Metadata:
+        title           : Sharing Started
+    Chapter #0:10: start 5836.760000, end 5890.000000
+      Metadata:
+        title           : Sharing Stopped
+  Stream #0:0(und): Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s (default)
+      Metadata:
+        handler_name    : AAC audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 pcm_s16le
+size=       5KiB time=00:00:00.44 bitrate=  91.1kbits/s speed=0.886x    size=      19KiB time=00:00:00.89 bitrate= 173.6kbits/s speed=0.873x    size=    1332KiB time=00:00:42.65 bitrate= 255.8kbits/s speed=27.6x    size=    1537KiB time=00:00:49.21 bitrate= 255.8kbits/s speed=23.9x    size=    1787KiB time=00:00:57.47 bitrate= 254.7kbits/s speed=20.5x    size=    1833KiB time=00:00:58.68 bitrate= 255.9kbits/s speed=17.6x    size=    1981KiB time=00:01:03.42 bitrate= 255.9kbits/s speed=16.5x    size=    2255KiB time=00:01:12.44 bitrate= 255.0kbits/s speed=  15x    size=    2634KiB time=00:01:24.31 bitrate= 255.9kbits/s speed=15.8x    size=    2664KiB time=00:01:25.53 bitrate= 255.1kbits/s speed=14.6x    size=    2853KiB time=00:01:31.58 bitrate= 255.2kbits/s speed=14.4x    size=    3248KiB time=00:01:43.96 bitrate= 255.9kbits/s speed=  15x    size=    4321KiB time=00:02:18.55 bitrate= 255.5kbits/s speed=18.6x    size=    7212KiB time=00:03:50.81 bitrate= 256.0kbits/s speed=  29x    size=    7641KiB time=00:04:04.54 bitrate= 256.0kbits/s speed=28.8x    size=    8485KiB time=00:04:31.80 bitrate= 255.7kbits/s speed=30.2x    size=    9458KiB time=00:05:02.94 bitrate= 255.8kbits/s speed=31.8x    size=   10919KiB time=00:05:49.59 bitrate= 255.9kbits/s speed=34.8x    size=   11724KiB time=00:06:15.45 bitrate= 255.8kbits/s speed=35.5x    size=   11724KiB time=00:06:15.45 bitrate= 255.8kbits/s speed=33.9x    size=   11812KiB time=00:06:18.27 bitrate= 255.8kbits/s speed=32.6x    size=   14168KiB time=00:07:33.40 bitrate= 256.0kbits/s speed=37.4x    size=   16203KiB time=00:08:38.78 bitrate= 255.9kbits/s speed=  41x    size=   18762KiB time=00:10:00.67 bitrate= 255.9kbits/s speed=45.6x    size=   19005KiB time=00:10:08.44 bitrate= 255.9kbits/s speed=44.4x    size=   21047KiB time=00:11:13.66 bitrate= 255.9kbits/s speed=47.4x    size=   24330KiB time=00:12:58.59 bitrate= 256.0kbits/s speed=52.7x    size=   26712KiB time=00:14:15.07 bitrate= 255.9kbits/s speed=55.9x    size=   27840KiB time=00:14:50.94 bitrate= 256.0kbits/s speed=56.3x    size=   30051KiB time=00:16:01.91 bitrate= 255.9kbits/s speed=58.8x    size=   32242KiB time=00:17:11.77 bitrate= 256.0kbits/s speed=61.1x    size=   33445KiB time=00:17:50.27 bitrate= 256.0kbits/s speed=61.5x    size=   34008KiB time=00:18:08.28 bitrate= 256.0kbits/s speed=60.7x    size=   35474KiB time=00:18:55.19 bitrate= 256.0kbits/s speed=61.6x    size=   35487KiB time=00:18:55.67 bitrate= 256.0kbits/s speed=59.9x    
+Skipping validation for ..\DB\Opens\adadr\adadr_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_14.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_15.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\agpi\agpi_03.mp4: Expected size for first two dimensions of batch2 tensor to be: [16, 94] but got: [16, 95].
+Skipping validation for ..\DB\Opens\agpi\agpi_14.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\adadr\adadr_15.mp4: Failed to load audio: 
+Failed to transcribe ..\DB\Opens\agpi\agpi_14.mp4: Failed to load audio: 
+Failed to transcribe ..\DB\Opens\aedc\aedc_14.mp4: Failed to load audio: 
+Failed to transcribe ..\DB\Opens\adadr\adadr_12.mp4: Failed to load audio: 

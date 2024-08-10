@@ -1,0 +1,495 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+Skipping validation for ..\DB\Opens\aedc\aedc_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\actint\actint_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\actint\actint_02.mp4, already passed previously.
+Course: actint, Files: 2, Directory size: 2.41 GB
+Finished processing course: actint
+Skipping validation for ..\DB\Opens\ae\ae_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_08.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_08.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_10.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_10.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_10.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_11.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_11.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_15.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_13.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_13.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_16.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_14.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ae\ae_14.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\adadr\adadr_18.mp4, already passed previously.
+Course: ae, Files: 14, Directory size: 5.00 GB
+Finished processing course: ae
+Course: adadr, Files: 12, Directory size: 2.65 GB
+Finished processing course: adadr
+Skipping validation for ..\DB\Opens\agpi\agpi_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_15.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\atipi\atipi_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_16.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\atipi\atipi_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_17.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\atipi\atipi_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_18.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_08.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\atipi\atipi_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_19.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\atipi\atipi_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_20.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\atipi\atipi_06.mp4, already passed previously.
+Course: atipi, Files: 6, Directory size: 1.32 GB
+Skipping validation for ..\DB\Opens\agpi\agpi_10.mp4, already passed previously.
+Finished processing course: atipi
+Skipping validation for ..\DB\Opens\ayp\ayp_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_21.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_11.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_22.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_08.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_23.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_13.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_24.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_14.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_10.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_25.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_15.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_11.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_16.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_26.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_27.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_17.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_13.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_08.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_18.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_28.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_14.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_19.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_29.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_15.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_20.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_10.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aedc\aedc_30.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_16.mp4, already passed previously.
+Course: aedc, Files: 30, Directory size: 5.08 GB
+Finished processing course: aedc
+Skipping validation for ..\DB\Opens\agpi\agpi_21.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_11.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_17.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\asbsgc\asbsgc_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_22.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_18.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\asbsgc\asbsgc_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_23.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_13.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_19.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\asbsgc\asbsgc_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_24.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_14.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_20.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\asbsgc\asbsgc_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_15.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_25.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\ayp\ayp_21.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\asbsgc\asbsgc_05.mp4, already passed previously.
+Course: asbsgc, Files: 5, Directory size: 0.49 GB
+Finished processing course: asbsgc
+Course: ayp, Files: 21, Directory size: 11.05 GB
+Finished processing course: ayp
+Skipping validation for ..\DB\Opens\aali\aali_16.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_26.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\dlbioim\dlbioim_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_27.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_17.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\dlbioim\dlbioim_02.mp4, already passed previously.
+Course: agpi, Files: 27, Directory size: 4.45 GB
+Finished processing course: agpi
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_18.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\dlbioim\dlbioim_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_19.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\bdnr\bdnr_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\dlbioim\dlbioim_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_20.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\bdnr\bdnr_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\dlbioim\dlbioim_05.mp4, already passed previously.
+Course: dlbioim, Files: 5, Directory size: 4.93 GB
+Finished processing course: dlbioim
+Skipping validation for ..\DB\Opens\bdnr\bdnr_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_21.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\biblioteca\biblioteca_01.mp4, already passed previously.
+Course: biblioteca, Files: 1, Directory size: 1.23 GB
+Finished processing course: biblioteca
+Skipping validation for ..\DB\Opens\bdnr\bdnr_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_22.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\brrd\brrd_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_23.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\bdnr\bdnr_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\brrd\brrd_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\bdnr\bdnr_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_24.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_08.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\brrd\brrd_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\bdnr\bdnr_08.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\brrd\brrd_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_26.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\bdnr\bdnr_09.mp4, already passed previously.
+Course: bdnr, Files: 8, Directory size: 1.14 GB
+Finished processing course: bdnr
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_10.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\brrd\brrd_05.mp4, already passed previously.
+Course: brrd, Files: 5, Directory size: 4.07 GB
+Finished processing course: brrd
+Skipping validation for ..\DB\Opens\aali\aali_27.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_11.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\aali\aali_28.mp4, already passed previously.
+Course: aali, Files: 1, Directory size: 21.11 GB
+Finished processing course: aali
+Skipping validation for ..\DB\Opens\c1\c1_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_12.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c3\c3_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c2\c2_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c3\c3_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c2\c2_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c3\c3_03.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c2\c2_04.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_15.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c2\c2_05.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_16.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c2\c2_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_17.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c2\c2_07.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\arqcomp\arqcomp_18.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c2\c2_09.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_10.mp4, already passed previously.
+Course: arqcomp, Files: 1, Directory size: 25.85 GB
+Finished processing course: arqcomp
+Skipping validation for ..\DB\Opens\c1\c1_13.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_14.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_15.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_16.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_17.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_18.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_19.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_20.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_21.mp4, already passed previously.
+Course: c3, Files: 19, Directory size: 0.68 GB
+Finished processing course: c3
+Skipping validation for ..\DB\Opens\c1\c1_22.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_23.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_24.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_25.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_26.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_27.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_28.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_29.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_30.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_31.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_32.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_33.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_34.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_35.mp4, already passed previously.
+Course: c2, Files: 34, Directory size: 1.56 GB
+Finished processing course: c2
+Skipping validation for ..\DB\Opens\c1\c1_36.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_37.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_38.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\c1\c1_39.mp4, already passed previously.
+Course: c1, Files: 39, Directory size: 8.23 GB
+Finished processing course: c1
+Course: cdi, Files: 6, Directory size: 0.00 GB
+Finished processing course: cdi
+Course: cce, Files: 6, Directory size: 0.00 GB
+Finished processing course: cce
+Course: civ, Files: 42, Directory size: 0.00 GB
+Finished processing course: civ
+Course: cdivv-2022, Files: 36, Directory size: 0.00 GB
+Finished processing course: cdivv-2022
+Course: calcvec, Files: 27, Directory size: 0.00 GB
+Finished processing course: calcvec
+Course: comp1-2024, Files: 1, Directory size: 0.00 GB
+Finished processing course: comp1-2024
+Course: cmm1, Files: 16, Directory size: 0.00 GB
+Finished processing course: cmm1
+Course: hpc, Files: 6, Directory size: 0.00 GB
+Finished processing course: hpc
+Course: cmm2, Files: 19, Directory size: 0.00 GB
+Finished processing course: cmm2
+Course: dc, Files: 3, Directory size: 0.00 GB
+Finished processing course: dc
+Course: cga, Files: 6, Directory size: 0.00 GB
+Finished processing course: cga
+Course: cmosad, Files: 6, Directory size: 0.00 GB
+Finished processing course: cmosad
+Course: cdsp, Files: 19, Directory size: 0.00 GB
+Finished processing course: cdsp
+Course: cfptt, Files: 8, Directory size: 0.00 GB
+Finished processing course: cfptt
+Course: dh, Files: 29, Directory size: 0.00 GB
+Finished processing course: dh
+Course: dl, Files: 26, Directory size: 0.00 GB
+Finished processing course: dl
+Course: etal, Files: 9, Directory size: 0.00 GB
+Finished processing course: etal
+Course: em-2024, Files: 1, Directory size: 0.00 GB
+Finished processing course: em-2024
+Course: eco, Files: 26, Directory size: 0.00 GB
+Finished processing course: eco
+Course: negsoftare-2021, Files: 21, Directory size: 0.00 GB
+Finished processing course: negsoftare-2021
+Course: ed19, Files: 28, Directory size: 0.00 GB
+Finished processing course: ed19
+Course: e1, Files: 25, Directory size: 0.00 GB
+Finished processing course: e1
+Course: e2, Files: 18, Directory size: 0.00 GB
+Finished processing course: e2
+Course: ef, Files: 9, Directory size: 0.00 GB
+Finished processing course: ef
+Course: ea1, Files: 20, Directory size: 0.00 GB
+Finished processing course: ea1
+Course: et1, Files: 11, Directory size: 0.00 GB
+Finished processing course: et1
+Course: edm, Files: 11, Directory size: 0.00 GB
+Finished processing course: edm
+Course: ie, Files: 21, Directory size: 0.00 GB
+Finished processing course: ie
+Course: est, Files: 9, Directory size: 0.00 GB
+Finished processing course: est
+Course: ep, Files: 37, Directory size: 0.00 GB
+Finished processing course: ep
+Course: en1-2023, Files: 21, Directory size: 0.00 GB
+Finished processing course: en1-2023
+Course: epst, Files: 22, Directory size: 0.00 GB
+Finished processing course: epst
+Course: emf, Files: 41, Directory size: 0.00 GB
+Finished processing course: emf
+Course: eeemt, Files: 32, Directory size: 0.00 GB
+Finished processing course: eeemt
+Course: estrm, Files: 32, Directory size: 0.00 GB
+Finished processing course: estrm
+Course: f1-2022, Files: 24, Directory size: 0.00 GB
+Finished processing course: f1-2022
+Course: fege, Files: 7, Directory size: 0.00 GB
+Finished processing course: fege
+Course: f2-2023, Files: 23, Directory size: 0.00 GB
+Finished processing course: f2-2023
+Course: f3, Files: 28, Directory size: 0.00 GB
+Finished processing course: f3
+Course: fbd-2021, Files: 14, Directory size: 0.00 GB
+Finished processing course: fbd-2021
+Course: fuaa, Files: 22, Directory size: 0.00 GB
+Finished processing course: fuaa
+Course: ft, Files: 28, Directory size: 0.00 GB
+Finished processing course: ft
+Course: fiso, Files: 16, Directory size: 0.00 GB
+Finished processing course: fiso
+Course: fpe, Files: 17, Directory size: 0.00 GB
+Finished processing course: fpe
+Course: fsi, Files: 27, Directory size: 0.00 GB
+Finished processing course: fsi
+Course: gv, Files: 22, Directory size: 0.00 GB
+Finished processing course: gv
+Course: hn, Files: 4, Directory size: 0.00 GB
+Finished processing course: hn
+Course: gal119, Files: 27, Directory size: 0.00 GB
+Finished processing course: gal119
+Course: imaginary18, Files: 2, Directory size: 0.00 GB
+Finished processing course: imaginary18
+Course: gal219, Files: 27, Directory size: 0.00 GB
+Finished processing course: gal219
+Course: gf, Files: 22, Directory size: 0.00 GB
+Finished processing course: gf
+Course: ib, Files: 11, Directory size: 0.00 GB
+Finished processing course: ib
+Course: ipam, Files: 7, Directory size: 0.00 GB
+Finished processing course: ipam
+Course: introbd-2023, Files: 14, Directory size: 0.00 GB
+Finished processing course: introbd-2023
+Course: iib, Files: 6, Directory size: 0.00 GB
+Finished processing course: iib
+Course: he2, Files: 33, Directory size: 0.00 GB
+Finished processing course: he2
+Course: fm, Files: 21, Directory size: 0.00 GB
+Finished processing course: fm
+Course: iiprod, Files: 10, Directory size: 0.00 GB
+Finished processing course: iiprod
+Course: iiee, Files: 20, Directory size: 0.00 GB
+Finished processing course: iiee
+Course: introiq-2022, Files: 9, Directory size: 0.00 GB
+Finished processing course: introiq-2022
+Course: iio-2024, Files: 24, Directory size: 0.00 GB
+Finished processing course: iio-2024
+Course: iti, Files: 27, Directory size: 0.00 GB
+Finished processing course: iti
+Course: imp, Files: 33, Directory size: 0.00 GB
+Finished processing course: imp
+Course: pln, Files: 20, Directory size: 0.00 GB
+Finished processing course: pln
+Course: maqel, Files: 8, Directory size: 0.00 GB
+Finished processing course: maqel
+Course: logica19, Files: 22, Directory size: 0.00 GB
+Finished processing course: logica19
+Course: mat2t, Files: 14, Directory size: 0.00 GB
+Finished processing course: mat2t
+Course: mecap, Files: 3, Directory size: 0.00 GB
+Finished processing course: mecap
+Course: iis19, Files: 74, Directory size: 0.00 GB
+Finished processing course: iis19
+Course: md1-2022, Files: 24, Directory size: 0.00 GB
+Finished processing course: md1-2022
+Course: md2, Files: 28, Directory size: 0.00 GB
+Finished processing course: md2
+Course: mcpp, Files: 7, Directory size: 0.00 GB
+Finished processing course: mcpp
+Course: mecn-2023, Files: 29, Directory size: 0.00 GB
+Finished processing course: mecn-2023
+Course: metn-2023, Files: 26, Directory size: 0.00 GB
+Finished processing course: metn-2023
+Course: mpd, Files: 20, Directory size: 0.00 GB
+Finished processing course: mpd
+Course: metfis, Files: 41, Directory size: 0.00 GB
+Finished processing course: metfis
+Course: optincert, Files: 15, Directory size: 0.00 GB
+Finished processing course: optincert
+Course: paar, Files: 8, Directory size: 0.00 GB
+Finished processing course: paar
+Course: nr, Files: 26, Directory size: 0.00 GB
+Finished processing course: nr
+Course: pmm, Files: 5, Directory size: 0.00 GB
+Finished processing course: pmm
+Course: pqg, Files: 13, Directory size: 0.00 GB
+Finished processing course: pqg
+Course: p2-2023, Files: 11, Directory size: 0.00 GB
+Finished processing course: p2-2023
+Course: audiodsp, Files: 20, Directory size: 0.00 GB
+Finished processing course: audiodsp
+Course: pye-2022, Files: 25, Directory size: 0.00 GB
+Finished processing course: pye-2022
+Course: p1, Files: 21, Directory size: 0.00 GB
+Finished processing course: p1
+Course: pie, Files: 9, Directory size: 0.00 GB
+Finished processing course: pie
+Course: p-logica, Files: 15, Directory size: 0.00 GB
+Finished processing course: p-logica
+Course: p4, Files: 19, Directory size: 0.00 GB
+Finished processing course: p4
+Course: peu, Files: 6, Directory size: 0.00 GB
+Finished processing course: peu
+Course: webir, Files: 8, Directory size: 0.00 GB
+Finished processing course: webir
+Course: prog3-2020, Files: 28, Directory size: 0.00 GB
+Finished processing course: prog3-2020
+Course: 2022, Files: 18, Directory size: 0.00 GB
+Finished processing course: 2022
+Course: rm1, Files: 1, Directory size: 0.00 GB
+Finished processing course: rm1
+Course: redes-2021, Files: 20, Directory size: 0.00 GB
+Finished processing course: redes-2021
+Course: rd, Files: 24, Directory size: 0.00 GB
+Finished processing course: rd
+Course: redes2, Files: 23, Directory size: 0.00 GB
+Finished processing course: redes2
+Course: granvoldat, Files: 13, Directory size: 0.00 GB
+Finished processing course: granvoldat
+Course: sisem, Files: 17, Directory size: 0.00 GB
+Finished processing course: sisem
+Course: sl1, Files: 24, Directory size: 0.00 GB
+Finished processing course: sl1
+Course: seys, Files: 37, Directory size: 0.00 GB
+Finished processing course: seys
+Course: sl2, Files: 24, Directory size: 0.00 GB
+Finished processing course: sl2
+Course: taa, Files: 14, Directory size: 0.00 GB
+Finished processing course: taa
+Course: so, Files: 26, Directory size: 0.00 GB
+Finished processing course: so
+Course: syc, Files: 25, Directory size: 0.00 GB
+Finished processing course: syc
+Course: tprog, Files: 9, Directory size: 0.00 GB
+Finished processing course: tprog
+Course: tsc-f, Files: 2, Directory size: 0.00 GB
+Finished processing course: tsc-f
+Course: tmu, Files: 1, Directory size: 0.00 GB
+Finished processing course: tmu
+Course: submt, Files: 32, Directory size: 0.00 GB
+Finished processing course: submt
+Course: tica, Files: 26, Directory size: 0.00 GB
+Finished processing course: tica
+Course: trst, Files: 25, Directory size: 0.00 GB
+Finished processing course: trst
+Course: teoleng, Files: 21, Directory size: 0.00 GB
+Finished processing course: teoleng
+Course: taagl, Files: 14, Directory size: 0.00 GB
+Finished processing course: taagl
+Course: cmat2017, Files: 17, Directory size: 0.00 GB
+Finished processing course: cmat2017
+Course: wscf2022, Files: 5, Directory size: 0.00 GB
+Finished processing course: wscf2022
+Course: tdb, Files: 34, Directory size: 0.00 GB
+Finished processing course: tdb
+Course: workshop-ggd, Files: 19, Directory size: 0.00 GB
+Finished processing course: workshop-ggd
+Course: vyo19, Files: 29, Directory size: 0.00 GB
+Finished processing course: vyo19
+Course: tdc2020, Files: 69, Directory size: 0.00 GB
+Finished processing course: tdc2020

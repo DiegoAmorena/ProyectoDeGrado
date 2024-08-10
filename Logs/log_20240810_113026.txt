@@ -1,0 +1,1 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.

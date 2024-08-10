@@ -1,0 +1,586 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+File ..\DB\Opens\ae\ae_01.mp4 passed validation checks.
+File ..\DB\Opens\actint\actint_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_01.mp4 passed validation checks.
+File ..\DB\Opens\actint\actint_02.mp4 passed validation checks.
+Course: actint, Files: 2, Directory size: 2.41 GB
+Finished processing course: actint
+File ..\DB\Opens\agpi\agpi_03.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_04.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_02.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_05.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_06.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_04.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_07.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_08.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_07.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_09.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_10.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_08.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_11.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_05.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_06.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_03.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_12.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_10.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_02.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_11.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_04.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_02.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_13.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_09.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_12.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_03.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_06.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_14.mp4 passed validation checks.
+Course: ae, Files: 14, Directory size: 5.00 GB
+Finished processing course: ae
+File ..\DB\Opens\aedc\aedc_05.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_07.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_08.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_09.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_03.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_13.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_14.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_15.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_12.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_10.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_05.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_17.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_11.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_18.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_19.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_20.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_15.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_16.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_16.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_13.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_02.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_18.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_19.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_06.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_21.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_14.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_17.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_21.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_07.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_09.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_23.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_24.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_25.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_20.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_02.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_22.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_22.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_03.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_27.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_26.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_04.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_23.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_10.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_05.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_24.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_12.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_28.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_06.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_25.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_07.mp4 passed validation checks.
+File ..\DB\Opens\aedc\aedc_29.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_08.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_26.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_27.mp4 passed validation checks.
+Course: agpi, Files: 27, Directory size: 4.45 GB
+Finished processing course: agpi
+File ..\DB\Opens\aedc\aedc_30.mp4 passed validation checks.
+Course: aedc, Files: 30, Directory size: 5.08 GB
+Finished processing course: aedc
+File ..\DB\Opens\ayp\ayp_10.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_11.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_12.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_09.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_14.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_13.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_15.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_01.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_15.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_16.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_18.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_18.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_17.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_16.mp4 passed validation checks.
+Course: adadr, Files: 12, Directory size: 2.65 GB
+Finished processing course: adadr
+File ..\DB\Opens\ayp\ayp_19.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_20.mp4 passed validation checks.
+File ..\DB\Opens\ayp\ayp_21.mp4 passed validation checks.
+File ..\DB\Opens\asbsgc\asbsgc_01.mp4 passed validation checks.
+Course: ayp, Files: 21, Directory size: 11.05 GB
+Finished processing course: ayp
+File ..\DB\Opens\asbsgc\asbsgc_02.mp4 passed validation checks.
+File ..\DB\Opens\asbsgc\asbsgc_03.mp4 passed validation checks.
+File ..\DB\Opens\atipi\atipi_01.mp4 passed validation checks.
+File ..\DB\Opens\dlbioim\dlbioim_01.mp4 passed validation checks.
+File ..\DB\Opens\atipi\atipi_02.mp4 passed validation checks.
+File ..\DB\Opens\dlbioim\dlbioim_02.mp4 passed validation checks.
+File ..\DB\Opens\atipi\atipi_03.mp4 passed validation checks.
+File ..\DB\Opens\atipi\atipi_04.mp4 passed validation checks.
+File ..\DB\Opens\atipi\atipi_05.mp4 passed validation checks.
+File ..\DB\Opens\asbsgc\asbsgc_05.mp4 passed validation checks.
+File ..\DB\Opens\asbsgc\asbsgc_04.mp4 passed validation checks.
+Course: asbsgc, Files: 5, Directory size: 0.49 GB
+Finished processing course: asbsgc
+File ..\DB\Opens\dlbioim\dlbioim_04.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_03.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_04.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_02.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_05.mp4 passed validation checks.
+File ..\DB\Opens\atipi\atipi_06.mp4 passed validation checks.
+Course: atipi, Files: 6, Directory size: 1.32 GB
+Finished processing course: atipi
+File ..\DB\Opens\dlbioim\dlbioim_05.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_06.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_08.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_09.mp4 passed validation checks.
+File ..\DB\Opens\dlbioim\dlbioim_03.mp4 passed validation checks.
+Course: dlbioim, Files: 5, Directory size: 4.93 GB
+Finished processing course: dlbioim
+File ..\DB\Opens\aali\aali_07.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_02.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_10.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_01.mp4 passed validation checks.
+File ..\DB\Opens\bdnr\bdnr_03.mp4 passed validation checks.
+File ..\DB\Opens\bdnr\bdnr_01.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_12.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_03.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_11.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_06.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_04.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_07.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_13.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_14.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_08.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_05.mp4 passed validation checks.
+File ..\DB\Opens\biblioteca\biblioteca_01.mp4 passed validation checks.
+Course: biblioteca, Files: 1, Directory size: 1.23 GB
+Finished processing course: biblioteca
+File ..\DB\Opens\aali\aali_16.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_11.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_14.mp4 size mismatch: expected 1.63 GB, got 1.56 GB
+File ..\DB\Opens\arqcomp\arqcomp_14.mp4 failed validation, redownloading.
+File ..\DB\Opens\aali\aali_17.mp4 passed validation checks.
+File ..\DB\Opens\bdnr\bdnr_05.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_09.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_12.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_10.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_15.mp4 passed validation checks.
+File ..\DB\Opens\bdnr\bdnr_04.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_18.mp4 passed validation checks.
+File ..\DB\Opens\brrd\brrd_01.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_15.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_19.mp4 size mismatch: expected 1.21 GB, got 1.01 GB
+File ..\DB\Opens\arqcomp\arqcomp_19.mp4 failed validation, redownloading.
+File ..\DB\Opens\bdnr\bdnr_09.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 size mismatch: expected 1.60 GB, got 1.30 GB
+File ..\DB\Opens\arqcomp\arqcomp_20.mp4 failed validation, redownloading.
+File ..\DB\Opens\arqcomp\arqcomp_16.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_17.mp4 passed validation checks.
+File ..\DB\Opens\arqcomp\arqcomp_18.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_19.mp4 passed validation checks.
+File ..\DB\Opens\bdnr\bdnr_06.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_21.mp4 passed validation checks.
+File ..\DB\Opens\bdnr\bdnr_08.mp4 passed validation checks.
+File ..\DB\Opens\brrd\brrd_03.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_20.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_23.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_24.mp4 passed validation checks.
+File ..\DB\Opens\brrd\brrd_04.mp4 passed validation checks.
+File ..\DB\Opens\brrd\brrd_05.mp4 passed validation checks.
+File ..\DB\Opens\bdnr\bdnr_07.mp4 passed validation checks.
+Course: bdnr, Files: 8, Directory size: 1.14 GB
+Finished processing course: bdnr
+File ..\DB\Opens\brrd\brrd_02.mp4 passed validation checks.
+Course: brrd, Files: 5, Directory size: 4.07 GB
+File ..\DB\Opens\arqcomp\arqcomp_13.mp4 is not playable.
+Finished processing course: brrd
+File ..\DB\Opens\arqcomp\arqcomp_13.mp4 failed validation, redownloading.
+Course: arqcomp, Files: 1, Directory size: 30.93 GB
+Finished processing course: arqcomp
+File ..\DB\Opens\aali\aali_25.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_22.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_27.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_26.mp4 passed validation checks.
+File ..\DB\Opens\aali\aali_28.mp4 passed validation checks.
+Course: aali, Files: 1, Directory size: 21.11 GB
+Finished processing course: aali
+File ..\DB\Opens\c1\c1_01.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_01.mp4 size mismatch: expected 0.45 GB, got 0.00 GB
+File ..\DB\Opens\civ\civ_01.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_02.mp4 passed validation checks.
+File ..\DB\Opens\c3\c3_01.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_03.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_02.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_02.mp4 size mismatch: expected 0.54 GB, got 0.02 GB
+File ..\DB\Opens\civ\civ_02.mp4 failed validation, redownloading.
+File ..\DB\Opens\civ\civ_03.mp4 size mismatch: expected 0.37 GB, got 0.01 GB
+File ..\DB\Opens\civ\civ_03.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_04.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_03.mp4 passed validation checks.
+File ..\DB\Opens\c3\c3_02.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_05.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_04.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_04.mp4 size mismatch: expected 0.52 GB, got 0.02 GB
+File ..\DB\Opens\civ\civ_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\civ\civ_05.mp4 size mismatch: expected 0.50 GB, got 0.50 GB
+File ..\DB\Opens\civ\civ_05.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_03.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_06.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_05.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_07.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_06.mp4 size mismatch: expected 0.46 GB, got 0.07 GB
+File ..\DB\Opens\civ\civ_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_06.mp4 passed validation checks.
+File ..\DB\Opens\c3\c3_04.mp4 size mismatch: expected 0.33 GB, got 0.04 GB
+File ..\DB\Opens\c3\c3_04.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_10.mp4 passed validation checks.
+File ..\DB\Opens\c3\c3_05.mp4 size mismatch: expected 0.32 GB, got 0.03 GB
+File ..\DB\Opens\c3\c3_05.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_06.mp4 size mismatch: expected 0.30 GB, got 0.03 GB
+File ..\DB\Opens\c3\c3_06.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_07.mp4 size mismatch: expected 0.32 GB, got 0.02 GB
+File ..\DB\Opens\c3\c3_07.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_07.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_08.mp4 size mismatch: expected 0.21 GB, got 0.06 GB
+File ..\DB\Opens\c2\c2_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\c3\c3_08.mp4 size mismatch: expected 0.31 GB, got 0.03 GB
+File ..\DB\Opens\c3\c3_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_13.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_07.mp4 size mismatch: expected 0.49 GB, got 0.03 GB
+File ..\DB\Opens\civ\civ_07.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_14.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_08.mp4 size mismatch: expected 0.45 GB, got 0.01 GB
+File ..\DB\Opens\civ\civ_08.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_10.mp4 size mismatch: expected 0.23 GB, got 0.05 GB
+File ..\DB\Opens\c2\c2_10.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_15.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_09.mp4 size mismatch: expected 0.38 GB, got 0.02 GB
+File ..\DB\Opens\civ\civ_09.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_09.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_16.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_11.mp4 size mismatch: expected 0.26 GB, got 0.07 GB
+File ..\DB\Opens\c2\c2_11.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_12.mp4 size mismatch: expected 0.25 GB, got 0.19 GB
+File ..\DB\Opens\c2\c2_12.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_17.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_18.mp4 passed validation checks.
+File ..\DB\Opens\c2\c2_13.mp4 size mismatch: expected 0.25 GB, got 0.00 GB
+File ..\DB\Opens\c2\c2_13.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_19.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_20.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_21.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_22.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_23.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_24.mp4 passed validation checks.
+Course: c3, Files: 19, Directory size: 0.82 GB
+Finished processing course: c3
+File ..\DB\Opens\c1\c1_25.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_26.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_27.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_28.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_29.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_30.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_31.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_32.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_33.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_34.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_35.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_36.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_37.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_10.mp4 size mismatch: expected 0.42 GB, got 0.01 GB
+File ..\DB\Opens\civ\civ_10.mp4 failed validation, redownloading.
+File ..\DB\Opens\c1\c1_38.mp4 passed validation checks.
+File ..\DB\Opens\c1\c1_39.mp4 passed validation checks.
+File ..\DB\Opens\civ\civ_11.mp4 size mismatch: expected 0.42 GB, got 0.17 GB
+File ..\DB\Opens\civ\civ_11.mp4 failed validation, redownloading.
+Course: c1, Files: 39, Directory size: 8.23 GB
+Finished processing course: c1
+File ..\DB\Opens\c2\c2_14.mp4 size mismatch: expected 0.32 GB, got 0.15 GB
+File ..\DB\Opens\c2\c2_14.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_15.mp4 size mismatch: expected 0.36 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_15.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_16.mp4 size mismatch: expected 0.21 GB, got 0.00 GB
+File ..\DB\Opens\c2\c2_16.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_17.mp4 size mismatch: expected 0.24 GB, got 0.04 GB
+File ..\DB\Opens\c2\c2_17.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_18.mp4 size mismatch: expected 0.27 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_18.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_19.mp4 size mismatch: expected 0.22 GB, got 0.03 GB
+File ..\DB\Opens\c2\c2_19.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_20.mp4 size mismatch: expected 0.20 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_20.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_21.mp4 size mismatch: expected 0.31 GB, got 0.03 GB
+File ..\DB\Opens\c2\c2_21.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_22.mp4 size mismatch: expected 0.30 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_22.mp4 failed validation, redownloading.
+File ..\DB\Opens\cdivv-2022\cdivv-2022_19.mp4 size mismatch: expected 1.23 GB, got 0.97 GB
+File ..\DB\Opens\cdivv-2022\cdivv-2022_19.mp4 failed validation, redownloading.
+File ..\DB\Opens\cdivv-2022\cdivv-2022_24.mp4 size mismatch: expected 1.00 GB, got 0.02 GB
+File ..\DB\Opens\cdivv-2022\cdivv-2022_24.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_23.mp4 size mismatch: expected 0.31 GB, got 0.04 GB
+File ..\DB\Opens\c2\c2_23.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_24.mp4 size mismatch: expected 0.32 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_24.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_25.mp4 size mismatch: expected 0.33 GB, got 0.04 GB
+File ..\DB\Opens\c2\c2_25.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_26.mp4 size mismatch: expected 0.35 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_26.mp4 failed validation, redownloading.
+File ..\DB\Opens\cdivv-2022\cdivv-2022_34.mp4 size mismatch: expected 0.52 GB, got 0.00 GB
+File ..\DB\Opens\cdivv-2022\cdivv-2022_34.mp4 failed validation, redownloading.
+Course: cdivv-2022, Files: 36, Directory size: 1.00 GB
+Finished processing course: cdivv-2022
+Course: cdi, Files: 6, Directory size: 0.00 GB
+Finished processing course: cdi
+Course: calcvec, Files: 27, Directory size: 0.00 GB
+Finished processing course: calcvec
+Course: cce, Files: 6, Directory size: 0.00 GB
+Finished processing course: cce
+File ..\DB\Opens\c2\c2_27.mp4 size mismatch: expected 0.35 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_27.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_28.mp4 size mismatch: expected 0.31 GB, got 0.10 GB
+File ..\DB\Opens\c2\c2_28.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_29.mp4 size mismatch: expected 0.28 GB, got 0.01 GB
+File ..\DB\Opens\c2\c2_29.mp4 failed validation, redownloading.
+File ..\DB\Opens\c2\c2_30.mp4 size mismatch: expected 0.29 GB, got 0.00 GB
+File ..\DB\Opens\c2\c2_30.mp4 failed validation, redownloading.
+Course: c2, Files: 34, Directory size: 2.44 GB
+Finished processing course: c2
+Course: civ, Files: 42, Directory size: 0.87 GB
+Finished processing course: civ
+Course: comp1-2024, Files: 1, Directory size: 0.00 GB
+Finished processing course: comp1-2024
+Course: hpc, Files: 6, Directory size: 0.00 GB
+Finished processing course: hpc
+Course: cdsp, Files: 19, Directory size: 0.00 GB
+Finished processing course: cdsp
+Course: cga, Files: 6, Directory size: 0.00 GB
+Finished processing course: cga
+Course: dc, Files: 3, Directory size: 0.00 GB
+Finished processing course: dc
+Course: cmm2, Files: 19, Directory size: 0.00 GB
+Finished processing course: cmm2
+Course: cmm1, Files: 16, Directory size: 0.00 GB
+Finished processing course: cmm1
+Course: cfptt, Files: 8, Directory size: 0.00 GB
+Finished processing course: cfptt
+Course: cmosad, Files: 6, Directory size: 0.00 GB
+Finished processing course: cmosad
+Course: dh, Files: 29, Directory size: 0.00 GB
+Finished processing course: dh
+Course: dl, Files: 26, Directory size: 0.00 GB
+Finished processing course: dl
+Course: eco, Files: 26, Directory size: 0.00 GB
+Finished processing course: eco
+Course: em-2024, Files: 1, Directory size: 0.00 GB
+Finished processing course: em-2024
+Course: etal, Files: 9, Directory size: 0.00 GB
+Finished processing course: etal
+Course: e1, Files: 25, Directory size: 0.00 GB
+Finished processing course: e1
+Course: ed19, Files: 28, Directory size: 0.00 GB
+Finished processing course: ed19
+Course: e2, Files: 18, Directory size: 0.00 GB
+Finished processing course: e2
+Course: ep, Files: 37, Directory size: 0.00 GB
+Finished processing course: ep
+Course: ea1, Files: 20, Directory size: 0.00 GB
+Finished processing course: ea1
+Course: ef, Files: 9, Directory size: 0.00 GB
+Finished processing course: ef
+Course: et1, Files: 11, Directory size: 0.00 GB
+Finished processing course: et1
+Course: edm, Files: 11, Directory size: 0.00 GB
+Finished processing course: edm
+Course: ie, Files: 21, Directory size: 0.00 GB
+Finished processing course: ie
+Course: est, Files: 9, Directory size: 0.00 GB
+Finished processing course: est
+Course: en1-2023, Files: 21, Directory size: 0.00 GB
+Finished processing course: en1-2023
+Course: emf, Files: 41, Directory size: 0.00 GB
+Finished processing course: emf
+Course: eeemt, Files: 32, Directory size: 0.00 GB
+Finished processing course: eeemt
+Course: f1-2022, Files: 24, Directory size: 0.00 GB
+Finished processing course: f1-2022
+Course: epst, Files: 22, Directory size: 0.00 GB
+Finished processing course: epst
+Course: negsoftare-2021, Files: 21, Directory size: 0.00 GB
+Finished processing course: negsoftare-2021
+Course: estrm, Files: 32, Directory size: 0.00 GB
+Finished processing course: estrm
+Course: f2-2023, Files: 23, Directory size: 0.00 GB
+Finished processing course: f2-2023
+Course: fuaa, Files: 22, Directory size: 0.00 GB
+Finished processing course: fuaa
+Course: fege, Files: 7, Directory size: 0.00 GB
+Finished processing course: fege
+Course: ft, Files: 28, Directory size: 0.00 GB
+Finished processing course: ft
+Course: fbd-2021, Files: 14, Directory size: 0.00 GB
+Finished processing course: fbd-2021
+Course: fpe, Files: 17, Directory size: 0.00 GB
+Finished processing course: fpe
+Course: fsi, Files: 27, Directory size: 0.00 GB
+Finished processing course: fsi
+Course: fiso, Files: 16, Directory size: 0.00 GB
+Finished processing course: fiso
+Course: f3, Files: 28, Directory size: 0.00 GB
+Finished processing course: f3
+Course: gv, Files: 22, Directory size: 0.00 GB
+Finished processing course: gv
+Course: hn, Files: 4, Directory size: 0.00 GB
+Finished processing course: hn
+Course: gf, Files: 22, Directory size: 0.00 GB
+Finished processing course: gf
+Course: imaginary18, Files: 2, Directory size: 0.00 GB
+Finished processing course: imaginary18
+Course: gal219, Files: 27, Directory size: 0.00 GB
+Finished processing course: gal219
+Course: he2, Files: 33, Directory size: 0.00 GB
+Finished processing course: he2
+Course: ipam, Files: 7, Directory size: 0.00 GB
+Finished processing course: ipam
+Course: ib, Files: 11, Directory size: 0.00 GB
+Finished processing course: ib
+Course: gal119, Files: 27, Directory size: 0.00 GB
+Finished processing course: gal119
+Course: fm, Files: 21, Directory size: 0.00 GB
+Finished processing course: fm
+Course: iiee, Files: 20, Directory size: 0.00 GB
+Finished processing course: iiee
+Course: iib, Files: 6, Directory size: 0.00 GB
+Finished processing course: iib
+Course: introiq-2022, Files: 9, Directory size: 0.00 GB
+Finished processing course: introiq-2022
+Course: iiprod, Files: 10, Directory size: 0.00 GB
+Finished processing course: iiprod
+Course: iio-2024, Files: 24, Directory size: 0.00 GB
+Finished processing course: iio-2024
+Course: introbd-2023, Files: 14, Directory size: 0.00 GB
+Finished processing course: introbd-2023
+Course: iti, Files: 27, Directory size: 0.00 GB
+Finished processing course: iti
+Course: pln, Files: 20, Directory size: 0.00 GB
+Finished processing course: pln
+Course: imp, Files: 33, Directory size: 0.00 GB
+Finished processing course: imp
+Course: maqel, Files: 8, Directory size: 0.00 GB
+Finished processing course: maqel
+Course: iis19, Files: 74, Directory size: 0.00 GB
+Finished processing course: iis19
+Course: mat2t, Files: 14, Directory size: 0.00 GB
+Finished processing course: mat2t
+Course: mecap, Files: 3, Directory size: 0.00 GB
+Finished processing course: mecap
+Course: md1-2022, Files: 24, Directory size: 0.00 GB
+Finished processing course: md1-2022
+Course: logica19, Files: 22, Directory size: 0.00 GB
+Finished processing course: logica19
+Course: mecn-2023, Files: 29, Directory size: 0.00 GB
+Finished processing course: mecn-2023
+Course: mcpp, Files: 7, Directory size: 0.00 GB
+Finished processing course: mcpp
+Course: metn-2023, Files: 26, Directory size: 0.00 GB
+Finished processing course: metn-2023
+Course: md2, Files: 28, Directory size: 0.00 GB
+Finished processing course: md2
+Course: nr, Files: 26, Directory size: 0.00 GB
+Finished processing course: nr
+Course: optincert, Files: 15, Directory size: 0.00 GB
+Finished processing course: optincert
+Course: metfis, Files: 41, Directory size: 0.00 GB
+Finished processing course: metfis
+Course: mpd, Files: 20, Directory size: 0.00 GB
+Finished processing course: mpd
+Course: paar, Files: 8, Directory size: 0.00 GB
+Finished processing course: paar
+Course: pmm, Files: 5, Directory size: 0.00 GB
+Finished processing course: pmm
+Course: pqg, Files: 13, Directory size: 0.00 GB
+Finished processing course: pqg
+Course: p1, Files: 21, Directory size: 0.00 GB
+Finished processing course: p1
+Course: audiodsp, Files: 20, Directory size: 0.00 GB
+Finished processing course: audiodsp
+Course: p2-2023, Files: 11, Directory size: 0.00 GB
+Finished processing course: p2-2023
+Course: pye-2022, Files: 25, Directory size: 0.00 GB
+Finished processing course: pye-2022
+Course: p-logica, Files: 15, Directory size: 0.00 GB
+Finished processing course: p-logica
+Course: pie, Files: 9, Directory size: 0.00 GB
+Finished processing course: pie
+Course: p4, Files: 19, Directory size: 0.00 GB
+Finished processing course: p4
+Course: peu, Files: 6, Directory size: 0.00 GB
+Finished processing course: peu
+Course: webir, Files: 8, Directory size: 0.00 GB
+Finished processing course: webir
+Course: prog3-2020, Files: 28, Directory size: 0.00 GB
+Finished processing course: prog3-2020
+Course: 2022, Files: 18, Directory size: 0.00 GB
+Finished processing course: 2022
+Course: rm1, Files: 1, Directory size: 0.00 GB
+Finished processing course: rm1
+Course: redes-2021, Files: 20, Directory size: 0.00 GB
+Finished processing course: redes-2021
+Course: rd, Files: 24, Directory size: 0.00 GB
+Finished processing course: rd
+Course: seys, Files: 37, Directory size: 0.00 GB
+Finished processing course: seys
+Course: granvoldat, Files: 13, Directory size: 0.00 GB
+Finished processing course: granvoldat
+Course: redes2, Files: 23, Directory size: 0.00 GB
+Finished processing course: redes2
+Course: sisem, Files: 17, Directory size: 0.00 GB
+Finished processing course: sisem
+Course: sl1, Files: 24, Directory size: 0.00 GB
+Finished processing course: sl1
+Course: sl2, Files: 24, Directory size: 0.00 GB
+Finished processing course: sl2
+Course: so, Files: 26, Directory size: 0.00 GB
+Finished processing course: so
+Course: syc, Files: 25, Directory size: 0.00 GB
+Finished processing course: syc
+Course: taa, Files: 14, Directory size: 0.00 GB
+Finished processing course: taa
+Course: tprog, Files: 9, Directory size: 0.00 GB
+Finished processing course: tprog
+Course: tmu, Files: 1, Directory size: 0.00 GB
+Finished processing course: tmu
+Course: tsc-f, Files: 2, Directory size: 0.00 GB
+Finished processing course: tsc-f
+Course: submt, Files: 32, Directory size: 0.00 GB
+Finished processing course: submt
+Course: tica, Files: 26, Directory size: 0.00 GB
+Finished processing course: tica
+Course: teoleng, Files: 21, Directory size: 0.00 GB
+Finished processing course: teoleng
+Course: trst, Files: 25, Directory size: 0.00 GB
+Finished processing course: trst
+Course: tdb, Files: 34, Directory size: 0.00 GB
+Finished processing course: tdb
+Course: taagl, Files: 14, Directory size: 0.00 GB
+Finished processing course: taagl
+Course: wscf2022, Files: 5, Directory size: 0.00 GB
+Finished processing course: wscf2022
+Course: vyo19, Files: 29, Directory size: 0.00 GB
+Finished processing course: vyo19
+Course: workshop-ggd, Files: 19, Directory size: 0.00 GB
+Finished processing course: workshop-ggd
+Course: tdc2020, Files: 69, Directory size: 0.00 GB
+Finished processing course: tdc2020
+Course: cmat2017, Files: 17, Directory size: 0.00 GB
+Finished processing course: cmat2017

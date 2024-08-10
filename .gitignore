@@ -1,5 +1,4 @@
 *.mp4
 *.pyc
-Scripts/a.py
 Scripts/env1/*
-activate.bat
+activate

@@ -1,0 +1,254 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+File ..\DB\Opens\aedc\aedc_01.mp4 passed validation checks.
+File ..\DB\Opens\actint\actint_01.mp4 passed validation checks.
+File ..\DB\Opens\agpi\agpi_01.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\actint\actint_01.mp4: Failed to load audio: ffmpeg version 7.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59.  8.100 / 59.  8.100
+  libavcodec     61.  3.100 / 61.  3.100
+  libavformat    61.  1.100 / 61.  1.100
+  libavdevice    61.  1.100 / 61.  1.100
+  libavfilter    10.  1.100 / 10.  1.100
+  libswscale      8.  1.100 /  8.  1.100
+  libswresample   5.  1.100 /  5.  1.100
+  libpostproc    58.  1.100 / 58.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '..\DB\Opens\actint\actint_01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf59.27.100
+  Duration: 01:50:41.75, start: 0.000000, bitrate: 1320 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1183 kb/s, 50 fps, 50 tbr, 12800 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc59.37.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Output #0, s16le, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.1.100
+  Stream #0:0(und): Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 pcm_s16le
+size=    3205KiB time=00:01:42.56 bitrate= 255.9kbits/s speed= 198x    size=    7937KiB time=00:04:14.16 bitrate= 255.8kbits/s speed= 246x    size=   12258KiB time=00:06:32.44 bitrate= 255.9kbits/s speed= 253x    size=   17464KiB time=00:09:18.86 bitrate= 256.0kbits/s speed= 270x    size=   22597KiB time=00:12:03.11 bitrate= 256.0kbits/s speed= 280x    size=   27343KiB time=00:14:34.98 bitrate= 256.0kbits/s speed= 283x    size=   32495KiB time=00:17:19.87 bitrate= 256.0kbits/s speed= 288x    size=   38033KiB time=00:20:17.23 bitrate= 256.0kbits/s speed= 295x    size=   42563KiB time=00:22:42.02 bitrate= 256.0kbits/s speed= 294x    size=   47967KiB time=00:25:34.95 bitrate= 256.0kbits/s speed= 298x    size=   51371KiB time=00:27:23.88 bitrate= 256.0kbits/s speed= 290x    size=   54953KiB time=00:29:18.69 bitrate= 256.0kbits/s speed= 284x    size=   58403KiB time=00:31:08.90 bitrate= 256.0kbits/s speed= 279x    size=   62643KiB time=00:33:24.62 bitrate= 256.0kbits/s speed= 277x    size=   68533KiB time=00:36:33.23 bitrate= 256.0kbits/s speed= 284x    size=   69710KiB time=00:37:10.74 bitrate= 256.0kbits/s speed= 271x    size=   70968KiB time=00:37:50.99 bitrate= 256.0kbits/s speed= 258x    size=   72973KiB time=00:38:55.14 bitrate= 256.0kbits/s speed= 239x    size=   74323KiB time=00:39:38.51 bitrate= 256.0kbits/s speed= 229x    size=   75723KiB time=00:40:23.31 bitrate= 256.0kbits/s speed= 215x    size=   75795KiB time=00:40:25.62 bitrate= 256.0kbits/s speed= 204x    size=   76672KiB time=00:40:53.52 bitrate= 256.0kbits/s speed= 195x    size=   77099KiB time=00:41:07.34 bitrate= 256.0kbits/s speed= 188x    size=   77695KiB time=00:41:26.42 bitrate= 256.0kbits/s speed= 182x    size=   78583KiB time=00:41:54.66 bitrate= 256.0kbits/s speed= 178x    size=   79585KiB time=00:42:26.75 bitrate= 256.0kbits/s speed= 174x    size=   80475KiB time=00:42:55.40 bitrate= 256.0kbits/s speed= 170x    size=   81346KiB time=00:43:23.26 bitrate= 256.0kbits/s speed= 166x    size=   83096KiB time=00:44:19.26 bitrate= 256.0kbits/s speed= 164x    size=   83792KiB time=00:44:41.53 bitrate= 256.0kbits/s speed= 160x    size=   84373KiB time=00:44:59.94 bitrate= 256.0kbits/s speed= 157x    size=   85132KiB time=00:45:24.24 bitrate= 256.0kbits/s speed= 153x    size=   85568KiB time=00:45:38.19 bitrate= 256.0kbits/s speed= 150x    size=   86735KiB time=00:46:15.72 bitrate= 256.0kbits/s speed= 148x    size=   87577KiB time=00:46:42.49 bitrate= 256.0kbits/s speed= 145x    size=   88528KiB time=00:47:12.91 bitrate= 256.0kbits/s speed= 143x    size=   90438KiB time=00:48:14.20 bitrate= 256.0kbits/s speed= 142x    size=   92657KiB time=00:49:25.05 bitrate= 256.0kbits/s speed= 142x    size=   94203KiB time=00:50:14.50 bitrate= 256.0kbits/s speed= 141x    size=   94791KiB time=00:50:33.32 bitrate= 256.0kbits/s speed= 139x    size=   95858KiB time=00:51:07.64 bitrate= 256.0kbits/s speed= 137x    size=   95925KiB time=00:51:09.60 bitrate= 256.0kbits/s speed= 134x    size=   97267KiB time=00:51:52.57 bitrate= 256.0kbits/s speed= 133x    size=   98180KiB time=00:52:21.78 bitrate= 256.0kbits/s speed= 131x    size=   98788KiB time=00:52:41.40 bitrate= 256.0kbits/s speed= 129x    size=   99661KiB time=00:53:09.18 bitrate= 256.0kbits/s speed= 128x    size=  101354KiB time=00:54:03.34 bitrate= 256.0kbits/s speed= 127x    size=  102871KiB time=00:54:51.90 bitrate= 256.0kbits/s speed= 127x    size=  104059KiB time=00:55:29.91 bitrate= 256.0kbits/s speed= 125x    size=  104855KiB time=00:55:55.39 bitrate= 256.0kbits/s speed= 124x    size=  105749KiB time=00:56:24.16 bitrate= 256.0kbits/s speed= 123x    size=  106205KiB time=00:56:38.56 bitrate= 256.0kbits/s speed= 121x    size=  107741KiB time=00:57:27.72 bitrate= 256.0kbits/s speed= 121x    size=  108645KiB time=00:57:56.67 bitrate= 256.0kbits/s speed= 119x    size=  109329KiB time=00:58:18.70 bitrate= 256.0kbits/s speed= 118x    size=  110389KiB time=00:58:52.45 bitrate= 256.0kbits/s speed= 117x    size=  111133KiB time=00:59:16.26 bitrate= 256.0kbits/s speed= 116x    size=  112669KiB time=01:00:05.43 bitrate= 256.0kbits/s speed= 116x    size=  113823KiB time=01:00:42.34 bitrate= 256.0kbits/s speed= 115x    size=  115069KiB time=01:01:22.40 bitrate= 256.0kbits/s speed= 114x    size=  116685KiB time=01:02:13.95 bitrate= 256.0kbits/s speed= 114x    size=  117939KiB time=01:02:54.07 bitrate= 256.0kbits/s speed= 114x    size=  120663KiB time=01:04:21.39 bitrate= 256.0kbits/s speed= 114x    size=  123285KiB time=01:05:45.15 bitrate= 256.0kbits/s speed= 115x    size=  123747KiB time=01:05:59.89 bitrate= 256.0kbits/s speed= 114x    
+Failed to transcribe ..\DB\Opens\ae\ae_01.mp4: Failed to load audio: ffmpeg version 7.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59.  8.100 / 59.  8.100
+  libavcodec     61.  3.100 / 61.  3.100
+  libavformat    61.  1.100 / 61.  1.100
+  libavdevice    61.  1.100 / 61.  1.100
+  libavfilter    10.  1.100 / 10.  1.100
+  libswscale      8.  1.100 /  8.  1.100
+  libswresample   5.  1.100 /  5.  1.100
+  libpostproc    58.  1.100 / 58.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '..\DB\Opens\ae\ae_01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    copyright       : OpenFING
+    track           : 1
+    artist          : OpenFING
+    album           : 
+    comment         : 
+    date            : 2015
+    genre           : 
+    title           : Algoritmos Evolutivos - Clase 01r
+    encoder         : Lavf54.20.4
+  Duration: 01:22:03.48, start: 0.000000, bitrate: 631 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 495 kb/s, 25 fps, 25 tbr, 25 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 130 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Output #0, s16le, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    copyright       : OpenFING
+    track           : 1
+    artist          : OpenFING
+    album           : 
+    comment         : 
+    date            : 2015
+    genre           : 
+    title           : Algoritmos Evolutivos - Clase 01r
+    encoder         : Lavf61.1.100
+  Stream #0:0(und): Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 pcm_s16le
+size=    5305KiB time=00:02:49.76 bitrate= 256.0kbits/s speed= 322x    size=   10413KiB time=00:05:33.41 bitrate= 255.9kbits/s speed= 319x    size=   15245KiB time=00:08:07.84 bitrate= 256.0kbits/s speed= 313x    size=   21107KiB time=00:11:15.60 bitrate= 255.9kbits/s speed= 326x    size=   26511KiB time=00:14:08.36 bitrate= 256.0kbits/s speed= 328x    size=   31965KiB time=00:17:02.88 bitrate= 256.0kbits/s speed= 330x    size=   37344KiB time=00:19:55.04 bitrate= 256.0kbits/s speed= 330x    size=   42887KiB time=00:22:52.39 bitrate= 256.0kbits/s speed= 332x    size=   48505KiB time=00:25:52.36 bitrate= 256.0kbits/s speed= 334x    size=   54150KiB time=00:28:52.99 bitrate= 256.0kbits/s speed= 336x    size=   57482KiB time=00:30:39.44 bitrate= 256.0kbits/s speed= 324x    size=   63238KiB time=00:33:43.63 bitrate= 256.0kbits/s speed= 327x    size=   68544KiB time=00:36:33.42 bitrate= 256.0kbits/s speed= 327x    size=   73459KiB time=00:39:10.71 bitrate= 256.0kbits/s speed= 325x    size=   80074KiB time=00:42:42.38 bitrate= 256.0kbits/s speed= 331x    size=   82127KiB time=00:43:48.09 bitrate= 256.0kbits/s speed= 318x    size=   83068KiB time=00:44:18.19 bitrate= 256.0kbits/s speed= 297x    size=   85311KiB time=00:45:30.15 bitrate= 256.0kbits/s speed= 277x    size=   86520KiB time=00:46:08.66 bitrate= 256.0kbits/s speed= 264x    size=   87489KiB time=00:46:39.82 bitrate= 256.0kbits/s speed= 246x    size=   87758KiB time=00:46:48.44 bitrate= 256.0kbits/s speed= 235x    size=   88463KiB time=00:47:10.82 bitrate= 256.0kbits/s speed= 222x    size=   89808KiB time=00:47:53.87 bitrate= 256.0kbits/s speed= 216x    size=   90541KiB time=00:48:17.49 bitrate= 256.0kbits/s speed= 209x    size=   91864KiB time=00:48:59.66 bitrate= 256.0kbits/s speed= 204x    size=   92990KiB time=00:49:35.70 bitrate= 256.0kbits/s speed= 198x    size=   95049KiB time=00:50:41.57 bitrate= 256.0kbits/s speed= 194x    size=   95850KiB time=00:51:07.22 bitrate= 256.0kbits/s speed= 190x    size=   96994KiB time=00:51:43.99 bitrate= 256.0kbits/s speed= 186x    size=   97582KiB time=00:52:02.81 bitrate= 256.0kbits/s speed= 181x    size=   98875KiB time=00:52:44.00 bitrate= 256.0kbits/s speed= 178x    size=  100106KiB time=00:53:23.41 bitrate= 256.0kbits/s speed= 176x    size=  101155KiB time=00:53:57.16 bitrate= 256.0kbits/s speed= 173x    size=  102166KiB time=00:54:29.33 bitrate= 256.0kbits/s speed= 170x    size=  103405KiB time=00:55:09.16 bitrate= 256.0kbits/s speed= 167x    size=  104401KiB time=00:55:41.01 bitrate= 256.0kbits/s speed= 165x    size=  106271KiB time=00:56:40.70 bitrate= 256.0kbits/s speed= 163x    size=  107627KiB time=00:57:24.26 bitrate= 256.0kbits/s speed= 161x    size=  109035KiB time=00:58:09.15 bitrate= 256.0kbits/s speed= 160x    size=  109774KiB time=00:58:32.95 bitrate= 256.0kbits/s speed= 157x    size=  109779KiB time=00:58:33.10 bitrate= 256.0kbits/s speed= 154x    size=  110613KiB time=00:58:59.62 bitrate= 256.0kbits/s speed= 151x    size=  111598KiB time=00:59:31.15 bitrate= 256.0kbits/s speed= 149x    size=  113013KiB time=01:00:16.44 bitrate= 256.0kbits/s speed= 148x    size=  114220KiB time=01:00:55.06 bitrate= 256.0kbits/s speed= 147x    size=  115763KiB time=01:01:44.42 bitrate= 256.0kbits/s speed= 146x    size=  117281KiB time=01:02:33.00 bitrate= 256.0kbits/s speed= 144x    size=  118304KiB time=01:03:05.74 bitrate= 256.0kbits/s speed= 143x    size=  119292KiB time=01:03:37.36 bitrate= 256.0kbits/s speed= 141x    size=  121076KiB time=01:04:34.45 bitrate= 256.0kbits/s speed= 141x    size=  122087KiB time=01:05:06.98 bitrate= 256.0kbits/s speed= 139x    size=  123390KiB time=01:05:48.50 bitrate= 256.0kbits/s speed= 138x    size=  124109KiB time=01:06:11.51 bitrate= 256.0kbits/s speed= 137x    size=  124794KiB time=01:06:33.42 bitrate= 256.0kbits/s speed= 135x    size=  126201KiB time=01:07:18.44 bitrate= 256.0kbits/s speed= 134x    size=  127658KiB time=01:08:05.07 bitrate= 256.0kbits/s speed= 133x    size=  129203KiB time=01:08:54.52 bitrate= 256.0kbits/s speed= 133x    size=  130225KiB time=01:09:27.20 bitrate= 256.0kbits/s speed= 132x    size=  131928KiB time=01:10:21.71 bitrate= 256.0kbits/s speed= 131x    size=  133311KiB time=01:11:05.96 bitrate= 256.0kbits/s speed= 131x    size=  134709KiB time=01:11:50.86 bitrate= 256.0kbits/s speed= 130x    size=  137732KiB time=01:13:27.44 bitrate= 256.0kbits/s speed= 131x    size=  141270KiB time=01:15:20.66 bitrate= 256.0kbits/s speed= 132x    size=  142229KiB time=01:15:51.31 bitrate= 256.0kbits/s speed= 131x    
+File ..\DB\Opens\ae\ae_02.mp4 passed validation checks.
+File ..\DB\Opens\actint\actint_02.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\actint\actint_02.mp4: Failed to load audio: ffmpeg version 7.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59.  8.100 / 59.  8.100
+  libavcodec     61.  3.100 / 61.  3.100
+  libavformat    61.  1.100 / 61.  1.100
+  libavdevice    61.  1.100 / 61.  1.100
+  libavfilter    10.  1.100 / 10.  1.100
+  libswscale      8.  1.100 /  8.  1.100
+  libswresample   5.  1.100 /  5.  1.100
+  libpostproc    58.  1.100 / 58.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '..\DB\Opens\actint\actint_02.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf59.16.100
+  Duration: 01:37:37.39, start: 0.000000, bitrate: 2037 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1868 kb/s, 50 fps, 50 tbr, 12800 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 159 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Output #0, s16le, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.1.100
+  Stream #0:0(und): Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 pcm_s16le
+size=    6881KiB time=00:03:40.37 bitrate= 255.8kbits/s speed= 425x    size=   10317KiB time=00:05:30.34 bitrate= 255.9kbits/s speed= 319x    
+
+    title           : Algoritmos Evolutivos - Clase 02
+    encoder         : Lavf61.1.100
+  Stream #0:0(und): Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 pcm_s16le
+size=   11109KiB time=00:05:55.51 bitrate= 256.0kbits/s speed= 690x    size=   19209KiB time=00:10:14.88 bitrate= 255.9kbits/s speed= 596x    size=   24567KiB time=00:13:06.15 bitrate= 256.0kbits/s speed= 507x    
+Course: actint, Files: 0, Directory size: 2.41 GB
+File ..\DB\Opens\ae\ae_03.mp4 passed validation checks.
+File ..\DB\Opens\adadr\adadr_01.mp4 passed validation checks.
+Failed to transcribe ..\DB\Opens\ae\ae_03.mp4: Failed to load audio: ffmpeg version 7.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59.  8.100 / 59.  8.100
+  libavcodec     61.  3.100 / 61.  3.100
+  libavformat    61.  1.100 / 61.  1.100
+  libavdevice    61.  1.100 / 61.  1.100
+  libavfilter    10.  1.100 / 10.  1.100
+  libswscale      8.  1.100 /  8.  1.100
+  libswresample   5.  1.100 /  5.  1.100
+  libpostproc    58.  1.100 / 58.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '..\DB\Opens\ae\ae_03.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    copyright       : OpenFING
+    track           : 3
+    artist          : OpenFING
+    album           : 
+    comment         : 
+    date            : 2015
+    genre           : 
+    title           : Algoritmos Evolutivos - Clase 03
+    encoder         : Lavf54.20.4
+  Duration: 02:05:50.04, start: 0.000000, bitrate: 636 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 502 kb/s, 25 fps, 25 tbr, 25 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Output #0, s16le, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    copyright       : OpenFING
+    track           : 3
+    artist          : OpenFING
+    album           : 
+    comment         : 
+    date            : 2015
+    genre           : 
+    title           : Algoritmos Evolutivos - Clase 03
+    encoder         : Lavf61.1.100
+  Stream #0:0(und): Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 pcm_s16le
+size=   11191KiB time=00:05:58.12 bitrate= 256.0kbits/s speed= 701x    
+Failed to transcribe ..\DB\Opens\adadr\adadr_01.mp4: Failed to load audio: ffmpeg version 7.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59.  8.100 / 59.  8.100
+  libavcodec     61.  3.100 / 61.  3.100
+  libavformat    61.  1.100 / 61.  1.100
+  libavdevice    61.  1.100 / 61.  1.100
+  libavfilter    10.  1.100 / 10.  1.100
+  libswscale      8.  1.100 /  8.  1.100
+  libswresample   5.  1.100 /  5.  1.100
+  libpostproc    58.  1.100 / 58.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '..\DB\Opens\adadr\adadr_01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.45.100
+  Duration: 01:08:21.18, start: 0.000000, bitrate: 215 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], 77 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Output #0, s16le, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.1.100
+  Stream #0:0(und): Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 pcm_s16le
+size=   10564KiB time=00:05:38.05 bitrate= 256.0kbits/s speed= 660x    
+File ..\DB\Opens\adadr\adadr_02.mp4 passed validation checks.
+File ..\DB\Opens\ae\ae_04.mp4 passed validation checks.
