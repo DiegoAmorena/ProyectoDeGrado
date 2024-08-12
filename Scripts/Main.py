@@ -43,7 +43,7 @@ def main():
         with open(course_acronyms_path, 'r') as file:
             course_acronyms = [line.strip() for line in file if line.strip()]
 
-        with ThreadPoolExecutor(max_workers=4) as executor: 
+        with ThreadPoolExecutor(max_workers=3) as executor: 
             futures = {executor.submit(download_course_videos, acronym, course_downloader): acronym for acronym in course_acronyms}
 
             for future in as_completed(futures):

@@ -1,0 +1,309 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+Skipping validation for ..\DB\Opens\agpi\agpi_01.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\actint\actint_01.mp4, already passed previously.
+Starting transcription for agpi_01 using model tiny.
+Starting transcription for actint_01 using model tiny.
+Skipping validation for ..\DB\Opens\agpi\agpi_02.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\actint\actint_02.mp4, already passed previously.
+Starting transcription for agpi_02 using model tiny.
+Starting transcription for actint_02 using model tiny.
+Skipping validation for ..\DB\Opens\agpi\agpi_03.mp4, already passed previously.
+Starting transcription for agpi_03 using model tiny.
+Skipping validation for ..\DB\Opens\agpi\agpi_04.mp4, already passed previously.
+Starting transcription for agpi_04 using model tiny.
+Skipping validation for ..\DB\Opens\agpi\agpi_05.mp4, already passed previously.
+Starting transcription for agpi_05 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_02.mp4: The size of tensor a (15) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_06.mp4, already passed previously.
+Skipping validation for ..\DB\Opens\agpi\agpi_07.mp4, already passed previously.
+Starting transcription for agpi_06 using model tiny.
+Starting transcription for agpi_07 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_01.mp4: The size of tensor a (15) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_08.mp4, already passed previously.
+Starting transcription for agpi_08 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_03.mp4: The size of tensor a (25) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_09.mp4, already passed previously.
+Starting transcription for agpi_09 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_04.mp4: The size of tensor a (65) must match the size of tensor b (46) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_10.mp4, already passed previously.
+Starting transcription for agpi_10 using model tiny.
+Failed to transcribe ..\DB\Opens\actint\actint_01.mp4: The size of tensor a (73) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\actint\actint_02.mp4: The size of tensor a (213) must match the size of tensor b (166) at non-singleton dimension 3
+Course: actint, Files: 2, Directory size: 2.41 GB
+Finished processing course: actint
+Skipping validation for ..\DB\Opens\ae\ae_01.mp4, already passed previously.
+Starting transcription for ae_01 using model tiny.
+Skipping validation for ..\DB\Opens\ae\ae_02.mp4, already passed previously.
+Starting transcription for ae_02 using model tiny.
+Skipping validation for ..\DB\Opens\ae\ae_03.mp4, already passed previously.
+Starting transcription for ae_03 using model tiny.
+Skipping validation for ..\DB\Opens\ae\ae_04.mp4, already passed previously.
+Starting transcription for ae_04 using model tiny.
+Skipping validation for ..\DB\Opens\ae\ae_05.mp4, already passed previously.
+Starting transcription for ae_05 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_09.mp4: The size of tensor a (440) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_11.mp4, already passed previously.
+Starting transcription for agpi_11 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_06.mp4: Expected size for first two dimensions of batch2 tensor to be: [6, 222] but got: [6, 223].
+Skipping validation for ..\DB\Opens\agpi\agpi_12.mp4, already passed previously.
+Starting transcription for agpi_12 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_10.mp4: The size of tensor a (29) must match the size of tensor b (25) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_13.mp4, already passed previously.
+Starting transcription for agpi_13 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_08.mp4: The size of tensor a (56) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_14.mp4, already passed previously.
+Starting transcription for agpi_14 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_11.mp4: The size of tensor a (86) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_15.mp4, already passed previously.
+Starting transcription for agpi_15 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_05.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_06.mp4, already passed previously.
+Starting transcription for ae_06 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_13.mp4: The size of tensor a (233) must match the size of tensor b (39) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_16.mp4, already passed previously.
+Starting transcription for agpi_16 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_01.mp4: The size of tensor a (287) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_07.mp4, already passed previously.
+Starting transcription for ae_07 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_15.mp4: The size of tensor a (233) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_17.mp4, already passed previously.
+Starting transcription for agpi_17 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_02.mp4: The size of tensor a (268) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_08.mp4, already passed previously.
+Starting transcription for ae_08 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_07.mp4: Expected size for first two dimensions of batch2 tensor to be: [6, 271] but got: [6, 272].
+Skipping validation for ..\DB\Opens\agpi\agpi_18.mp4, already passed previously.
+Starting transcription for agpi_18 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_12.mp4: The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_19.mp4, already passed previously.
+Starting transcription for agpi_19 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_03.mp4: Expected size for first two dimensions of batch2 tensor to be: [6, 17] but got: [6, 6].
+Skipping validation for ..\DB\Opens\ae\ae_09.mp4, already passed previously.
+Failed to transcribe ..\DB\Opens\ae\ae_06.mp4: The size of tensor a (8) must match the size of tensor b (3) at non-singleton dimension 3
+Starting transcription for ae_09 using model tiny.
+Skipping validation for ..\DB\Opens\ae\ae_10.mp4, already passed previously.
+Starting transcription for ae_10 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_04.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_11.mp4, already passed previously.
+Starting transcription for ae_11 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_16.mp4: The size of tensor a (149) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_20.mp4, already passed previously.
+Starting transcription for agpi_20 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_17.mp4: The size of tensor a (188) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_21.mp4, already passed previously.
+Starting transcription for agpi_21 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_08.mp4: The size of tensor a (195) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_12.mp4, already passed previously.
+Starting transcription for ae_12 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_07.mp4: The size of tensor a (200) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_13.mp4, already passed previously.
+Starting transcription for ae_13 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_18.mp4: The size of tensor a (219) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_22.mp4, already passed previously.
+Starting transcription for agpi_22 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_11.mp4: The size of tensor a (234) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ae\ae_14.mp4, already passed previously.
+Starting transcription for ae_14 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_19.mp4: The size of tensor a (236) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_23.mp4, already passed previously.
+Starting transcription for agpi_23 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_10.mp4: The size of tensor a (284) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\ae\ae_09.mp4: The size of tensor a (337) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\agpi\agpi_21.mp4: The size of tensor a (264) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_24.mp4, already passed previously.
+Starting transcription for agpi_24 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_14.mp4: The size of tensor a (272) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\agpi\agpi_22.mp4: The size of tensor a (285) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_25.mp4, already passed previously.
+Starting transcription for agpi_25 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_12.mp4: The size of tensor a (8) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\agpi\agpi_14.mp4: The size of tensor a (241) must match the size of tensor b (227) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_26.mp4, already passed previously.
+Starting transcription for agpi_26 using model tiny.
+Failed to transcribe ..\DB\Opens\ae\ae_13.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+Course: ae, Files: 14, Directory size: 5.00 GB
+Finished processing course: ae
+Failed to transcribe ..\DB\Opens\agpi\agpi_20.mp4: The size of tensor a (76) must match the size of tensor b (68) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\agpi\agpi_27.mp4, already passed previously.
+Starting transcription for agpi_27 using model tiny.
+Skipping validation for ..\DB\Opens\aedc\aedc_01.mp4, already passed previously.
+Starting transcription for aedc_01 using model tiny.
+Skipping validation for ..\DB\Opens\aedc\aedc_02.mp4, already passed previously.
+Starting transcription for aedc_02 using model tiny.
+Skipping validation for ..\DB\Opens\aedc\aedc_03.mp4, already passed previously.
+Starting transcription for aedc_03 using model tiny.
+Skipping validation for ..\DB\Opens\aedc\aedc_04.mp4, already passed previously.
+Starting transcription for aedc_04 using model tiny.
+Skipping validation for ..\DB\Opens\aedc\aedc_05.mp4, already passed previously.
+Starting transcription for aedc_05 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_24.mp4: The size of tensor a (102) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\agpi\agpi_25.mp4: The size of tensor a (221) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_05.mp4: The size of tensor a (230) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_06.mp4, already passed previously.
+Starting transcription for aedc_06 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_26.mp4: The size of tensor a (241) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_04.mp4: The size of tensor a (349) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_07.mp4, already passed previously.
+Starting transcription for aedc_07 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_27.mp4: The size of tensor a (379) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_01.mp4: The size of tensor a (174) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_08.mp4, already passed previously.
+Starting transcription for aedc_08 using model tiny.
+Failed to transcribe ..\DB\Opens\agpi\agpi_23.mp4: The size of tensor a (219) must match the size of tensor b (208) at non-singleton dimension 3
+Course: agpi, Files: 27, Directory size: 4.45 GB
+Finished processing course: agpi
+Skipping validation for ..\DB\Opens\adadr\adadr_01.mp4, already passed previously.
+Starting transcription for adadr_01 using model tiny.
+Skipping validation for ..\DB\Opens\adadr\adadr_02.mp4, already passed previously.
+Starting transcription for adadr_02 using model tiny.
+Skipping validation for ..\DB\Opens\adadr\adadr_03.mp4, already passed previously.
+Starting transcription for adadr_03 using model tiny.
+Skipping validation for ..\DB\Opens\adadr\adadr_05.mp4, already passed previously.
+Starting transcription for adadr_05 using model tiny.
+Skipping validation for ..\DB\Opens\adadr\adadr_06.mp4, already passed previously.
+Starting transcription for adadr_06 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_03.mp4: The size of tensor a (23) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_09.mp4, already passed previously.
+Starting transcription for aedc_09 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_06.mp4: The size of tensor a (65) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_10.mp4, already passed previously.
+Starting transcription for aedc_10 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_02.mp4: The size of tensor a (83) must match the size of tensor b (76) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_11.mp4, already passed previously.
+Starting transcription for aedc_11 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_07.mp4: The size of tensor a (88) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_12.mp4, already passed previously.
+Starting transcription for aedc_12 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_09.mp4: The size of tensor a (91) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_13.mp4, already passed previously.
+Starting transcription for aedc_13 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_02.mp4: The size of tensor a (95) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\adadr\adadr_07.mp4, already passed previously.
+Starting transcription for adadr_07 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_03.mp4: The size of tensor a (147) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\adadr\adadr_09.mp4, already passed previously.
+Starting transcription for adadr_09 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_06.mp4: The size of tensor a (192) must match the size of tensor b (142) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\adadr\adadr_10.mp4, already passed previously.
+Starting transcription for adadr_10 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_08.mp4: The size of tensor a (171) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_14.mp4, already passed previously.
+Starting transcription for aedc_14 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_05.mp4: The size of tensor a (215) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\adadr\adadr_12.mp4, already passed previously.
+Starting transcription for adadr_12 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_07.mp4: The size of tensor a (218) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\adadr\adadr_15.mp4, already passed previously.
+Starting transcription for adadr_15 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_01.mp4: The size of tensor a (144) must match the size of tensor b (117) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\adadr\adadr_16.mp4, already passed previously.
+Starting transcription for adadr_16 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_12.mp4: The size of tensor a (208) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_15.mp4, already passed previously.
+Starting transcription for aedc_15 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_15.mp4: The size of tensor a (15) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\adadr\adadr_18.mp4, already passed previously.
+Starting transcription for adadr_18 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_14.mp4: The size of tensor a (121) must match the size of tensor b (91) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_16.mp4, already passed previously.
+Starting transcription for aedc_16 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_10.mp4: The size of tensor a (40) must match the size of tensor b (28) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_13.mp4: Expected size for first two dimensions of batch2 tensor to be: [6, 14] but got: [6, 15].
+Skipping validation for ..\DB\Opens\aedc\aedc_17.mp4, already passed previously.
+Starting transcription for aedc_17 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_10.mp4: The size of tensor a (21) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_18.mp4, already passed previously.
+Starting transcription for aedc_18 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_16.mp4: The size of tensor a (33) must match the size of tensor b (30) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_11.mp4: The size of tensor a (49) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_19.mp4, already passed previously.
+Starting transcription for aedc_19 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_12.mp4: The size of tensor a (77) must match the size of tensor b (39) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\adadr\adadr_09.mp4: The size of tensor a (82) must match the size of tensor b (59) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_15.mp4: The size of tensor a (59) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_20.mp4, already passed previously.
+Starting transcription for aedc_20 using model tiny.
+Failed to transcribe ..\DB\Opens\adadr\adadr_18.mp4: Expected size for first two dimensions of batch2 tensor to be: [6, 106] but got: [6, 105].
+Course: adadr, Files: 12, Directory size: 2.65 GB
+Finished processing course: adadr
+Skipping validation for ..\DB\Opens\ayp\ayp_01.mp4, already passed previously.
+Starting transcription for ayp_01 using model tiny.
+Skipping validation for ..\DB\Opens\ayp\ayp_02.mp4, already passed previously.
+Starting transcription for ayp_02 using model tiny.
+Skipping validation for ..\DB\Opens\ayp\ayp_03.mp4, already passed previously.
+Starting transcription for ayp_03 using model tiny.
+Skipping validation for ..\DB\Opens\ayp\ayp_04.mp4, already passed previously.
+Starting transcription for ayp_04 using model tiny.
+Skipping validation for ..\DB\Opens\ayp\ayp_05.mp4, already passed previously.
+Starting transcription for ayp_05 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_17.mp4: The size of tensor a (30) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_21.mp4, already passed previously.
+Starting transcription for aedc_21 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_19.mp4: The size of tensor a (64) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_22.mp4, already passed previously.
+Starting transcription for aedc_22 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_18.mp4: The size of tensor a (115) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_23.mp4, already passed previously.
+Starting transcription for aedc_23 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_20.mp4: The size of tensor a (228) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_24.mp4, already passed previously.
+Starting transcription for aedc_24 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_16.mp4: Linear(in_features=384, out_features=384, bias=True)
+Skipping validation for ..\DB\Opens\aedc\aedc_25.mp4, already passed previously.
+Starting transcription for aedc_25 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_24.mp4: The size of tensor a (20) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_26.mp4, already passed previously.
+Starting transcription for aedc_26 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_23.mp4: The size of tensor a (9) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_27.mp4, already passed previously.
+Starting transcription for aedc_27 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_21.mp4: The size of tensor a (82) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_28.mp4, already passed previously.
+Starting transcription for aedc_28 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_22.mp4: Expected size for first two dimensions of batch2 tensor to be: [6, 43] but got: [6, 44].
+Skipping validation for ..\DB\Opens\aedc\aedc_29.mp4, already passed previously.
+Starting transcription for aedc_29 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_27.mp4: The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\aedc\aedc_30.mp4, already passed previously.
+Starting transcription for aedc_30 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_25.mp4: The size of tensor a (6) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_29.mp4: The size of tensor a (32) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_28.mp4: The size of tensor a (35) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\aedc\aedc_26.mp4: The size of tensor a (47) must match the size of tensor b (3) at non-singleton dimension 3
+Failed to transcribe ..\DB\Opens\ayp\ayp_05.mp4: The size of tensor a (69) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ayp\ayp_06.mp4, already passed previously.
+Starting transcription for ayp_06 using model tiny.
+Failed to transcribe ..\DB\Opens\ayp\ayp_02.mp4: The size of tensor a (84) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ayp\ayp_07.mp4, already passed previously.
+Starting transcription for ayp_07 using model tiny.
+Failed to transcribe ..\DB\Opens\ayp\ayp_04.mp4: The size of tensor a (321) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ayp\ayp_08.mp4, already passed previously.
+Starting transcription for ayp_08 using model tiny.
+Failed to transcribe ..\DB\Opens\ayp\ayp_01.mp4: The size of tensor a (220) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ayp\ayp_09.mp4, already passed previously.
+Starting transcription for ayp_09 using model tiny.
+Failed to transcribe ..\DB\Opens\aedc\aedc_30.mp4: The size of tensor a (70) must match the size of tensor b (28) at non-singleton dimension 3
+Course: aedc, Files: 30, Directory size: 5.08 GB
+Finished processing course: aedc
+Skipping validation for ..\DB\Opens\atipi\atipi_01.mp4, already passed previously.
+Starting transcription for atipi_01 using model tiny.
+Skipping validation for ..\DB\Opens\atipi\atipi_02.mp4, already passed previously.
+Starting transcription for atipi_02 using model tiny.
+Skipping validation for ..\DB\Opens\atipi\atipi_03.mp4, already passed previously.
+Starting transcription for atipi_03 using model tiny.
+Skipping validation for ..\DB\Opens\atipi\atipi_04.mp4, already passed previously.
+Starting transcription for atipi_04 using model tiny.
+Skipping validation for ..\DB\Opens\atipi\atipi_05.mp4, already passed previously.
+Starting transcription for atipi_05 using model tiny.
+Failed to transcribe ..\DB\Opens\ayp\ayp_06.mp4: The size of tensor a (143) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ayp\ayp_10.mp4, already passed previously.
+Starting transcription for ayp_10 using model tiny.
+Failed to transcribe ..\DB\Opens\ayp\ayp_03.mp4: Expected size for first two dimensions of batch2 tensor to be: [6, 129] but got: [6, 130].
+Failed to transcribe ..\DB\Opens\ayp\ayp_07.mp4: Expected size for first two dimensions of batch2 tensor to be: [6, 128] but got: [6, 129].
+Skipping validation for ..\DB\Opens\ayp\ayp_11.mp4, already passed previously.
+Starting transcription for ayp_11 using model tiny.
+Skipping validation for ..\DB\Opens\ayp\ayp_12.mp4, already passed previously.
+Starting transcription for ayp_12 using model tiny.
+Failed to transcribe ..\DB\Opens\ayp\ayp_09.mp4: The size of tensor a (29) must match the size of tensor b (3) at non-singleton dimension 3
+Skipping validation for ..\DB\Opens\ayp\ayp_13.mp4, already passed previously.
+Starting transcription for ayp_13 using model tiny.

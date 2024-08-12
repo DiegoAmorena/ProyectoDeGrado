@@ -27,21 +27,21 @@ class Transcriber:
             self.logger.log_message(f"Starting transcription for {video_stem} using model {self.model_name}.")
 
             # Perform the transcription
-            result = self.model.transcribe(str(video_path))
-            text = result['text']
-            detected_language = result.get('language')
+            #result = self.model.transcribe(str(video_path))
+            #text = result['text']
+            #detected_language = result.get('language')
 
             # Handle Spanish transcription
-            if detected_language == 'es' and not spanish_path.exists():
-                with open(spanish_path, "w") as f:
-                    f.write(text)
-                self.logger.log_message(f"Spanish transcription completed for {video_stem} using model {self.model_name}.")
+            #if detected_language == 'es' and not spanish_path.exists():
+                #with open(spanish_path, "w") as f:
+                    #f.write(text)
+                #self.logger.log_message(f"Spanish transcription completed for {video_stem} using model {self.model_name}.")
 
             # Handle auto-detected transcription
-            if not autodetect_path.exists():
-                with open(autodetect_path, "w") as f:
-                    f.write(text)
-                self.logger.log_message(f"Auto-detected transcription completed for {video_stem} using model {self.model_name}.")
+            #if not autodetect_path.exists():
+                #with open(autodetect_path, "w") as f:
+                    #f.write(text)
+                #self.logger.log_message(f"Auto-detected transcription completed for {video_stem} using model {self.model_name}.")
 
         except Exception as e:
             self.logger.log_message(f"Failed to transcribe {video_path}: {str(e)}")

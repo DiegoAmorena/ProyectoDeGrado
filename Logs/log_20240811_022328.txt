@@ -1,0 +1,47 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+No classes.txt found for ipnl, skipping...
+No classes.txt found for intropln, skipping...
+Finished processing course: ipnl
+Finished processing course: intropln
+Skipping validation for ..\DB\Opens\pln\pln_01.mp4, already passed previously.
+Starting transcription for pln_01 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_02.mp4, already passed previously.
+Starting transcription for pln_02 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_03.mp4, already passed previously.
+Starting transcription for pln_03 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_04.mp4, already passed previously.
+Starting transcription for pln_04 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_05.mp4, already passed previously.
+Starting transcription for pln_05 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_06.mp4, already passed previously.
+Starting transcription for pln_06 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_07.mp4, already passed previously.
+Starting transcription for pln_07 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_08.mp4, already passed previously.
+Starting transcription for pln_08 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_09.mp4, already passed previously.
+Starting transcription for pln_09 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_10.mp4, already passed previously.
+Starting transcription for pln_10 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_11.mp4, already passed previously.
+Starting transcription for pln_11 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_12.mp4, already passed previously.
+Starting transcription for pln_12 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_13.mp4, already passed previously.
+Starting transcription for pln_13 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_14.mp4, already passed previously.
+Starting transcription for pln_14 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_15.mp4, already passed previously.
+Starting transcription for pln_15 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_16.mp4, already passed previously.
+Starting transcription for pln_16 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_17.mp4, already passed previously.
+Starting transcription for pln_17 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_18.mp4, already passed previously.
+Starting transcription for pln_18 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_19.mp4, already passed previously.
+Starting transcription for pln_19 using model tiny.
+Skipping validation for ..\DB\Opens\pln\pln_20.mp4, already passed previously.
+Starting transcription for pln_20 using model tiny.
+Course: pln, Files: 20, Directory size: 8.98 GB
+Finished processing course: pln

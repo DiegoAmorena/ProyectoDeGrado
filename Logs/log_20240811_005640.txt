@@ -1,0 +1,25 @@
+CourseScraper and ClassScraper skipped as they were already run within the last week.
+No classes.txt found for ipnl, skipping...
+Finished processing course: ipnl
+Starting transcription for pln_03 using model tiny.
+Starting transcription for pln_06 using model tiny.
+Starting transcription for pln_07 using model tiny.
+Starting transcription for pln_04 using model tiny.
+Starting transcription for pln_09 using model tiny.
+Starting transcription for pln_05 using model tiny.
+Starting transcription for pln_10 using model tiny.
+Starting transcription for pln_02 using model tiny.
+Starting transcription for pln_11 using model tiny.
+Starting transcription for pln_01 using model tiny.
+Starting transcription for pln_15 using model tiny.
+Starting transcription for pln_16 using model tiny.
+Starting transcription for pln_12 using model tiny.
+Starting transcription for pln_18 using model tiny.
+Starting transcription for pln_08 using model tiny.
+Starting transcription for pln_20 using model tiny.
+Starting transcription for pln_19 using model tiny.
+Starting transcription for pln_13 using model tiny.
+Starting transcription for pln_17 using model tiny.
+Starting transcription for pln_14 using model tiny.
+Course: pln, Files: 20, Directory size: 0.00 GB
+Finished processing course: pln

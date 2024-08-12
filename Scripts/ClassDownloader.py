@@ -97,10 +97,10 @@ class ClassDownloader:
                 return
 
         # Download the video if it hasn't been validated
-        #actual_size = self.download_video(video_url, video_path, expected_size)
-        #if actual_size > 0:
-        #    if not self.is_download_complete(video_path):
-        #        self.logger.log_message(f"File {video_path} is not playable, skipping transcription.")
-        #        return
-        #    self.log_validation_pass(video_path)
-            #self.transcriber.transcribe_video(video_path, course_name)
+        actual_size = self.download_video(video_url, video_path, expected_size)
+        if actual_size > 0:
+            if not self.is_download_complete(video_path):
+                self.logger.log_message(f"File {video_path} is not playable, skipping transcription.")
+                return
+            self.log_validation_pass(video_path)
+            self.transcriber.transcribe_video(video_path, course_name)
