@@ -1,0 +1,4656 @@
+1
+00:00:00,000 --> 00:00:23,720
+La clase de hoy, que espero que no sea tan larga como el asante diore, por vuestro bien yo
+
+2
+00:00:23,720 --> 00:00:35,600
+en realidad, pues seguir. Es como una especie de curso acelerado de aprendizaco tomático,
+
+3
+00:00:35,600 --> 00:00:45,520
+van realidad de clasificación. Y es una clase, esta es la que viene son clases que las agregamos
+
+4
+00:00:45,520 --> 00:00:50,640
+hace 2 o 3 años al curso, lo comento porque en realidad muestra el tipo de evolución
+
+5
+00:00:50,640 --> 00:00:56,160
+que ha tenido algunas cosas en el apabilizado tomático, en el procedimiento de la General,
+
+6
+00:00:56,160 --> 00:01:02,840
+y en particular los métodos no me hicieran la puerta ahí en mi molestia, o pueden
+
+7
+00:01:02,840 --> 00:01:11,920
+echar a lo que están en la puerta también, si quieren aprovechar, no se encanta hacer eso,
+
+8
+00:01:11,920 --> 00:01:23,280
+que está diciendo. Así que es una clases sobre metodología, sobre clasificación, sobre problemas
+
+9
+00:01:23,280 --> 00:01:30,080
+de clasificación, visto en general, ahora mueve la motivación de porque son importantes
+
+10
+00:01:30,080 --> 00:01:38,080
+para procedamiento de guazenatural lo metodeclasificación, y visto en un punto de vista metodológico,
+
+11
+00:01:38,160 --> 00:01:42,960
+esta clase más que metarse en cuáles métodos hay de clasificación, trata de verlo
+
+12
+00:01:42,960 --> 00:01:50,960
+en general, en un marco de metodología, así como aplicamos un métodeclasificación y algunos
+
+13
+00:01:50,960 --> 00:01:57,160
+detalles que aparecen que tienen en común. La clase que viene vamos a ver cómo son o cómo
+
+14
+00:01:57,160 --> 00:02:04,800
+lucen algunos métodeclasificación muy utilizados en el procedimiento de guazenatural, pero la clase
+
+15
+00:02:04,800 --> 00:02:20,640
+de guazenatural es para entender la metodología, la clasificación, y problema de clasificación
+
+16
+00:02:20,640 --> 00:02:28,760
+es muy fácil de definir, yo tengo un conjunto de un objeto, y por particular van a ver que
+
+17
+00:02:28,760 --> 00:02:35,680
+toda la clase de hoy no hablamos de la persona de la lenguaje natural. Aplica a cualquier problema
+
+18
+00:02:35,680 --> 00:02:39,840
+de clasificación, esto que estoy hablando, lo pasa que los problemas de clasificación son muy comunes,
+
+19
+00:02:39,840 --> 00:02:47,200
+por supuesto la lenguaje natural, y algunos ya lo hemos visto, pero la clasificación es, tengo un objeto,
+
+20
+00:02:47,200 --> 00:02:58,440
+tengo un conjunto de clases, discreto, pues es infinito, pues tiene que ser discreto, no
+
+21
+00:02:58,480 --> 00:03:03,760
+real, y quiero saber aquí que la se pertenece el objeto, es un problema de clasificación,
+
+22
+00:03:03,760 --> 00:03:09,360
+es la definición de problema de clasificación, si yo quiero saber el idioma de un documento,
+
+23
+00:03:09,360 --> 00:03:15,480
+es un problema de clasificación, es decir, mapeo, a este documento le digo bueno, están
+
+24
+00:03:15,480 --> 00:03:20,480
+ingleses, pañón, no, no, no, quiero saber si una palabra lleva a tille, a crítico, no,
+
+25
+00:03:20,480 --> 00:03:25,280
+el tille, a crítico, es el que no se corresponde con la sentación, sino para distinguir
+
+26
+00:03:25,360 --> 00:03:37,200
+una palabra de otro, de un uso de otro, como el de, de, de, de, de dar y el de, de, de,
+
+27
+00:03:37,200 --> 00:03:42,200
+la preposición, ¿Tá? Eso es, un problema de clasificación, te voy a la palabra y
+
+28
+00:03:42,200 --> 00:03:45,560
+vamos a tener que decir si te tille, no, te voy a, te voy a, te voy a la palabra sin tille,
+
+29
+00:03:45,560 --> 00:03:50,960
+si yo estoy corrigiendo por ejemplo, como lo hago, no sé, pero el problema de clasificación
+
+30
+00:03:50,960 --> 00:04:01,320
+es, es, saber si una oración es especulativa, o sea, si es el tipo, yo creo que tal cosa va a suceder,
+
+31
+00:04:01,320 --> 00:04:06,760
+es un problema de clasificación, yo estoy de la, la oración, y vamos a decir, si es
+
+32
+00:04:06,760 --> 00:04:11,760
+especulativo, no, como las es, y bueno, tiene un creo, entonces como, no deja hacer un problema
+
+33
+00:04:11,760 --> 00:04:20,400
+de clasificación, un whistle, es una palabra, un whistle, es una palabra que sugiere algo, pero en
+
+34
+00:04:20,400 --> 00:04:25,640
+realidad no es la firma, es, tú si es ejemplo, tuvimos un procedero grado que tentaba detectar
+
+35
+00:04:25,640 --> 00:04:32,580
+la oise, guarda, cosas como, descuentos de hasta hasta un 90 por ciento, sugiere que son de
+
+36
+00:04:32,580 --> 00:04:37,480
+enorme descuentos, pero si puedo, yo puedo hacer un después, un 5 por ciento, y eso es un, es
+
+37
+00:04:37,480 --> 00:04:44,120
+verdad, eso es una oise, el guarda, una palabra que sugiere algo que no hace, una oise, el
+
+38
+00:04:44,120 --> 00:04:50,200
+centenso, una oise bueno, bueno, si una o, una oración es una oise, el oise quiere decir
+
+39
+00:04:50,200 --> 00:04:54,560
+es como adreja, porque los como en las como adrejas se, se, se como en la parte de dentro
+
+40
+00:04:54,560 --> 00:04:59,440
+de los hueves a la cascara, de ahí en el origen del nombre, que es una oración que no tiene
+
+41
+00:04:59,440 --> 00:05:06,160
+contenido, bueno, eso es un problema de clasificación, está, como ven, acá, es lo que,
+
+42
+00:05:14,360 --> 00:05:25,520
+como, es, tengo un premulto, este, este, me mata, me mata, este, como pueden ver, el objeto son
+
+43
+00:05:25,520 --> 00:05:30,840
+dif, el objeto diferente en cada caso, no, bueno, en este es un documento, es una palabra
+
+44
+00:05:30,840 --> 00:05:36,120
+de tu narración, está, pero todas son problemas de clasificación, nosotros hemos visto
+
+45
+00:05:36,120 --> 00:05:42,440
+otro, visto otros problemas de clasificación, identificar si una, si una comentario, una
+
+46
+00:05:42,440 --> 00:05:49,280
+película positiva o negativo, en el, en el, en el corpo que tiene usted, es saber si una
+
+47
+00:05:49,280 --> 00:05:53,400
+sentencia a partir del texto que tipo de sentencia es, es un premultoificación, es un montón de
+
+48
+00:05:53,400 --> 00:06:01,840
+problemas de clasificación, por eso son tan, es pueden estar importantes de andar los metos de clasificaciones,
+
+49
+00:06:01,840 --> 00:06:08,920
+un ejemplo, histórico de clasificación es el, en, en, en, en, en, en, en, en, hay
+
+50
+00:06:08,920 --> 00:06:16,040
+esa taseta, fíjeres que es como el papá de la estadística, por eso, por los años 30, probablemente
+
+51
+00:06:16,040 --> 00:06:22,040
+la década más importante, el siglo pasado, siempre preguntan a mí, una de los que vivió en ese
+
+52
+00:06:22,040 --> 00:06:29,440
+época fue fíjero, y una de las cosas que hizo fue tomar una taseta que se existía y utilizando
+
+53
+00:06:29,440 --> 00:06:36,600
+para hacer sus análisis predicativos, sí, fíjero fue el fundador de la estadística como
+
+54
+00:06:36,680 --> 00:06:41,320
+él conocemos, que es una cosa muy nueva a la estadística, tiene menos de 100 años, como
+
+55
+00:06:41,320 --> 00:06:47,520
+él ha conocido, estadística antera, era solo en el sentido de datos números, pero no
+
+56
+00:06:47,520 --> 00:06:51,600
+es la análisis como él entendemos y que entendemos más o menos todavía es de fíjero
+
+57
+00:06:51,600 --> 00:06:56,120
+adelante, ahí otros antes, de pedir, son, es una historia muy interesante, hay un libro
+
+58
+00:06:56,120 --> 00:07:00,320
+que se llama la, la, la, la, la, la mujer que tomaba el T, que se los recomiendo porque
+
+59
+00:07:00,320 --> 00:07:09,040
+se entretenido y habla de toda la historia estadística, y bueno, y fíjero trabajó con ese
+
+60
+00:07:09,040 --> 00:07:15,240
+taseta que es muy famoso, que tiene 150, tomaron 150 flores de una especie de híz,
+
+61
+00:07:15,240 --> 00:07:24,040
+de, en la especie de híz, hay tres clases, la setosa, la versicolor y la versillica, ¿no?
+
+62
+00:07:24,040 --> 00:07:30,200
+Y lo que sí no fue tomar esas 150 flores y medir, el ancho y el largo del petalo y
+
+63
+00:07:30,240 --> 00:07:35,440
+el sepa el header de la flore, ¿no? Entonces, tenemos un da tal ser que tiene cuatro
+
+64
+00:07:35,440 --> 00:07:41,740
+atributos y una clase, ¿no? En el problema más estábamos de la explicación que
+
+65
+00:07:41,740 --> 00:07:52,880
+existe, ¿no? Sí, acá yo, el, el, ¿el, lo es ejemplo que aparece en acá, en, en, en,
+
+66
+00:07:52,880 --> 00:07:57,200
+en, como se nos encuría el nubos, son, en ejemplos de código, que usted lo van
+
+67
+00:07:57,200 --> 00:08:02,720
+en poder acceder es parte de un libro que escribimos con Raúl Garretas sobre la aprendizaje automático
+
+68
+00:08:02,720 --> 00:08:07,240
+y que tiene algunos blogos en la web, ¿ver cómo ha oído para que esto no se me apague?
+
+69
+00:08:11,000 --> 00:08:12,400
+No sé cómo hacer.
+
+70
+00:08:14,800 --> 00:08:21,720
+No sé, van a poder ver el código asociado a este, a ver la análisis de este problema donde trata de introducir eso.
+
+71
+00:08:21,720 --> 00:08:30,720
+Bueno, acá lo que tenemos es en el corpus, tenemos cuatro filtros como le decía,
+
+72
+00:08:30,720 --> 00:08:34,720
+la medida del sepa lo de la media, el ancho del sepa lo largo del petalense.
+
+73
+00:08:34,720 --> 00:08:37,720
+Y tenemos tres clases, se tosa a ver si coloró Virginia.
+
+74
+00:08:38,720 --> 00:08:43,720
+Y por ejemplo, la primera instancia, de la vez dice, bueno, tiene 5.1 centímetros de largo de sepa,
+
+75
+00:08:43,720 --> 00:08:48,720
+los 3.5 de edad de ancho y bla bla. Socuatro número, eso lo va a tributos.
+
+76
+00:08:49,720 --> 00:08:50,720
+Bueno, vuelto.
+
+77
+00:08:54,720 --> 00:08:58,720
+A veces es un poco más complicado que sólo el número.
+
+78
+00:08:59,720 --> 00:09:06,720
+A veces, yo tengo cosas como, por ejemplo, otra tasa que es el el titánico, que son los pasajeros del titánico,
+
+79
+00:09:06,720 --> 00:09:08,720
+y una cantidad de tributos.
+
+80
+00:09:09,720 --> 00:09:14,720
+Y la clase que tratamos de predecir es si...
+
+81
+00:09:15,720 --> 00:09:20,720
+Sí, el coe, el pasajero sobrevivido o no.
+
+82
+00:09:21,720 --> 00:09:25,720
+Es otro problema de clasificación. No parece demasiado útil, porque no se suede dar muy seguido,
+
+83
+00:09:25,720 --> 00:09:27,720
+los unimiento de barcos.
+
+84
+00:09:28,720 --> 00:09:30,720
+Pero si no puedes servir para hacer análisis.
+
+85
+00:09:31,720 --> 00:09:42,720
+Entonces decir, por ejemplo, si hubo algún sejo de las personas que se agaron más hombres o más clases bajas,
+
+86
+00:09:42,720 --> 00:09:44,720
+como en la película, eso.
+
+87
+00:09:45,720 --> 00:09:48,720
+Bueno, cuestión que acá tenemos un...
+
+88
+00:09:49,720 --> 00:09:52,720
+Una tasa que es un poquito más complejo, porque tiene cosas como...
+
+89
+00:09:53,720 --> 00:09:58,720
+La clase que es un escritor, o sea que es a su vez un valor discreto,
+
+90
+00:09:59,720 --> 00:10:01,720
+si sobrevivido que está acá,
+
+91
+00:10:02,720 --> 00:10:03,720
+el nombre,
+
+92
+00:10:04,720 --> 00:10:05,720
+la edad de bla bla.
+
+93
+00:10:06,720 --> 00:10:08,720
+Donde se embarcó el destino,
+
+94
+00:10:09,720 --> 00:10:12,720
+la habitación de la que estaba, el número de tíquete, el bote y el sexo.
+
+95
+00:10:14,720 --> 00:10:15,720
+Está claro.
+
+96
+00:10:16,720 --> 00:10:19,720
+Está claro de admirarlo así no más que este ataset.
+
+97
+00:10:20,720 --> 00:10:23,720
+Algunos atributos tienen pinta de servir para clasificar, bueno,
+
+98
+00:10:23,720 --> 00:10:26,720
+y problemas de clasificación y saber si sobrevivido no, o sea que es uno o cero.
+
+99
+00:10:27,720 --> 00:10:29,720
+Está claro que hay algunos atributos que no parece ser muy útil
+
+100
+00:10:29,720 --> 00:10:30,720
+y para la clasificación.
+
+101
+00:10:31,720 --> 00:10:32,720
+Por ejemplo,
+
+102
+00:10:33,720 --> 00:10:35,720
+el nombre.
+
+103
+00:10:36,720 --> 00:10:37,720
+Ahora voy a ir al nombre, pero antes,
+
+104
+00:10:38,720 --> 00:10:41,720
+por ejemplo, quiero hablar de el destino, por ejemplo.
+
+105
+00:10:42,720 --> 00:10:45,720
+A priori no parece muy útil el destino,
+
+106
+00:10:46,720 --> 00:10:51,720
+el nombre es un útil,
+
+107
+00:10:52,720 --> 00:10:56,720
+porque nos permite saber exactamente si sobrevivido no.
+
+108
+00:10:59,720 --> 00:11:01,720
+¿Cuál es el problema que tiene el nombre?
+
+109
+00:11:03,720 --> 00:11:04,720
+¿Qué no hace?
+
+110
+00:11:05,720 --> 00:11:07,720
+Porque solo va a funcionar para decir, vamos a volver sobre eso.
+
+111
+00:11:08,720 --> 00:11:09,720
+Está claro que no sirve,
+
+112
+00:11:10,720 --> 00:11:13,720
+pero no sirve por porque su correlación es demasiado.
+
+113
+00:11:14,720 --> 00:11:16,720
+Ahora vamos a volver a hablar de eso, que se llama sobre ajuste.
+
+114
+00:11:17,720 --> 00:11:18,720
+¿Qué es con el pensamiento de eso?
+
+115
+00:11:19,720 --> 00:11:21,720
+Bueno, para la clasificación,
+
+116
+00:11:22,720 --> 00:11:23,720
+hay otra vez dos grandes líneas,
+
+117
+00:11:24,720 --> 00:11:25,720
+las de regla y la de aprendizaje automática.
+
+118
+00:11:26,720 --> 00:11:29,720
+Yo puedo hacer mirar el cuerpo y tratar de construir un ojif.
+
+119
+00:11:29,720 --> 00:11:31,720
+Como hemos estado hablando,
+
+120
+00:11:32,720 --> 00:11:34,720
+si es mujer y es tan tercera que las,
+
+121
+00:11:35,720 --> 00:11:36,720
+porque a mí sí no ocurre,
+
+122
+00:11:37,720 --> 00:11:38,720
+porque con los colas realidades,
+
+123
+00:11:39,720 --> 00:11:40,720
+porque no sé qué, y a un clasificación.
+
+124
+00:11:43,720 --> 00:11:45,720
+Si el petal lo está porque es ser,
+
+125
+00:11:46,720 --> 00:11:48,720
+porque yo hay un esperto,
+
+126
+00:11:49,720 --> 00:11:51,720
+si el petal lo está entre tal y cual valor,
+
+127
+00:11:52,720 --> 00:11:53,720
+si es una aproximación por relas,
+
+128
+00:11:54,720 --> 00:11:56,720
+pero lo que mayormente vamos a hablar de la calle
+
+129
+00:11:56,720 --> 00:11:59,720
+automático y es trato de inferir un modelo
+
+130
+00:12:00,720 --> 00:12:02,720
+a partir de los datos de entrenamiento,
+
+131
+00:12:03,720 --> 00:12:05,720
+o sea, agarró las 150 flores
+
+132
+00:12:06,720 --> 00:12:08,720
+y trato de inferir algún modelo,
+
+133
+00:12:09,720 --> 00:12:10,720
+no importa cuál es el modelo,
+
+134
+00:12:11,720 --> 00:12:12,720
+de una formación con truso un modelo,
+
+135
+00:12:13,720 --> 00:12:14,720
+por ejemplo, puede ser un árbol de decisión,
+
+136
+00:12:15,720 --> 00:12:16,720
+o que ha significado lo asesiano,
+
+137
+00:12:17,720 --> 00:12:19,720
+la clasificación es una forma con truso un modelo,
+
+138
+00:12:20,720 --> 00:12:21,720
+para nosotros eso es como una caja negra,
+
+139
+00:12:23,720 --> 00:12:24,720
+a la clasificación.
+
+140
+00:12:24,720 --> 00:12:27,720
+O sea, agarró, sai quiler,
+
+141
+00:12:28,720 --> 00:12:29,720
+le mandó lo de atributo,
+
+142
+00:12:30,720 --> 00:12:32,720
+el tipo de ingeniero modelo y yo aplico ese modelo,
+
+143
+00:12:33,720 --> 00:12:34,720
+a nueva intención y me la pere dice.
+
+144
+00:12:35,720 --> 00:12:37,720
+Eso es todo lo que vamos a hacer.
+
+145
+00:12:38,720 --> 00:12:39,720
+¿Cómo es el modelo?
+
+146
+00:12:40,720 --> 00:12:42,720
+Hay unas millones de versiones diferentes,
+
+147
+00:12:43,720 --> 00:12:45,720
+más miles.
+
+148
+00:12:46,720 --> 00:12:47,720
+¿Tá?
+
+149
+00:12:48,720 --> 00:12:49,720
+Pero,
+
+150
+00:12:50,720 --> 00:12:51,720
+y en general,
+
+151
+00:12:51,720 --> 00:12:53,720
+lasificadores cobiran ambos ahora vamos a ver porque.
+
+152
+00:12:56,720 --> 00:12:57,720
+¿Te voy a atacar?
+
+153
+00:12:58,720 --> 00:12:59,720
+Bueno,
+
+154
+00:13:00,720 --> 00:13:02,720
+entonces vamos a los mitos que son de aprendizaje automático,
+
+155
+00:13:03,720 --> 00:13:04,720
+de particular.
+
+156
+00:13:06,720 --> 00:13:08,720
+¿Cómo es nuestra situación?
+
+157
+00:13:09,720 --> 00:13:10,720
+Pero,
+
+158
+00:13:10,720 --> 00:13:11,720
+tenemos un corpus,
+
+159
+00:13:12,720 --> 00:13:14,720
+con un conjunto de entrenamiento que son pares,
+
+160
+00:13:16,720 --> 00:13:17,720
+el objeto
+
+161
+00:13:18,720 --> 00:13:20,720
+de un dominio
+
+162
+00:13:21,720 --> 00:13:22,720
+palabras,
+
+163
+00:13:23,720 --> 00:13:24,720
+pasajero el titán y
+
+164
+00:13:25,720 --> 00:13:26,720
+se tosa a oraciones,
+
+165
+00:13:27,720 --> 00:13:29,720
+representadas de alguna forma,
+
+166
+00:13:30,720 --> 00:13:31,720
+puede ser fotos,
+
+167
+00:13:32,720 --> 00:13:33,720
+porque lasificaciones a foto y un gato no,
+
+168
+00:13:34,720 --> 00:13:35,720
+cosas así.
+
+169
+00:13:36,720 --> 00:13:37,720
+Y una categoría,
+
+170
+00:13:39,720 --> 00:13:40,720
+donde
+
+171
+00:13:44,720 --> 00:13:47,720
+hay un conjunto de que he dominio y un conjunto de categoría.
+
+172
+00:13:48,720 --> 00:13:49,720
+Y le llega,
+
+173
+00:13:50,720 --> 00:13:51,720
+una espació de intenso junto a la teoría.
+
+174
+00:13:52,720 --> 00:13:53,720
+Una función de clasificación
+
+175
+00:13:54,720 --> 00:13:55,720
+lo único que hace es mapear.
+
+176
+00:13:56,720 --> 00:13:59,720
+Un documento de dominio de quiz a la clase.
+
+177
+00:14:00,720 --> 00:14:01,720
+Bueno,
+
+178
+00:14:03,720 --> 00:14:05,720
+un método aprendizaje supervisado,
+
+179
+00:14:06,720 --> 00:14:07,720
+que es lo que vamos a ver ahora,
+
+180
+00:14:08,720 --> 00:14:09,720
+la hora es
+
+181
+00:14:10,720 --> 00:14:11,720
+recibe los ejemplos han otado
+
+182
+00:14:12,720 --> 00:14:14,720
+y devuelve la función de clasificación.
+
+183
+00:14:14,720 --> 00:14:15,720
+En realidad,
+
+184
+00:14:15,720 --> 00:14:16,720
+no hay su método aprendizaje supervisado,
+
+185
+00:14:17,720 --> 00:14:18,720
+es un método de clasificación supervisado.
+
+186
+00:14:20,720 --> 00:14:21,720
+Porque si lo que nosotros tratáramos
+
+187
+00:14:22,720 --> 00:14:23,720
+es de predecir
+
+188
+00:14:24,720 --> 00:14:25,720
+un valor real contino,
+
+189
+00:14:26,720 --> 00:14:27,720
+por ejemplo,
+
+190
+00:14:28,720 --> 00:14:29,720
+si yo quiero saber
+
+191
+00:14:30,720 --> 00:14:31,720
+el precio de algo,
+
+192
+00:14:32,720 --> 00:14:33,720
+en base a su característica,
+
+193
+00:14:34,720 --> 00:14:35,720
+es un valor real contino,
+
+194
+00:14:36,720 --> 00:14:37,720
+no es un valor discreto,
+
+195
+00:14:38,720 --> 00:14:39,720
+se entiende,
+
+196
+00:14:40,720 --> 00:14:41,720
+eso se llama
+
+197
+00:14:41,720 --> 00:14:42,720
+la clasificación,
+
+198
+00:14:42,720 --> 00:14:43,720
+es discreto.
+
+199
+00:14:44,720 --> 00:14:45,720
+Entonces,
+
+200
+00:14:48,720 --> 00:14:49,720
+hay una diferencia de algunos clasan,
+
+201
+00:14:50,720 --> 00:14:52,720
+en esto es mucho más método de lógico,
+
+202
+00:14:53,720 --> 00:14:54,720
+de matemático o de probabilístico,
+
+203
+00:14:55,720 --> 00:14:56,720
+es como aplicar estas cosas,
+
+204
+00:14:57,720 --> 00:14:58,720
+y hay alguna su dileza que es un importante.
+
+205
+00:15:00,720 --> 00:15:01,720
+Bueno,
+
+206
+00:15:02,720 --> 00:15:03,720
+puedes comentar el error.
+
+207
+00:15:04,720 --> 00:15:05,720
+Bueno,
+
+208
+00:15:06,720 --> 00:15:07,720
+entonces,
+
+209
+00:15:08,720 --> 00:15:09,720
+tenemos el corbus,
+
+210
+00:15:10,720 --> 00:15:12,720
+nuestro corbus de,
+
+211
+00:15:13,720 --> 00:15:14,720
+por ejemplo,
+
+212
+00:15:15,720 --> 00:15:17,720
+para el problema de la clasificación en
+
+213
+00:15:18,720 --> 00:15:19,720
+idiomas,
+
+214
+00:15:20,720 --> 00:15:21,720
+del idioma de un documento.
+
+215
+00:15:22,720 --> 00:15:23,720
+¿Cuál sería nuestro corbus?
+
+216
+00:15:24,720 --> 00:15:26,720
+¿Qué de qué corbus partiríamos?
+
+217
+00:15:27,720 --> 00:15:28,720
+¿Eh?
+
+218
+00:15:33,720 --> 00:15:34,720
+Testos en idiomas,
+
+219
+00:15:35,720 --> 00:15:37,720
+¿Cómo sería nuestro conjunto a este?
+
+220
+00:15:37,720 --> 00:15:38,720
+¿Qué sería?
+
+221
+00:15:50,720 --> 00:15:52,720
+Y idioma de un documento.
+
+222
+00:15:54,720 --> 00:15:55,720
+Tengo documento,
+
+223
+00:15:56,720 --> 00:15:58,720
+un conjunto de texto de documentos,
+
+224
+00:15:59,720 --> 00:16:00,720
+y sé que es,
+
+225
+00:16:01,720 --> 00:16:03,720
+el idioma de cada uno de ellos.
+
+226
+00:16:04,720 --> 00:16:05,720
+Acuerda,
+
+227
+00:16:05,720 --> 00:16:06,720
+un documento uno,
+
+228
+00:16:07,720 --> 00:16:10,720
+inglés,
+
+229
+00:16:11,720 --> 00:16:12,720
+un documento,
+
+230
+00:16:13,720 --> 00:16:14,720
+francés,
+
+231
+00:16:15,720 --> 00:16:16,720
+en el caso de la iris,
+
+232
+00:16:17,720 --> 00:16:19,720
+se tosa cuál es el,
+
+233
+00:16:21,720 --> 00:16:22,720
+¿Cuál es el,
+
+234
+00:16:25,720 --> 00:16:26,720
+¿Cuál es el,
+
+235
+00:16:27,720 --> 00:16:28,720
+en el ex,
+
+236
+00:16:29,720 --> 00:16:30,720
+en el ex,
+
+237
+00:16:30,720 --> 00:16:31,720
+y en el ex,
+
+238
+00:16:32,720 --> 00:16:33,720
+וא�cial,
+
+239
+00:16:34,720 --> 00:16:38,720
+free,
+
+240
+00:16:39,720 --> 00:16:40,720
+y como eres la general,
+
+241
+00:16:42,720 --> 00:16:44,720
+la flor,
+
+242
+00:16:45,720 --> 00:16:46,720
+Si yo le tengo identificada de alguna forma,
+
+243
+00:16:47,720 --> 00:16:48,720
+菓odo,
+
+244
+00:16:49,720 --> 00:16:50,720
+eso es su clase.
+
+245
+00:16:51,720 --> 00:16:52,720
+Yo en este caso,
+
+246
+00:16:53,720 --> 00:16:57,720
+sé que el respetougo representa
+
+247
+00:16:57,720 --> 00:16:58,720
+por cuatro números.
+
+248
+00:16:58,720 --> 00:17:08,920
+Entonces, yo tengo que hacer lo siguiente, tengo que hablar ejemplos, a partir de eso
+
+249
+00:17:08,920 --> 00:17:17,720
+generar el dama, la función de la explicación, que la función que voy a aplicar cuando
+
+250
+00:17:17,720 --> 00:17:25,320
+ven a una intención no va a pasar a ver qué tipo es, y como hay un poquito ahora yo necesito
+
+251
+00:17:25,320 --> 00:17:33,920
+qué tengo que hacer con el corbus, qué tengo que hacer, tiene que, bueno eso que es claro,
+
+252
+00:17:33,920 --> 00:17:37,920
+todos los casos hay que indicar lo hecho a mano a esa notación, entonces ahí en metínica
+
+253
+00:17:37,920 --> 00:17:41,180
+he dicho a mano, esto también me le de todo tan francé, lo que mismo que hemos hablado
+
+254
+00:17:41,180 --> 00:17:49,360
+otra vez, esta es una versicolor, eso es un experto, pero una vez que yo tengo el corbus,
+
+255
+00:17:49,360 --> 00:17:54,880
+lo que tengo que hacer con él, tengo que dividirlo porque yo necesito entrenar sobre una
+
+256
+00:17:54,880 --> 00:18:01,960
+parte y usar el resto para evaluarse, recuerdan, eso es muy importante, entonces yo voy
+
+257
+00:18:01,960 --> 00:18:07,960
+a dividir el corbus en dos partes, que más o menos siempre son el 80, 20, no hay cosas así,
+
+258
+00:18:07,960 --> 00:18:12,280
+entonces ya lo hemos hablado en el modelo, lo hemos hablado en el lenguaje, entre
+
+259
+00:18:12,280 --> 00:18:21,120
+nosotros el 80% y he evaluado sobre el reinterrestante, y acá es muy importante, muy
+
+260
+00:18:21,120 --> 00:18:27,080
+importante, y es como la regla de oro, es que yo siempre tengo que entrenar sobre una
+
+261
+00:18:27,080 --> 00:18:33,080
+parte evaluar sobre la otra, pero además de ser diferentes, tendrían que tener una distribución
+
+262
+00:18:33,080 --> 00:18:39,400
+de ejemplos similar, porque digamos si yo entreno con algo que son todo, por ejemplo,
+
+263
+00:18:39,400 --> 00:18:46,160
+mejor puede ir a tasa, si yo lo ordeno por clase, a la intancia, o no, no toda la intancia,
+
+264
+00:18:46,160 --> 00:18:50,800
+primero toda la setosa de toda la versicolor y después de toda la disínica, y me quedo
+
+265
+00:18:50,800 --> 00:18:58,720
+con las primeras 80, van a ser casi todo a setosa, tendrían de mi modelo, se va a ajustar
+
+266
+00:18:58,720 --> 00:19:04,160
+a los datos del 80% y el 20% restante, que son todo a versicolor, van a andar mal,
+
+267
+00:19:04,160 --> 00:19:11,360
+porque no es un parecido al modelo del que entrené, entonces la idea es que eso siempre
+
+268
+00:19:11,360 --> 00:19:15,560
+tengo que tratar de vivir el cuerpo en entrenamiento, de evaluación de forma que tengan,
+
+269
+00:19:15,560 --> 00:19:23,200
+más o menos la misma distribución de clase, una forma directa de hacerlo es elegir ejemplo
+
+270
+00:19:23,200 --> 00:19:28,320
+a lazar, no tomaron el navio y no agrada, es lo que es que únicamente uno hace, busca
+
+271
+00:19:28,400 --> 00:19:35,800
+a lazar, saca 80 de lado de 20 de otro, pero a lazar, hay método más evaluado, más evolucionado,
+
+272
+00:19:35,800 --> 00:19:40,680
+paserezo, sobre todo cuando hay clases que tienen muy poca intancia, porque por ejemplo si hubiera
+
+273
+00:19:40,680 --> 00:19:48,840
+una clase que tiene 10 de o 5 de total de 150, a mí me gustaría que hubiera 32, entonces es como
+
+274
+00:19:48,840 --> 00:19:55,720
+que hago lo que se llama seleccionétratificada, cosa así, cosa más evolució, más evaluado
+
+275
+00:19:55,720 --> 00:20:01,720
+para asegurar que la distribución sea más o menos en la vida, pero general con muchos datos
+
+276
+00:20:01,720 --> 00:20:06,160
+y una distribución más o menos pareja de las clases, con eso lo le hace a lazar, no cometeen
+
+277
+00:20:06,160 --> 00:20:12,000
+el error de entrenar sobre una clase, igual a suave otra más o menos mejor, bueno,
+
+278
+00:20:12,000 --> 00:20:17,520
+este es un método, hay otra forma, es que ahora no hay una más, pero lo está en directo,
+
+279
+00:20:18,440 --> 00:20:28,320
+de acuerdo, la cosa de más o menos así ni te jujito que me rodea el internet, nosotros
+
+280
+00:20:28,320 --> 00:20:56,120
+tenemos el dataset y yo divido, el tráinice y el tejo evaluación, bueno, yo este teo
+
+281
+00:20:56,120 --> 00:21:04,320
+evaluación, este perdón de corpo de evaluación, no sé, de evaluación, solamente lo voy
+
+282
+00:21:04,320 --> 00:21:10,800
+a utilizar, solamente lo voy a utilizar, cuando suya ya se ha terminado de construir mi modelo,
+
+283
+00:21:10,800 --> 00:21:15,600
+termine, no voy a hacer ningún cambio, no voy a mejorar nada, esto es lo mejor que tengo
+
+284
+00:21:15,600 --> 00:21:19,520
+y quiero saber cuál es su performance en una medida que ahora vamos a ver cómo se mide,
+
+285
+00:21:19,520 --> 00:21:26,640
+recién ahí, yo agarró el modelo final, lo aplico al coso y tengo la evaluación final,
+
+286
+00:21:26,640 --> 00:21:35,040
+de acá no sucede nunca más nada que esto, ahora voy a retomar esto, el que quiero
+
+287
+00:21:35,040 --> 00:21:40,880
+es igualito, acá este modelo ville, se saca ajanera y contruye el modelo que no se
+
+288
+00:21:40,880 --> 00:21:49,880
+como es, parece yo como solte en renamiento, el corpo en renamiento, lo prevo y tengo una
+
+289
+00:21:49,880 --> 00:21:55,040
+medida, contruye un modelo y tengo una medida predicción, pero yo, tipicamente, esta es un
+
+290
+00:21:55,040 --> 00:22:02,400
+proceso de iterativo, es decir, yo prevo de alguna forma, mejor o mi método, yo agarré un
+
+291
+00:22:02,400 --> 00:22:09,760
+contributo nuevo o cambio y un parámetro, lo detalle eso, hago cambios, que va cambiando mi
+
+292
+00:22:09,760 --> 00:22:14,800
+bailar y cambiando mi performance, de acuerdo, también la persona por ahora también es una
+
+293
+00:22:14,800 --> 00:22:18,200
+cajana y ahora vamos a ver cómo se mide, pero supogamos que es mi medida es la figura,
+
+294
+00:22:18,200 --> 00:22:24,440
+si cuánto de los ejemplos del corpo de evaluación, clasquico correctamente, es una medida directa,
+
+295
+00:22:24,440 --> 00:22:31,480
+¿no? Si de los 50 que tengo acá, 48, 40, tengo cuatro quintos de acturas,
+
+296
+00:22:31,480 --> 00:22:45,200
+así, o ser 8, ¿eh? Entonces, yo puedo ir cambiando cosas, pero si yo utilicera esa medida, esto es muy
+
+297
+00:22:45,200 --> 00:22:51,200
+este, si coseto más importante, si yo utilicera esa medida y fuere evaluando contra el
+
+298
+00:22:51,200 --> 00:22:58,840
+té final y mejorando mi performance, ¿sí? ¿Cuál es el problema? ¿Qué por el que riesgo
+
+299
+00:22:58,840 --> 00:23:05,760
+tiene eso? ¿Sauo pruebas? ¿Ao pruebas pruebas pruebas? Y voy probando sobre el conjunto de la
+
+300
+00:23:05,760 --> 00:23:16,440
+acción y mi performance va mejorando, ¿cuál es mi problema? Exactamente, que mi corpo, finalmente, yo
+
+301
+00:23:16,440 --> 00:23:21,600
+estoy tratando a justar acá, estoy ajustando demasiado acá, está demasiado disjuado para
+
+302
+00:23:21,600 --> 00:23:26,960
+este, es como que en un caso de borde yo probar a todas las clarificas clas, yo podía hacer un
+
+303
+00:23:26,960 --> 00:23:33,360
+método que, así, ni a lazar, clases, y luego todas las combinaciones posibles, hay una que me
+
+304
+00:23:33,360 --> 00:23:39,000
+va perfecto, pero no estoy aprendiendo nada, se me ajustó hacia abajo el corpo de evaluación,
+
+305
+00:23:39,000 --> 00:23:45,200
+¿sí? ¿Dienes? Entonces yo, para evitar eso, mientras voy aprendiendo, mientras voy mejorando
+
+306
+00:23:45,200 --> 00:23:50,440
+mi método, lo que tengo que hacer es separar un corpo, hago como una su dimisión del corpo
+
+307
+00:23:50,440 --> 00:23:58,040
+entrenamiento, separo lo que ya monté un corpo de evaluación, ¿qué es como una su dimisión?
+
+308
+00:23:58,040 --> 00:24:02,760
+Entreno sobre una parte de evaluación de la otra, y ahí sí voy mejorando, ¿qué me puede
+
+309
+00:24:02,760 --> 00:24:06,120
+pasar? Y bueno, me puedo pasar que sobre ajuste a esto, claro, el método tiene que ser
+
+310
+00:24:06,120 --> 00:24:11,960
+robusto, a eso, es un problema que el método puede tener, pero por lo menos me aseguro que si
+
+311
+00:24:11,960 --> 00:24:16,160
+sobre ajuste a esto, cuando lo mía a cabo y a tener una idea de que también funcionó
+
+312
+00:24:16,160 --> 00:24:25,640
+mi método, se tiende, es un problema clásico de eso, incluso, no mucho tiempo un medio
+
+313
+00:24:25,640 --> 00:24:34,000
+lío con un concurso, porque hay un corpo, hay un corpo, una competencia que se llama
+
+314
+00:24:34,080 --> 00:24:45,120
+Cagal, que son, te van en conjunto entre elamiento, no te dicen el data, con una evaluación,
+
+315
+00:24:45,120 --> 00:24:48,960
+vos presentaste un método de lo subís y automáticamente te evalua la performance y ya es un
+
+316
+00:24:48,960 --> 00:24:54,760
+ranking, y una gente que es una persona de los laboratrices, va a ir a que los acusaron
+
+317
+00:24:54,760 --> 00:25:00,560
+de haber hecho trampa, porque lo que hacían era el subía en muchos modelos, claro,
+
+318
+00:25:00,560 --> 00:25:06,200
+ahora van tanto que al final, empezaban a mejorar, porque estaban sobre ajustando a un
+
+319
+00:25:06,200 --> 00:25:12,200
+sin verlo al corpo de la opción, claro, eso puede pasar, entonces uno es una de las cosas
+
+320
+00:25:12,200 --> 00:25:16,960
+que no tiene que te cuidar, la arquitectura generalmente es esta, y yo le cuándo les digo
+
+321
+00:25:16,960 --> 00:25:22,360
+en el laboratorio que haga una metodología, lo que le está pidiendo es solamente que
+
+322
+00:25:22,360 --> 00:25:27,160
+hagan este tipo de cosas, que hay, bueno, yo quiero voy a ir al corpo, no tiene que hacerlo,
+
+323
+00:25:27,160 --> 00:25:31,400
+porque a notar el corpo de esta forma tengo que separar tanto de entrenamiento, tanto
+
+324
+00:25:31,400 --> 00:25:36,480
+evaluación, un validación c, voy a evaluar con tal medida, claro, eso es lo que queremos
+
+325
+00:25:36,480 --> 00:25:42,960
+que escriban en el laboratorio, y bueno, como le hicimos en particular en el híritad
+
+326
+00:25:42,960 --> 00:25:49,920
+c, bueno, si en todo se quedan en el corpo de entrenamiento y 38 en el corpo de evaluación,
+
+327
+00:25:49,920 --> 00:26:00,160
+y con la sintancia de elegidad a la sara, entonces bueno, ahora sí, tenemos, tenemos el
+
+328
+00:26:00,160 --> 00:26:08,660
+corpo de entrenamiento, el corpo de evaluación, lo guardamos en una cajillo, y estos son los
+
+329
+00:26:08,660 --> 00:26:14,040
+pasos típicos de los problemas de laificación, de los mitos tradicionales de la
+
+330
+00:26:14,040 --> 00:26:21,720
+prensa automático, los mitos típos dipler ni funcionan un poco diferente, porque esta parte
+
+331
+00:26:21,720 --> 00:26:28,080
+no la hace, la infieren automáticamente, y esas como el gran cambio de los mitos de
+
+332
+00:26:28,080 --> 00:26:36,640
+dipler, pero en los mitos tradicionales tenemos todas estas tareas para sal, y vamos a ver
+
+333
+00:26:36,640 --> 00:26:44,560
+la una por una, recuerden, partimos de un objeto, un corpo de entrenamiento y una evaluación,
+
+334
+00:26:44,560 --> 00:26:51,920
+nada más, la primera paría es la de la ingeniería de tributos que se llama, Fituiris
+
+335
+00:26:51,920 --> 00:26:58,360
+y sinirari, y es, bueno, tengo el objeto, cuáles son mis atributos para la prensaja,
+
+336
+00:26:58,440 --> 00:27:08,080
+típicamente, por ejemplo, típicamente dependen del método, por ejemplo, sai quirlan la
+
+337
+00:27:08,080 --> 00:27:15,400
+biblioteca de Python para la prensa automático, assume que todos sus clasificadores, todas
+
+338
+00:27:15,400 --> 00:27:23,920
+sus intensas son en un plas de reales, o sea que yo que se guardó a cosa de la forma, una
+
+339
+00:27:24,000 --> 00:27:34,760
+cosa así, por ejemplo, de acuerdo, porque está dicho en los mitos así y adaptaron incluso
+
+340
+00:27:34,760 --> 00:27:38,880
+mitos que no son originalmente así para que para que todo tiene un formato común, entonces
+
+341
+00:27:38,880 --> 00:27:43,960
+yo el único que te acaceré sea cambiar el enchufar el método y todo el resto me que
+
+342
+00:27:43,960 --> 00:27:50,640
+es igual, esa la idea seguirán, de acuerdo, assume cosas que entren así, con una clase que
+
+343
+00:27:50,640 --> 00:27:59,160
+también es un número, aplicar el método, entrenar el modelo, cosa igual o algo, yo todo
+
+344
+00:27:59,160 --> 00:28:02,360
+igual, lo quiero cambiar por método que no tiene la que ver en su principio, no importa,
+
+345
+00:28:02,360 --> 00:28:10,920
+es en chufo uno en chufo el otro, para eso necesito transformar mi atributo entrada a esto, entonces,
+
+346
+00:28:10,920 --> 00:28:17,240
+y todo el aburo, la ingeniería de tributos es como la parte endorrosa de la prensa automático,
+
+347
+00:28:17,240 --> 00:28:27,000
+porque yo tengo el objeto y tengo que saber cuáles son los atributos, por ejemplo, si yo
+
+348
+00:28:27,000 --> 00:28:32,200
+quiero la palabra, tengo una palabra, que son atributos de clasificas, yo no le puedo
+
+349
+00:28:32,200 --> 00:28:36,800
+hablar la palabra a lo bestia, a lo que le doy la palabra y clasificar, no, yo tengo
+
+350
+00:28:36,800 --> 00:28:41,680
+que sacar atributos de esa palabra que me sirvan para clasificar, pasé una representación
+
+351
+00:28:41,680 --> 00:28:46,480
+de la palabra, que es lo que le pedimos en el laboratorio que haga, no, con los campitos que
+
+352
+00:28:46,480 --> 00:28:53,360
+tienen, por ejemplo, para la palabra, la forma superficie, es la palabra en sí misma, en
+
+353
+00:28:53,360 --> 00:28:58,760
+la terminación, por ejemplo a mí, saber que una palabra termina en ese, me puede dar una
+
+354
+00:28:58,760 --> 00:29:07,840
+idea de que es un plural, por ejemplo, el partos pitch, si pertenece una lista, por ejemplo,
+
+355
+00:29:07,840 --> 00:29:25,000
+si yo quiero detectar, si quiero detectar, por ejemplo, claro, ahí, bueno, este tipo de cosas,
+
+356
+00:29:25,000 --> 00:29:34,760
+si no vamos a tener un documento, tengo un documento, donde quiero saber si se trata, o tengo
+
+357
+00:29:34,760 --> 00:29:42,120
+una operación y que sabes eso es un insulto, entonces yo puedo tener una lista de palabras
+
+358
+00:29:42,120 --> 00:29:49,900
+como un insulto, lo cual no quiere decir que la oración sea un insulto solo por
+
+359
+00:29:49,900 --> 00:29:56,960
+contenerla, porque yo podría insultar sin usar esas palabras, pero de sirve como atributo,
+
+360
+00:29:56,960 --> 00:30:03,520
+tiende, yo uno de los atributos de miración puede ser, tiene una palabra de la lista
+
+361
+00:30:03,520 --> 00:30:12,800
+tal, la cantidad de letra de la palabra depende de la tarea, la ygenia, por qué la ygenia
+
+362
+00:30:12,800 --> 00:30:19,000
+triuto que ha salido cada vez, porque depende de la tarea, si, los mitos de tipo de
+
+363
+00:30:19,000 --> 00:30:26,400
+blerming, son un poco más brutos, lo que hacen es, y a su vez un poco más inteligente,
+
+364
+00:30:26,400 --> 00:30:32,800
+porque lo que hacen es, vo dáme todos los pixels, todos los pixels, te una foto y le quiero
+
+365
+00:30:32,800 --> 00:30:39,600
+explicar si tiene un gato, dáme todos los pixels que yo me manejo, es lo que llama prensia
+
+366
+00:30:39,600 --> 00:30:45,920
+que de representaciones, que voy contribuendo a los atributos a partir de los pixels,
+
+367
+00:30:46,840 --> 00:30:53,320
+no hay ingenieria tributos, sino que es la propia red neuronal, lo que lo crea, los invito
+
+368
+00:30:53,320 --> 00:31:02,600
+al año que viene para el curso como Salmarde, de esto, si, de Diplano, como siendo seminario
+
+369
+00:31:02,600 --> 00:31:08,000
+ahora y mi idea es para el año de año de año del curso, abandonar este curso y, y a decir,
+
+370
+00:31:08,000 --> 00:31:16,400
+vamos a ver, bueno, de aplicado a proceder del cogenetro, bueno, operación tenemos
+
+371
+00:31:16,400 --> 00:31:22,280
+palabra a una lista, número de cicapas y una palabra, para un documento largo, cada palabra
+
+372
+00:31:22,280 --> 00:31:32,200
+que aparece, cada objeto va a tener su fiturselección mefono, fiturse el ingenierme, y por
+
+373
+00:31:32,200 --> 00:31:39,600
+su puesto uno de la tributó de la clase objetivo, es decir, de que aparezca, bueno, entonces
+
+374
+00:31:39,600 --> 00:31:43,600
+el ingenier de tributos es eso, es como genero los atributos, partir de los objetos
+
+375
+00:31:43,600 --> 00:31:52,400
+originales, se miente, te amaguardo, descarto algunas y otro lo dejo, por ejemplo, y bueno,
+
+376
+00:31:52,400 --> 00:31:59,880
+y tengo que hacer algunas cosas, un poco bastante estándar en el prosamiento, pero que
+
+377
+00:31:59,880 --> 00:32:04,200
+se va mucho tiempo, generalmente, que es el todo el preprocesamiento de mi cuerpo, para
+
+378
+00:32:04,200 --> 00:32:10,080
+observar lo de la forma, por ejemplo, una cosa típica es el Juan Jotenko de Inqués, yo tengo
+
+379
+00:32:10,080 --> 00:32:17,840
+un idioma que sepan yo el inglés ofrences, eso sea que es una clase un conjunto discreto
+
+380
+00:32:17,840 --> 00:32:25,160
+de valores, y yo transformo a tres atributos, uno que dice es español, que es 01, es inglés
+
+381
+00:32:25,160 --> 00:32:35,000
+que es 01 y es francés que es 01, ¿de acuerdo? También podría ponerle 1, 2 o 3, a un
+
+382
+00:32:35,000 --> 00:32:40,720
+valor de la, en vez de poner español en inglés, es el mapearlo y poner 1, 2, 3, ¿sí?
+
+383
+00:32:40,720 --> 00:32:47,360
+Esa es otra forma de llevarlo un valor numérico, cuál es el problema que puede tener eso?
+
+384
+00:32:48,280 --> 00:32:51,640
+¿Qué que hay acá?
+
+385
+00:32:57,640 --> 00:32:59,680
+Bueno, pero ahí tengo que meter más tributo, ¿verno?
+
+386
+00:32:59,680 --> 00:33:02,600
+¿Qué hay que entender la opensión de español en inglés?
+
+387
+00:33:02,600 --> 00:33:08,040
+Exacto, que assume que hay un especifico ordenamiento o eventualmente podría ser una
+
+388
+00:33:08,040 --> 00:33:15,880
+distancia también, y que algún método podría mariarse con eso, acá, es más, dice su
+
+389
+00:33:15,880 --> 00:33:21,640
+independiente, ¿te ha hecho tiene un riesgo? ¿No? Podría ser a aprender que 2, 1, que dice
+
+390
+00:33:21,640 --> 00:33:28,120
+español y es inglés, pero también, no, no podía ser a aprender porque yo no lo estoy
+
+391
+00:33:28,120 --> 00:33:35,120
+aprendiendo, dije, vuelve cosa, la restricción en el midatacete que no puede ser más de 1
+
+392
+00:33:35,120 --> 00:33:41,760
+a la vez, uno solo puede ser uno, quiero decirlo, o al revés, si yo quiero convertir números
+
+393
+00:33:41,760 --> 00:33:46,840
+acá teoría, bueno, en el uso de aprendizaje automático, van a aprender todo eso, ¿tá?
+
+394
+00:33:46,840 --> 00:33:50,840
+Pero tenemos cosas en el posamiento en el lugar que no hay más complicados todavía, como, por
+
+395
+00:33:50,840 --> 00:33:59,040
+ejemplo, si yo quiero decirlo, que yo tengo es un árbol, por ejemplo, un árbol de parcin,
+
+396
+00:33:59,040 --> 00:34:04,580
+como transformo eso es un atributo, bueno, puedo tomar media como la distancia a la raíz en el
+
+397
+00:34:04,580 --> 00:34:13,500
+árbol, la secuencia de categoría de la raíz a cierta hoja, componente padre de una hoja profundía
+
+398
+00:34:13,500 --> 00:34:19,020
+del árbol, para acá, palabra, ¿no? Se tiende, yo quiero llegar a tener algo que es un atributo
+
+399
+00:34:19,020 --> 00:34:30,940
+por cada, acá, palabra, no, yo tengo, tengo una oración, tengo una oración, tengo su árbol sintáctico y
+
+400
+00:34:30,940 --> 00:34:37,660
+tengo la palabra, te creo que yo no puedo aprender sobre esto derecho, bueno, no se compreponde
+
+401
+00:34:37,660 --> 00:34:40,660
+con lo que queremos nosotros, que es una lita en números, todo es una lita en números,
+
+402
+00:34:40,660 --> 00:34:46,620
+todo es un formarito, una lita de tributos, obviamente que pierde información en el momento
+
+403
+00:34:46,620 --> 00:34:53,820
+claro, es un modelo, es un arrepresentación simplificada, la realidad, y esto es un arrepresentación
+
+404
+00:34:53,820 --> 00:35:00,940
+más compleja, hay método, aprendizaje, algunos, por ejemplo, lo que ha sacado en kernels que
+
+405
+00:35:00,940 --> 00:35:08,420
+trabajan con estos objetos directamente, te una línea con eso, no voy a agradecer, ¿no?
+
+406
+00:35:08,420 --> 00:35:12,500
+Bueno, si tengo un gráfico, bueno, cuál es la cantidad de números, relaciones, ciertos
+
+407
+00:35:12,500 --> 00:35:22,900
+tipos, etcétera, dependiendo de mi objeto yo tengo que generarlo a tributos, y esto es la
+
+408
+00:35:22,900 --> 00:35:28,740
+regla de conocimiento, es una cosa con la que yo trabajaba bastante en mi tesis, que son
+
+409
+00:35:28,740 --> 00:35:35,260
+tengo una regla que la construcción es perto, es bien un método dividido, la construcción
+
+410
+00:35:35,260 --> 00:35:49,620
+es perto que dice bueno, esta oración es una, es un insulto, yo ya sé que la oración
+
+411
+00:35:49,620 --> 00:35:58,020
+que empieza diciendo mira querido, esa es un insulto, lo va a terminar, eso lo dice un
+
+412
+00:35:58,020 --> 00:36:04,180
+experto, pero yo quiero incorporar lo a mi aprendizaje, pero tampoco lo da el afirma, porque
+
+413
+00:36:04,180 --> 00:36:17,340
+lo hay un experto, entonces yo quiero incorporar el conocimiento del experto, el conocimiento
+
+414
+00:36:17,340 --> 00:36:26,100
+del experto, pero sin tampoco da lo como la única fuente, entonces que hago simplemente
+
+415
+00:36:26,100 --> 00:36:32,340
+lo puedo con una tributo más de la aprendizaje, se entiende, pues nos humamos que es un uno
+
+416
+00:36:32,340 --> 00:36:40,900
+un cero, entonces todas las oraciones que yo le voy a representar de una cierta forma,
+
+417
+00:36:40,900 --> 00:36:47,260
+a tributo 1, a tributo 3 y a cabo a tributo especial que es la regla de esta reconocimiento,
+
+418
+00:36:47,260 --> 00:36:55,900
+que vale uno, sin pieza con mira querido y vale 0 y no, y después en mi anotación
+
+419
+00:36:55,900 --> 00:37:05,620
+a mano, por ejemplo, en mi anotación a mano, por supuesto que por acá voy a tener
+
+420
+00:37:05,620 --> 00:37:16,940
+la clase, es insulto, que va a leer uno, 0 y por acá la regla de esta también vale uno,
+
+421
+00:37:16,940 --> 00:37:27,900
+no va a pasar que a veces el experto va a estar en lo cierto y a veces no, y va a ser
+
+422
+00:37:27,900 --> 00:37:32,260
+el método, el modelo, como como cualquier otro tributo que va a terminar, lo ando,
+
+423
+00:37:32,260 --> 00:37:38,380
+si lo que digo es que el experto era bien, no era volas, es una tributo más conocimiento,
+
+424
+00:37:38,380 --> 00:37:46,460
+viene un método híbrido, yo el corporo conocimiento de un experto, pero lo dejo metido
+
+425
+00:37:46,460 --> 00:37:52,740
+dentro del método, a dentro es la ciclicadora, lo que termina preponderando es el aprendizaje
+
+426
+00:37:52,740 --> 00:38:03,300
+y como es digamos si acá hay otro tributo que dice si tiene la palabra estúpido,
+
+427
+00:38:03,300 --> 00:38:10,780
+digamos, más va a ver, y yo que sí, sí mira querido, eso es un estúpido, todo bien,
+
+428
+00:38:10,780 --> 00:38:16,780
+pero no puedes no empezar diciendo mira querido y decir estúpido y ser o bueno, el método
+
+429
+00:38:16,780 --> 00:38:21,020
+se que determina la eso, los métodos lo que hacen es tomar todo eso es otro tributo,
+
+430
+00:38:21,020 --> 00:38:24,340
+lo que como es la clase que viene y como hacer eso, pero tomar todo eso es otro tributo,
+
+431
+00:38:24,340 --> 00:38:28,020
+yo está con tu vida, es un modelo que tiene arto y esto.
+
+432
+00:38:36,820 --> 00:38:44,900
+Bueno, no para que te lo tomes así, ah, entonces, por ejemplo, el caso de Titán y de Tacet
+
+433
+00:38:44,900 --> 00:38:50,580
+terminando, terminamos quedando un nuevo cuatro tributos, porque sí, porque de tributo
+
+434
+00:38:50,580 --> 00:38:55,740
+es la ingeniería tributo también uno puede descartarlos, porque si esto es un bolazo el nombre
+
+435
+00:38:55,740 --> 00:39:00,740
+no te he sentido, hay uno por clase, no voy a poneros al nombre, y acá no quedamos con
+
+436
+00:39:00,740 --> 00:39:07,340
+la edad, el sexo y se estaban primera, segundo, terceras clases, acá lo hicimos un jote en
+
+437
+00:39:07,340 --> 00:39:15,620
+Codin, ¿tá?, ejemplo de juguete mismo, bueno, en el Titán y no se puede hacer mucho más
+
+438
+00:39:15,620 --> 00:39:20,500
+porque no hay mucho a tributo, pero, pero para mostrar cómo se transforma los a tributos,
+
+439
+00:39:20,500 --> 00:39:21,500
+¿tú?
+
+440
+00:39:27,500 --> 00:39:36,180
+La segunda etapa es la selección de a tributos, que es esto justamente, bueno, tengo todos los
+
+441
+00:39:36,180 --> 00:39:41,660
+a tributos candidatos, hay uno que le puede eliminar, de estos porque no sirve para nada,
+
+442
+00:39:42,580 --> 00:39:48,780
+y esto porque, bueno, generalmente, por dos razones, una de las por performance, pues me
+
+443
+00:39:48,780 --> 00:39:53,180
+utiliza tener menos a tributos para hacer computacionalmente más rápido, sigue en la
+
+444
+00:39:53,180 --> 00:39:57,860
+mayoría de los métodos modernos, no no importa mucho eso, que es tan pensado para tener
+
+445
+00:39:57,860 --> 00:40:02,500
+mucho a tributo, y a veces también pasa que además se ha dado a tributo, puede producir
+
+446
+00:40:02,500 --> 00:40:06,380
+sobre ajuste, es como que si yo tengo demasiado a tributo, estoy encomentiendo mucho
+
+447
+00:40:06,380 --> 00:40:10,740
+ruido, digamos, y si hay una cosa que yo ya sé que no me va a aportar nada, por
+
+448
+00:40:10,740 --> 00:40:18,500
+algún motivo extra, al modelo así, no es lo incorporo, como el nombre, para que haya
+
+449
+00:40:18,500 --> 00:40:23,820
+personal nombre si ya sé que no me va a saber, o por mi conocimiento del problema, por supuesto
+
+450
+00:40:23,820 --> 00:40:31,780
+que no es la lista a pasajero del Titanic, si ponemos el joelor del pelo, parece difícil
+
+451
+00:40:31,780 --> 00:40:40,580
+que sí va para el, bueno, el lo de la selección de tributos en los hechos es que
+
+452
+00:40:40,580 --> 00:40:46,060
+cada vez no es importante, bien de todo lo, los métodos de clasificación funcionan tipo
+
+453
+00:40:46,060 --> 00:40:56,140
+licuadora, esto pa' dentro, y hay dos tipos de métodos clásicos para hacerlo, uno es el
+
+454
+00:40:56,140 --> 00:41:06,060
+método estadístico, que es lo que dice en el bueno, corruntes estadísticos sobre los
+
+455
+00:41:06,060 --> 00:41:12,940
+atributos, un chisquartes, que esencialmente el del tés chisquart lo que hace es,
+
+456
+00:41:12,940 --> 00:41:21,700
+dadas dos atributos, dados, dos conjuntos valores, te indica que tan independientes son
+
+457
+00:41:21,700 --> 00:41:29,580
+entre ellos, de punto de vista de, de, de, provebilístico, acuerdo, y entonces si yo tengo
+
+458
+00:41:29,580 --> 00:41:39,980
+un atributo, que es completamente independiente de la clase, da clase final, qué quiere decir eso,
+
+459
+00:41:39,980 --> 00:41:46,700
+si está íticamente son independientes y quiere decir, ¿eh?
+
+460
+00:41:46,700 --> 00:41:53,020
+¿No te aportan nada que no, no hay relación ninguna entre, ahora si si uno es
+
+461
+00:41:53,020 --> 00:42:01,900
+perfecto, la asociación entre la clase y el atributo, en el otro extremo, es el mejor
+
+462
+00:42:01,900 --> 00:42:07,300
+de los mundo, o tengo un predictor perfecto, es muy probable que esté sobre ajustando,
+
+463
+00:42:07,300 --> 00:42:16,060
+si yo, el, el, eh, eh, bueno, no sé, puede ser que esté sobre ajustando, porque no, si yo tengo
+
+464
+00:42:16,060 --> 00:42:19,180
+uno que vale exactamente en la calle, no sé si estoy sobre ajustando, es que capaz que
+
+465
+00:42:19,460 --> 00:42:26,020
+no tiene. Lo más probable que estoy usando en la clase que de alguna forma, la clase se
+
+466
+00:42:26,020 --> 00:42:37,180
+deriva de ese atributo y mi problema está mal formulado, se viene, pero, eh, tiene
+
+467
+00:42:37,180 --> 00:42:42,340
+el mundo del apreciaje automático y otros métodos mucho más como un paesto que, eh,
+
+468
+00:42:42,340 --> 00:42:50,740
+que calcular la performance en el gel daut, simplemente pruebo diferentes conjuntos de triutos,
+
+469
+00:42:50,740 --> 00:42:56,900
+en piezo con un atributo en la gran, en piezo con un atributo, y voy que calcular
+
+470
+00:42:56,900 --> 00:43:02,580
+de la performance, es acuerdo en el que el corpujel daut que hicimos, ahora que sabemos
+
+471
+00:43:02,580 --> 00:43:07,780
+a cómo peacito, vamos probando ahí, pruebo con un atributo, griego otro, otro, otro,
+
+472
+00:43:07,780 --> 00:43:10,300
+voy conduciendo todas las combinaciones, no puedo hacer todas las combinaciones, pues
+
+473
+00:43:10,300 --> 00:43:15,340
+ella computacionalmente horrible, pero ahí hay un algoritico para ir armando eso, y me quedo
+
+474
+00:43:15,340 --> 00:43:26,300
+con un atributo seleccionado, otra forma, otra forma es, en vez de hacer un corpujel daut,
+
+475
+00:43:26,300 --> 00:43:33,820
+eso es algo que llamamos cross-validation que podía explicar lo que es, creo validión es una
+
+476
+00:43:33,820 --> 00:43:44,460
+forma de utilizar mejor mi corpujel, ahora voy a hablar de eso, creo, sí, porque es lo
+
+477
+00:43:44,460 --> 00:43:49,100
+mismo que usaba para seleccionar modelos, la tercera etapa es lo que llama selección de
+
+478
+00:43:49,100 --> 00:43:55,100
+modelo, que es un término que uno nunca se acuerda que es eso, si no sabe la definición
+
+479
+00:43:55,100 --> 00:44:02,020
+y es la típica pregunta de, de prueba, de malo que es uno, porque la selección de modelo
+
+480
+00:44:02,020 --> 00:44:09,700
+es simplemente, si luego tenemos un método generalmente el tenemos lo que se llama y perpará
+
+481
+00:44:09,700 --> 00:44:19,260
+metros, es decir, carácterístico que son del método variables, digamos, las no termino
+
+482
+00:44:19,260 --> 00:44:23,700
+programación, no, es decir, yo quiero hacer un, hay un clasificado, un método de clasificación
+
+483
+00:44:23,700 --> 00:44:31,100
+de llamas árboles de decisión, que lo que hace es construir un árbol que dice bueno,
+
+484
+00:44:31,100 --> 00:44:36,940
+pasaje lo titanín, es mujer, voy para un lado, es hombre, voy para el otro, y así
+
+485
+00:44:36,940 --> 00:44:41,580
+va, está en primera, voy para un lado y al final cuando llega a la hoja, dice bueno,
+
+486
+00:44:41,580 --> 00:44:46,020
+si tenía todo de todo el tributo, la probabilidad soy ir a tanto, o, sí, lo quiero
+
+487
+00:44:46,020 --> 00:44:50,660
+donde artigo, sobrevivido, es igual, el modelo que se construye es un árbol, un
+
+488
+00:44:50,660 --> 00:44:55,460
+árbol de decisión, cuando yo voy construyendo, si algo, la partida de los datos tengo
+
+489
+00:44:55,460 --> 00:44:59,820
+parámetros, por ejemplo, el criterio que utilizo para dividirlo, para seleccionar
+
+490
+00:44:59,820 --> 00:45:04,100
+cuál es el atributo más relevante, y acá, simplemente puso 3 criterios diferentes, que
+
+491
+00:45:04,100 --> 00:45:14,740
+hay una literatura, son como 3 métodos diferentes, ¿no? Se tiene, es bien la noción de parámetro,
+
+492
+00:45:14,740 --> 00:45:21,500
+la mayor profundidad, la que se da la árbol, si yo quiero poder el árbol, o la menor cantidad
+
+493
+00:45:21,500 --> 00:45:26,580
+de, de, de ejemplo, que tienen que estar en un nuevo, porque yo sigue intentando abrirlo,
+
+494
+00:45:26,580 --> 00:45:30,780
+yo que sí, cosas que dependen del método, que no son atributos, sino que es un característico
+
+495
+00:45:30,780 --> 00:45:37,400
+el método, y yo que hago uno de eso es que probar los valores posibles, y al
+
+496
+00:45:37,480 --> 00:45:46,160
+acuerdo, entonces, como hago, para con cual con junto de parámetros me quedo, decir,
+
+497
+00:45:46,160 --> 00:45:51,080
+cuál es el mejor para mí, y eso va a depender mucho de mi corpus, hay corpus, donde
+
+498
+00:45:51,080 --> 00:45:55,800
+va a funcionar mejor un criterio chini, y hay otro de, a funcionar mejor un criterio de
+
+499
+00:45:55,800 --> 00:46:04,120
+tropiamaxima, que son, me importa lo que son, son parte de método, entonces, lo que hacemos
+
+500
+00:46:04,120 --> 00:46:16,560
+es, en ese caso, probar diferentes combinaciones de parámetros, que en el caso más extremo
+
+501
+00:46:16,560 --> 00:46:24,920
+son, probar todas las combinaciones posibles, y si es que eso es posible, a un chartico bueno,
+
+502
+00:46:24,920 --> 00:46:28,040
+de este parámetro contra este, de parámetro con este, a todas las combinaciones posibles,
+
+503
+00:46:28,040 --> 00:46:36,520
+no son tantas, general, o sea, hablando de tres, dos, podemos hacer 500 pruebas diferentes, 500
+
+504
+00:46:36,520 --> 00:46:42,960
+corridos diferentes con diferentes parámetros, de acuerdo, y eso se llama el método clásico
+
+505
+00:46:42,960 --> 00:46:48,760
+que ya hay que irle, porque es realmente que se llama Green Search, que es contruso una
+
+506
+00:46:48,760 --> 00:46:54,400
+dirige, y hoy probando todas las combinaciones posibles parámetros, hay otra que son hacerlo
+
+507
+00:46:54,400 --> 00:47:02,920
+muy aliato métodos, pero esencialmente lo que quiero es hacer, elegir cualquier combinación
+
+508
+00:47:02,920 --> 00:47:08,960
+de parámetros en el lugar, al lugar, además de elegir cualquier tributo, se dijo que parámetros,
+
+509
+00:47:08,960 --> 00:47:14,900
+todo eso nuevamente no lo pueda hacer con el cuerpo de evaluación, obviamente, porque
+
+510
+00:47:14,900 --> 00:47:18,400
+nunca pueda hacerlo, lo puede hacer con el cuerpo entre enamiento, porque si yo, el
+
+511
+00:47:18,400 --> 00:47:21,840
+evaluo, sobre el cuerpo entre enamiento tengo problemas sobre ajustes, mi data se ajusta
+
+512
+00:47:21,840 --> 00:47:27,320
+demasiado a comprender en elamiento, bueno, si luego muchas veces con el cuerpo de evaluación
+
+513
+00:47:27,320 --> 00:47:32,600
+me pasa lo mismo que decía muy, que es que puedo sobre ajustar el cuerpo de evaluación,
+
+514
+00:47:32,600 --> 00:47:39,800
+entonces yo lo quedo, típicamente es, o hacer un cuerpo gelado, es decir, tener una parte
+
+515
+00:47:39,800 --> 00:47:45,640
+del cuerpo entre enamiento, que yo lo utilizo para entrenar, y una parte del cuerpo de
+
+516
+00:47:45,640 --> 00:47:51,200
+entrenamiento, que lo utilizo para evaluar mi método y ver cómo va mejorando, y
+
+517
+00:47:51,200 --> 00:47:57,200
+acuerdo, que se lleve una cosa así, el cuerpo de evaluación lo guarda en un cajón,
+
+518
+00:47:57,200 --> 00:48:02,480
+se guarda, no es lo lo tenemos, entonces yo evaluo acá y prueba acá, cambio el método,
+
+519
+00:48:02,480 --> 00:48:08,560
+evaluo acá y prueba acá, y así voy obteniendo valores y me quedo con el mejor, se
+
+520
+00:48:08,560 --> 00:48:19,480
+tiene, como otro forma, esa barra del cuerpo, porque acá mi problema es que yo esto lo
+
+521
+00:48:19,480 --> 00:48:25,120
+desperdicio para el entrenamiento, pues ya estoy achicando nuevamente mi cuerpo de entrenamiento,
+
+522
+00:48:25,120 --> 00:48:32,800
+y los datos son un valor, es caso, recurso el caso, entonces la globalidad y yo lo que
+
+523
+00:48:32,800 --> 00:48:43,160
+es, y además tiene un problema insional, esto, y es que yo puedo sobreajustar ahí,
+
+524
+00:48:43,160 --> 00:48:50,680
+¿no? Esto podrían ser muy pocos datos y yo podría sobreajustar a eso, se tiene, creo
+
+525
+00:48:50,680 --> 00:48:57,000
+ahí, yo todavía resolvés a dos cosas, usar mejor los datos y no sobreajustarse a un cuerpo
+
+526
+00:48:57,000 --> 00:49:08,880
+de auto, entonces lo que hace es lo siguiente, divide en caparte, es el cuerpo, entre nada,
+
+527
+00:49:08,880 --> 00:49:18,680
+sobrecámenos una y evalua sobre la que queda, después primero entrenas sobre esta
+
+528
+00:49:18,680 --> 00:49:26,680
+esta y esta y esta, y evalua sobre esta, después entrenas sobre esta, esta, esta y evalua
+
+529
+00:49:26,680 --> 00:49:39,800
+sobre esta, y así, con todas las 5 combinaciones, las 5 combinaciones, las 5 combinaciones
+
+530
+00:49:39,800 --> 00:49:46,720
+posible, ¿de acuerdo? Y o tiene 5 resultados de medida, que todavía no sabemos cuál es la media,
+
+531
+00:49:46,720 --> 00:49:50,840
+pero sabemos que no va sin cor, supongamos por ahora que la que iras si, cuánto acertamos
+
+532
+00:49:50,840 --> 00:49:58,480
+de todos los ejemplos que estaban acá, ¿eh? Y hago el promedio, esto lo que tiene es que me
+
+533
+00:49:58,480 --> 00:50:05,080
+reducir la varianza, está íticamente hablando, es decir, hago 5 pruebas y me quedo en el promedio
+
+534
+00:50:05,080 --> 00:50:08,320
+de las 5, no es justo que agarre la mejor y le llegué, después me va a dar horrible en
+
+535
+00:50:08,400 --> 00:50:17,320
+el cuerpo de la evaluación, el cuerpo de la ingresión y eso trata de bajar la varianza,
+
+536
+00:50:17,320 --> 00:50:25,680
+y utilizar mejor los datos de entrenas bien, entonces, esta es una forma gráfica de
+
+537
+00:50:25,680 --> 00:50:36,000
+darlo, no? Entrenos sobre este y evaluos sobre este, ¿de acuerdo? Todos estos métodos
+
+538
+00:50:36,000 --> 00:50:40,800
+son tan estándar, es que hay que irle, uno tiene todos, hay hecho, es decir, ya se parezco,
+
+539
+00:50:40,800 --> 00:50:52,200
+pues ya te ha secreto valido, y se te ha seguido y se te ha sacado, ¿de acuerdo? No pregunta, no,
+
+540
+00:50:52,200 --> 00:50:59,280
+no preguntas, no se entiende o no, no es claro, bueno, nos queda saber cuál es la media evaluación,
+
+541
+00:50:59,280 --> 00:51:05,120
+bueno, perdón, después que yo hice la generación del áromo, la media, después que yo hice la
+
+542
+00:51:05,120 --> 00:51:13,520
+generación del modelo, simplemente, termino si todo esto, ¿no? Utilizo el cuerpo en el
+
+543
+00:51:13,520 --> 00:51:19,240
+momento para generar un modelo, utilizo la función de laificación para calcular la clase
+
+544
+00:51:19,240 --> 00:51:24,480
+objetivo para cada instancia del cuerpo de evaluación, sea, a una predicción para la
+
+545
+00:51:24,480 --> 00:51:31,480
+pantalla del cuerpo de evaluación y evaluó la performance, y ese es el número que da minuto,
+
+546
+00:51:31,480 --> 00:51:38,240
+tiene, el hecho de tener un cuerpo se están dando, nos permite comparar diferentes métodos,
+
+547
+00:51:38,240 --> 00:51:43,280
+los métodos y es la forma clásica de saber que en que está el estado del arte y en algún
+
+548
+00:51:43,280 --> 00:51:51,400
+tema, yo quiero saber, en que está el estado del arte, en postain, entonces digo bueno,
+
+549
+00:51:51,400 --> 00:51:57,440
+que comparó contra la sección tanto del pentrima que es un cuerpo, estándar del inglés
+
+550
+00:51:57,440 --> 00:52:04,080
+y que muchos otros se han probado otra vez, y me ha dado resultado y ese es el estado
+
+551
+00:52:04,080 --> 00:52:10,880
+del arte, por supuesto que no hago trampa, no, yo no puedo usar la sección esa que estoy
+
+552
+00:52:10,880 --> 00:52:18,440
+evaluando, para entrenar mi modelo, no, podía hacerlo, no, no, no, no, no, no, no, no, no,
+
+553
+00:52:18,660 --> 00:52:20,760
+claro, ¿no?
+
+554
+00:52:20,760 --> 00:52:27,440
+Lo que nos queda a ver es, bueno, pero, ¿cómo es la, que medida utiliza muy bueno?
+
+555
+00:52:27,440 --> 00:52:36,440
+La primera es la que Brazi, la que Brazi es esto que vimos que es la proposición de
+
+556
+00:52:36,440 --> 00:52:41,960
+las instancias que se clasificaron correctamente de todo el cuerpo, ¿sí?
+
+557
+00:52:41,960 --> 00:52:48,960
+parecía la marrasonable, yo tengo, si en intensidad, suposo vamos, yo tengo el corpo de las,
+
+558
+00:52:48,960 --> 00:52:54,960
+se acuerda el corpo de ir y se tosa, yo tengo,
+
+559
+00:52:54,960 --> 00:53:04,960
+si en todos en el corpo de nalmiento de 38, vamos a evaluar sobre esta 38,
+
+560
+00:53:04,960 --> 00:53:11,960
+yo voy a ver, yo tengo la, la intensidad, la clase real,
+
+561
+00:53:11,960 --> 00:53:19,960
+por ejemplo se tosa y mi predicción,
+
+562
+00:53:19,960 --> 00:53:26,960
+por ejemplo se tosa y mi predicción,
+
+563
+00:53:26,960 --> 00:53:33,960
+por ejemplo se tosa y mi predicción,
+
+564
+00:53:42,960 --> 00:53:46,960
+no, así leuce mi, mi cuerpo de poquilo,
+
+565
+00:53:46,960 --> 00:53:52,960
+este mi cuerpo ya te mi predicción, a caldo y
+
+566
+00:53:52,960 --> 00:53:59,960
+claro, la cure si es muy fácil, es total,
+
+567
+00:53:59,960 --> 00:54:03,960
+bueno podemos hablar, en este caso de, podemos vivir en 4,
+
+568
+00:54:03,960 --> 00:54:13,960
+bueno vamos a empezar suponiendo,
+
+569
+00:54:13,960 --> 00:54:17,960
+vamos a suponer que yo tengo un problema más sencillo que le presy 3,
+
+570
+00:54:17,960 --> 00:54:24,960
+la media son en general, son no, son no, son para que le cicada de dinarias,
+
+571
+00:54:24,960 --> 00:54:28,960
+entonces yo voy a suponer que en, en lugar de tener esta clase,
+
+572
+00:54:28,960 --> 00:54:35,960
+yo tengo una que es, la transforma una nueva problema que es,
+
+573
+00:54:35,960 --> 00:54:38,960
+es se tosa o no es se tosa,
+
+574
+00:54:39,460 --> 00:54:43,960
+entonces esto se transforma en positivo,
+
+575
+00:54:48,960 --> 00:54:56,960
+creamy, después vamos a ver cómo volvemos a esto porque ya she tosa y meis
+
+576
+00:54:56,960 --> 00:55:05,960
+de queShoko se me dice y se tosa,
+
+577
+00:55:05,960 --> 00:55:15,200
+que ahora sí es, bueno, los y ahí no parece en cuatro clases, los trupositils que son los
+
+578
+00:55:15,200 --> 00:55:27,640
+que eran la clase es positiva y la predicción también, eso es los trupositils, los truunidad
+
+579
+00:55:27,640 --> 00:55:34,120
+tils, como se imagina la persona, los que la clase es negativa y también yo como negativo,
+
+580
+00:55:34,120 --> 00:55:46,500
+los falsos positivos, que son, predí que positivos eran negativos y los falsos negativos
+
+581
+00:55:46,500 --> 00:55:53,160
+al revés, las son las cuatro clases que yo tengo y todos los clases que puedo definirse
+
+582
+00:55:53,160 --> 00:55:59,480
+pueden pasar en esto, la cioración como sería, como el cálculo haremos en la cioración.
+
+583
+00:56:10,460 --> 00:56:15,120
+Eso lo vemos ahora, pero como lo definio, como lo definio, la cioración va a ser esto,
+
+584
+00:56:15,120 --> 00:56:23,040
+eso está muy bien, está muy bien, y cuáles son las correctas en base a esto.
+
+585
+00:56:23,040 --> 00:56:29,040
+dividido, dividido todo, ¿no?
+
+586
+00:56:36,040 --> 00:56:38,040
+¿A por lo?
+
+587
+00:56:40,040 --> 00:56:43,040
+¿Qué problema tiene la kiura así?
+
+588
+00:56:47,040 --> 00:56:50,040
+¿Qué problema puede tener la kiura así?
+
+589
+00:56:53,040 --> 00:56:58,040
+¿Ey, difícil?
+
+590
+00:56:58,040 --> 00:57:00,040
+¿Ey, difícil imaginarse cuál es el problema?
+
+591
+00:57:00,040 --> 00:57:02,040
+¿Pues se oiga la kiura así, ¿no?
+
+592
+00:57:09,040 --> 00:57:11,040
+¿A muy bien?
+
+593
+00:57:11,040 --> 00:57:13,040
+¿Por qué no lo?
+
+594
+00:57:23,040 --> 00:57:25,040
+¿Por qué no?
+
+595
+00:57:29,040 --> 00:57:34,040
+Es un ejemplo, es un ejemplo, es un ejemplo de clasico de problema, ¿no?
+
+596
+00:57:34,040 --> 00:57:39,040
+¿De qué a veces yo pero en realidad eso es un poco más la diferencia de
+
+597
+00:57:39,040 --> 00:57:42,040
+tripisiono rico de la hora de lo que muetame, pero tenemos el problema,
+
+598
+00:57:42,040 --> 00:57:43,040
+¿no?
+
+599
+00:57:43,040 --> 00:57:46,040
+¿De si la vez ya me interesa favorizar los falcho positivo?
+
+600
+00:57:47,040 --> 00:57:54,040
+Contralos este control de fase negativo.
+
+601
+00:57:54,040 --> 00:58:00,040
+Yo quiero que prefiero equivocarme a favor o encontrarse un problema.
+
+602
+00:58:00,040 --> 00:58:03,040
+¿Y diende?
+
+603
+00:58:03,040 --> 00:58:06,040
+Pero la kiura sí tiene un preso, esto viene después,
+
+604
+00:58:06,040 --> 00:58:09,040
+la crisis de un problema principal que es el problema elevalante entre las clases.
+
+605
+00:58:09,040 --> 00:58:12,040
+Si yo tengo las clases más o menos igual separada,
+
+606
+00:58:12,040 --> 00:58:16,040
+está todo bien con la kiura así, pero supongo que sé que yo tengo un corpus
+
+607
+00:58:16,040 --> 00:58:26,040
+donde hay un 95% de clases positiva y un 5% de clases negativa.
+
+608
+00:58:26,040 --> 00:58:30,040
+Si yo un clasificador que simplemente diga positivo a todo,
+
+609
+00:58:30,040 --> 00:58:32,040
+¿qué va a pasar?
+
+610
+00:58:32,040 --> 00:58:36,040
+Me hago por 95% de la kiura así.
+
+611
+00:58:36,040 --> 00:58:37,040
+¿De acuerdo?
+
+612
+00:58:37,040 --> 00:58:40,040
+Y yo no quiero eso.
+
+613
+00:58:40,040 --> 00:58:44,040
+No, general, no me interesa eso, no, no, no, no, no, no, no.
+
+614
+00:58:44,040 --> 00:58:46,040
+Es decir, ese problema que tiene,
+
+615
+00:58:46,040 --> 00:58:50,040
+la piraci como medida, que cuando el corpus te va a lanzar, no, no funciona bien.
+
+616
+00:58:50,040 --> 00:58:53,040
+Entonces, hay los medidas que son las susuales
+
+617
+00:58:53,040 --> 00:58:55,040
+en el pensamiento de la General,
+
+618
+00:58:55,040 --> 00:58:57,040
+que son mucho más susuales que la kiura es que son,
+
+619
+00:58:57,040 --> 00:59:00,040
+porque en el pensamiento de la General es muy común eso,
+
+620
+00:59:00,040 --> 00:59:01,040
+¿no?
+
+621
+00:59:01,040 --> 00:59:05,040
+La decir, la mayoría de la frase no son insultos.
+
+622
+00:59:05,040 --> 00:59:07,040
+¿Sí?
+
+623
+00:59:08,040 --> 00:59:11,040
+La usualizón que vienen del informe yo retriba,
+
+624
+00:59:11,040 --> 00:59:13,040
+pero se a mí de lo que no trae de mis un estandar,
+
+625
+00:59:13,040 --> 00:59:17,040
+que son la precisión y el ricole.
+
+626
+00:59:17,040 --> 00:59:22,040
+Casi todo el método de la precisión y el ricole.
+
+627
+00:59:22,040 --> 00:59:27,040
+Y la precisión que es, bueno, la precisión es,
+
+628
+00:59:27,040 --> 00:59:31,040
+la precisión es,
+
+629
+00:59:31,040 --> 00:59:35,040
+la proporción
+
+630
+00:59:36,040 --> 00:59:38,040
+de positivas,
+
+631
+00:59:43,040 --> 00:59:47,040
+de todas las positivas que clasifiquen,
+
+632
+00:59:47,040 --> 00:59:52,040
+de todas las que clasifiquen como positivas,
+
+633
+00:59:52,040 --> 00:59:54,040
+cuando bloqueo,
+
+634
+00:59:54,040 --> 00:59:58,040
+o sea, ¿qué tan bueno soy evocando?
+
+635
+00:59:58,040 --> 01:00:00,040
+¿Tá?
+
+636
+01:00:00,040 --> 01:00:01,040
+Es decir,
+
+637
+01:00:01,040 --> 01:00:04,040
+cuando yo, que todo eso, cuando yo, que tenía cáncer,
+
+638
+01:00:04,040 --> 01:00:09,040
+80% de la lista de un poco.
+
+639
+01:00:09,040 --> 01:00:11,040
+¿Ah?
+
+640
+01:00:11,040 --> 01:00:14,040
+Pues, ahora sí preocuparte.
+
+641
+01:00:14,040 --> 01:00:16,040
+El ricole,
+
+642
+01:00:16,040 --> 01:00:22,040
+el problema que tiene eso es que a veces yo quiero prefiero,
+
+643
+01:00:22,040 --> 01:00:33,040
+el ricole que trata de todas las que son positivas.
+
+644
+01:00:34,040 --> 01:00:37,040
+De todas las que son positivas.
+
+645
+01:00:42,040 --> 01:00:44,040
+¿Cuántas trajes?
+
+646
+01:00:47,040 --> 01:00:48,040
+Sí.
+
+647
+01:00:48,040 --> 01:00:50,040
+Por ejemplo, el paledad del 5% es muy importante.
+
+648
+01:00:50,040 --> 01:00:52,040
+Yo quiero recuperar las todas.
+
+649
+01:00:52,040 --> 01:00:54,040
+Es decir, puede ser muy preciso.
+
+650
+01:00:54,040 --> 01:00:56,040
+En un caso extremo,
+
+651
+01:00:56,040 --> 01:00:57,040
+en un caso extremo,
+
+652
+01:00:57,040 --> 01:01:00,040
+si yo nunca que la típica como positivo, que pasa.
+
+653
+01:01:03,040 --> 01:01:06,040
+Yo siempre digo que es un positivo.
+
+654
+01:01:06,040 --> 01:01:09,040
+¿Qué pasa?
+
+655
+01:01:09,040 --> 01:01:12,040
+Yo siempre digo que es un positivo.
+
+656
+01:01:12,040 --> 01:01:14,040
+¿Qué es eso?
+
+657
+01:01:14,040 --> 01:01:15,040
+Sí.
+
+658
+01:01:15,040 --> 01:01:18,040
+El ricole,
+
+659
+01:01:18,040 --> 01:01:19,040
+me va a decir,
+
+660
+01:01:19,040 --> 01:01:21,040
+el ricole me va a decir,
+
+661
+01:01:21,040 --> 01:01:22,040
+el ricole me va a decir,
+
+662
+01:01:22,040 --> 01:01:23,040
+por ciento de atrás,
+
+663
+01:01:23,040 --> 01:01:24,040
+la toda.
+
+664
+01:01:24,040 --> 01:01:26,040
+Pues siempre le había clarificado un positivo.
+
+665
+01:01:26,040 --> 01:01:29,040
+Pero mi precisión seguramente se abajo.
+
+666
+01:01:30,040 --> 01:01:34,040
+Si clasificó todas como unidad tío,
+
+667
+01:01:34,040 --> 01:01:35,040
+que va a pasar.
+
+668
+01:01:35,040 --> 01:01:38,040
+¿Cuál haría tío en un montón?
+
+669
+01:01:41,040 --> 01:01:43,040
+El estrupo si tío es cero,
+
+670
+01:01:43,040 --> 01:01:45,040
+blado me van a dar cero.
+
+671
+01:01:47,040 --> 01:01:50,040
+Los mitos de presión y el ricole está en un orientado
+
+672
+01:01:50,040 --> 01:01:52,040
+muy a la clase positivo.
+
+673
+01:01:54,040 --> 01:01:56,040
+Yo generalmente en la clase positivo,
+
+674
+01:01:56,040 --> 01:01:59,040
+si tengo un 95 o 5 vas a la 5.
+
+675
+01:01:59,040 --> 01:02:03,040
+¿Por qué sea la que me interesa a mirar en detalle?
+
+676
+01:02:03,040 --> 01:02:05,040
+Se tiene.
+
+677
+01:02:06,040 --> 01:02:09,040
+Todo esto se hace en cuenta en la casa.
+
+678
+01:02:15,040 --> 01:02:17,040
+¿Cómo como como como como?
+
+679
+01:02:17,040 --> 01:02:20,040
+Como como como como como como como como.
+
+680
+01:02:21,040 --> 01:02:25,040
+No, pero yo no puedo,
+
+681
+01:02:25,040 --> 01:02:31,040
+yo lo máximo que puedo llegar a TPS,
+
+682
+01:02:31,040 --> 01:02:32,040
+a esto.
+
+683
+01:02:32,040 --> 01:02:34,040
+Al total del cuerpo no?
+
+684
+01:02:35,040 --> 01:02:49,040
+Claro, bueno, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.
+
+685
+01:02:50,040 --> 01:02:54,040
+Y finalmente esto es el ricole.
+
+686
+01:02:54,040 --> 01:02:58,040
+Típicamente uno tiene el trayof entre presición y recorre.
+
+687
+01:02:58,040 --> 01:03:01,040
+En un método, típicamente uno.
+
+688
+01:03:01,040 --> 01:03:04,040
+Si se pone menos exigente con la presición,
+
+689
+01:03:04,040 --> 01:03:06,040
+su recorre aumenta.
+
+690
+01:03:08,040 --> 01:03:10,040
+Es decir, si yo bajo mi,
+
+691
+01:03:10,040 --> 01:03:12,040
+supongo que yo tengo un método para presir
+
+692
+01:03:12,040 --> 01:03:15,040
+este, si tiene cáncero, no.
+
+693
+01:03:15,040 --> 01:03:19,040
+Entonces yo tengo la barrera acá.
+
+694
+01:03:19,040 --> 01:03:23,040
+Soy muy preciso.
+
+695
+01:03:23,040 --> 01:03:26,040
+No, soy muy preciso,
+
+696
+01:03:26,040 --> 01:03:30,040
+pero pierdo ricole, porque cuando digo que sí en poco,
+
+697
+01:03:30,040 --> 01:03:33,040
+pero digo poco que sí.
+
+698
+01:03:33,040 --> 01:03:34,040
+Por cómo es mi método?
+
+699
+01:03:34,040 --> 01:03:37,040
+Yo es que realmente casi todo el método puedo bajar la barrera y bueno,
+
+700
+01:03:37,040 --> 01:03:39,040
+si me da más de 0, yo, yo,
+
+701
+01:03:39,040 --> 01:03:41,040
+más lo que sea en número, ¿no?
+
+702
+01:03:41,040 --> 01:03:43,040
+Entonces yo lo acabo es aumentar el ricole,
+
+703
+01:03:43,040 --> 01:03:46,040
+porque voy a descubrir más caso verdadero.
+
+704
+01:03:46,040 --> 01:03:48,040
+Pero empieza a pasar mi precisión,
+
+705
+01:03:48,040 --> 01:03:50,040
+empieza a meter caso en el que era negativo,
+
+706
+01:03:50,040 --> 01:03:52,040
+los presos presí como positivo.
+
+707
+01:03:52,040 --> 01:03:55,040
+¿Qué es lo que yo quiero depender mucho del método?
+
+708
+01:03:55,040 --> 01:03:57,040
+Depender mucho el problema, perdón.
+
+709
+01:03:57,040 --> 01:04:01,040
+Hay caso donde prefiero equivocarme menos.
+
+710
+01:04:02,040 --> 01:04:06,040
+Por ejemplo, en la clasificación de un documento,
+
+711
+01:04:06,040 --> 01:04:09,040
+si el equivoco es en cuándo no calienta mucho.
+
+712
+01:04:11,040 --> 01:04:14,040
+En cambio, pa, pereció una enfermedad.
+
+713
+01:04:14,040 --> 01:04:17,040
+¿Qué pasa?
+
+714
+01:04:17,040 --> 01:04:19,040
+¿Qué pasa?
+
+715
+01:04:22,040 --> 01:04:24,040
+Vamos a ver, por ejemplo, con el hígida taset,
+
+716
+01:04:24,040 --> 01:04:27,040
+y ya cuando en que nos hayamos quedado con el problema original,
+
+717
+01:04:27,040 --> 01:04:31,040
+era el hígida taset, bueno, construir el corpus,
+
+718
+01:04:31,040 --> 01:04:35,040
+sí, el corpus, pero tiene tres clases,
+
+719
+01:04:35,040 --> 01:04:37,040
+tres clases.
+
+720
+01:04:37,040 --> 01:04:41,040
+La forma típica de resolver el problema
+
+721
+01:04:41,040 --> 01:04:43,040
+de medir la performa,
+
+722
+01:04:43,040 --> 01:04:45,040
+pero yo tengo el problema de clasificación
+
+723
+01:04:45,040 --> 01:04:46,040
+no es binario,
+
+724
+01:04:46,040 --> 01:04:49,040
+es dividirlo en tantos problemas
+
+725
+01:04:49,040 --> 01:04:51,040
+como clases tengo.
+
+726
+01:04:51,040 --> 01:04:54,040
+Eso se llama,
+
+727
+01:04:54,040 --> 01:04:56,040
+guámbar su sol,
+
+728
+01:04:56,040 --> 01:04:58,040
+guámbar su regreso,
+
+729
+01:04:58,040 --> 01:05:01,040
+es, lo dividir un tres problemas.
+
+730
+01:05:01,040 --> 01:05:02,040
+Uno es,
+
+731
+01:05:02,040 --> 01:05:05,040
+si ese tosa o no,
+
+732
+01:05:05,040 --> 01:05:07,040
+el otro es,
+
+733
+01:05:07,040 --> 01:05:09,040
+si el versicolor o no,
+
+734
+01:05:09,040 --> 01:05:12,040
+y el otro es y el viciniicano.
+
+735
+01:05:12,040 --> 01:05:14,040
+Si ustedes se fijan,
+
+736
+01:05:14,040 --> 01:05:16,040
+nuestro método divide muy bien
+
+737
+01:05:16,040 --> 01:05:19,040
+y lo que le pasa es el corpus de el hígida taset,
+
+738
+01:05:19,040 --> 01:05:21,040
+es muy fácil separar la setosa,
+
+739
+01:05:21,040 --> 01:05:23,040
+acá hay, hay que decirles elificador,
+
+740
+01:05:23,040 --> 01:05:25,040
+mi clasificador es una recta
+
+741
+01:05:25,040 --> 01:05:27,040
+que separa la intensidad
+
+742
+01:05:27,040 --> 01:05:29,040
+y que deja de un lado
+
+743
+01:05:29,040 --> 01:05:32,040
+las que son positivos de los negativos.
+
+744
+01:05:32,040 --> 01:05:35,040
+La setosa, la separa bien,
+
+745
+01:05:35,040 --> 01:05:38,040
+la versicolor más o menos
+
+746
+01:05:38,040 --> 01:05:40,040
+y la viciniicada o algo.
+
+747
+01:05:41,040 --> 01:05:42,040
+Bueno,
+
+748
+01:05:42,040 --> 01:05:44,040
+nuestro corpus son sucios,
+
+749
+01:05:44,040 --> 01:05:45,040
+ese es uno de los temas,
+
+750
+01:05:45,040 --> 01:05:46,040
+el presidente va a entrar
+
+751
+01:05:46,040 --> 01:05:48,040
+y el aprensago tomático,
+
+752
+01:05:48,040 --> 01:05:50,040
+trabajan siempre con corpus que no,
+
+753
+01:05:50,040 --> 01:05:53,040
+no hay una respuesta canonica.
+
+754
+01:05:53,040 --> 01:05:55,040
+Vivimos con lo que hay,
+
+755
+01:05:55,040 --> 01:05:57,040
+tenemos que aprender a medirla y ser diumbre
+
+756
+01:05:57,040 --> 01:05:59,040
+que tenemos.
+
+757
+01:05:59,040 --> 01:06:01,040
+Porque yo podría ser un clasificador
+
+758
+01:06:01,040 --> 01:06:02,040
+un poco más elaborado,
+
+759
+01:06:02,040 --> 01:06:03,040
+porque tiene una cosa que no son de tercurso,
+
+760
+01:06:03,040 --> 01:06:05,040
+pero yo podría ser un clasificador
+
+761
+01:06:05,040 --> 01:06:06,040
+más elaborado,
+
+762
+01:06:06,040 --> 01:06:07,040
+que lo que hiciera fue
+
+763
+01:06:07,040 --> 01:06:09,040
+una curva más complicada con una recta.
+
+764
+01:06:09,040 --> 01:06:10,000
+Todo lo que hiciera en vez por unrillamo
+
+765
+01:06:10,000 --> 01:06:12,000
+a Let splashing armados...
+
+766
+01:06:12,000 --> 01:06:15,040
+Si aunque es José Carolina,
+
+767
+01:06:15,040 --> 01:06:19,040
+¿qué?
+
+768
+01:06:19,040 --> 01:06:20,040
+¿Masísavables, ¿cómo estoy haciendo?
+
+769
+01:06:20,040 --> 01:06:21,040
+No, pero con esto.
+
+770
+01:06:21,040 --> 01:06:23,040
+¡Joy!
+
+771
+01:06:27,040 --> 01:06:29,040
+MAR healthcare.
+
+772
+01:06:29,040 --> 01:06:33,040
+¿La symptoms más timelyo promigió al normal queantu en la casa?
+
+773
+01:06:33,040 --> 01:06:34,040
+Sí, presión más.
+
+774
+01:06:34,040 --> 01:06:36,040
+Supongo que yo puedo συparecerlo.
+
+775
+01:06:36,040 --> 01:06:38,040
+Entonces, yo le ha gustado, exactamente.
+
+776
+01:06:38,040 --> 01:06:41,040
+Si me va a ajustar demasiado el cuerpo de almiento y muy probable que
+
+777
+01:06:41,040 --> 01:06:43,040
+esto no tiene la solución.
+
+778
+01:06:43,040 --> 01:06:46,040
+Entonces, no hay vuelta a quedarle, entonces, he complicado.
+
+779
+01:06:46,040 --> 01:06:49,040
+O meto más tributo algo, pero acá no, no.
+
+780
+01:06:49,040 --> 01:06:52,040
+Aumento si yo aumento el número de adensión y mi posibilidad aumenta.
+
+781
+01:06:52,040 --> 01:06:54,040
+También pues, paumenta a la posibilidad de preciko,
+
+782
+01:06:54,040 --> 01:06:55,040
+entonces, no son muy importantes.
+
+783
+01:06:55,040 --> 01:06:56,040
+Está.
+
+784
+01:06:56,040 --> 01:06:58,040
+Tengo tres problemas.
+
+785
+01:06:58,040 --> 01:07:01,040
+Y en cada uno de ellos me calcula precición y recolprecisiones.
+
+786
+01:07:01,040 --> 01:07:03,040
+Ah, perdón, no ni nada de la media de fe.
+
+787
+01:07:03,040 --> 01:07:06,040
+La media de fe, que en la media armonica entre la presión y recol,
+
+788
+01:07:06,040 --> 01:07:08,040
+lo que trata de hacer iba a la ansialo dos.
+
+789
+01:07:08,040 --> 01:07:12,040
+Y ese el número estándar cuando yo quiero tener un número
+
+790
+01:07:12,040 --> 01:07:13,040
+para formar un suave media de fe.
+
+791
+01:07:13,040 --> 01:07:14,040
+En general.
+
+792
+01:07:14,040 --> 01:07:16,040
+¿Qué es? Bueno.
+
+793
+01:07:16,040 --> 01:07:19,040
+Tengo buena presición y tengo buen recol.
+
+794
+01:07:19,040 --> 01:07:20,040
+Sí.
+
+795
+01:07:20,040 --> 01:07:23,040
+Es mejor la media armonica que la,
+
+796
+01:07:23,040 --> 01:07:25,040
+el arinética, en este caso,
+
+797
+01:07:25,040 --> 01:07:28,040
+porque castiga más cuando hay un salto demasiado grande.
+
+798
+01:07:28,040 --> 01:07:30,040
+Que el promedio.
+
+799
+01:07:30,040 --> 01:07:35,040
+Primero, si te acero uno te acero cinco y la armonica cuando son más parecido a mejor.
+
+800
+01:07:38,040 --> 01:07:40,040
+Pero,
+
+801
+01:07:40,040 --> 01:07:42,040
+acá hago el volvier.
+
+802
+01:07:42,040 --> 01:07:44,040
+Entonces, por ejemplo,
+
+803
+01:07:44,040 --> 01:07:46,040
+en el hírit de taset.
+
+804
+01:07:48,040 --> 01:07:51,040
+Entrenamos un modelo y se que mostramos.
+
+805
+01:07:51,040 --> 01:07:53,040
+Me dimos la cure así,
+
+806
+01:07:53,040 --> 01:07:55,040
+sobre el golpe de entrenamiento,
+
+807
+01:07:55,040 --> 01:07:58,040
+que nos dio 0,83.
+
+808
+01:07:59,040 --> 01:08:03,040
+Y además construimos la matriz de confusión.
+
+809
+01:08:03,040 --> 01:08:06,040
+Esto lo que se llama matriz de confusiones.
+
+810
+01:08:06,040 --> 01:08:09,040
+Una matriz donde yo digo bueno,
+
+811
+01:08:09,040 --> 01:08:13,040
+en la columna y en la fila y.
+
+812
+01:08:13,040 --> 01:08:14,040
+Sí.
+
+813
+01:08:17,040 --> 01:08:19,040
+Son lo que era.
+
+814
+01:08:19,040 --> 01:08:21,040
+Se tosa o sea,
+
+815
+01:08:21,040 --> 01:08:23,040
+la clase original.
+
+816
+01:08:23,040 --> 01:08:26,040
+Y en la columna son lo que le preig.
+
+817
+01:08:26,040 --> 01:08:28,040
+Y en este caso yo,
+
+818
+01:08:28,040 --> 01:08:29,040
+si ustedes se fijan,
+
+819
+01:08:29,040 --> 01:08:30,040
+mira,
+
+820
+01:08:30,040 --> 01:08:31,040
+las setosas,
+
+821
+01:08:31,040 --> 01:08:32,040
+no necesitan.
+
+822
+01:08:32,040 --> 01:08:33,040
+La clasifica casi todas,
+
+823
+01:08:33,040 --> 01:08:34,040
+menos una como setosa.
+
+824
+01:08:34,040 --> 01:08:36,040
+Se aso y muy bueno,
+
+825
+01:08:36,040 --> 01:08:38,040
+se parándose todas.
+
+826
+01:08:39,040 --> 01:08:41,040
+La versicolor.
+
+827
+01:08:43,040 --> 01:08:44,040
+Sí, bastante,
+
+828
+01:08:44,040 --> 01:08:45,040
+el pego bastante,
+
+829
+01:08:45,040 --> 01:08:46,040
+pero me equivoco.
+
+830
+01:08:49,040 --> 01:08:51,040
+Y con la virgínica,
+
+831
+01:08:51,040 --> 01:08:52,040
+me equivoco bastante,
+
+832
+01:08:52,040 --> 01:08:53,040
+la que más me equivoco,
+
+833
+01:08:53,040 --> 01:08:54,040
+la virgínica me equivoco menos.
+
+834
+01:08:54,040 --> 01:08:56,040
+La que tendo confundirla con la versicolor.
+
+835
+01:08:56,040 --> 01:08:57,040
+O sea,
+
+836
+01:08:57,040 --> 01:09:00,040
+la matriz de confusión tiene toda la información
+
+837
+01:09:00,040 --> 01:09:02,040
+de cómo se cruzar.
+
+838
+01:09:02,040 --> 01:09:04,040
+Para paración.
+
+839
+01:09:04,040 --> 01:09:08,040
+¿Cuál sería la matriz de confusión ideal?
+
+840
+01:09:14,040 --> 01:09:15,040
+Si yo clasificaba,
+
+841
+01:09:15,040 --> 01:09:17,040
+que pasaría con la matriz de confusión.
+
+842
+01:09:19,040 --> 01:09:21,040
+Es una diagonal, es una matriz diagonal,
+
+843
+01:09:21,040 --> 01:09:22,040
+exactamente.
+
+844
+01:09:23,040 --> 01:09:24,040
+Si yo chucho, tengo que acumular,
+
+845
+01:09:24,040 --> 01:09:25,040
+lo le acá.
+
+846
+01:09:26,040 --> 01:09:27,040
+Si tiene,
+
+847
+01:09:27,040 --> 01:09:28,040
+ahora lo vamos con el etiqueta.
+
+848
+01:09:28,040 --> 01:09:30,040
+Pero esto que problema tiene.
+
+849
+01:09:32,040 --> 01:09:33,040
+¿Qué problema tiene esto?
+
+850
+01:09:38,040 --> 01:09:39,040
+¿Qué tal mal de esto?
+
+851
+01:09:43,040 --> 01:09:44,040
+Se van de acá hasta que no me.
+
+852
+01:09:44,040 --> 01:09:45,040
+¿Qué tal mal de esto?
+
+853
+01:09:49,040 --> 01:09:50,040
+No, sí.
+
+854
+01:09:50,040 --> 01:09:51,040
+¿Qué tal mal?
+
+855
+01:09:52,040 --> 01:09:53,040
+No.
+
+856
+01:09:53,040 --> 01:09:54,040
+No.
+
+857
+01:09:54,040 --> 01:09:55,040
+No.
+
+858
+01:09:55,040 --> 01:09:56,040
+No.
+
+859
+01:09:56,040 --> 01:09:57,040
+No.
+
+860
+01:09:57,040 --> 01:09:58,040
+No.
+
+861
+01:09:58,040 --> 01:09:59,040
+Porque justamente yo puedo que las etosa
+
+862
+01:09:59,040 --> 01:10:01,040
+porque les ficarla como versicolor,
+
+863
+01:10:01,040 --> 01:10:02,040
+pero no va a haber redé.
+
+864
+01:10:02,040 --> 01:10:04,040
+Yo puedo tener buena forma de identificar la versicolor.
+
+865
+01:10:06,040 --> 01:10:07,040
+No te les.
+
+866
+01:10:07,040 --> 01:10:08,040
+Hay que tamar,
+
+867
+01:10:08,040 --> 01:10:11,040
+que me dímo la creación del cuerpo entre los mientes
+
+868
+01:10:11,040 --> 01:10:12,040
+de esta nueva lineada.
+
+869
+01:10:13,040 --> 01:10:15,040
+Porque fue el cuerpo que usamos para entrenar.
+
+870
+01:10:16,040 --> 01:10:18,040
+Una luca de evaluar performance
+
+871
+01:10:18,040 --> 01:10:20,040
+sobre el cuerpo entre el aniento,
+
+872
+01:10:20,040 --> 01:10:21,040
+el error.
+
+873
+01:10:23,040 --> 01:10:24,040
+El error.
+
+874
+01:10:25,040 --> 01:10:27,040
+Yo tengo que mi la creación del cuerpo de evaluación.
+
+875
+01:10:28,040 --> 01:10:30,040
+Y si se fijan bajo mucho,
+
+876
+01:10:30,040 --> 01:10:31,040
+y esto es típico.
+
+877
+01:10:33,040 --> 01:10:34,040
+Esta es mi,
+
+878
+01:10:35,040 --> 01:10:36,040
+mi mejor,
+
+879
+01:10:36,040 --> 01:10:38,040
+pero mi edición de performa de temeta.
+
+880
+01:10:39,040 --> 01:10:41,040
+Pues no aprender nada de la clase de menos esto.
+
+881
+01:10:41,040 --> 01:10:43,040
+Esto es un tinge y para la casa.
+
+882
+01:10:43,040 --> 01:10:45,040
+Si vas a irleo para la casa y me ditarlo.
+
+883
+01:10:46,040 --> 01:10:47,040
+Está.
+
+884
+01:10:47,040 --> 01:10:49,040
+Tenemos que lograr que uno sebrote.
+
+885
+01:10:49,040 --> 01:10:50,040
+Una fuente de los comunes.
+
+886
+01:10:51,040 --> 01:10:53,040
+Y acá pasó con la trigo fusión
+
+887
+01:10:53,040 --> 01:10:54,040
+que igual más o menos se mantiene.
+
+888
+01:10:54,040 --> 01:10:55,040
+En el cuerpo de evaluación,
+
+889
+01:10:58,040 --> 01:11:00,040
+soy perfecto lesificando la versicolor,
+
+890
+01:11:01,040 --> 01:11:03,040
+la cetosa.
+
+891
+01:11:06,040 --> 01:11:08,040
+Soy tirando amalo,
+
+892
+01:11:08,040 --> 01:11:10,040
+lesificando la versicolor,
+
+893
+01:11:11,040 --> 01:11:14,040
+y la pilote yo con la vesilica.
+
+894
+01:11:15,040 --> 01:11:17,040
+La pilote era una pilote.
+
+895
+01:11:20,040 --> 01:11:22,040
+Y acá está calculada las,
+
+896
+01:11:22,040 --> 01:11:25,040
+esto me voy a dejar de ver para que lo van en la casa
+
+897
+01:11:25,040 --> 01:11:26,040
+a las cuentas también,
+
+898
+01:11:26,040 --> 01:11:29,040
+pero la cetosa tiene uno, uno, uno, uno.
+
+899
+01:11:30,040 --> 01:11:31,040
+O sea, es perfecto.
+
+900
+01:11:32,040 --> 01:11:34,040
+Tiene prisión uno, recol uno,
+
+901
+01:11:34,040 --> 01:11:35,040
+e femecio uno, claro.
+
+902
+01:11:35,040 --> 01:11:36,040
+Si son los iguales,
+
+903
+01:11:40,040 --> 01:11:41,040
+versicolor,
+
+904
+01:11:42,040 --> 01:11:43,040
+tiene.
+
+905
+01:11:44,040 --> 01:11:48,040
+Una precisión,
+
+906
+01:11:49,040 --> 01:11:50,040
+criando amala,
+
+907
+01:11:51,040 --> 01:11:52,040
+si te ojo de ser o cinco,
+
+908
+01:11:52,040 --> 01:11:54,040
+pues había pantoso.
+
+909
+01:11:54,040 --> 01:11:56,040
+Porque tiraba una moneda,
+
+910
+01:11:56,040 --> 01:11:57,040
+me hubiera ido mejor.
+
+911
+01:12:01,040 --> 01:12:02,040
+Un recol de peor,
+
+912
+01:12:02,040 --> 01:12:03,040
+o sea, soy bastante malo.
+
+913
+01:12:03,040 --> 01:12:05,040
+Y la vicinica dice,
+
+914
+01:12:05,040 --> 01:12:06,040
+¿fija?
+
+915
+01:12:06,040 --> 01:12:07,040
+Tengo buena precisión,
+
+916
+01:12:07,040 --> 01:12:08,040
+mejor recol.
+
+917
+01:12:08,040 --> 01:12:13,040
+El recol, el recol, el recol,
+
+918
+01:12:13,040 --> 01:12:14,040
+el recol o mi oga.
+
+919
+01:12:18,040 --> 01:12:19,040
+Tres siete,
+
+920
+01:12:19,040 --> 01:12:21,040
+perdón la precisión o la mi oga.
+
+921
+01:12:22,040 --> 01:12:23,040
+El recol o mi oga.
+
+922
+01:12:27,040 --> 01:12:30,040
+Y si yo quiero tener un número
+
+923
+01:12:30,040 --> 01:12:31,040
+para mi método,
+
+924
+01:12:31,040 --> 01:12:32,040
+hago el promedio de las tres.
+
+925
+01:12:35,040 --> 01:12:36,040
+De las tres precisiones,
+
+926
+01:12:36,040 --> 01:12:37,040
+porque yo quiero uno.
+
+927
+01:12:37,040 --> 01:12:38,040
+Y también método,
+
+928
+01:12:38,040 --> 01:12:39,040
+en promedio,
+
+929
+01:12:39,040 --> 01:12:40,040
+funciona bastante bien.
+
+930
+01:12:41,040 --> 01:12:43,040
+Todo depende de la medida
+
+931
+01:12:43,040 --> 01:12:44,040
+depende mucho el problema,
+
+932
+01:12:44,040 --> 01:12:45,040
+en este caso.
+
+933
+01:12:45,040 --> 01:12:46,040
+Por ejemplo,
+
+934
+01:12:46,040 --> 01:12:47,040
+este promido no es muy útil.
+
+935
+01:12:47,040 --> 01:12:48,040
+A mí me sirve
+
+936
+01:12:48,040 --> 01:12:49,040
+me compara sacar conclusión
+
+937
+01:12:49,040 --> 01:12:51,040
+y cualitativa de esto que yo vi.
+
+938
+01:12:52,040 --> 01:12:53,040
+Y bueno, yo la principal,
+
+939
+01:12:53,040 --> 01:12:54,040
+como yo el cualitativa es
+
+940
+01:12:54,040 --> 01:12:55,040
+que yo lo se tosa,
+
+941
+01:12:55,040 --> 01:12:57,040
+la posee para el muy bien del resto.
+
+942
+01:12:57,040 --> 01:12:58,040
+Pues tengo un recol,
+
+943
+01:12:58,040 --> 01:13:00,040
+como la conclusión muy importante.
+
+944
+01:13:00,040 --> 01:13:02,040
+Si yo digo que el método
+
+945
+01:13:02,040 --> 01:13:03,040
+tiene 0,67,
+
+946
+01:13:03,040 --> 01:13:04,040
+en realidad,
+
+947
+01:13:04,040 --> 01:13:05,040
+no sé mucho lo que dije.
+
+948
+01:13:05,040 --> 01:13:06,040
+¿Qué de una pregunta
+
+949
+01:13:06,040 --> 01:13:07,040
+por responder que es?
+
+950
+01:13:07,040 --> 01:13:08,040
+Bueno, pero ¿cómo hicimos esto?
+
+951
+01:13:08,040 --> 01:13:10,040
+Porque yo tengo tres clasificadores.
+
+952
+01:13:12,040 --> 01:13:13,040
+Como, como tomo
+
+953
+01:13:13,040 --> 01:13:15,040
+estos tres clasificadores
+
+954
+01:13:15,040 --> 01:13:16,040
+como lo transformo en la clase
+
+955
+01:13:16,040 --> 01:13:17,040
+que he predicado.
+
+956
+01:13:19,040 --> 01:13:20,040
+Bueno,
+
+957
+01:13:20,040 --> 01:13:22,040
+si es consistente lo que dice
+
+958
+01:13:22,040 --> 01:13:23,040
+mi clasificador,
+
+959
+01:13:23,040 --> 01:13:24,040
+también,
+
+960
+01:13:24,040 --> 01:13:25,040
+si dice ese tosa,
+
+961
+01:13:25,040 --> 01:13:27,040
+no es versicolor
+
+962
+01:13:27,040 --> 01:13:28,040
+y no es insignica,
+
+963
+01:13:28,040 --> 01:13:30,040
+entonces porque se tosa.
+
+964
+01:13:31,040 --> 01:13:32,040
+Ahora,
+
+965
+01:13:32,040 --> 01:13:33,040
+si este dice que se tosa
+
+966
+01:13:33,040 --> 01:13:35,040
+y este dice que versicolor
+
+967
+01:13:35,040 --> 01:13:38,040
+depende del método,
+
+968
+01:13:38,040 --> 01:13:39,040
+por ejemplo,
+
+969
+01:13:39,040 --> 01:13:41,040
+típicamente uno tiene que tener
+
+970
+01:13:41,040 --> 01:13:42,040
+una escora
+
+971
+01:13:42,040 --> 01:13:43,040
+social método que diga
+
+972
+01:13:43,040 --> 01:13:46,040
+que tan seguro estoy en mi predicción.
+
+973
+01:13:46,040 --> 01:13:48,040
+Por ejemplo,
+
+974
+01:13:48,040 --> 01:13:50,040
+si está por acá,
+
+975
+01:13:50,040 --> 01:13:52,040
+en el punto,
+
+976
+01:13:52,040 --> 01:13:55,040
+está mucho más lejos del
+
+977
+01:13:55,040 --> 01:13:57,040
+de la frontera decisión.
+
+978
+01:13:57,040 --> 01:13:59,040
+En cambio acá,
+
+979
+01:13:59,040 --> 01:14:00,040
+en este,
+
+980
+01:14:00,040 --> 01:14:04,040
+vamos a poner que estoy acá
+
+981
+01:14:04,040 --> 01:14:07,040
+y está mucho más cerca del horde.
+
+982
+01:14:07,040 --> 01:14:09,040
+Entonces yo voy a elegir
+
+983
+01:14:09,040 --> 01:14:11,040
+esta porque mi predicción
+
+984
+01:14:11,040 --> 01:14:12,040
+es mejor,
+
+985
+01:14:12,040 --> 01:14:13,040
+es una mediterra,
+
+986
+01:14:13,040 --> 01:14:15,040
+pero me quedo con eso.
+
+987
+01:14:15,040 --> 01:14:16,040
+Y así como
+
+988
+01:14:16,040 --> 01:14:17,040
+o botando,
+
+989
+01:14:17,040 --> 01:14:19,040
+o por el escore,
+
+990
+01:14:19,040 --> 01:14:20,040
+el hijo cual deja así.
+
+991
+01:14:27,040 --> 01:14:29,040
+En esta dirección
+
+992
+01:14:29,040 --> 01:14:30,040
+hay un año,
+
+993
+01:14:30,040 --> 01:14:32,040
+un ejemplo elaborado
+
+994
+01:14:32,040 --> 01:14:34,040
+de un libro que escribimos sobre estas cosas
+
+995
+01:14:34,040 --> 01:14:36,040
+con Raúl Garretta
+
+996
+01:14:36,040 --> 01:14:37,040
+hay que tener el detalle
+
+997
+01:14:37,040 --> 01:14:38,040
+como aplicado,
+
+998
+01:14:38,040 --> 01:14:40,040
+como aplicarlo a un dataset.
+
+999
+01:14:42,040 --> 01:14:43,040
+Y bueno,
+
+1000
+01:14:43,040 --> 01:14:44,040
+país cerrando,
+
+1001
+01:14:44,040 --> 01:14:45,040
+pero,
+
+1002
+01:14:45,040 --> 01:14:46,040
+estoy activo.
+
+1003
+01:14:48,040 --> 01:14:50,040
+Hay otros tipos de métodos
+
+1004
+01:14:50,040 --> 01:14:52,040
+que son los métodos de clasificación
+
+1005
+01:14:52,040 --> 01:14:53,040
+secuencial,
+
+1006
+01:14:53,040 --> 01:14:54,040
+que es cuando hay algunos
+
+1007
+01:14:54,040 --> 01:14:55,040
+que son los gírenos
+
+1008
+01:14:55,040 --> 01:14:57,040
+como los métodos de clasificación secuencial,
+
+1009
+01:14:57,040 --> 01:14:59,040
+que es cuando
+
+1010
+01:15:00,040 --> 01:15:01,040
+lo que yo quiero hacer
+
+1011
+01:15:01,040 --> 01:15:03,040
+es clasificar
+
+1012
+01:15:03,040 --> 01:15:04,040
+no una objeto
+
+1013
+01:15:04,040 --> 01:15:06,040
+sin una secuencia de objetos.
+
+1014
+01:15:06,040 --> 01:15:07,040
+Por ejemplo,
+
+1015
+01:15:07,040 --> 01:15:08,040
+cuando quedo hacia el postaje.
+
+1016
+01:15:13,040 --> 01:15:14,040
+Hay
+
+1017
+01:15:14,040 --> 01:15:15,040
+lo que sucede es que
+
+1018
+01:15:15,040 --> 01:15:16,040
+la función de clasificación
+
+1019
+01:15:16,040 --> 01:15:17,040
+tiene secuencia
+
+1020
+01:15:17,040 --> 01:15:18,040
+como mi y como mi,
+
+1021
+01:15:18,040 --> 01:15:19,040
+después todo quedo
+
+1022
+01:15:19,040 --> 01:15:20,040
+más o menos igual.
+
+1023
+01:15:20,040 --> 01:15:21,040
+Pero,
+
+1024
+01:15:21,040 --> 01:15:22,040
+parecen en un problema,
+
+1025
+01:15:28,040 --> 01:15:29,040
+por ejemplo,
+
+1026
+01:15:29,040 --> 01:15:31,040
+cuando yo quiero reconocer
+
+1027
+01:15:31,040 --> 01:15:33,040
+un conjunto
+
+1028
+01:15:33,040 --> 01:15:34,040
+que identificar,
+
+1029
+01:15:34,040 --> 01:15:35,040
+por ejemplo,
+
+1030
+01:15:37,040 --> 01:15:39,040
+quiero hacer chanquín.
+
+1031
+01:15:55,040 --> 01:15:57,040
+Yo quiero identificar
+
+1032
+01:15:58,040 --> 01:15:59,040
+que esto
+
+1033
+01:16:01,040 --> 01:16:03,040
+es un grupo nominal.
+
+1034
+01:16:05,040 --> 01:16:07,040
+Nunca me acuerdo como esta.
+
+1035
+01:16:10,040 --> 01:16:11,040
+En el...
+
+1036
+01:16:11,040 --> 01:16:12,040
+qué horrible.
+
+1037
+01:16:12,040 --> 01:16:13,040
+Un grupo nominal.
+
+1038
+01:16:14,040 --> 01:16:15,040
+Y este es otro.
+
+1039
+01:16:16,040 --> 01:16:17,040
+Eso se llama
+
+1040
+01:16:17,040 --> 01:16:18,040
+Chanquín,
+
+1041
+01:16:18,040 --> 01:16:20,040
+de edificar los grupos nominales.
+
+1042
+01:16:24,040 --> 01:16:26,040
+Y lo grupo pervana.
+
+1043
+01:16:28,040 --> 01:16:32,040
+¿Cómo transformo esto?
+
+1044
+01:16:32,040 --> 01:16:34,040
+En un problema de clasificación secuencia
+
+1045
+01:16:34,040 --> 01:16:35,040
+y bueno,
+
+1046
+01:16:37,040 --> 01:16:39,040
+esto es el comienzo.
+
+1047
+01:16:41,040 --> 01:16:43,040
+Esta es una forma.
+
+1048
+01:16:45,040 --> 01:16:46,040
+Es decir,
+
+1049
+01:16:46,040 --> 01:16:47,040
+pongo una clase
+
+1050
+01:16:47,040 --> 01:16:48,040
+a cada palabra.
+
+1051
+01:16:58,040 --> 01:17:02,040
+¿Qué lo mismo que mismo
+
+1052
+01:17:02,040 --> 01:17:03,040
+en el día de conómbre
+
+1053
+01:17:03,040 --> 01:17:04,040
+en el laboratorio?
+
+1054
+01:17:04,040 --> 01:17:05,040
+Sí.
+
+1055
+01:17:05,040 --> 01:17:06,040
+Y lo que todo hace
+
+1056
+01:17:06,040 --> 01:17:07,040
+es predecir una secuencia
+
+1057
+01:17:07,040 --> 01:17:08,040
+categoría.
+
+1058
+01:17:09,040 --> 01:17:10,040
+Sí.
+
+1059
+01:17:10,040 --> 01:17:11,040
+Lo que hablábamos
+
+1060
+01:17:11,040 --> 01:17:12,040
+cuando decía
+
+1061
+01:17:12,040 --> 01:17:13,040
+mujer marco model.
+
+1062
+01:17:13,040 --> 01:17:14,040
+Yo quiero
+
+1063
+01:17:14,040 --> 01:17:16,040
+la secuencia de categoría
+
+1064
+01:17:16,040 --> 01:17:17,040
+mejor.
+
+1065
+01:17:17,040 --> 01:17:18,040
+No palabra palabra.
+
+1066
+01:17:18,040 --> 01:17:19,040
+No puc.
+
+1067
+01:17:19,040 --> 01:17:20,040
+Yo puedo llegar
+
+1068
+01:17:20,040 --> 01:17:21,040
+a clasificar
+
+1069
+01:17:21,040 --> 01:17:22,040
+al parvalar,
+
+1070
+01:17:22,040 --> 01:17:23,040
+al preparador
+
+1071
+01:17:23,040 --> 01:17:24,040
+de información.
+
+1072
+01:17:24,040 --> 01:17:25,040
+Focacal.
+
+1073
+01:17:25,040 --> 01:17:26,040
+No estoy en cuenta
+
+1074
+01:17:26,040 --> 01:17:27,040
+de la secuencia.
+
+1075
+01:17:29,040 --> 01:17:30,040
+Entonces,
+
+1076
+01:17:30,040 --> 01:17:31,040
+bueno,
+
+1077
+01:17:31,040 --> 01:17:32,040
+es un ejemplo.
+
+1078
+01:17:32,040 --> 01:17:34,040
+Allí otro.
+
+1079
+01:17:34,040 --> 01:17:35,040
+Hay otra forma
+
+1080
+01:17:35,040 --> 01:17:36,040
+de marcar diferente
+
+1081
+01:17:36,040 --> 01:17:37,040
+sin
+
+1082
+01:17:37,040 --> 01:17:38,040
+acais
+
+1083
+01:17:38,040 --> 01:17:39,040
+veint
+
+1084
+01:17:39,040 --> 01:17:40,040
+y auto.
+
+1085
+01:17:40,040 --> 01:17:41,040
+Hay otra forma
+
+1086
+01:17:41,040 --> 01:17:42,040
+para expandar
+
+1087
+01:17:42,040 --> 01:17:43,040
+lo que decir,
+
+1088
+01:17:43,040 --> 01:17:44,040
+este es el primero,
+
+1089
+01:17:44,040 --> 01:17:45,040
+este es el first.
+
+1090
+01:17:47,040 --> 01:17:49,040
+Y este es el last.
+
+1091
+01:17:52,040 --> 01:17:53,040
+Sí.
+
+1092
+01:17:53,040 --> 01:17:54,040
+Creo que tenemos acá.
+
+1093
+01:17:54,040 --> 01:17:57,040
+Y luego,
+
+1094
+01:17:57,040 --> 01:17:58,040
+y luego,
+
+1095
+01:17:58,040 --> 01:18:00,040
+plicó en metodeclación supervisada
+
+1096
+01:18:00,040 --> 01:18:02,040
+de clasificación secuencial.
+
+1097
+01:18:02,040 --> 01:18:03,040
+Lo metodeclificación secuencial
+
+1098
+01:18:03,040 --> 01:18:04,040
+que es marco model,
+
+1099
+01:18:04,040 --> 01:18:06,040
+con dicionar rando fils,
+
+1100
+01:18:06,040 --> 01:18:07,040
+son metos pensados
+
+1101
+01:18:07,040 --> 01:18:08,040
+para secuencias.
+
+1102
+01:18:09,040 --> 01:18:10,040
+Son otros tipos de metos
+
+1103
+01:18:10,040 --> 01:18:11,040
+que tienen en cuenta
+
+1104
+01:18:11,040 --> 01:18:13,040
+el hecho de caer una secuencial.
+
+1105
+01:18:14,040 --> 01:18:17,040
+El la metodología es la misma,
+
+1106
+01:18:17,040 --> 01:18:19,040
+pero tenemos en una tema
+
+1107
+01:18:19,040 --> 01:18:21,040
+cómo de determinas y algo
+
+1108
+01:18:21,040 --> 01:18:22,040
+es un tru positivo.
+
+1109
+01:18:24,040 --> 01:18:25,040
+Si yo clasí,
+
+1110
+01:18:25,040 --> 01:18:27,040
+como tengo varias categorías,
+
+1111
+01:18:27,040 --> 01:18:28,040
+puede decir,
+
+1112
+01:18:28,040 --> 01:18:29,040
+bueno,
+
+1113
+01:18:29,040 --> 01:18:30,040
+pero si le pedía todo,
+
+1114
+01:18:30,040 --> 01:18:31,040
+menos al último,
+
+1115
+01:18:31,040 --> 01:18:33,040
+que también estuve,
+
+1116
+01:18:33,040 --> 01:18:35,040
+en general,
+
+1117
+01:18:35,040 --> 01:18:36,040
+en estos metos se asume,
+
+1118
+01:18:36,040 --> 01:18:38,040
+esto lo van a tener un bolero también.
+
+1119
+01:18:38,040 --> 01:18:40,040
+Se asume exact match,
+
+1120
+01:18:40,040 --> 01:18:41,040
+ese es valido,
+
+1121
+01:18:41,040 --> 01:18:42,040
+si bocaste todos.
+
+1122
+01:18:42,040 --> 01:18:43,040
+En el pan,
+
+1123
+01:18:43,040 --> 01:18:44,040
+si peaste a todo,
+
+1124
+01:18:44,040 --> 01:18:45,040
+si no,
+
+1125
+01:18:45,040 --> 01:18:46,040
+marchaste.
+
+1126
+01:18:46,040 --> 01:18:47,040
+Y después,
+
+1127
+01:18:47,040 --> 01:18:48,040
+los metos se cuentan igual,
+
+1128
+01:18:48,040 --> 01:18:49,040
+los trupos,
+
+1129
+01:18:49,040 --> 01:18:50,040
+los truunes a ti,
+
+1130
+01:18:50,040 --> 01:18:51,040
+los metos,
+
+1131
+01:18:51,040 --> 01:18:52,040
+laificación secuencial,
+
+1132
+01:18:52,040 --> 01:18:54,040
+es un tru positivo,
+
+1133
+01:18:54,040 --> 01:18:56,040
+un falso positivo,
+
+1134
+01:18:56,040 --> 01:18:58,040
+también introducir un falso negativo
+
+1135
+01:18:58,040 --> 01:18:59,040
+porque es re,
+
+1136
+01:18:59,040 --> 01:19:00,040
+y es re,
+
+1137
+01:19:00,040 --> 01:19:01,040
+el que era el correcto,
+
+1138
+01:19:01,040 --> 01:19:03,040
+¿no?
+
+1139
+01:19:04,040 --> 01:19:05,040
+Hay variantes,
+
+1140
+01:19:05,040 --> 01:19:06,040
+pero no son muy estando
+
+1141
+01:19:06,040 --> 01:19:08,040
+en la literatura.
+
+1142
+01:19:09,040 --> 01:19:10,040
+Y después,
+
+1143
+01:19:10,040 --> 01:19:12,040
+pero el procedimiento es el mismo,
+
+1144
+01:19:12,040 --> 01:19:13,040
+a un cuerpo evaluado
+
+1145
+01:19:13,040 --> 01:19:14,040
+en el ambiente,
+
+1146
+01:19:14,040 --> 01:19:15,040
+de la evaluación bla bla bla.
+
+1147
+01:19:16,040 --> 01:19:17,040
+Y hasta por acá,
+
+1148
+01:19:17,040 --> 01:19:18,040
+llegamos con la significación.
+
+1149
+01:19:18,040 --> 01:19:19,040
+En la clase que viene,
+
+1150
+01:19:19,040 --> 01:19:20,040
+vamos a seguir hablando
+
+1151
+01:19:20,040 --> 01:19:21,040
+de laificación,
+
+1152
+01:19:21,040 --> 01:19:22,040
+desde el punto de vista de los metos,
+
+1153
+01:19:22,040 --> 01:19:23,040
+de decir,
+
+1154
+01:19:23,040 --> 01:19:24,040
+cómo son los metos,
+
+1155
+01:19:24,040 --> 01:19:26,040
+cómo el uso y un método de laificación.
+
+1156
+01:19:26,040 --> 01:19:28,040
+Nosotros ya hemos visto algunos.
+
+1157
+01:19:29,040 --> 01:19:31,040
+Hemos visto,
+
+1158
+01:19:33,040 --> 01:19:34,040
+bueno,
+
+1159
+01:19:34,040 --> 01:19:35,040
+ahí va,
+
+1160
+01:19:35,040 --> 01:19:36,040
+y no lo vimos,
+
+1161
+01:19:36,040 --> 01:19:37,040
+pero vimos,
+
+1162
+01:19:37,040 --> 01:19:39,040
+y es un método de laificación.
+
+1163
+01:19:40,040 --> 01:19:42,040
+Y hemos mencionado otro.
+
+1164
+01:19:42,040 --> 01:19:45,040
+Así que eso sería todo por aquí.
+

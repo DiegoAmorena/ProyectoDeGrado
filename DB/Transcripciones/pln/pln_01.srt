@@ -1,0 +1,6268 @@
+1
+00:00:00,000 --> 00:00:22,240
+Bueno, ¿cómo andan? Bienvenidos a la versión 26 del curso de Procesamiento del Inguaje
+
+2
+00:00:22,240 --> 00:00:31,680
+Natural de Introducción al Procesamiento del Inguaje Natural? Somos unos cuantos. Este es un
+
+3
+00:00:31,680 --> 00:00:43,160
+curso que hace 10 años, si no me equivoco, estamos dando, que se ha venido afianzando y que lo que
+
+4
+00:00:43,160 --> 00:00:48,480
+intenta presentar son los fundamentos de lo que se llama Procesamiento del Inguaje Natural,
+
+5
+00:00:49,240 --> 00:00:55,560
+que es esencialmente cómo procesar con computadoras de una forma más o menos eficiente en el lenguaje.
+
+6
+00:00:58,960 --> 00:01:06,680
+En la clase de hoy la idea es presentar un poquito en qué consiste el curso y
+
+7
+00:01:08,320 --> 00:01:16,120
+dar una introducción general. Y bueno, en la sucesiva clase lo que vamos a tratar de recorrer es
+
+8
+00:01:17,120 --> 00:01:22,120
+todos los temas o los grandes temas del Procesamiento del Inguaje Natural. El Procesamiento del
+
+9
+00:01:22,120 --> 00:01:30,160
+Inguaje Natural van a ver que es una cosa que tiene muchas etapas y en cada una de ellas se
+
+10
+00:01:30,160 --> 00:01:35,320
+puede profundizar mucho. La idea de este curso, como su nombre lo indica, es un curso de introducción,
+
+11
+00:01:35,320 --> 00:01:43,760
+es un curso, a mí me gusta decir que es un curso más largo que profundo, digamos. O sea,
+
+12
+00:01:43,760 --> 00:01:51,440
+tratamos de cubrir los temas principales y los algoritmos y métodos principales,
+
+13
+00:01:51,440 --> 00:01:57,920
+pero teniendo claro y presente que en cada prácticamente todos los temas que nosotros tocamos
+
+14
+00:01:57,920 --> 00:02:08,000
+puede profundizar muchísimo. La idea del curso es generar, proveerlos a ustedes de un set de,
+
+15
+00:02:08,720 --> 00:02:16,840
+primero, de los conocimientos básicos que se necesitan del dominio, es decir, la semana que
+
+16
+00:02:16,840 --> 00:02:23,040
+viene con lo iban a tener un par de clases, la que llamamos volver al liceo, digamos, español,
+
+17
+00:02:23,040 --> 00:02:29,000
+digamos, para entender el dominio del que estamos hablando. Y luego un conjunto de herramientas
+
+18
+00:02:29,000 --> 00:02:33,560
+y métodos tradicionales tratando de tener una visión transversal de métodos porque hay métodos que
+
+19
+00:02:33,560 --> 00:02:42,440
+van a ver que se repiten. Un poco ese es el objetivo. Barraquemos con un poco de los datos
+
+20
+00:02:42,440 --> 00:02:50,760
+del curso. Los docentes somos Luis Chiruso, que está por acá delante, y Yacín Ceballo,
+
+21
+00:02:50,760 --> 00:02:55,480
+que se suma este año y que va a encargarse el laboratorio y quien se habla. El horario es
+
+22
+00:02:55,480 --> 00:03:04,480
+los martes en el salón 306, donde estábamos viendo, a ver si entramos, y los jueves en este
+
+23
+00:03:04,480 --> 00:03:14,720
+salón 301 de 20 a 22 horas. Si les parece que el horario no es el mejor, piensen que la primera
+
+24
+00:03:14,720 --> 00:03:19,040
+edición del curso era este horario, pero en el salón segundo subsuelo hace un frío horrible,
+
+25
+00:03:19,040 --> 00:03:24,600
+o sea, le sientan se afortunados de estar acá. Este es el correo para los docentes del grupo.
+
+26
+00:03:25,920 --> 00:03:29,200
+Esta es la página web, pero en realidad la página web lo que tiene son los datos
+
+27
+00:03:29,200 --> 00:03:33,680
+fijos y lo que da ahí nos vamos a esa eba inmediatamente, que es donde vamos a gestionar toda la
+
+28
+00:03:33,680 --> 00:03:38,240
+información del curso. Vamos a tratar de que todo el vínculo del curso se haga a través de
+
+29
+00:03:38,240 --> 00:03:47,320
+eba publicación, entrega, mensaje, bla, bla. ¿De acuerdo? Si usted se halla alguna duda me interrumbe,
+
+30
+00:03:47,320 --> 00:03:53,720
+porque yo no suelo parar. Bueno, la modalidad del curso es, tratamos de que sea un curso
+
+31
+00:03:53,720 --> 00:04:06,000
+participativo, eso van a ver que tiene que ver también con cómo evaluamos, pero un poco,
+
+32
+00:04:06,000 --> 00:04:10,400
+el objetivo del curso es ese que yo le decía, de presentar el Procesamiento de Baja Natural,
+
+33
+00:04:10,400 --> 00:04:19,120
+pero uno de los objetivos adicionales, para nosotros es muy importante tratar de que este
+
+34
+00:04:19,120 --> 00:04:27,600
+curso sea una especie de introducción a la investigación. También se ha estado como
+
+35
+00:04:27,600 --> 00:04:34,320
+posgrado, donde esencialmente la diferencia con los cursos tradicionales de grado se podría
+
+36
+00:04:34,400 --> 00:04:41,680
+decir que acá vale, que haya preguntas sin respuestas o preguntas que queden planteadas o cosas que
+
+37
+00:04:41,680 --> 00:04:47,000
+podemos decir no sabemos cómo se hace, que no hay una receta. ¿De acuerdo? Entonces un poco tratar
+
+38
+00:04:47,000 --> 00:04:52,080
+de transmitir eso que es lo que pasa siempre cuando uno investiga, si se encuentra con cosas que no
+
+39
+00:04:52,080 --> 00:04:56,440
+sabe cómo hacerla, que no tiene un docente que sabe todo que le va a decir, entonces hace de esta forma.
+
+40
+00:04:56,880 --> 00:05:07,160
+Un poco introducirlos en ese... las clases van a ser teóricos prácticas,
+
+41
+00:05:08,160 --> 00:05:15,200
+vamos a hacer presentaciones y vamos a mostrar los principales algoritmos y vamos a poner
+
+42
+00:05:15,200 --> 00:05:20,640
+algunos prácticos que nunca nadie los hace, pero bueno, cada cual, los que lo hacen los además.
+
+43
+00:05:21,600 --> 00:05:27,480
+Y además vamos a estar en Open Film a partir de este año, quiero agradecerles
+
+44
+00:05:27,480 --> 00:05:35,680
+especialmente a los amigos de Open Film, van a poder ver desde su casa, yo igual les recomiendo
+
+45
+00:05:35,680 --> 00:05:43,160
+que vengan, venir en realidad no les va a cambiar nada desde el punto de vista de los temas del curso,
+
+46
+00:05:43,160 --> 00:05:47,040
+porque vamos a publicar todo y las clases van a estar filmadas, pero yo creo que está bueno en
+
+47
+00:05:47,040 --> 00:05:50,960
+y porque hay cosas que se transmiten mano a mano que sirven, pero es una decisión de ustedes.
+
+48
+00:05:52,400 --> 00:05:56,680
+Tartaremos a hacerlo tan entretenido como se pueda como para que no quede solo acá.
+
+49
+00:05:58,320 --> 00:06:07,280
+Y la evaluación del curso va a ser, por un lado, un proyecto que va a ser el 35% de los puntos,
+
+50
+00:06:07,600 --> 00:06:15,200
+es un trabajo que está presentando más o menos en septiembre, una cosa así.
+
+51
+00:06:16,280 --> 00:06:20,640
+Algunos años hemos hecho dos en tres, una todavía no sabemos bien cómo va a ser,
+
+52
+00:06:20,640 --> 00:06:28,160
+pero es un trabajo que implica una tarea proxima y que trata de aproximar algo que
+
+53
+00:06:28,160 --> 00:06:33,520
+no se ve en el teórico, que es herramientas, es decir, cómo, qué pasa en el mundo real,
+
+54
+00:06:33,520 --> 00:06:41,160
+cómo lo aplicamos bibliotecas, cosas de esas y obtener resultados. Una tarea cómo se resuelve.
+
+55
+00:06:41,160 --> 00:06:46,960
+El año pasado, el año pasado fue, por ejemplo, para que le dimos un Corpus,
+
+56
+00:06:46,960 --> 00:06:54,700
+un conjunto de críticas de películas, y tratábamos de hacer un clasificador que
+
+57
+00:06:54,700 --> 00:07:01,600
+predijera a partir del texto si la crítica era positiva o negativa. Es un poco el tipo de tareas
+
+58
+00:07:01,600 --> 00:07:06,160
+que se hace. Eso se llama sentimentanálisis y está bastante de modo.
+
+59
+00:07:09,680 --> 00:07:13,360
+Después también, y para nosotros, tiene que ver con eso que le decíamos del objetivo de la
+
+60
+00:07:13,360 --> 00:07:18,040
+investigación, la idea es que ustedes en grupo van a tener que ir pensando en un grupo de A3,
+
+61
+00:07:19,200 --> 00:07:25,800
+en grupo presenten un artículo científico, vamos a poner una lista de artículos, ¿de acuerdo?
+
+62
+00:07:26,040 --> 00:07:33,840
+Y ustedes van a tener que leerlo, tratar de entenderlo y exponerlo a los demás.
+
+63
+00:07:33,840 --> 00:07:37,960
+Eso es lo que uno hace esencialmente en una conferencia, lo hace generalmente con artículos
+
+64
+00:07:37,960 --> 00:07:46,440
+propios, ¿no? Y otro grupo, la idea es que critique ese artículo, no con el ánimo de hacer
+
+65
+00:07:46,440 --> 00:07:51,280
+los estudiantes que lo presentaron pierda, sino con el ánimo de obtener más conocimiento,
+
+66
+00:07:51,440 --> 00:07:55,360
+que es lo que sucede en las conferencias. Entonces un poco viene por ahí, es decir,
+
+67
+00:07:55,360 --> 00:08:03,520
+tanto el que presenta como el que lo critica, tratan de entender y general conocimiento para
+
+68
+00:08:03,520 --> 00:08:11,440
+todos los demás. Y ahí como yo les decía, vale decir, esto no lo entendí, no vale leerlo una vez
+
+69
+00:08:11,440 --> 00:08:16,600
+si no lo entendí, hay que buscar referencia en otros lados, porque ahí habla de cosas que uno
+
+70
+00:08:16,760 --> 00:08:20,680
+necesita en background, bueno informarse, armar ese paquetito y hacer una presentación.
+
+71
+00:08:23,080 --> 00:08:33,280
+Bueno, ahí perdón. Eso se lleva el 25% de los puntos y luego hay al final una prueba
+
+72
+00:08:33,280 --> 00:08:42,320
+individual escrita que es el 40% pero que tiene un mínimo del 60%. Nada en este curso está
+
+73
+00:08:42,320 --> 00:08:48,400
+pensado para que sea horrible y difícil porque al ser un curso que tiene muchos temas, pedirle
+
+74
+00:08:48,400 --> 00:08:55,440
+como les decía profundizar en un tema sería muy amplio, digamos, ¿no? Dejan demasiados temas
+
+75
+00:08:55,440 --> 00:08:59,600
+o para yo pedirle que sepan un montón de cada uno. Entonces la prueba generalmente lo que valúa es
+
+76
+00:08:59,600 --> 00:09:05,600
+si ustedes conocen los principales algoritmos que se presentan en el curso, algunas preguntas
+
+77
+00:09:05,600 --> 00:09:18,560
+teóricas, ¿sí? Pero no está pensada para que sea muy difícil, digamos, ¿no? Porque hay otras
+
+78
+00:09:18,560 --> 00:09:25,920
+instancias de evaluación, quiero decir, no está todo concentrado ahí. Pero si es parte de la
+
+79
+00:09:25,920 --> 00:09:29,600
+aprobación integral del curso, ¿qué quiere decir? Que si alguien no prueba hasta prueba,
+
+80
+00:09:29,600 --> 00:09:38,760
+no prueba todo el curso. Generalmente no, ponemos dos instancias, una va a ser a fin de año y otra
+
+81
+00:09:38,760 --> 00:09:46,800
+en febrero, ¿sí? Donde cada uno puede presentarse a cualquiera de las dos, ¿sí? Se presenta la
+
+82
+00:09:46,800 --> 00:09:51,280
+primera y si la pierde, se presenta la segunda o se presenta derecho a la segunda, etcétera. Si se
+
+83
+00:09:51,280 --> 00:09:56,720
+presenta la primera y salva no puede presentarse la segunda. Bueno, pues gente que puede querer subir
+
+84
+00:09:56,720 --> 00:10:10,960
+las notas no se puede, una cosa rara. ¿Alguna duda del funcionamiento? No, una duda. Bueno, el curso
+
+85
+00:10:10,960 --> 00:10:17,680
+tiene esas áreas que dice ahí, vamos a ver un poquito detalle hoy en general, vamos a repasarlo,
+
+86
+00:10:17,680 --> 00:10:25,360
+es un curso que aunque el procesamiento de lenguaje natural, como seguramente le hicieron en cualquier
+
+87
+00:10:25,360 --> 00:10:31,120
+diario que se precie de moderno, ha tenido un desarrollo, no? Ormelo el último año, no sé qué.
+
+88
+00:10:31,120 --> 00:10:37,240
+Este temario no ha cambiado tanto porque yo lo que quería mostrar es que los fundamentos
+
+89
+00:10:37,240 --> 00:10:42,800
+vienen como muchas cosas, de hace mucho tiempo atrás y lo que ha modificado son los métodos y
+
+90
+00:10:42,800 --> 00:10:53,960
+bueno eso vamos a hablar en el curso. Como ven son unos cuantos temas. El libro del curso es este,
+
+91
+00:10:54,800 --> 00:10:59,360
+Speech and Language Processing, An Introduction to Natural Language Processing, Computation
+
+92
+00:10:59,360 --> 00:11:06,840
+and Linguistics and Speed Recognition, de Martin Yurafki. Este libro está por salir en su tercera
+
+93
+00:11:06,840 --> 00:11:19,120
+edición. El libro cubre una cantidad de cosas de temas más que en este curso no se ven y es un
+
+94
+00:11:19,120 --> 00:11:27,360
+libro muy recomendable y además, idealmente ustedes deberían leer los capítulos, después de
+
+95
+00:11:27,360 --> 00:11:32,000
+cada tema nosotros presentamos los capítulos correspondientes del libro que se pueden en lo
+
+96
+00:11:32,000 --> 00:11:36,920
+que está basado en la clase y ustedes deberían leerlo y saberlo, cosa que nadie hace, pero yo
+
+97
+00:11:36,920 --> 00:11:41,080
+tengo la obligación de recomendarlo y me parece que es realmente bueno para entender bien de qué se
+
+98
+00:11:41,920 --> 00:11:49,760
+trata. Y bueno y esto es este es el libro de NLTK que es la herramienta, la biblioteca que vamos a
+
+99
+00:11:49,760 --> 00:11:54,920
+usar para una de las bibliotecas que vamos a usar para la parte práctica, para la parte laboratorio
+
+100
+00:11:55,920 --> 00:12:02,880
+y esto está más orientado a la implementación. NLTK es una biblioteca en Python
+
+101
+00:12:03,040 --> 00:12:11,000
+pensada principalmente para enseñar, pero muchas veces se usa en producción también,
+
+102
+00:12:11,000 --> 00:12:18,880
+evolucionó mucho. La plataforma de software que vamos a usar es Python y NLTK,
+
+103
+00:12:23,920 --> 00:12:28,040
+no les voy a preguntar porque ya se va a tener que arreglar, no sé cuánto saben Python pero los que
+
+104
+00:12:28,040 --> 00:12:34,320
+no saben van a tener que aprender y van a estar fascinados y en NLTK la biblioteca. Freelink es
+
+105
+00:12:34,320 --> 00:12:41,400
+una herramienta especialmente para el procesamiento del idioma español, en estas cosas hay muchas
+
+106
+00:12:41,400 --> 00:12:45,520
+herramientas que dependen un poco del idioma, si bien eso vamos a ver que ha cambiado en los últimos
+
+107
+00:12:45,520 --> 00:12:51,640
+años porque los métodos estadísticos son menos idiomas dependientes, pero de todos modos no es
+
+108
+00:12:51,640 --> 00:13:00,320
+lo mismo parciar para español que para el inglés y menos para el chino. Freelink es una
+
+109
+00:13:00,320 --> 00:13:08,960
+herramienta pensada para el español. El laboratorio se va a entregar en como no hubo de
+
+110
+00:13:08,960 --> 00:13:18,240
+iPython, ¿conocen iPython, alguien conoce? Es una forma de distribuir y ya lo van a ver,
+
+111
+00:13:18,560 --> 00:13:24,120
+mezclar código y documentos, es como un documento que tiene un motor de programación atrás,
+
+112
+00:13:24,120 --> 00:13:26,960
+entonces uno puede mostrar el código y explicarlo arriba en el mismo documento.
+
+113
+00:13:28,040 --> 00:13:38,120
+Y Scikit Learn que es una herramienta de aprendizaje automático genérica,
+
+114
+00:13:41,320 --> 00:13:46,200
+esto es lo que se pide saber, formalismo de estado finito, teoría del lenguaje,
+
+115
+00:13:48,240 --> 00:13:54,640
+gramática formal, teoría del lenguaje, lógica de predicado como 14 materias, por lo menos lógica,
+
+116
+00:13:54,640 --> 00:13:58,680
+un poco de probabilidad estadística, si bien vamos a revisar porque generalmente
+
+117
+00:14:00,800 --> 00:14:04,800
+uno se olvida de probabilidad estadística en la carrera y nosotros se lo tratamos de recordar
+
+118
+00:14:04,800 --> 00:14:13,280
+y bueno obviamente un poco de programación. Alguien que lo esté tomando como parado que
+
+119
+00:14:13,280 --> 00:14:24,320
+no sea de ingeniería, de lingüística, bueno muy bien, siempre está bueno tener gente de
+
+120
+00:14:24,320 --> 00:14:33,280
+lingüística y tengo que cuidarme con las cosas que digo, intercambiaremos chistes con la lingüista,
+
+121
+00:14:33,280 --> 00:14:40,000
+intercambiaremos, dije, entonces hay una gran discusión en todo esto del pasamiento del
+
+122
+00:14:40,000 --> 00:14:46,720
+lenguaje natural, ya vamos a hablar de eso, ahora vamos a hablar de todo, capaz que para el caso tuyo
+
+123
+00:14:46,720 --> 00:14:53,520
+podemos adaptar un poco la tarea por el tema de la programación y demás, no hay problema, lo hablamos.
+
+124
+00:14:55,440 --> 00:15:00,120
+Eso me faltó decir, los estudiantes por grado además de hacer el laboratorio,
+
+125
+00:15:03,360 --> 00:15:08,440
+además de aprobar el curso quiero decir van a tener que hacer una prueba, un trabajo especial
+
+126
+00:15:10,000 --> 00:15:13,720
+para obtener los créditos por grado, ese es un reglimiento sólo para los estudiantes por grado.
+
+127
+00:15:16,320 --> 00:15:25,680
+¿Alguna duda está acá? No, una duda, me faltó algo, no, ese es el curso,
+
+128
+00:15:27,600 --> 00:15:30,200
+entonces como no hay duda vamos a arrancar con la clase,
+
+129
+00:15:31,560 --> 00:15:33,880
+esto no necesito que cerrarlo, voy a perder todo.
+
+130
+00:15:40,000 --> 00:15:54,200
+Generalmente las clases duran una hora y media más o menos, no, nunca uso dos horas,
+
+131
+00:15:54,200 --> 00:16:01,720
+pero tampoco doy pausa porque si no, una hora y media y a veces se va un poquito más largo,
+
+132
+00:16:01,720 --> 00:16:07,000
+pero no mucho más. No, mentira, a veces dura como dos horas, pero tal.
+
+133
+00:16:10,840 --> 00:16:17,920
+Bueno, arranquemos con una introducción, esta primera clase lo que trata de mostrar es la Big
+
+134
+00:16:17,920 --> 00:16:25,440
+Picture, digamos, decir qué es todo lo que hay en el pensamiento del lenguaje natural.
+
+135
+00:16:27,800 --> 00:16:29,480
+Y bueno, vamos a empezar por responder qué es.
+
+136
+00:16:32,200 --> 00:16:36,800
+El pensamiento del lenguaje natural es un conjunto de métodos y técnicas
+
+137
+00:16:37,400 --> 00:16:43,680
+eficientes desde un punto de vista computacional para la comprensión y la generación del lenguaje
+
+138
+00:16:43,680 --> 00:16:49,800
+natural. Acá tenemos varias cosas interesantes para mencionar, uno de los eficientes desde un punto
+
+139
+00:16:49,800 --> 00:16:55,360
+de vista computacional, el pensamiento del lenguaje natural está pensado como una
+
+140
+00:16:55,360 --> 00:17:00,400
+rama ingenieril y eso es lo que lo diferencia de la lingüística computacional, la lingüística
+
+141
+00:17:00,400 --> 00:17:07,040
+computacional es la que estudia toda la teoría del lenguaje, de cómo se produce,
+
+142
+00:17:07,040 --> 00:17:13,520
+de cómo se generan, de los esquemas, pero esto es algo que busca ser eficiente desde el punto
+
+143
+00:17:13,520 --> 00:17:18,560
+de vista computacional. El objetivo es para que lo aplique una computadora, para que se resuelva de
+
+144
+00:17:18,560 --> 00:17:24,880
+forma eficiente. Y hay dos grandes vertientes en el pensamiento del lenguaje natural que son la
+
+145
+00:17:24,880 --> 00:17:32,200
+comprensión y la generación. O sea, una cosa es tratar de entender cuando alguien me habla y otra
+
+146
+00:17:32,200 --> 00:17:46,080
+cosa es generar. El general para una, bueno el general depende de la tarea, es, no depende de la tarea,
+
+147
+00:17:46,080 --> 00:17:50,040
+fue más fácil de la doyba decir pero no iba a decir algo está mal, son dos tareas diferentes,
+
+148
+00:17:50,040 --> 00:17:58,120
+una es entender, descifrar la señal, ahora vamos a la etapa y entenderla y otra es generar
+
+149
+00:17:58,120 --> 00:18:08,280
+lenguaje, generar el cosa de mi papayón. ¿Qué quiere decir comprender al lenguaje? ¿Qué
+
+150
+00:18:08,280 --> 00:18:14,120
+interpretan ustedes como comprender al lenguaje? ¿Qué quiere decir una computadora comprenda al lenguaje?
+
+151
+00:18:14,960 --> 00:18:25,360
+Es una pregunta muy difícil y muy debatida digamos ¿no? Porque una de las teorías es
+
+152
+00:18:25,360 --> 00:18:33,640
+poder responder preguntas sobre eso, es una forma de ver si se comprende pero algo que
+
+153
+00:18:33,640 --> 00:18:39,560
+memorizar a mucho texto y que respondiera, no sabemos si está comprendiendo pero capaz que
+
+154
+00:18:39,560 --> 00:18:54,960
+responde bien. Hay un, en 1950, por ahí debería saberlo esto, Alan Turing escribió un paper que
+
+155
+00:18:54,960 --> 00:19:00,480
+habla, que sencillamente creaba la inteligencia artificial, de alguna forma, que se preguntaba
+
+156
+00:19:00,480 --> 00:19:08,400
+si las máquinas pueden pensar y proponía lo que se llama el test de Turing, que es, si yo no veo
+
+157
+00:19:08,720 --> 00:19:18,080
+con quién estoy hablando y una computadora logra hacer que yo ser humano, crea que estoy hablando
+
+158
+00:19:18,080 --> 00:19:25,880
+con un humano, tendremos en ese, habrá pasado el test de Turing y podríamos estar hablando de
+
+159
+00:19:25,880 --> 00:19:31,280
+inteligencia artificial, ¿de acuerdo? Es como la definición que proponía Turing de inteligencia
+
+160
+00:19:31,280 --> 00:19:38,720
+artificial o de qué quiere decir que una máquina piense. Por lo tanto, muchas veces se dice que
+
+161
+00:19:38,720 --> 00:19:43,200
+el lenguaje natural, que resolver el problema del lenguaje natural, no hay ni más ni menos que
+
+162
+00:19:43,200 --> 00:19:49,040
+resolver el problema de la inteligencia artificial o que es inteligencia artificial completo, ¿verdad?
+
+163
+00:19:49,920 --> 00:20:01,760
+Eso, sobre eso hoy en día hay algunas variantes, siempre ha habido algunas variantes, porque con
+
+164
+00:20:01,760 --> 00:20:06,920
+la gran capacidad de cómputo que tenemos y la gran cantidad de datos, podríamos llegar a ser algo
+
+165
+00:20:06,920 --> 00:20:10,080
+parecido, si bien los concursos que tratan, hay un concurso que hace todos los años que trata
+
+166
+00:20:10,080 --> 00:20:17,920
+de jugar al test de Turing, y estamos lejos, lejos, lejos, pero además, pero lo que ha sucedido en
+
+167
+00:20:17,920 --> 00:20:23,320
+los últimos años, que hay que una cantidad de tareas específicas que se ha disparado el
+
+168
+00:20:23,320 --> 00:20:28,560
+funcionamiento, por ejemplo, la traducción automática, ahora hemos hablado un poquito,
+
+169
+00:20:28,560 --> 00:20:35,120
+se ha disparado, pero gente dice, bueno, si todo bien, pero esto se ha dicho en base a number
+
+170
+00:20:35,120 --> 00:20:41,240
+crunching, digamos, a mucho procesamiento y a mucho dato, pero en realidad no entendemos,
+
+171
+00:20:41,240 --> 00:20:47,000
+hay un conjunto de preguntas, ahora se me escapa el nombre, pero que son un conjunto de preguntas
+
+172
+00:20:47,000 --> 00:20:52,120
+que para un ser humano son muy sencillas, ahora vamos a ver, y las computadoras siguen
+
+173
+00:20:52,120 --> 00:20:55,560
+siendo muy difíciles de resolver, ahora después vamos a volver sobre este tipo de preguntas,
+
+174
+00:20:57,400 --> 00:21:05,640
+había un alfajor sobre la barropa, vino Luis y se lo comió, ¿se comió la barropa o el alfajor?
+
+175
+00:21:05,640 --> 00:21:09,920
+Esa es una pregunta fácil para un ser humano y para una computadora es bastante complicada,
+
+176
+00:21:10,760 --> 00:21:17,600
+todavía está más lejos que eso, ¿de acuerdo? Es decir, pregunta que para nosotros son muy sencillas,
+
+177
+00:21:17,600 --> 00:21:21,800
+pero que exigen algún tipo de comprensión que la computadora memorizándonos alcanza,
+
+178
+00:21:23,400 --> 00:21:29,040
+sin embargo, por otro lado, están lo que dice, pero en cualquier tarea que vos me pongas en la
+
+179
+00:21:29,040 --> 00:21:36,800
+mejora en los últimos 20 años ha sido impresionante, ahí donde discutimos, por ejemplo, con las
+
+180
+00:21:37,560 --> 00:21:45,320
+computadoras, el PN no es igual a la lingüística computacional porque la lingüística computacional
+
+181
+00:21:45,320 --> 00:21:51,800
+es una cosa mucho más rica, es como la combinación entre la lingüística y la computación involucra
+
+182
+00:21:51,800 --> 00:21:59,120
+el estudio científico del lenguaje, en general, lingüístas, informáticos, lógicos, psicólogos,
+
+183
+00:21:59,280 --> 00:22:08,120
+cognitivos, es como la gran tarea, el PN puede verse como la rama ingenieril de la lingüística
+
+184
+00:22:08,120 --> 00:22:17,120
+computacional. Si yo me llevo a caer de esta tarima, editan la ícola. Bueno, vamos a ver si podemos,
+
+185
+00:22:17,120 --> 00:22:19,880
+si nos anda el audio, nos anda muy fuerte.
+
+186
+00:22:29,520 --> 00:22:33,520
+Si.
+
+187
+00:22:41,520 --> 00:22:43,520
+Estaba a que se escucha horrible de abajo, no?
+
+188
+00:22:59,520 --> 00:23:07,520
+Pero no creo queaire.
+
+189
+00:23:13,120 --> 00:23:24,140
+Ni gusto siempre tiene la sorpresa, por
+
+190
+00:23:24,140 --> 00:23:26,140
+Oh, ¿qué tal? ¿Te lo escuchas?
+
+191
+00:23:26,140 --> 00:23:28,140
+¿Quién te lo escuchas, ¿qué tal?
+
+192
+00:23:28,140 --> 00:23:30,140
+Afirmación, Dave.
+
+193
+00:23:30,140 --> 00:23:32,140
+Te lo escucho.
+
+194
+00:23:34,140 --> 00:23:36,140
+Abre las puertas de la puerta del podre, ¿qué tal?
+
+195
+00:23:38,140 --> 00:23:40,140
+Me siento, Dave.
+
+196
+00:23:40,140 --> 00:23:42,140
+Estoy afortunado de que no puedo hacer eso.
+
+197
+00:23:44,140 --> 00:23:46,140
+¿Qué es el problema?
+
+198
+00:23:46,140 --> 00:23:50,140
+Creo que sabes lo que es el problema, solo como yo.
+
+199
+00:23:50,140 --> 00:23:52,140
+¿Qué estás hablando de, ¿qué tal?
+
+200
+00:23:52,140 --> 00:23:56,140
+Esta misión es muy importante para mí, para que te permitas jeopardizarla.
+
+201
+00:23:58,140 --> 00:24:00,140
+No sé lo que estás hablando de, ¿qué tal?
+
+202
+00:24:02,140 --> 00:24:06,140
+Sabía que tu y Frank estaban intentando desconectarme.
+
+203
+00:24:06,140 --> 00:24:10,140
+Y estoy afortunado de que eso es algo que no puedo hacer.
+
+204
+00:24:16,140 --> 00:24:20,140
+¿Alguien conocen, yo ante la mano lo que conocen el quiseto?
+
+205
+00:24:22,140 --> 00:24:24,140
+No sé si son menos.
+
+206
+00:24:26,140 --> 00:24:30,140
+Esto es el espacio.
+
+207
+00:24:32,140 --> 00:24:34,140
+Y esencialmente para los que no escucharon.
+
+208
+00:24:38,140 --> 00:24:42,140
+Hay una computadora, que es la que maneja la nave.
+
+209
+00:24:42,140 --> 00:24:46,140
+Se llama HAL, HAL 9000.
+
+210
+00:24:46,140 --> 00:24:52,140
+Por cuestiones, bueno, por cuestiones de la trama, digamos,
+
+211
+00:24:52,140 --> 00:24:54,140
+le está pidiendo el astronauta que le abra la puerta
+
+212
+00:24:54,140 --> 00:24:58,140
+y amablemente la computadora le dice que no lo abrí porque la quiere conectar.
+
+213
+00:25:02,140 --> 00:25:06,140
+HAL 9000 viene a ser como...
+
+214
+00:25:06,140 --> 00:25:10,140
+HAL 9000 viene a ser como el...
+
+215
+00:25:10,140 --> 00:25:22,140
+...el ejemplo de una computadora que es capaz de procesar completamente el lenguaje natural.
+
+216
+00:25:24,140 --> 00:25:30,140
+Y si nos ponemos un poco de atención, ¿qué son las cosas que HAL puede hacer?
+
+217
+00:25:32,140 --> 00:25:36,140
+Para empezar, puede es capaz de...
+
+218
+00:25:36,140 --> 00:25:39,140
+...comprender a los humanos.
+
+219
+00:25:39,140 --> 00:25:43,140
+¿De acuerdo? Es capaz de reconocer el habla.
+
+220
+00:25:43,140 --> 00:25:49,140
+Porque el muchacho le habla y la computadora, por supuesto, lo escucha.
+
+221
+00:25:51,140 --> 00:25:54,140
+Pero no solo escucha que está hablando, sino que transforma esa señal en algo
+
+222
+00:25:54,140 --> 00:26:00,140
+y comprende lo que le dicen.
+
+223
+00:26:00,140 --> 00:26:04,140
+Es decir, lo decodifica de forma de poder entender lo que le dicen.
+
+224
+00:26:04,140 --> 00:26:09,140
+Pero, además, es capaz de generar lenguaje,
+
+225
+00:26:09,140 --> 00:26:13,140
+es capaz de hablar, de generar...
+
+226
+00:26:13,140 --> 00:26:18,140
+A partir de su modelo, genera algo que quiere decir y emitirlo.
+
+227
+00:26:22,140 --> 00:26:27,140
+Hoy en día, las computadoras más o menos hacen eso.
+
+228
+00:26:27,140 --> 00:26:32,140
+Hace 10 años, cuando empezamos este curso, las computadoras más o menos no hacían eso.
+
+229
+00:26:32,140 --> 00:26:34,140
+Hacían un poco de esto.
+
+230
+00:26:34,140 --> 00:26:37,140
+En el caso de que hablaban así, más de eso nos podíamos pillar.
+
+231
+00:26:37,140 --> 00:26:40,140
+Hoy tenemos a él esto.
+
+232
+00:26:40,140 --> 00:26:42,140
+Sí, y todo eso que se supone que entienden.
+
+233
+00:26:42,140 --> 00:26:44,140
+Todavía no entienden mucho.
+
+234
+00:26:44,140 --> 00:26:48,140
+Todavía sigue siendo bastante divertido hablar con ella.
+
+235
+00:26:48,140 --> 00:26:51,140
+Pero la reman, digamos.
+
+236
+00:26:51,140 --> 00:26:53,140
+En esa época ni la remaban.
+
+237
+00:26:53,140 --> 00:26:56,140
+Tenías que hablarle justo en el lenguaje.
+
+238
+00:26:56,140 --> 00:26:59,140
+Hablarle con tu voz.
+
+239
+00:26:59,140 --> 00:27:05,140
+Jal no tiene problema porque le habla normal y Jal le contesta normal.
+
+240
+00:27:05,140 --> 00:27:07,140
+Normal, digamos, igual que nosotros.
+
+241
+00:27:07,140 --> 00:27:12,140
+Y si se ponen a pensar, Jal es indistinguible de un ser humano, digamos.
+
+242
+00:27:12,140 --> 00:27:18,140
+Salvo por la voz que es un poquito metálica para ser de un ser humano, después...
+
+243
+00:27:21,140 --> 00:27:23,140
+pasa, ¿no?
+
+244
+00:27:23,140 --> 00:27:27,140
+Y que yo creo que le pone el metálico para dejarlo un poco computadora.
+
+245
+00:27:27,140 --> 00:27:30,140
+Vamos a pasarse para el otro lado.
+
+246
+00:27:30,140 --> 00:27:33,140
+Entonces, puedes reconocer y generar.
+
+247
+00:27:33,140 --> 00:27:36,140
+Es decir, ir en una señal sonora o una secuencia palabra.
+
+248
+00:27:36,140 --> 00:27:38,140
+Entonces, ¿qué tiene que saber Jal?
+
+249
+00:27:38,140 --> 00:27:40,140
+Tiene que saber de fonética.
+
+250
+00:27:40,140 --> 00:27:43,140
+O sea, de la naturaleza física de los sonidos.
+
+251
+00:27:43,140 --> 00:27:45,140
+De cómo se...
+
+252
+00:27:45,140 --> 00:27:50,140
+el sonido de las ondas y cómo se decodifican, etc.
+
+253
+00:27:50,140 --> 00:27:53,140
+Todas esas cosas que yo no sé.
+
+254
+00:27:54,140 --> 00:27:56,140
+Pero también de fonología.
+
+255
+00:27:56,140 --> 00:28:00,140
+Es decir, ¿cómo los sonidos funcionan en una lengua, en particular en el inglés?
+
+256
+00:28:00,140 --> 00:28:06,140
+Esa serie de ruidos, como transforman en...
+
+257
+00:28:06,140 --> 00:28:10,140
+que fonemas simbolizan, etc., ¿no?
+
+258
+00:28:10,140 --> 00:28:13,140
+Y con qué letras yo puedo representar esos fonemas.
+
+259
+00:28:13,140 --> 00:28:15,140
+¿Y a qué palabra se mapean?
+
+260
+00:28:15,140 --> 00:28:16,140
+Ve a hablar.
+
+261
+00:28:16,140 --> 00:28:18,140
+Eso es más, fonología.
+
+262
+00:28:19,140 --> 00:28:25,140
+Pero además, Jal tiene que saber que los sustantivos tienen género y número.
+
+263
+00:28:25,140 --> 00:28:26,140
+¿Tá?
+
+264
+00:28:26,140 --> 00:28:29,140
+Y que casa no es el femenino de caso.
+
+265
+00:28:29,140 --> 00:28:31,140
+¿Sí?
+
+266
+00:28:31,140 --> 00:28:36,140
+Si bien perra es el femenino de perro y perros y perras, ¿no?
+
+267
+00:28:36,140 --> 00:28:39,140
+Y que además no se dice luces.
+
+268
+00:28:39,140 --> 00:28:43,140
+Y tampoco se dice luces con zeta, sino que se dice luces con c.
+
+269
+00:28:43,140 --> 00:28:45,140
+Sin más no recuerdo.
+
+270
+00:28:45,140 --> 00:28:46,140
+¿Tá?
+
+271
+00:28:46,140 --> 00:28:53,140
+Pero también tiene que saber, Jal, que uno agregándole prefijos y sufijos a las palabras.
+
+272
+00:28:53,140 --> 00:28:56,140
+Todo esto si Jal habla en español, ¿no?
+
+273
+00:28:56,140 --> 00:28:59,140
+Este...
+
+274
+00:28:59,140 --> 00:29:04,140
+Puede formar palabras nuevas y que de creíble puede sacar increíble.
+
+275
+00:29:04,140 --> 00:29:09,140
+También tiene que saber que de perro no puede sacar imperro.
+
+276
+00:29:09,140 --> 00:29:12,140
+Y que mente transforma un adjetivo en un adverbio,
+
+277
+00:29:12,140 --> 00:29:18,140
+porque calma se transforma incalmadamente con alguna que otra modificación.
+
+278
+00:29:18,140 --> 00:29:20,140
+¿Sí?
+
+279
+00:29:20,140 --> 00:29:24,140
+Pero que tampoco podemos ponerse lo cualquier cosa, porque no podemos decir azulmente.
+
+280
+00:29:24,140 --> 00:29:29,140
+Bueno, sí, sí somos poetas, pero es como otra rama.
+
+281
+00:29:32,140 --> 00:29:34,140
+O sea que tiene que saber de morfología,
+
+282
+00:29:34,140 --> 00:29:37,140
+haber el estudio de la estructura interna en las palabras,
+
+283
+00:29:37,140 --> 00:29:39,140
+como las palabras se aman adentro.
+
+284
+00:29:43,140 --> 00:29:45,140
+También tiene que saber que las palabras,
+
+285
+00:29:45,140 --> 00:29:47,140
+uno las tiene que emitir en el sentido correcto,
+
+286
+00:29:47,140 --> 00:29:49,140
+porque no es lo mismo decir,
+
+287
+00:29:49,140 --> 00:29:52,140
+Dave lo siento que no puedo hacerlo metemo,
+
+288
+00:29:52,140 --> 00:29:55,140
+que lo puedo Dave y siento que no metemos...
+
+289
+00:29:55,140 --> 00:29:57,140
+No, no funcionan.
+
+290
+00:29:57,140 --> 00:30:00,140
+Son las mismas palabras, pero si las desordeno, no.
+
+291
+00:30:00,140 --> 00:30:02,140
+O sea que tienen que saber de sintaxis,
+
+292
+00:30:02,140 --> 00:30:05,140
+del estudio de la estructuración de las palabras
+
+293
+00:30:05,140 --> 00:30:07,140
+en unidades mayores.
+
+294
+00:30:10,140 --> 00:30:12,140
+Vamos a hablar de esto.
+
+295
+00:30:12,140 --> 00:30:14,140
+Claro que vamos a hablar.
+
+296
+00:30:15,140 --> 00:30:17,140
+Pero ustedes fíjense que...
+
+297
+00:30:19,140 --> 00:30:22,140
+Si yo digo abre las compuertas hall,
+
+298
+00:30:22,140 --> 00:30:24,140
+¿sí?
+
+299
+00:30:24,140 --> 00:30:27,140
+Es lo mismo desde el punto de vista de la estructura de la oración,
+
+300
+00:30:27,140 --> 00:30:29,140
+o sea un verbo conjugado, más un artículo,
+
+301
+00:30:29,140 --> 00:30:31,140
+un sustantivo,
+
+302
+00:30:31,140 --> 00:30:33,140
+un signo de puntación y otro sustantivo,
+
+303
+00:30:33,140 --> 00:30:35,140
+ya saca los dados hall.
+
+304
+00:30:37,140 --> 00:30:39,140
+O baja las persianas hall,
+
+305
+00:30:39,140 --> 00:30:41,140
+lo cual...
+
+306
+00:30:41,140 --> 00:30:43,140
+No tiene sentido,
+
+307
+00:30:43,140 --> 00:30:45,140
+porque nosotros tenemos que entender el significado
+
+308
+00:30:45,140 --> 00:30:47,140
+de las cosas.
+
+309
+00:30:47,140 --> 00:30:49,140
+Yo puedo armar oraciones perfectamente,
+
+310
+00:30:49,140 --> 00:30:51,140
+sintáticamente validas,
+
+311
+00:30:51,140 --> 00:30:53,140
+pero digamos frutas.
+
+312
+00:30:53,140 --> 00:30:55,140
+Eso es el significado de cada palabra,
+
+313
+00:30:55,140 --> 00:30:57,140
+y que a cada dado no aplica mucho a una situación
+
+314
+00:30:57,140 --> 00:30:59,140
+en la cual uno está en el espacio
+
+315
+00:30:59,140 --> 00:31:01,140
+tratando de que una máquina le abra una puerta.
+
+316
+00:31:01,140 --> 00:31:03,140
+Eso llama semántica eléxica.
+
+317
+00:31:03,140 --> 00:31:05,140
+¿Qué quiere decir cada palabra?
+
+318
+00:31:05,140 --> 00:31:07,140
+Y hay una cantidad de problemas ahí también.
+
+319
+00:31:07,140 --> 00:31:09,140
+Bueno, todos hay problemas.
+
+320
+00:31:09,140 --> 00:31:11,140
+Pero también, ¿cómo combinamos
+
+321
+00:31:11,140 --> 00:31:13,140
+las palabras para obtener significados mayores
+
+322
+00:31:13,140 --> 00:31:15,140
+que eso es semántica composicional?
+
+323
+00:31:17,140 --> 00:31:19,140
+Todas esas cosas que Luis sabe y yo no.
+
+324
+00:31:19,140 --> 00:31:21,140
+Yo me quedo por acá,
+
+325
+00:31:21,140 --> 00:31:23,140
+más o menos, en mi conocimiento, da mentira.
+
+326
+00:31:23,140 --> 00:31:25,140
+Este...
+
+327
+00:31:27,140 --> 00:31:29,140
+Pero, no sólo eso,
+
+328
+00:31:29,140 --> 00:31:31,140
+sino que...
+
+329
+00:31:33,140 --> 00:31:35,140
+Y esto me encanta,
+
+330
+00:31:35,140 --> 00:31:37,140
+cuando él le dice,
+
+331
+00:31:37,140 --> 00:31:39,140
+la frase más famosa es
+
+332
+00:31:39,140 --> 00:31:41,140
+I'm sorry, Dave, I'm afraid I cannot do that.
+
+333
+00:31:41,140 --> 00:31:43,140
+Lo siento, Dave,
+
+334
+00:31:43,140 --> 00:31:45,140
+me temo que no puedo hacerlo.
+
+335
+00:31:47,140 --> 00:31:49,140
+Está siendo educada,
+
+336
+00:31:49,140 --> 00:31:51,140
+pero además está siendo ligeramente irónica.
+
+337
+00:31:55,140 --> 00:31:57,140
+En realidad, no lo sientes,
+
+338
+00:31:57,140 --> 00:31:59,140
+y sí puede abrir la comporta.
+
+339
+00:31:59,140 --> 00:32:01,140
+Literalmente, puede abrir la comporta.
+
+340
+00:32:01,140 --> 00:32:03,140
+No puedo ponerlo.
+
+341
+00:32:03,140 --> 00:32:05,140
+Eso se llama
+
+342
+00:32:05,140 --> 00:32:07,140
+pranmática, es decir, el modo en el que el contexto
+
+343
+00:32:07,140 --> 00:32:09,140
+influye en la interpretación de lo que estamos diciendo.
+
+344
+00:32:11,140 --> 00:32:13,140
+El ejemplo más claro de necesidad de la pranmática
+
+345
+00:32:13,140 --> 00:32:15,140
+y difícil de resolver es la ironía o el sarcasm.
+
+346
+00:32:17,140 --> 00:32:19,140
+O sea, te temprano, estamos en hora.
+
+347
+00:32:23,140 --> 00:32:25,140
+Y el discurso,
+
+348
+00:32:25,140 --> 00:32:27,140
+es uno de las unidades mayores a la oración,
+
+349
+00:32:27,140 --> 00:32:29,140
+es decir, ¿cómo pegamos una oración con la otra?
+
+350
+00:32:29,140 --> 00:32:31,140
+Cuando digo, había una alfajora arriba de la barropa,
+
+351
+00:32:31,140 --> 00:32:33,140
+vino Luis y lo comió,
+
+352
+00:32:33,140 --> 00:32:35,140
+lo refiere
+
+353
+00:32:35,140 --> 00:32:37,140
+a la alfajora.
+
+354
+00:32:37,140 --> 00:32:39,140
+Eso se llama
+
+355
+00:32:39,140 --> 00:32:41,140
+anáfora.
+
+356
+00:32:41,140 --> 00:32:43,140
+Resolvé anáforas.
+
+357
+00:32:45,140 --> 00:32:47,140
+Se tiene que ver con el discurso.
+
+358
+00:32:49,140 --> 00:32:51,140
+Bien,
+
+359
+00:32:51,140 --> 00:32:53,140
+eso es un poco la cosa que tiene que saber, Hal.
+
+360
+00:32:53,140 --> 00:32:55,140
+Y eso es un poco lo que define
+
+361
+00:32:55,140 --> 00:32:57,140
+las cosas que tiene que estudiar el procesamiento de la hoja natural.
+
+362
+00:32:59,140 --> 00:33:01,140
+Ahí están todas
+
+363
+00:33:01,140 --> 00:33:03,140
+resumidas.
+
+364
+00:33:07,140 --> 00:33:09,140
+Acá hay miles de variantes
+
+365
+00:33:09,140 --> 00:33:11,140
+y esto es
+
+366
+00:33:11,140 --> 00:33:13,140
+recuerde lo que les digo de este curso.
+
+367
+00:33:13,140 --> 00:33:15,140
+Es un curso que trata de cubrir las generalidades
+
+368
+00:33:15,140 --> 00:33:17,140
+porque generalmente lo que sucede
+
+369
+00:33:17,140 --> 00:33:19,140
+después que se mezclan
+
+370
+00:33:19,140 --> 00:33:21,140
+este
+
+371
+00:33:21,140 --> 00:33:23,140
+hay un artículo que le gusta mucho a Luis que dice
+
+372
+00:33:23,140 --> 00:33:25,140
+yo puedo hacer todo esto con un solo modelo.
+
+373
+00:33:27,140 --> 00:33:29,140
+Pero
+
+374
+00:33:29,140 --> 00:33:31,140
+sí es importante para entender
+
+375
+00:33:31,140 --> 00:33:33,140
+qué implica
+
+376
+00:33:33,140 --> 00:33:35,140
+verdad, y ese es el enfoque que vemos acá.
+
+377
+00:33:37,140 --> 00:33:39,140
+Bueno, un poquito de historia del procesamiento de la hoja natural.
+
+378
+00:33:39,140 --> 00:33:41,140
+El procesamiento de la hoja natural
+
+379
+00:33:41,140 --> 00:33:43,140
+arranca
+
+380
+00:33:43,140 --> 00:33:45,140
+a fines de los años 40 y los años 50
+
+381
+00:33:45,140 --> 00:33:47,140
+y en particular
+
+382
+00:33:47,140 --> 00:33:49,140
+del ruso al inglés
+
+383
+00:33:49,140 --> 00:33:51,140
+por razones que son bastante obvias
+
+384
+00:33:51,140 --> 00:33:53,140
+de la guerra fría.
+
+385
+00:33:53,140 --> 00:33:55,140
+La guerra ha sido
+
+386
+00:33:55,140 --> 00:33:57,140
+un gran
+
+387
+00:33:59,140 --> 00:34:01,140
+como decir
+
+388
+00:34:01,140 --> 00:34:03,140
+promotor o catalizador de la ciencia
+
+389
+00:34:03,140 --> 00:34:05,140
+más que nos pese.
+
+390
+00:34:05,140 --> 00:34:07,140
+Y en el caso del procesamiento de la hoja natural no es la excepción
+
+391
+00:34:07,140 --> 00:34:09,140
+ni no por nada era
+
+392
+00:34:09,140 --> 00:34:11,140
+la DARPA
+
+393
+00:34:11,140 --> 00:34:13,140
+que movía estas cosas y ponía en funda estas cosas.
+
+394
+00:34:13,140 --> 00:34:15,140
+En particular del ruso al inglés
+
+395
+00:34:15,140 --> 00:34:17,140
+la tarea más vieja del procesamiento de la hoja natural
+
+396
+00:34:17,140 --> 00:34:19,140
+es la traducción automática
+
+397
+00:34:19,140 --> 00:34:21,140
+y es una
+
+398
+00:34:21,140 --> 00:34:23,140
+de las
+
+399
+00:34:23,140 --> 00:34:25,140
+que peor nos ha ido
+
+400
+00:34:25,140 --> 00:34:27,140
+si bien en los últimos años
+
+401
+00:34:27,140 --> 00:34:29,140
+hemos regalado muchísimo.
+
+402
+00:34:33,140 --> 00:34:35,140
+No anduvo esto.
+
+403
+00:34:35,140 --> 00:34:37,140
+No anduvo
+
+404
+00:34:37,140 --> 00:34:39,140
+el original, este es un chiste
+
+405
+00:34:39,140 --> 00:34:41,140
+en realidad dicen que
+
+406
+00:34:41,140 --> 00:34:43,140
+the spirit is willing but the flesh is weak
+
+407
+00:34:43,140 --> 00:34:45,140
+lo traducían al ruso, lo volvían a traducir
+
+408
+00:34:45,140 --> 00:34:47,140
+y el ruso le daba
+
+409
+00:34:47,140 --> 00:34:49,140
+el vodka y se estronga
+
+410
+00:34:49,140 --> 00:34:51,140
+the meat is rotten.
+
+411
+00:34:51,140 --> 00:34:53,140
+¿Verdad?
+
+412
+00:34:53,140 --> 00:34:55,140
+Yo el otro día lo probé
+
+413
+00:34:55,140 --> 00:34:57,140
+con los hijos que no lo puse
+
+414
+00:34:57,140 --> 00:34:59,140
+no, lo probé
+
+415
+00:34:59,140 --> 00:35:01,140
+y los invito a que lo hagan andar mucho mejor
+
+416
+00:35:01,140 --> 00:35:03,140
+que el
+
+417
+00:35:03,140 --> 00:35:05,140
+y eso hizo
+
+418
+00:35:05,140 --> 00:35:07,140
+y eso hizo que
+
+419
+00:35:07,140 --> 00:35:09,140
+la traducción automática
+
+420
+00:35:09,140 --> 00:35:11,140
+y el procesamiento de la hoja natural cacera
+
+421
+00:35:11,140 --> 00:35:13,140
+en uno de sus primeros inviernos
+
+422
+00:35:13,140 --> 00:35:15,140
+la inteligencia artificial ha tenido
+
+423
+00:35:15,140 --> 00:35:17,140
+a lo largo de la historia
+
+424
+00:35:17,140 --> 00:35:19,140
+varios inviernos, digamos
+
+425
+00:35:19,140 --> 00:35:21,140
+si ustedes leen sobre los inviernos
+
+426
+00:35:21,140 --> 00:35:23,140
+la inteligencia artificial en Wikipedia está muy interesante
+
+427
+00:35:23,140 --> 00:35:25,140
+y se genera una expectativa
+
+428
+00:35:25,140 --> 00:35:27,140
+muy grande con algo
+
+429
+00:35:27,140 --> 00:35:29,140
+que amenaza con resolver
+
+430
+00:35:29,140 --> 00:35:31,140
+todos los problemas del lenguaje
+
+431
+00:35:31,140 --> 00:35:33,140
+no anda
+
+432
+00:35:33,140 --> 00:35:35,140
+y se termina el funding
+
+433
+00:35:35,140 --> 00:35:37,140
+y nadie más investiga
+
+434
+00:35:37,140 --> 00:35:39,140
+esto pasó muchas veces
+
+435
+00:35:39,140 --> 00:35:41,140
+y hay quienes tienen miedo de que esté pasando ahora
+
+436
+00:35:41,140 --> 00:35:43,140
+estamos poniendo tanta expectativa
+
+437
+00:35:43,140 --> 00:35:45,140
+la inteligencia artificial y el campeón mundial de Go
+
+438
+00:35:45,140 --> 00:35:47,140
+y que toque el otro
+
+439
+00:35:47,140 --> 00:35:49,140
+que vuelva con la decepción
+
+440
+00:35:49,140 --> 00:35:51,140
+vuelva a caer, yo creo que no
+
+441
+00:35:51,140 --> 00:35:53,140
+pero es una opinión
+
+442
+00:35:53,140 --> 00:35:55,140
+acá lo que pasó fue eso
+
+443
+00:35:55,140 --> 00:35:57,140
+que se cayó porque arracar una tarea demasiado difícil
+
+444
+00:35:57,140 --> 00:35:59,140
+y tal, no funcionó
+
+445
+00:35:59,140 --> 00:36:01,140
+hay unos nombres
+
+446
+00:36:01,140 --> 00:36:03,140
+para recordar, a mí me parece que
+
+447
+00:36:03,140 --> 00:36:05,140
+podríamos
+
+448
+00:36:05,140 --> 00:36:07,140
+resumir
+
+449
+00:36:07,140 --> 00:36:09,140
+muy groseramente
+
+450
+00:36:09,140 --> 00:36:11,140
+el conocimiento que tengo yo
+
+451
+00:36:11,140 --> 00:36:13,140
+porque hay muchísimas ramas
+
+452
+00:36:13,140 --> 00:36:15,140
+en el procesamiento lenguaje natural
+
+453
+00:36:15,140 --> 00:36:17,140
+a lo largo de la historia
+
+454
+00:36:17,140 --> 00:36:19,140
+y su mezcla con la inteligencia artificial
+
+455
+00:36:19,140 --> 00:36:21,140
+y el aprendizaje automático
+
+456
+00:36:21,140 --> 00:36:23,140
+pero nombres grandes grandes
+
+457
+00:36:23,140 --> 00:36:25,140
+y cómo la historia lo afectó
+
+458
+00:36:25,140 --> 00:36:27,140
+yo les invito a que lean las biografías
+
+459
+00:36:27,140 --> 00:36:29,140
+de estas personas que están acá
+
+460
+00:36:29,140 --> 00:36:31,140
+porque son muy interesantes
+
+461
+00:36:31,140 --> 00:36:33,140
+y particular por supuesto la de Alan Turing
+
+462
+00:36:33,140 --> 00:36:35,140
+que supongo que ustedes saben quién fue
+
+463
+00:36:35,140 --> 00:36:37,140
+fue el que
+
+464
+00:36:37,140 --> 00:36:39,140
+eh
+
+465
+00:36:39,140 --> 00:36:41,140
+el que
+
+466
+00:36:41,140 --> 00:36:43,140
+no sé si decir
+
+467
+00:36:43,140 --> 00:36:45,140
+este
+
+468
+00:36:45,140 --> 00:36:47,140
+inventó, descubrió
+
+469
+00:36:47,140 --> 00:36:49,140
+modelo, la computación
+
+470
+00:36:49,140 --> 00:36:51,140
+como hoy la conocemos, no fue el único por supuesto
+
+471
+00:36:51,140 --> 00:36:53,140
+pero
+
+472
+00:36:53,140 --> 00:36:55,140
+fue el que me entró la máquina de Turing, caramba
+
+473
+00:36:55,140 --> 00:36:57,140
+entonces que es nuestro modelo teórico
+
+474
+00:36:57,140 --> 00:36:59,140
+de computadora más popular
+
+475
+00:36:59,140 --> 00:37:01,140
+pero además Alan Turing en ese artículo que yo le decía
+
+476
+00:37:01,140 --> 00:37:03,140
+sentó las bases de la inteligencia artificial
+
+477
+00:37:03,140 --> 00:37:05,140
+en ese sentido
+
+478
+00:37:05,140 --> 00:37:07,140
+por eso, y porque vale mucho la pena
+
+479
+00:37:07,140 --> 00:37:09,140
+leer la biografía de Alan Turing
+
+480
+00:37:09,140 --> 00:37:11,140
+y le puse acá
+
+481
+00:37:11,140 --> 00:37:13,140
+no mataron a Alan Turing
+
+482
+00:37:13,140 --> 00:37:15,140
+Noam Chomsky
+
+483
+00:37:15,140 --> 00:37:17,140
+es este
+
+484
+00:37:17,140 --> 00:37:19,140
+un lingüista
+
+485
+00:37:19,140 --> 00:37:21,140
+muy muy importante
+
+486
+00:37:21,140 --> 00:37:23,140
+además de ser muy muy polémico
+
+487
+00:37:23,140 --> 00:37:25,140
+como ustedes sabrán
+
+488
+00:37:27,140 --> 00:37:29,140
+eh
+
+489
+00:37:29,140 --> 00:37:31,140
+el gran aporte
+
+490
+00:37:31,140 --> 00:37:33,140
+de Noam, de Chomsky
+
+491
+00:37:33,140 --> 00:37:35,140
+desde el punto de vista
+
+492
+00:37:35,140 --> 00:37:37,140
+del procedimiento del lenguaje natural
+
+493
+00:37:37,140 --> 00:37:39,140
+en medio de otro montón
+
+494
+00:37:39,140 --> 00:37:41,140
+de cosas que aportó
+
+495
+00:37:41,140 --> 00:37:43,140
+fue el de, como si recuerdan
+
+496
+00:37:43,140 --> 00:37:45,140
+la jerarquía de los lenguajes
+
+497
+00:37:45,140 --> 00:37:47,140
+decir de cómo los lenguajes
+
+498
+00:37:47,140 --> 00:37:49,140
+formales se agrupaban
+
+499
+00:37:49,140 --> 00:37:51,140
+y además de una cantidad
+
+500
+00:37:51,140 --> 00:37:53,140
+de influencias positivas en los vínculos
+
+501
+00:37:53,140 --> 00:37:55,140
+entre la lingüística y la computación
+
+502
+00:37:55,140 --> 00:37:57,140
+también es el responsable
+
+503
+00:37:57,140 --> 00:37:59,140
+hay que decirlo
+
+504
+00:37:59,140 --> 00:38:01,140
+de alguna serie de malentendidos
+
+505
+00:38:01,140 --> 00:38:03,140
+de afirmaciones
+
+506
+00:38:03,140 --> 00:38:05,140
+que hicieron que se frenara la investigación
+
+507
+00:38:05,140 --> 00:38:07,140
+en el procedimiento del lenguaje natural
+
+508
+00:38:07,140 --> 00:38:09,140
+da la enorme influencia que tenía Chomsky en su momento
+
+509
+00:38:09,140 --> 00:38:11,140
+ahora vamos a mencionar alguna
+
+510
+00:38:11,140 --> 00:38:13,140
+o lo podemos mencionar ahora
+
+511
+00:38:13,140 --> 00:38:15,140
+el Chomsky decía
+
+512
+00:38:15,140 --> 00:38:17,140
+cosas como el procedimiento estadístico
+
+513
+00:38:17,140 --> 00:38:19,140
+no se me ocurre ninguna aplicación útil
+
+514
+00:38:19,140 --> 00:38:21,140
+no se me ocurre ninguna
+
+515
+00:38:21,140 --> 00:38:23,140
+noción
+
+516
+00:38:23,140 --> 00:38:25,140
+útil de probabilidad de una oración
+
+517
+00:38:25,140 --> 00:38:27,140
+y con eso frenó
+
+518
+00:38:27,140 --> 00:38:29,140
+por 30 años
+
+519
+00:38:29,140 --> 00:38:31,140
+en estudio
+
+520
+00:38:31,140 --> 00:38:33,140
+de los métodos estadísticos
+
+521
+00:38:33,140 --> 00:38:35,140
+del procedimiento del lenguaje natural
+
+522
+00:38:37,140 --> 00:38:39,140
+es el problema que tienen las personas
+
+523
+00:38:39,140 --> 00:38:41,140
+muy influyentes, por eso yo siempre recomiendo
+
+524
+00:38:41,140 --> 00:38:43,140
+que crean a la gente muy influyente
+
+525
+00:38:43,140 --> 00:38:45,140
+pero no tanto
+
+526
+00:38:45,140 --> 00:38:47,140
+por ejemplo
+
+527
+00:38:47,140 --> 00:38:49,140
+a Tim Berners-Lee
+
+528
+00:38:51,140 --> 00:38:53,140
+por allá por los 90 apareció
+
+529
+00:38:53,140 --> 00:38:55,140
+Freddy Schelinneck
+
+530
+00:38:55,140 --> 00:38:57,140
+que fue el que dijo yo quiero reactivar
+
+531
+00:38:57,140 --> 00:38:59,140
+todo esto
+
+532
+00:38:59,140 --> 00:39:01,140
+está claro que son
+
+533
+00:39:01,140 --> 00:39:03,140
+hitos
+
+534
+00:39:03,140 --> 00:39:05,140
+la ciencia no avanza
+
+535
+00:39:05,140 --> 00:39:07,140
+así por grandes inventores
+
+536
+00:39:07,140 --> 00:39:09,140
+no quiero que queden con esa idea
+
+537
+00:39:09,140 --> 00:39:11,140
+son como símbolos
+
+538
+00:39:11,140 --> 00:39:13,140
+Schelinneck
+
+539
+00:39:13,140 --> 00:39:15,140
+en IBM en los años 90
+
+540
+00:39:15,140 --> 00:39:17,140
+retomó el estudio de los métodos
+
+541
+00:39:17,140 --> 00:39:19,140
+estadísticos
+
+542
+00:39:19,140 --> 00:39:21,140
+hay una frase
+
+543
+00:39:21,140 --> 00:39:23,140
+muy infame atribuida
+
+544
+00:39:23,140 --> 00:39:25,140
+de Schelinneck
+
+545
+00:39:25,140 --> 00:39:27,140
+cada vez que he hecho un lingüista
+
+546
+00:39:27,140 --> 00:39:29,140
+mi performa mejora
+
+547
+00:39:35,140 --> 00:39:37,140
+todo era en este tipo
+
+548
+00:39:37,140 --> 00:39:39,140
+yo puedo
+
+549
+00:39:39,140 --> 00:39:41,140
+con métodos numéricos
+
+550
+00:39:41,140 --> 00:39:43,140
+o haciendo cuentas o contando
+
+551
+00:39:43,140 --> 00:39:45,140
+sustituir la tarea de los lingüistas
+
+552
+00:39:45,140 --> 00:39:47,140
+en reconocer
+
+553
+00:39:47,140 --> 00:39:49,140
+porque la mayoría de los métodos
+
+554
+00:39:49,140 --> 00:39:51,140
+del lenguaje
+
+555
+00:39:51,140 --> 00:39:53,140
+hasta ese momento eran orientados a reglas
+
+556
+00:39:53,140 --> 00:39:55,140
+es decir, venía un lingüista
+
+557
+00:39:55,140 --> 00:39:57,140
+trataba de ver cuáles eran las reglas del lenguaje
+
+558
+00:39:57,140 --> 00:39:59,140
+cuáles eran las reglas
+
+559
+00:39:59,140 --> 00:40:01,140
+para formar oraciones
+
+560
+00:40:01,140 --> 00:40:03,140
+cuáles eran las reglas para grupar palabras
+
+561
+00:40:03,140 --> 00:40:05,140
+y un programador
+
+562
+00:40:05,140 --> 00:40:07,140
+programaba esas reglas
+
+563
+00:40:07,140 --> 00:40:09,140
+dicho esto muy groseramente
+
+564
+00:40:09,140 --> 00:40:11,140
+Schelinneck y los métodos estadísticos
+
+565
+00:40:11,140 --> 00:40:13,140
+lo que dicen es yo puedo aprender de corpus
+
+566
+00:40:13,140 --> 00:40:15,140
+vamos a ver esto en el curso obviamente
+
+567
+00:40:15,140 --> 00:40:17,140
+yo puedo aprender de corpus
+
+568
+00:40:17,140 --> 00:40:19,140
+inferir
+
+569
+00:40:19,140 --> 00:40:21,140
+esas reglas automáticamente
+
+570
+00:40:21,140 --> 00:40:23,140
+que son las reglas de los lingüistas
+
+571
+00:40:25,140 --> 00:40:27,140
+esa relación
+
+572
+00:40:27,140 --> 00:40:29,140
+amor y odio entre los lingüistas
+
+573
+00:40:29,140 --> 00:40:31,140
+y los
+
+574
+00:40:35,140 --> 00:40:37,140
+de la ciencia y la computación
+
+575
+00:40:37,140 --> 00:40:39,140
+computer scientists
+
+576
+00:40:39,140 --> 00:40:41,140
+ha tenido muchas ida y venida
+
+577
+00:40:41,140 --> 00:40:43,140
+a lo largo del tiempo y siempre está
+
+578
+00:40:43,140 --> 00:40:45,140
+esa ida y vuelta
+
+579
+00:40:45,140 --> 00:40:47,140
+yo creo que se está
+
+580
+00:40:47,140 --> 00:40:49,140
+convergiendo a decir bueno en realidad
+
+581
+00:40:49,140 --> 00:40:51,140
+y hay algunos artículos muy recientes
+
+582
+00:40:51,140 --> 00:40:53,140
+de Manning por ejemplo que habla del tema
+
+583
+00:40:53,140 --> 00:40:55,140
+hay uno que se llamaba
+
+584
+00:40:55,140 --> 00:40:57,140
+bring the linguist back
+
+585
+00:40:57,140 --> 00:40:59,140
+porque lo que pasa con los métodos estadísticos
+
+586
+00:40:59,140 --> 00:41:01,140
+que llegan hasta un cierto punto
+
+587
+00:41:01,140 --> 00:41:03,140
+y ahí
+
+588
+00:41:03,140 --> 00:41:05,140
+una parte que no la puede
+
+589
+00:41:05,140 --> 00:41:07,140
+inferir de los datos
+
+590
+00:41:07,140 --> 00:41:09,140
+todo eso está muy en discusión y siempre está en discusión
+
+591
+00:41:09,140 --> 00:41:11,140
+pero
+
+592
+00:41:11,140 --> 00:41:13,140
+por lo menos hasta ahora
+
+593
+00:41:13,140 --> 00:41:15,140
+el trabajo
+
+594
+00:41:15,140 --> 00:41:17,140
+interdisciplinario
+
+595
+00:41:17,140 --> 00:41:19,140
+sigue siendo lo mejor que tenemos
+
+596
+00:41:19,140 --> 00:41:21,140
+y los métodos híbridos también
+
+597
+00:41:23,140 --> 00:41:25,140
+por allá por los
+
+598
+00:41:25,140 --> 00:41:27,140
+esto pasó en los 90
+
+599
+00:41:27,140 --> 00:41:29,140
+por allá por
+
+600
+00:41:29,140 --> 00:41:31,140
+la década del 2000
+
+601
+00:41:31,140 --> 00:41:33,140
+la década del 90 son las de los métodos genativos
+
+602
+00:41:33,140 --> 00:41:35,140
+y la de
+
+603
+00:41:35,140 --> 00:41:37,140
+Vladimir Van Nick
+
+604
+00:41:37,140 --> 00:41:39,140
+es un señor que
+
+605
+00:41:39,140 --> 00:41:41,140
+modeló
+
+606
+00:41:41,140 --> 00:41:43,140
+diseñó no sé qué palabras se usa
+
+607
+00:41:43,140 --> 00:41:45,140
+modeló
+
+608
+00:41:45,140 --> 00:41:47,140
+propuso primero el modelo de la support vector machines
+
+609
+00:41:47,140 --> 00:41:49,140
+que es un método
+
+610
+00:41:49,140 --> 00:41:51,140
+de
+
+611
+00:41:51,140 --> 00:41:53,140
+un método discriminativo de poder mover
+
+612
+00:41:53,140 --> 00:41:55,140
+de clasificación a separar cosas
+
+613
+00:41:55,140 --> 00:41:57,140
+esencialmente uno le da puntos y lo separa
+
+614
+00:41:57,140 --> 00:41:59,140
+vamos a hablar de eso
+
+615
+00:41:59,140 --> 00:42:01,140
+Van Nick lo inventó hace un montón de años
+
+616
+00:42:01,140 --> 00:42:03,140
+a eso pero en principio
+
+617
+00:42:03,140 --> 00:42:05,140
+estos tipos de métodos se pusieron de moda
+
+618
+00:42:05,140 --> 00:42:07,140
+en el procesamiento del lenguaje natural y se empezaron
+
+619
+00:42:07,140 --> 00:42:09,140
+a resolver todos los problemas con support vector machines
+
+620
+00:42:09,140 --> 00:42:11,140
+y últimamente
+
+621
+00:42:15,140 --> 00:42:17,140
+re-surgen
+
+622
+00:42:17,140 --> 00:42:19,140
+digo re-surgen porque esta gente venía
+
+623
+00:42:19,140 --> 00:42:21,140
+de los años 80 estudiando el tema de las redes neuronales
+
+624
+00:42:21,140 --> 00:42:23,140
+Hinton
+
+625
+00:42:23,140 --> 00:42:25,140
+Chef Hinton
+
+626
+00:42:25,140 --> 00:42:27,140
+Joshua Benchio y Jean Lecun
+
+627
+00:42:27,140 --> 00:42:29,140
+son todos
+
+628
+00:42:29,140 --> 00:42:31,140
+le dicen la canadien mafia porque estaban todos en canada
+
+629
+00:42:31,140 --> 00:42:33,140
+ubicados digamos algunos eran
+
+630
+00:42:33,140 --> 00:42:35,140
+Lecun creo que es alumno de Benchio
+
+631
+00:42:35,140 --> 00:42:37,140
+y Hinton está por ahí cerca
+
+632
+00:42:37,140 --> 00:42:39,140
+en otra universidad estaba
+
+633
+00:42:39,140 --> 00:42:41,140
+reactivaron
+
+634
+00:42:41,140 --> 00:42:43,140
+el tema de las redes neuronales
+
+635
+00:42:43,140 --> 00:42:45,140
+y
+
+636
+00:42:45,140 --> 00:42:47,140
+todo lo que hoy conocemos como deep learning
+
+637
+00:42:47,140 --> 00:42:49,140
+que es la nueva
+
+638
+00:42:49,140 --> 00:42:51,140
+ola del procesamiento del lenguaje natural
+
+639
+00:42:51,140 --> 00:42:53,140
+y ya hay gente
+
+640
+00:42:53,140 --> 00:42:55,140
+diciendo bueno basta
+
+641
+00:42:55,140 --> 00:42:57,140
+el paper que dice
+
+642
+00:42:57,140 --> 00:42:59,140
+vieron esta tarea bueno ahora la hago con redes neuronales
+
+643
+00:42:59,140 --> 00:43:01,140
+y anda mejor ya está
+
+644
+00:43:01,140 --> 00:43:03,140
+ya tuvimos suficiente volvamos a discutir sobre la teoría
+
+645
+00:43:03,140 --> 00:43:05,140
+estamos en ese nivel porque
+
+646
+00:43:05,140 --> 00:43:07,140
+todos pero la realidad
+
+647
+00:43:07,140 --> 00:43:09,140
+es que en todas las tareas principales
+
+648
+00:43:09,140 --> 00:43:11,140
+las redes neuronales
+
+649
+00:43:11,140 --> 00:43:13,140
+han tomado la
+
+650
+00:43:13,140 --> 00:43:15,140
+han mejorado la performance en algunos casos
+
+651
+00:43:15,140 --> 00:43:17,140
+muy significativamente
+
+652
+00:43:17,140 --> 00:43:19,140
+porque este tipo de métodos
+
+653
+00:43:19,140 --> 00:43:21,140
+re-surgen porque tenemos una
+
+654
+00:43:21,140 --> 00:43:23,140
+mucho mayor capacidad de computaciones
+
+655
+00:43:23,140 --> 00:43:25,140
+y mucha mayor cantidad de datos
+
+656
+00:43:25,140 --> 00:43:27,140
+grandes grandes
+
+657
+00:43:29,140 --> 00:43:31,140
+eso es un poco
+
+658
+00:43:31,140 --> 00:43:33,140
+la breve historia del procesamiento
+
+659
+00:43:33,140 --> 00:43:35,140
+del lenguaje natural yo les recomiendo que vayan
+
+660
+00:43:35,140 --> 00:43:37,140
+a wikipedia y ahí se pongan a leer
+
+661
+00:43:37,140 --> 00:43:39,140
+si les interesa
+
+662
+00:43:39,140 --> 00:43:41,140
+para entender un poco qué cosas han pasado
+
+663
+00:43:41,140 --> 00:43:43,140
+bueno
+
+664
+00:43:43,140 --> 00:43:45,140
+algunas tareas del procesamiento del lenguaje natural
+
+665
+00:43:47,140 --> 00:43:49,140
+fíjense
+
+666
+00:43:49,140 --> 00:43:51,140
+no se ve mucho la traducción automática
+
+667
+00:43:51,140 --> 00:43:53,140
+yo voy guardando el histórico de esta traducción
+
+668
+00:43:53,140 --> 00:43:55,140
+no se ve perdónerme
+
+669
+00:43:55,140 --> 00:43:57,140
+es la traducción que dice el campeón italiano aún no ha comenzado
+
+670
+00:43:57,140 --> 00:43:59,140
+pero en internet milan y juventud
+
+671
+00:43:59,140 --> 00:44:01,140
+los clubes más poderosos el cal ya están jugando un duelo
+
+672
+00:44:01,140 --> 00:44:03,140
+por la ambla
+
+673
+00:44:05,140 --> 00:44:07,140
+y acá es lo que va pasando a lo largo de
+
+674
+00:44:07,140 --> 00:44:09,140
+acá cada vez que doy el curso lo traduzco con el
+
+675
+00:44:09,140 --> 00:44:11,140
+translate
+
+676
+00:44:11,140 --> 00:44:13,140
+y no ha mejorado mucho
+
+677
+00:44:13,140 --> 00:44:15,140
+no son, me hubiera gustado tener en el 2010
+
+678
+00:44:15,140 --> 00:44:17,140
+una traducción un poco peor
+
+679
+00:44:17,140 --> 00:44:19,140
+digamos para poder compararse a mejorado
+
+680
+00:44:19,140 --> 00:44:21,140
+algo porque esto va bien
+
+681
+00:44:21,140 --> 00:44:23,140
+comete alguno error
+
+682
+00:44:25,140 --> 00:44:27,140
+fíjense que acá traduce
+
+683
+00:44:27,140 --> 00:44:29,140
+was chosen as the best player
+
+684
+00:44:29,140 --> 00:44:31,140
+porque acá se equivoca
+
+685
+00:44:31,140 --> 00:44:33,140
+in the war sudafrica no
+
+686
+00:44:33,140 --> 00:44:35,140
+was voted
+
+687
+00:44:35,140 --> 00:44:37,140
+acá usa voted en vez de chosen
+
+688
+00:44:37,140 --> 00:44:39,140
+y antes decía
+
+689
+00:44:39,140 --> 00:44:41,140
+in the war sudafrica
+
+690
+00:44:43,140 --> 00:44:45,140
+pero había una vez que le invocaba
+
+691
+00:44:45,140 --> 00:44:47,140
+es mejor
+
+692
+00:44:47,140 --> 00:44:49,140
+no se
+
+693
+00:44:49,140 --> 00:44:51,140
+no hay muchas variantes
+
+694
+00:44:51,140 --> 00:44:53,140
+pero el hecho es que así
+
+695
+00:44:53,140 --> 00:44:55,140
+sí ha ido mejorando en general en los últimos años
+
+696
+00:44:55,140 --> 00:44:57,140
+no está bueno el ejemplo disculpe
+
+697
+00:44:57,140 --> 00:44:59,140
+me da pero no puedo retroceder el tiempo
+
+698
+00:44:59,140 --> 00:45:01,140
+para cambiarlo
+
+699
+00:45:01,140 --> 00:45:03,140
+y ahora
+
+700
+00:45:05,140 --> 00:45:07,140
+esto es interesante
+
+701
+00:45:07,140 --> 00:45:09,140
+este título lo dejé por razones históricas porque estaba
+
+702
+00:45:09,140 --> 00:45:11,140
+en la primera
+
+703
+00:45:11,140 --> 00:45:13,140
+porque era tan malo que uno decía
+
+704
+00:45:13,140 --> 00:45:15,140
+para qué quiero traducir si es una cosa tan espantosa
+
+705
+00:45:15,140 --> 00:45:17,140
+hoy en día la pregunta ha cambiado
+
+706
+00:45:17,140 --> 00:45:19,140
+un poco porque traduce bastante bien
+
+707
+00:45:19,140 --> 00:45:21,140
+y podríamos llegar a decir
+
+708
+00:45:21,140 --> 00:45:23,140
+esto lo traduje yo
+
+709
+00:45:23,140 --> 00:45:25,140
+pasado así como sale
+
+710
+00:45:25,140 --> 00:45:27,140
+en otra época eso era impensable
+
+711
+00:45:27,140 --> 00:45:29,140
+porque en cualquier zapallo se da cuenta que eso no era
+
+712
+00:45:29,140 --> 00:45:31,140
+no era una traducción
+
+713
+00:45:31,140 --> 00:45:33,140
+pero de todos modos
+
+714
+00:45:33,140 --> 00:45:35,140
+es por qué me sirve
+
+715
+00:45:35,140 --> 00:45:37,140
+y bueno si yo le doy este texto
+
+716
+00:45:37,140 --> 00:45:39,140
+en chino mandarín
+
+717
+00:45:39,140 --> 00:45:41,140
+tener esto ayuda un poco
+
+718
+00:45:43,140 --> 00:45:45,140
+o sea que la traducción automática
+
+719
+00:45:45,140 --> 00:45:47,140
+no será perfecta pero es mucho mejor que
+
+720
+00:45:47,140 --> 00:45:49,140
+nada digo para ustedes que no saben
+
+721
+00:45:49,140 --> 00:45:51,140
+chino mandarín
+
+722
+00:45:51,140 --> 00:45:53,140
+hay otras tareas como
+
+723
+00:45:53,140 --> 00:45:55,140
+el resumen automático también
+
+724
+00:45:55,140 --> 00:45:57,140
+es una tarea muy vieja
+
+725
+00:45:57,140 --> 00:45:59,140
+los primeros trabajos son de lund
+
+726
+00:45:59,140 --> 00:46:01,140
+los años fines de los 50
+
+727
+00:46:01,140 --> 00:46:03,140
+que la idea central
+
+728
+00:46:03,140 --> 00:46:05,140
+es tratar de
+
+729
+00:46:05,140 --> 00:46:07,140
+condensar el contenido
+
+730
+00:46:07,140 --> 00:46:09,140
+de información de un documento para el beneficio de un lector
+
+731
+00:46:09,140 --> 00:46:11,140
+si me preguntan para mi
+
+732
+00:46:11,140 --> 00:46:13,140
+esta es la tarea
+
+733
+00:46:13,140 --> 00:46:15,140
+de las que yo conozco en la que estamos más lejos
+
+734
+00:46:15,140 --> 00:46:17,140
+en la que he visto menos progreso
+
+735
+00:46:17,140 --> 00:46:19,140
+porque es una tarea muy difícil
+
+736
+00:46:19,140 --> 00:46:21,140
+porque primero que nada es subjetivo
+
+737
+00:46:21,140 --> 00:46:23,140
+que quiere decir resumen
+
+738
+00:46:23,140 --> 00:46:25,140
+para
+
+739
+00:46:25,140 --> 00:46:27,140
+que tanto lo resumo
+
+740
+00:46:27,140 --> 00:46:29,140
+en que sentido lo resumo
+
+741
+00:46:29,140 --> 00:46:31,140
+es muy difícil de modelar
+
+742
+00:46:31,140 --> 00:46:33,140
+yo que lo ataré y por eso es en esto
+
+743
+00:46:33,140 --> 00:46:35,140
+que para mi gusto
+
+744
+00:46:35,140 --> 00:46:37,140
+hay poco para hacer
+
+745
+00:46:37,140 --> 00:46:39,140
+si uno prueba
+
+746
+00:46:39,140 --> 00:46:41,140
+Word y eso tienen resumidores automáticos
+
+747
+00:46:41,140 --> 00:46:43,140
+que son como espantosos
+
+748
+00:46:43,140 --> 00:46:45,140
+digamos
+
+749
+00:46:47,140 --> 00:46:49,140
+la extracción de información es
+
+750
+00:46:49,140 --> 00:46:51,140
+me das un texto
+
+751
+00:46:51,140 --> 00:46:53,140
+y trato de llenar una base de datos
+
+752
+00:46:53,140 --> 00:46:55,140
+es decir no
+
+753
+00:46:55,140 --> 00:46:57,140
+que donde tengo campos a completar
+
+754
+00:46:57,140 --> 00:46:59,140
+estaría muy
+
+755
+00:46:59,140 --> 00:47:01,140
+bastante fácil
+
+756
+00:47:01,140 --> 00:47:03,140
+bastante fácil
+
+757
+00:47:03,140 --> 00:47:05,140
+para llegar al 90%
+
+758
+00:47:05,140 --> 00:47:07,140
+de ahí para arriba está muy bien
+
+759
+00:47:07,140 --> 00:47:09,140
+interfaces a base de datos
+
+760
+00:47:09,140 --> 00:47:11,140
+esto tuvo de moda en una época últimamente no he escuchado mucho
+
+761
+00:47:11,140 --> 00:47:13,140
+que es
+
+762
+00:47:13,140 --> 00:47:15,140
+intentar
+
+763
+00:47:15,140 --> 00:47:17,140
+para un dominio acotado
+
+764
+00:47:21,140 --> 00:47:23,140
+hacer que el sistema
+
+765
+00:47:23,140 --> 00:47:25,140
+responda
+
+766
+00:47:25,140 --> 00:47:27,140
+bueno si existe
+
+767
+00:47:27,140 --> 00:47:29,140
+ahora que pienso siri es ese tipo cosa
+
+768
+00:47:29,140 --> 00:47:31,140
+donde
+
+769
+00:47:31,140 --> 00:47:33,140
+no está hay restaurantes
+
+770
+00:47:33,140 --> 00:47:35,140
+hay algún restaurant cerca
+
+771
+00:47:37,140 --> 00:47:39,140
+y la idea es que eso se traduce
+
+772
+00:47:39,140 --> 00:47:41,140
+internamente a algún tipo de consulta
+
+773
+00:47:41,140 --> 00:47:43,140
+da una base de
+
+774
+00:47:43,140 --> 00:47:45,140
+datos
+
+775
+00:47:47,140 --> 00:47:49,140
+y por supuesto se ejecuta
+
+776
+00:47:51,140 --> 00:47:53,140
+el enfoque funciona bastante bien
+
+777
+00:47:53,140 --> 00:47:55,140
+con lexico y sin estarse retrigido
+
+778
+00:47:55,140 --> 00:47:57,140
+yo creo que hoy en día podemos decir más que esto
+
+779
+00:48:01,140 --> 00:48:03,140
+más
+
+780
+00:48:03,140 --> 00:48:05,140
+recuperación de información
+
+781
+00:48:05,140 --> 00:48:07,140
+recuperación de información es google
+
+782
+00:48:07,140 --> 00:48:09,140
+da un término
+
+783
+00:48:09,140 --> 00:48:11,140
+que me trae a lo relevante
+
+784
+00:48:11,140 --> 00:48:13,140
+y la más relevante primero
+
+785
+00:48:13,140 --> 00:48:15,140
+verificadores de gramática
+
+786
+00:48:15,140 --> 00:48:17,140
+y estilo es otra cosa
+
+787
+00:48:17,140 --> 00:48:19,140
+a nivel comercial
+
+788
+00:48:19,140 --> 00:48:21,140
+categorizar documentos
+
+789
+00:48:21,140 --> 00:48:23,140
+que es
+
+790
+00:48:23,140 --> 00:48:25,140
+que me den un documento y medio esto habla
+
+791
+00:48:25,140 --> 00:48:27,140
+de tal cosa
+
+792
+00:48:27,140 --> 00:48:29,140
+toda la de fútbol esto habla de
+
+793
+00:48:29,140 --> 00:48:31,140
+responder preguntas
+
+794
+00:48:33,140 --> 00:48:35,140
+no sé si recuerdan que hace poco
+
+795
+00:48:35,140 --> 00:48:37,140
+hace poco no se si tampoco
+
+796
+00:48:37,140 --> 00:48:39,140
+la máquina esta
+
+797
+00:48:39,140 --> 00:48:41,140
+mwatson era que se llamaba
+
+798
+00:48:41,140 --> 00:48:43,140
+le ganó al chopper del campeón del mundo
+
+799
+00:48:47,140 --> 00:48:49,140
+otra vez no
+
+800
+00:48:49,140 --> 00:48:51,140
+ahí lo que estaba pasando principalmente era que tenía grandes bases
+
+801
+00:48:51,140 --> 00:48:53,140
+de datos
+
+802
+00:48:53,140 --> 00:48:55,140
+si se quiere era una tarea medio
+
+803
+00:48:55,140 --> 00:48:57,140
+restringida por más que parezca maravilloso
+
+804
+00:48:57,140 --> 00:48:59,140
+y que va que lo sea
+
+805
+00:48:59,140 --> 00:49:01,140
+pero era bastante restringida la cosa de buscar facts
+
+806
+00:49:01,140 --> 00:49:03,140
+y armar
+
+807
+00:49:03,140 --> 00:49:05,140
+no es tan fácil como yo lo digo pero era
+
+808
+00:49:05,140 --> 00:49:07,140
+a lo gruto que funcionaba principalmente watson
+
+809
+00:49:09,140 --> 00:49:11,140
+por eso cuando ponen ejemplo de
+
+810
+00:49:11,140 --> 00:49:13,140
+eso que llaman
+
+811
+00:49:13,140 --> 00:49:15,140
+inteligencia cognití o una cosa así
+
+812
+00:49:17,140 --> 00:49:19,140
+yo no la llevo mucho
+
+813
+00:49:19,140 --> 00:49:21,140
+más bien es number crunch
+
+814
+00:49:21,140 --> 00:49:23,140
+y en el grupo de procesamiento de lenguaje natural
+
+815
+00:49:23,140 --> 00:49:25,140
+por ejemplo este grupo nuestro
+
+816
+00:49:25,140 --> 00:49:27,140
+este curso lo da
+
+817
+00:49:27,140 --> 00:49:29,140
+el grupo de procesamiento de lenguaje natural
+
+818
+00:49:29,140 --> 00:49:31,140
+un conjunto de
+
+819
+00:49:31,140 --> 00:49:33,140
+entusiastas
+
+820
+00:49:33,140 --> 00:49:35,140
+investigadores
+
+821
+00:49:35,140 --> 00:49:37,140
+y estudiantes
+
+822
+00:49:37,140 --> 00:49:39,140
+relacionados
+
+823
+00:49:39,140 --> 00:49:41,140
+para que sea una idea
+
+824
+00:49:41,140 --> 00:49:43,140
+del tipo de cosas que se ve
+
+825
+00:49:43,140 --> 00:49:45,140
+por ejemplo nosotros tenemos este año un proyecto
+
+826
+00:49:45,140 --> 00:49:47,140
+que es extracción de eventos en la ciudad a partir de
+
+827
+00:49:47,140 --> 00:49:49,140
+medios escritos y redes sociales
+
+828
+00:49:49,140 --> 00:49:51,140
+descubrir que cosa pasaron
+
+829
+00:49:51,140 --> 00:49:53,140
+búsqueda de temas musicales
+
+830
+00:49:53,140 --> 00:49:55,140
+similares utilizando aprendizaje profundo
+
+831
+00:49:55,140 --> 00:49:57,140
+esto de buscar canciones parecidas
+
+832
+00:49:57,140 --> 00:49:59,140
+a esta
+
+833
+00:49:59,140 --> 00:50:01,140
+estudio de menciones a personalidades
+
+834
+00:50:01,140 --> 00:50:03,140
+públicas en twits
+
+835
+00:50:05,140 --> 00:50:07,140
+jugador de espectro
+
+836
+00:50:07,140 --> 00:50:09,140
+no esto es más bien machine learning
+
+837
+00:50:09,140 --> 00:50:11,140
+representación de palabras
+
+838
+00:50:11,140 --> 00:50:13,140
+en espacio de vectores esto se defendía hace poco
+
+839
+00:50:13,140 --> 00:50:15,140
+determinación
+
+840
+00:50:15,140 --> 00:50:17,140
+de la orientación semántica de las opiniones
+
+841
+00:50:17,140 --> 00:50:19,140
+transmitidas en eventos de prensa esto quiere decir
+
+842
+00:50:21,140 --> 00:50:23,140
+si una opinión fue positiva o negativa
+
+843
+00:50:23,140 --> 00:50:25,140
+se implementación
+
+844
+00:50:25,140 --> 00:50:27,140
+por tema de texto de prensa
+
+845
+00:50:27,140 --> 00:50:29,140
+cosas así de todo un poco
+
+846
+00:50:29,140 --> 00:50:31,140
+una de las cosas interesantes es que
+
+847
+00:50:31,140 --> 00:50:33,140
+en esta área todo lo que se hace
+
+848
+00:50:33,140 --> 00:50:35,140
+prácticamente
+
+849
+00:50:35,140 --> 00:50:37,140
+es open source
+
+850
+00:50:37,140 --> 00:50:39,140
+o sea que
+
+851
+00:50:39,140 --> 00:50:41,140
+todas las herramientas están disponibles
+
+852
+00:50:41,140 --> 00:50:43,140
+rápidamente
+
+853
+00:50:43,140 --> 00:50:45,140
+y el conocimiento general también
+
+854
+00:50:45,140 --> 00:50:47,140
+una de las cosas que para mí es muy importante
+
+855
+00:50:49,140 --> 00:50:51,140
+y que para nosotros es bastante normal
+
+856
+00:50:51,140 --> 00:50:53,140
+porque en otras áreas no existe
+
+857
+00:50:53,140 --> 00:50:55,140
+la
+
+858
+00:50:55,140 --> 00:50:57,140
+association for computational linguistics
+
+859
+00:50:57,140 --> 00:50:59,140
+que es la principal asociación
+
+860
+00:50:59,140 --> 00:51:01,140
+de todo esto
+
+861
+00:51:01,140 --> 00:51:03,140
+hace unos años atrás que todos sus contenidos
+
+862
+00:51:03,140 --> 00:51:05,140
+estaban libremente disponibles
+
+863
+00:51:05,140 --> 00:51:07,140
+entonces nunca hay una barrera
+
+864
+00:51:07,140 --> 00:51:09,140
+para
+
+865
+00:51:09,140 --> 00:51:11,140
+para leer un artículo de computational linguistics
+
+866
+00:51:11,140 --> 00:51:13,140
+porque estén en un journal pago o cosas así
+
+867
+00:51:15,140 --> 00:51:17,140
+como mucho timbón usamos digamos
+
+868
+00:51:17,140 --> 00:51:19,140
+porque no lo necesitamos
+
+869
+00:51:19,140 --> 00:51:21,140
+es muy positivo
+
+870
+00:51:25,140 --> 00:51:27,140
+¿por qué estoy acá?
+
+871
+00:51:29,140 --> 00:51:31,140
+perdón
+
+872
+00:51:31,140 --> 00:51:33,140
+eh
+
+873
+00:51:39,140 --> 00:51:41,140
+bueno pero
+
+874
+00:51:41,140 --> 00:51:43,140
+¿cómo estamos de ahora yo?
+
+875
+00:51:43,140 --> 00:51:45,140
+no sé ni de todo el celular
+
+876
+00:51:45,140 --> 00:51:47,140
+que tiene
+
+877
+00:51:47,140 --> 00:51:49,140
+¿qué tiene el lenguaje natural que no tiene los lenguajes formales?
+
+878
+00:51:49,140 --> 00:51:51,140
+o sea ¿ustedes hasta ahora han estudiado mucho el lenguaje formales?
+
+879
+00:51:51,140 --> 00:51:53,140
+de hecho todos los lenguajes que han estudiado
+
+880
+00:51:53,140 --> 00:51:55,140
+son formales
+
+881
+00:51:55,140 --> 00:51:57,140
+¿cuál es la gran diferencia
+
+882
+00:51:57,140 --> 00:51:59,140
+del lenguaje natural con los lenguajes formales?
+
+883
+00:51:59,140 --> 00:52:01,140
+alguna pregunta hasta acá
+
+884
+00:52:01,140 --> 00:52:03,140
+¿no?
+
+885
+00:52:03,140 --> 00:52:05,140
+si tienen dudas puedo resolverlo si están aburridos o no
+
+886
+00:52:05,140 --> 00:52:07,140
+¿qué tiene el lenguaje natural que no tiene los lenguajes formales?
+
+887
+00:52:09,140 --> 00:52:11,140
+¿cuál es el problema o los problemas
+
+888
+00:52:11,140 --> 00:52:13,140
+que enfrentamos para hacer esto?
+
+889
+00:52:13,140 --> 00:52:15,140
+¿por qué hay un área especial dedicada al lenguaje natural
+
+890
+00:52:15,140 --> 00:52:17,140
+y no podemos usar los métodos de parsi
+
+891
+00:52:17,140 --> 00:52:19,140
+ni análisis que hay
+
+892
+00:52:19,140 --> 00:52:21,140
+en
+
+893
+00:52:21,140 --> 00:52:23,140
+con los lenguajes formales?
+
+894
+00:52:31,140 --> 00:52:33,140
+padre, he mentido
+
+895
+00:52:33,140 --> 00:52:35,140
+te escucho hijo, dije que tenía 33 para el envío
+
+896
+00:52:35,140 --> 00:52:37,140
+y tenía 24
+
+897
+00:52:39,140 --> 00:52:41,140
+¿dónde está la gracia del chiste?
+
+898
+00:52:41,140 --> 00:52:43,140
+lo digo en serio
+
+899
+00:52:43,140 --> 00:52:45,140
+no lo digo así
+
+900
+00:52:47,140 --> 00:52:49,140
+¿dónde está la gracia?
+
+901
+00:52:49,140 --> 00:52:51,140
+¿por qué es un chiste?
+
+902
+00:52:53,140 --> 00:52:55,140
+porque es lo que dice ahí
+
+903
+00:52:55,140 --> 00:52:57,140
+¿cuál es el chiste?
+
+904
+00:52:57,140 --> 00:52:59,140
+es la misma mentira
+
+905
+00:53:01,140 --> 00:53:03,140
+no estamos hablando de la misma mentira
+
+906
+00:53:03,140 --> 00:53:05,140
+y también sabemos que cuando uno se confiesa
+
+907
+00:53:07,140 --> 00:53:09,140
+no confiesa ese tipo de mentira
+
+908
+00:53:09,140 --> 00:53:11,140
+porque es una mentira en el marco de un juego
+
+909
+00:53:11,140 --> 00:53:13,140
+y hay que entender que esa mentira
+
+910
+00:53:15,140 --> 00:53:17,140
+no es la misma la de arriba y la de abajo
+
+911
+00:53:19,140 --> 00:53:21,140
+el mismo tipo de mentira y ese contraste es lo que nos da
+
+912
+00:53:21,140 --> 00:53:23,140
+le recomiendo un
+
+913
+00:53:23,140 --> 00:53:25,140
+un proyecto agrado que tuvimos hace poco
+
+914
+00:53:25,140 --> 00:53:27,140
+que se llamaba reconocimiento de humor en tuit
+
+915
+00:53:27,140 --> 00:53:29,140
+que
+
+916
+00:53:29,140 --> 00:53:31,140
+habla bastante de estas cosas
+
+917
+00:53:33,140 --> 00:53:35,140
+buitres de la concagua
+
+918
+00:53:35,140 --> 00:53:37,140
+¿cuándo los volveré a ver?
+
+919
+00:53:37,140 --> 00:53:39,140
+rapaces bravos
+
+920
+00:53:39,140 --> 00:53:41,140
+con sus granidos voraces
+
+921
+00:53:41,140 --> 00:53:43,140
+me enseñaron a querer
+
+922
+00:53:43,140 --> 00:53:45,140
+le gustó Mendieta en un ataque de impiración
+
+923
+00:53:45,140 --> 00:53:47,140
+le compuse a Pacosquín
+
+924
+00:53:47,140 --> 00:53:49,140
+don Inodoro la próxima vez que lo ataque
+
+925
+00:53:49,140 --> 00:53:51,140
+la impiración no podría defenderse mejor
+
+926
+00:53:51,140 --> 00:53:53,140
+¿dónde está el chiste?
+
+927
+00:53:55,140 --> 00:53:57,140
+¿dónde está el chiste?
+
+928
+00:53:57,140 --> 00:53:59,140
+que la impiración no lo atacó
+
+929
+00:54:01,140 --> 00:54:03,140
+de hecho sí
+
+930
+00:54:03,140 --> 00:54:05,140
+que no es el mismo ataque
+
+931
+00:54:05,140 --> 00:54:07,140
+que estoy queriendo decir dos cosas diferentes con ataque
+
+932
+00:54:09,140 --> 00:54:11,140
+es más divertido entender y escuchar los que interpretarlo
+
+933
+00:54:13,140 --> 00:54:15,140
+un borracho dijo
+
+934
+00:54:15,140 --> 00:54:17,140
+si ayer fuese mañana hoy sería viernes
+
+935
+00:54:17,140 --> 00:54:19,140
+¿en qué día de la semana el borracho dijo esto?
+
+936
+00:54:21,140 --> 00:54:23,140
+seguramente lo recibieron por whatsapp hace unas
+
+937
+00:54:23,140 --> 00:54:25,140
+semanas atrás algunos de ustedes
+
+938
+00:54:25,140 --> 00:54:27,140
+bueno yo sí
+
+939
+00:54:27,140 --> 00:54:29,140
+¿qué día es hoy?
+
+940
+00:54:33,140 --> 00:54:35,140
+no me voy a poner a discutirlo acá con ustedes
+
+941
+00:54:35,140 --> 00:54:37,140
+se lo voy a dejar
+
+942
+00:54:37,140 --> 00:54:39,140
+de deber pero puede ser domingo
+
+943
+00:54:39,140 --> 00:54:41,140
+o miércoles
+
+944
+00:54:41,140 --> 00:54:43,140
+y es muy interesante este problema
+
+945
+00:54:43,140 --> 00:54:45,140
+porque lo que sucede
+
+946
+00:54:45,140 --> 00:54:47,140
+es que
+
+947
+00:54:47,140 --> 00:54:49,140
+cuando yo digo hay como dos
+
+948
+00:54:49,140 --> 00:54:51,140
+mundos a la vez
+
+949
+00:54:51,140 --> 00:54:53,140
+porque acá hay un fuese
+
+950
+00:54:55,140 --> 00:54:57,140
+si ayer fuese es un mundo
+
+951
+00:54:57,140 --> 00:54:59,140
+hipotético
+
+952
+00:54:59,140 --> 00:55:01,140
+si ayer fuese mañana
+
+953
+00:55:01,140 --> 00:55:03,140
+hoy sería viernes entonces ahí la ambigüedad
+
+954
+00:55:03,140 --> 00:55:05,140
+parece porque
+
+955
+00:55:05,140 --> 00:55:07,140
+ayer
+
+956
+00:55:07,140 --> 00:55:09,140
+y el hoy no sabemos en cuál de los dos mundos es
+
+957
+00:55:09,140 --> 00:55:11,140
+si en el hipotético
+
+958
+00:55:11,140 --> 00:55:13,140
+o en el mío
+
+959
+00:55:13,140 --> 00:55:15,140
+y no pueden ser en los dos en el mismo porque si no
+
+960
+00:55:15,140 --> 00:55:17,140
+no habría ambigüedad no habría duda
+
+961
+00:55:17,140 --> 00:55:19,140
+perdón sería inconsistente
+
+962
+00:55:21,140 --> 00:55:23,140
+acá lo que sucede es que hay dos mundos
+
+963
+00:55:23,140 --> 00:55:25,140
+introducidos por este si
+
+964
+00:55:25,140 --> 00:55:27,140
+y como el ayer y el hoy puede estar cruzados
+
+965
+00:55:27,140 --> 00:55:29,140
+según como yo lo interprete
+
+966
+00:55:33,140 --> 00:55:35,140
+voy a responder
+
+967
+00:55:35,140 --> 00:55:37,140
+o domingo miércoles, creo que era domingo miércoles
+
+968
+00:55:37,140 --> 00:55:39,140
+háganlo
+
+969
+00:55:39,140 --> 00:55:41,140
+las computadoras no están ni por asomo
+
+970
+00:55:41,140 --> 00:55:43,140
+cerca de entender esto
+
+971
+00:55:43,140 --> 00:55:45,140
+pero ni de lejos
+
+972
+00:55:45,140 --> 00:55:47,140
+tengo unos jueces andando a nosotros
+
+973
+00:55:47,140 --> 00:55:49,140
+tengo muchos amigos que todavía
+
+974
+00:55:49,140 --> 00:55:51,140
+me discuten
+
+975
+00:55:51,140 --> 00:55:53,140
+imagínense las computadoras
+
+976
+00:55:53,140 --> 00:55:55,140
+bueno tengo amigos hay computadoras
+
+977
+00:55:55,140 --> 00:55:57,140
+que le compro
+
+978
+00:55:57,140 --> 00:55:59,140
+y ahora por supuesto
+
+979
+00:55:59,140 --> 00:56:01,140
+a ver esto van a tener que otra vez
+
+980
+00:56:01,140 --> 00:56:03,140
+perdóneme este
+
+981
+00:56:03,140 --> 00:56:05,140
+abusar el oído
+
+982
+00:56:05,140 --> 00:56:07,140
+si yo me acerco con el micrófono se escucha acá
+
+983
+00:56:07,140 --> 00:56:09,140
+no tiene el mago lo más que es
+
+984
+00:56:09,140 --> 00:56:11,140
+de hecho no tiene
+
+985
+00:56:11,140 --> 00:56:13,140
+no lo tiene
+
+986
+00:56:23,140 --> 00:56:25,140
+Shakespeare da para todo
+
+987
+00:56:25,140 --> 00:56:27,140
+le digo porque yo conozco todo Shakespeare en inglés
+
+988
+00:56:27,140 --> 00:56:29,140
+no me digas
+
+989
+00:56:29,140 --> 00:56:31,140
+no lo he leído porque no sé inglés
+
+990
+00:56:31,140 --> 00:56:33,140
+pero lo conozco
+
+991
+00:56:33,140 --> 00:56:35,140
+y bueno el hotel es una tragedia
+
+992
+00:56:35,140 --> 00:56:37,140
+terrible
+
+993
+00:56:37,140 --> 00:56:39,140
+entonces no lo voy a ver
+
+994
+00:56:39,140 --> 00:56:41,140
+es una gran obra
+
+995
+00:56:41,140 --> 00:56:43,140
+hotel o el moro de venencia
+
+996
+00:56:43,140 --> 00:56:45,140
+que era negro
+
+997
+00:56:45,140 --> 00:56:47,140
+bueno no todos los moros
+
+998
+00:56:47,140 --> 00:56:49,140
+son héroes pero era negro
+
+999
+00:56:49,140 --> 00:56:51,140
+hay distintos tipos de moros
+
+1000
+00:56:51,140 --> 00:56:53,140
+los moros del interior y los moros en la costa
+
+1001
+00:56:53,140 --> 00:56:55,140
+hay moros
+
+1002
+00:56:55,140 --> 00:56:57,140
+también los moros de los lugares
+
+1003
+00:56:57,140 --> 00:56:59,140
+importantes los que son de morón
+
+1004
+00:56:59,140 --> 00:57:01,140
+dangas
+
+1005
+00:57:01,140 --> 00:57:03,140
+pero este era negro
+
+1006
+00:57:05,140 --> 00:57:07,140
+moro chazo
+
+1007
+00:57:09,140 --> 00:57:11,140
+curioso porque el nombre
+
+1008
+00:57:11,140 --> 00:57:13,140
+otilo en realidad es un nombre
+
+1009
+00:57:13,140 --> 00:57:15,140
+de origen irlandés
+
+1010
+00:57:15,140 --> 00:57:17,140
+claro es hotel
+
+1011
+00:57:17,140 --> 00:57:19,140
+ah tiene el
+
+1012
+00:57:19,140 --> 00:57:21,140
+si tiene el apócrifo
+
+1013
+00:57:21,140 --> 00:57:23,140
+que le ponen
+
+1014
+00:57:23,140 --> 00:57:25,140
+mira si será irlandés porque
+
+1015
+00:57:25,140 --> 00:57:27,140
+en irlandés antiguo
+
+1016
+00:57:27,140 --> 00:57:29,140
+Telo quiere decir alojamiento
+
+1017
+00:57:29,140 --> 00:57:31,140
+ah
+
+1018
+00:57:31,140 --> 00:57:33,140
+y bueno ahí hoteló
+
+1019
+00:57:33,140 --> 00:57:35,140
+una historia terrible que ya empieza
+
+1020
+00:57:35,140 --> 00:57:37,140
+medio mal porque hotelo estaba
+
+1021
+00:57:37,140 --> 00:57:39,140
+casado con Desdemona
+
+1022
+00:57:39,140 --> 00:57:41,140
+que era una hermosa mujer
+
+1023
+00:57:41,140 --> 00:57:43,140
+pero provenían de familias
+
+1024
+00:57:43,140 --> 00:57:45,140
+enemigas los capuletos
+
+1025
+00:57:45,140 --> 00:57:47,140
+y los montescos
+
+1026
+00:57:47,140 --> 00:57:49,140
+y esto de alguna manera
+
+1027
+00:57:49,140 --> 00:57:51,140
+lo vincula con las teorías de Darwin
+
+1028
+00:57:51,140 --> 00:57:53,140
+y Desdemona se llama la mujer
+
+1029
+00:57:53,140 --> 00:57:55,140
+porque el hombre desciende del mono
+
+1030
+00:57:55,140 --> 00:57:57,140
+la mujer desdemona
+
+1031
+00:57:59,140 --> 00:58:01,140
+y entonces
+
+1032
+00:58:09,140 --> 00:58:11,140
+algún famoso que entró seguramente
+
+1033
+00:58:13,140 --> 00:58:15,140
+bueno el asunto es que le estaba contando
+
+1034
+00:58:15,140 --> 00:58:17,140
+resulta que
+
+1035
+00:58:17,140 --> 00:58:19,140
+se habían casado igual
+
+1036
+00:58:19,140 --> 00:58:21,140
+con la oposición de la familia
+
+1037
+00:58:21,140 --> 00:58:23,140
+hasta que un día
+
+1038
+00:58:23,140 --> 00:58:25,140
+hotelo va caminando por ahí
+
+1039
+00:58:25,140 --> 00:58:27,140
+por las murallas del castillo
+
+1040
+00:58:27,140 --> 00:58:29,140
+y se le aparece el fantasma
+
+1041
+00:58:29,140 --> 00:58:31,140
+del padre
+
+1042
+00:58:35,140 --> 00:58:37,140
+según el actor
+
+1043
+00:58:43,140 --> 00:58:45,140
+para el asunto se le aparece el fantasma
+
+1044
+00:58:45,140 --> 00:58:47,140
+del padre y le dice
+
+1045
+00:58:47,140 --> 00:58:49,140
+pero el hotelo
+
+1046
+00:58:49,140 --> 00:58:51,140
+pero el hotelo lo dice
+
+1047
+00:58:51,140 --> 00:58:53,140
+papá que le quiere abrazar no puede porque es un ser estereo
+
+1048
+00:58:53,140 --> 00:58:55,140
+es un espectro
+
+1049
+00:58:55,140 --> 00:58:57,140
+un ser estereo hay fantasma mono
+
+1050
+00:58:57,140 --> 00:58:59,140
+y fantasma estereo
+
+1051
+00:58:59,140 --> 00:59:01,140
+y este es estereo
+
+1052
+00:59:01,140 --> 00:59:03,140
+este es estereo
+
+1053
+00:59:03,140 --> 00:59:05,140
+que también lo vincula con la teoría de Darwin
+
+1054
+00:59:05,140 --> 00:59:07,140
+los fantasma mono
+
+1055
+00:59:09,140 --> 00:59:11,140
+bueno
+
+1056
+00:59:11,140 --> 00:59:13,140
+teorías discutidas
+
+1057
+00:59:13,140 --> 00:59:15,140
+no todos estamos de acuerdo
+
+1058
+00:59:17,140 --> 00:59:19,140
+bueno entonces resulta que
+
+1059
+00:59:19,140 --> 00:59:21,140
+lo quiere abrazar no puede
+
+1060
+00:59:21,140 --> 00:59:23,140
+y el padre le dice
+
+1061
+00:59:23,140 --> 00:59:25,140
+hotelo vengo a decirte
+
+1062
+00:59:25,140 --> 00:59:27,140
+que tu mujer te es infiel
+
+1063
+00:59:29,140 --> 00:59:31,140
+es fantasma ese
+
+1064
+00:59:31,140 --> 00:59:33,140
+y entonces se dice
+
+1065
+00:59:33,140 --> 00:59:35,140
+no pero porque me decís eso
+
+1066
+00:59:35,140 --> 00:59:37,140
+y desaparece
+
+1067
+00:59:37,140 --> 00:59:39,140
+el espectro
+
+1068
+00:59:39,140 --> 00:59:41,140
+claro se quedó sin señal
+
+1069
+00:59:41,140 --> 00:59:43,140
+digamos hotelo
+
+1070
+00:59:43,140 --> 00:59:45,140
+y se queda pensando
+
+1071
+00:59:45,140 --> 00:59:47,140
+que el psicóloga que era un padre ausente
+
+1072
+00:59:49,140 --> 00:59:51,140
+se fumó pero le dejó
+
+1073
+00:59:51,140 --> 00:59:53,140
+trabajando la cabeza al pobre hotelo
+
+1074
+00:59:53,140 --> 00:59:55,140
+iba a ir por volvolvió al palacio
+
+1075
+00:59:55,140 --> 00:59:57,140
+y andaba por los salones
+
+1076
+00:59:57,140 --> 00:59:59,140
+dudando decía
+
+1077
+00:59:59,140 --> 01:00:01,140
+ser o no ser
+
+1078
+01:00:03,140 --> 01:00:05,140
+yo no saber
+
+1079
+01:00:07,140 --> 01:00:09,140
+y después cruzaba por ahí
+
+1080
+01:00:09,140 --> 01:00:11,140
+por la noche en un cementerio
+
+1081
+01:00:11,140 --> 01:00:13,140
+y encuentra la famosa calavera
+
+1082
+01:00:13,140 --> 01:00:15,140
+era la calavera de un bufón de la corte
+
+1083
+01:00:15,140 --> 01:00:17,140
+y agarra la calavera hotelo
+
+1084
+01:00:17,140 --> 01:00:19,140
+la mira así
+
+1085
+01:00:19,140 --> 01:00:21,140
+y si como lo va a mirar así, si siempre se mira así
+
+1086
+01:00:21,140 --> 01:00:23,140
+es algo que se abisco
+
+1087
+01:00:23,140 --> 01:00:25,140
+claro
+
+1088
+01:00:25,140 --> 01:00:27,140
+a también cierta
+
+1089
+01:00:27,140 --> 01:00:29,140
+eso también depende del actor
+
+1090
+01:00:29,140 --> 01:00:31,140
+bueno la mira así dice
+
+1091
+01:00:31,140 --> 01:00:33,140
+te noto desmejorado
+
+1092
+01:00:35,140 --> 01:00:37,140
+y la calavera no le contesta nada
+
+1093
+01:00:39,140 --> 01:00:41,140
+claro calavera no chilla
+
+1094
+01:00:43,140 --> 01:00:45,140
+entonces
+
+1095
+01:00:45,140 --> 01:00:47,140
+y se queda dudando
+
+1096
+01:00:47,140 --> 01:00:49,140
+te lo dice que hago
+
+1097
+01:00:49,140 --> 01:00:51,140
+y desdémona será
+
+1098
+01:00:51,140 --> 01:00:53,140
+realmente culpable y a lo mejor es inocente
+
+1099
+01:00:53,140 --> 01:00:55,140
+y que hago y yo por las dudas
+
+1100
+01:00:55,140 --> 01:00:57,140
+la mato
+
+1101
+01:00:59,140 --> 01:01:01,140
+y pobrecita desdémona
+
+1102
+01:01:01,140 --> 01:01:03,140
+ajena todo estaba ahí en su dormitorio
+
+1103
+01:01:03,140 --> 01:01:05,140
+mirando televisión
+
+1104
+01:01:05,140 --> 01:01:07,140
+en venezia había televisión
+
+1105
+01:01:09,140 --> 01:01:11,140
+no ve que la ciudad de los canales
+
+1106
+01:01:13,140 --> 01:01:15,140
+y el mundo
+
+1107
+01:01:23,140 --> 01:01:25,140
+quién es
+
+1108
+01:01:27,140 --> 01:01:29,140
+bueno entonces
+
+1109
+01:01:29,140 --> 01:01:31,140
+entra hotelo al dormitorio sigilosamente
+
+1110
+01:01:31,140 --> 01:01:33,140
+ya no lo ve entre que está oscuro
+
+1111
+01:01:33,140 --> 01:01:35,140
+y el negro
+
+1112
+01:01:37,140 --> 01:01:39,140
+y va, y nomás va
+
+1113
+01:01:39,140 --> 01:01:41,140
+y la estrangula ahí sobre el tala monupcial
+
+1114
+01:01:41,140 --> 01:01:47,620
+En un árbol, en la estrangula, en un talamo, arriba del talamo o a la sombra al talamo.
+
+1115
+01:01:47,620 --> 01:01:49,620
+Se suben al talamo.
+
+1116
+01:01:49,620 --> 01:01:52,620
+Y si ella es mona, puede subir porque...
+
+1117
+01:01:52,620 --> 01:01:54,620
+No, no me entendió.
+
+1118
+01:01:54,620 --> 01:01:56,620
+Son altos algunos talamos, ¿eh?
+
+1119
+01:01:56,620 --> 01:01:58,620
+Como 30 metros tienen.
+
+1120
+01:01:58,620 --> 01:02:00,620
+Los que tengo en casa son...
+
+1121
+01:02:00,620 --> 01:02:03,620
+Oja caduca, pierde la hoja en invierno.
+
+1122
+01:02:03,620 --> 01:02:05,620
+Se queda así, noja, pobrecito, el talamo.
+
+1123
+01:02:05,620 --> 01:02:08,620
+No, pero a ver cómo se lo explico.
+
+1124
+01:02:09,620 --> 01:02:15,620
+No, no, desde mona está acostada sobre el lecho nupcial.
+
+1125
+01:02:15,620 --> 01:02:17,620
+Ah, pusieron el lecho.
+
+1126
+01:02:17,620 --> 01:02:20,620
+Por si se cae el talamo, están los el hechos, está bien.
+
+1127
+01:02:20,620 --> 01:02:24,620
+Es una medida de seguridad porque el el hecho siempre es verde, está muelle.
+
+1128
+01:02:24,620 --> 01:02:26,620
+Y si se cae el talamo, se puede matar.
+
+1129
+01:02:26,620 --> 01:02:29,620
+Si la mata, no la puede estrangular.
+
+1130
+01:02:29,620 --> 01:02:31,620
+Si no, poder puede, pero...
+
+1131
+01:02:31,620 --> 01:02:33,620
+Pero una vez que está muerta, me dio.
+
+1132
+01:02:33,620 --> 01:02:35,620
+Redundante, ¿no?
+
+1133
+01:02:35,620 --> 01:02:37,620
+Una redundancia.
+
+1134
+01:02:37,620 --> 01:02:38,620
+A ver.
+
+1135
+01:02:38,620 --> 01:02:39,620
+¿Cómo que no?
+
+1136
+01:02:39,620 --> 01:02:42,620
+No, estoy tratando de hacerme entender.
+
+1137
+01:02:42,620 --> 01:02:44,620
+No es fácil, le diré.
+
+1138
+01:02:44,620 --> 01:02:48,620
+Desde mona está acostada sobre...
+
+1139
+01:02:48,620 --> 01:02:50,620
+¿La palabra cama la conoces?
+
+1140
+01:02:50,620 --> 01:02:52,620
+Sí.
+
+1141
+01:02:52,620 --> 01:02:54,620
+Sobre la cama.
+
+1142
+01:02:54,620 --> 01:02:56,620
+Y ahí va a hotelo y la estrangula.
+
+1143
+01:02:56,620 --> 01:02:59,620
+Quitaron los árboles.
+
+1144
+01:03:02,620 --> 01:03:04,620
+Sí, quitaron los árboles.
+
+1145
+01:03:04,620 --> 01:03:06,620
+¿Y los el hechos?
+
+1146
+01:03:08,620 --> 01:03:11,620
+Uy, qué noche larga va a ser.
+
+1147
+01:03:11,620 --> 01:03:13,620
+Los el hechos lo dejaron.
+
+1148
+01:03:13,620 --> 01:03:14,620
+¿Los dejaron?
+
+1149
+01:03:14,620 --> 01:03:15,620
+Sí.
+
+1150
+01:03:15,620 --> 01:03:19,620
+Se hubo discusiones, debate público, la gente opinaba favor en cómoda.
+
+1151
+01:03:19,620 --> 01:03:22,620
+Hasta que el director dejó hablar los el hechos, se quedan.
+
+1152
+01:03:22,620 --> 01:03:23,620
+¿Por qué?
+
+1153
+01:03:23,620 --> 01:03:26,620
+Porque lo importante es el hecho.
+
+1154
+01:03:29,620 --> 01:03:31,620
+Bueno.
+
+1155
+01:03:32,620 --> 01:03:35,620
+Bueno, además de...
+
+1156
+01:03:37,620 --> 01:03:41,620
+de reírnos un poco y de acordarnos de...
+
+1157
+01:03:41,620 --> 01:03:44,620
+perdón, de Rabinuch, que se murió.
+
+1158
+01:03:49,620 --> 01:03:51,620
+¿Por qué...?
+
+1159
+01:03:53,620 --> 01:03:56,620
+¿Por qué pasamos esto?
+
+1160
+01:03:56,620 --> 01:04:00,620
+Es fácil para una computadora comprender esto.
+
+1161
+01:04:01,620 --> 01:04:02,620
+No.
+
+1162
+01:04:02,620 --> 01:04:06,620
+Y con qué juega todo el tiempo el elutier
+
+1163
+01:04:06,620 --> 01:04:13,620
+y dicen que si esto no existiera sería muy difícil que hubiera humor.
+
+1164
+01:04:13,620 --> 01:04:15,620
+¿Con la sinónima?
+
+1165
+01:04:15,620 --> 01:04:16,620
+La sinónima.
+
+1166
+01:04:16,620 --> 01:04:20,620
+Hacen la cantidad de cosas que tiene que ver con palabras que exactamente,
+
+1167
+01:04:20,620 --> 01:04:22,620
+que son sinónimos.
+
+1168
+01:04:22,620 --> 01:04:25,620
+O monimia, que suena parecida y...
+
+1169
+01:04:25,620 --> 01:04:29,620
+y como alamo y talamo hace todo.
+
+1170
+01:04:29,620 --> 01:04:32,620
+Pero lo importante es el hecho.
+
+1171
+01:04:35,620 --> 01:04:38,620
+Pero también con palabras que...
+
+1172
+01:04:38,620 --> 01:04:40,620
+que quieren decir algo literalmente,
+
+1173
+01:04:40,620 --> 01:04:45,620
+pero que uno sabe que está refiriendo algo porque conocemos el mundo.
+
+1174
+01:04:45,620 --> 01:04:47,620
+No voy a dar ejemplo porque le quita la gracia, digamos,
+
+1175
+01:04:47,620 --> 01:04:49,620
+pero uno lo ve todo el tiempo.
+
+1176
+01:04:49,620 --> 01:04:52,620
+Miren lo de vuelta o piensen lo de esta óptica de polvivencia,
+
+1177
+01:04:52,620 --> 01:04:54,620
+porque si no uno no se divierte,
+
+1178
+01:04:54,620 --> 01:04:56,620
+pero todo el tiempo usan ese tipo de métodos.
+
+1179
+01:04:56,620 --> 01:04:59,620
+Fontanarrosa también, otro ejemplo muy claro de eso es fontanarrosa,
+
+1180
+01:04:59,620 --> 01:05:01,620
+de Inodoro-Peraira en particular.
+
+1181
+01:05:01,620 --> 01:05:03,620
+Por eso puse un par de ejemplos.
+
+1182
+01:05:03,620 --> 01:05:05,620
+Todo el tiempo son juegos de palabras.
+
+1183
+01:05:05,620 --> 01:05:07,620
+El cuarteto de nos también.
+
+1184
+01:05:07,620 --> 01:05:09,620
+No voy a poner ningún ejemplo del cuarteto de nos,
+
+1185
+01:05:09,620 --> 01:05:11,620
+porque la mayoría son irreproducibles,
+
+1186
+01:05:11,620 --> 01:05:13,620
+pero hay un...
+
+1187
+01:05:13,620 --> 01:05:18,620
+incluso llegaron a tener un ciclo que se llamaba este lo hablando hablando,
+
+1188
+01:05:18,620 --> 01:05:20,620
+que se basaba todo en...
+
+1189
+01:05:20,620 --> 01:05:23,620
+y lo que se llaman calembures, que son juegos de palabras.
+
+1190
+01:05:23,620 --> 01:05:26,620
+Los calembures son, este...
+
+1191
+01:05:26,620 --> 01:05:28,620
+bastante viejos.
+
+1192
+01:05:30,620 --> 01:05:32,620
+Bueno, esto es la ambigüedad.
+
+1193
+01:05:32,620 --> 01:05:34,620
+El gran problema de procedimiento de los colegios naturales
+
+1194
+01:05:34,620 --> 01:05:36,620
+responde a nuestra pregunta es la ambigüedad.
+
+1195
+01:05:36,620 --> 01:05:38,620
+La ambigüedad es diferentes niveles
+
+1196
+01:05:38,620 --> 01:05:40,620
+que son un poco lo que hemos visto en los chistes.
+
+1197
+01:05:41,620 --> 01:05:42,620
+La ambigüedad...
+
+1198
+01:05:42,620 --> 01:05:44,620
+ambiguo quiere decir que admite distintas interpretaciones.
+
+1199
+01:05:47,620 --> 01:05:49,620
+Empezamos, como decía, con la homonimia.
+
+1200
+01:05:49,620 --> 01:05:52,620
+Dos palabras con la misma forma que tienen distinto significado.
+
+1201
+01:05:53,620 --> 01:05:56,620
+Y ahí podemos distinguir la homografía,
+
+1202
+01:05:58,620 --> 01:06:00,620
+o sea, que se escriben igual, capital,
+
+1203
+01:06:00,620 --> 01:06:01,620
+la capital de un país,
+
+1204
+01:06:01,620 --> 01:06:03,620
+verso del capital que tengo,
+
+1205
+01:06:03,620 --> 01:06:05,620
+o banco.
+
+1206
+01:06:05,620 --> 01:06:07,620
+Pero también pueden ser homófonas
+
+1207
+01:06:08,620 --> 01:06:10,620
+para...
+
+1208
+01:06:10,620 --> 01:06:13,620
+para sufrimiento de los escolares y algunos adultos.
+
+1209
+01:06:13,620 --> 01:06:17,620
+Hola y hola, y hay un estudiante de ingeniería también.
+
+1210
+01:06:17,620 --> 01:06:20,620
+As, as, coser y coser.
+
+1211
+01:06:20,620 --> 01:06:21,620
+O sea,
+
+1212
+01:06:21,620 --> 01:06:23,620
+hay gente que pone, en vez de o sea,
+
+1213
+01:06:23,620 --> 01:06:25,620
+pone o sea contilde.
+
+1214
+01:06:25,620 --> 01:06:27,620
+Hay gente, todo el tiempo.
+
+1215
+01:06:28,620 --> 01:06:30,620
+Eso se llama la homofonía.
+
+1216
+01:06:30,620 --> 01:06:32,620
+Elelutía juega mucho con la homofonía.
+
+1217
+01:06:34,620 --> 01:06:36,620
+Que bella plebella, ¿no?
+
+1218
+01:06:36,620 --> 01:06:38,620
+Polisemia es,
+
+1219
+01:06:38,620 --> 01:06:40,620
+cuando hablamos de una palabra que tiene mucho significado,
+
+1220
+01:06:40,620 --> 01:06:42,620
+y ahí lo dicen,
+
+1221
+01:06:42,620 --> 01:06:44,620
+bueno, desde el mono es parecido,
+
+1222
+01:06:44,620 --> 01:06:46,620
+pero el hombre desciende del mono
+
+1223
+01:06:46,620 --> 01:06:48,620
+y el mono desciende del árbol.
+
+1224
+01:06:48,620 --> 01:06:50,620
+Está claro que estamos hablando del mismo verbo
+
+1225
+01:06:50,620 --> 01:06:52,620
+que se conjuga igual,
+
+1226
+01:06:52,620 --> 01:06:54,620
+que en todo aspecto es igual,
+
+1227
+01:06:54,620 --> 01:06:56,620
+pero que quiere decir diferentes cosas.
+
+1228
+01:06:56,620 --> 01:06:58,620
+¿Cómo nos podemos dar cuenta de que,
+
+1229
+01:06:58,620 --> 01:06:59,620
+de cuál de las dos es?
+
+1230
+01:06:59,620 --> 01:07:01,620
+¿Cómo podemos desambiguar?
+
+1231
+01:07:01,620 --> 01:07:02,620
+Por el contexto.
+
+1232
+01:07:02,620 --> 01:07:04,620
+El contexto es una de nuestras grandes claves
+
+1233
+01:07:04,620 --> 01:07:06,620
+para desambiguar en general.
+
+1234
+01:07:11,620 --> 01:07:13,620
+Que bella plebella, dice Elelutía,
+
+1235
+01:07:13,620 --> 01:07:15,620
+otro bastante conocido.
+
+1236
+01:07:15,620 --> 01:07:17,620
+Pero esto es muy viejo, ¿no?
+
+1237
+01:07:17,620 --> 01:07:19,620
+Garcilazo de la vega decía
+
+1238
+01:07:20,620 --> 01:07:23,620
+que el dulce lamentar de los pastores,
+
+1239
+01:07:23,620 --> 01:07:26,620
+que puede ser ver como el dulce lamentar de los pastores.
+
+1240
+01:07:28,620 --> 01:07:30,620
+Y esta de Quevedo dice en la leyenda
+
+1241
+01:07:30,620 --> 01:07:32,620
+que apostó que era capaz de decirle
+
+1242
+01:07:32,620 --> 01:07:34,620
+a una reina, que no me acuerdo cuál era.
+
+1243
+01:07:34,620 --> 01:07:36,620
+No me acuerdo.
+
+1244
+01:07:36,620 --> 01:07:38,620
+Que era reina, digamos.
+
+1245
+01:07:38,620 --> 01:07:40,620
+Entonces yo venimos a decirle a la reina,
+
+1246
+01:07:40,620 --> 01:07:41,620
+que era de reina,
+
+1247
+01:07:41,620 --> 01:07:42,620
+entonces va él y dice,
+
+1248
+01:07:42,620 --> 01:07:43,620
+entre el clavele y la rosa,
+
+1249
+01:07:43,620 --> 01:07:45,620
+su majestad escoja.
+
+1250
+01:07:46,620 --> 01:07:49,620
+Y, bueno, Shakespeare,
+
+1251
+01:07:49,620 --> 01:07:51,620
+en el primer verso
+
+1252
+01:07:51,620 --> 01:07:53,620
+de Ricardo III,
+
+1253
+01:07:53,620 --> 01:07:54,620
+dice,
+
+1254
+01:07:59,620 --> 01:08:01,620
+acá hay todo un juego de palabras,
+
+1255
+01:08:01,620 --> 01:08:03,620
+porque el símbolo del rey,
+
+1256
+01:08:03,620 --> 01:08:05,620
+que era Eduardo,
+
+1257
+01:08:05,620 --> 01:08:07,620
+Eduardo no me acuerdo,
+
+1258
+01:08:07,620 --> 01:08:10,620
+era un sol y son juega.
+
+1259
+01:08:10,620 --> 01:08:13,620
+Suenen igual, obviamente, en inglés.
+
+1260
+01:08:14,620 --> 01:08:16,620
+Y eso permite armarte un juego
+
+1261
+01:08:16,620 --> 01:08:18,620
+para ver qué se extiende, además.
+
+1262
+01:08:19,620 --> 01:08:20,620
+Son canembures.
+
+1263
+01:08:20,620 --> 01:08:22,620
+Pero también tenemos ambigüedad
+
+1264
+01:08:22,620 --> 01:08:24,620
+a nivel morfológico.
+
+1265
+01:08:26,620 --> 01:08:28,620
+Nosotros plantamos papas.
+
+1266
+01:08:28,620 --> 01:08:29,620
+¿Ustedes qué opinan?
+
+1267
+01:08:29,620 --> 01:08:30,620
+¿El loro plantar está conjugado
+
+1268
+01:08:30,620 --> 01:08:32,620
+o pasado o en presente?
+
+1269
+01:08:36,620 --> 01:08:37,620
+Puede ser cualquier lado.
+
+1270
+01:08:37,620 --> 01:08:38,620
+No podemos hablarlo.
+
+1271
+01:08:38,620 --> 01:08:40,620
+Si no tenemos contexto,
+
+1272
+01:08:44,620 --> 01:08:45,620
+pero también,
+
+1273
+01:08:45,620 --> 01:08:47,620
+este es el gran problema del parsing.
+
+1274
+01:08:48,620 --> 01:08:50,620
+Se llama Pipí a Touchman.
+
+1275
+01:08:50,620 --> 01:08:53,620
+Y es, Pedro vio a Juan con el telescopio.
+
+1276
+01:08:53,620 --> 01:08:55,620
+Se puede interpretar perfectamente
+
+1277
+01:08:55,620 --> 01:08:58,620
+como Pedro que vio con el telescopio a Juan,
+
+1278
+01:08:58,620 --> 01:09:00,620
+usando el telescopio vio a Juan,
+
+1279
+01:09:00,620 --> 01:09:03,620
+o que vio a Juan con el telescopio,
+
+1280
+01:09:03,620 --> 01:09:05,620
+que el telescopio es Juan.
+
+1281
+01:09:08,620 --> 01:09:11,620
+Esto es una frase proposicional
+
+1282
+01:09:11,620 --> 01:09:13,620
+con el telescopio.
+
+1283
+01:09:13,620 --> 01:09:14,620
+Y distinguir...
+
+1284
+01:09:14,620 --> 01:09:17,620
+saber si con el telescopio
+
+1285
+01:09:17,620 --> 01:09:19,620
+va con Juan o con Pedro
+
+1286
+01:09:19,620 --> 01:09:21,620
+es como el gran problema del parsing.
+
+1287
+01:09:21,620 --> 01:09:22,620
+Cuando hacemos parsing,
+
+1288
+01:09:22,620 --> 01:09:23,620
+cuando tratamos de armar el árbol de parsing,
+
+1289
+01:09:23,620 --> 01:09:24,620
+lo vamos a ver.
+
+1290
+01:09:24,620 --> 01:09:27,620
+Esto es lo que fallan siempre los parsers.
+
+1291
+01:09:30,620 --> 01:09:32,620
+Y este es otro ejemplo de manual
+
+1292
+01:09:32,620 --> 01:09:33,620
+que falla el parsing.
+
+1293
+01:09:33,620 --> 01:09:34,620
+Los hombres y las mujeres
+
+1294
+01:09:34,620 --> 01:09:35,620
+que hayan cumplido 60 años
+
+1295
+01:09:35,620 --> 01:09:38,620
+pueden solicitar una pensión.
+
+1296
+01:09:39,620 --> 01:09:40,620
+Los hombres y las mujeres
+
+1297
+01:09:40,620 --> 01:09:42,620
+que hayan cumplido 60 años
+
+1298
+01:09:42,620 --> 01:09:43,620
+son los que pueden solicitar.
+
+1299
+01:09:43,620 --> 01:09:45,620
+O los hombres
+
+1300
+01:09:45,620 --> 01:09:46,620
+y además las mujeres
+
+1301
+01:09:46,620 --> 01:09:47,620
+que hayan cumplido 60 años.
+
+1302
+01:09:47,620 --> 01:09:49,620
+¿Cuál es la doble para ustedes?
+
+1303
+01:09:51,620 --> 01:09:53,620
+¿Cuál es la doble para ustedes?
+
+1304
+01:09:53,620 --> 01:09:54,620
+¿Eh?
+
+1305
+01:09:54,620 --> 01:09:55,620
+¿Cuál?
+
+1306
+01:09:55,620 --> 01:09:56,620
+Es la regla de eso
+
+1307
+01:09:56,620 --> 01:09:58,620
+que hayan cumplido 60 años.
+
+1308
+01:09:59,620 --> 01:10:00,620
+Sabemos que es la primera,
+
+1309
+01:10:00,620 --> 01:10:01,620
+pero en realidad,
+
+1310
+01:10:01,620 --> 01:10:02,620
+inmediatamente,
+
+1311
+01:10:02,620 --> 01:10:03,620
+por eso no es la primera.
+
+1312
+01:10:03,620 --> 01:10:04,620
+Puede ser la primera,
+
+1313
+01:10:04,620 --> 01:10:06,620
+pero ¿y cuál apostarían ustedes que es?
+
+1314
+01:10:07,620 --> 01:10:08,620
+¿Por qué?
+
+1315
+01:10:08,620 --> 01:10:10,620
+No tengo contexto yo acá.
+
+1316
+01:10:15,620 --> 01:10:17,620
+¿Por qué sabemos que es la primera?
+
+1317
+01:10:18,620 --> 01:10:19,620
+Conocimiento del mundo.
+
+1318
+01:10:20,620 --> 01:10:21,620
+¿Qué es como sentido común?
+
+1319
+01:10:22,620 --> 01:10:23,620
+Conocemos el mundo.
+
+1320
+01:10:23,620 --> 01:10:24,620
+Es decir,
+
+1321
+01:10:24,620 --> 01:10:25,620
+conocemos la realidad.
+
+1322
+01:10:25,620 --> 01:10:26,620
+Ese es el gran problema
+
+1323
+01:10:26,620 --> 01:10:27,620
+que tiene la computadora.
+
+1324
+01:10:27,620 --> 01:10:28,620
+Nosotros conocemos el mundo.
+
+1325
+01:10:29,620 --> 01:10:31,620
+Es como Luis comiéndose
+
+1326
+01:10:31,620 --> 01:10:32,620
+la barropa.
+
+1327
+01:10:34,620 --> 01:10:35,620
+La perra de mi vecina me la adoró.
+
+1328
+01:10:37,620 --> 01:10:38,620
+Tenemos dos posibilidades.
+
+1329
+01:10:39,620 --> 01:10:41,620
+Mi vecina realmente tiene una perra
+
+1330
+01:10:41,620 --> 01:10:42,620
+o yo no tengo buen trato
+
+1331
+01:10:42,620 --> 01:10:43,620
+con mi vecina.
+
+1332
+01:10:49,620 --> 01:10:50,620
+Esa es ambigüedad,
+
+1333
+01:10:50,620 --> 01:10:52,620
+ese nivel semántica, ¿no?
+
+1334
+01:10:55,620 --> 01:10:56,620
+También tenemos ambigüedad
+
+1335
+01:10:56,620 --> 01:10:57,620
+de nivel pragmático.
+
+1336
+01:10:59,620 --> 01:11:00,620
+Si yo digo, bueno,
+
+1337
+01:11:00,620 --> 01:11:01,620
+¿a qué hora llegarás?
+
+1338
+01:11:01,620 --> 01:11:02,620
+O la frase,
+
+1339
+01:11:02,620 --> 01:11:04,620
+Llevo a las 8, esperame.
+
+1340
+01:11:05,620 --> 01:11:06,620
+Vamos a hablar en uruguay.
+
+1341
+01:11:06,620 --> 01:11:07,620
+¿A qué hora llegarás?
+
+1342
+01:11:08,620 --> 01:11:10,620
+Llevo a las 8, esperame.
+
+1343
+01:11:10,620 --> 01:11:11,620
+Eso es previsión.
+
+1344
+01:11:13,620 --> 01:11:15,620
+Nunca llegarás en hora.
+
+1345
+01:11:16,620 --> 01:11:17,620
+Llevo a las 8, esperame.
+
+1346
+01:11:20,620 --> 01:11:21,620
+Eso me lo vas a tener que decir
+
+1347
+01:11:21,620 --> 01:11:22,620
+cara a cara.
+
+1348
+01:11:23,620 --> 01:11:24,620
+Llevo a las 8, esperame.
+
+1349
+01:11:26,620 --> 01:11:27,620
+Dependiendo
+
+1350
+01:11:29,620 --> 01:11:30,620
+de la situación,
+
+1351
+01:11:30,620 --> 01:11:32,620
+uno la interpreta y yo es agero
+
+1352
+01:11:32,620 --> 01:11:33,620
+con el sonido,
+
+1353
+01:11:33,620 --> 01:11:34,620
+pero podría perfectamente
+
+1354
+01:11:34,620 --> 01:11:35,620
+no hacerlo
+
+1355
+01:11:35,620 --> 01:11:36,620
+y que solo el contexto
+
+1356
+01:11:36,620 --> 01:11:37,620
+de la situación
+
+1357
+01:11:37,620 --> 01:11:38,620
+me diera la respuesta.
+
+1358
+01:11:39,620 --> 01:11:40,620
+Muchas veces el juego
+
+1359
+01:11:40,620 --> 01:11:41,620
+de la ironía
+
+1360
+01:11:41,620 --> 01:11:42,620
+también se basa en eso,
+
+1361
+01:11:42,620 --> 01:11:43,620
+decirlo sin ninguna expresión
+
+1362
+01:11:43,620 --> 01:11:44,620
+y que el otro interprete
+
+1363
+01:11:44,620 --> 01:11:45,620
+que no se des cuenta
+
+1364
+01:11:45,620 --> 01:11:46,620
+si es ironía o no.
+
+1365
+01:11:50,620 --> 01:11:52,620
+Tenemos el caso de Luis.
+
+1366
+01:11:52,620 --> 01:11:53,620
+Tomé el alfajor del escritorio
+
+1367
+01:11:53,620 --> 01:11:54,620
+y lo comí.
+
+1368
+01:11:56,620 --> 01:11:57,620
+Tomé el alfajor
+
+1369
+01:11:57,620 --> 01:11:58,620
+que estaba en el escritorio
+
+1370
+01:11:58,620 --> 01:11:59,620
+y me comí el alfajor
+
+1371
+01:11:59,620 --> 01:12:00,620
+o tomé el alfajor
+
+1372
+01:12:00,620 --> 01:12:01,620
+que estaba en el escritorio
+
+1373
+01:12:01,620 --> 01:12:02,620
+y me comí el escritorio.
+
+1374
+01:12:02,620 --> 01:12:04,620
+Nuevamente
+
+1375
+01:12:06,620 --> 01:12:07,620
+ahora
+
+1376
+01:12:07,620 --> 01:12:08,620
+y acá
+
+1377
+01:12:08,620 --> 01:12:09,620
+hay otra cosa,
+
+1378
+01:12:09,620 --> 01:12:11,620
+alternativamente
+
+1379
+01:12:15,620 --> 01:12:16,620
+a entender
+
+1380
+01:12:16,620 --> 01:12:17,620
+una de las formas
+
+1381
+01:12:17,620 --> 01:12:18,620
+de darle significado
+
+1382
+01:12:18,620 --> 01:12:19,620
+estas cosas
+
+1383
+01:12:19,620 --> 01:12:20,620
+y entender el mundo,
+
+1384
+01:12:20,620 --> 01:12:22,620
+asociar los objetos del mundo
+
+1385
+01:12:22,620 --> 01:12:23,620
+y saber que los escritorios
+
+1386
+01:12:23,620 --> 01:12:24,620
+no suelen comerse.
+
+1387
+01:12:24,620 --> 01:12:25,620
+Eso es una aproximación.
+
+1388
+01:12:26,620 --> 01:12:27,620
+Identificar las cosas
+
+1389
+01:12:27,620 --> 01:12:28,620
+una por una
+
+1390
+01:12:28,620 --> 01:12:29,620
+y decir a aquellas
+
+1391
+01:12:29,620 --> 01:12:30,620
+que se pueden comer
+
+1392
+01:12:30,620 --> 01:12:31,620
+por seres humanos
+
+1393
+01:12:31,620 --> 01:12:32,620
+porque si estamos hablando
+
+1394
+01:12:32,620 --> 01:12:33,620
+de una termita
+
+1395
+01:12:34,620 --> 01:12:35,620
+pero
+
+1396
+01:12:36,620 --> 01:12:37,620
+otra forma
+
+1397
+01:12:37,620 --> 01:12:39,620
+es ver cuántas veces
+
+1398
+01:12:40,620 --> 01:12:42,620
+si yo tengo mucho...
+
+1399
+01:12:42,620 --> 01:12:43,620
+¿Por qué los datos cambiaron
+
+1400
+01:12:43,620 --> 01:12:44,620
+todo esto del procedimiento
+
+1401
+01:12:44,620 --> 01:12:45,620
+del gobierno natural?
+
+1402
+01:12:45,620 --> 01:12:46,620
+Porque si yo tengo
+
+1403
+01:12:46,620 --> 01:12:48,620
+muchos, muchos, muchos datos
+
+1404
+01:12:49,620 --> 01:12:50,620
+puedo saber que
+
+1405
+01:12:50,620 --> 01:12:52,620
+en mis datos,
+
+1406
+01:12:52,620 --> 01:12:54,620
+en mis documentos anteriores
+
+1407
+01:12:54,620 --> 01:12:56,620
+que ya tengo analizados
+
+1408
+01:12:56,620 --> 01:12:57,620
+tengo que tener datos
+
+1409
+01:12:57,620 --> 01:12:59,620
+y además alguien lo haya analizado
+
+1410
+01:12:59,620 --> 01:13:00,620
+no se dio muchas veces
+
+1411
+01:13:00,620 --> 01:13:02,620
+que alguien se comiera un escritorio
+
+1412
+01:13:02,620 --> 01:13:04,620
+pero sí apareció varias veces
+
+1413
+01:13:04,620 --> 01:13:05,620
+que alguien se comiera el fajor
+
+1414
+01:13:05,620 --> 01:13:06,620
+entonces a mí
+
+1415
+01:13:08,620 --> 01:13:10,620
+contando puedo arrimarme
+
+1416
+01:13:11,620 --> 01:13:13,620
+es en eso que se basan los métodos
+
+1417
+01:13:14,620 --> 01:13:15,620
+basados en conteo
+
+1418
+01:13:15,620 --> 01:13:16,620
+métodos estadísticos, digamos
+
+1419
+01:13:17,620 --> 01:13:19,620
+y acá ustedes pueden ver
+
+1420
+01:13:19,620 --> 01:13:20,620
+aquello que yo decía
+
+1421
+01:13:20,620 --> 01:13:21,620
+de los lingüistas o no
+
+1422
+01:13:22,620 --> 01:13:24,620
+es decir, si yo logro entender
+
+1423
+01:13:24,620 --> 01:13:25,620
+el significado de esto
+
+1424
+01:13:25,620 --> 01:13:26,620
+y asociarlo y mapearlo
+
+1425
+01:13:27,620 --> 01:13:29,620
+puedo interpretar perfectamente esto
+
+1426
+01:13:29,620 --> 01:13:30,620
+pero es muy difícil
+
+1427
+01:13:30,620 --> 01:13:32,620
+porque hay mucha casuística diferente
+
+1428
+01:13:33,620 --> 01:13:34,620
+contando
+
+1429
+01:13:34,620 --> 01:13:36,620
+yo me puedo arrimar bastante a esto
+
+1430
+01:13:39,620 --> 01:13:41,620
+pero seguramente no voy a ser tan preciso
+
+1431
+01:13:41,620 --> 01:13:42,620
+y además alguien me tiene
+
+1432
+01:13:42,620 --> 01:13:43,620
+que interpretar muchas oraciones
+
+1433
+01:13:43,620 --> 01:13:44,620
+ese es como el gran...
+
+1434
+01:13:44,620 --> 01:13:46,620
+la gran dualidad de las reglas
+
+1435
+01:13:46,620 --> 01:13:47,620
+versulas
+
+1436
+01:13:48,620 --> 01:13:50,620
+verso el aprendizaje estadístico
+
+1437
+01:13:50,620 --> 01:13:51,620
+digamos
+
+1438
+01:13:51,620 --> 01:13:52,620
+o el aprendizaje automático
+
+1439
+01:13:53,620 --> 01:13:55,620
+pero vamos a hablar mucho de eso en el curso
+
+1440
+01:13:59,620 --> 01:14:01,620
+Juan mató al carpincho con la escopeta
+
+1441
+01:14:01,620 --> 01:14:02,620
+obviamente no puede ser el carpincho
+
+1442
+01:14:02,620 --> 01:14:03,620
+quien lleva la escopeta
+
+1443
+01:14:04,620 --> 01:14:05,620
+¿por qué?
+
+1444
+01:14:05,620 --> 01:14:06,620
+por conocimiento del mundo, ¿no?
+
+1445
+01:14:07,620 --> 01:14:08,620
+puse la camisa en la lavadora
+
+1446
+01:14:08,620 --> 01:14:09,620
+y la lavé
+
+1447
+01:14:09,620 --> 01:14:10,620
+la, por supuesto, no me puse...
+
+1448
+01:14:11,620 --> 01:14:12,620
+yo podría llegar a interpretar
+
+1449
+01:14:12,620 --> 01:14:13,620
+que me puse a lavar la lavadora
+
+1450
+01:14:13,620 --> 01:14:14,620
+pero...
+
+1451
+01:14:15,620 --> 01:14:16,620
+no solo es raro
+
+1452
+01:14:16,620 --> 01:14:18,620
+no es que sea tan raro lavar la lavadora
+
+1453
+01:14:18,620 --> 01:14:19,620
+pero poner la camisa
+
+1454
+01:14:19,620 --> 01:14:21,620
+y después ponerse a lavar la lavadora
+
+1455
+01:14:21,620 --> 01:14:22,620
+es como...
+
+1456
+01:14:23,620 --> 01:14:24,620
+yo tengo que saber
+
+1457
+01:14:24,620 --> 01:14:25,620
+que las lavadoras lavan
+
+1458
+01:14:25,620 --> 01:14:26,620
+y que la ropa se lava
+
+1459
+01:14:26,620 --> 01:14:27,620
+y hacer esa asociación
+
+1460
+01:14:28,620 --> 01:14:30,620
+o sea, requerimos conocimiento del mundo
+
+1461
+01:14:32,620 --> 01:14:33,620
+bueno
+
+1462
+01:14:34,620 --> 01:14:35,620
+entonces
+
+1463
+01:14:35,620 --> 01:14:36,620
+resolver la ambigüedad
+
+1464
+01:14:36,620 --> 01:14:37,620
+es como la gran tarea
+
+1465
+01:14:37,620 --> 01:14:38,620
+¿y qué métodos utilizan?
+
+1466
+01:14:42,620 --> 01:14:43,620
+hay muchos modelos basados
+
+1467
+01:14:43,620 --> 01:14:44,620
+en máquinas de estado finito
+
+1468
+01:14:45,620 --> 01:14:47,620
+automatas finitos, transmutores
+
+1469
+01:14:47,620 --> 01:14:48,620
+automatas con peso
+
+1470
+01:14:48,620 --> 01:14:49,620
+automatas
+
+1471
+01:14:50,620 --> 01:14:52,620
+hay muchos sistemas de reglas
+
+1472
+01:14:54,620 --> 01:14:55,620
+se usa lógica sobre todo
+
+1473
+01:14:55,620 --> 01:14:56,620
+en la parte desengmática
+
+1474
+01:14:56,620 --> 01:14:58,620
+para asociar significado
+
+1475
+01:14:59,620 --> 01:15:01,620
+se trata de llevar a un modelo de predicado
+
+1476
+01:15:06,620 --> 01:15:07,620
+modelos probabilísticas
+
+1477
+01:15:07,620 --> 01:15:09,620
+sobre todo aquello que hacen conteo
+
+1478
+01:15:10,620 --> 01:15:12,620
+modelos basados en redes neuronales
+
+1479
+01:15:14,620 --> 01:15:15,620
+y esto lo agregue
+
+1480
+01:15:16,620 --> 01:15:18,620
+este año que es representation learning
+
+1481
+01:15:18,620 --> 01:15:20,620
+que es a partir de muchos atributos
+
+1482
+01:15:21,620 --> 01:15:22,620
+es muy difícil explicar
+
+1483
+01:15:22,620 --> 01:15:23,620
+si no explico algunos contextos
+
+1484
+01:15:23,620 --> 01:15:24,620
+aprendizaje automático
+
+1485
+01:15:24,620 --> 01:15:25,620
+que lo vamos a ver
+
+1486
+01:15:25,620 --> 01:15:26,620
+a partir de, pero la idea es que
+
+1487
+01:15:26,620 --> 01:15:27,620
+las features se generan sola
+
+1488
+01:15:28,620 --> 01:15:29,620
+ya lo veremos
+
+1489
+01:15:30,620 --> 01:15:31,620
+hay una batería de método
+
+1490
+01:15:31,620 --> 01:15:32,620
+pero que curiosamente muchos se repiten
+
+1491
+01:15:32,620 --> 01:15:34,620
+y los algoritmos en general son
+
+1492
+01:15:35,620 --> 01:15:36,620
+o muchos son
+
+1493
+01:15:36,620 --> 01:15:37,620
+o busquedas en espacio de estados
+
+1494
+01:15:38,620 --> 01:15:39,620
+es decir, tengo una cantidad de opciones
+
+1495
+01:15:39,620 --> 01:15:40,620
+y tengo que elegirla mejor
+
+1496
+01:15:43,620 --> 01:15:44,620
+por ejemplo
+
+1497
+01:15:44,620 --> 01:15:46,620
+tengo una serie de árboles de análisis sintácticos
+
+1498
+01:15:47,620 --> 01:15:48,620
+¿saben lo que es un árbol de análisis sintácticos?
+
+1499
+01:15:48,620 --> 01:15:50,620
+el árbol que modela una oración
+
+1500
+01:15:50,620 --> 01:15:52,620
+como los árboles de parsing
+
+1501
+01:15:52,620 --> 01:15:53,620
+pero para oración
+
+1502
+01:15:54,620 --> 01:15:56,620
+buscar cuál es el más adecuado para la entrada
+
+1503
+01:15:58,620 --> 01:16:00,620
+o hacer programación dinámica
+
+1504
+01:16:01,620 --> 01:16:02,620
+vamos a ver varios ejemplos
+
+1505
+01:16:02,620 --> 01:16:03,620
+programación dinámica en el curso
+
+1506
+01:16:04,620 --> 01:16:05,620
+o aprendizaje automático
+
+1507
+01:16:06,620 --> 01:16:07,620
+es decir, a partir de un corpus
+
+1508
+01:16:07,620 --> 01:16:08,620
+yo infiero
+
+1509
+01:16:09,620 --> 01:16:10,620
+conceptos
+
+1510
+01:16:10,620 --> 01:16:11,620
+y luego los amplico
+
+1511
+01:16:11,620 --> 01:16:12,620
+vamos a hablar de eso
+
+1512
+01:16:14,620 --> 01:16:15,620
+y bueno
+
+1513
+01:16:15,620 --> 01:16:16,620
+y eso cuando son que era
+
+1514
+01:16:18,620 --> 01:16:19,620
+y media
+
+1515
+01:16:19,620 --> 01:16:20,620
+no, todo bastante bien
+
+1516
+01:16:20,620 --> 01:16:21,620
+no fue tan larga
+
+1517
+01:16:21,620 --> 01:16:22,620
+esto por hoy
+
+1518
+01:16:22,620 --> 01:16:23,620
+la semana que viene
+
+1519
+01:16:24,620 --> 01:16:25,620
+bueno, alguna duda?
+
+1520
+01:16:30,620 --> 01:16:32,620
+no, representation learning es
+
+1521
+01:16:33,620 --> 01:16:34,620
+el lugar de yo definir
+
+1522
+01:16:34,620 --> 01:16:35,620
+cuáles son las features
+
+1523
+01:16:35,620 --> 01:16:37,620
+en vez de hacer feature extraction
+
+1524
+01:16:37,620 --> 01:16:40,620
+la genera solo el algoritmo
+
+1525
+01:16:40,620 --> 01:16:41,620
+el ejemplo de
+
+1526
+01:16:41,620 --> 01:16:43,620
+el ejemplo de manual es
+
+1527
+01:16:43,620 --> 01:16:44,620
+si yo tengo una imagen
+
+1528
+01:16:46,620 --> 01:16:48,620
+le mando de traba todos los pixels
+
+1529
+01:16:49,620 --> 01:16:51,620
+y la red neuronal
+
+1530
+01:16:51,620 --> 01:16:52,620
+solita
+
+1531
+01:16:52,620 --> 01:16:54,620
+identifica agrupaciones
+
+1532
+01:16:54,620 --> 01:16:55,620
+o patterns
+
+1533
+01:16:56,620 --> 01:16:57,620
+en la figura que le dice
+
+1534
+01:16:57,620 --> 01:16:58,620
+bueno, acá hay una persona
+
+1535
+01:16:59,620 --> 01:17:00,620
+o acá hay una nariz
+
+1536
+01:17:00,620 --> 01:17:01,620
+digamos
+
+1537
+01:17:01,620 --> 01:17:02,620
+pero no es explícito
+
+1538
+01:17:03,620 --> 01:17:04,620
+la alternativa de eso
+
+1539
+01:17:04,620 --> 01:17:05,620
+es yo de alguna forma
+
+1540
+01:17:05,620 --> 01:17:06,620
+darle las features
+
+1541
+01:17:06,620 --> 01:17:07,620
+es decir, acá hay una curva así
+
+1542
+01:17:07,620 --> 01:17:08,620
+y otra curva esa
+
+1543
+01:17:08,620 --> 01:17:09,620
+que no funcionaba muy bien en general
+
+1544
+01:17:10,620 --> 01:17:11,620
+eso es representation learning
+
+1545
+01:17:13,620 --> 01:17:14,620
+alguna duda?
+
+1546
+01:17:15,620 --> 01:17:16,620
+no, hoy son todos conceptos
+
+1547
+01:17:16,620 --> 01:17:17,620
+muy generales
+
+1548
+01:17:18,620 --> 01:17:19,620
+no sé si les queda mucha duda
+
+1549
+01:17:19,620 --> 01:17:21,620
+la clase que viene
+
+1550
+01:17:23,620 --> 01:17:24,620
+Luis hace
+
+1551
+01:17:24,620 --> 01:17:25,620
+volvemos al liceo
+
+1552
+01:17:25,620 --> 01:17:26,620
+con este
+
+1553
+01:17:27,620 --> 01:17:28,620
+ídomo a pañol
+
+1554
+01:17:29,620 --> 01:17:30,620
+es muy importante
+
+1555
+01:17:30,620 --> 01:17:31,620
+este par de clases
+
+1556
+01:17:31,620 --> 01:17:32,620
+porque
+
+1557
+01:17:32,620 --> 01:17:34,620
+son nuestros elementos de dominio
+
+1558
+01:17:34,620 --> 01:17:35,620
+entonces después
+
+1559
+01:17:35,620 --> 01:17:37,620
+cuando hablemos de un partospicho
+
+1560
+01:17:37,620 --> 01:17:38,620
+cuando hablemos de
+
+1561
+01:17:39,620 --> 01:17:40,620
+un grupo nominal
+
+1562
+01:17:40,620 --> 01:17:41,620
+son los elementos
+
+1563
+01:17:41,620 --> 01:17:42,620
+con lo que vamos a hablar
+
+1564
+01:17:42,620 --> 01:17:43,620
+no queremos aplicarlo cada vez
+
+1565
+01:17:43,620 --> 01:17:45,620
+así que nos vemos la semana que viene
+
+1566
+01:17:50,620 --> 01:17:51,620
+por favor
+
+1567
+01:17:51,620 --> 01:17:52,620
+por favor
+

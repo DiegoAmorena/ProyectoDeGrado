@@ -1,0 +1,5660 @@
+1
+00:00:00,000 --> 00:00:27,000
+La clase pasa, estuvimos viendo una metodología de clasificación en general, así para cualquier problema de clasificación.
+
+2
+00:00:27,000 --> 00:00:48,000
+Presialmente, como se para el corpo, que me diga utilizar, una cantidad de aspectos metodológicos que son muy importantes y que lo hicimos independiente del dominio en el que estamos, que es el deprosamiento de la humanidad natural, porque aplica para cualquier problema de clasificación.
+
+3
+00:00:48,000 --> 00:00:59,000
+Pero en más clasificación, los métodos aplican a utilizar, se pueden definir en general de hecho, en el curso de aprensaje automático, te aprenden con más detalle, lo que vimos en parte del curso.
+
+4
+00:00:59,000 --> 00:01:06,000
+Es algo automático, aprenden con más detalle, lo que se vimos en la clase sola.
+
+5
+00:01:06,000 --> 00:01:17,000
+Porque se ven diferentes métodos, estuvimos cual era el método en particular, y hablamos en general un clasificador, un clasificador supervisado,
+
+6
+00:01:17,000 --> 00:01:34,000
+es, dijimos, aquí el caso donde yo tengo un conjunto de intancias de cosas, un conjunto de clases discreto y tengo que asignarle a cada intancia, a una de tareas, a cada una de esas intancias, uno de los grupos de clases.
+
+7
+00:01:34,000 --> 00:01:39,000
+Si yo tengo un conjunto de documentos y quiero saber en qué idioma está, lo que te haciendo es un problema de clasificación.
+
+8
+00:01:39,000 --> 00:01:47,000
+Tengo el conjunto de los documentos, tengo las clases que son los idiomas posible, y yo tengo que sacar una sociedad de una clase.
+
+9
+00:01:47,000 --> 00:01:52,000
+Podría eventualmente ser más en una clase, podemos tener un problema múltiples, decir ahí variante, ¿no?
+
+10
+00:01:52,000 --> 00:01:55,000
+Yo podría decir que a cada documento era sin no más de una clase.
+
+11
+00:01:55,000 --> 00:02:04,000
+Por ejemplo, si lo quiero que la clasificar el tópico de un documento, esto puede ser de espectáculos y de deportes,
+
+12
+00:02:04,000 --> 00:02:09,000
+estamos hablando de cuantanada con él.
+
+13
+00:02:09,000 --> 00:02:19,000
+En la clase de hoy, lo que vamos a ver es, vamos a hablar de los mitos que hay de clasificación de un momento.
+
+14
+00:02:19,000 --> 00:02:24,000
+Y de cómo se aplican algunas tareas del procedimiento de la imaginatura.
+
+15
+00:02:24,000 --> 00:02:30,000
+O sea, un poco de las características del método y de cómo intanciarlo en algún caso de ejemplo.
+
+16
+00:02:30,000 --> 00:02:40,000
+Y como yo decía en la clase basada, los mitos de clasificación son muy fundidos en todos los diferentes análisis,
+
+17
+00:02:40,000 --> 00:02:46,000
+porque generalmente en los elementos de dominio o en los que trabajamos un decreto,
+
+18
+00:02:46,000 --> 00:02:52,000
+la palabra, la solación, el documento, los tweets, son todos cosas y cretas.
+
+19
+00:02:52,000 --> 00:02:59,000
+Entonces general vamos a ver metos de clasificación supervisa.
+
+20
+00:02:59,000 --> 00:03:10,000
+Si yo quisiera, por ejemplo, un proyecto grave que hemos leído pasado, que la clasificaba un tweet,
+
+21
+00:03:10,000 --> 00:03:15,000
+si era un chiste o no, y ser una tarea de clasificación.
+
+22
+00:03:15,000 --> 00:03:20,000
+Una tarea que también encaramos, aunque no con demasiado éxito,
+
+23
+00:03:20,000 --> 00:03:29,000
+era la de calificar el chiste en un rango, en un vacinal, un valor de que también nos estaba.
+
+24
+00:03:29,000 --> 00:03:32,000
+Si se podía llegar a capturar eso.
+
+25
+00:03:32,000 --> 00:03:38,000
+Si yo, como lo planteamos, nosotros era que voy a poner una 2, 3, 4, 5 estrellas.
+
+26
+00:03:38,000 --> 00:03:41,000
+Eso sigue siendo un problema de la estificación supervisa.
+
+27
+00:03:41,000 --> 00:03:45,000
+Pero si yo lo considero a un contimo, ahí teníamos un problema regresiando,
+
+28
+00:03:45,000 --> 00:03:49,000
+no son usuarios, pero le más la la la la la la la la la la la la la.
+
+29
+00:03:49,000 --> 00:03:51,000
+Porque un otro niño, generalmente, es un hijito.
+
+30
+00:03:51,000 --> 00:03:55,000
+Bueno, probamos a metos de clasificación supervisa.
+
+31
+00:03:55,000 --> 00:03:59,000
+Y en particular, vamos a hablar de metos probabilistas.
+
+32
+00:03:59,000 --> 00:04:06,000
+Lo metos probabilistas en general, tenemos la intensidad, o sea, yo no voy a volver
+
+33
+00:04:06,000 --> 00:04:08,000
+sobre la terminología que vimos en ese pasaje.
+
+34
+00:04:08,000 --> 00:04:14,000
+Tenemos la intensidad representada por el tributo y queremos asignarlo en la clase.
+
+35
+00:04:14,000 --> 00:04:17,000
+Pero además, los metos probabilistas, lo que hacen es asignarle
+
+36
+00:04:17,000 --> 00:04:20,000
+es una probabilidad a cada clase posible.
+
+37
+00:04:20,000 --> 00:04:24,000
+Entonces, yo no solo te digo esta intensidad,
+
+38
+00:04:24,000 --> 00:04:32,000
+esta intensidad es un humoristínco,
+
+39
+00:04:32,000 --> 00:04:39,000
+sino que te digo que este tweet tiene un 85% de chances del humoristico
+
+40
+00:04:39,000 --> 00:04:42,000
+y no humoristico un 15%.
+
+41
+00:04:42,000 --> 00:04:45,000
+Y esto, por supuesto, tiene que ser una distribución de probabilidad,
+
+42
+00:04:45,000 --> 00:04:48,000
+que es un humor uno en tal, es el mayor que cero.
+
+43
+00:04:48,000 --> 00:04:54,000
+Entonces, y además, los metos probabilistas intentan
+
+44
+00:04:54,000 --> 00:04:58,000
+obtener una distribución sobre las clasetas de datos.
+
+45
+00:04:58,000 --> 00:05:00,000
+Sí.
+
+46
+00:05:04,000 --> 00:05:08,000
+Y, por supuesto, clasificar el general va a ser un nuevo elegido a clasico
+
+47
+00:05:08,000 --> 00:05:10,000
+en la probabilidad más alta.
+
+48
+00:05:11,000 --> 00:05:14,000
+Así es que no quiere, simplemente dejar de volver esa distribución
+
+49
+00:05:14,000 --> 00:05:19,000
+para que otra etapa del proceso lo utilice.
+
+50
+00:05:19,000 --> 00:05:24,000
+Bueno, yo tengo la posibilidad a hacer eso.
+
+51
+00:05:26,000 --> 00:05:30,000
+Los metos generativos, que son uno de los tipos de metos que hay,
+
+52
+00:05:30,000 --> 00:05:34,000
+lo que intentan es, son los que hemos estado viendo hasta ahora
+
+53
+00:05:34,000 --> 00:05:37,000
+en general, y es lo que tratan de modilar la distribución conjunta.
+
+54
+00:05:37,000 --> 00:05:40,000
+Es decir, la clases junto con los atributos.
+
+55
+00:05:40,000 --> 00:05:42,000
+Sí?
+
+56
+00:05:42,000 --> 00:05:44,000
+Y la setiquetas.
+
+57
+00:05:44,000 --> 00:05:46,000
+¿Neguardo?
+
+58
+00:05:48,000 --> 00:05:53,000
+¿Por qué? Porque es lo que necesitan para partir de la redebaixe.
+
+59
+00:05:53,000 --> 00:05:55,000
+Es decir, yo quiero en la clases.
+
+60
+00:05:55,000 --> 00:05:58,000
+Dada el conjunto de fiturs, se acuerden que la fitura
+
+61
+00:05:58,000 --> 00:06:00,000
+era nuestra representación del documento, ¿no?
+
+62
+00:06:00,000 --> 00:06:05,000
+Características que va a haber un daño caracterizado en el documento.
+
+63
+00:06:05,000 --> 00:06:09,000
+Entonces, la probabilidad de la clases,
+
+64
+00:06:09,000 --> 00:06:12,000
+dado los atributos, es igual a la probabilidad conjunta
+
+65
+00:06:12,000 --> 00:06:15,000
+dividida a la probabilidad de los atributos.
+
+66
+00:06:15,000 --> 00:06:16,000
+Sí?
+
+67
+00:06:16,000 --> 00:06:19,000
+Por definición, por la definición de probabilidad condiciona.
+
+68
+00:06:23,000 --> 00:06:26,000
+Entonces, lo que tratan de modilar es esto.
+
+69
+00:06:26,000 --> 00:06:28,000
+¿Por qué lo hacen? Porque esta probabilidad es,
+
+70
+00:06:28,000 --> 00:06:31,000
+realmente son más fácil de estimar que la otra.
+
+71
+00:06:32,000 --> 00:06:35,000
+Porque la puedo estimar contando más fácilmente.
+
+72
+00:06:35,000 --> 00:06:38,000
+¿Por qué? Porque fíjense que yo, como condiciono,
+
+73
+00:06:38,000 --> 00:06:41,000
+dada a la clase.
+
+74
+00:06:41,000 --> 00:06:42,000
+Y vamos.
+
+75
+00:06:42,000 --> 00:06:45,000
+Yo, por ejemplo, puedo asumir independencia entre la variabria aleatoria
+
+76
+00:06:45,000 --> 00:06:46,000
+esta.
+
+77
+00:06:46,000 --> 00:06:47,000
+O sea, entre los atributos.
+
+78
+00:06:47,000 --> 00:06:49,000
+Y puedo decir, si estás un independiente,
+
+79
+00:06:49,000 --> 00:06:52,000
+es pdx12c por pdx2c por no.
+
+80
+00:06:52,000 --> 00:06:54,000
+Esto no lo puedo hacer en el telado.
+
+81
+00:06:55,000 --> 00:06:59,000
+Yo no puedo decir pdx1 por porque no nos funciona así,
+
+82
+00:06:59,000 --> 00:07:00,000
+pero ya ya ya.
+
+83
+00:07:00,000 --> 00:07:03,000
+La independencia la puedo manajar acá el lado.
+
+84
+00:07:03,000 --> 00:07:05,000
+¡Y cua izquierda!
+
+85
+00:07:05,000 --> 00:07:06,000
+¡Quier trap!
+
+86
+00:07:06,000 --> 00:07:07,000
+¡Cua izquierda!
+
+87
+00:07:07,000 --> 00:07:11,000
+Piedad de dependencia entre variabria asaliatorias.
+
+88
+00:07:11,000 --> 00:07:13,000
+Si, si esmina de este lado.
+
+89
+00:07:13,000 --> 00:07:15,000
+Eso genera toda una teoría que se llama
+
+90
+00:07:15,000 --> 00:07:16,000
+la de los modelos gráficos,
+
+91
+00:07:16,000 --> 00:07:18,000
+que ponemos, nosotros no vamos a darle acá,
+
+92
+00:07:18,000 --> 00:07:20,000
+pero que me dice, bueno, cuál es la estructura
+
+93
+00:07:20,000 --> 00:07:22,000
+que yo supongo, en términos de dependencia.
+
+94
+00:07:22,000 --> 00:07:24,000
+Es decir, esta variable dependente de esta no…
+
+95
+00:07:24,000 --> 00:07:25,000
+y así?
+
+96
+00:07:25,000 --> 00:07:27,040
+Y podemos bossar que con un gráfico,
+
+97
+00:07:27,040 --> 00:07:29,040
+¿Cómo va a tomar?
+
+98
+00:07:29,040 --> 00:07:31,640
+Entonces,
+
+99
+00:07:31,640 --> 00:07:35,440
+si no es esto, no, la probabilidad de la clase,
+
+100
+00:07:35,440 --> 00:07:37,440
+¿dó lo atributo en la probabilidad de la clase?
+
+101
+00:07:37,440 --> 00:07:39,240
+Por la probabilidad de los atributos de la clase,
+
+102
+00:07:39,240 --> 00:07:40,840
+esto es valles, ¿no?
+
+103
+00:07:40,840 --> 00:07:42,640
+Ella lo hemos visto varias veces en el curso,
+
+104
+00:07:42,640 --> 00:07:44,440
+no estamos inventando nada.
+
+105
+00:07:44,440 --> 00:07:48,440
+Dividido, la probabilidad de los atributos.
+
+106
+00:07:48,440 --> 00:07:50,040
+Y bueno, y nada, lo que mucho está ahora,
+
+107
+00:07:50,040 --> 00:07:52,040
+tanto la probabilidad priora y la pese,
+
+108
+00:07:52,040 --> 00:07:54,440
+como en la probabilidad de veros similitud,
+
+109
+00:07:54,440 --> 00:07:57,240
+esta, la puedo timar a partir del lado.
+
+110
+00:07:57,240 --> 00:07:59,040
+Esto ya lo hemos hecho.
+
+111
+00:07:59,040 --> 00:08:00,440
+Sí.
+
+112
+00:08:01,440 --> 00:08:04,440
+Pero vamos a tener que simplificar el problema.
+
+113
+00:08:07,440 --> 00:08:09,440
+El método nadie vaches.
+
+114
+00:08:10,840 --> 00:08:12,440
+Lo que hace es
+
+115
+00:08:16,440 --> 00:08:19,440
+asumir que las
+
+116
+00:08:20,440 --> 00:08:23,440
+lo atributo su independiente entre sí.
+
+117
+00:08:23,440 --> 00:08:26,440
+Lo cual es una barbaridad conceptual,
+
+118
+00:08:26,440 --> 00:08:28,440
+si por ejemplo, estamos hablando de un texto y los atributos
+
+119
+00:08:28,440 --> 00:08:30,440
+son las palabras que tienen.
+
+120
+00:08:30,440 --> 00:08:33,440
+La mente de la palabra viene en la compañía de esa,
+
+121
+00:08:33,440 --> 00:08:35,440
+se hace en amiga, entre ellas.
+
+122
+00:08:35,440 --> 00:08:39,440
+No, es muy palabra positivo, es muy probable que haya otra palabra positivo.
+
+123
+00:08:39,440 --> 00:08:41,440
+Bueno, es más ese, bueno, sí.
+
+124
+00:08:42,440 --> 00:08:45,440
+La probabilidad de una palabra solo depende de la clase.
+
+125
+00:08:49,440 --> 00:08:52,440
+Y, por lo tanto, eso hace que pueda partir la probabilidad,
+
+126
+00:08:52,440 --> 00:08:53,440
+porque como son independientes,
+
+127
+00:08:53,440 --> 00:08:55,440
+la probabilidad de que es uno,
+
+128
+00:08:55,440 --> 00:08:57,440
+dado que es uno por hay que diseñado ese,
+
+129
+00:08:57,440 --> 00:08:58,440
+pero hay que diseñar ese, pero hay que diseñar ese,
+
+130
+00:08:58,440 --> 00:09:00,440
+pero hay que diseñar ese, porque la probabilidad de que he dado ese,
+
+131
+00:09:00,440 --> 00:09:01,440
+es la verdad.
+
+132
+00:09:03,440 --> 00:09:04,440
+Sí.
+
+133
+00:09:05,440 --> 00:09:09,440
+Y, bueno, y cómo construyes un clasificador a partir de esto.
+
+134
+00:09:09,440 --> 00:09:11,440
+Bueno, maximizo lo de arriba,
+
+135
+00:09:11,440 --> 00:09:13,440
+buscó la clase que maximise lo de arriba,
+
+136
+00:09:13,440 --> 00:09:15,440
+la abajo es independiente de la clase.
+
+137
+00:09:16,440 --> 00:09:18,440
+Entonces, buscó la clase que más simise lo de arriba
+
+138
+00:09:18,440 --> 00:09:20,440
+y ahí tenga un clasificador.
+
+139
+00:09:21,440 --> 00:09:22,440
+¿De acuerdo?
+
+140
+00:09:26,440 --> 00:09:27,440
+Es muy sencillo.
+
+141
+00:09:27,440 --> 00:09:28,440
+Tomo el todo lo va a tener un clasificador,
+
+142
+00:09:28,440 --> 00:09:30,440
+lo conocí en independiente.
+
+143
+00:09:31,440 --> 00:09:33,440
+Ahora, vamos a ver en algún ejemplo,
+
+144
+00:09:33,440 --> 00:09:35,440
+y voy a colar clase que maximiza.
+
+145
+00:09:36,440 --> 00:09:38,440
+El método nadie va a decir, funciona,
+
+146
+00:09:38,440 --> 00:09:39,440
+y sea muy bien,
+
+147
+00:09:39,440 --> 00:09:42,440
+como va a ser para un clasificador.
+
+148
+00:09:44,440 --> 00:09:45,440
+Y por poco a plata,
+
+149
+00:09:45,440 --> 00:09:46,440
+uno hace un clasificador,
+
+150
+00:09:46,440 --> 00:09:48,440
+como la gente que capaqueta le puede llamar
+
+151
+00:09:48,440 --> 00:09:50,440
+a y en la prensa.
+
+152
+00:09:51,440 --> 00:09:53,440
+Y ya venido,
+
+153
+00:09:54,440 --> 00:09:56,440
+yo no sé, cuando es el método de nadie va a decir,
+
+154
+00:09:56,440 --> 00:09:57,440
+me suena como los años 60,
+
+155
+00:09:57,440 --> 00:09:58,440
+si bien se va a ser el tema de baixa,
+
+156
+00:09:58,440 --> 00:09:59,440
+que es 1700,
+
+157
+00:09:59,440 --> 00:10:01,440
+pero
+
+158
+00:10:03,440 --> 00:10:04,440
+funciona muy bien,
+
+159
+00:10:04,440 --> 00:10:06,440
+como primera aproximación rápida,
+
+160
+00:10:06,440 --> 00:10:07,440
+es algo que uno puede usar,
+
+161
+00:10:07,440 --> 00:10:08,440
+nadie va a decir,
+
+162
+00:10:08,440 --> 00:10:09,440
+es sin mucho caro conciencia
+
+163
+00:10:09,440 --> 00:10:11,440
+y funciona en general muy bien.
+
+164
+00:10:15,440 --> 00:10:16,440
+En el método de nadie va a decir,
+
+165
+00:10:16,440 --> 00:10:19,440
+es aplicado a la clasificación de documentos.
+
+166
+00:10:21,440 --> 00:10:23,440
+Tienen la utilizada,
+
+167
+00:10:23,440 --> 00:10:24,440
+una de las formas de darloes,
+
+168
+00:10:24,440 --> 00:10:26,440
+utilizando lo que es una aproximación
+
+169
+00:10:26,440 --> 00:10:27,440
+vago sports.
+
+170
+00:10:28,440 --> 00:10:29,440
+Es de ejemplo,
+
+171
+00:10:29,440 --> 00:10:31,440
+es como el ejemplo cañónico de clasificación,
+
+172
+00:10:31,440 --> 00:10:33,440
+digamos, no es vago sports,
+
+173
+00:10:33,440 --> 00:10:34,440
+que es,
+
+174
+00:10:34,440 --> 00:10:35,440
+yo tengo todo esto,
+
+175
+00:10:35,440 --> 00:10:37,440
+que es un documento,
+
+176
+00:10:37,440 --> 00:10:39,440
+que tiene una estructura,
+
+177
+00:10:39,440 --> 00:10:41,440
+que tiene un orden entre las palabras,
+
+178
+00:10:41,440 --> 00:10:43,440
+que tiene una sintaxis,
+
+179
+00:10:43,440 --> 00:10:45,440
+que tiene una relación informada
+
+180
+00:10:45,440 --> 00:10:46,440
+con una sesmante,
+
+181
+00:10:46,440 --> 00:10:47,440
+que vamos a un lado caso,
+
+182
+00:10:47,440 --> 00:10:48,440
+nada,
+
+183
+00:10:48,440 --> 00:10:49,440
+de eso.
+
+184
+00:10:50,440 --> 00:10:52,440
+Y lo que hago solamente
+
+185
+00:10:52,440 --> 00:10:53,440
+es,
+
+186
+00:10:53,440 --> 00:10:55,440
+considero que esto es una bolsa de palabras,
+
+187
+00:10:57,440 --> 00:10:58,440
+la bolsa de seguridad,
+
+188
+00:10:58,440 --> 00:11:00,440
+la bolsa es un set,
+
+189
+00:11:00,440 --> 00:11:02,440
+pero que puede tener el elemento repetido.
+
+190
+00:11:02,440 --> 00:11:04,440
+La bolsa de palabras
+
+191
+00:11:04,440 --> 00:11:06,440
+y tengo el contigo
+
+192
+00:11:06,440 --> 00:11:09,440
+de cantidad de veces que una palabra aparece
+
+193
+00:11:09,440 --> 00:11:12,440
+en ese documento.
+
+194
+00:11:12,440 --> 00:11:16,440
+Mi representación del documento
+
+195
+00:11:16,440 --> 00:11:17,440
+es esto.
+
+196
+00:11:17,440 --> 00:11:20,440
+Mi fitur suen esto.
+
+197
+00:11:21,440 --> 00:11:22,440
+Entonces,
+
+198
+00:11:22,440 --> 00:11:25,440
+como hago clasificación,
+
+199
+00:11:25,440 --> 00:11:27,440
+esto fue lo que hubo en el laboratorio
+
+200
+00:11:27,440 --> 00:11:28,440
+y lo pasaba.
+
+201
+00:11:29,440 --> 00:11:31,440
+Entonces,
+
+202
+00:11:31,440 --> 00:11:33,440
+como se instancia en ahí vayes
+
+203
+00:11:33,440 --> 00:11:34,440
+el problema de clasificación,
+
+204
+00:11:34,440 --> 00:11:35,440
+el documento bueno,
+
+205
+00:11:36,440 --> 00:11:38,440
+las posiciones son todas las posiciones
+
+206
+00:11:38,440 --> 00:11:40,440
+que tengan el documento que quiero evaluar.
+
+207
+00:11:40,440 --> 00:11:41,440
+Yo quiero evaluar en la clase.
+
+208
+00:11:43,440 --> 00:11:44,440
+Bueno, quiero evaluar la clasión de documento
+
+209
+00:11:44,440 --> 00:11:46,440
+entonces tengo las posiciones que son todas
+
+210
+00:11:46,440 --> 00:11:48,440
+los toques que aparecen en cada palabra.
+
+211
+00:11:48,440 --> 00:11:50,440
+En el documento.
+
+212
+00:11:50,440 --> 00:11:51,440
+Sí.
+
+213
+00:11:57,440 --> 00:11:58,440
+Y la clase,
+
+214
+00:11:58,440 --> 00:11:59,440
+según ahí vayes,
+
+215
+00:11:59,440 --> 00:12:03,440
+es
+
+216
+00:12:03,440 --> 00:12:07,440
+la clase
+
+217
+00:12:07,440 --> 00:12:09,440
+que maximiza,
+
+218
+00:12:09,440 --> 00:12:11,440
+como comentar a lo que haga,
+
+219
+00:12:11,440 --> 00:12:13,440
+y con realidad es un contigo,
+
+220
+00:12:13,440 --> 00:12:15,440
+pero yo acabo ahí,
+
+221
+00:12:15,440 --> 00:12:17,440
+lo voy con la CBC.
+
+222
+00:12:17,440 --> 00:12:19,440
+Por eso es un bago fuerte.
+
+223
+00:12:23,440 --> 00:12:25,440
+En la posición y consino
+
+224
+00:12:25,440 --> 00:12:26,440
+todas las posiones posibles
+
+225
+00:12:26,440 --> 00:12:28,440
+como decía y,
+
+226
+00:12:28,440 --> 00:12:31,440
+la clase como la clase que maximiza
+
+227
+00:12:31,440 --> 00:12:35,440
+la probabilidad de cada palabra
+
+228
+00:12:35,440 --> 00:12:37,440
+que aparecen en el documento
+
+229
+00:12:37,440 --> 00:12:54,440
+La clase que hace más provable, considerando independencia, que esa palabra está en ese documento,
+
+230
+00:12:54,440 --> 00:13:01,440
+digamos, ¿no? La probabilidad de doblades su vida o sea. ¿Y cómo vamos para hacer eso? Y bueno,
+
+231
+00:13:01,440 --> 00:13:09,440
+para que a discular esos valores, para estimar esos valores, yo digo bueno, nuestros mejores estimadores
+
+232
+00:13:09,440 --> 00:13:13,760
+que este es correcto que decir nuestro estimador, nuestro mejor estimador de la clase, de la
+
+233
+00:13:13,760 --> 00:13:19,800
+probabilidad priori, de la probabilidad, estamos hablando de la probabilidad de la clase, si no tuviera
+
+234
+00:13:19,800 --> 00:13:27,680
+mala palabra, es decir, yo puedo tener una distribución, yo tengo dos documentos que son de
+
+235
+00:13:27,680 --> 00:13:32,880
+deporte o de música, vamos a poner que son exclusivos. La probabilidad de la clase es el número
+
+236
+00:13:32,880 --> 00:13:38,840
+de documentos, de deporte sobre el total, o sea, mi probabilidad priori, se abuela en el base,
+
+237
+00:13:38,840 --> 00:13:43,400
+no? Yo tengo una probabilidad priori que es lo que pienso antes de empezar a ver el documento, y
+
+238
+00:13:43,400 --> 00:13:48,360
+antes de ver el documento, yo puedo decir bueno, en 90% de los documentos son de deporte, entonces,
+
+239
+00:13:48,360 --> 00:13:55,880
+mi probabilidad a priori es 0, 9. ¿Y bueno? Es mucho más probable a priori que es un documento de
+
+240
+00:13:55,880 --> 00:14:01,600
+deporte, yo voy a ajustar esa probabilidad con la probabilidad de la palabra de cada uno,
+
+241
+00:14:01,600 --> 00:14:07,760
+bueno, entonces, yo estimo esa probabilidad priori con el número de clase de documentos, que tiene
+
+242
+00:14:07,760 --> 00:14:19,360
+la clase de video total de documentos. Y, similarmente, este estimo por contigo, la probabilidad
+
+243
+00:14:19,360 --> 00:14:27,400
+de cada palabra de la clase contando, del total de veces que aparecen todas las palabras en los
+
+244
+00:14:27,400 --> 00:14:32,920
+documentos, de esa clase, o sea, de todas las palabras que aparecen en los documentos, de
+
+245
+00:14:32,920 --> 00:14:41,520
+deportes, cuantas veces aparecen esa palabra de deporte, ¿no? Es una palabra común en un dominio
+
+246
+00:14:41,520 --> 00:14:49,800
+de deporte, ¿sesta? Y es lo que se pregunta. Y un típica a todas esas probabilidades, que
+
+247
+00:14:49,800 --> 00:14:54,240
+seguramente operativamente tengamos que usar lo harismo y sumar, porque si no no va a haber
+
+248
+00:14:54,240 --> 00:15:09,400
+muy chiquita, pero justamente lo mismo. ¿Sentiendes? ¿Por qué, en vez de usar esto, de usar esto?
+
+249
+00:15:09,400 --> 00:15:23,600
+¿Por qué tengo la selección?
+
+250
+00:15:23,600 --> 00:15:36,720
+¿Por qué tengo la selección?
+
+251
+00:15:36,720 --> 00:15:44,280
+¿Por qué no va a hacer esto? ¿Por qué tengo la selección?
+
+252
+00:15:44,280 --> 00:15:50,080
+La plaza, regregó uno a cada contador para no tener el problema de que si una de esta
+
+253
+00:15:50,080 --> 00:15:53,080
+probabilidad, lo mismo que no pasó con los enliagramas, si les una conocido, porque
+
+254
+00:15:53,080 --> 00:15:59,840
+lo mismo, si una de que se aprovella de hacer o se me cansella a toda la clase, la
+
+255
+00:15:59,840 --> 00:16:10,080
+clase va a ser cero. Entonces, para eso hacemos la plaza, hacemos el muffin, suavezado,
+
+256
+00:16:10,080 --> 00:16:15,000
+margandole uno a cada contador.
+
+257
+00:16:15,000 --> 00:16:24,160
+Por ejemplo, bueno, todo esto que yo estoy diciendo está en el capítulo 7, más o menos,
+
+258
+00:16:24,160 --> 00:16:28,920
+que es real, del capítulo 7 del libro de Martín y Juraki. El libro de Martín y Juraki
+
+259
+00:16:28,920 --> 00:16:33,960
+está en line, los capítulos nuevos. De hecho, todos los capítulos correspondiendo a clase que
+
+260
+00:16:33,960 --> 00:16:39,800
+hemos dado, están en line, yo realmente les recomiendo leerlo a su libro que está muy claro,
+
+261
+00:16:39,800 --> 00:16:45,200
+no va a tener mucha más dificultad que lo que vemos en la clase. Por lo menos, no se
+
+262
+00:16:45,200 --> 00:16:46,720
+uno pierde perspectiva, ¿no?
+
+263
+00:16:46,720 --> 00:16:51,180
+Claro, pero, pero...
+
+264
+00:16:51,180 --> 00:16:53,040
+¿Qué le pasa?
+
+265
+00:16:53,040 --> 00:16:57,340
+¿Qué le haces en mi gira?
+
+266
+00:16:57,340 --> 00:17:04,980
+Y ahí pueden, ya hay algunos detalles más, que me parece muy interesante, si a ustedes les
+
+267
+00:17:04,980 --> 00:17:10,320
+interesa este momento. Bueno, supongo vamos con nosotros, queremos el cuerpo entre el
+
+268
+00:17:10,320 --> 00:17:15,880
+almiento que tenemos arriba, la población que está en arriba y con una categoría negativa
+
+269
+00:17:15,880 --> 00:17:23,920
+positivo, algún tipo, en este caso, estamos haciendo sentimientos análisis, es decir, analizar
+
+270
+00:17:23,920 --> 00:17:34,480
+si la percepción es positivo o negativa sobre un documento, en el cuerpo de los tweets,
+
+271
+00:17:34,480 --> 00:17:38,760
+hacíamos algo así, algo parecido, es decir, yo necesito saber si la clase del cuerpo
+
+272
+00:17:38,840 --> 00:17:45,760
+del Twitter de humor o no de no humor. Bueno, y ahí tenemos algunos que es ploridad
+
+273
+00:17:45,760 --> 00:17:51,080
+y otro positivo, y queremos saber qué pasa con predictador, with no originality.
+
+274
+00:17:51,080 --> 00:18:00,800
+Entonces, la progilia priori de la clase cual es, y es, en total de documentos, hay
+
+275
+00:18:00,800 --> 00:18:07,480
+unos dos tres, cuatro, cinco de los cuales tres son negativas y dos son positivas, o sea,
+
+276
+00:18:07,480 --> 00:18:14,000
+el que está son nuestra progilia priori. Y luego entramos a buscar la progilia de cada
+
+277
+00:18:14,000 --> 00:18:23,160
+palabra, la progilia de predictador dado que en la clase es negativa, es uno que es la ocurrencia
+
+278
+00:18:23,160 --> 00:18:30,800
+de predictador, el predictador solo aparece en la segunda oración y en un contexto negativo.
+
+279
+00:18:31,800 --> 00:18:39,760
+Entonces, acaba uno y ya cada tenemos el más ainte para normalizar el para la plaza,
+
+280
+00:18:39,760 --> 00:18:45,200
+sea uno más uno y 14, que es el total de palabra, más ainte. 14 y si el total de palabra diferente,
+
+281
+00:18:45,200 --> 00:18:47,380
+¿dóngono?
+
+282
+00:18:47,380 --> 00:18:51,720
+No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.
+
+283
+00:18:51,720 --> 00:18:57,320
+De las palabras diferentes, de las palabras, como fácil es verloca.
+
+284
+00:18:58,280 --> 00:19:00,280
+Si, en la clase, ¿no?
+
+285
+00:19:00,280 --> 00:19:01,160
+De la clase.
+
+286
+00:19:01,160 --> 00:19:02,040
+De la clase.
+
+287
+00:19:02,040 --> 00:19:04,440
+La gente va a la hora que hay en la clase.
+
+288
+00:19:04,440 --> 00:19:06,640
+No, no, no son diferentes, son todas.
+
+289
+00:19:06,640 --> 00:19:09,640
+De el total de palabra que hay, ¿go contar?
+
+290
+00:19:09,640 --> 00:19:14,440
+Positivo, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+291
+00:19:14,440 --> 00:19:18,280
+No, son todas, porque acá yo estoy considerando toda la ocurrencia.
+
+292
+00:19:18,280 --> 00:19:22,280
+Es una de las cosas que se le critican, ahí vayas, es general, es eso, que si yo repito
+
+293
+00:19:22,280 --> 00:19:29,680
+muchas veces algo, le sumo probabilidad, que a veces no es lo que se quede.
+
+294
+00:19:29,680 --> 00:19:34,000
+Se le atributos que reiteran cosas, es como que están muy relacionados y no están
+
+295
+00:19:34,000 --> 00:19:35,720
+aportando información.
+
+296
+00:19:35,720 --> 00:19:41,040
+Bueno, no, entonces, acá toda la probabilidad es la diferente de palabras.
+
+297
+00:19:41,040 --> 00:19:43,920
+Fíjense, bueno, ahora no fíjame un ejemplo.
+
+298
+00:19:43,920 --> 00:19:45,240
+¿Cuál es la probabilidad es?
+
+299
+00:19:45,240 --> 00:19:51,160
+Es nuestra, es como entrenamos, no es troblasificador, esencialmente.
+
+300
+00:19:51,160 --> 00:19:54,840
+Bueno, es decir, la partida del golpe de entrenamiento es yo, calcula esta probabilidad
+
+301
+00:19:54,840 --> 00:19:57,280
+de lo que estoy haciendo, es entrenar.
+
+302
+00:19:57,280 --> 00:20:03,640
+Como ustedes son cuentas muy sencillas, me hacer, y la significador no iba a ir a ventaja
+
+303
+00:20:03,640 --> 00:20:07,280
+que tiene, es muy rápido, muy muy rápido.
+
+304
+00:20:07,280 --> 00:20:13,760
+Tanto para entrenar, como para evaluar, entonces cuando uno quiere acercarse un problema
+
+305
+00:20:13,760 --> 00:20:18,640
+y ver, ¿qué es tan difícil, les va a explicar un cuerpo de humor?
+
+306
+00:20:18,640 --> 00:20:27,280
+Entonces, se le arrima con un método de esto, que lo entrenando patadas, y más o menos
+
+307
+00:20:27,280 --> 00:20:33,760
+tienen una idea, ahí se ha mirado que el pude clasificar el 75-80% de los, bueno, es un problema
+
+308
+00:20:33,760 --> 00:20:39,920
+que tiene para mejorar un poco, tampoco es que es horrible de difícil, ¿no?
+
+309
+00:20:39,920 --> 00:20:44,520
+Y luego sí empieza a afinar, a ajustar para metro, a cambiar el método, capaz que le meto
+
+310
+00:20:44,520 --> 00:20:49,640
+en una regal edad, todo el método en una regna uronada que está, una semana entrenando,
+
+311
+00:20:49,640 --> 00:20:54,880
+pero con esto, es tiene una primera aproximación por lo menos, ahí se alcanza, pasaleen
+
+312
+00:20:54,880 --> 00:21:00,840
+los médicos, porque depende de la tarea que estamos, bueno, pero qué pasa, entonces
+
+313
+00:21:00,840 --> 00:21:07,120
+yo como un clasifico, y bueno, si la palabra es prevista o el buen no originality, yo tengo
+
+314
+00:21:07,120 --> 00:21:12,280
+la probabilidad de la operación de la categoría negativa por la proviación de categoría negativa,
+
+315
+00:21:12,280 --> 00:21:21,280
+así que es 3-5, por la diferente probabilidad es de la palabra que aparece en la categoría
+
+316
+00:21:21,280 --> 00:21:30,560
+negativa, si se fíjara acá a todo un nuevo, porque no aparecía, y acá fíjense que,
+
+317
+00:21:30,560 --> 00:21:51,800
+bueno, que originality es una palabra entinando a positivo, es uno sobre 29, contra uno
+
+318
+00:21:51,800 --> 00:21:59,120
+sobre 34, o sea que está mejor en la positiva en la negativa, porque aparecía en
+
+319
+00:21:59,120 --> 00:22:04,520
+un contexto positivo, realmente, el problema que tienen no adelante, que es uno de los problemas
+
+320
+00:22:04,520 --> 00:22:11,240
+que ahora vamos a ver, pero de todos los modos multiplicando las provididades de cada palabra
+
+321
+00:22:11,240 --> 00:22:21,160
+si la que es más probable que sea negativa, y porque dice predictable, seguramente, porque
+
+322
+00:22:21,160 --> 00:22:35,160
+dice no, en realidad esto es nambar crunching, no es porque hay un motivo, uno de la aplicación
+
+323
+00:22:35,160 --> 00:22:42,200
+es un simple posteriore en esta cosa, bueno, paso de esto, pero realidad esto es lo visos cuentas,
+
+324
+00:22:42,520 --> 00:22:56,280
+es cierto, es cierto, si nosotros queremos hacer sentimentanálisis, para el caso particular
+
+325
+00:22:56,280 --> 00:23:01,440
+de la significación de documentos que se llama sentimentanálisis, que es ver la impresión
+
+326
+00:23:01,440 --> 00:23:10,400
+respecto a algo, en un documento, hay algunas reglas que permiten mejorar la performance, el
+
+327
+00:23:10,400 --> 00:23:14,240
+lo mismo, es exactamente lo mismo, las clases son las mismas, pero se puede hacer alguna
+
+328
+00:23:14,240 --> 00:23:20,720
+modificación, por ejemplo, no contar muy tible su ocurrencia en la palabra en lo mismo documento,
+
+329
+00:23:20,720 --> 00:23:25,440
+esto que yo les decía hoy, cuento una vez sola, y se decía muy, muy linda presión, linda
+
+330
+00:23:25,440 --> 00:23:32,440
+linda cuando no hay sola, eso se llama vina, vina, vina y valles, el manejo de la negación
+
+331
+00:23:32,440 --> 00:23:43,640
+es todo un tema, el manejo de la negación, y una aproximación muy sencilla, muy naípero
+
+332
+00:23:43,640 --> 00:23:49,240
+que mejora la cosa pues, bueno, yo a todo lo que dice después de lo que las vi con
+
+333
+00:23:49,240 --> 00:23:56,320
+no como el like sino como not like, vendon a palabra la nueva. Podría llegar a ser
+
+334
+00:23:56,320 --> 00:24:00,840
+alguna cosa un poco más elaborada si tuviera un parcer, porque si yo tengo un parcer, tengo
+
+335
+00:24:00,840 --> 00:24:06,240
+el árbol y tengo una rama que dice no, todo lo que hay abajo, entonces yo sé la
+
+336
+00:24:06,240 --> 00:24:11,400
+alcance de no, ahí voy, pero lo más tan como hacer el parcín, pero si yo le agrevo información
+
+337
+00:24:11,400 --> 00:24:21,800
+de parcín, la cosa puede mejorar, de parcín vamos a hablar la semana que viene, pero yo
+
+338
+00:24:21,800 --> 00:24:30,200
+diría que al me acordar que había el final de esto, del parcín, esta, pero esta es una
+
+339
+00:24:30,200 --> 00:24:35,600
+primera aproximación, tendría que crear una palabra nueva ahí, y ahora el like se cuenta
+
+340
+00:24:35,600 --> 00:24:41,360
+como no es like, es muy naípero, porque dice todo lo que está después de vida, pero podría
+
+341
+00:24:41,360 --> 00:24:48,400
+ver otras cosas en el medio, no, no es tan sencillo, digamos, la relación es más complicada,
+
+342
+00:24:48,400 --> 00:24:56,160
+no creo que pienses que hay un que ahí con la relación subordinada, pues es el más complejo
+
+343
+00:24:56,160 --> 00:25:02,080
+porque esto, pero está, no arrimamos, y otra aproximación por supuesto es usar lo que se
+
+344
+00:25:02,080 --> 00:25:08,720
+ama en lexico en el sentimiento, que son listas de palabras positivas y listas de
+
+345
+00:25:08,720 --> 00:25:14,280
+palabras nativas, tengo una lista de recolectas, sí, en el caso de lo que están
+
+346
+00:25:14,420 --> 00:25:18,220
+hablando como se dio en la palabra nueva ¿no?
+
+347
+00:25:18,220 --> 00:25:19,980
+A continuación había actos en este tipo, ¿por qué?
+
+348
+00:25:19,980 --> 00:25:23,760
+es que se consciousness, plampa Foreignería,我想 un decir a este término Ros UN ultimately...
+
+349
+00:25:23,760 --> 00:25:32,120
+Entonces sí claro claro claro, les tomé sus proponas en todo tipo de Oliver
+
+350
+00:25:32,120 --> 00:25:40,740
+que supone cómo tiene un gran volumen, si lo conocimos sí que él la será capturar algo
+
+351
+00:25:40,740 --> 00:25:49,740
+a partir de muchas sucurrencias, pero sí, si no parece, si tenés cero, él es la misma pató.
+
+352
+00:25:53,740 --> 00:25:56,740
+En el léxico, entonces, vuelvo a hacer esa agregar, en tu clasificador,
+
+353
+00:25:56,740 --> 00:25:59,740
+simplemente en una flitur que dice la cantidad para leer en un léxico positivo
+
+354
+00:25:59,740 --> 00:26:01,740
+y la cantidad para leer en un léxico negativo.
+
+355
+00:26:01,740 --> 00:26:05,740
+Es decir, tiene tres palabras negativas, es un xx.
+
+356
+00:26:05,740 --> 00:26:09,740
+En demás, uno y aquí se animado, son dos atributos, lo más.
+
+357
+00:26:09,740 --> 00:26:14,740
+Y la cantidad para leer en un léxico negativo, le averiguo dos atributos que,
+
+358
+00:26:14,740 --> 00:26:19,740
+si recordamos la clase basada, van a aseguramente estar más correl relacionado con la clase
+
+359
+00:26:19,740 --> 00:26:23,740
+y no van a poder dar una pista de su comportamiento.
+
+360
+00:26:23,740 --> 00:26:28,740
+Sin llegar a hacer un método de regla que dice, bueno, el que tiene más palabra positivo haga
+
+361
+00:26:28,740 --> 00:26:34,740
+porque juega en todas, intervienen muy, muy mucho en la clasificación.
+
+362
+00:26:34,740 --> 00:26:44,740
+Otro ejemplo, ¿cómo puedo hacer para calcular un tag de partos pitch?
+
+363
+00:26:44,740 --> 00:26:48,740
+Si tengo la palabra y los postáis de las palabras anterior y siguientes.
+
+364
+00:26:48,740 --> 00:26:50,740
+Y bueno, es la misma forma, ¿no?
+
+365
+00:26:50,740 --> 00:26:53,740
+La probabilidad es que es un objetivo, nada que la anterior es un determinante.
+
+366
+00:26:53,740 --> 00:26:57,740
+El siguiente es un hombre y la palabra es blanco.
+
+367
+00:26:57,740 --> 00:27:03,740
+Es la probabilidad de que la clase es un objetivo a priori.
+
+368
+00:27:03,740 --> 00:27:05,740
+Entonces, lo hago por contigo.
+
+369
+00:27:05,740 --> 00:27:09,740
+La probabilidad de que una palabra hacia blanco, como más objetivo,
+
+370
+00:27:09,740 --> 00:27:12,740
+es que de todas las veces que hubo blanco cuántas veces.
+
+371
+00:27:12,740 --> 00:27:15,740
+Y entonces, de todos los objetivos cualquiera blanco,
+
+372
+00:27:18,740 --> 00:27:23,740
+cuántas veces pasó que antes de una objetivo hubieron determinante
+
+373
+00:27:23,740 --> 00:27:29,740
+por la probabilidad de que el siguiente sea un hombre si este es un objetivo.
+
+374
+00:27:29,740 --> 00:27:34,740
+Si simplemente hago contigo toda la vez y que aparecieron cosas antes.
+
+375
+00:27:34,740 --> 00:27:38,740
+Y las cosieras independientes de ellas, lo cual sabemos que no es cierto.
+
+376
+00:27:38,740 --> 00:27:43,740
+Pero es lo que es lo que puedo computar.
+
+377
+00:27:45,740 --> 00:27:50,740
+Y bueno, como yo tengo calculando la probabilidad conjunta de esto,
+
+378
+00:27:50,740 --> 00:27:54,740
+podría llegar a general ejemplos con la distribución calculada.
+
+379
+00:27:54,740 --> 00:27:58,740
+Es un me puede ser útil para hacer generación de texto.
+
+380
+00:27:58,740 --> 00:28:00,740
+Todo esto me permiten.
+
+381
+00:28:00,740 --> 00:28:04,740
+Por ejemplo, de negra más, me permiten generar también texto.
+
+382
+00:28:04,740 --> 00:28:10,740
+Es la forma que hacen los generadores que hacen escriben parecido a alguien de agua.
+
+383
+00:28:12,740 --> 00:28:15,740
+Bueno, a la tacada, los métodos generativos que son listos,
+
+384
+00:28:15,740 --> 00:28:17,740
+como nadie vaya.
+
+385
+00:28:17,740 --> 00:28:20,740
+Un método generativo es decir que busca una distribución de todas las clases,
+
+386
+00:28:20,740 --> 00:28:25,740
+prueba todas las clases y computa la distribución conjunta con los atributos.
+
+387
+00:28:26,740 --> 00:28:29,740
+Los métodos discriminativos son un poco diferentes,
+
+388
+00:28:29,740 --> 00:28:31,740
+porque en lugar de...
+
+389
+00:28:35,740 --> 00:28:37,740
+en lugar de que hay culas la probabilidad de...
+
+390
+00:28:37,740 --> 00:28:39,740
+de la conjunta y, bueno, no de todo el ejemplo,
+
+391
+00:28:39,740 --> 00:28:41,740
+cuál de los dos es mejor.
+
+392
+00:28:41,740 --> 00:28:44,740
+¿Cuál es que la sí es mejor para este ejemplo?
+
+393
+00:28:44,740 --> 00:28:47,740
+Sin tratar de modelar todas las clases posible.
+
+394
+00:28:48,740 --> 00:28:49,740
+Sí.
+
+395
+00:28:49,740 --> 00:28:52,740
+Es decir, no elamos directamente la proye,
+
+396
+00:28:52,740 --> 00:28:56,740
+butrato intento modelar directamente la probabilidad condicional.
+
+397
+00:28:56,740 --> 00:28:59,740
+La probabilidad de la clases de agua los atributos.
+
+398
+00:28:59,740 --> 00:29:01,740
+Sí.
+
+399
+00:29:04,740 --> 00:29:05,740
+Voy derecho a eso,
+
+400
+00:29:05,740 --> 00:29:07,740
+¿qué es más probable de todo el atributo?
+
+401
+00:29:07,740 --> 00:29:08,740
+Nada más.
+
+402
+00:29:11,740 --> 00:29:13,740
+Y hay varias aproximaciones,
+
+403
+00:29:13,740 --> 00:29:18,740
+algunas que son propiedades como entropía máxima y otra no.
+
+404
+00:29:18,740 --> 00:29:20,740
+A ver, hay ese pre-perceptor,
+
+405
+00:29:20,740 --> 00:29:22,740
+un soporte de tomasino, ahora vamos a ver.
+
+406
+00:29:22,740 --> 00:29:25,740
+No, vamos a ver la definición de soporte de tomasino.
+
+407
+00:29:29,740 --> 00:29:31,740
+Pero lo esencialmente lo que te dije en el bueno,
+
+408
+00:29:31,740 --> 00:29:32,740
+esto está detallado.
+
+409
+00:29:35,740 --> 00:29:37,740
+Si yo tengo estos puntos así,
+
+410
+00:29:40,740 --> 00:29:42,740
+entreno,
+
+411
+00:29:43,740 --> 00:29:47,740
+y te digo, bueno, este punto está del lado de los容易.
+
+412
+00:29:49,740 --> 00:29:52,740
+No sé qué tan del lado está de nosotros,
+
+413
+00:29:53,740 --> 00:29:55,740
+de los estos mis probabilistas, por ejemplo.
+
+414
+00:29:59,740 --> 00:30:00,740
+O puedo hacer lo probabilista,
+
+415
+00:30:00,740 --> 00:30:02,740
+pero igual lo único, respondo a la calle que le gusta.
+
+416
+00:30:04,740 --> 00:30:06,740
+Entonces, vamos a ver uno,
+
+417
+00:30:06,740 --> 00:30:08,740
+que es el modelo entropía máxima,
+
+418
+00:30:09,740 --> 00:30:11,740
+que es como lo que vamos a ver,
+
+419
+00:30:11,740 --> 00:30:15,740
+es como la versión discriminativa del método de...
+
+420
+00:30:15,740 --> 00:30:16,740
+de...
+
+421
+00:30:21,740 --> 00:30:24,740
+O también conocí como regresión multinomía logística,
+
+422
+00:30:24,740 --> 00:30:26,740
+que vamos a ver por qué se llama así.
+
+423
+00:30:26,740 --> 00:30:29,740
+Y son modelos, lo geniales para clasificaciones,
+
+424
+00:30:29,740 --> 00:30:30,740
+y yo quiero la clase.
+
+425
+00:30:30,740 --> 00:30:32,740
+Si tengo una serie de tributos,
+
+426
+00:30:35,740 --> 00:30:36,740
+hago.
+
+427
+00:30:38,740 --> 00:30:41,740
+Y ahora vamos a ver qué se está, ¿no?
+
+428
+00:30:48,740 --> 00:30:50,740
+E, ahora vamos a ver qué se está, ¿no?
+
+429
+00:30:52,740 --> 00:30:53,740
+FSUI.
+
+430
+00:30:57,740 --> 00:30:58,740
+Son las fiturs.
+
+431
+00:31:00,740 --> 00:31:03,740
+Son como un indicador de alguna...
+
+432
+00:31:04,740 --> 00:31:07,740
+Son fiturs de... a partir de los atributos.
+
+433
+00:31:07,740 --> 00:31:09,740
+Ahora vamos a ver cómo lo abrimos.
+
+434
+00:31:09,740 --> 00:31:11,740
+Está, pero son derivadas de estos atributos.
+
+435
+00:31:13,740 --> 00:31:15,740
+Los doble mis son los pesos,
+
+436
+00:31:15,740 --> 00:31:18,740
+una serie de pesos que yo voy a intentar calcular.
+
+437
+00:31:20,740 --> 00:31:21,740
+Son los pesos de mi modelo,
+
+438
+00:31:21,740 --> 00:31:26,740
+lo que yo voy a entrenar a aprender son los pesos de mi modelo.
+
+439
+00:31:30,740 --> 00:31:31,740
+Y este es el producto,
+
+440
+00:31:31,740 --> 00:31:33,740
+el dot-product de ambos.
+
+441
+00:31:33,740 --> 00:31:36,740
+Es decir, esto va a ser doble v1,
+
+442
+00:31:36,740 --> 00:31:39,740
+por f1, más doble v2, por f2,
+
+443
+00:31:39,740 --> 00:31:42,740
+más doble v3, por f3, etcétera.
+
+444
+00:31:42,740 --> 00:31:44,740
+Acuerda, entonces yo,
+
+445
+00:31:44,740 --> 00:31:45,740
+la fituresta,
+
+446
+00:31:47,740 --> 00:31:49,740
+que según mi ejemplo, cuando yo voy a llevar,
+
+447
+00:31:49,740 --> 00:31:51,740
+según mi ejemplo, esto va a leer algo,
+
+448
+00:31:51,740 --> 00:31:53,740
+lo multiplico por un número fijo,
+
+449
+00:32:00,740 --> 00:32:02,740
+que va a depender de lo que yo entrené,
+
+450
+00:32:02,740 --> 00:32:05,740
+es decir, lo que yo quiero aprender es doble,
+
+451
+00:32:05,740 --> 00:32:06,740
+¿te acuerdo?
+
+452
+00:32:10,740 --> 00:32:13,740
+Eso elevó a la suma de eso ahora,
+
+453
+00:32:13,740 --> 00:32:14,740
+¿por qué?
+
+454
+00:32:15,740 --> 00:32:18,740
+Y esta seta y la simplemente,
+
+455
+00:32:18,740 --> 00:32:20,740
+un factor de normalización.
+
+456
+00:32:22,740 --> 00:32:24,740
+Es decir,
+
+457
+00:32:24,740 --> 00:32:26,740
+de todos los doble v,
+
+458
+00:32:26,740 --> 00:32:28,740
+surgí que tengo,
+
+459
+00:32:29,740 --> 00:32:32,740
+esto no necesariamente de generar una distribución de probabilidad.
+
+460
+00:32:32,740 --> 00:32:33,740
+Entonces,
+
+461
+00:32:33,740 --> 00:32:36,740
+este seta es como la suma de todos los casos posible.
+
+462
+00:32:37,740 --> 00:32:39,740
+Para llevarlo a una probabilidad,
+
+463
+00:32:39,740 --> 00:32:41,740
+a que me des la suma de uno,
+
+464
+00:32:41,740 --> 00:32:42,740
+a que yo calada,
+
+465
+00:32:42,740 --> 00:32:43,740
+a una clase de atrás,
+
+466
+00:32:43,740 --> 00:32:44,740
+generalizado,
+
+467
+00:32:44,740 --> 00:32:46,740
+y salga a la famosa seta,
+
+468
+00:32:46,740 --> 00:32:48,740
+que parece una pavada,
+
+469
+00:32:48,740 --> 00:32:49,740
+pero es lo más difícil de computar,
+
+470
+00:32:49,740 --> 00:32:50,740
+porque yo tengo que calcular este valor
+
+471
+00:32:50,740 --> 00:32:52,740
+para todos los attributeos posible
+
+472
+00:32:52,740 --> 00:32:53,740
+para que me de una distribución.
+
+473
+00:32:53,740 --> 00:32:56,740
+Entonces,
+
+474
+00:32:56,740 --> 00:32:58,740
+lo modelo de entropía máxima,
+
+475
+00:32:58,740 --> 00:33:00,740
+calcula en la probabilidad de la clase
+
+476
+00:33:00,740 --> 00:33:01,740
+utilizando esta forma,
+
+477
+00:33:01,740 --> 00:33:02,740
+pero no hay por qué.
+
+478
+00:33:06,740 --> 00:33:08,740
+Pero antes vamos a leer de otra cosa,
+
+479
+00:33:08,740 --> 00:33:10,740
+para llegar a eso,
+
+480
+00:33:10,740 --> 00:33:12,740
+y es de regresión lindial.
+
+481
+00:33:12,740 --> 00:33:13,740
+Un problema de regresión lindial,
+
+482
+00:33:13,740 --> 00:33:14,740
+que era lo que yo le decía hoy,
+
+483
+00:33:14,740 --> 00:33:16,740
+es cuando uno intenta,
+
+484
+00:33:16,740 --> 00:33:17,740
+lo problema de regresión
+
+485
+00:33:17,740 --> 00:33:19,740
+y cuando uno intenta que el culiar un valor,
+
+486
+00:33:19,740 --> 00:33:20,740
+de algo valor real,
+
+487
+00:33:20,740 --> 00:33:21,740
+valor real.
+
+488
+00:33:21,740 --> 00:33:23,740
+Si.
+
+489
+00:33:23,740 --> 00:33:25,740
+Entonces, yo,
+
+490
+00:33:25,740 --> 00:33:27,740
+si yo quiero saber,
+
+491
+00:33:27,740 --> 00:33:30,740
+supongo que yo,
+
+492
+00:33:30,740 --> 00:33:34,740
+tengo estos puntos,
+
+493
+00:33:34,740 --> 00:33:36,740
+acá.
+
+494
+00:33:36,740 --> 00:33:38,740
+Si.
+
+495
+00:33:38,740 --> 00:33:41,740
+Cuando yo goreleció lindial,
+
+496
+00:33:41,740 --> 00:33:44,740
+lo que hago es trasar,
+
+497
+00:33:44,740 --> 00:33:46,740
+buscar una...
+
+498
+00:33:46,740 --> 00:33:51,740
+lindia,
+
+499
+00:33:51,740 --> 00:33:56,740
+que re que se impare los ejemplos.
+
+500
+00:33:56,740 --> 00:34:00,740
+Eso esencialmente ese.
+
+501
+00:34:00,740 --> 00:34:02,740
+Si esto es...
+
+502
+00:34:10,740 --> 00:34:12,740
+Va a ser una cosa como,
+
+503
+00:34:12,740 --> 00:34:15,740
+si yo supongo que tengo el que pasa
+
+504
+00:34:15,740 --> 00:34:16,740
+de origen esta reinta.
+
+505
+00:34:16,740 --> 00:34:18,740
+Vamos a poner que pasa valor real,
+
+506
+00:34:18,740 --> 00:34:21,740
+y no vemos como se corriga.
+
+507
+00:34:21,740 --> 00:34:23,740
+Es.
+
+508
+00:34:32,740 --> 00:34:34,740
+Vamos a llamar el que hizo un lequido.
+
+509
+00:34:35,740 --> 00:34:38,740
+Esto es la reinta que rependen a esto.
+
+510
+00:34:38,740 --> 00:34:40,740
+Es decir, el doble vez,
+
+511
+00:34:40,740 --> 00:34:45,740
+uno dio levedo,
+
+512
+00:34:45,740 --> 00:34:48,740
+me va a determinar la legnación de la reinta.
+
+513
+00:34:48,740 --> 00:34:49,740
+Acá está pasando por el origen,
+
+514
+00:34:49,740 --> 00:34:51,740
+porque no tiene lindia pendiente.
+
+515
+00:34:51,740 --> 00:34:53,740
+Yo puedo inventar un doble vez cero,
+
+516
+00:34:53,740 --> 00:34:55,740
+con un equicero que va a le siempre uno
+
+517
+00:34:55,740 --> 00:34:57,740
+para agregarlo,
+
+518
+00:34:57,740 --> 00:34:58,740
+vamos a mover la reinta.
+
+519
+00:34:58,740 --> 00:34:59,740
+Bueno.
+
+520
+00:35:00,740 --> 00:35:02,740
+Entonces,
+
+521
+00:35:02,740 --> 00:35:04,740
+lo que yo cuando digo que hago
+
+522
+00:35:04,740 --> 00:35:05,740
+regresión lindia,
+
+523
+00:35:05,740 --> 00:35:07,740
+lo que digo es bueno,
+
+524
+00:35:07,740 --> 00:35:09,740
+mi punto yo a sumo que son separables
+
+525
+00:35:09,740 --> 00:35:10,740
+por una reinta.
+
+526
+00:35:10,740 --> 00:35:12,740
+Ah, perdón.
+
+527
+00:35:12,740 --> 00:35:15,740
+Yo quiero estimar que he quedado a lo que es uno.
+
+528
+00:35:15,740 --> 00:35:18,740
+Bueno, entonces yo tengo la reinta
+
+529
+00:35:18,740 --> 00:35:20,740
+para un nuevo hequis.
+
+530
+00:35:20,740 --> 00:35:22,740
+Aotitititititititititititit,
+
+531
+00:35:22,740 --> 00:35:25,740
+vengo acá y que cololí.
+
+532
+00:35:25,740 --> 00:35:26,740
+Sí.
+
+533
+00:35:30,740 --> 00:35:32,740
+Entonces iba a ser igual al doble vez
+
+534
+00:35:32,740 --> 00:35:33,740
+y por Efei, que es esto.
+
+535
+00:35:33,740 --> 00:35:35,740
+No es la suma historia de doble vez
+
+536
+00:35:35,740 --> 00:35:38,740
+y por Efei es el dobro de doble vez con Efei.
+
+537
+00:35:39,740 --> 00:35:40,740
+Bueno,
+
+538
+00:35:40,740 --> 00:35:42,740
+simplemente estoy haciendo un estimador
+
+539
+00:35:42,740 --> 00:35:43,740
+lindia al lindio.
+
+540
+00:35:46,740 --> 00:35:49,740
+Y como hago para
+
+541
+00:35:49,740 --> 00:35:51,740
+como encuentro esta reinta,
+
+542
+00:35:51,740 --> 00:35:53,740
+bueno, una de las formas más usuales
+
+543
+00:35:53,740 --> 00:35:56,740
+es la que minimiza
+
+544
+00:35:56,740 --> 00:35:57,740
+la suma de los cuadrados
+
+545
+00:35:57,740 --> 00:35:59,740
+y la violencia entre valores y predicciones.
+
+546
+00:35:59,740 --> 00:36:00,740
+O sea,
+
+547
+00:36:03,740 --> 00:36:05,740
+esta reinta
+
+548
+00:36:06,740 --> 00:36:08,740
+minimiza esta distancia.
+
+549
+00:36:08,740 --> 00:36:09,740
+Y esta.
+
+550
+00:36:10,740 --> 00:36:11,740
+Bueno,
+
+551
+00:36:12,740 --> 00:36:14,740
+la distancia,
+
+552
+00:36:14,740 --> 00:36:16,740
+la reinta que tenga la distancia
+
+553
+00:36:16,740 --> 00:36:18,740
+minima de esto al cuadrado
+
+554
+00:36:20,740 --> 00:36:22,740
+y esto al cuadrado.
+
+555
+00:36:24,740 --> 00:36:25,740
+Sí?
+
+556
+00:36:27,740 --> 00:36:28,740
+No hago el cuadrado,
+
+557
+00:36:28,740 --> 00:36:29,740
+para que la suma sea positivo,
+
+558
+00:36:29,740 --> 00:36:30,740
+para que no me afecte
+
+559
+00:36:30,740 --> 00:36:32,740
+si estoy de un lado del otro.
+
+560
+00:36:33,740 --> 00:36:34,740
+Está vieja,
+
+561
+00:36:34,740 --> 00:36:36,740
+la vieja regrisible en ya.
+
+562
+00:36:36,740 --> 00:36:37,740
+Sí?
+
+563
+00:36:37,740 --> 00:36:39,740
+Entonces,
+
+564
+00:36:40,740 --> 00:36:41,740
+no voy entre la detalle,
+
+565
+00:36:41,740 --> 00:36:43,740
+pero yo calculo la fórmula
+
+566
+00:36:43,740 --> 00:36:45,740
+de los mínimos cuadrados.
+
+567
+00:36:47,740 --> 00:36:48,740
+¿Qué son?
+
+568
+00:36:48,740 --> 00:36:49,740
+Sí.
+
+569
+00:36:49,740 --> 00:36:50,740
+Si lo piensan,
+
+570
+00:36:50,740 --> 00:36:51,740
+son todos,
+
+571
+00:36:51,740 --> 00:36:53,740
+multiplicaciones de
+
+572
+00:36:53,740 --> 00:36:54,740
+cosas al cuadrado,
+
+573
+00:36:54,740 --> 00:36:56,740
+más cosas al cuadrado.
+
+574
+00:36:56,740 --> 00:36:57,740
+Bueno,
+
+575
+00:36:57,740 --> 00:36:58,740
+es un asunción,
+
+576
+00:36:58,740 --> 00:36:59,740
+positivo y convexa.
+
+577
+00:36:59,740 --> 00:37:00,740
+Y entonces,
+
+578
+00:37:00,740 --> 00:37:01,740
+yo lo que trato es buscar
+
+579
+00:37:01,740 --> 00:37:03,740
+el mínimo de esa función.
+
+580
+00:37:03,740 --> 00:37:05,740
+La llevo bien en lo que escribiera
+
+581
+00:37:05,740 --> 00:37:07,740
+eso porque no sé si queda claro.
+
+582
+00:37:07,740 --> 00:37:08,740
+Este,
+
+583
+00:37:08,740 --> 00:37:10,740
+ustedes no les importa.
+
+584
+00:37:10,740 --> 00:37:11,740
+Este,
+
+585
+00:37:11,740 --> 00:37:12,740
+pero la cuestión es que yo
+
+586
+00:37:12,740 --> 00:37:14,740
+termino minimizando
+
+587
+00:37:14,740 --> 00:37:16,740
+una función convexa.
+
+588
+00:37:16,740 --> 00:37:17,740
+La función convexa,
+
+589
+00:37:17,740 --> 00:37:18,740
+una función que está haciendo.
+
+590
+00:37:18,740 --> 00:37:19,740
+Así es una función convexa.
+
+591
+00:37:19,740 --> 00:37:20,740
+No,
+
+592
+00:37:20,740 --> 00:37:22,740
+cualquier
+
+593
+00:37:22,740 --> 00:37:24,740
+par de puntos
+
+594
+00:37:24,740 --> 00:37:25,740
+que yo una pasantó
+
+595
+00:37:25,740 --> 00:37:26,740
+en el mínimo,
+
+596
+00:37:26,740 --> 00:37:27,740
+¿no?
+
+597
+00:37:27,740 --> 00:37:28,740
+Vamos.
+
+598
+00:37:28,740 --> 00:37:29,740
+Acá,
+
+599
+00:37:29,740 --> 00:37:31,740
+esto es una unión convexa.
+
+600
+00:37:33,740 --> 00:37:34,740
+Sí,
+
+601
+00:37:34,740 --> 00:37:36,740
+yo puedo unir acá.
+
+602
+00:37:36,740 --> 00:37:37,740
+Bueno,
+
+603
+00:37:37,740 --> 00:37:39,740
+como es una función convexa,
+
+604
+00:37:39,740 --> 00:37:40,740
+qué cosa,
+
+605
+00:37:40,740 --> 00:37:41,740
+qué característica tiene,
+
+606
+00:37:41,740 --> 00:37:42,740
+la función convexa,
+
+607
+00:37:42,740 --> 00:37:43,740
+qué los mínimos,
+
+608
+00:37:43,740 --> 00:37:44,740
+qué cosa tiene,
+
+609
+00:37:44,740 --> 00:37:46,740
+la confusión convexa.
+
+610
+00:37:46,740 --> 00:37:47,740
+No sé,
+
+611
+00:37:47,740 --> 00:37:49,740
+la función convexa tienen
+
+612
+00:37:49,740 --> 00:37:52,740
+el tema de que cuando yo encuentro un mínimo,
+
+613
+00:37:52,740 --> 00:37:54,740
+local es un mínimo global.
+
+614
+00:37:54,740 --> 00:37:57,740
+Si una función es así,
+
+615
+00:37:57,740 --> 00:37:59,740
+yo puedo quedarme
+
+616
+00:37:59,740 --> 00:38:00,740
+buscar el mínimo acá
+
+617
+00:38:00,740 --> 00:38:02,740
+y encontrarme con este mínimo local
+
+618
+00:38:02,740 --> 00:38:03,740
+y buscar acá.
+
+619
+00:38:03,740 --> 00:38:04,740
+Sí,
+
+620
+00:38:04,740 --> 00:38:05,740
+sí,
+
+621
+00:38:05,740 --> 00:38:06,740
+sí,
+
+622
+00:38:06,740 --> 00:38:07,740
+sí,
+
+623
+00:38:07,740 --> 00:38:08,740
+sí,
+
+624
+00:38:08,740 --> 00:38:09,740
+claro,
+
+625
+00:38:09,740 --> 00:38:12,740
+puedo llegar a que era,
+
+626
+00:38:12,740 --> 00:38:13,740
+a cada cosa.
+
+627
+00:38:13,740 --> 00:38:16,740
+Si yo tengo una función convexa,
+
+628
+00:38:16,740 --> 00:38:19,740
+esto es informativo,
+
+629
+00:38:19,740 --> 00:38:22,740
+si aquí no es el curso de presa
+
+630
+00:38:23,740 --> 00:38:25,740
+yo puedo buscar un punto cualquiera
+
+631
+00:38:25,740 --> 00:38:28,740
+y empezar a calcular la derivada y avanzar
+
+632
+00:38:28,740 --> 00:38:30,740
+en la dirección de la derivada
+
+633
+00:38:30,740 --> 00:38:31,740
+y al final,
+
+634
+00:38:31,740 --> 00:38:32,740
+al final del día voy a encontrar
+
+635
+00:38:32,740 --> 00:38:33,740
+si hago las cosas bien
+
+636
+00:38:33,740 --> 00:38:34,740
+en el mínimo de la función.
+
+637
+00:38:34,740 --> 00:38:36,740
+Eso es llamada de censo
+
+638
+00:38:36,740 --> 00:38:37,740
+por gradiente.
+
+639
+00:38:37,740 --> 00:38:39,740
+Sí,
+
+640
+00:38:39,740 --> 00:38:42,740
+y deberían ser diarse en primer año.
+
+641
+00:38:44,740 --> 00:38:46,740
+Hay otro método de mi limización,
+
+642
+00:38:46,740 --> 00:38:49,740
+son mitos de mi limización numérica,
+
+643
+00:38:49,740 --> 00:38:51,740
+son calculos numéricos.
+
+644
+00:38:52,740 --> 00:38:55,740
+No hay una fórmula cerrada para eso.
+
+645
+00:38:55,740 --> 00:38:57,740
+Palmito del mínimo cuadrado,
+
+646
+00:38:57,740 --> 00:38:58,740
+sí, hay una fórmula cerrada,
+
+647
+00:38:58,740 --> 00:38:59,740
+es decir, una fórmula de algular,
+
+648
+00:38:59,740 --> 00:39:00,740
+pero es más fácil hacer decisionamente,
+
+649
+00:39:00,740 --> 00:39:01,740
+pues,
+
+650
+00:39:01,740 --> 00:39:02,740
+más rápido.
+
+651
+00:39:02,740 --> 00:39:03,740
+Bueno,
+
+652
+00:39:03,740 --> 00:39:05,740
+cuestionos que nosotros podemos saber cómo
+
+653
+00:39:05,740 --> 00:39:06,740
+hacer esto.
+
+654
+00:39:06,740 --> 00:39:07,740
+Es decir,
+
+655
+00:39:07,740 --> 00:39:08,740
+que yo puedo aprenderlo,
+
+656
+00:39:08,740 --> 00:39:09,740
+o sea,
+
+657
+00:39:09,740 --> 00:39:10,740
+lo doblebe,
+
+658
+00:39:10,740 --> 00:39:11,740
+que minimizan eso,
+
+659
+00:39:11,740 --> 00:39:12,740
+lo doblebe,
+
+660
+00:39:12,740 --> 00:39:13,740
+que queremos,
+
+661
+00:39:13,740 --> 00:39:14,740
+claro,
+
+662
+00:39:14,740 --> 00:39:15,740
+es decir,
+
+663
+00:39:15,740 --> 00:39:16,740
+yo cálculo a partir de los
+
+664
+00:39:16,740 --> 00:39:17,740
+de el cuerpo entre el ambiente
+
+665
+00:39:17,740 --> 00:39:20,740
+y todo eso doblebe y lo uso luego.
+
+666
+00:39:20,740 --> 00:39:21,740
+Eso se trata aprender.
+
+667
+00:39:21,740 --> 00:39:25,740
+Entonces,
+
+668
+00:39:25,740 --> 00:39:26,740
+entonces,
+
+669
+00:39:26,740 --> 00:39:27,740
+esto es un problema de regresión,
+
+670
+00:39:27,740 --> 00:39:29,740
+donde yo quiero cocinar un número.
+
+671
+00:39:29,740 --> 00:39:30,740
+Pero acá,
+
+672
+00:39:30,740 --> 00:39:32,740
+estoy en un problema de clasificación,
+
+673
+00:39:32,740 --> 00:39:34,740
+no sé lo que yo quiero aprender es una categoría,
+
+674
+00:39:34,740 --> 00:39:35,740
+una probabilidad.
+
+675
+00:39:35,740 --> 00:39:36,740
+Entonces,
+
+676
+00:39:36,740 --> 00:39:38,740
+mi primera aproximación es,
+
+677
+00:39:38,740 --> 00:39:39,740
+perdón,
+
+678
+00:39:39,740 --> 00:39:41,740
+es bueno,
+
+679
+00:39:41,740 --> 00:39:43,740
+yo digo esto,
+
+680
+00:39:43,740 --> 00:39:45,740
+la probabilidad,
+
+681
+00:39:45,740 --> 00:39:48,740
+en un número que yo quiero estimar,
+
+682
+00:39:48,740 --> 00:39:50,740
+es la probabilidad,
+
+683
+00:39:50,740 --> 00:39:54,740
+de que si acá tenemos un caso positivo
+
+684
+00:39:54,740 --> 00:39:56,740
+negativo,
+
+685
+00:39:56,740 --> 00:39:58,740
+la probabilidad de que iba a y gastruo,
+
+686
+00:39:58,740 --> 00:39:59,740
+o sea,
+
+687
+00:39:59,740 --> 00:40:01,740
+de la clase,
+
+688
+00:40:01,740 --> 00:40:03,740
+dado
+
+689
+00:40:03,740 --> 00:40:06,740
+mi equipo.
+
+690
+00:40:06,740 --> 00:40:08,740
+Entonces, yo lo que he dicho,
+
+691
+00:40:08,740 --> 00:40:09,740
+bueno,
+
+692
+00:40:09,740 --> 00:40:12,740
+hago regresión,
+
+693
+00:40:12,740 --> 00:40:15,740
+hago regresión,
+
+694
+00:40:15,740 --> 00:40:17,740
+pero le voy a recalcular un número,
+
+695
+00:40:17,740 --> 00:40:18,740
+o sea,
+
+696
+00:40:18,740 --> 00:40:20,740
+si yo calculando un número que el valor real
+
+697
+00:40:20,740 --> 00:40:23,740
+es el valor de la probabilidad.
+
+698
+00:40:23,740 --> 00:40:24,740
+Ahora,
+
+699
+00:40:24,740 --> 00:40:26,740
+¿qué por el matiene esto?
+
+700
+00:40:26,740 --> 00:40:28,740
+El problema que tiene esto,
+
+701
+00:40:28,740 --> 00:40:31,740
+es que no es una distribución de probabilidad,
+
+702
+00:40:31,740 --> 00:40:32,740
+no es un valor de probabilidad,
+
+703
+00:40:32,740 --> 00:40:35,740
+porque la probabilidad tiene que estar entre 0 y 1.
+
+704
+00:40:35,740 --> 00:40:36,740
+La cuerda.
+
+705
+00:40:39,740 --> 00:40:40,740
+Entonces,
+
+706
+00:40:40,740 --> 00:40:42,740
+esto no me sirve a explicarlo directamente,
+
+707
+00:40:42,740 --> 00:40:43,740
+como me puede dar cualquier cosa,
+
+708
+00:40:43,740 --> 00:40:45,740
+yo quiero una probabilidad.
+
+709
+00:40:45,740 --> 00:40:46,740
+Entonces, lo que he dicho,
+
+710
+00:40:46,740 --> 00:40:47,740
+bueno,
+
+711
+00:40:47,740 --> 00:40:48,740
+yo con los ojos,
+
+712
+00:40:48,740 --> 00:40:51,740
+los ojos que no sé cómo se traduce.
+
+713
+00:40:51,740 --> 00:40:53,740
+Los ojos como,
+
+714
+00:40:53,740 --> 00:40:55,740
+las chances,
+
+715
+00:40:55,740 --> 00:40:56,740
+podrían ser ahí más,
+
+716
+00:40:56,740 --> 00:40:57,740
+las chances.
+
+717
+00:40:57,740 --> 00:40:58,740
+Como las apuestas,
+
+718
+00:40:58,740 --> 00:40:59,740
+no,
+
+719
+00:40:59,740 --> 00:41:00,740
+tenés dos a uno,
+
+720
+00:41:00,740 --> 00:41:01,740
+uno a dos,
+
+721
+00:41:01,740 --> 00:41:02,740
+que es,
+
+722
+00:41:02,740 --> 00:41:03,740
+esencialmente,
+
+723
+00:41:03,740 --> 00:41:04,740
+la probabilidad,
+
+724
+00:41:04,740 --> 00:41:05,740
+que sea verdadero,
+
+725
+00:41:05,740 --> 00:41:07,740
+comparado con la probabilidad,
+
+726
+00:41:07,740 --> 00:41:08,740
+que no lo sea.
+
+727
+00:41:09,740 --> 00:41:11,740
+Esto tampoco mejor,
+
+728
+00:41:11,740 --> 00:41:12,740
+porque este resultado
+
+729
+00:41:12,740 --> 00:41:15,740
+está entre 0 y infinito.
+
+730
+00:41:17,740 --> 00:41:18,740
+Sí.
+
+731
+00:41:19,740 --> 00:41:21,740
+Pero así es sin estar entre 0 y 1.
+
+732
+00:41:23,740 --> 00:41:24,740
+A entre,
+
+733
+00:41:24,740 --> 00:41:25,740
+perdón, entre,
+
+734
+00:41:25,740 --> 00:41:26,740
+yo quiero llevarlo algo,
+
+735
+00:41:26,740 --> 00:41:28,740
+que está entre menos infinito y más infinito,
+
+736
+00:41:28,740 --> 00:41:29,740
+que es esto, ¿no?
+
+737
+00:41:29,740 --> 00:41:30,740
+Está claro.
+
+738
+00:41:31,740 --> 00:41:32,740
+Está claro.
+
+739
+00:41:32,740 --> 00:41:34,740
+Esto está entre menos infinito y más infinitos,
+
+740
+00:41:34,740 --> 00:41:35,740
+el doble,
+
+741
+00:41:35,740 --> 00:41:36,740
+por ejemplo,
+
+742
+00:41:36,740 --> 00:41:37,740
+cualquier cosa.
+
+743
+00:41:37,740 --> 00:41:38,740
+Acaso,
+
+744
+00:41:38,740 --> 00:41:40,740
+los reducos a una cosa que está entre 0 y infinito,
+
+745
+00:41:40,740 --> 00:41:41,740
+mejor.
+
+746
+00:41:41,740 --> 00:41:42,740
+¿Tá?
+
+747
+00:41:47,740 --> 00:41:51,740
+Bueno,
+
+748
+00:41:51,740 --> 00:41:53,740
+pero para,
+
+749
+00:41:53,740 --> 00:41:55,740
+que esto que entre,
+
+750
+00:41:59,740 --> 00:42:01,740
+entre 0 y 1,
+
+751
+00:42:01,740 --> 00:42:02,740
+lo que hago es,
+
+752
+00:42:02,740 --> 00:42:04,740
+el brico lo harin,
+
+753
+00:42:04,740 --> 00:42:06,740
+para que que perdón,
+
+754
+00:42:06,740 --> 00:42:07,740
+dije a lo que es,
+
+755
+00:42:07,740 --> 00:42:10,740
+para que quede entre 0 y infinito y me he visto el brico lo harin,
+
+756
+00:42:10,740 --> 00:42:11,740
+el brico lo harin,
+
+757
+00:42:11,740 --> 00:42:13,740
+muy entonces digo bueno,
+
+758
+00:42:13,740 --> 00:42:16,740
+esto es lo que buscamos,
+
+759
+00:42:16,740 --> 00:42:18,740
+yo quiero estimar el lo harin,
+
+760
+00:42:18,740 --> 00:42:20,740
+de la probabilidad de la voz,
+
+761
+00:42:20,740 --> 00:42:23,740
+y por eso yo vas a formular tan rara con ni,
+
+762
+00:42:23,740 --> 00:42:25,740
+porque cuando yo despejo,
+
+763
+00:42:25,740 --> 00:42:27,740
+y esto se lo dejó de ver,
+
+764
+00:42:27,740 --> 00:42:29,740
+cuando yo despejo,
+
+765
+00:42:29,740 --> 00:42:30,740
+p igual true,
+
+766
+00:42:30,740 --> 00:42:31,740
+es fácil, ¿no?
+
+767
+00:42:31,740 --> 00:42:32,740
+digamos,
+
+768
+00:42:32,740 --> 00:42:33,740
+este lo harin,
+
+769
+00:42:33,740 --> 00:42:35,740
+se transforma en un e a la doble por efe,
+
+770
+00:42:35,740 --> 00:42:37,740
+sí,
+
+771
+00:42:37,740 --> 00:42:39,740
+bueno,
+
+772
+00:42:39,740 --> 00:42:40,740
+se lo dejó de ver,
+
+773
+00:42:40,740 --> 00:42:41,740
+cuestión,
+
+774
+00:42:41,740 --> 00:42:42,740
+que queda así,
+
+775
+00:42:42,740 --> 00:42:43,740
+e a la doble por efe,
+
+776
+00:42:43,740 --> 00:42:45,740
+dividido uno más e a la doble por efe,
+
+777
+00:42:45,740 --> 00:42:47,740
+y claro,
+
+778
+00:42:48,740 --> 00:42:52,740
+la soda se transforma en el que es esta función,
+
+779
+00:42:58,740 --> 00:43:00,740
+entonces llegue una función
+
+780
+00:43:00,740 --> 00:43:04,740
+que me dice la probabilidad de que se es verdadero de la clase,
+
+781
+00:43:04,740 --> 00:43:09,740
+a partir de haciendo unas cosas raras con las fíjurs,
+
+782
+00:43:09,740 --> 00:43:10,740
+me da menos,
+
+783
+00:43:10,740 --> 00:43:15,740
+Esa es algo parecido al imial, pero que la corrijo con esta función.
+
+784
+00:43:15,740 --> 00:43:19,740
+Esto es lo mismo que hacen la red de un normal.
+
+785
+00:43:19,740 --> 00:43:22,740
+No me.
+
+786
+00:43:22,740 --> 00:43:25,740
+La función es de una función logística.
+
+787
+00:43:25,740 --> 00:43:27,740
+Y tiene este aspecto.
+
+788
+00:43:27,740 --> 00:43:30,740
+¿Cuál es la garantía de la función logística?
+
+789
+00:43:30,740 --> 00:43:33,740
+Y bueno, que parece un escalón.
+
+790
+00:43:33,740 --> 00:43:35,740
+Es parecido una cosa que vale.
+
+791
+00:43:35,740 --> 00:43:39,740
+Si es negativo y uno es positivo, pero que es continua.
+
+792
+00:43:41,740 --> 00:43:45,740
+Es una linda función.
+
+793
+00:43:45,740 --> 00:43:48,740
+Es una función smooth.
+
+794
+00:43:48,740 --> 00:43:50,740
+Pero sí, parecido en el calón.
+
+795
+00:43:50,740 --> 00:43:53,740
+Si yo logro, si estoy estilado,
+
+796
+00:43:53,740 --> 00:43:56,740
+más seguramente sea negativo y si estoy estilado, se ha positido.
+
+797
+00:43:56,740 --> 00:43:58,740
+Pero puedo derivarlas, es la cosa.
+
+798
+00:43:58,740 --> 00:44:00,740
+La red de un año está mucho eso.
+
+799
+00:44:04,740 --> 00:44:06,740
+Y hacemos el chiste, no se puede entrar.
+
+800
+00:44:10,740 --> 00:44:13,740
+No, es para que se sientan más.
+
+801
+00:44:13,740 --> 00:44:16,740
+Bueno.
+
+802
+00:44:20,740 --> 00:44:22,740
+Y bueno, ¿cómo clasifican muy fácil?
+
+803
+00:44:22,740 --> 00:44:24,740
+Si la probabilidad de que sea verdadero,
+
+804
+00:44:24,740 --> 00:44:27,740
+más yo lo que la probabilidad es que sea falso.
+
+805
+00:44:27,740 --> 00:44:29,740
+Dada la tributo.
+
+806
+00:44:29,740 --> 00:44:31,740
+Eso lo mismo que decir que
+
+807
+00:44:31,740 --> 00:44:34,740
+él a la dole por ese mayor de uno.
+
+808
+00:44:38,740 --> 00:44:39,740
+Por esto.
+
+809
+00:44:41,740 --> 00:44:42,740
+Sí.
+
+810
+00:44:45,740 --> 00:44:48,740
+¿Qué es lo mismo que decir que dole por ese mayor que cero?
+
+811
+00:44:48,740 --> 00:44:50,740
+Entonces, clasifican muy fácil.
+
+812
+00:44:50,740 --> 00:44:53,740
+Con el temetón, porque lo único que toca ceres
+
+813
+00:44:53,740 --> 00:44:57,740
+multiplicar doble por Efe, con los pesos que te acule por la fitur
+
+814
+00:44:57,740 --> 00:45:00,740
+y si me da mayor que cero quiere decir que positivos y no negativo.
+
+815
+00:45:00,740 --> 00:45:03,740
+Eso y la red de un lojítica.
+
+816
+00:45:03,740 --> 00:45:08,740
+Se llama red de nación, aunque se llama red de nación es un método de clasificación.
+
+817
+00:45:09,740 --> 00:45:10,740
+Ahora.
+
+818
+00:45:20,740 --> 00:45:23,740
+Y la pregunta es, bueno, pero...
+
+819
+00:45:23,740 --> 00:45:26,740
+Acá yo todavía no respondí como estimaba los pesos
+
+820
+00:45:26,740 --> 00:45:29,740
+que no iba allí si se era contando.
+
+821
+00:45:30,740 --> 00:45:33,740
+Acá tengo que hacer alguna cosa un poco más raras.
+
+822
+00:45:39,740 --> 00:45:43,740
+Digo que mi doble he estimado ese que maximiza estas este producto
+
+823
+00:45:43,740 --> 00:45:46,740
+de probabilidades de las diferentes clases.
+
+824
+00:45:47,740 --> 00:45:51,740
+Y me queda esta función súper rara, súper fea,
+
+825
+00:45:51,740 --> 00:45:56,740
+súper complicada, pero que hay viven que es convexa.
+
+826
+00:45:57,740 --> 00:45:59,740
+Y como es convexa, bueno.
+
+827
+00:45:59,740 --> 00:46:02,740
+Yo quiero buscar el máximo de una función convexa.
+
+828
+00:46:02,740 --> 00:46:04,740
+Lo mismo que le decía hoy.
+
+829
+00:46:04,740 --> 00:46:08,740
+Aplico, de eso por alguien, tengo algún otro método de...
+
+830
+00:46:08,740 --> 00:46:10,740
+Númerico.
+
+831
+00:46:12,740 --> 00:46:14,740
+Entonces tengo una forma de estimar eso a doble,
+
+832
+00:46:14,740 --> 00:46:16,740
+en el asunto que tengo esa forma de estimar.
+
+833
+00:46:23,740 --> 00:46:24,740
+Y...
+
+834
+00:46:24,740 --> 00:46:26,740
+¿Qué pasa si tengo más de dos clases?
+
+835
+00:46:26,740 --> 00:46:28,740
+Y bueno, tengo que hacer una cosa así,
+
+836
+00:46:28,740 --> 00:46:32,740
+calcula la fitura a partir de cada clases con cada triuto.
+
+837
+00:46:34,740 --> 00:46:38,740
+Vete a lo dentro de la fórmula y volver a normalizar.
+
+838
+00:46:39,740 --> 00:46:42,740
+Y por eso,
+
+839
+00:46:42,740 --> 00:46:45,740
+nuestro método se llama multinomía el logístico,
+
+840
+00:46:46,740 --> 00:46:49,740
+porque es una extensión de la regresión logística
+
+841
+00:46:49,740 --> 00:46:54,740
+a un caso de un múltiples variable, un múltiples clases.
+
+842
+00:46:56,740 --> 00:47:00,740
+Y por supuesto no vamos a quedar con la clases que mas inniza la probabilidad de algo.
+
+843
+00:47:01,740 --> 00:47:03,740
+Bueno.
+
+844
+00:47:09,740 --> 00:47:11,740
+Y está clases.
+
+845
+00:47:11,740 --> 00:47:15,740
+Y es un poquito más entramada en detalles matemáticos
+
+846
+00:47:15,740 --> 00:47:18,740
+que el resto me parece importante entender
+
+847
+00:47:18,740 --> 00:47:20,740
+por qué sus atributos aparecen y por qué,
+
+848
+00:47:20,740 --> 00:47:23,740
+por qué aparecen todas esas cosas con él.
+
+849
+00:47:23,740 --> 00:47:26,740
+La cosa con él, generalmente, es un para cambiar la curva.
+
+850
+00:47:26,740 --> 00:47:28,740
+Aquí va a ser paiguento y sero yo.
+
+851
+00:47:30,740 --> 00:47:35,740
+Y por último, como comentario,
+
+852
+00:47:35,740 --> 00:47:38,740
+¿por qué si se llama un modelo de entropía máxima?
+
+853
+00:47:38,740 --> 00:47:41,740
+La entropía,
+
+854
+00:47:41,740 --> 00:47:44,740
+no sé si hablamos algo de entropía en una clases,
+
+855
+00:47:44,740 --> 00:47:47,740
+la entropía es una medida que trata de ver que están parecidos
+
+856
+00:47:47,740 --> 00:47:49,740
+son los elementos de las gano.
+
+857
+00:47:50,740 --> 00:47:53,740
+Entonces, el principio de entropía máxima dice,
+
+858
+00:47:53,740 --> 00:47:58,740
+bueno, yo si tengo muchas distribuciones posibles,
+
+859
+00:47:59,740 --> 00:48:02,740
+candidatas, algo.
+
+860
+00:48:03,740 --> 00:48:05,740
+El hijo,
+
+861
+00:48:06,740 --> 00:48:08,740
+la que tiene entropía máxima, es decir,
+
+862
+00:48:08,740 --> 00:48:10,740
+la que es dado unidad a todos,
+
+863
+00:48:10,740 --> 00:48:12,740
+la que solo assume lo que los datos te dice,
+
+864
+00:48:12,740 --> 00:48:13,740
+¿qué quiero decir eso?
+
+865
+00:48:13,740 --> 00:48:15,740
+Si yo no conozco nada sobre un documento,
+
+866
+00:48:15,740 --> 00:48:17,740
+en el caso del 90 a 20,
+
+867
+00:48:17,740 --> 00:48:19,740
+90 a 10.
+
+868
+00:48:19,740 --> 00:48:21,740
+A sumo el 90 a 10,
+
+869
+00:48:21,740 --> 00:48:24,740
+¿por qué los podamos subir a partir de los datos?
+
+870
+00:48:24,740 --> 00:48:25,740
+Sí.
+
+871
+00:48:25,740 --> 00:48:28,740
+Si yo no sé nada,
+
+872
+00:48:28,740 --> 00:48:31,740
+si yo no sé nada sobre el documento,
+
+873
+00:48:31,740 --> 00:48:32,740
+no sé nada,
+
+874
+00:48:32,740 --> 00:48:33,740
+no sé nada,
+
+875
+00:48:33,740 --> 00:48:35,740
+no tengo ninguna información a priori,
+
+876
+00:48:35,740 --> 00:48:37,740
+y te habiendo un medio de digo,
+
+877
+00:48:37,740 --> 00:48:38,740
+de qué clase es,
+
+878
+00:48:38,740 --> 00:48:40,740
+de deportes de espectáculo,
+
+879
+00:48:40,740 --> 00:48:43,740
+¿qué haría en ustedes?
+
+880
+00:48:43,740 --> 00:48:44,740
+Si yo te digo,
+
+881
+00:48:44,740 --> 00:48:46,740
+50 a 50,
+
+882
+00:48:46,740 --> 00:48:51,740
+¿qué haría en ustedes?
+
+883
+00:48:51,740 --> 00:48:53,740
+Si yo te digo,
+
+884
+00:48:53,740 --> 00:48:55,740
+50 a 50,
+
+885
+00:48:55,740 --> 00:48:58,740
+eso es aplicar el principio de entropía máxima,
+
+886
+00:48:58,740 --> 00:49:00,740
+es decir, bueno, yo no tengo información,
+
+887
+00:49:00,740 --> 00:49:01,740
+esto es equiporóable,
+
+888
+00:49:01,740 --> 00:49:03,740
+seguramente la etropía máxima,
+
+889
+00:49:03,740 --> 00:49:05,740
+cuando eso todo es equiporóable.
+
+890
+00:49:05,740 --> 00:49:08,740
+Si yo agrego un poco de información
+
+891
+00:49:08,740 --> 00:49:09,740
+y yo te digo tengo un dado,
+
+892
+00:49:09,740 --> 00:49:13,740
+pero yo te aseguro que el zay no sale nunca,
+
+893
+00:49:13,740 --> 00:49:18,740
+¿cuál es la probabilidad de agargar uno?
+
+894
+00:49:18,740 --> 00:49:19,740
+Un punto,
+
+895
+00:49:19,740 --> 00:49:21,740
+o sea, paso de ser un seto un guinto porque,
+
+896
+00:49:21,740 --> 00:49:24,740
+porque tengo más información,
+
+897
+00:49:24,740 --> 00:49:26,740
+pero siempre no tengo un cuarto,
+
+898
+00:49:26,740 --> 00:49:28,740
+porque no puedo sacarlo de ningún dato,
+
+899
+00:49:28,740 --> 00:49:30,740
+eso es el principio de entropía máxima.
+
+900
+00:49:30,740 --> 00:49:34,740
+Si yo,
+
+901
+00:49:34,740 --> 00:49:38,740
+cuando el hijo esta esta distribución es posible,
+
+902
+00:49:38,740 --> 00:49:42,740
+aplico solo lo que los atributos me dicen,
+
+903
+00:49:42,740 --> 00:49:44,740
+sí,
+
+904
+00:49:44,740 --> 00:49:46,740
+aplicando el principio,
+
+905
+00:49:46,740 --> 00:49:48,740
+que tenga máxima entropía,
+
+906
+00:49:48,740 --> 00:49:50,740
+a lo que llegó,
+
+907
+00:49:50,740 --> 00:49:53,740
+es exactamente el mismo modelo
+
+908
+00:49:53,740 --> 00:49:54,740
+que presente antes,
+
+909
+00:49:54,740 --> 00:49:56,740
+por eso también los modelos se llaman
+
+910
+00:49:56,740 --> 00:49:58,740
+modelos de entropía máxima,
+
+911
+00:49:58,740 --> 00:50:01,740
+es porque son de forma diferente llegar a lo mismo.
+
+912
+00:50:01,740 --> 00:50:04,740
+Si usted quiere en el detalle en la literatura está de eso,
+
+913
+00:50:04,740 --> 00:50:06,740
+no sé si le interesa,
+
+914
+00:50:06,740 --> 00:50:08,740
+pero aquí no pueden realizar,
+
+915
+00:50:08,740 --> 00:50:10,740
+está muy...
+
+916
+00:50:10,740 --> 00:50:12,740
+coinciden con eso,
+
+917
+00:50:12,740 --> 00:50:14,740
+coinciden con una instrucción de probabilidad
+
+918
+00:50:14,740 --> 00:50:16,740
+para un modelo logítico luminesal,
+
+919
+00:50:16,740 --> 00:50:18,740
+cuyo peso más inicial,
+
+920
+00:50:18,740 --> 00:50:20,740
+pero sí, minuto en los datos realmente.
+
+921
+00:50:29,740 --> 00:50:30,740
+Por ejemplo,
+
+922
+00:50:30,740 --> 00:50:33,740
+si yo quiero aplicar un modelo entropía máxima,
+
+923
+00:50:33,740 --> 00:50:35,740
+al ejemplo del postaí,
+
+924
+00:50:35,740 --> 00:50:37,740
+la fíjor van a locir así,
+
+925
+00:50:38,740 --> 00:50:40,740
+tengo una fíjor 1 que dice,
+
+926
+00:50:40,740 --> 00:50:42,740
+vale 1, vale 1,
+
+927
+00:50:42,740 --> 00:50:44,740
+si la palabra reis,
+
+928
+00:50:44,740 --> 00:50:47,740
+y la clase es nombre
+
+929
+00:50:47,740 --> 00:50:49,740
+y si no vale 0.
+
+930
+00:50:49,740 --> 00:50:51,740
+Otra fíjor va a ser,
+
+931
+00:50:51,740 --> 00:50:52,740
+uno,
+
+932
+00:50:52,740 --> 00:50:54,740
+si el anterior estuvo,
+
+933
+00:50:54,740 --> 00:50:56,740
+y la clase es verbo,
+
+934
+00:50:56,740 --> 00:50:57,740
+y si no es 0.
+
+935
+00:50:57,740 --> 00:50:59,740
+Otra fíjor y,
+
+936
+00:50:59,740 --> 00:51:00,740
+como se imaginarán,
+
+937
+00:51:00,740 --> 00:51:02,740
+la fíjor son,
+
+938
+00:51:02,740 --> 00:51:05,740
+estamos hablando de miles o de millones de fíjores.
+
+939
+00:51:06,740 --> 00:51:08,740
+No, pues son todas las posibles,
+
+940
+00:51:08,740 --> 00:51:10,740
+las relevantes,
+
+941
+00:51:10,740 --> 00:51:12,740
+así, luz en las fíjores,
+
+942
+00:51:12,740 --> 00:51:17,740
+un modelo entropía máxima,
+
+943
+00:51:17,740 --> 00:51:20,740
+un montón de fíjores,
+
+944
+00:51:20,740 --> 00:51:22,740
+y yo lo que voy a hacer,
+
+945
+00:51:22,740 --> 00:51:24,740
+y además son indicadores,
+
+946
+00:51:24,740 --> 00:51:25,740
+eso es decir, no,
+
+947
+00:51:25,740 --> 00:51:26,740
+vale 1, 0.
+
+948
+00:51:28,740 --> 00:51:30,740
+Y lo que yo voy a hacer
+
+949
+00:51:30,740 --> 00:51:31,740
+es calculando,
+
+950
+00:51:31,740 --> 00:51:34,740
+a través de contando,
+
+951
+00:51:34,740 --> 00:51:37,740
+sí,
+
+952
+00:51:37,740 --> 00:51:39,740
+voy a calcularlo,
+
+953
+00:51:39,740 --> 00:51:40,740
+o le ve,
+
+954
+00:51:40,740 --> 00:51:41,740
+con aquello que hablamos hoy,
+
+955
+00:51:41,740 --> 00:51:43,740
+y de la fórmula de milimizarla,
+
+956
+00:51:43,740 --> 00:51:44,740
+¿no?
+
+957
+00:51:45,740 --> 00:51:48,740
+O sea que cada fíjor va a tener un peso indicando
+
+958
+00:51:48,740 --> 00:51:51,740
+que tanto afecta la fíjor corresponde para el taguesa.
+
+959
+00:51:52,740 --> 00:51:54,740
+Por ejemplo,
+
+960
+00:51:54,740 --> 00:51:55,740
+si yo tengo aquí,
+
+961
+00:51:55,740 --> 00:51:56,740
+yo se acuerda,
+
+962
+00:51:56,740 --> 00:51:57,740
+porque queríamos saber que era reis,
+
+963
+00:51:57,740 --> 00:51:58,740
+y el postaje, no?
+
+964
+00:51:58,740 --> 00:51:59,740
+Que era la única parar,
+
+965
+00:51:59,740 --> 00:52:01,740
+no sabía muy lo que era.
+
+966
+00:52:02,740 --> 00:52:03,740
+Entonces,
+
+967
+00:52:03,740 --> 00:52:05,740
+estos son los pesos que yo entrené,
+
+968
+00:52:05,740 --> 00:52:08,740
+lo que me dicen es que
+
+969
+00:52:08,740 --> 00:52:09,740
+fíjense que los pesos,
+
+970
+00:52:09,740 --> 00:52:10,740
+que tenemos acá,
+
+971
+00:52:10,740 --> 00:52:13,740
+lo que me dicen es
+
+972
+00:52:13,740 --> 00:52:15,740
+que la fíjor más importante es la 6,
+
+973
+00:52:15,740 --> 00:52:16,740
+en el clazo,
+
+974
+00:52:16,740 --> 00:52:18,740
+para que sí es un hombre
+
+975
+00:52:18,740 --> 00:52:20,740
+es tan muy negativa,
+
+976
+00:52:21,740 --> 00:52:23,740
+o sea que resta,
+
+977
+00:52:24,740 --> 00:52:27,740
+y esta es muy positiva,
+
+978
+00:52:27,740 --> 00:52:29,740
+he fe 2 para 1 baro,
+
+979
+00:52:29,740 --> 00:52:30,740
+no me preguntes,
+
+980
+00:52:30,740 --> 00:52:31,740
+si son un nombre real,
+
+981
+00:52:31,740 --> 00:52:32,740
+pero no me acuerdo.
+
+982
+00:52:32,740 --> 00:52:34,740
+Efe 2 es,
+
+983
+00:52:34,740 --> 00:52:35,740
+ah,
+
+984
+00:52:35,740 --> 00:52:37,740
+si le aprende a tu,
+
+985
+00:52:37,740 --> 00:52:39,740
+si le aprende a tu,
+
+986
+00:52:39,740 --> 00:52:41,740
+pesa muy positivamente
+
+987
+00:52:41,740 --> 00:52:43,740
+para que suce un baro,
+
+988
+00:52:43,740 --> 00:52:45,740
+tu reis,
+
+989
+00:52:46,740 --> 00:52:48,740
+y la f6,
+
+990
+00:52:49,740 --> 00:52:51,740
+que es,
+
+991
+00:52:52,740 --> 00:52:54,740
+y pesa muy negativamente para un nombre,
+
+992
+00:52:54,740 --> 00:52:58,740
+fíjor diferente por la clase,
+
+993
+00:52:58,740 --> 00:53:00,740
+porque es un más de ule,
+
+994
+00:53:00,740 --> 00:53:02,740
+más de 2 quiero decir,
+
+995
+00:53:02,740 --> 00:53:03,740
+¿no?
+
+996
+00:53:03,740 --> 00:53:04,740
+Entonces,
+
+997
+00:53:04,740 --> 00:53:06,740
+yo hago las cuentas,
+
+998
+00:53:07,740 --> 00:53:09,740
+la probabilidad de que si un nombre dado
+
+999
+00:53:09,740 --> 00:53:10,740
+la fíjor es,
+
+1000
+00:53:10,740 --> 00:53:11,740
+es,
+
+1001
+00:53:11,740 --> 00:53:14,740
+es exactamente aplicar la fíjor relevante,
+
+1002
+00:53:14,740 --> 00:53:16,740
+acá es,
+
+1003
+00:53:16,740 --> 00:53:17,740
+0,
+
+1004
+00:53:17,740 --> 00:53:19,740
+porque,
+
+1005
+00:53:20,740 --> 00:53:22,740
+voy a explicar la primera,
+
+1006
+00:53:22,740 --> 00:53:24,740
+la segunda y la sexta,
+
+1007
+00:53:24,740 --> 00:53:26,740
+porque eso es la caplica,
+
+1008
+00:53:26,740 --> 00:53:27,740
+pero,
+
+1009
+00:53:34,740 --> 00:53:35,740
+la 2,
+
+1010
+00:53:35,740 --> 00:53:36,740
+dijimos,
+
+1011
+00:53:36,740 --> 00:53:38,740
+y la 6,
+
+1012
+00:53:38,740 --> 00:53:40,740
+eso es la de tu,
+
+1013
+00:53:43,740 --> 00:53:44,740
+0,
+
+1014
+00:53:44,740 --> 00:53:45,740
+no,
+
+1015
+00:53:45,740 --> 00:53:46,740
+no,
+
+1016
+00:53:46,740 --> 00:53:47,740
+es la 1 y la 6,
+
+1017
+00:53:47,740 --> 00:53:48,740
+la 1 y la 6,
+
+1018
+00:53:48,740 --> 00:53:49,740
+correcto,
+
+1019
+00:53:49,740 --> 00:53:50,740
+o sea,
+
+1020
+00:53:50,740 --> 00:53:51,740
+si es,
+
+1021
+00:53:51,740 --> 00:53:52,740
+reis,
+
+1022
+00:53:52,740 --> 00:53:53,740
+la palabra,
+
+1023
+00:53:53,740 --> 00:53:55,740
+y la población pública,
+
+1024
+00:53:56,740 --> 00:53:58,740
+fíjense que como va al encero no pasa nada
+
+1025
+00:53:58,740 --> 00:53:59,740
+con la multiplicación,
+
+1026
+00:53:59,740 --> 00:54:00,740
+porque yo estoy diciendo,
+
+1027
+00:54:00,740 --> 00:54:01,740
+ella la es,
+
+1028
+00:54:01,740 --> 00:54:02,740
+no,
+
+1029
+00:54:02,740 --> 00:54:04,740
+no me molesta el cero en el teca,
+
+1030
+00:54:04,740 --> 00:54:06,740
+y este es el factor de normalización,
+
+1031
+00:54:06,740 --> 00:54:07,740
+es simplemente,
+
+1032
+00:54:07,740 --> 00:54:08,740
+para que esto de,
+
+1033
+00:54:08,740 --> 00:54:09,740
+0,
+
+1034
+00:54:09,740 --> 00:54:10,740
+20 y 0,
+
+1035
+00:54:10,740 --> 00:54:11,740
+sumo esto,
+
+1036
+00:54:11,740 --> 00:54:12,740
+más esto,
+
+1037
+00:54:12,740 --> 00:54:13,740
+sumo todas,
+
+1038
+00:54:13,740 --> 00:54:15,740
+y,
+
+1039
+00:54:15,740 --> 00:54:16,740
+bueno,
+
+1040
+00:54:16,740 --> 00:54:17,740
+entonces yo busco la clase,
+
+1041
+00:54:17,740 --> 00:54:18,740
+que más sin misas,
+
+1042
+00:54:18,740 --> 00:54:20,740
+en el tecazo es vero,
+
+1043
+00:54:20,740 --> 00:54:22,740
+igualo,
+
+1044
+00:54:22,740 --> 00:54:24,740
+bueno,
+
+1045
+00:54:25,740 --> 00:54:27,740
+eso son los modelos en tropia máxima,
+
+1046
+00:54:29,740 --> 00:54:31,740
+hay otro modelo de discriminativos,
+
+1047
+00:54:31,740 --> 00:54:33,740
+que lo voy a mencionar rápidamente,
+
+1048
+00:54:33,740 --> 00:54:34,740
+porque,
+
+1049
+00:54:35,740 --> 00:54:36,740
+en la forma aplicable,
+
+1050
+00:54:36,740 --> 00:54:37,740
+se la misma,
+
+1051
+00:54:37,740 --> 00:54:38,740
+lo único que hay acá,
+
+1052
+00:54:38,740 --> 00:54:39,740
+de diferentes que,
+
+1053
+00:54:39,740 --> 00:54:41,740
+diferente la forma de,
+
+1054
+00:54:41,740 --> 00:54:42,740
+elegir y clasificador,
+
+1055
+00:54:42,740 --> 00:54:43,740
+es decir,
+
+1056
+00:54:43,740 --> 00:54:45,740
+si acá lo hacíamos por regresión logística,
+
+1057
+00:54:45,740 --> 00:54:47,740
+en su porvector machines,
+
+1058
+00:54:47,740 --> 00:54:48,740
+que su método,
+
+1059
+00:54:48,740 --> 00:54:50,740
+que supuso muy de moda,
+
+1060
+00:54:50,740 --> 00:54:53,740
+en principio de este siglo,
+
+1061
+00:54:54,740 --> 00:54:55,740
+en la década pasada,
+
+1062
+00:54:55,740 --> 00:54:56,740
+digamos,
+
+1063
+00:54:56,740 --> 00:54:59,740
+es un método que,
+
+1064
+00:54:59,740 --> 00:55:00,740
+lo que hace es,
+
+1065
+00:55:00,740 --> 00:55:02,740
+buscan separar lindiamente,
+
+1066
+00:55:02,740 --> 00:55:03,740
+pero en vez de eso,
+
+1067
+00:55:03,740 --> 00:55:04,740
+lo por mínimos cuadrados,
+
+1068
+00:55:04,740 --> 00:55:05,740
+lo que dice,
+
+1069
+00:55:05,740 --> 00:55:06,740
+buscan,
+
+1070
+00:55:06,740 --> 00:55:07,740
+la recta,
+
+1071
+00:55:07,740 --> 00:55:08,740
+que separa más,
+
+1072
+00:55:08,740 --> 00:55:10,740
+que queda más en el medio,
+
+1073
+00:55:10,740 --> 00:55:11,740
+digamos,
+
+1074
+00:55:11,740 --> 00:55:14,740
+la inclusión atrás de,
+
+1075
+00:55:14,740 --> 00:55:16,740
+de su porvector machines,
+
+1076
+00:55:16,740 --> 00:55:17,740
+que yo busco,
+
+1077
+00:55:19,740 --> 00:55:21,740
+si yo tengo los ejemplacitos,
+
+1078
+00:55:21,740 --> 00:55:23,740
+tengo muchas rectas que basan,
+
+1079
+00:55:23,740 --> 00:55:24,740
+sí,
+
+1080
+00:55:24,740 --> 00:55:26,740
+la que yo trato a encontrar,
+
+1081
+00:55:26,740 --> 00:55:28,740
+la que maximiza el margen
+
+1082
+00:55:28,740 --> 00:55:31,740
+de los que están más cerca,
+
+1083
+00:55:31,740 --> 00:55:32,740
+y queda en el medio,
+
+1084
+00:55:32,740 --> 00:55:33,740
+señor Né,
+
+1085
+00:55:33,740 --> 00:55:34,740
+por eso ya más,
+
+1086
+00:55:34,740 --> 00:55:36,740
+lo su porvector son estos,
+
+1087
+00:55:36,740 --> 00:55:37,740
+son lo que están más cerca,
+
+1088
+00:55:37,740 --> 00:55:42,740
+lo demás y se fijan un por tan para el clasificador,
+
+1089
+00:55:42,740 --> 00:55:45,740
+cuál es la hipótesis del su porvector machine,
+
+1090
+00:55:45,740 --> 00:55:46,740
+y por qué son tan robustos,
+
+1091
+00:55:46,740 --> 00:55:47,740
+y por qué,
+
+1092
+00:55:47,740 --> 00:55:49,740
+como está el juto en el medio,
+
+1093
+00:55:49,740 --> 00:55:51,740
+quiero decir,
+
+1094
+00:55:51,740 --> 00:55:52,740
+si yo meto un,
+
+1095
+00:55:52,740 --> 00:55:54,740
+lo que está acá,
+
+1096
+00:55:54,740 --> 00:55:55,740
+sí,
+
+1097
+00:55:55,740 --> 00:55:57,740
+si un ejemplo a clasificar,
+
+1098
+00:55:57,740 --> 00:56:00,740
+queda muy cerquita del borde,
+
+1099
+00:56:00,740 --> 00:56:02,740
+me poquivo car,
+
+1100
+00:56:02,740 --> 00:56:04,740
+se tiene,
+
+1101
+00:56:04,740 --> 00:56:06,740
+es más probable que me estoy equivocando,
+
+1102
+00:56:06,740 --> 00:56:07,740
+digamos, yo le pongo en el medio,
+
+1103
+00:56:07,740 --> 00:56:09,740
+bueno, quedan bastante lejos,
+
+1104
+00:56:09,740 --> 00:56:10,740
+digamos,
+
+1105
+00:56:10,740 --> 00:56:11,740
+y de hecho funcionan muy bien,
+
+1106
+00:56:11,740 --> 00:56:12,740
+en clasificando,
+
+1107
+00:56:12,740 --> 00:56:13,740
+fotó,
+
+1108
+00:56:13,740 --> 00:56:14,740
+fotó una revolución,
+
+1109
+00:56:14,740 --> 00:56:15,740
+la su porvector machine,
+
+1110
+00:56:15,740 --> 00:56:16,740
+ahora como ahora están de modo,
+
+1111
+00:56:16,740 --> 00:56:17,740
+las redes neuronales,
+
+1112
+00:56:17,740 --> 00:56:18,740
+la su porvector machine,
+
+1113
+00:56:18,740 --> 00:56:20,740
+hicieron los mismos principios agarraron,
+
+1114
+00:56:20,740 --> 00:56:22,740
+fueron los primeros métodos discriminativos,
+
+1115
+00:56:22,740 --> 00:56:25,740
+la disificación que empezaron a batir todos los recordíamos,
+
+1116
+00:56:25,740 --> 00:56:28,740
+de diferentes tareas,
+
+1117
+00:56:28,740 --> 00:56:31,740
+hasta que pasaron de moda con el tema de la,
+
+1118
+00:56:31,740 --> 00:56:33,740
+si bien se usan mucho,
+
+1119
+00:56:33,740 --> 00:56:35,740
+pasaron de moda con el tema de las redes neuronales,
+
+1120
+00:56:35,740 --> 00:56:37,740
+que volvieron a batirle los recordios,
+
+1121
+00:56:37,740 --> 00:56:39,740
+pero esencialmente el método,
+
+1122
+00:56:39,740 --> 00:56:41,740
+cómo se aplica el mismo,
+
+1123
+00:56:41,740 --> 00:56:43,740
+la diferencia es como,
+
+1124
+00:56:43,740 --> 00:56:46,740
+teoricamente como se calcula que está ahí,
+
+1125
+00:56:47,740 --> 00:56:48,740
+bueno,
+
+1126
+00:56:50,740 --> 00:56:52,740
+no importa,
+
+1127
+00:56:52,740 --> 00:56:55,740
+hay otro método de clasificación,
+
+1128
+00:56:55,740 --> 00:56:57,740
+hace en la aparición automático,
+
+1129
+00:56:57,740 --> 00:56:58,740
+lo aprende,
+
+1130
+00:56:58,740 --> 00:56:59,740
+vecino más cercano,
+
+1131
+00:56:59,740 --> 00:57:00,740
+lo que a venir es nego,
+
+1132
+00:57:00,740 --> 00:57:01,740
+que es,
+
+1133
+00:57:01,740 --> 00:57:03,740
+la cifico,
+
+1134
+00:57:03,740 --> 00:57:05,740
+un documento buscando lo que está más cerca de él,
+
+1135
+00:57:05,740 --> 00:57:06,740
+del punto de vista triunctalo,
+
+1136
+00:57:06,740 --> 00:57:08,740
+una distancia entre documentos
+
+1137
+00:57:08,740 --> 00:57:10,740
+y me quedo lo que está más cerca,
+
+1138
+00:57:10,740 --> 00:57:11,740
+¿no?
+
+1139
+00:57:11,740 --> 00:57:13,740
+es como la idea de,
+
+1140
+00:57:13,740 --> 00:57:14,740
+bueno,
+
+1141
+00:57:14,740 --> 00:57:15,740
+si esto está acá,
+
+1142
+00:57:15,740 --> 00:57:17,740
+¿quién son los vecinos más cercanos?
+
+1143
+00:57:17,740 --> 00:57:18,740
+y bueno,
+
+1144
+00:57:18,740 --> 00:57:20,740
+si volvamos que los tres vecinos más cercanos son estos,
+
+1145
+00:57:20,740 --> 00:57:21,740
+en este caso,
+
+1146
+00:57:21,740 --> 00:57:23,740
+los tres son circulitos,
+
+1147
+00:57:23,740 --> 00:57:24,740
+o sea,
+
+1148
+00:57:24,740 --> 00:57:25,740
+que eso seguramente sea circulito,
+
+1149
+00:57:25,740 --> 00:57:26,740
+o no tenemos problemas,
+
+1150
+00:57:26,740 --> 00:57:27,740
+estamos de manera.
+
+1151
+00:57:27,740 --> 00:57:29,740
+Lo método de,
+
+1152
+00:57:29,740 --> 00:57:31,740
+de vecinos más cercanos,
+
+1153
+00:57:31,740 --> 00:57:32,740
+tienen la ventaja,
+
+1154
+00:57:32,740 --> 00:57:33,740
+obviamente,
+
+1155
+00:57:33,740 --> 00:57:35,740
+de que pueden reconocer,
+
+1156
+00:57:40,740 --> 00:57:42,740
+pueden reconocer clasters,
+
+1157
+00:57:46,740 --> 00:57:48,740
+pueden,
+
+1158
+00:57:48,740 --> 00:57:50,740
+es lo método de vecinos más cercanos de fin,
+
+1159
+00:57:50,740 --> 00:57:51,740
+una cosa así,
+
+1160
+00:57:55,740 --> 00:57:56,740
+no,
+
+1161
+00:57:56,740 --> 00:57:57,740
+pero,
+
+1162
+00:58:06,740 --> 00:58:07,740
+a cosas así,
+
+1163
+00:58:07,740 --> 00:58:08,740
+no pueden reconocer,
+
+1164
+00:58:08,740 --> 00:58:10,740
+cosa que no son lineales,
+
+1165
+00:58:10,740 --> 00:58:12,740
+tienen el problema de que a veces
+
+1166
+00:58:12,740 --> 00:58:17,740
+se sobre ajustan demasiado,
+
+1167
+00:58:17,740 --> 00:58:18,740
+a lo que les decisión,
+
+1168
+00:58:18,740 --> 00:58:19,740
+que no son muy�as,
+
+1169
+00:58:19,740 --> 00:58:20,740
+en el procedimiento de homogenodra,
+
+1170
+00:58:20,740 --> 00:58:21,740
+plan dos fuores,
+
+1171
+00:58:21,740 --> 00:58:22,740
+que eso como una,
+
+1172
+00:58:22,740 --> 00:58:23,740
+hay muchos,
+
+1173
+00:58:23,740 --> 00:58:24,740
+hay muchos métodores,
+
+1174
+00:58:24,740 --> 00:58:25,740
+que laificación,
+
+1175
+00:58:25,740 --> 00:58:27,740
+pero todos,
+
+1176
+00:58:27,740 --> 00:58:28,740
+en todos,
+
+1177
+00:58:28,740 --> 00:58:29,740
+lo que tienen en común,
+
+1178
+00:58:29,740 --> 00:58:31,740
+es que las medidas,
+
+1179
+00:58:31,740 --> 00:58:32,740
+para realizar,
+
+1180
+00:58:32,740 --> 00:58:33,740
+para,
+
+1181
+00:58:33,740 --> 00:58:34,740
+el métodología,
+
+1182
+00:58:34,740 --> 00:58:36,740
+la que se basaba,
+
+1183
+00:58:43,740 --> 00:58:44,740
+y,
+
+1184
+00:58:44,740 --> 00:58:46,740
+eso desde el punto de vista de los métodores,
+
+1185
+00:58:46,740 --> 00:58:48,740
+de clasificación,
+
+1186
+00:58:48,740 --> 00:58:50,740
+puros,
+
+1187
+00:58:50,740 --> 00:58:52,740
+pero también se acuerdan que habíamos visto
+
+1188
+00:58:52,740 --> 00:58:53,740
+los métodores de clasificación,
+
+1189
+00:58:53,740 --> 00:58:54,740
+secuencial,
+
+1190
+00:58:54,740 --> 00:58:56,740
+cuando yo quiero asimiar una secuencia de tas,
+
+1191
+00:58:56,740 --> 00:58:58,740
+de clases,
+
+1192
+00:58:58,740 --> 00:58:59,740
+así,
+
+1193
+00:58:59,740 --> 00:59:01,740
+a sumo que mi atributo tiene una secuencia,
+
+1194
+00:59:01,740 --> 00:59:02,740
+mi,
+
+1195
+00:59:02,740 --> 00:59:04,740
+y estancias,
+
+1196
+00:59:04,740 --> 00:59:05,740
+es una secuencia,
+
+1197
+00:59:05,740 --> 00:59:06,740
+por ejemplo,
+
+1198
+00:59:06,740 --> 00:59:07,740
+una,
+
+1199
+00:59:07,740 --> 00:59:08,740
+una oración,
+
+1200
+00:59:08,740 --> 00:59:09,740
+que es una secuencia de palabras,
+
+1201
+00:59:09,740 --> 00:59:10,740
+y quiero asimitar una secuencia de tas,
+
+1202
+00:59:10,740 --> 00:59:11,740
+bueno,
+
+1203
+00:59:11,740 --> 00:59:12,740
+hay una,
+
+1204
+00:59:12,740 --> 00:59:14,740
+hay inversión en generativas,
+
+1205
+00:59:14,740 --> 00:59:15,740
+en el caso de los,
+
+1206
+00:59:15,740 --> 00:59:16,740
+de los,
+
+1207
+00:59:16,740 --> 00:59:17,740
+la versión generativa en la iglesia,
+
+1208
+00:59:17,740 --> 00:59:18,740
+es esto,
+
+1209
+00:59:18,740 --> 00:59:19,740
+los gírenos,
+
+1210
+00:59:19,740 --> 00:59:20,740
+como del que lo vimos,
+
+1211
+00:59:20,740 --> 00:59:23,740
+bastante detalle,
+
+1212
+00:59:23,740 --> 00:59:27,740
+en alguna clase anterior,
+
+1213
+00:59:27,740 --> 00:59:31,740
+y,
+
+1214
+00:59:31,740 --> 00:59:33,740
+hay una versión también
+
+1215
+00:59:33,740 --> 00:59:34,740
+de clasificación,
+
+1216
+00:59:34,740 --> 00:59:35,740
+es decir,
+
+1217
+00:59:35,740 --> 00:59:36,740
+esto es un poblejo,
+
+1218
+00:59:36,740 --> 00:59:38,740
+los que van las mejores,
+
+1219
+00:59:38,740 --> 00:59:40,740
+que son los,
+
+1220
+00:59:40,740 --> 00:59:43,740
+están en los,
+
+1221
+00:59:43,740 --> 00:59:44,740
+collectiones,
+
+1222
+00:59:44,740 --> 00:59:45,740
+будiciones,
+
+1223
+00:59:45,740 --> 00:59:48,740
+cuando ellos no fikan bien,
+
+1224
+00:59:48,740 --> 00:59:49,740
+fueron todos una,
+
+1225
+00:59:49,740 --> 00:59:51,740
+una novedad,
+
+1226
+00:59:51,740 --> 00:59:53,740
+en, en, en一定as 1958,
+
+1227
+00:59:53,740 --> 00:59:56,740
+pero en хорошía generación,
+
+1228
+00:59:56,740 --> 00:59:58,740
+Así ahora os digo cuando los,
+
+1229
+00:59:58,740 --> 01:00:00,740
+que nos,
+
+1230
+01:00:04,740 --> 01:00:06,740
+así como los chiefs de rock,
+
+1231
+01:00:06,740 --> 01:00:08,740
+la everything va a富 hospiter de la
+
+1232
+01:00:08,740 --> 01:00:16,740
+pero de como herramienta llegamos para las clasificaciones de policías, funcionan muy bien.
+
+1233
+01:00:16,740 --> 01:00:22,740
+Yo diría que si uno va a...
+
+1234
+01:00:22,740 --> 01:00:24,740
+a veces me quedas más.
+
+1235
+01:00:24,740 --> 01:00:27,740
+No, acá tiene un poco de software.
+
+1236
+01:00:27,740 --> 01:00:28,740
+¿Sí?
+
+1237
+01:00:28,740 --> 01:00:31,740
+de estas cosas.
+
+1238
+01:00:31,740 --> 01:00:33,740
+Hueca...
+
+1239
+01:00:33,740 --> 01:00:36,740
+si me para jugar, pero de jugar es genial.
+
+1240
+01:00:36,740 --> 01:00:38,740
+¿Saquí lerne es una herramienta bastante...
+
+1241
+01:00:38,740 --> 01:00:40,740
+una librería bastante polenta de...
+
+1242
+01:00:40,740 --> 01:00:44,740
+me empaito, ni que estaba bastante de moda.
+
+1243
+01:00:44,740 --> 01:00:48,740
+Y acá me faltan...
+
+1244
+01:00:48,740 --> 01:00:52,740
+me faltan toda la nueva bola de rande biblioteca de...
+
+1245
+01:00:52,740 --> 01:00:54,740
+dibilando, ¿no?
+
+1246
+01:00:54,740 --> 01:00:56,740
+de que son de arena una área que son torches...
+
+1247
+01:00:56,740 --> 01:01:00,740
+este teano que eras...
+
+1248
+01:01:00,740 --> 01:01:02,740
+el...
+
+1249
+01:01:02,740 --> 01:01:04,740
+el software.
+
+1250
+01:01:04,740 --> 01:01:05,740
+pero bueno...
+
+1251
+01:01:05,740 --> 01:01:06,740
+y...
+
+1252
+01:01:06,740 --> 01:01:08,740
+sé que lerne es una biblioteca de...
+
+1253
+01:01:08,740 --> 01:01:10,740
+generica de...
+
+1254
+01:01:10,740 --> 01:01:12,740
+Machine Learning en Python.
+
+1255
+01:01:12,740 --> 01:01:14,740
+Ahora está bien.
+
+1256
+01:01:14,740 --> 01:01:16,740
+Eniliteca...
+
+1257
+01:01:16,740 --> 01:01:17,740
+es más...
+
+1258
+01:01:17,740 --> 01:01:18,740
+de proceder en la imaginatura,
+
+1259
+01:01:18,740 --> 01:01:19,740
+pero tiene, por ejemplo,
+
+1260
+01:01:19,740 --> 01:01:21,740
+explícalo de sesión.
+
+1261
+01:01:21,740 --> 01:01:22,740
+Se arrefe más más,
+
+1262
+01:01:22,740 --> 01:01:24,740
+es un tool kit para...
+
+1263
+01:01:24,740 --> 01:01:27,740
+condicionar las normfils.
+
+1264
+01:01:28,740 --> 01:01:29,740
+Pybraing...
+
+1265
+01:01:29,740 --> 01:01:30,740
+creo no...
+
+1266
+01:01:30,740 --> 01:01:31,740
+no...
+
+1267
+01:01:31,740 --> 01:01:33,740
+no corre más, o no sé...
+
+1268
+01:01:33,740 --> 01:01:36,740
+Rene Urona, el John Python.
+
+1269
+01:01:36,740 --> 01:01:38,740
+Se ve a me laitir a la herramienta
+
+1270
+01:01:38,740 --> 01:01:40,740
+de su proyecto Machine.
+
+1271
+01:01:40,740 --> 01:01:42,740
+Cuando estaba en el mundo.
+
+1272
+01:01:42,740 --> 01:01:45,740
+Se me laités en 99,
+
+1273
+01:01:45,740 --> 01:01:47,740
+va a ser una idea y estaba tan testable,
+
+1274
+01:01:47,740 --> 01:01:48,740
+porque...
+
+1275
+01:01:48,740 --> 01:01:50,740
+no hay mucho para...
+
+1276
+01:01:50,740 --> 01:01:53,740
+es muy sencillo el modelo de la su proyecto Machine.
+
+1277
+01:01:53,740 --> 01:01:54,740
+Perdón de como un replito.
+
+1278
+01:01:54,740 --> 01:01:56,740
+Emo...
+
+1279
+01:01:56,740 --> 01:01:58,740
+eh...
+
+1280
+01:01:58,740 --> 01:02:01,740
+yo diría que...
+
+1281
+01:02:02,740 --> 01:02:03,740
+que si...
+
+1282
+01:02:03,740 --> 01:02:04,740
+si...
+
+1283
+01:02:04,740 --> 01:02:05,740
+si vamos a...
+
+1284
+01:02:05,740 --> 01:02:06,740
+a...
+
+1285
+01:02:06,740 --> 01:02:07,740
+a...
+
+1286
+01:02:07,740 --> 01:02:10,740
+a...
+
+1287
+01:02:10,740 --> 01:02:11,740
+a...
+
+1288
+01:02:11,740 --> 01:02:12,740
+de...
+
+1289
+01:02:12,740 --> 01:02:13,740
+a nivel de...
+
+1290
+01:02:13,740 --> 01:02:14,740
+como decir...
+
+1291
+01:02:14,740 --> 01:02:15,740
+de mi...
+
+1292
+01:02:15,740 --> 01:02:16,740
+de mercado, de herramienta...
+
+1293
+01:02:16,740 --> 01:02:17,740
+o de...
+
+1294
+01:02:17,740 --> 01:02:18,740
+no me sale a...
+
+1295
+01:02:18,740 --> 01:02:20,740
+de industria de...
+
+1296
+01:02:20,740 --> 01:02:22,740
+a nivel...
+
+1297
+01:02:22,740 --> 01:02:23,740
+industrial...
+
+1298
+01:02:23,740 --> 01:02:25,740
+no es la palabra correcta, pero...
+
+1299
+01:02:25,740 --> 01:02:27,740
+yo diría que...
+
+1300
+01:02:27,740 --> 01:02:28,740
+el...
+
+1301
+01:02:28,740 --> 01:02:29,740
+el...
+
+1302
+01:02:29,740 --> 01:02:30,740
+el...
+
+1303
+01:02:30,740 --> 01:02:32,740
+en lo que hemos aprendido hasta ahora.
+
+1304
+01:02:32,740 --> 01:02:33,740
+No?
+
+1305
+01:02:33,740 --> 01:02:34,740
+Es decir...
+
+1306
+01:02:34,740 --> 01:02:37,740
+Todas estas cosas que hemos aprendido en la clase de hasta ahora...
+
+1307
+01:02:37,740 --> 01:02:40,740
+ya se encuentra a nivel industria de la nivel industria de la nivel industria...
+
+1308
+01:02:40,740 --> 01:02:42,740
+estoy hablando de las compañías internmentos, ¿no?
+
+1309
+01:02:42,740 --> 01:02:44,740
+Reconocimiento de...
+
+1310
+01:02:44,740 --> 01:02:45,740
+eh...
+
+1311
+01:02:45,740 --> 01:02:47,740
+eh...
+
+1312
+01:02:47,740 --> 01:02:48,740
+eh...
+
+1313
+01:02:48,740 --> 01:02:51,740
+Reconocimiento de caráteres mal escrito...
+
+1314
+01:02:51,740 --> 01:02:52,740
+o...
+
+1315
+01:02:52,740 --> 01:02:53,740
+clasificación...
+
+1316
+01:02:53,740 --> 01:02:54,740
+clasificación de...
+
+1317
+01:02:54,740 --> 01:02:56,740
+sentimentanálisis...
+
+1318
+01:02:56,740 --> 01:02:58,740
+de todo lo que hemos hablado hasta ahora, ¿no?
+
+1319
+01:02:58,740 --> 01:02:59,740
+en el era...
+
+1320
+01:02:59,740 --> 01:03:00,740
+más entonces...
+
+1321
+01:03:00,740 --> 01:03:01,740
+eh...
+
+1322
+01:03:01,740 --> 01:03:02,740
+también es...
+
+1323
+01:03:02,740 --> 01:03:03,740
+a ver...
+
+1324
+01:03:03,740 --> 01:03:04,740
+no es lo único, ¿no?
+
+1325
+01:03:04,740 --> 01:03:05,740
+Machine Translation es...
+
+1326
+01:03:05,740 --> 01:03:07,740
+ejemplo de cosas que han tan muy bien...
+
+1327
+01:03:07,740 --> 01:03:09,740
+este...
+
+1328
+01:03:11,740 --> 01:03:14,740
+pero utiliza metodos más o menos hasta acá.
+
+1329
+01:03:14,740 --> 01:03:15,740
+Lo que quiero decir es que...
+
+1330
+01:03:15,740 --> 01:03:16,740
+y bueno...
+
+1331
+01:03:16,740 --> 01:03:18,740
+ahí hay algún componente semántico también,
+
+1332
+01:03:18,740 --> 01:03:20,740
+que lo van a ver después con Luis,
+
+1333
+01:03:20,740 --> 01:03:21,740
+pero...
+
+1334
+01:03:21,740 --> 01:03:22,740
+eh...
+
+1335
+01:03:22,740 --> 01:03:23,740
+esas cosas más avanzadas,
+
+1336
+01:03:23,740 --> 01:03:26,740
+digamos, recién recién se está empezando a hablar,
+
+1337
+01:03:26,740 --> 01:03:27,740
+pero...
+
+1338
+01:03:27,740 --> 01:03:29,740
+en algunas cosas de...
+
+1339
+01:03:29,740 --> 01:03:30,740
+eh...
+
+1340
+01:03:30,740 --> 01:03:32,740
+eh...
+
+1341
+01:03:32,740 --> 01:03:33,740
+eh...
+
+1342
+01:03:33,740 --> 01:03:34,740
+Reconocimiento de...
+
+1343
+01:03:34,740 --> 01:03:35,740
+tiades,
+
+1344
+01:03:35,740 --> 01:03:36,740
+¿no?
+
+1345
+01:03:36,740 --> 01:03:37,740
+El otro hecho es...
+
+1346
+01:03:37,740 --> 01:03:38,740
+lo que voy a ir en un diario,
+
+1347
+01:03:38,740 --> 01:03:39,740
+digamos, un...
+
+1348
+01:03:39,740 --> 01:03:40,740
+un dos años atrás,
+
+1349
+01:03:40,740 --> 01:03:41,740
+que...
+
+1350
+01:03:41,740 --> 01:03:43,740
+una algo que decía que era una aplicación que reconocía
+
+1351
+01:03:43,740 --> 01:03:44,740
+a partir del medio de ortines,
+
+1352
+01:03:44,740 --> 01:03:45,740
+eh...
+
+1353
+01:03:45,740 --> 01:03:46,740
+el lugar es...
+
+1354
+01:03:46,740 --> 01:03:47,740
+y bueno...
+
+1355
+01:03:47,740 --> 01:03:48,740
+un lugar es y...
+
+1356
+01:03:48,740 --> 01:03:50,740
+cuando arma las citas...
+
+1357
+01:03:50,740 --> 01:03:51,740
+eh...
+
+1358
+01:03:51,740 --> 01:03:52,740
+cuando va a partir de un correo,
+
+1359
+01:03:52,740 --> 01:03:53,740
+te lo voy a tener calendarios.
+
+1360
+01:03:53,740 --> 01:03:55,740
+Ahí lo que está haciendo es reconocimiento de tiades.
+
+1361
+01:03:55,740 --> 01:03:57,740
+Está reconociendo que dice,
+
+1362
+01:03:57,740 --> 01:03:58,740
+el jueve de 23,
+
+1363
+01:03:58,740 --> 01:03:59,740
+se en la contalle,
+
+1364
+01:03:59,740 --> 01:04:00,740
+y lo está viendo,
+
+1365
+01:04:00,740 --> 01:04:02,740
+está haciendo que esificación secuencial,
+
+1366
+01:04:02,740 --> 01:04:03,740
+pero...
+
+1367
+01:04:03,740 --> 01:04:04,740
+eso es una cosa que en...
+
+1368
+01:04:04,740 --> 01:04:05,740
+en la cabeza,
+
+1369
+01:04:05,740 --> 01:04:06,740
+están como hace como 10 años,
+
+1370
+01:04:06,740 --> 01:04:07,740
+digamos,
+
+1371
+01:04:07,740 --> 01:04:08,740
+los conjuntos ahora no fíjlen,
+
+1372
+01:04:08,740 --> 01:04:09,740
+como dicen,
+
+1373
+01:04:09,740 --> 01:04:10,740
+recién están empezando
+
+1374
+01:04:10,740 --> 01:04:11,740
+como entrar ese tipo de...
+
+1375
+01:04:11,740 --> 01:04:12,740
+y...
+
+1376
+01:04:12,740 --> 01:04:13,740
+hay cosas que todavía está
+
+1377
+01:04:13,740 --> 01:04:14,740
+por ver,
+
+1378
+01:04:14,740 --> 01:04:15,740
+se como se van a incorporar,
+
+1379
+01:04:15,740 --> 01:04:16,740
+que son...
+
+1380
+01:04:16,740 --> 01:04:17,740
+las que vamos a ver de haber en elante,
+
+1381
+01:04:17,740 --> 01:04:18,740
+que son en Parcin,
+
+1382
+01:04:18,740 --> 01:04:20,740
+este...
+
+1383
+01:04:20,740 --> 01:04:22,740
+pues se analicin más complejo,
+
+1384
+01:04:22,740 --> 01:04:24,740
+ni que hablar de analicisemántico,
+
+1385
+01:04:24,740 --> 01:04:26,740
+más allá de las semánticas palabras,
+
+1386
+01:04:26,740 --> 01:04:28,740
+son cosas que voy a ver viendo,
+
+1387
+01:04:28,740 --> 01:04:29,740
+pues...
+
+1388
+01:04:29,740 --> 01:04:30,740
+o sea,
+
+1389
+01:04:30,740 --> 01:04:32,740
+hay mucho todavía para mejorar
+
+1390
+01:04:32,740 --> 01:04:33,740
+y en la calle también,
+
+1391
+01:04:33,740 --> 01:04:34,740
+porque...
+
+1392
+01:04:34,740 --> 01:04:36,740
+no,
+
+1393
+01:04:36,740 --> 01:04:37,740
+no,
+
+1394
+01:04:37,740 --> 01:04:38,740
+no,
+
+1395
+01:04:38,740 --> 01:04:39,740
+no,
+
+1396
+01:04:39,740 --> 01:04:40,740
+no,
+
+1397
+01:04:40,740 --> 01:04:41,740
+no,
+
+1398
+01:04:41,740 --> 01:04:42,740
+no,
+
+1399
+01:04:42,740 --> 01:04:43,740
+no,
+
+1400
+01:04:43,740 --> 01:04:44,740
+no,
+
+1401
+01:04:44,740 --> 01:04:45,740
+no,
+
+1402
+01:04:45,740 --> 01:04:46,740
+no,
+
+1403
+01:04:46,740 --> 01:04:47,740
+no,
+
+1404
+01:04:47,740 --> 01:04:49,740
+no,
+
+1405
+01:04:49,740 --> 01:04:50,740
+no,
+
+1406
+01:04:50,740 --> 01:04:51,740
+no,
+
+1407
+01:04:51,740 --> 01:04:53,740
+no,
+
+1408
+01:04:54,740 --> 01:04:55,740
+que han de la vuelta ahí,
+
+1409
+01:04:55,740 --> 01:04:56,740
+bueno,
+
+1410
+01:04:56,740 --> 01:04:58,740
+y que con esto se va a hacer un montón de cosas.
+
+1411
+01:04:59,740 --> 01:05:00,740
+Bueno,
+
+1412
+01:05:00,740 --> 01:05:02,740
+la sé que viene ahora en amo con...
+
+1413
+01:05:02,740 --> 01:05:03,740
+eh, Parcin,
+
+1414
+01:05:03,740 --> 01:05:04,740
+sí.
+
+1415
+01:05:04,740 --> 01:05:06,740
+Gracias.
+

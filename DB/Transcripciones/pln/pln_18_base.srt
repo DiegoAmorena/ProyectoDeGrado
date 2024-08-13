@@ -1,3008 +1,2258 @@
-1
-00:00:00,000 --> 00:00:20,760
+WEBVTT
+
+00:00.000 --> 00:20.760
 La clase de hoy y la clase que viene, vamos a dar el tema de traducción automática.
 
-2
-00:00:20,760 --> 00:00:28,880
+00:20.760 --> 00:28.880
 Y bueno, vamos a arrancar. Por esto que se conoce como la nota de Weber,
 
-3
-00:00:28,880 --> 00:00:34,480
+00:28.880 --> 00:34.480
 o el memorando de Weber, Warren Weber era un matemático norteamericano de primera
 
-4
-00:00:34,480 --> 00:00:38,560
+00:34.480 --> 00:38.560
 mitad de siglo XX. Y el tipo trabajó durante la guerra, especialmente en cosas de
 
-5
-00:00:38,560 --> 00:00:42,760
+00:38.560 --> 00:42.760
 criptografía, en análisis estadístico, de códigos, etcétera. Entonces en un momento
 
-6
-00:00:42,760 --> 00:00:47,920
+00:42.760 --> 00:47.920
 dijo lo siguiente, dijo, es muy tentador decir que un libro escrito en chino, es simplemente un libro
 
-7
-00:00:47,920 --> 00:00:52,560
+00:47.920 --> 00:52.560
 escrito en inglés que ha sido codificado en el código chino. Si tenemos métodos útiles para
 
-8
-00:00:52,560 --> 00:00:56,280
+00:52.560 --> 00:56.280
 resolver casi cualquier problema criptográfico, no será que con la interpretación apropiada,
 
-9
-00:00:56,280 --> 00:01:03,680
+00:56.280 --> 01:03.680
 ya tendríamos métodos útiles para la traducción. El opinado, digamos, en este memorándum,
 
-10
-00:01:03,680 --> 00:01:10,320
+01:03.680 --> 01:10.320
 que los métodos que se utilizan para romper código criptográfico, que son métodos estadísticos,
 
-11
-00:01:10,320 --> 00:01:14,960
+01:10.320 --> 01:14.960
 se podían aplicar al problema de la traducción automática. Y bueno, esto introduce
 
-12
-00:01:14,960 --> 00:01:19,520
+01:14.960 --> 01:19.520
 algunas ideas clave como que puede existir un mapeo automático entre un lenguaje y otro,
 
-13
-00:01:19,520 --> 00:01:25,440
+01:19.520 --> 01:25.440
 y que codificar, de codificar en un lenguaje de sanálogo, a codificar, de codificar en
 
-14
-00:01:25,440 --> 00:01:33,400
+01:25.440 --> 01:33.400
 una ecorismo criptográfico. Y bueno, el tiro, esa idea es 1949, tomó como 50 años para que
 
-15
-00:01:33,400 --> 00:01:39,680
+01:33.400 --> 01:39.680
 esa idea madurar, digamos, y después de 50 años los métodos más utilizados, hoy en día son
 
-16
-00:01:39,680 --> 00:01:44,800
+01:39.680 --> 01:44.800
 métodos estadísticos que se basan un poco en estos principios. Pero claro, en esa época era
 
-17
-00:01:44,800 --> 00:01:51,360
+01:44.800 --> 01:51.360
 como muy difícil lugar que era lo que iba a ocurrir. Entonces, bueno, vamos a ver un poco esta
 
-18
-00:01:51,360 --> 00:01:55,520
+01:51.360 --> 01:55.520
 la agenda de lo que vamos a mirar. Vamos a llegarnos a menos hasta la mitad hoy y después la clase
 
-19
-00:01:55,520 --> 00:02:01,120
+01:55.520 --> 02:01.120
 siguiente. Y empecemos con un poco de historia de lo que es la traducción automática. Esto empezó
 
-20
-00:02:01,120 --> 00:02:06,120
+02:01.120 --> 02:06.120
 como muchas otras tecnologías, como una tecnología militar, con fines militares. Inicialmente era
 
-21
-00:02:06,120 --> 00:02:12,200
+02:06.120 --> 02:12.200
 durante la Guerra Fría, era resultado de interés traducir rápidamente y abajo costa traducir
 
-22
-00:02:12,200 --> 00:02:16,840
+02:12.200 --> 02:16.840
 entre el ruso y el inglés, digamos, los norteamericanos les convenía poder traducir entre el
 
-23
-00:02:16,840 --> 00:02:21,160
+02:16.840 --> 02:21.160
 inglés y el ruso. Y bueno, en aquella época se imaginan lo que era los inicios de la computación,
 
-24
-00:02:21,160 --> 00:02:25,480
+02:21.160 --> 02:25.480
 las computadoras serán caras, en las lentas, no tenía mucho poderos de computos, pero igual había
 
-25
-00:02:25,480 --> 00:02:28,840
+02:25.480 --> 02:28.840
 como mucho optimismo, de que en poco tiempo se iba a poder resolver los problemas y vamos a tener
 
-26
-00:02:28,840 --> 00:02:35,040
+02:28.840 --> 02:35.040
 sistemas que iban a traducir barbaros. Y bueno, era más o menos la época de desarrollo de la
 
-27
-00:02:35,040 --> 00:02:39,640
+02:35.040 --> 02:39.640
 lingüística computacional, inspirado un poco en las teorías de Chomsky, estaba la idea que se
 
-28
-00:02:39,640 --> 00:02:44,480
+02:39.640 --> 02:44.480
 podía escribir reglas para todo y que a partir de eso se podría llegar a hacer cosas muy muy buenas,
 
-29
-00:02:44,480 --> 00:02:51,060
+02:44.480 --> 02:51.060
 es particular para la traducción. Hasta que en 1964 pareció el reporte Alpac,
 
-30
-00:02:51,060 --> 00:02:56,240
+02:51.060 --> 02:56.240
 Alpac era un comité que estaba estudiando, cuáles eran los avances en ingüística computacional,
 
-31
-00:02:56,240 --> 00:03:01,720
+02:56.240 --> 03:01.720
 porque se estaba poniendo mucha plata en muchas esas cosas. Y ellos demostraron escepticos acerca de
 
-32
-00:03:01,720 --> 00:03:05,720
+03:01.720 --> 03:05.720
 la traducción automática, acerca de los logros que se habían logrado después de todos esos años
 
-33
-00:03:05,720 --> 00:03:11,200
+03:05.720 --> 03:11.200
 de meter plata. Y decía bueno, pero se puso mucho dinero, pasó en muchos años, pero todavía
 
-34
-00:03:11,200 --> 00:03:16,000
+03:11.200 --> 03:16.000
 los humanos lo hacen más barato, con mayor precisión, más rápido, entonces como que para que estamos
 
-35
-00:03:16,000 --> 00:03:20,960
+03:16.000 --> 03:20.960
 gastando en esto. Como resultado de eso, un reporte de fondos, especialmente en Estados Unidos,
 
-36
-00:03:20,960 --> 00:03:24,560
+03:20.960 --> 03:24.560
 para todo lo que la traducción automática y esto fue parte de lo que se conoció como el
 
-37
-00:03:24,560 --> 00:03:29,400
+03:24.560 --> 03:29.400
 invierno de la inteligencia artificial, que un montón de proyectos de inteligencia artificial también
 
-38
-00:03:29,400 --> 00:03:34,400
+03:29.400 --> 03:34.400
 no teníamos el resultado, entonces se paró la financiación que había para todo eso durante unos
 
-39
-00:03:34,440 --> 00:03:39,240
+03:34.440 --> 03:39.240
 cuantos años, entonces se tuvo desarrollado unas cuantas cosas durante unos cuantos años. Y bueno,
 
-40
-00:03:39,240 --> 00:03:46,880
+03:39.240 --> 03:46.880
 después empezaron a resurgir de apoco, pero después de esto, digamos, en los 70 y hasta los 90 más o menos,
 
-41
-00:03:46,880 --> 00:03:51,240
+03:46.880 --> 03:51.240
 eso le hubo que la investigación se frenar un poco en Estados Unidos, pero empezar a aparecer en
 
-42
-00:03:51,240 --> 00:03:56,600
+03:51.240 --> 03:56.600
 otros lados del mundo, como por ejemplo en Europa o en Japón. Y ahí empezó ya con filas bélicos,
 
-43
-00:03:56,600 --> 00:04:02,480
+03:56.600 --> 04:02.480
 sino más bien con fines comerciales, entonces había necesidad de tener traducciones o por lo menos
 
-44
-00:04:02,480 --> 00:04:06,520
+04:02.480 --> 04:06.520
 dar soporte a los traductores humanos con algunas traducciones, aunque no estuvieran de todo bien,
 
-45
-00:04:07,800 --> 00:04:11,840
+04:07.800 --> 04:11.840
 pero bueno, dar algunas traducciones de inicio para que los traductores puedan, los traductores humanos
 
-46
-00:04:11,840 --> 00:04:16,040
+04:11.840 --> 04:16.040
 puedan continuar, además las computadoras empezaron a bajar de precio, tener mayor hogar de computo,
 
-47
-00:04:16,040 --> 00:04:20,000
+04:16.040 --> 04:20.000
 y esta fue como la era de oro de los sistemas de traducción basados en reglas,
 
-48
-00:04:21,720 --> 00:04:25,920
+04:21.720 --> 04:25.920
 digamos acá hay unos ejemplos, sistemas distranques, todavía se desarrolla aunque ya no está completamente
 
-49
-00:04:25,920 --> 00:04:33,080
+04:25.920 --> 04:33.080
 basado en reglas, y bueno, hay sistemas que se realizaron en Japón y en Europa, y bueno,
 
-50
-00:04:33,080 --> 00:04:39,560
+04:33.080 --> 04:39.560
 o sea, estos sistemas tenían fines comerciales y no tanto fines militares, pero bueno,
 
-51
-00:04:39,560 --> 00:04:44,800
+04:39.560 --> 04:44.800
 fines de los 90 y después de 2000, en adelante empezaron a dejarse de usar un poco los sistemas
 
-52
-00:04:44,800 --> 00:04:49,800
+04:44.800 --> 04:49.800
 basados en reglas, porque empezó a haber mayor poder de computo y mayor cantidad de datos disponibles,
 
-53
-00:04:50,360 --> 00:04:56,000
+04:50.360 --> 04:56.000
 especialmente con la aparición de internet, empezaron a haber muchísimos datos de texto disponibles,
 
-54
-00:04:56,000 --> 00:05:01,400
+04:56.000 --> 05:01.400
 y eso permitía construir buenos modelos estadísticos que podrían explotar las regularidades
 
-55
-00:05:01,400 --> 00:05:05,360
+05:01.400 --> 05:05.360
 de los idiomas, entonces aparecieron distintos tipos de modelos estadísticos, los primeros,
 
-56
-00:05:05,360 --> 00:05:08,800
+05:05.360 --> 05:08.800
 los que se llamaron traducciones automáticas estadísticas, que es la otra traducción basada en
 
-57
-00:05:08,800 --> 00:05:14,120
+05:08.800 --> 05:14.120
 ejemplos, y aparecieron las primeras aplicaciones comerciales que funcionaban bien, que utilizaban
 
-58
-00:05:14,120 --> 00:05:17,880
+05:14.120 --> 05:17.880
 modelos estadísticos, la primera fue el English Weber, y después los traductores que más conocemos
 
-59
-00:05:17,880 --> 00:05:22,680
+05:17.880 --> 05:22.680
 hoy en día el Bing, translate de Microsoft, y bueno, el Google translate, que probablemente los
 
-60
-00:05:22,680 --> 00:05:27,440
+05:22.680 --> 05:27.440
 lo conozcan y lo hayan usado en algún momento, y son traductores que la verdad que hoy en día se
 
-61
-00:05:27,440 --> 00:05:33,560
+05:27.440 --> 05:33.560
 puede decir que funcionan bastante bien, entonces bueno, los métodos estadísticos empezaron subhum al
 
-62
-00:05:33,560 --> 00:05:40,360
+05:33.560 --> 05:40.360
 alrededor del año 2000 y siguen siendo el estado del arte, pero bueno, primero vamos a ver un poco de
 
-63
-00:05:40,360 --> 00:05:44,840
+05:40.360 --> 05:44.840
 lo que son los sistemas basados en reglas, que eran estos primeros sistemas que mencionamos antes,
 
-64
-00:05:45,560 --> 00:05:53,840
+05:45.560 --> 05:53.840
 en 1968 un investigador de traducción automática, se llamaba Bernard Boquah, y son relevamiento de todos
 
-65
-00:05:53,840 --> 00:05:59,840
+05:53.840 --> 05:59.840
 los sistemas que se habían construido, más o menos por la época, y los clasificó todos dentro
 
-66
-00:05:59,840 --> 00:06:04,160
+05:59.840 --> 06:04.160
 de este diagrama, el dibujo un triángulo que ahora se llama el triángulo de Boquah, y bueno,
 
-67
-00:06:04,160 --> 00:06:07,920
+06:04.160 --> 06:07.920
 en este triángulo se ubican los distintos tipos de sistemas de traducción basados en reglas,
 
-68
-00:06:07,920 --> 00:06:13,920
+06:07.920 --> 06:13.920
 se ponen como escalones dentro de este triángulo, y los lados del triángulo tienen como
 
-69
-00:06:13,920 --> 00:06:17,920
+06:13.920 --> 06:17.920
 distintas interpretaciones, el lado izquierdo, si yo voy subiendo por este lado, en realidad lo que
 
-70
-00:06:17,920 --> 00:06:23,320
+06:17.920 --> 06:23.320
 aumenta es la cantidad o el esfuerzo de análisis que tengo que hacer de lenguaje origen, yo siempre quiero
 
-71
-00:06:23,320 --> 00:06:27,800
+06:23.320 --> 06:27.800
 traducir de lenguaje origen en el lenguaje destino, bueno, entonces de este lado aumenta el esfuerzo
 
-72
-00:06:27,800 --> 00:06:32,040
+06:27.800 --> 06:32.040
 de traducción en el lenguaje origen, y si voy bajando del lado derecho aumenta, bueno,
 
-73
-00:06:32,040 --> 00:06:35,800
+06:32.040 --> 06:35.800
 si voy subiendo del lado derecho quiero decir, aumenta el esfuerzo de generación en el lenguaje
 
-74
-00:06:35,800 --> 00:06:43,560
+06:35.800 --> 06:43.560
 destino, entonces ¿qué quiere decir esto? Yo ubico distintos sistemas de traducción, la
 
-75
-00:06:43,560 --> 00:06:47,280
+06:43.560 --> 06:47.280
 traducción directa es simplemente buscar en el diccionario de las palabras y traducir
 
-76
-00:06:47,280 --> 00:06:52,800
+06:47.280 --> 06:52.800
 palabra palabra con poca información más, entonces eso casi no necesitan ningún tipo de análisis y
 
-77
-00:06:52,800 --> 00:06:58,520
+06:52.800 --> 06:58.520
 casi no necesitas generación, pero para que son debían, yo necesito ponerle muchas ganas a las
 
-78
-00:06:58,520 --> 00:07:02,480
+06:58.520 --> 07:02.480
 reglas, o sea, las reglas de traducción deben ser muy buenas y tienen que tomar en cuenta
 
-79
-00:07:02,480 --> 00:07:07,040
+07:02.480 --> 07:07.040
 muchos casos para que esa traducción llegue a ser buena, entonces es como que la flecha de la
 
-80
-00:07:07,040 --> 00:07:11,040
+07:07.040 --> 07:11.040
 transferencia, la flecha de la traducción es mucho más larga, en cambio, si yo hago un poco de
 
-81
-00:07:11,120 --> 00:07:16,080
+07:11.120 --> 07:16.080
 análisis, por ejemplo, llevo hasta al nivel de análisis intactico, tengo un parcer, puedo escribir
 
-82
-00:07:16,080 --> 00:07:20,440
+07:16.080 --> 07:20.440
 otro tipo de reglas que pueden ser un poco más expresivos, me resulta un poco más fácil y después,
 
-83
-00:07:20,440 --> 00:07:26,040
+07:20.440 --> 07:26.040
 si tengo un generador, puedo llegar a traducir, entonces si sigo subiendo de vuelta, voy a necesitar
 
-84
-00:07:26,040 --> 00:07:29,880
+07:26.040 --> 07:29.880
 mayor esfuerzo de análisis de generación, pero las reglas pueden ser más expresivas y más fáciles
 
-85
-00:07:29,880 --> 00:07:35,840
+07:29.880 --> 07:35.840
 de escribir y probablemente la traducción sea mejor, hasta que si llegamos al lo articel triángulo,
 
-86
-00:07:35,840 --> 00:07:41,080
+07:35.840 --> 07:41.080
 llegamos a la interlingua, que es una especie de noción en la cual no necesito ningún tipo
 
-87
-00:07:41,080 --> 00:07:46,520
+07:41.080 --> 07:46.520
 de transferencia, vamos a dar un poco dentro de un rato de que se trata eso, pero bueno,
 
-88
-00:07:46,520 --> 00:07:51,320
+07:46.520 --> 07:51.320
 empecemos a ver los distintos niveles de este triángulo de bocua, el demás abajo era la traducción
 
-89
-00:07:51,320 --> 00:07:56,760
+07:51.320 --> 07:56.760
 directa, es el enfoque más simple, lo único necesito para este enfoque es un diccionario de
 
-90
-00:07:56,760 --> 00:08:01,720
+07:56.760 --> 08:01.720
 lingüe, yo quiero traducir entre dos idiomas, si necesito un diccionario que tenga la correspondencia
 
-91
-00:08:01,720 --> 00:08:05,760
+08:01.720 --> 08:05.760
 entre palabras de un idioma y palabras del otro, y lo que voy a hacer es traducir palabra
 
-92
-00:08:05,760 --> 00:08:11,200
+08:05.760 --> 08:11.200
 palabra, o sea, puedo agregarle alguna cosa extra, como por ejemplo, algún reordenamiento local,
 
-93
-00:08:11,200 --> 00:08:15,760
+08:11.200 --> 08:15.760
 yo que es para traducir entre español inglés, yo diría que en español el nombre se siga el
 
-94
-00:08:15,760 --> 00:08:18,960
+08:15.760 --> 08:18.960
 adjetivo y en inglés se en realidad los han arreves, pone el adjetivo seguido el nombre,
 
-95
-00:08:18,960 --> 00:08:25,080
+08:18.960 --> 08:25.080
 entonces ese tipo de reglas simples se las puedo agregar al sistema, y bueno, el sistema
 
-96
-00:08:25,080 --> 00:08:29,220
+08:25.080 --> 08:29.220
 funcionaría un poco así, yo tengo una operación de entrada en el idioma origen, Mary
 
-97
-00:08:29,220 --> 00:08:35,500
+08:29.220 --> 08:35.500
 Tiden Slap de Green Witch, le paso un analisador morfológico bastante de superficie, que no hace
 
-98
-00:08:35,500 --> 00:08:39,740
+08:35.500 --> 08:39.740
 mucho en realidad, simplemente me dice que esto era el barbo du, en pasado y seguido por un
 
-99
-00:08:39,740 --> 00:08:45,060
+08:39.740 --> 08:45.060
 not, y bueno, el resto de los tokens sigue en igual, y acá viene la parte de diccionario,
 
-100
-00:08:45,060 --> 00:08:48,660
+08:45.060 --> 08:48.660
 digamos, lo siguiente que tengo que hacer es buscar en mi diccionario cada una de las palabras
 
-101
-00:08:48,660 --> 00:08:53,100
+08:48.660 --> 08:53.100
 y poner la palabra correspondiente del otro lado, entonces Mary queda María, duve en pasado
 
-102
-00:08:53,100 --> 00:08:58,140
+08:53.100 --> 08:58.140
 como en español no se usa el du, usamos simplemente el marcador de pasado, not es no, Slap es
 
-103
-00:08:58,140 --> 00:09:05,420
+08:58.140 --> 09:05.420
 dar una ofetada de Slap Green, es verde, Witch es Bruja, con el diccionario hoy poniendo
 
-104
-00:09:05,420 --> 00:09:11,380
+09:05.420 --> 09:11.380
 todas las traducciones, y después puedo usar mis reglas de ordenamiento local, de ordenamiento
 
-105
-00:09:11,380 --> 00:09:16,460
+09:11.380 --> 09:16.460
 simple como por ejemplo que el adjetivo seguido en nombre en inglés, en realidad en español
 
-106
-00:09:16,460 --> 00:09:19,900
+09:16.460 --> 09:19.900
 se corresponde con nombres seguido adjetivo, entonces verdad de Bruja lo cambio por Bruja
 
-107
-00:09:19,900 --> 00:09:23,700
+09:19.900 --> 09:23.700
 verde, acá hay otro ordenamiento, digamos, donde tengo una marca de pasado y se lo paso
 
-108
-00:09:23,700 --> 00:09:29,220
+09:23.700 --> 09:29.220
 para adelante a lo largo, y finalmente lo que hago es una pequeña generación morfológica
 
-109
-00:09:29,220 --> 00:09:35,180
+09:29.220 --> 09:35.180
 con estas marcas y digo bueno, este dar en pasado se transforma en dio, entonces me queda
 
-110
-00:09:35,180 --> 00:09:41,340
+09:35.180 --> 09:41.340
 María no dio una ofetada a la Bruja verde, así que partí de el texto en el idioma
 
-111
-00:09:41,340 --> 00:09:46,300
+09:41.340 --> 09:46.300
 Rige, Mary did and Slap de Green Witch y llegue a una oración en el idioma destino María
 
-112
-00:09:46,300 --> 00:09:49,900
+09:46.300 --> 09:49.900
 no dio una ofetada a la Bruja verde, que parece estar bastante bien digamos, bastante
 
-113
-00:09:49,900 --> 00:09:54,380
+09:49.900 --> 09:54.380
 bien la traducción, entonces así es como funcionaría un poco un sistema de traducción
 
-114
-00:09:54,380 --> 00:09:59,260
+09:54.380 --> 09:59.260
 directa, como les parece que funcionan estos sistemas en la práctica, digamos que también
 
-115
-00:09:59,260 --> 00:10:03,900
+09:59.260 --> 10:03.900
 se comportan en la práctica este tipo de sistemas, pues acá vimos un ejemplo que
 
-116
-00:10:03,900 --> 00:10:16,300
+10:03.900 --> 10:16.300
 quedan bastante bien digamos, pero no sé qué, claro, y hay otro problema más, y es
 
-117
-00:10:17,300 --> 00:10:21,540
+10:17.300 --> 10:21.540
 lo que, que no tenga todas las palabras, pero además que palabras que se pueden traducir
 
-118
-00:10:21,540 --> 00:10:27,100
+10:21.540 --> 10:27.100
 de más de una manera, entonces necesitas saber qué palabras tenés que usar, entonces bueno,
 
-119
-00:10:28,300 --> 00:10:33,140
+10:28.300 --> 10:33.140
 la web está llena de ejemplos de lo que puede salir más y yo utilizo un sistema de traducción
 
-120
-00:10:33,140 --> 00:10:38,780
+10:33.140 --> 10:38.780
 directa como este, entonces lo que estábamos viendo recién era los sistemas de traducción directa,
 
-121
-00:10:38,780 --> 00:10:44,580
+10:38.780 --> 10:44.580
 vamos a subir un poco en la complejidad de los sistemas y llegar a la transferencia sintáctica,
 
-122
-00:10:45,140 --> 00:10:49,620
+10:45.140 --> 10:49.620
 entonces para la transferencia sintáctica, yo lo que voy a necesitar primero es tener un
 
-123
-00:10:49,620 --> 00:10:55,220
+10:49.620 --> 10:55.220
 parcer de lenguaje origen que me lleva a un análisis sintáctico y además voy a necesitar un
 
-124
-00:10:55,220 --> 00:11:00,380
+10:55.220 --> 11:00.380
 generador, lenguaje destino que agarra, un algo sintáctico de lenguaje destino y genera una
 
-125
-00:11:00,380 --> 00:11:06,340
+11:00.380 --> 11:06.340
 oración, entonces yo lo que puedo hacer es escribir reglas que transformar un árbol en el otro
 
-126
-00:11:06,340 --> 00:11:10,900
+11:06.340 --> 11:10.900
 y esas reglas son un poco más fáciles digamos que lo que necesitaría para un sistema de traducción
 
-127
-00:11:10,900 --> 00:11:14,260
+11:10.900 --> 11:14.260
 directa, entonces para el inglés, por ejemplo para todo el siguiente del inglés y el español,
 
-128
-00:11:14,260 --> 00:11:18,820
+11:14.260 --> 11:18.820
 yo diría que si tengo un nominal que es un adjetivo nombre, un adjetivo en un nombre en inglés,
 
-129
-00:11:18,820 --> 00:11:25,260
+11:18.820 --> 11:25.260
 lo transformaría en un nombre, seguí un adjetivo en español y la reglas escribiría algo así
 
-130
-00:11:25,260 --> 00:11:29,260
+11:25.260 --> 11:29.260
 diría, tengo nominal adjetivo nombre, entonces lo cambio por nominal nombre adjetivo,
 
-131
-00:11:31,660 --> 00:11:37,460
+11:31.660 --> 11:37.460
 entonces ahora que sabemos cómo funciona esto, tratemos de hacer el ejemplo en japonés,
 
-132
-00:11:37,460 --> 00:11:41,860
+11:37.460 --> 11:41.860
 digamos cómo serían las reglas para transformar el árbol en inglés de Geador, se le dicen en
 
-133
-00:11:41,860 --> 00:11:48,460
+11:41.860 --> 11:48.460
 tu music, a japonés, careja, ongaku, wokiku, no gada y suki de su, donde está, tenemos la
 
-134
-00:11:48,460 --> 00:11:52,940
+11:48.460 --> 11:52.940
 correspondencia de cada una de las palabras, pero claro los árboles son un poco distintos,
 
-135
-00:11:52,940 --> 00:12:00,500
+11:52.940 --> 12:00.500
 el inglés y el español se caracterizan por ser lenguajes de tipo, no sé si esto lo hemos visto
 
-136
-00:12:00,500 --> 00:12:05,540
+12:00.500 --> 12:05.540
 ya en el curso, pero son lenguajes de tipo SBO, que significa que habitualmente yo solo escribir
 
-137
-00:12:05,540 --> 00:12:10,420
+12:05.540 --> 12:10.420
 un sujeto se dio un verbo seguido de un objeto, el japonés en cambio es un lenguaje de tipo SBOB
 
-138
-00:12:10,420 --> 00:12:15,540
+12:10.420 --> 12:15.540
 porque habitualmente se escribió el sujeto, seguido del objeto, seguido del barbol, hay muchos lenguajes
 
-139
-00:12:15,540 --> 00:12:21,980
+12:15.540 --> 12:21.980
 que pertenecen a esta otra categoría, entonces bueno, queremos escribir reglas de transferencia
 
-140
-00:12:21,980 --> 00:12:26,700
+12:21.980 --> 12:26.700
 para transformar este árbol en aquel otro árbol, como escribiríamos esas reglas, que les parece,
 
-141
-00:12:29,460 --> 00:12:32,220
+12:29.460 --> 12:32.220
 que reglas utilizaría yo para transformar un árbol en el otro,
 
-142
-00:12:35,540 --> 00:12:55,300
+12:35.540 --> 12:55.300
 ahí está, una de esas, en inglés yo escribo, una fraseróbalo, un grupo verbal como un verbo seguido de un grupo
 
-143
-00:12:55,300 --> 00:13:07,500
+12:55.300 --> 13:07.500
 proporcional, esta es la que decías, y la cambio por que otra cosa, la cambio por un grupo
 
-144
-00:13:07,500 --> 00:13:16,540
+13:07.500 --> 13:16.540
 proporcional que sigue un verbo, esa es una, que otra regla tendría que agregar, cuál,
 
-145
-00:13:16,540 --> 00:13:22,020
+13:16.540 --> 13:22.020
 la elaboración, que tiene la elaboración, la elaboración según esto en inglés es un pronombre
 
-146
-00:13:22,740 --> 00:13:31,700
+13:22.740 --> 13:31.700
 seguido de un verbo, seguido de un grupo verbal, por qué tendría a cambiarlo, ahora en
 
-147
-00:13:31,700 --> 00:13:39,140
+13:31.700 --> 13:39.140
 japonés la elaboración va a ser el pronombre seguido del verphrase, seguido del verbo, bien,
 
-148
-00:13:39,140 --> 00:13:47,860
+13:39.140 --> 13:47.860
 alguna otra, ahí está, el grupo preposicional que está formado por un tú, seguido un nombre,
 
-149
-00:13:47,860 --> 00:13:55,140
+13:47.860 --> 13:55.140
 eso es en inglés y en japonés que va a pasar, voy a tener un grupo proporcional que es un nombre
 
-150
-00:13:55,140 --> 00:14:01,700
+13:55.140 --> 14:01.700
 seguido de tú, bien, entonces con eso más o menos creo que tendría las reglas suficientes para
 
-151
-00:14:01,700 --> 00:14:05,740
+14:01.700 --> 14:05.740
 transformar un árbol en el otro, los sistemas de traducción, vamos a ver si está bien,
 
-152
-00:14:07,740 --> 00:14:15,220
+14:07.740 --> 14:15.220
 son los que escribimos, esta es la solución del ejercicio, los sistemas de traducción basados en
 
-153
-00:14:15,220 --> 00:14:20,380
+14:15.220 --> 14:20.380
 síntaxis, en realidad los sistemas de traducciones de reglas, en síntaxis hacen esto a alto
 
-154
-00:14:20,380 --> 00:14:24,860
+14:20.380 --> 14:24.860
 nivel, digamos, tienen montones de pared de árboles, hay gente que los analiza y escriba reglas
 
-155
-00:14:24,860 --> 00:14:30,660
+14:24.860 --> 14:30.660
 como se transforma uno en el otro, a veces las reglas son complicadas porque se pueden superponer,
 
-156
-00:14:30,660 --> 00:14:35,900
+14:30.660 --> 14:35.900
 entonces hay que definir prioridades y ese tipo de cosas, bueno, esas transferencias
 
-157
-00:14:35,900 --> 00:14:41,420
+14:35.900 --> 14:41.420
 sintácticas, si seguimos subiendo en el triángulo de bocua, llegamos a lo que es la transferencia
 
-158
-00:14:41,420 --> 00:14:46,100
+14:41.420 --> 14:46.100
 semántica, tal vez es semántica uno puede pensarla un poco como lo que habíamos en la clase
 
-159
-00:14:46,100 --> 00:14:51,180
+14:46.100 --> 14:51.180
 pasada, utilizando roles semánticos, yo tengo un etiquetador de roles semánticos, que agarra
 
-160
-00:14:51,180 --> 00:14:56,220
+14:51.180 --> 14:56.220
 la relación Juan fue a la tienda y me devuelve los roles de los constituyentes, me dice que Juan
 
-161
-00:14:56,220 --> 00:15:02,820
+14:56.220 --> 15:02.820
 es el agente y a la tienda es el objetivo o goal, digamos, es el nombre del rol, entonces yo,
 
-162
-00:15:02,820 --> 00:15:08,300
+15:02.820 --> 15:08.300
 para ciertos idiomas podrías escribir reglas más específicas, por ejemplo, en chino ocurre que
 
-163
-00:15:08,300 --> 00:15:12,740
+15:08.300 --> 15:12.740
 los sintámas propulsionales, que son de tipo objetivo, se escriben antes del largo, pero los
 
-164
-00:15:12,740 --> 00:15:17,460
+15:12.740 --> 15:17.460
 demás sintámas propulsionales escriben después, o sea, el chino es un lenguaje de tipo SBO igual que
 
-165
-00:15:17,460 --> 00:15:24,380
+15:17.460 --> 15:24.380
 el inglés o el español, pero cuando el objeto es de tipo goal lo que hacen es ponerlo antes del
 
-166
-00:15:24,380 --> 00:15:30,580
+15:24.380 --> 15:30.580
 largo, entonces yo podría escribir una regla un poco más expresiva, para este caso del chino,
 
-167
-00:15:30,580 --> 00:15:37,020
+15:30.580 --> 15:37.020
 si yo tuviera los roles semánticos, yo diría que un grupo verbal es un verbo seguido de esto,
 
-168
-00:15:37,020 --> 00:15:42,700
+15:37.020 --> 15:42.700
 esto no está tachado, sino que era la barrita que quedó arriba, es un verbo seguido de un grupo
 
-169
-00:15:42,700 --> 00:15:48,460
+15:42.700 --> 15:48.460
 proporcional de tipo goal, en chino lo cambiaría por un verbo seguido de un verbo, por un grupo
 
-170
-00:15:48,460 --> 00:15:54,700
+15:48.460 --> 15:54.700
 proporcional de tipo goal seguido de un verbo, es más costoso para generar y para parcear,
 
-171
-00:15:54,700 --> 00:15:58,340
+15:54.700 --> 15:58.340
 digamos, necesito tener más esfuerzo de parcin y más esfuerzo de generación, pero puedes
 
-172
-00:15:58,340 --> 00:16:02,100
+15:58.340 --> 16:02.100
 escribir mejores reglas que capturan ciertas particularidades de los lenguajes,
 
-173
-00:16:02,100 --> 00:16:07,740
+16:02.100 --> 16:07.740
 y si yo sigo subiendo en el triángulo llego a lo que se conoce como interlingua,
 
-174
-00:16:07,740 --> 00:16:11,980
+16:07.740 --> 16:11.980
 cuál es la gracia de interlingua, cuál es la idea, esto sirve si nosotros estamos en un
 
-175
-00:16:11,980 --> 00:16:16,820
+16:11.980 --> 16:16.820
 contexto multicultural, estamos trabajando, por ejemplo, en la ONU o en el Palamento Europeo,
 
-176
-00:16:16,820 --> 00:16:21,900
+16:16.820 --> 16:21.900
 o algo de eso donde se hablan muchos idiomas, si yo quiero mantener un montón de documentos
 
-177
-00:16:21,900 --> 00:16:26,300
+16:21.900 --> 16:26.300
 que estén en todos los idiomas a la vez, voy a necesitar para los sistemas que estuve en
 
-178
-00:16:26,300 --> 00:16:31,460
+16:26.300 --> 16:31.460
 nuestro momento, voy a necesitar tener N parsers, uno para cada idioma, N generadores,
 
-179
-00:16:31,460 --> 00:16:35,540
+16:31.460 --> 16:35.540
 también uno para cada idioma, y después para cada par de idiomas, voy a necesitar reglas
 
-180
-00:16:35,540 --> 00:16:40,140
+16:35.540 --> 16:40.140
 de transferencia, entonces voy a necesitar tener en total N por N menos 1, 7 de transferencia,
 
-181
-00:16:40,140 --> 00:16:45,780
+16:40.140 --> 16:45.780
 yo tengo 20 idiomas, voy a necesitar 380 conjuntos de reglas de transferencia, y esos
 
-182
-00:16:45,780 --> 00:16:49,380
+16:45.780 --> 16:49.380
 conjuntos de reglas de transferencia son largos, son grandes, son complejos, hay que mantener
 
-183
-00:16:49,380 --> 00:16:55,060
+16:49.380 --> 16:55.060
 los, pueden tener errores, entonces esto claramente no es cala, es como muy difícil poder mantener
 
-184
-00:16:55,060 --> 00:16:58,940
+16:55.060 --> 16:58.940
 un entorno de todos esos idiomas y poder mandar la traducción en base a reglas, entonces
 
-185
-00:16:58,940 --> 00:17:05,740
+16:58.940 --> 17:05.740
 la idea del interlingua es decir, ¿qué tal si pudiéramos parcear lo suficiente o analizar
 
-186
-00:17:05,740 --> 00:17:10,540
+17:05.740 --> 17:10.540
 lo suficiente como para llevar a una representación común, una representación que capturé el significado
 
-187
-00:17:10,540 --> 00:17:16,540
+17:10.540 --> 17:16.540
 de todos los idiomas a la vez, y además tuvieramos un generador para cada uno de los idiomas.
 
-188
-00:17:16,540 --> 00:17:20,740
+17:16.540 --> 17:20.740
 Si eso pasara, si nosotros pudiéramos capturar con una representación el significado de todos
 
-189
-00:17:20,740 --> 00:17:24,380
+17:20.740 --> 17:24.380
 los idiomas a la vez, no necesitaríamos transferencias, simplemente parceamos y llevamos
 
-190
-00:17:24,380 --> 00:17:30,180
+17:24.380 --> 17:30.180
 a esa interlingua y después generamos en el otro idioma. Esto está muy bien, digamos,
 
-191
-00:17:30,180 --> 00:17:36,460
+17:30.180 --> 17:36.460
 del punto de vista ideal, pero es muy difícil obtener la práctica. ¿Qué se podría usar
 
-192
-00:17:36,460 --> 00:17:40,380
+17:36.460 --> 17:40.380
 como representación de interlingua? ¿Qué podría hacer un candidato? Bueno, podríamos
 
-193
-00:17:40,380 --> 00:17:44,860
+17:40.380 --> 17:44.860
 usar la lógica de primer orden, que era lo que veíamos en las primeras clases de semántica,
 
-194
-00:17:44,860 --> 00:17:48,340
+17:44.860 --> 17:48.340
 como representar variaciones en la lógica de primer orden, o alguna de sus variantes
 
-195
-00:17:48,340 --> 00:17:52,300
+17:48.340 --> 17:52.300
 que da un cuenta mejor de lo que es la lógica de la lengua genatural, como las mínimos
 
-196
-00:17:52,300 --> 00:17:56,420
+17:52.300 --> 17:56.420
 con recursos semánticos o las whole semánticos. O si no, hay como parecido lo que veíamos
 
-197
-00:17:56,420 --> 00:18:01,540
+17:56.420 --> 18:01.540
 en la clase anterior de frames, construirme frames con el estado de las cosas, como por ejemplo
 
-198
-00:18:01,540 --> 00:18:05,020
+18:01.540 --> 18:05.020
 está la misma operación de hoy, Mary didn't slap the green witch, pero es crita como
 
-199
-00:18:05,020 --> 00:18:09,940
+18:05.020 --> 18:09.940
 un frame, es hay un evento de slapping, la gente es Mary, ocurre en pasado, la polaridad
 
-200
-00:18:09,940 --> 00:18:15,180
+18:09.940 --> 18:15.180
 negativa, el tema de ese evento es la bruja y la bruja de más es verde. Yo podría construir
 
-201
-00:18:15,180 --> 00:18:24,740
+18:15.180 --> 18:24.740
 este tipo de frames y usarlos como representaciones. Pero bueno, hay problema que tiene crear o
 
-202
-00:18:24,740 --> 00:18:29,180
+18:24.740 --> 18:29.180
 pensar en crear una interlingua, es que esa interlingua seguro que va a ser muy compleja
 
-203
-00:18:29,180 --> 00:18:34,380
+18:29.180 --> 18:34.380
 y seguro que va a tener que modelar las características de todos los idiomas al mismo tiempo. Y hay
 
-204
-00:18:34,380 --> 00:18:41,100
+18:34.380 --> 18:41.100
 características que son complicadas en los distintos idiomas, y algunas que ni nos imaginamos,
 
-205
-00:18:41,100 --> 00:18:46,020
+18:41.100 --> 18:46.020
 o sea, por ejemplo, en chino existen palabras distintas para decir hermano mayor y hermano
 
-206
-00:18:46,020 --> 00:18:49,420
+18:46.020 --> 18:49.420
 menor, y no hay una palabra para decir hermano. O sea, no hay una palabra que quiera decir
 
-207
-00:18:49,420 --> 00:18:54,740
+18:49.420 --> 18:54.740
 solamente hermano. En español sí, y en inglés también, en inglés puede decir brado, pero
 
-208
-00:18:54,740 --> 00:18:57,500
+18:54.740 --> 18:57.500
 en chino no, en chino tienes que elegir cuando vas a decir hermano, si es hermano mayor
 
-209
-00:18:57,500 --> 00:19:02,740
+18:57.500 --> 19:02.740
 o hermano menor. Entonces, imagínense que si yo estoy traduciendo del español al inglés
 
-210
-00:19:02,740 --> 00:19:07,820
+19:02.740 --> 19:07.820
 y estoy utilizando una interlingua, la interlingua en su parcer necesita poder distinguir en
 
-211
-00:19:07,900 --> 00:19:11,340
+19:07.900 --> 19:11.340
 algún momento, si estoy hablando de un hermano mayor o un hermano menor, porque tiene que
 
-212
-00:19:11,340 --> 00:19:15,660
+19:11.340 --> 19:15.660
 lograr la representación suficiente como para poder traducir al chino. Entonces, necesita
 
-213
-00:19:15,660 --> 00:19:18,940
+19:15.660 --> 19:18.940
 esa información y no sé dónde la va a sacar, la puedes sacar de contexto, lo puedes sacar
 
-214
-00:19:18,940 --> 00:19:23,540
+19:18.940 --> 19:23.540
 inventar de algún lado, pero en algún momento va a tener que averiguar el hermano que se
 
-215
-00:19:23,540 --> 00:19:27,780
+19:23.540 --> 19:27.780
 está hablando en español, si es un hermano mayor o menor, como para poder tener la representación,
 
-216
-00:19:27,780 --> 00:19:31,700
+19:27.780 --> 19:31.700
 y después esa información se va a perder, porque cuando baja de vuelta, al lado del inglés,
 
-217
-00:19:31,700 --> 00:19:36,300
+19:31.700 --> 19:36.300
 de vuelta vuelve a ser brada y no importa si es mayor o menor. Y esto es solamente un caso
 
-218
-00:19:36,300 --> 00:19:40,660
+19:36.300 --> 19:40.660
 de un fenómeno que ocurre en chino, pero, imagínense, los fenómenos que ocurren en el idioma
 
-219
-00:19:40,660 --> 00:19:46,740
+19:40.660 --> 19:46.740
 en todo el tiempo, digamos, y todas las pequeñas variantes que hay. Y como en realidad,
 
-220
-00:19:46,740 --> 00:19:51,100
+19:46.740 --> 19:51.100
 no es cierto que podamos traducir exactamente lo mismo conceptos, como que es muy difícil
 
-221
-00:19:51,100 --> 00:19:55,100
+19:51.100 --> 19:55.100
 encontrar conceptos que se correspondan 100% en idioma y otro. Hay una cosa que se llama
 
-222
-00:19:55,100 --> 00:19:58,620
+19:55.100 --> 19:58.620
 el principio de incertidumbre de la traducción y dice eso, que en realidad, cuando yo tengo
 
-223
-00:19:58,620 --> 00:20:02,700
+19:58.620 --> 20:02.700
 un idioma y otro, los conceptos no siempre se van a traducir 100% bien, o sea, no siempre
 
-224
-00:20:03,700 --> 00:20:07,500
+20:03.700 --> 20:07.500
 la traducción es exacta, sino que hay cierto suelopamiento y a veces se va a funcionar y a veces no.
 
-225
-00:20:10,700 --> 00:20:16,660
+20:10.700 --> 20:16.660
 Bien, pero a pesar de que es una utopía, tener un interlingo que funcione para todos los
 
-226
-00:20:16,660 --> 00:20:20,900
+20:16.660 --> 20:20.900
 lenguajes bien, este tipo de tecnología sí se utilizan para dominios más acotados, para
 
-227
-00:20:20,900 --> 00:20:25,540
+20:20.900 --> 20:25.540
 dominios pequeños, como por ejemplo, el de meteorología, yo puedo escribir perfectamente,
 
-228
-00:20:25,540 --> 00:20:29,220
+20:25.540 --> 20:29.220
 puedo construir una representación de todos los estados meteorológicos que hay, y si hay
 
-229
-00:20:29,740 --> 00:20:35,740
+20:29.740 --> 20:35.740
 lluvias y nievas, y hay granizo, la temperatura, la presión, etc. y traducirlo a las distintas
 
-230
-00:20:35,740 --> 00:20:39,860
+20:35.740 --> 20:39.860
 palabras, que son los distintos idiomas para dar cuenta de estos conceptos. Entonces, ese
 
-231
-00:20:39,860 --> 00:20:44,940
+20:39.860 --> 20:44.940
 dominio acotado es bastante bien manejable con una interlingua. Y otro ejemplo son los manuales
 
-232
-00:20:44,940 --> 00:20:50,340
+20:44.940 --> 20:50.340
 técnicos, hay empresas que, de un montón de documentación técnica, o describen las
 
-233
-00:20:50,340 --> 00:20:55,660
+20:50.340 --> 20:55.660
 apis de sus productos, etc. Y uno suele dar, cuando mira la página web, digamos que aparece como
 
-234
-00:20:56,380 --> 00:21:00,340
+20:56.380 --> 21:00.340
 con su fijo es, porque está en español, pero si se lo cambias por en, automáticamente
 
-235
-00:21:00,340 --> 00:21:03,780
+21:00.340 --> 21:03.780
 te genera otras páginas, exactamente igual, pero en inglés, y en realidad lo que hacen es
 
-236
-00:21:03,780 --> 00:21:07,520
+21:03.780 --> 21:07.520
 como mantener una representación abstracta de lo que están escribiendo y generarla en los
 
-237
-00:21:07,520 --> 00:21:14,820
+21:07.520 --> 21:14.820
 distintos idiomas. Bien, entonces, hasta ahí lo que vimos era como un paneo de lo que son
 
-238
-00:21:14,820 --> 00:21:19,460
+21:14.820 --> 21:19.460
 los distintos sistemas basados en reglas, ahora vamos a pasar a hablar de lo que es la traducción
 
-239
-00:21:19,460 --> 00:21:25,380
+21:19.460 --> 21:25.380
 estadística que es el estado del arte hoy en día, y vamos a empezar con un ejemplo, un ejemplo
 
-240
-00:21:25,380 --> 00:21:31,460
+21:25.380 --> 21:31.460
 de una frase en hebreo, que es Adonai Roy, que la traducción sería el señor a mi pastor
 
-241
-00:21:31,460 --> 00:21:38,500
+21:31.460 --> 21:38.500
 o del Lord Ismail Shepper, y esta frase, en realidad, funciona bien, porque nosotros conocemos
 
-242
-00:21:38,500 --> 00:21:42,620
+21:38.500 --> 21:42.620
 que son las ovejas, digamos, la cultura en la que surgió esta frase, conocía que eran
 
-243
-00:21:42,620 --> 00:21:46,780
+21:42.620 --> 21:46.780
 las ovejas, tenían pastores, los pastores cuidaban las ovejas, la llevaban a donde había
 
-244
-00:21:46,780 --> 00:21:53,180
+21:46.780 --> 21:53.180
 estado los mejores pastos, etc. Entonces, esta metáfora funcionaba bien, digamos, la
 
-245
-00:21:53,180 --> 00:21:57,700
+21:53.180 --> 21:57.700
 gente describía como se sentía en respecto a Dios utilizando esta metáfora. Pero
 
-246
-00:21:57,700 --> 00:22:03,740
+21:57.700 --> 22:03.740
 ¿qué tal si quisieramos expresar esta misma frase a una cultura que no conoce a las ovejas?
 
-247
-00:22:03,740 --> 00:22:09,020
+22:03.740 --> 22:09.020
 Por ejemplo, los primeros misioneros que vendrían de Europa y tendrían contacto con los
 
-248
-00:22:09,020 --> 00:22:13,420
+22:09.020 --> 22:13.420
 indígenas americanos, los indígenas americanos no conocían ovejas, entonces, ¿cómo hacemos
 
-249
-00:22:13,420 --> 00:22:20,900
+22:13.420 --> 22:20.900
 para expresarles el concepto de Adonai Roy? Una forma de expresarlo es decir, bueno,
 
-250
-00:22:20,900 --> 00:22:26,140
+22:20.900 --> 22:26.140
 adusco la metáfora, el significador de la metáfora, digo, significa el señor me cuidará,
 
-251
-00:22:26,140 --> 00:22:29,340
+22:26.140 --> 22:29.340
 que en definitiva es un poco la metáfora que quiere decir eso, aunque pierda un poco
 
-252
-00:22:29,340 --> 00:22:35,660
+22:29.340 --> 22:35.660
 de contenido, o si no, lo que lo otro que puedo hacer es tratar de ser más fiel al significado
 
-253
-00:22:35,660 --> 00:22:39,980
+22:35.660 --> 22:39.980
 original y tratar de traducirlo más literalmente, es decir, bueno, el señor será para mí como
 
-254
-00:22:39,980 --> 00:22:47,020
+22:39.980 --> 22:47.020
 un hombre que cuida de animales que tiene el pelo como algodón, que es bastante más fiel
 
-255
-00:22:47,020 --> 00:22:51,300
+22:47.020 --> 22:51.300
 al original, pero sin embargo, se entiende mucho menos, es como que te van a mirar y decir
 
-256
-00:22:51,300 --> 00:22:56,860
+22:51.300 --> 22:56.860
 lo de qué me estás hablando. Y bueno, un poco, este es el problema que hay que
 
-257
-00:22:56,860 --> 00:23:02,940
+22:56.860 --> 23:02.940
 se enfrentan los traductores humanos todos los días, o sea, es muy difícil tener las dos
 
-258
-00:23:02,940 --> 00:23:09,340
+23:02.940 --> 23:09.340
 cosas, ser fiel al original y sonar natural que suene bien en el lenguaje destino. Una traducción
 
-259
-00:23:09,340 --> 00:23:13,900
+23:09.340 --> 23:13.900
 queremos que tenga esas dos propiedades, pero es muy difícil lograrlo a la vez, entonces
 
-260
-00:23:13,900 --> 00:23:17,460
+23:13.900 --> 23:17.460
 los traductores humanos saben que esto es imposible en la práctica y lo que hacen es tratar
 
-261
-00:23:17,460 --> 00:23:22,660
+23:17.460 --> 23:22.660
 de traducir de manera de encontrar un punto intermedio en el cual, bueno, suene bastante
 
-262
-00:23:22,660 --> 00:23:30,220
+23:22.660 --> 23:30.220
 bien, pero además sea fiel al significado original. Entonces, esto significa que lo que estamos
 
-263
-00:23:30,220 --> 00:23:35,060
+23:30.220 --> 23:35.060
 tratando de hacer al traducir es que estamos tratando de maximizar dos cosas a la vez,
 
-264
-00:23:35,060 --> 00:23:40,940
+23:35.060 --> 23:40.940
 como dos medidas que queremos maximizar. Una medida es que tan fiel es mi oración traducida
 
-265
-00:23:40,940 --> 00:23:45,260
+23:40.940 --> 23:45.260
 a la oración original, a esa medida le vamos a llamar adecuación o fidelidad y en inglés
 
-266
-00:23:45,260 --> 00:23:51,460
+23:45.260 --> 23:51.460
 es adecuación fidelity of faithfulness y la otra medida es que tan natural suena la oración
 
-267
-00:23:51,460 --> 00:23:56,060
+23:51.460 --> 23:56.060
 que yo traduje en el lenguaje destino y a esa medida le voy a llamar fluidez o en inglés fluency.
 
-268
-00:23:56,060 --> 00:24:03,260
+23:56.060 --> 24:03.260
 Entonces, esta idea de que estoy tratando de maximizar dos medidas a la vez, después
 
-269
-00:24:03,260 --> 00:24:06,380
+24:03.260 --> 24:06.380
 vamos a ver que en realidad lo que vamos a tratar de maximizar es el producto de las dos medidas
 
-270
-00:24:06,380 --> 00:24:12,580
+24:06.380 --> 24:12.580
 porque eso significa maximizar ambas al mismo tiempo, es una idea que sirve para poder
 
-271
-00:24:12,580 --> 00:24:16,740
+24:12.580 --> 24:16.740
 inferir o para poder construir mecanismos para crear los traductores automáticos y también
 
-272
-00:24:16,740 --> 00:24:20,980
+24:16.740 --> 24:20.980
 mecanismos para testearlos. Y vamos a ver un poco cómo que funciona eso.
 
-273
-00:24:20,980 --> 00:24:26,140
+24:20.980 --> 24:26.140
 Yo voy a intentar traducir a partir de ahora el resto de la clase y la clase que
 
-274
-00:24:26,140 --> 00:24:30,820
+24:26.140 --> 24:30.820
 viene vamos a hablar siempre de que voy a traducir un lenguaje origen f a un lenguaje destino
 
-275
-00:24:30,820 --> 00:24:58,380
+24:30.820 --> 24:58.380
 f es el lenguaje origen y es el lenguaje destino. Eso es nombre surgen porque el paper inicial
 
-276
-00:24:58,380 --> 00:25:02,420
+24:58.380 --> 25:02.420
 donde se empezó a hablar de esta cosa de los métodos estadísticos traducía del francés
 
-277
-00:25:02,420 --> 00:25:07,020
+25:02.420 --> 25:07.020
 al inglés, entonces acolo nombre de ahí dijo bueno francés f el inglés e entonces traducimos
 
-278
-00:25:07,020 --> 00:25:13,660
+25:07.020 --> 25:13.660
 del origen al destino. Bueno, yo quiero traducir una frase del idioma f a otra frase del idioma
 
-279
-00:25:13,660 --> 00:25:20,420
+25:13.660 --> 25:20.420
 e lo que quiero tratar de encontrar es el mejor etecho que maximice a la vez la de ecuación
 
-280
-00:25:20,420 --> 00:25:24,820
+25:20.420 --> 25:24.820
 y la fluidez, o sea de todos los e posibles del lenguaje destino, quiero encontrar el que
 
-281
-00:25:24,820 --> 00:25:29,620
+25:24.820 --> 25:29.620
 maximice la fluidez de es, o sea que suene natural y además la de ecuación entre la
 
-282
-00:25:29,620 --> 00:25:37,980
+25:29.620 --> 25:37.980
 oración origen f y s e que estoy buscando. Esta fórmula así escrita de esa manera de
 
-283
-00:25:37,980 --> 00:25:41,420
+25:37.980 --> 25:41.420
 estás acordado a algo que hayamos visto ya en el curso en algún momento, les suena
 
-284
-00:25:41,420 --> 00:25:51,100
+25:41.420 --> 25:51.100
 algún lado. Entropía, sí. Valles, sí, o sea viene por ese lado, se parece al modelo
 
-285
-00:25:51,100 --> 00:25:54,140
+25:51.100 --> 25:54.140
 de valles porque esto es otra aplicación del modelo de canal ruidoso. El modelo de
 
-286
-00:25:54,140 --> 00:25:58,100
+25:54.140 --> 25:58.100
 canal ruidoso lo hayamos visto en el curso cuando vimos correcciones de errores, hace
 
-287
-00:25:58,100 --> 00:26:02,100
+25:58.100 --> 26:02.100
 ya bastante tiempo y también es una aplicación de lo que es la regla de valles.
 
-288
-00:26:02,100 --> 00:26:07,260
+26:02.100 --> 26:07.260
 Entonces, el modelo de canal ruidoso ha aplicado acá funciona de la siguiente manera. Yo
 
-289
-00:26:07,260 --> 00:26:13,180
+26:07.260 --> 26:13.180
 tengo una oración origen en el lenguaje f que es f chica que tiene m palabras y es bueno
 
-290
-00:26:13,180 --> 00:26:18,580
+26:13.180 --> 26:18.580
 f sub 1, f sub 2 hasta f sub m y quiero encontrar la mejor oración en el lenguaje destino
 
-291
-00:26:18,580 --> 00:26:25,940
+26:18.580 --> 26:25.940
 e techo que es sub 1 hasta f sub n, hasta f sub n, que maximiza y en realidad lo que quiero
 
-292
-00:26:25,940 --> 00:26:31,340
+26:25.940 --> 26:31.340
 maximizar originalmente como todos esperaríamos es decir, bueno, yo quiero encontrar la oración
 
-293
-00:26:31,340 --> 00:26:35,700
+26:31.340 --> 26:35.700
 e que maximiza la probabilidad de edad o f, digamos eso es lo que uno se lo ocurriría
 
-294
-00:26:35,700 --> 00:26:39,680
+26:35.700 --> 26:39.680
 primero, diría bueno, yo quiero estoy traduciendo la oración f, quiero encontrar la e que
 
-295
-00:26:39,680 --> 00:26:45,380
+26:39.680 --> 26:45.380
 me demáximo la probabilidad de edad o f. Bien, pero en realidad yo esto lo puedo descomponer
 
-296
-00:26:45,380 --> 00:26:49,180
+26:45.380 --> 26:49.180
 por valles, digamos, y por definición de probabilidad condicional, pues decir que la probabilidad
 
-297
-00:26:49,180 --> 00:26:54,300
+26:49.180 --> 26:54.300
 de edad o f es igual a la probabilidad de f de edad o f por la probabilidad de edad o f.
 
-298
-00:26:54,300 --> 00:27:01,340
+26:54.300 --> 27:01.340
 Y vamos a esa equivalencia directa por definición de probabilidad condicional y además como estoy
 
-299
-00:27:01,340 --> 00:27:06,700
+27:01.340 --> 27:06.700
 maximizando en e, esta f se mantiene constante, porque lo que voy variando es la e, entonces
 
-300
-00:27:06,700 --> 00:27:13,700
+27:06.700 --> 27:13.700
 la etacho, o sea maximizar sobre una constante no hace ningún cambio, entonces lo que me queda
 
-301
-00:27:13,700 --> 00:27:19,580
+27:13.700 --> 27:19.580
 el final es que yo busco un etacho que es el e que hace máximo la probabilidad de
 
-302
-00:27:19,580 --> 00:27:26,180
+27:19.580 --> 27:26.180
 f de edad o f por la probabilidad de. Y eso que tenemos escrito ahí, se parece mucho a la
 
-303
-00:27:26,180 --> 00:27:33,100
+27:26.180 --> 27:33.100
 otra ecuación que teníamos antes, digamos, se parece mucho a esta ecuación de f y fluidez
 
-304
-00:27:33,100 --> 00:27:43,180
+27:33.100 --> 27:43.180
 de e. Entonces, se conoce como la ecuación fundamental de la traducion automática estadística,
 
-305
-00:27:43,180 --> 00:27:49,740
+27:43.180 --> 27:49.740
 vamos a ver unas cuantas veces en estas dos clases, la vamos a estar refrescando y funcional
 
-306
-00:27:49,740 --> 00:27:55,060
+27:49.740 --> 27:55.060
 así de manera. Yo quiero encontrar el e techo que es el e que maximiza el producto de
 
-307
-00:27:55,060 --> 00:27:59,620
+27:55.060 --> 27:59.620
 estas dos probabilidades. La primera probabilidad pdf de edad o e es la que se encarga de medir
 
-308
-00:27:59,620 --> 00:28:03,700
+27:59.620 --> 28:03.700
 que tal la ecuación, digamos, de la frase, que tal adecuada es la frase f para la frase
 
-309
-00:28:03,700 --> 00:28:10,460
+28:03.700 --> 28:10.460
 e. La segunda probabilidad, la pdf es la que se encarga de la fluidez, que tal natural
 
-310
-00:28:10,460 --> 00:28:16,060
+28:10.460 --> 28:16.060
 suena esa frase en el lenguaje destino. Y se calculan con modelo distintos. La primera
 
-311
-00:28:16,060 --> 00:28:19,420
+28:16.060 --> 28:19.420
 se calcula con lo que se conoce como modelo de traducción y la segunda con lo que se conoce
 
-312
-00:28:19,420 --> 00:28:23,860
+28:19.420 --> 28:23.860
 como modelo de lenguaje. De hecho, los modelos del lenguaje ya lo hemos visto en el curso.
 
-313
-00:28:23,860 --> 00:28:29,540
+28:23.860 --> 28:29.540
 Vamos a dar un breve repaso de que se trataba. Bueno, ¿por qué esto es una aplicación
 
-314
-00:28:29,540 --> 00:28:34,500
+28:29.540 --> 28:34.500
 de canal ruidoso? Es una aplicación de canal ruidoso por lo siguiente. Nosotros estamos
 
-315
-00:28:34,500 --> 00:28:39,180
+28:34.500 --> 28:39.180
 tratando de traducir del lenguaje f, f, el lenguaje origen, al lenguaje e que es el lenguaje
 
-316
-00:28:39,180 --> 00:28:44,020
+28:39.180 --> 28:44.020
 destino. Y lo estamos pensando al revés. Estamos pensando como que alguien emitió los
 
-317
-00:28:44,020 --> 00:28:48,100
+28:44.020 --> 28:48.100
 sonidos de la elaboración e, la elaboración del lenguaje destino. Eso pasó a través de
 
-318
-00:28:48,100 --> 00:28:51,940
+28:48.100 --> 28:51.940
 un canal ruidoso. Y cuando llegó hasta mí, yo escuché los sonidos de la elaboración
 
-319
-00:28:51,940 --> 00:28:56,620
+28:51.940 --> 28:56.620
 f. Estoy pensando como esa especie de metáfora. Alguien emitió e pasó por un canal ruidoso
 
-320
-00:28:56,620 --> 00:29:01,100
+28:56.620 --> 29:01.100
 y llegaron los ruidos de f. Entonces, lo que yo trató de hacer como proceso de traducción
 
-321
-00:29:01,100 --> 00:29:06,140
+29:01.100 --> 29:06.140
 es encontrar cuál tiene que haber sido esa e original para que yo haya escuchado la
 
-322
-00:29:06,140 --> 00:29:14,020
+29:06.140 --> 29:14.020
 f, cuál es la e original que me da probabilidad máxima de que yo haya escuchado esta f. Y bueno,
 
-323
-00:29:14,020 --> 00:29:18,660
+29:14.020 --> 29:18.660
 por eso es una aplicación de canal ruidoso. Y bueno, la realidad es que en realidad damos
 
-324
-00:29:18,660 --> 00:29:22,940
+29:18.660 --> 29:22.940
 vuelta esta probabilidad porque nos da toda otra forma de calcularlo que no podríamos hacerlos
 
-325
-00:29:22,940 --> 00:29:28,140
+29:22.940 --> 29:28.140
 y calculamos la probabilidad directa. Es como que hay mejores herramientas para hacer eso.
 
-326
-00:29:28,140 --> 00:29:32,260
+29:28.140 --> 29:32.260
 Bueno, de vuelta, esto es la ecuación fundamental de la traducción automática estadística.
 
-327
-00:29:32,260 --> 00:29:37,580
+29:32.260 --> 29:37.580
 Y techo es el argumento que hace máximo la probabilidad de fedadoe por la probabilidad
 
-328
-00:29:37,580 --> 00:29:42,780
+29:37.580 --> 29:42.780
 de. Y para poder resolver esta ecuación necesitamos tres cosas. Necesitamos un modelo de
 
-329
-00:29:42,780 --> 00:29:50,940
+29:42.780 --> 29:50.940
 lenguaje p.d.e. que es el que se va a encargar de la fluidez. Esto se calcula mediante la técnica
 
-330
-00:29:50,940 --> 00:29:56,620
+29:50.940 --> 29:56.620
 de negramas en general. Los negramas son bastante fáciles de construir, digamos, porque yo
 
-331
-00:29:56,620 --> 00:30:04,380
+29:56.620 --> 30:04.380
 necesito texto en un solo idioma, solo en el idioma destino. p.d.e. es la componente
 
-332
-00:30:04,380 --> 00:30:08,460
+30:04.380 --> 30:08.460
 que se encarga de la adecuación y se resuelve mediante el modelo de traducción. El modelo
 
-333
-00:30:08,460 --> 00:30:12,100
+30:08.460 --> 30:12.100
 de traducción no es tan fácil de construir como el modelo de lenguaje, porque el modelo
 
-334
-00:30:12,100 --> 00:30:15,140
+30:12.100 --> 30:15.140
 de traducción voy a necesitar texto de bilíngue. De hecho, voy a necesitar un corpus
 
-335
-00:30:15,140 --> 00:30:19,940
+30:15.140 --> 30:19.940
 para el hilo que sea texto en dos idiomas que además tengan su correspondencia. Y además
 
-336
-00:30:19,940 --> 00:30:25,020
+30:19.940 --> 30:25.020
 necesito una tercer componente. Esta tercer componente se llama de codificador. Y se trata
 
-337
-00:30:25,020 --> 00:30:29,740
+30:25.020 --> 30:29.740
 de lo siguiente. Yo cuando estoy buscando, cuando estoy resolvido esta ecuación, yo veo
 
-338
-00:30:29,740 --> 00:30:34,260
+30:29.740 --> 30:34.260
 la oración F y quiero buscar la mejor E que maximizes esta ecuación. Pero en realidad
 
-339
-00:30:34,260 --> 00:30:38,340
+30:34.260 --> 30:38.340
 lo que tendría que hacer es probar con todas las oraciones E del idioma destino, todas
 
-340
-00:30:38,340 --> 00:30:44,000
+30:38.340 --> 30:44.000
 las oraciones posibles que cuantas son las oraciones del idioma destino. Son infinitas
 
-341
-00:30:44,000 --> 00:30:47,300
+30:44.000 --> 30:47.300
 oraciones posibles en el idioma destino. Entonces yo estaría probando con infinitas
 
-342
-00:30:47,300 --> 00:30:50,840
+30:47.300 --> 30:50.840
 oraciones hasta que una de ellas me dé el máximo. Obviamente esto no es un problema
 
-343
-00:30:50,840 --> 00:30:54,920
+30:50.840 --> 30:54.920
 atratable, yo no puedo probar con infinitas oraciones. Lo que necesito es un proceso
 
-344
-00:30:54,920 --> 00:30:59,860
+30:54.920 --> 30:59.860
 que me limites a cantidad de búsqueda de infinitas oraciones a algo atratable. Entonces
 
-345
-00:30:59,860 --> 00:31:05,880
+30:59.860 --> 31:05.880
 el codificador va a ser un algoritmo de búsqueda que va a agarrar la oración origen y
 
-346
-00:31:05,880 --> 00:31:11,040
+31:05.880 --> 31:11.040
 me va a devolver la cien, doscientas, mil oraciones destino, candidatas más probables que
 
-347
-00:31:11,040 --> 00:31:16,680
+31:11.040 --> 31:16.680
 alzelo curra para que yo pueda resolver y calcular esa ecuación para esas oraciones en
 
-348
-00:31:16,680 --> 00:31:21,160
+31:16.680 --> 31:21.160
 vez de para todas las posibles. Entonces lo que hace es volver este problema atratable.
 
-349
-00:31:21,160 --> 00:31:29,960
+31:21.160 --> 31:29.960
 Vamos a ver también una ecuación de codificación que se llama Binsarch. Bueno, entonces un
 
-350
-00:31:29,960 --> 00:31:33,800
+31:29.960 --> 31:33.800
 poco más sobre modelos del lenguaje. La componente pd de la ecuación era la que
 
-351
-00:31:33,800 --> 00:31:37,760
+31:33.800 --> 31:37.760
 medía las fluidez y se calculaba mediante un modelo del lenguaje. Los modelos del lenguaje
 
-352
-00:31:37,760 --> 00:31:42,200
+31:37.760 --> 31:42.200
 son relativamente fáciles de construir porque necesitamos información mono-lingue, información
 
-353
-00:31:42,200 --> 00:31:47,920
+31:42.200 --> 31:47.920
 solamente del lenguaje destino. Entonces en la web tenemos monton, toneladas de información,
 
-354
-00:31:47,920 --> 00:31:52,960
+31:47.920 --> 31:52.960
 bueno, de muchos idiomas. Entonces como sonetamos información idiomas, sacamos texto, web, noticias,
 
-355
-00:31:52,960 --> 00:32:00,360
+31:52.960 --> 32:00.360
 blogs, etcétera y compilamos un gran corpus del lenguaje destino. Los modelos que se utilizan
 
-356
-00:32:00,360 --> 00:32:03,320
+32:00.360 --> 32:03.320
 para traducción automática en general son modelos basados en enegramas que ya hemos
 
-357
-00:32:03,320 --> 00:32:09,840
+32:03.320 --> 32:09.840
 visto en el curso como funcionaban, se suele usar orden de 4 o 5, en otras tareas de pdn
 
-358
-00:32:09,840 --> 00:32:15,240
+32:09.840 --> 32:15.240
 suele usar ordenes más chicos, pero para acá da buenos resultados con 4 o 5. Y bueno,
 
-359
-00:32:15,240 --> 00:32:18,920
+32:15.240 --> 32:18.920
 el importante es tener una gran cantidad de material de entrenamiento. O sea, los mejores
 
-360
-00:32:18,920 --> 00:32:24,360
+32:18.920 --> 32:24.360
 modelos que usan Google Translate y otras empresas usan trisiones de palabras y bueno,
 
-361
-00:32:24,360 --> 00:32:29,680
+32:24.360 --> 32:29.680
 son necesitan hardware especial, especialmente diseñado para poder ir rápido y recuperar
 
-362
-00:32:29,680 --> 00:32:34,440
+32:29.680 --> 32:34.440
 la información. O si no, bueno, si estoy hablando de un dominio acotado, usar datos
 
-363
-00:32:34,440 --> 00:32:38,200
+32:34.440 --> 32:38.200
 de dominio para entrenar que también va a ser buenos resultados.
 
-364
-00:32:38,200 --> 00:32:40,560
+32:38.200 --> 32:40.560
 ¿Qué es la de la técnica?
 
-365
-00:32:40,560 --> 00:32:44,480
+32:40.560 --> 32:44.480
 Las técnicas de Moodin es cuando hay alguna enegrama que no viste lo que te va a pasar
 
-366
-00:32:44,480 --> 00:32:48,240
+32:44.480 --> 32:48.240
 es que la probabilidad es cero. Y ahí te va a dar todo cero. En realidad, las mejores
 
-367
-00:32:48,240 --> 00:32:51,560
+32:48.240 --> 32:51.560
 técnicas es muy significado, darle una buena probabilidad a eso a pesar de que nunca
 
-368
-00:32:51,560 --> 00:32:57,000
+32:51.560 --> 32:57.000
 lo yo ha visto. Se dice que las mejores mejoras, digamos, las más grandes mejoras en los
 
-369
-00:32:57,000 --> 00:33:00,480
+32:57.000 --> 33:00.480
 modelos en la traducción automática de los últimos años se han dado porque hay
 
-370
-00:33:00,480 --> 00:33:06,160
+33:00.480 --> 33:06.160
 mejores modelos de lenguaje que me dan traducciones que son más fluidas. Y bueno,
 
-371
-00:33:06,160 --> 00:33:11,240
+33:06.160 --> 33:11.240
 usualmente hay como cierta correlación o cierta inclinación hacia las fluidas.
 
-372
-00:33:11,240 --> 00:33:15,840
+33:11.240 --> 33:15.840
 La gente prefiere cuando las oraciones son zonas más naturales.
 
-373
-00:33:15,840 --> 00:33:20,560
+33:15.840 --> 33:20.560
 Acá en ejemplo, esto era sacado un sistema de traducción del chino al inglés, un sistema
 
-374
-00:33:20,560 --> 00:33:25,600
+33:20.560 --> 33:25.600
 estadístico de San Staxis, que cuando no utilizaba modelo de lenguaje tenía un
 
-375
-00:33:25,600 --> 00:33:32,280
+33:25.600 --> 33:32.280
 puntaje de 25x2 al incorporar modelo de lenguaje subió como un 20% su performance y llegó
 
-376
-00:33:32,280 --> 00:33:37,200
+33:32.280 --> 33:37.200
 a 31x2 como 6 puntos. Esos puntos corresponden a una medida que vamos a ver dentro de un
 
-377
-00:33:37,200 --> 00:33:41,080
+33:37.200 --> 33:41.080
 rato que le llama medida blue, que es una medida muy utilizada en lo que es traducción
 
-378
-00:33:41,080 --> 00:33:48,120
+33:41.080 --> 33:48.120
 estadística. La traducción automática en general, pero bueno, ahora solamente saber
 
-379
-00:33:48,120 --> 00:33:54,600
+33:48.120 --> 33:54.600
 que 6 puntos es una mejora que es muchísimo. Y como es que mejora esto, mejora haciendo
 
-380
-00:33:54,600 --> 00:33:59,000
+33:54.600 --> 33:59.000
 que las traducciones que devuelven en general sean más fluidas, son más naturales en el
 
-381
-00:33:59,000 --> 00:34:03,400
+33:59.000 --> 34:03.400
 lenguaje de estino. Y acá hay un ejemplo de traducciones de ese mismo sistema. Yo tenía
 
-382
-00:34:03,400 --> 00:34:07,040
+34:03.400 --> 34:07.040
 una traducción de referencia que era, I don't have enough money with me to buy a new
 
-383
-00:34:07,040 --> 00:34:12,100
+34:07.040 --> 34:12.100
 airplane ticket. El sistema sin el modelo de lenguaje devolvía esta traducción, de
 
-384
-00:34:12,100 --> 00:34:17,160
+34:12.100 --> 34:17.160
 decir, I don't have enough bag on me change please go a new by plane. Que no, no se entiende
 
-385
-00:34:17,160 --> 00:34:21,600
+34:17.160 --> 34:21.600
 mucho que lo que dice, no es gramatical. Pero al agregar el modelo de traducción, su
 
-386
-00:34:21,600 --> 00:34:26,280
+34:21.600 --> 34:26.280
 traducción es la siguiente, I have enough money to buy a new one by air, que suena mucho
 
-387
-00:34:26,280 --> 00:34:36,520
+34:26.280 --> 34:36.520
 mejor ¿verdad? Que les parece acerca del significado. El significado es el opuesto, digamos, acá
 
-388
-00:34:36,520 --> 00:34:39,720
+34:36.520 --> 34:39.720
 está diciendo que tiene suficiente plata para comprar uno por aire y acá dice que
 
-389
-00:34:39,720 --> 00:34:44,720
+34:39.720 --> 34:44.720
 no tiene suficiente plata para comprar un pasaje de avión. O sea, este suena muchísimo
 
-390
-00:34:44,720 --> 00:34:48,320
+34:44.720 --> 34:48.320
 mejor porque está ni siquiera gramatical, pero esta por lo menos mantenía la negación,
 
-391
-00:34:48,320 --> 00:34:53,000
+34:48.320 --> 34:53.000
 digamos, mantenía que era una oración negativa. Entonces hay que tener cuidado con esto.
 
-392
-00:34:53,000 --> 00:34:57,400
+34:53.000 --> 34:57.400
 La traducción suena mucho mejor, pero a veces podemos estar sacrificando fidelidad,
 
-393
-00:34:57,400 --> 00:35:04,760
+34:57.400 --> 35:04.760
 sacrificando adecuación de la traducción. Bien, eso es sobre modelos de lenguaje. Ahora
 
-394
-00:35:04,760 --> 00:35:12,480
+35:04.760 --> 35:12.480
 pasemos a la otra, los modelos de traducción. La componente pdf de la ecuación mide lo que
 
-395
-00:35:12,480 --> 00:35:16,960
+35:12.480 --> 35:16.960
 es la adecuación o fidelidad de una traducción y la otra y para esto necesito corpos para
 
-396
-00:35:16,960 --> 00:35:22,160
+35:16.960 --> 35:22.160
 leylos o corpos bilíngües que para poder entrenar estos modelos. Los corpos bilíngües
 
-397
-00:35:22,160 --> 00:35:25,960
+35:22.160 --> 35:25.960
 son bastante más difíciles de construir que los corpos monolíngües, digamos, no alcanza
 
-398
-00:35:25,960 --> 00:35:30,420
+35:25.960 --> 35:30.420
 con hacer una pasada por la web y obtener texto de un idioma. Y bueno, los modelos que
 
-399
-00:35:30,420 --> 00:35:37,680
+35:30.420 --> 35:37.680
 vamos a ver son los propuestos por Brown y si equipo en 1993 que trabajan en IBM, ellos
 
-400
-00:35:37,680 --> 00:35:42,000
+35:37.680 --> 35:42.000
 construyeron cinco modelos de cómo construir cinco modelos, digamos, en creciente complejidad
 
-401
-00:35:42,000 --> 00:35:48,280
+35:42.000 --> 35:48.280
 de cómo construir un modelo de traducción para traducción estadística. Y bueno, los
 
-402
-00:35:48,280 --> 00:35:52,400
+35:48.280 --> 35:52.400
 modelos, las diferencias de cada modelo se es en la historia de generación de las
 
-403
-00:35:52,400 --> 00:35:56,120
+35:52.400 --> 35:56.120
 soldaciones candidatas. Y bueno, después vamos a ver también otro modelo un poco más
 
-404
-00:35:56,120 --> 00:36:01,960
+35:56.120 --> 36:01.960
 moderno, pero bueno, vamos a empezar viendo más bien los modelos de Brown. Aquí me refiero
 
-405
-00:36:01,960 --> 00:36:07,040
+36:01.960 --> 36:07.040
 con historia de generación de las soldaciones candidatas. Una historia de generación, esto
 
-406
-00:36:07,040 --> 00:36:10,560
+36:07.040 --> 36:10.560
 lo digo ahora, pero en realidad lo vamos a profundizar después. Una historia de generación
 
-407
-00:36:10,560 --> 00:36:13,960
+36:10.560 --> 36:13.960
 en realidad es como una especie de proceso mental que seguiría un traductor cuando
 
-408
-00:36:13,960 --> 00:36:19,440
+36:13.960 --> 36:19.440
 quiere pasar de una oración a la otra. Entonces, estas historias se basan en decir, bueno,
 
-409
-00:36:19,440 --> 00:36:24,440
+36:19.440 --> 36:24.440
 un traductor agarró una oración en el idioma origen y después elige la cantidad de palabras
 
-410
-00:36:24,440 --> 00:36:28,200
+36:24.440 --> 36:28.200
 que voy a tener el idioma de estino, reordena palabras, después va traduciendo una a una
 
-411
-00:36:28,200 --> 00:36:32,240
+36:28.200 --> 36:32.240
 según un diccionario, después agrega palabras nuevas que no estaban en la oración.
 
-412
-00:36:32,240 --> 00:36:37,480
+36:32.240 --> 36:37.480
 Ese tipo de cosas, digamos, ese tipo de pasos, me lo voy a escribir en la historia de generación
 
-413
-00:36:37,480 --> 00:36:41,320
+36:37.480 --> 36:41.320
 y para que sirve eso, sirve para que a cada uno de esos pasos yo le pudo dar un valor
 
-414
-00:36:41,320 --> 00:36:45,680
+36:41.320 --> 36:45.680
 numérico, un valor en cuanto a probabilidades y después lo que voy a hacer cuando entreno
 
-415
-00:36:45,680 --> 00:36:49,960
+36:45.680 --> 36:49.960
 mi sistema es tuñar esos valores numéricos, tuñar todas esas probabilidades para darme
 
-416
-00:36:49,960 --> 00:36:57,480
+36:49.960 --> 36:57.480
 el cálculo de probabilidad total. Vamos a profundizar más de en esto después, pero antes
 
-417
-00:36:57,480 --> 00:37:00,800
+36:57.480 --> 37:00.800
 de pasar a lo que son las modelos de traducción, vamos a hablar un poco de cómo se evaluan
 
-418
-00:37:00,800 --> 00:37:05,520
+37:00.800 --> 37:05.520
 estos sistemas. En general, siempre es importante evaluar todo en el PLN, digamos, porque no
 
-419
-00:37:05,520 --> 00:37:10,080
+37:05.520 --> 37:10.080
 hay soluciones perfectas, entonces voy a tener sistemas que andan mejor o peor que otros.
 
-420
-00:37:10,080 --> 00:37:15,680
+37:10.080 --> 37:15.680
 Y bueno, la traducción automática obviamente no es la excepción. Entonces, me sirve
 
-421
-00:37:15,680 --> 00:37:18,920
+37:15.680 --> 37:18.920
 poder evaluar los sistemas para poder saber qué sistema es mejor que el otro y además,
 
-422
-00:37:18,920 --> 00:37:23,680
+37:18.920 --> 37:23.680
 si yo hago cambios en mi sistema, poder evaluar de vuelta a ver si mejoré o no. Entonces,
 
-423
-00:37:23,680 --> 00:37:27,960
+37:23.680 --> 37:27.960
 ¿qué puedo considerar una buena traducción? Para empezar, eso es una pregunta que es abierto
 
-424
-00:37:27,960 --> 00:37:35,720
+37:27.960 --> 37:35.720
 en su, digamos, esa abierta en su respuesta. O sea, yo tenía en un sistema de traducción
 
-425
-00:37:35,720 --> 00:37:39,800
+37:35.720 --> 37:39.800
 tenía una referencia, un candidato de referencia que era de CatSat on Demat, digamos,
 
-426
-00:37:39,800 --> 00:37:44,920
+37:39.800 --> 37:44.920
 esa era una traducción de referencia y un sistema medio seis posibles candidatos para
 
-427
-00:37:44,920 --> 00:37:50,840
+37:44.920 --> 37:50.840
 esa traducción. O sea, originalmente había una frase, por ejemplo, en China, la traducción
 
-428
-00:37:50,840 --> 00:37:56,080
+37:50.840 --> 37:56.080
 de referencia, la de CatSat on Demat y mi sistema a traducirme el chino medio estas opciones.
 
-429
-00:37:56,080 --> 00:38:01,800
+37:56.080 --> 38:01.800
 Tengo de CatSat on Demat Sat de Cat, de Cat on the floor, a CatSat on Demat, de CatSat
 
-430
-00:38:01,800 --> 00:38:08,920
+38:01.800 --> 38:08.920
 on Demat, con minúscula o de CatSat on the Stromat. ¿Cuáles les parecen que son buenas
 
-431
-00:38:08,920 --> 00:38:13,440
+38:08.920 --> 38:13.440
 traducciones de estos candidatos que me dio el sistema? ¿Cuáles les gusta más?
 
-432
-00:38:13,440 --> 00:38:21,840
+38:13.440 --> 38:21.840
 La E, que es de CatSat on Demat, pero con minúscula me dé como yo, ¿qué otra? La
 
-433
-00:38:21,840 --> 00:38:34,840
+38:21.840 --> 38:34.840
 B, on Demat Sat de Cat, ¿qué otra? La D les gusta también a CatSat on Demat. ¿Capaz que
 
-434
-00:38:34,840 --> 00:38:38,680
+38:34.840 --> 38:38.680
 no calienta tanto, dependiendo del uso que le vas a dar esa frase en contexto, capaz que
 
-435
-00:38:38,680 --> 00:38:43,200
+38:38.680 --> 38:43.200
 no calienta tanto? Y bueno, sí, la verdad no se ve nada cuando están las cosas marcadas
 
-436
-00:38:43,200 --> 00:38:46,560
+38:43.200 --> 38:46.560
 en rojo, pero bueno, en fin. Crea que acá las cosas marcadas en rojo son las que acaban
 
-437
-00:38:46,560 --> 00:38:52,320
+38:46.560 --> 38:52.320
 de decir. Una buena traducción, podemos decir que es una traducción que le gusta la gente,
 
-438
-00:38:52,320 --> 00:38:57,720
+38:52.320 --> 38:57.720
 que la gente dice si es una buena traducción. Entonces acá se elige on Demat Sat de Cat,
 
-439
-00:38:57,720 --> 00:39:04,120
+38:57.720 --> 39:04.120
 a CatSat on Demat, y de CatSat on Demat en minúscula. Y bueno, como decimos, le preguntamos
 
-440
-00:39:04,120 --> 00:39:07,920
+39:04.120 --> 39:07.920
 a la gente a ver que traducciones le gustan, y bueno, ya ahí ponemos cuales son las mejores
 
-441
-00:39:07,920 --> 00:39:13,120
+39:07.920 --> 39:13.120
 traducciones. O si no, le damos a un conjunto de jurados las traducciones y le decimos
 
-442
-00:39:13,120 --> 00:39:17,400
+39:13.120 --> 39:17.400
 que hagan un análisis un poco más preciso, y nos digan, bueno, cuánto le dan en uno
 
-443
-00:39:17,400 --> 00:39:24,160
+39:17.400 --> 39:24.160
 al diez de adecuación, y cuánto le dan en uno al diez de fluidez.
 
-444
-00:39:24,160 --> 00:39:29,640
+39:24.160 --> 39:29.640
 Esas otra forma de evaluar, digamos, y ahí ya nos están dando las dos medidas. En general,
 
-445
-00:39:29,640 --> 00:39:34,360
+39:29.640 --> 39:34.360
 los humanos nos cuesta realizar esta evaluación. En general, tenemos una preferencia de la fluidez,
 
-446
-00:39:34,360 --> 00:39:41,680
+39:34.360 --> 39:41.680
 como pasaba hoy con el caso de traducción del chino al inglés, por los pasajes de avión.
 
-447
-00:39:41,680 --> 00:39:45,800
+39:41.680 --> 39:45.800
 Además, la gente no se pone a acuerdo. Además, hay un problema que es que hacer este tipo
 
-448
-00:39:45,800 --> 00:39:49,880
+39:45.800 --> 39:49.880
 de evaluaciones con usuarios humanos, lleva tiempo, digamos, hay que pagarles a los usuarios
 
-449
-00:39:49,880 --> 00:39:55,520
+39:49.880 --> 39:55.520
 por hora para que estén evaluando sistemas. Y después, yo le dí un conjunto de traducciones,
 
-450
-00:39:55,520 --> 00:39:59,560
+39:55.520 --> 39:59.560
 ellos me la se evaluaron, hice algún cambio en mi sistema para mejorarlo, y devuelta
 
-451
-00:39:59,560 --> 00:40:03,000
+39:59.560 --> 40:03.000
 hacerle, de teo que dale conjunto de traducciones a los humanos, y devuelta lo tienen que evaluar,
 
-452
-00:40:03,000 --> 00:40:08,080
+40:03.000 --> 40:08.080
 y devuelta, tengo que pagar obras de usuarios humanos para que lo valúen.
 
-453
-00:40:08,600 --> 00:40:12,400
+40:08.600 --> 40:12.400
 Entonces, es difícil de reutilizar. Yo voy a estar haciendo cambios constantemente en mi sistema,
 
-454
-00:40:12,400 --> 00:40:17,240
+40:12.400 --> 40:17.240
 y bueno, y necesito tener una forma más rápida de evaluar a ver si estoy haciendo las cosas mejor.
 
-455
-00:40:17,240 --> 00:40:21,160
+40:17.240 --> 40:21.160
 Entonces, como este proceso de evaluación es largo, es engorroso, es caro,
 
-456
-00:40:21,160 --> 00:40:24,800
+40:21.160 --> 40:24.800
 lo que se ha vuelto más popular son los métodos automáticos de evaluación. Y,
 
-457
-00:40:24,800 --> 00:40:31,080
+40:24.800 --> 40:31.080
 a continuación, vamos a ver uno, que es muy utilizado en lo que es la traducción automática.
 
-458
-00:40:31,080 --> 00:40:39,200
+40:31.080 --> 40:39.200
 Bueno, ¿cómo funciona un método de evaluación? En realidad, lo que hace alguien,
 
-459
-00:40:39,200 --> 00:40:47,200
+40:39.200 --> 40:47.200
 alguien que está diseñando un sistema, es crearse un conjunto de oraciones con cada una
 
-460
-00:40:47,200 --> 00:40:50,360
+40:47.200 --> 40:50.360
 con una traducción de referencia que está bien, digamos, una traducción hecha mano.
 
-461
-00:40:50,360 --> 00:40:54,320
+40:50.360 --> 40:54.320
 Entonces, yo quiero evaluar un sistema que va del español al inglés, lo que tengo es un
 
-462
-00:40:54,320 --> 00:40:59,320
+40:54.320 --> 40:59.320
 conjunto de oraciones en español, y alguien, algún traductor humano me tradujo todas esas
 
-463
-00:40:59,320 --> 00:41:03,080
+40:59.320 --> 41:03.080
 oraciones en español, y medio un candidato, o más candidato está lo es para cada una,
 
-464
-00:41:03,080 --> 00:41:06,360
+41:03.080 --> 41:06.360
 digamos, a eso le voy a llamar referencias, traducciones de referencia.
 
-465
-00:41:06,360 --> 00:41:11,320
+41:06.360 --> 41:11.320
 Lo siguiente que tengo que hacer es poder diseñar una métrica de similitud para que,
 
-466
-00:41:11,320 --> 00:41:15,800
+41:11.320 --> 41:15.800
 cuando mi sistema me da un candidato de traducción, yo puedo establecer una similitud entre ese
 
-467
-00:41:15,800 --> 00:41:19,760
+41:15.800 --> 41:19.760
 candidato y alguna de las referencias. Y bueno, después lo que voy a hacer es aplicar esa
 
-468
-00:41:19,760 --> 00:41:26,160
+41:19.760 --> 41:26.160
 métrica para los pares, candidatos y referencias, y bueno, y sacar como un promedio de todos
 
-469
-00:41:26,240 --> 00:41:32,280
+41:26.240 --> 41:32.280
 los valores de similitud que tengo. Entonces, se han inmetado muchos métodos de este estilo,
 
-470
-00:41:32,280 --> 00:41:37,560
+41:32.280 --> 41:37.560
 muchos métodos automáticos, que vamos a ver en particular se llama Blue, que es una
 
-471
-00:41:37,560 --> 00:41:42,560
+41:37.560 --> 41:42.560
 métrica muy difundida en lo que es la traducción automática estadística. Y bueno,
 
-472
-00:41:42,560 --> 00:41:47,120
+41:42.560 --> 41:47.120
 primero hay algunas definiciones, le vamos a llamar referencia a una traducción que
 
-473
-00:41:47,120 --> 00:41:51,440
+41:47.120 --> 41:51.440
 está traducida manualmente, o sea, consideramos que es una oración correcta, eso es una referencia,
 
-474
-00:41:51,440 --> 00:41:55,000
+41:51.440 --> 41:55.000
 y le vamos a llamar candidato a una traducción que no tiene por qué estar correcta porque
 
-475
-00:41:55,000 --> 00:42:00,320
+41:55.000 --> 42:00.320
 la tradujo del sistema automático. Y le vamos a llamar documento al conjunto de todas
 
-476
-00:42:00,320 --> 00:42:05,000
+42:00.320 --> 42:05.000
 las oraciones candidatas, al conjunto de todas las oraciones traducidas por el sistema,
 
-477
-00:42:05,000 --> 00:42:09,240
+42:05.000 --> 42:09.240
 que es lo que vamos a estar evaluando. Así que recuerden, tenemos referencia, candidato
 
-478
-00:42:09,240 --> 00:42:15,080
+42:09.240 --> 42:15.080
 y documento. Y bueno, ¿qué es lo primero que se nos puede ocurrir hacer cuando queremos
 
-479
-00:42:15,080 --> 00:42:21,360
+42:15.080 --> 42:21.360
 saber si un candidato es bueno para la referencia o no? Lo primero que podemos hacer es tratar
 
-480
-00:42:21,360 --> 00:42:29,080
+42:21.360 --> 42:29.080
 de contar las palabras que ocurren en ambos. Entonces, yo puedo tratar de contar palabras
 
-481
-00:42:29,080 --> 00:42:32,960
+42:29.080 --> 42:32.960
 que ocurren en el candidato y palabras que ocurren en la referencia, y ahí diría que
 
-482
-00:42:32,960 --> 00:42:36,640
+42:32.960 --> 42:36.640
 la elección de las palabras de candidato, si están, la palabra candidato, si están,
 
-483
-00:42:36,640 --> 00:42:40,400
+42:36.640 --> 42:40.400
 también en la referencia, yo diría que eso se acerca un poco a la adecuación, se acerca
 
-484
-00:42:40,400 --> 00:42:45,480
+42:40.400 --> 42:45.480
 que, bueno, por lo menos, usó palabras que son fieles a la traducción de referencia.
 
-485
-00:42:45,480 --> 00:42:49,520
+42:45.480 --> 42:49.520
 Pero si además esas palabras están usadas en el mismo orden, ahí se acerca un poco más
 
-486
-00:42:49,520 --> 00:42:53,360
+42:49.520 --> 42:53.360
 a la fluidez, o sea, si están usadas en el mismo orden, puede sonar tan natural como
 
-487
-00:42:53,360 --> 00:43:01,920
+42:53.360 --> 43:01.920
 la referencia. Y esto se puede hacer automáticamente haciendo conteos de enegramas.
 
-488
-00:43:01,920 --> 00:43:06,520
+43:01.920 --> 43:06.520
 Acá yo tengo una referencia que es de CatSat, mi sistema me tenía que haber devuelto
 
-489
-00:43:06,520 --> 00:43:13,280
+43:06.520 --> 43:13.280
 de CatSat y tenía dos candidatos, candidato era de Cat y el candidato era SadCatD. Entonces,
 
-490
-00:43:13,280 --> 00:43:17,600
+43:13.280 --> 43:17.600
 lo que puedo hacer es conteo de enegramas, cuáles son enegramas de los candidatos pertenecen
 
-491
-00:43:17,600 --> 00:43:23,540
+43:17.600 --> 43:23.540
 a la referencia. Y entonces, para el caso de Cat, el enegrama D pertenece la referencia,
 
-492
-00:43:23,540 --> 00:43:27,820
+43:23.540 --> 43:27.820
 el enegrama Cat pertenece a la referencia y el enegrama D Cat, o sea, el Vigra Madecat
 
-493
-00:43:27,820 --> 00:43:33,320
+43:27.820 --> 43:33.320
 también pertenece a la referencia. Para el caso del candidato B, el unigrama Sad
 
-494
-00:43:33,320 --> 00:43:39,520
+43:33.320 --> 43:39.520
 pertenece el unigrama Cat pertenece el unigrama D pertenece. Pero SadCatD este Vigrama no
 
-495
-00:43:39,520 --> 00:43:43,960
+43:39.520 --> 43:43.960
 pertenece a la referencia y CatD tampoco pertenece a la referencia. Y además, el único
 
-496
-00:43:43,960 --> 00:43:47,920
+43:43.960 --> 43:47.920
 trigrama que hay, SadCatD tampoco está en la referencia. Entonces, lo que aparece
 
-497
-00:43:47,920 --> 00:43:53,320
+43:47.920 --> 43:53.320
 a la derecha son los enegramas que sí pertenecen tanto el candidato como a la referencia.
 
-498
-00:43:53,320 --> 00:44:00,520
+43:53.320 --> 44:00.520
 Así que, bueno, resumiendo, yo puedo contar la cantidad de hits de unigramas, de Vigramas,
 
-499
-00:44:00,520 --> 00:44:04,960
+44:00.520 --> 44:04.960
 de trigramas. Y para el candidato B se cumple que todos los unigramas que hay pertenece
 
-500
-00:44:04,960 --> 00:44:09,280
+44:04.960 --> 44:09.280
 a la referencia. Así que, voy a tener dos de dos hits. Para los Vigramas, voy a tener uno
 
-501
-00:44:09,280 --> 00:44:15,920
+44:09.280 --> 44:15.920
 de uno. Pero para el candidato B, los unigramas me dan 3 de 3, digamos, 3 hits. Los Vigramas
 
-502
-00:44:15,920 --> 00:44:20,080
+44:15.920 --> 44:20.080
 no. O sea, tengo dos Vigramas posibles y ninguno estaba bien. Y los trigramas tampoco.
 
-503
-00:44:20,080 --> 00:44:25,040
+44:20.080 --> 44:25.040
 Tengo un trigrama posible y no estaba bien. Entonces, por ahora, parece que le va ganando
 
-504
-00:44:25,040 --> 00:44:32,200
+44:25.040 --> 44:32.200
 de Cat, la el candidato B de Cat le va ganando a SadCatD como traducción. Bien, ¿qué
 
-505
-00:44:32,200 --> 00:44:38,560
+44:32.200 --> 44:38.560
 puedo hacer con los contegos de enegramas? Lo que hago habitualmente, o sea, contar enegramas,
 
-506
-00:44:38,560 --> 00:44:42,880
+44:38.560 --> 44:42.880
 para unigramas, vigramas, tiramas, se acerca un poco a lo que es la noción de una precisión
 
-507
-00:44:42,880 --> 00:44:46,120
+44:42.880 --> 44:46.120
 de algo. Entonces, lo que voy a hacer es contarlos
 
-508
-00:44:46,120 --> 00:44:49,960
+44:46.120 --> 44:49.960
 por separado. Voy a decir, voy a contar todos los unigramas por un lado, todos los Vigramas
 
-509
-00:44:49,960 --> 00:44:54,080
+44:49.960 --> 44:54.080
 por otro, todos los trigramas por otro. Y para cada uno de esos, me voy a armar una
 
-510
-00:44:54,080 --> 00:44:58,120
+44:54.080 --> 44:58.120
 precisión. Voy a decir que tengo. El candidato
 
-511
-00:44:58,120 --> 00:45:03,520
+44:58.120 --> 45:03.520
 se subí, digamos, un candidato que voy a considerar. Voy a contar los hits de orden N,
 
-512
-00:45:03,520 --> 00:45:09,640
+45:03.520 --> 45:09.640
 se subí, digamos, los hits de unigramas, se subí. Voy a llamar H, se subí. Y voy a contar
 
-513
-00:45:09,640 --> 00:45:15,160
+45:09.640 --> 45:15.160
 la cantidad de unigramas totales que hay y le voy a llamar T, se subí. Pero además,
 
-514
-00:45:15,160 --> 00:45:20,480
+45:15.160 --> 45:20.480
 voy a hacer esto, en vez de hacerlo para una sola oración, para un candidato y su referencia,
 
-515
-00:45:20,480 --> 00:45:24,320
+45:20.480 --> 45:24.320
 lo voy a hacer para todo el documento. Voy a contar todos los unigramas que estaban en mis
 
-516
-00:45:24,320 --> 00:45:29,680
+45:24.320 --> 45:29.680
 candidatos. Voy a ver cuánto eso está bien y voy a hacer esta división. Entonces, me va
 
-517
-00:45:29,680 --> 00:45:36,520
+45:29.680 --> 45:36.520
 a dar cuál es la precisión en unigramas. ¿Qué va a ser? Bueno, tanta cantidad de unigramas
 
-518
-00:45:36,520 --> 00:45:41,600
+45:36.520 --> 45:41.600
 estaban bien dividido, toda la cantidad de unigramas que genero en los candidatos. Después
 
-519
-00:45:41,600 --> 00:45:45,400
+45:41.600 --> 45:45.400
 voy a hacer eso para Vigramas. Voy a contar toda la cantidad de Vigramas que estaban bien,
 
-520
-00:45:45,400 --> 00:45:48,700
+45:45.400 --> 45:48.700
 porque estaban en el candidato en la referencia, dividido toda la cantidad de Vigramas que
 
-521
-00:45:48,700 --> 00:45:52,600
+45:48.700 --> 45:52.600
 en el candidato. Voy a hacer lo mismo para trigramas y voy a hacer lo mismo para 4igramas.
 
-522
-00:45:52,600 --> 00:45:57,040
+45:52.600 --> 45:57.040
 En general, se suele llegar hasta 4, digamos, en traducion automática estadística, la
 
-523
-00:45:57,040 --> 00:46:02,480
+45:57.040 --> 46:02.480
 medida blu llega a calcular hasta 4. Entonces, bueno, lo que me define ahí es lo que se llama
 
-524
-00:46:02,480 --> 00:46:08,440
+46:02.480 --> 46:08.440
 probabilidad de orden N, la probabilidad, precisión de orden N, la precisión para unigrama,
 
-525
-00:46:08,440 --> 00:46:15,800
+46:08.440 --> 46:15.800
 la precisión para Vigramas, la precisión para trigramas, etc. Bien, esta métrica que
 
-526
-00:46:15,800 --> 00:46:21,000
+46:15.800 --> 46:21.000
 estamos construyendo es bastante fácil engañar. En realidad, yo me definí una probabilidad,
 
-527
-00:46:21,000 --> 00:46:24,600
+46:21.000 --> 46:24.600
 por ejemplo, de la probabilidad de orden 1 y la puedo engañar muy fácil, porque yo me
 
-528
-00:46:24,600 --> 00:46:29,760
+46:24.600 --> 46:29.760
 puedo construir un candidato que tiene siempre la misma palabra. Puedes ir, bueno, un candidato
 
-529
-00:46:29,760 --> 00:46:37,720
+46:29.760 --> 46:37.720
 para la referencia de Catzato Nemat es el candidato DDDDD. Como yo justo le emboque a una palabra
 
-530
-00:46:37,720 --> 00:46:42,360
+46:37.720 --> 46:42.360
 que está en la referencia, entonces cuento los unigramas y me da que hay 6 hits de 6,
 
-531
-00:46:42,360 --> 00:46:47,040
+46:42.360 --> 46:47.040
 a pesar de que la traducción es horrible. Entonces, como hago para evitar esto, lo que se
 
-532
-00:46:47,040 --> 00:46:51,840
+46:47.040 --> 46:51.840
 suele hacer es clipping, lo que significa que cuento cuanto es la cantidad máxima de palabras
 
-533
-00:46:51,840 --> 00:46:55,760
+46:51.840 --> 46:55.760
 en la referencia y no permite que haya más de eso. Entonces, yo acá tengo hasta dos palabras
 
-534
-00:46:55,760 --> 00:47:02,520
+46:55.760 --> 47:02.520
 D, entonces no puedo contar 6 de 6, tendría que contar máximo 126. Entonces ahí evitamos ese
 
-535
-00:47:02,520 --> 00:47:10,400
+47:02.520 --> 47:10.400
 problema de que, bueno, alguien se haga el vivo y genera simplemente una sola palabra. Bien,
 
-536
-00:47:10,400 --> 00:47:16,000
+47:10.400 --> 47:16.000
 entonces, hasta ahora vimos dos cosas, calculamos la precisión de orden N, la precisión de cada uno
 
-537
-00:47:16,000 --> 00:47:20,880
+47:16.000 --> 47:20.880
 de los unigramas o diagramas, los segundos que vimos es que vamos a hacer clipping para evitar
 
-538
-00:47:20,880 --> 00:47:23,960
+47:20.880 --> 47:23.960
 pasarnos de conteo en las palabras que aparecen más de una vez.
 
-539
-00:47:25,960 --> 00:47:33,720
+47:25.960 --> 47:33.720
 Lo tercero que pasa es veíamos en este ejemplo de acá, acá tenemos dos candidatos de Catz
 
-540
-00:47:33,720 --> 00:47:39,000
+47:33.720 --> 47:39.000
 y Sad CatzD, y lo que pasaba acá era que le estaba haciendo mejor a la traducción de
 
-541
-00:47:39,000 --> 00:47:45,000
+47:39.000 --> 47:45.000
 Catz porque tenía todos los unigramas que están en la traducción, están también en la
 
-542
-00:47:45,000 --> 00:47:49,360
+47:45.000 --> 47:49.360
 referencia y todos los diagramas también, en cambio el candidato V no, el candidato V tiene
 
-543
-00:47:49,360 --> 00:47:53,240
+47:49.360 --> 47:53.240
 unigramas que están, pero diagramas y trilamas que no están. Entonces en cuanto a precisión
 
-544
-00:47:53,240 --> 00:47:58,600
+47:53.240 --> 47:58.600
 el candidato V va bastante mejor. ¿Por qué va bastante mejor el candidato V? Porque es
 
-545
-00:47:58,600 --> 00:48:06,040
+47:58.600 --> 48:06.040
 un candidato que es más corto que la referencia, o sea, es un candidato que tiene menos palabras.
 
-546
-00:48:06,040 --> 00:48:10,040
+48:06.040 --> 48:10.040
 Como venimos definiendo la métrica, si yo tengo una referencia y después tengo un candidato
 
-547
-00:48:10,040 --> 00:48:14,680
+48:10.040 --> 48:14.680
 que es justo un prefijo de la referencia, entonces va a cumplir que ese prefijo andaba
 
-548
-00:48:14,680 --> 00:48:18,000
+48:14.680 --> 48:18.000
 bien en todas las medidas de precisión, porque todos los enigramas que tiene van a
 
-549
-00:48:18,000 --> 00:48:23,080
+48:18.000 --> 48:23.080
 pertenecer a la referencia. Así que lo que hace la medida blue es penalizar ese tipo
 
-550
-00:48:23,080 --> 00:48:31,920
+48:23.080 --> 48:31.920
 de comportamientos. Penaliza los candidatos que son muy cortos para que digamos le de
 
-551
-00:48:31,920 --> 00:48:39,280
+48:31.920 --> 48:39.280
 menos puntaje. Entonces, ¿por qué se penaliza los candidatos cortos y no los candidatos largos?
 
-552
-00:48:39,280 --> 00:48:45,360
+48:39.280 --> 48:45.360
 ¿Por qué les parece? Candidatos que son demasiado cortos se penalizan, pero les hemos
 
-553
-00:48:45,360 --> 00:48:51,560
+48:45.360 --> 48:51.560
 dado largos, ¿no? La respuesta está en las slides, pero bueno, se que se penaliza los
 
-554
-00:48:51,560 --> 00:48:55,640
+48:51.560 --> 48:55.640
 candidatos cortos porque los candidatos largos, si yo genero un candidato que es mucho más
 
-555
-00:48:55,640 --> 00:48:59,960
+48:55.640 --> 48:59.960
 largo que la referencia, lo que va a pasar es que ese candidato tiene enigramas, seguramente
 
-556
-00:48:59,960 --> 00:49:04,720
+48:59.960 --> 49:04.720
 tiene enigramas que no pertenece de la referencia. Entonces, en el contenido de precisión me
 
-557
-00:49:04,720 --> 00:49:09,080
+49:04.720 --> 49:09.080
 va a dar un puntaje más bajo. Candidatos largos ya están penalizados por la precisión,
 
-558
-00:49:09,080 --> 00:49:13,600
+49:09.080 --> 49:13.600
 candidatos cortos no están penalizados por la precisión. Entonces, necesito otro tipo
 
-559
-00:49:13,600 --> 00:49:19,480
+49:13.600 --> 49:19.480
 de penalización para evitar eso. Bien, entonces lo que vamos a dar es una cosa de
 
-560
-00:49:19,480 --> 00:49:25,080
+49:19.480 --> 49:25.080
 llama penalización propiedad o brevitipenal, que es un puntaje que se le da en referencia
 
-561
-00:49:25,080 --> 00:49:30,840
+49:25.080 --> 49:30.840
 que tan corto es un candidato respecto a la referencia y bueno, se calcula teniendo en
 
-562
-00:49:30,840 --> 00:49:34,320
+49:30.840 --> 49:34.320
 cuenta todo el largo del documento, todo el largo del documento traducido, entonces
 
-563
-00:49:34,320 --> 00:49:39,800
+49:34.320 --> 49:39.800
 acá yo defino que el reprima es el largo total de todas las referencias, se prima es
 
-564
-00:49:39,800 --> 00:49:47,080
+49:39.800 --> 49:47.080
 el largo total de todos los candidatos. Y entonces, si el largo de los candidatos es mayor
 
-565
-00:49:47,080 --> 00:49:51,880
+49:47.080 --> 49:51.880
 a largo de las referencias no hay penalización, le pongo uno, si el largo total de los candidatos
 
-566
-00:49:51,880 --> 00:49:57,880
+49:51.880 --> 49:57.880
 es menor a largo de las referencias, entonces lo calculo como e a la menos, e a la uno menos
 
-567
-00:49:57,880 --> 00:50:03,880
+49:57.880 --> 50:03.880
 la división entre los largos. Esto es una definición de probabilidad
 
-568
-00:50:03,880 --> 00:50:09,800
+50:03.880 --> 50:09.800
 exponencial, digamos, no es más que eso. Y en realidad lo que trata de hacer es penalizar
 
-569
-00:50:09,800 --> 00:50:15,320
+50:09.800 --> 50:15.320
 traducciones que son muy cortas, entonces si yo tenía un candidato que tenía cinco palabras
 
-570
-00:50:15,320 --> 00:50:20,160
+50:15.320 --> 50:20.160
 mientras la referencia tenía diez, lo voy a penalizar fuertemente, le voy a dar un 0.37
 
-571
-00:50:20,160 --> 00:50:25,080
+50:20.160 --> 50:25.080
 de penalización, si yo tenía un candidato que estaba que era menor pero era más cercano,
 
-572
-00:50:25,080 --> 00:50:30,600
+50:25.080 --> 50:30.600
 entonces la penalización no es tanta de 0.78 y después si los largos son iguales o si
 
-573
-00:50:30,600 --> 00:50:34,040
+50:30.600 --> 50:34.040
 el candidato es más largo, no penalizó nada, le doy uno de puntas.
 
-574
-00:50:34,040 --> 00:50:41,840
+50:34.040 --> 50:41.840
 Bueno, entonces la metrica blue, que es una metrica muy usada en traducción automática,
 
-575
-00:50:41,840 --> 00:50:45,480
+50:41.840 --> 50:45.480
 pone todo esto juntos, digamos, todos estos pedacitos que estuvimos viendo, los pone juntos
 
-576
-00:50:45,480 --> 00:50:50,280
+50:45.480 --> 50:50.280
 en un solo cálculo. Blue se calcula como la penalización por probabilidad, el breve
 
-577
-00:50:50,280 --> 00:51:02,360
+50:50.280 --> 51:02.360
 penal D, por E a la suma de las precisiones de orden N. ¿Qué palabras ruido?
 
-578
-00:51:02,360 --> 00:51:14,840
+51:02.360 --> 51:14.840
 Por ejemplo, esto es un unigrama que le va a dar 0 de precisión, digamos, por ejemplo,
 
-579
-00:51:15,400 --> 00:51:20,320
+51:15.400 --> 51:20.320
 bueno, esta palabra no va, o sea, es un unigrama que le va a dar 0 de precisión, digamos,
 
-580
-00:51:20,320 --> 00:51:24,000
+51:20.320 --> 51:24.000
 porque no está, además participan un diagrama que también le va a dar mala precisión porque
 
-581
-00:51:24,000 --> 00:51:29,160
+51:24.000 --> 51:29.160
 tampoco está el diagrama, entonces lo que, reestan realidad porque no está sumando la
 
-582
-00:51:29,160 --> 00:51:35,160
+51:29.160 --> 51:35.160
 impresión, acá yo tengo 1, 2, 3, 4, 5, 6, 7 unigramas de los cuales 6 es también, pero
 
-583
-00:51:35,160 --> 00:51:39,840
+51:35.160 --> 51:39.840
 hay uno que no, en cambio, en este tengo 6 unigrama de los cuales los 6 es también,
 
-584
-00:51:39,840 --> 00:51:44,720
+51:39.840 --> 51:44.720
 entonces acá el hecho de agregar palabras que no son, que no están bien, no están en la
 
-585
-00:51:44,720 --> 00:51:50,920
+51:44.720 --> 51:50.920
 referencia, ya te penaliza. La diferencia es cuando yo tengo una traducción que más corta,
 
-586
-00:51:50,920 --> 00:51:55,680
+51:50.920 --> 51:55.680
 si yo diría, solo de CatSatOn, entonces ahí es más corta y no tengo forma de penalizarlo
 
-587
-00:51:55,680 --> 00:51:59,440
+51:55.680 --> 51:59.440
 solo con la precisión, entonces tengo el otro penalizador que es porque la traducción es muy
 
-588
-00:52:00,440 --> 00:52:11,440
+52:00.440 --> 52:11.440
 corta. Bien, entonces les estaba comentando, la media blusa define como una media geometrica,
 
-589
-00:52:11,440 --> 00:52:18,200
+52:11.440 --> 52:18.200
 definición de media geometrica, de las precisiones de orden N, también tienes un peso por
 
-590
-00:52:18,200 --> 00:52:23,800
+52:18.200 --> 52:23.800
 precisión que se puede variar, pero en general se utiliza el mismo peso para todos, multiplicado
 
-591
-00:52:23,800 --> 00:52:36,280
+52:23.800 --> 52:36.280
 por la penalización pobrevedad. Bien, eso es la definición de la media blusa, que es una
 
-592
-00:52:36,280 --> 00:52:41,680
+52:36.280 --> 52:41.680
 media que se utiliza muchísimo, esos puntajes que vemos hoy de 25 con 2 y 31 con algo eran
 
-593
-00:52:41,680 --> 00:52:49,120
+52:41.680 --> 52:49.120
 ejemplos de media blusa aplicados en un sistema. Y bueno, una cosa importante, algunos comentarios
 
-594
-00:52:49,120 --> 00:52:53,320
+52:49.120 --> 52:53.320
 importantes sobre la metrica blusa es que en general cuando un sistema le da mejor, digamos,
 
-595
-00:52:53,320 --> 00:52:56,640
+52:53.320 --> 52:56.640
 con un conjunto de traducciones, le da mejor en metrica blusa, también le da mejor con un
 
-596
-00:52:56,640 --> 00:53:01,280
+52:56.640 --> 53:01.280
 conjunto de humanos que evaluan el sistema, o sea que tiene una correlación bastante buena con lo
 
-597
-00:53:01,280 --> 00:53:06,960
+53:01.280 --> 53:06.960
 que es la evaluación subjetiva humana, pero como contra es difícil de interpretar estos
 
-598
-00:53:06,960 --> 00:53:11,360
+53:06.960 --> 53:11.360
 puntajes, o sea, si yo tengo un puntaje de, como nos ha pasado hoy, tiene un puntaje de 31,
 
-599
-00:53:11,360 --> 00:53:15,600
+53:11.360 --> 53:15.600
 en realidad un 31 es un número que puede ser muy bueno, muy malo, dependiendo del idioma,
 
-600
-00:53:15,600 --> 00:53:22,200
+53:15.600 --> 53:22.200
 pero o sea, si todo saliera bien y yo tradujera exactamente lo mismo que están las referencias,
 
-601
-00:53:22,200 --> 00:53:26,640
+53:22.200 --> 53:26.640
 por construcción la media me daría uno, pero en realidad es muy difícil traducir exactamente
 
-602
-00:53:26,640 --> 00:53:30,840
+53:26.640 --> 53:30.840
 lo que están las referencias, porque no es cierto que exista una única traducción posible
 
-603
-00:53:30,840 --> 00:53:36,960
+53:30.840 --> 53:36.960
 en la traducción digamos humana. Horaciones se pueden traducir de manera distinta y estar
 
-604
-00:53:36,960 --> 00:53:40,880
+53:36.960 --> 53:40.880
 igualmente bien, entonces es muy difícil tener un conjunto de referencias que contempla
 
-605
-00:53:40,880 --> 00:53:45,000
+53:40.880 --> 53:45.000
 todas las posibilidades, así que en mi traducutor capaz que anda bárbaro, pero el puntaje
 
-606
-00:53:45,000 --> 00:53:51,560
+53:45.000 --> 53:51.560
 aún no es uno, no es 100 digamos, porque está eligiendo palabras distintas o eligiendo
 
-607
-00:53:51,560 --> 00:53:57,000
+53:51.560 --> 53:57.000
 formas de escribir las oraciones distintas, entonces bueno, por eso es difícil interpretar,
 
-608
-00:53:57,000 --> 00:54:04,240
+53:57.000 --> 54:04.240
 yo tengo un puntaje de 30 o de 50 o sea, de 0.3 o de 0.5 y puede ser buenísimo para
 
-609
-00:54:04,240 --> 00:54:13,120
+54:04.240 --> 54:13.120
 ese sistema, pero para algo que sí me sirve muchísimo el puntaje, digamos, el puntaje
 
-610
-00:54:13,120 --> 00:54:17,320
+54:13.120 --> 54:17.320
 de blu es para decir, yo tengo mi sistema, luego el lujo, después hago algunos cambios,
 
-611
-00:54:17,320 --> 00:54:21,800
+54:17.320 --> 54:21.800
 el lujo de vuelta y si subió la performance de un puntaje blu, entonces estoy seguro
 
-612
-00:54:21,800 --> 00:54:25,000
+54:21.800 --> 54:25.000
 de que mejoro, porque hay una correlación con la evaluación subjetiva.
 
-613
-00:54:25,000 --> 00:54:41,440
+54:25.000 --> 54:41.440
 Para pasar el español inglés, en realidad lo que pasa es que entrenás otro traducutor.
 
-614
-00:54:41,440 --> 00:54:48,320
+54:41.440 --> 54:48.320
 No, acá estoy volando solo, acá estoy volando solamente en un sentido, yo tenía un sistema
 
-615
-00:54:48,320 --> 00:54:58,320
+54:48.320 --> 54:58.320
 español, por ejemplo, digo una oración español, el gato se sentó, y alguien me dijo bueno,
 
-616
-00:54:58,320 --> 00:55:02,640
+54:58.320 --> 55:02.640
 la traducción de referencia a eso es de CatSat y mi sistema me dijo bueno, pero mis
 
-617
-00:55:02,640 --> 00:55:07,840
+55:02.640 --> 55:07.840
 traducciones posibles son de Cat y Sad Cat D, entonces yo tenía un sistema en español
 
-618
-00:55:07,840 --> 00:55:11,640
+55:07.840 --> 55:11.640
 pero que traduce al inglés, digamos, un sistema de traducción de español de inglés,
 
-619
-00:55:11,640 --> 00:55:16,960
+55:11.640 --> 55:16.960
 pero no, no estoy traduciendo en el otro sentido, no, no es como las canciones, acá partí
 
-620
-00:55:16,960 --> 00:55:20,440
+55:16.960 --> 55:20.440
 del español y llegué al inglés y estoy tratando de evaluar comparando las frases en
 
-621
-00:55:20,440 --> 00:55:27,840
+55:20.440 --> 55:27.840
 inglés esperadas con las frases en inglés generadas, claro, probablemente, claro, está en
 
-622
-00:55:27,840 --> 00:55:32,840
+55:27.840 --> 55:32.840
 el mismo idioma, o sea, lo que no mostramos acá era cual era la oración origen, porque para
 
-623
-00:55:32,840 --> 00:55:37,720
+55:32.840 --> 55:37.720
 evaluar no nos importa, para evaluar nos importa que comparar solamente la oración candidato
 
-624
-00:55:37,720 --> 00:55:42,840
+55:37.720 --> 55:42.840
 con la referencia y la origen nos olvidamos, sabemos que los dos intentaron traducir de
 
-625
-00:55:42,840 --> 00:55:51,080
+55:42.840 --> 55:51.080
 la misma oración y bueno, y alguno le fue mejor que a otro, bien, esos son comentarios
 
-626
-00:55:51,080 --> 00:55:56,760
+55:51.080 --> 55:56.760
 de blue, esto era evaluación de los sistemas, lo siguiente que vamos a ver es el problema
 
-627
-00:55:56,760 --> 00:56:00,600
+55:56.760 --> 56:00.600
 de los corpos paralelos, antes de pasar a lo que son modelos de traducción, vamos a
 
-628
-00:56:00,600 --> 00:56:05,160
+56:00.600 --> 56:05.160
 hablar un poco de lo que son los corpos paralelos, que son necesarios para construir un modelo
 
-629
-00:56:05,160 --> 00:56:10,920
+56:05.160 --> 56:10.920
 de traducción, un corpos paralelo consiste en pares de textos en dos idiomas, por ejemplo,
 
-630
-00:56:10,920 --> 00:56:15,720
+56:10.920 --> 56:15.720
 tener textos en español y en inglés, pero además yo tengo que tener algún nivel, tengo
 
-631
-00:56:15,720 --> 00:56:20,100
+56:15.720 --> 56:20.100
 que tener una correspondencia entre esos textos, de alguna forma, yo tengo que saber cómo
 
-632
-00:56:20,100 --> 00:56:26,800
+56:20.100 --> 56:26.800
 se corresponde un texto con el otro, entonces bueno, tiene que estar con juntos, digamos,
 
-633
-00:56:26,800 --> 00:56:31,400
+56:26.800 --> 56:31.400
 ordenados de textos en el lenguaje origen, en el lenguaje destino, y bueno, existen en
 
-634
-00:56:31,400 --> 00:56:36,400
+56:31.400 --> 56:36.400
 el mundo, existen corpos paralelos para algunos idiomas, o sea, hay muchos idiomas en el mundo,
 
-635
-00:56:36,400 --> 00:56:40,120
+56:36.400 --> 56:40.120
 pero no todos los pares de idiomas tienen corpos paralelos construidos, entonces existen
 
-636
-00:56:40,120 --> 00:56:44,640
+56:40.120 --> 56:44.640
 para el lado de inglés, el chino inglés, para la mayoría de los lenguajes europeos,
 
-637
-00:56:44,640 --> 00:56:50,360
+56:44.640 --> 56:50.360
 debido a su uso en la unión europea, digamos, existen también corpos paralelos para ellos,
 
-638
-00:56:50,360 --> 00:56:56,280
+56:50.360 --> 56:56.280
 pero para la gran mayoría de pares de lenguas, no hay, digamos, no tengo un par que traduzca
 
-639
-00:56:56,280 --> 00:57:01,080
+56:56.280 --> 57:01.080
 entre el chino y el guaranismo, por ejemplo, o sea, es poco probable que se construye un
 
-640
-00:57:01,080 --> 00:57:11,320
+57:01.080 --> 57:11.320
 par de estilos, bien, que es un corpos paralelos, ya que no se ve nada, de vuelta, acá hay un ejemplo
 
-641
-00:57:11,320 --> 00:57:18,800
+57:11.320 --> 57:18.800
 que no sé si lo conocen, es un ejemplo famoso de corpos paralelos, tiene ni idea de lo que
 
-642
-00:57:18,800 --> 00:57:29,520
+57:18.800 --> 57:29.520
 es, lo han visto alguna vez, la piedra de roseta, la piedra de roseta, una piedra que la construyeron,
 
-643
-00:57:29,520 --> 00:57:35,440
+57:29.520 --> 57:35.440
 o por lo menos la tallaron el año 1996, antes de Cristo, y hablaba sobre la coronación de
 
-644
-00:57:35,440 --> 00:57:42,480
+57:35.440 --> 57:42.480
 Tolomeo Quinto, y tal, y su adoración como semi-dios, etcétera, etcétera, y bueno,
 
-645
-00:57:42,480 --> 00:57:47,280
+57:42.480 --> 57:47.280
 hasta estuvo perdida, tomo un montón de años, hasta que durante las campañas Napoleónicas,
 
-646
-00:57:47,280 --> 00:57:55,080
+57:47.280 --> 57:55.080
 1799, la encontraron en Egipto, en el lugar roseta, casualmente, y se lanzaron para Francia,
 
-647
-00:57:55,080 --> 00:57:59,800
+57:55.080 --> 57:59.800
 ahí le empezaron a analizar lingüistas, empezaron a tratar de entender que era lo que decía, y bueno,
 
-648
-00:57:59,800 --> 00:58:06,200
+57:59.800 --> 58:06.200
 descubrieron que tiene tres textos, vieron que tienen como tres regiones, tres textos, y después de
 
-649
-00:58:06,200 --> 00:58:10,720
+58:06.200 --> 58:10.720
 estudiarla un rato, seguiron cuenta que en realidad lo que tiene es el mismo texto en tres idiomas
 
-650
-00:58:10,720 --> 00:58:16,040
+58:10.720 --> 58:16.040
 distintos, y los idiomas eran, el de arriba era en jeroglíficos egipcios del estilo de lo que
 
-651
-00:58:16,040 --> 00:58:20,720
+58:16.040 --> 58:20.720
 uno encuentra dentro de las pirámides, el del medio era egipcio demótico, que era el egipcio
 
-652
-00:58:20,760 --> 00:58:26,840
+58:20.760 --> 58:26.840
 vulgar que se usaba, digamos, en el día a día, y el de abajo el todo era griego antiguo. Entonces,
 
-653
-00:58:26,840 --> 00:58:30,800
+58:26.840 --> 58:30.800
 si bien, ninguno de los tres idiomas se hablaba en el momento que se encontró, la piedra,
 
-654
-00:58:30,800 --> 00:58:37,440
+58:30.800 --> 58:37.440
 los tres idiomas antiguos, el griego antiguo por lo menos sí se sabía, digamos, se conocía como
 
-655
-00:58:37,440 --> 00:58:41,800
+58:37.440 --> 58:41.800
 idiomas, se sabía qué significaba, y digamos, había gente que lo estudiaba, los otros dos no,
 
-656
-00:58:41,800 --> 00:58:47,360
+58:41.800 --> 58:47.360
 los otros dos eran lenguas completamente perdidas, que nadie sabía identificarlas. Pero gracias al
 
-657
-00:58:47,400 --> 00:58:51,240
+58:47.400 --> 58:51.240
 hecho de que en realidad se descubrió que los tres textos hablan de lo mismo, son el mismo
 
-658
-00:58:51,240 --> 00:58:57,640
+58:51.240 --> 58:57.640
 texto entre los idiomas. Entonces ahí se empezó a hacer un trabajo de alineación, digamos, los
 
-659
-00:58:57,640 --> 00:59:00,480
+58:57.640 --> 59:00.480
 arqueólogos, empezaron a decir, bueno, esta porción de texto acá se corresponde con esta
 
-660
-00:59:00,480 --> 00:59:04,480
+59:00.480 --> 59:04.480
 de acá, se corresponde con esta de acá, etcétera, y a tratar de encontrar correspondencias en los
 
-661
-00:59:04,480 --> 00:59:09,120
+59:04.480 --> 59:09.120
 idiomas, y cómo sabían qué quería decir en griego antiguo, empezaron a poder descubrir qué
 
-662
-00:59:09,120 --> 00:59:13,320
+59:09.120 --> 59:13.320
 querían decir en los otros idiomas. Entonces, a raíz de eso es que empezó, digamos, el
 
-663
-00:59:13,320 --> 00:59:18,480
+59:13.320 --> 59:18.480
 Egipto Elogía Moderno se pudo empezar a desifrar, qué dicen, por ejemplo, los geográficos
 
-664
-00:59:18,480 --> 00:59:22,560
+59:18.480 --> 59:22.560
 están en las pirámides, y bueno, un montón de cultura, egipcio antiguas, se conoce gracias
 
-665
-00:59:22,560 --> 00:59:26,920
+59:22.560 --> 59:26.920
 a que se pudo desifrar lo que decía esta piedra. Y en definitiva, esto es un ejemplo de corpus
 
-666
-00:59:26,920 --> 00:59:31,080
+59:26.920 --> 59:31.080
 paralelo, o sea, tengo el mismo texto entre los idiomas, y con un poco de esfuerzo logro al
 
-667
-00:59:31,080 --> 00:59:38,720
+59:31.080 --> 59:38.720
 alinear, cual son cada uno de los elementos de mis lenguajes, y logro saber la traducción
 
-668
-00:59:38,720 --> 00:59:46,240
+59:38.720 --> 59:46.240
 de los tres. Bueno, entonces, esto nos lleva el concepto de alineación. Los corpus paralelos
 
-669
-00:59:46,240 --> 00:59:50,640
+59:46.240 --> 59:50.640
 tienen distintos niveles de alineación. Lo más fácil de encontrar son corpus que están
 
-670
-00:59:50,640 --> 00:59:53,680
+59:50.640 --> 59:53.680
 alineados al nivel de documentos. Yo tengo una colección de documentos en español y una
 
-671
-00:59:53,680 --> 00:59:58,480
+59:53.680 --> 59:58.480
 colección de documentos en chino, y yo sé qué documentos se corresponde con qué otro,
 
-672
-00:59:58,480 --> 01:00:02,720
+59:58.480 --> 01:00:02.720
 pero no sé nada más. Sería mejor, incluso que estuvieran alineados a nivel de
 
-673
-01:00:02,720 --> 01:00:07,360
+01:00:02.720 --> 01:00:07.360
 elaboración, además de conocer los documentos, yo sé cuál elaboración español va con
 
-674
-01:00:07,360 --> 01:00:11,160
+01:00:07.360 --> 01:00:11.160
 cuál elaboración en chino, digamos. Tengo una correspondencia entre esas dos. Pero sería
 
-675
-01:00:11,160 --> 01:00:15,600
+01:00:11.160 --> 01:00:15.600
 aún mejor, y esto es lo que más nos serviría, si estuvieran alineados a nivel de palabra.
 
-676
-01:00:15,600 --> 01:00:18,760
+01:00:15.600 --> 01:00:18.760
 Cada uno de los caracteres que están en chino se corresponde con qué palabra en español,
 
-677
-01:00:18,760 --> 01:00:21,920
+01:00:18.760 --> 01:00:21.920
 lo que grupo de palabra, si cada uno de las palabras de español con qué grupo de caracteres
 
-678
-01:00:21,920 --> 01:00:27,720
+01:00:21.920 --> 01:00:27.720
 se corresponde en chino. Esto es el ideal, pero claro, o sea, si ya es difícil conseguir
 
-679
-01:00:27,720 --> 01:00:32,280
+01:00:27.720 --> 01:00:32.280
 cosas que estén alineadas a nivel de documentos, si imaginan que nadie va a ir a mano al
 
-680
-01:00:32,280 --> 01:00:38,400
+01:00:32.280 --> 01:00:38.400
 linear a nivel de palabra cada uno de las palabras de los idiomas. Entonces, en la práctica
 
-681
-01:00:38,400 --> 01:00:43,360
+01:00:38.400 --> 01:00:43.360
 nunca vamos a encontrar un corpus alineado a nivel de palabra, pero vamos a ver que, como
 
-682
-01:00:43,360 --> 01:00:47,880
+01:00:43.360 --> 01:00:47.880
 resultado de la construcción de los modelos de lenguaje, se produce también como un producto
 
-683
-01:00:47,880 --> 01:00:52,840
+01:00:47.880 --> 01:00:52.840
 secundario, se produce la alineación de los corpus. Entonces, obtenes las dos cosas a
 
-684
-01:00:52,840 --> 01:00:57,960
+01:00:52.840 --> 01:00:57.960
 la vez. Bueno, yo otra cosa es que, a diferencia
 
-685
-01:00:57,960 --> 01:01:04,080
+01:00:57.960 --> 01:01:04.080
 de el texto monolíngue que yo usaba para los modelos de lenguaje, es muy raro que
 
-686
-01:01:04,080 --> 01:01:11,480
+01:01:04.080 --> 01:01:11.480
 naturalmente se produzcan textos en dos idiomas a la vez. O sea, hay que buscarlos bastante,
 
-687
-01:01:11,480 --> 01:01:16,320
+01:01:11.480 --> 01:01:16.320
 digamos, bastante cuidadosamente. Existen algunos contextos en donde eso se produce. Por
 
-688
-01:01:16,320 --> 01:01:20,280
+01:01:16.320 --> 01:01:20.280
 ejemplo, en algunos portales de noticias, puede pasar que tengan versiones en distintos
 
-689
-01:01:20,280 --> 01:01:24,080
+01:01:20.280 --> 01:01:24.080
 idiomas y lo que hagan sea traducir las noticias en distintos idiomas. Entonces, si yo
 
-690
-01:01:24,080 --> 01:01:28,040
+01:01:24.080 --> 01:01:28.040
 puedo encontrar uno de esos, es una buena fuente para construirme un corpus paralelo
 
-691
-01:01:28,040 --> 01:01:32,000
+01:01:28.040 --> 01:01:32.000
 anineado a nivel de documentos. O sea, esta noticia se corresponde con esta otra en el
 
-692
-01:01:32,000 --> 01:01:35,800
+01:01:32.000 --> 01:01:35.800
 otro idioma. Pero un lugar en donde se producen naturalmente
 
-693
-01:01:35,800 --> 01:01:42,160
+01:01:35.800 --> 01:01:42.160
 este tipo de textos es en los países que son bilíngües, o multilíngües. Por ejemplo,
 
-694
-01:01:42,160 --> 01:01:46,800
+01:01:42.160 --> 01:01:46.800
 en Canadá, que hablan inglés y francés, las discusiones del Parlamento Canadíense
 
-695
-01:01:46,800 --> 01:01:51,880
+01:01:46.800 --> 01:01:51.880
 siempre, por ley, tienen que transcribirse en los dos idiomas, tienen que traducirse
 
-696
-01:01:51,880 --> 01:01:58,000
+01:01:51.880 --> 01:01:58.000
 si está en inglés, se daus en francés, se daus en inglés. Y guardan una correspondencia
 
-697
-01:01:58,000 --> 01:02:00,480
+01:01:58.000 --> 01:02:00.480
 entre eso. Guardan el documento de todas las discusiones del Parlamento en los dos
 
-698
-01:02:00,480 --> 01:02:05,600
+01:02:00.480 --> 01:02:05.600
 idiomas. Entonces, ahí, naturalmente se produce un corpus paralelo anineado de documentos
 
-699
-01:02:05,600 --> 01:02:11,120
+01:02:05.600 --> 01:02:11.120
 para el inglés y el francés, que se se conoce como el corpus Hansard. Eso también ocurre
 
-700
-01:02:11,120 --> 01:02:15,600
+01:02:11.120 --> 01:02:15.600
 en concon, en conconciable inglés y chinos, son los dos idiomas oficiales. Entonces,
 
-701
-01:02:15,600 --> 01:02:19,400
+01:02:15.600 --> 01:02:19.400
 el corpus más grande que se tiene para inglés y chinos, está hecho como una compilación
 
-702
-01:02:19,400 --> 01:02:22,880
+01:02:19.400 --> 01:02:22.880
 de lo que son las discusiones del Parlamento de Hong Kong. Y también pasa en la Núneo
 
-703
-01:02:22,880 --> 01:02:28,920
+01:02:22.880 --> 01:02:28.920
 Europea, en el Parlamento Europeo, también tienen la costumbre de traducir todas las discusiones
 
-704
-01:02:28,920 --> 01:02:32,920
+01:02:28.920 --> 01:02:32.920
 a todos los idiomas o a muchos de los idiomas que se usan en la Unión Europea. Entonces,
 
-705
-01:02:32,920 --> 01:02:38,200
+01:02:32.920 --> 01:02:38.200
 hay corpus paralelo para casi todos los idiomas de la Unión Europea. Pero claro, todos
 
-706
-01:02:38,200 --> 01:02:42,560
+01:02:38.200 --> 01:02:42.560
 estos están alineados a nivel de documento. Yo sé qué documento se corresponde con
 
-707
-01:02:42,560 --> 01:02:50,320
+01:02:42.560 --> 01:02:50.320
 cual otro en el otro idioma, pero no anivel de oraciones y mucho menos anivel de palabras.
 
-708
-01:02:50,320 --> 01:02:56,240
+01:02:50.320 --> 01:02:56.240
 Pero bueno, partiendo de un corpus alineado a nivel de documentos, yo puedo llegar a construir
 
-709
-01:02:56,240 --> 01:03:00,960
+01:02:56.240 --> 01:03:00.960
 me, por lo menos, una alineación a nivel de oraciones, siendo un proceso relativamente
 
-710
-01:03:00,960 --> 01:03:10,120
+01:03:00.960 --> 01:03:10.120
 sencillo. Esto se conoce como el algoritmo de que él y Church, que es un algoritmo relativamente
 
-711
-01:03:10,120 --> 01:03:16,880
+01:03:10.120 --> 01:03:16.880
 fácil para alinear corpus, o sea, para pasar corpus que están alineados a nivel de documento,
 
-712
-01:03:16,880 --> 01:03:22,680
+01:03:16.880 --> 01:03:22.680
 pasarlos a que estén alineados a nivel de oración. Y bueno, esto es un algoritmo que funciona,
 
-713
-01:03:22,680 --> 01:03:26,740
+01:03:22.680 --> 01:03:26.740
 está un poco basado en lo que era el algoritmo de distancia de edición del EventTime, que
 
-714
-01:03:26,740 --> 01:03:36,200
+01:03:26.740 --> 01:03:36.200
 vimos hace bastante tiempo en el curso. Bueno, es como muy parecido, también es un
 
-715
-01:03:36,200 --> 01:03:40,920
+01:03:36.200 --> 01:03:40.920
 algoritmo de pronomación dinámica, similar a ese. Funciona de la siguiente manera, o
 
-716
-01:03:40,920 --> 01:03:45,280
+01:03:40.920 --> 01:03:45.280
 sea, no vamos a dar lo mucho en detalle, pero vamos a dar una idea de cómo que funcione.
 
-717
-01:03:45,280 --> 01:03:49,880
+01:03:45.280 --> 01:03:49.880
 En el algoritmo de Gayley Church dice, yo voy a tener un conjunto de oraciones en un idioma
 
-718
-01:03:49,880 --> 01:04:01,320
+01:03:49.880 --> 01:04:01.320
 y otro conjunto de oraciones en el otro idioma. Entonces, considero que un traductor para
 
-719
-01:04:01,320 --> 01:04:06,560
+01:04:01.320 --> 01:04:06.560
 cada oración pudo haber tenido tres opciones, digamos, para pasarlas al otro idioma.
 
-720
-01:04:06,560 --> 01:04:11,160
+01:04:06.560 --> 01:04:11.160
 Un traductor, suponga un traductor humano, agarró oraciones que estaban en español y
 
-721
-01:04:11,160 --> 01:04:16,840
+01:04:11.160 --> 01:04:16.840
 oraciones que estaban en francés. O sea, no ponerles EIF porque lo que puede confundir
 
-722
-01:04:16,840 --> 01:04:21,360
+01:04:16.840 --> 01:04:21.360
 con las otras cosas, así que vamos a decir el lenguaje de origen era F, francés y el
 
-723
-01:04:21,360 --> 01:04:27,720
+01:04:21.360 --> 01:04:27.720
 lenguaje de estino era español. Bien, entonces, un traductor humano cada vez que se enfrentaba
 
-724
-01:04:27,720 --> 01:04:32,880
+01:04:27.720 --> 01:04:32.880
 una oración tenía tres posibilidades. O bien, traducía una oración por otra oración,
 
-725
-01:04:32,880 --> 01:04:39,960
+01:04:32.880 --> 01:04:39.960
 o bien parte de esta oración en dos y traduce una oración por dos, o bien borra esta oración,
 
-726
-01:04:39,960 --> 01:04:44,000
+01:04:39.960 --> 01:04:44.000
 decide que no es tan importante y abarra y borra la oración. Entonces, las tres operaciones
 
-727
-01:04:44,000 --> 01:04:48,560
+01:04:44.000 --> 01:04:48.560
 que se hacen a nivel de oración son la de transformarla en cero, una o dos oraciones
 
-728
-01:04:48,560 --> 01:04:57,680
+01:04:48.560 --> 01:04:57.680
 del otro lado. Eso es una cosa. Lo otro es, el costo relativo de alinear
 
-729
-01:04:57,680 --> 01:05:02,280
+01:04:57.680 --> 01:05:02.280
 estas dos oraciones depende del largo relativo de las oraciones. Entonces, si yo tengo dos
 
-730
-01:05:02,280 --> 01:05:08,040
+01:05:02.280 --> 01:05:08.040
 oraciones que tienen un largo muy parecido, le voy a dar un costo menor para alinearlos,
 
-731
-01:05:08,040 --> 01:05:13,200
+01:05:08.040 --> 01:05:13.200
 era menor o mayor. Sí, menor. Si tiene un largo muy parecido, le voy a dar un valor menor
 
-732
-01:05:13,200 --> 01:05:17,240
+01:05:13.200 --> 01:05:17.240
 para alinear. Si tiene un largo muy distinto, una es muy corta y la otra muy larga, entonces
 
-733
-01:05:17,240 --> 01:05:23,520
+01:05:17.240 --> 01:05:23.520
 le voy a dar un valor mayor para alinear. Entonces, lo que ellos hacen es pensando en
 
-734
-01:05:23,520 --> 01:05:27,600
+01:05:23.520 --> 01:05:27.600
 todo este tipo de operaciones que hay, todas las combinaciones de operaciones posibles,
 
-735
-01:05:27,600 --> 01:05:36,560
+01:05:27.600 --> 01:05:36.560
 o sea, partir esta oración en dos o no partirla o eliminarla o dejarla como está. Entonces,
 
-736
-01:05:36,560 --> 01:05:41,340
+01:05:36.560 --> 01:05:41.340
 con programación dinámica, ven todas las posibilidades de operar distinto para llegar
 
-737
-01:05:41,340 --> 01:05:46,080
+01:05:41.340 --> 01:05:46.080
 al otro lado y calculan las que le da un costo menor. O sea, para cada una de las posibilidades
 
-738
-01:05:46,080 --> 01:05:52,680
+01:05:46.080 --> 01:05:52.680
 calculan cuál es el costo de cada par de oraciones suman todos los costos del documento.
 
-739
-01:05:53,280 --> 01:05:58,720
+01:05:53.280 --> 01:05:58.720
 Y se quedan con el caso que les dé un costo menor en alineación. Eso se puede hacer
 
-740
-01:05:58,720 --> 01:06:04,360
+01:05:58.720 --> 01:06:04.360
 eficientemente, usando programación dinámica lo mismo que hacíamos con la distancia de edición
 
-741
-01:06:04,360 --> 01:06:04,920
+01:06:04.360 --> 01:06:04.920
 de Leberstein.
 
-742
-01:06:13,920 --> 01:06:20,400
+01:06:13.920 --> 01:06:20.400
 Bueno, y este algoritmo que es relativamente sencillo, digamos, es una solución bastante simple,
 
-743
-01:06:20,840 --> 01:06:26,000
+01:06:20.840 --> 01:06:26.000
 logra una tasa de error muy buena, que es de un 4%, digamos, que, sobre todo, parede
 
-744
-01:06:26,000 --> 01:06:30,640
+01:06:26.000 --> 01:06:30.640
 más relacionado, parede más que se parecen como el inglés y el español, etcétera, logra
 
-745
-01:06:30,640 --> 01:06:34,040
+01:06:30.640 --> 01:06:34.040
 una tasa bastante baja de error de un 4%, hay algunas mejoras que se pueden hacer, pero
 
-746
-01:06:34,040 --> 01:06:40,640
+01:06:34.040 --> 01:06:40.640
 en realidad hay un 4% de algo que está bastante bien. Hay un catch que es que para sistemas
 
-747
-01:06:40,640 --> 01:06:44,400
+01:06:40.640 --> 01:06:44.400
 de traducción distintos, traducciones no literales, esto se rompe un poco, por ejemplo,
 
-748
-01:06:44,400 --> 01:06:48,960
+01:06:44.400 --> 01:06:48.960
 para traducir entre inglés y chino, que en chino ni siquiera está claro que les son los límites
 
-749
-01:06:48,960 --> 01:06:52,680
+01:06:48.960 --> 01:06:52.680
 de las palabras, eso es más difícil de ver. Entonces, bueno, este tipo de algoritmos
 
-750
-01:06:52,680 --> 01:06:56,280
+01:06:52.680 --> 01:06:56.280
 no funcionan también, y bueno, hay variantes que funcionan un poco mejor.
 
-751
-01:06:56,280 --> 01:07:04,800
+01:06:56.280 --> 01:07:04.800
 Así que bueno, hoy vamos a dejar por acá y vamos a continuar en la próxima con modelos
 
-752
-01:07:04,800 --> 01:07:05,360
+01:07:04.800 --> 01:07:05.360
 de traducción.
 

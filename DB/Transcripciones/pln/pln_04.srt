@@ -1,0 +1,7440 @@
+1
+00:00:00,000 --> 00:00:24,000
+Bueno, el primero que vamos a hablar es de lenguajes regulares.
+
+2
+00:00:25,000 --> 00:00:29,000
+Ustedes hicieron el curso de teoría de lenguajes y este año
+
+3
+00:00:30,000 --> 00:00:33,000
+generalmente damos una introducción más teórica a lenguajes regulares.
+
+4
+00:00:33,000 --> 00:00:37,000
+Este año decidí cortar esa parte porque en realidad ustedes ya tienen
+
+5
+00:00:37,000 --> 00:00:44,000
+bastante sufrieron bastante aparada y además y compañía en todos esos temas de lenguaje regulares
+
+6
+00:00:44,000 --> 00:00:51,000
+y sus propiedades teóricas, propiedades de clausura y sus diferentes modelos
+
+7
+00:00:51,000 --> 00:00:56,000
+y vamos a dar solo un repaso acá para nivelar un poco porque son del tipo de métodos
+
+8
+00:00:56,000 --> 00:01:01,000
+que forman la base de otra cantidad y que para algunas tareas aplican directamente.
+
+9
+00:01:05,000 --> 00:01:10,000
+Y arranco con esta frase porque como yo decía creo en la primera,
+
+10
+00:01:10,000 --> 00:01:22,000
+en la primera clase Chonky por eso por 1997 mostró que el inglés no era susceptible
+
+11
+00:01:22,000 --> 00:01:28,000
+de ser representado con automata finitos y eso hizo que la investigación en este tipo
+
+12
+00:01:28,000 --> 00:01:31,000
+automata en el procedimiento de lenguaje natural se tuviera como oportunitas años.
+
+13
+00:01:31,000 --> 00:01:35,000
+Y después volvieron, ahora os voy a hablar un poquito más de eso,
+
+14
+00:01:35,000 --> 00:01:41,000
+pero que son los lenguajes regulares y me queda legísimo el teclado de acá.
+
+15
+00:01:41,000 --> 00:01:45,000
+¿Por qué nos interesan los lenguajes regulares?
+
+16
+00:01:45,000 --> 00:01:50,000
+Porque esencialmente la visto como herramienta para el procedimiento de lenguaje natural
+
+17
+00:01:50,000 --> 00:01:57,000
+son una herramienta para especificar texto mediante patrones.
+
+18
+00:01:57,000 --> 00:02:03,000
+Es decir, yo quiero especificar un conjunto de textos a través de un patrón
+
+19
+00:02:03,000 --> 00:02:10,000
+con una expresión sola y generalmente puede utilizar expresiones regulares.
+
+20
+00:02:10,000 --> 00:02:15,000
+Si yo quiero expresar todas las palabras que empiezan con C,
+
+21
+00:02:15,000 --> 00:02:18,000
+tengo que expresar de alguna forma algo como,
+
+22
+00:02:18,000 --> 00:02:26,000
+lo voy a poner en Per, digamos, C punto a Terisco.
+
+23
+00:02:26,000 --> 00:02:31,000
+Es una C seguida de cualquier cosa, cualquier cantidad de veces.
+
+24
+00:02:32,000 --> 00:02:34,000
+Ahora vamos a ver un poco más de eso.
+
+25
+00:02:34,000 --> 00:02:37,000
+Esencialmente es una forma de expresar muchas.
+
+26
+00:02:37,000 --> 00:02:43,000
+Quiero encontrar en un texto todas las palabras que empiezan con mayúscula y terminen con A.
+
+27
+00:02:43,000 --> 00:02:48,000
+Voy a poner una cosa como H, con H en mayúscula que dice,
+
+28
+00:02:48,000 --> 00:02:52,000
+cualquier cosa terminen con A.
+
+29
+00:02:52,000 --> 00:02:54,000
+¿De acuerdo?
+
+30
+00:02:54,000 --> 00:02:56,000
+Y ahí me parecen algunas cosas como, bueno,
+
+31
+00:02:56,000 --> 00:03:01,000
+nada tiene que haber no haber espacios en emé y, por ejemplo, ¿no?
+
+32
+00:03:01,000 --> 00:03:04,000
+Pero una serie de discusiones.
+
+33
+00:03:04,000 --> 00:03:12,000
+Pero lo importante es que yo puedo expresar conjuntos un patrón a través de una expresión,
+
+34
+00:03:12,000 --> 00:03:17,000
+un conjunto de texto a partir de un patrón.
+
+35
+00:03:17,000 --> 00:03:21,000
+Tienen expresividad limitada, se acuerdan de la jerarquía choque, ¿no?
+
+36
+00:03:21,000 --> 00:03:28,000
+Eso tenemos los lenguajes regulares, los lenguajes libre de contexto
+
+37
+00:03:28,000 --> 00:03:33,000
+y los lenguajes recursivamente numerables por acá fuera.
+
+38
+00:03:33,000 --> 00:03:37,000
+Los lenguajes regulares son sólo un subconjunto de los lenguajes.
+
+39
+00:03:37,000 --> 00:03:40,000
+Pero antes, ¿qué son los lenguajes? ¿Qué son los lenguajes formales?
+
+40
+00:03:40,000 --> 00:03:42,000
+¿Ese acuerdan los lenguajes formales?
+
+41
+00:03:42,000 --> 00:03:44,000
+Ahí, se acuerdan.
+
+42
+00:03:44,000 --> 00:03:49,000
+Yo tengo un alfabeto finito de símbolos, ¿sí?
+
+43
+00:03:49,000 --> 00:03:54,000
+De fin o tiras de símbolos.
+
+44
+00:03:54,000 --> 00:03:55,000
+¿De acuerdo?
+
+45
+00:03:55,000 --> 00:04:00,000
+Y los lenguajes son un subconjunto de las tiras que yo puedo formar sobre ese alfabeto.
+
+46
+00:04:00,000 --> 00:04:01,000
+Solamente eso.
+
+47
+00:04:01,000 --> 00:04:06,000
+Es un conjunto de tiras, conjunto de palabras.
+
+48
+00:04:06,000 --> 00:04:11,000
+Los lenguajes regulares sólo hay uno de los lenguajes son regulares.
+
+49
+00:04:11,000 --> 00:04:18,000
+En tanto, pueden ser expresados de la forma que lo vamos a ver ahora con este tipo de expresiones regulares.
+
+50
+00:04:18,000 --> 00:04:25,000
+O sea, no puedo expresar cualquier cosa con lenguajes regulares.
+
+51
+00:04:25,000 --> 00:04:31,000
+Por ejemplo, el ejemplo de manual es que yo no puedo expresar cosas de la forma,
+
+52
+00:04:31,000 --> 00:04:34,000
+igual cantidad deías que debes.
+
+53
+00:04:34,000 --> 00:04:41,000
+Esto no lo puedo expresar con lenguajes regulares.
+
+54
+00:04:41,000 --> 00:04:46,000
+Pero, a cambio de eso, son muy, muy, muy, muy eficientes.
+
+55
+00:04:46,000 --> 00:04:51,000
+Es decir, típicamente cuando yo quiero hacer algo,
+
+56
+00:04:51,000 --> 00:05:01,000
+hacer una búsqueda eficiente de algo en un texto,
+
+57
+00:05:01,000 --> 00:05:05,000
+si lo logros expresar esa búsqueda con una presión regular,
+
+58
+00:05:05,000 --> 00:05:12,000
+sé que lo voy a encontrar de una forma muy eficiente,
+
+59
+00:05:12,000 --> 00:05:15,000
+si lo vuelvo determinístico, incluso de orden,
+
+60
+00:05:15,000 --> 00:05:17,000
+en el largo de la palabra que te busca.
+
+61
+00:05:17,000 --> 00:05:20,000
+¿Te guardó?
+
+62
+00:05:20,000 --> 00:05:28,000
+Y son fácilmente adaptables para buscar un patrón en un corpus.
+
+63
+00:05:28,000 --> 00:05:32,000
+Si yo tengo que buscar un texto como en Unix, con grep,
+
+64
+00:05:32,000 --> 00:05:38,000
+o en un editor de texto, cuando controlo y buscar, o lo que sea,
+
+65
+00:05:38,000 --> 00:05:40,000
+si yo lo puedo especificar con un patrón,
+
+66
+00:05:40,000 --> 00:05:43,000
+generalmente nosotros ponemos una palabra que de última de sus patrón sencillos,
+
+67
+00:05:43,000 --> 00:05:46,000
+que solamente expresa una asuntira,
+
+68
+00:05:46,000 --> 00:05:49,000
+pero yo podría, casi todos los editores profesionales,
+
+69
+00:05:49,000 --> 00:05:52,000
+permiten buscar expresiones regulares.
+
+70
+00:05:52,000 --> 00:05:54,000
+Especificar esos patrónes para buscar,
+
+71
+00:05:54,000 --> 00:05:56,000
+y casi todo lo lenguaje de hecho,
+
+72
+00:05:56,000 --> 00:05:58,000
+creo que todo lo lenguaje de pronunciamiento hoy en día,
+
+73
+00:05:58,000 --> 00:06:01,000
+tienen forma de especificar expresiones regulares.
+
+74
+00:06:01,000 --> 00:06:04,000
+Por ejemplo, si yo tengo un problema de programación,
+
+75
+00:06:04,000 --> 00:06:06,000
+estoy haciendo, y quiero decir, bueno,
+
+76
+00:06:06,000 --> 00:06:09,000
+si lo que encuentro es una URL y quiero expresar una URL de alguna forma,
+
+77
+00:06:09,000 --> 00:06:11,000
+la expresó con una expresión regular,
+
+78
+00:06:11,000 --> 00:06:14,000
+no hay que escribir toda la URL del mundo o que me pueden abarcer.
+
+79
+00:06:14,000 --> 00:06:16,000
+¿Te entiende?
+
+80
+00:06:16,000 --> 00:06:19,000
+Es decir, yo estoy especificando conjuntos.
+
+81
+00:06:19,000 --> 00:06:23,000
+Y esa expresión regulares son fácilmente adaptables para buscar un corpus.
+
+82
+00:06:23,000 --> 00:06:26,000
+Ahora vamos a lo que es un corpus devolviendo todos los ocurrencia del patrón.
+
+83
+00:06:27,000 --> 00:06:31,000
+Un corpus, para expresamiento, le baja natural.
+
+84
+00:06:31,000 --> 00:06:34,000
+Es una cosa muy utilizada y nuestra base de trabajo,
+
+85
+00:06:34,000 --> 00:06:37,000
+es un conjunto de textos.
+
+86
+00:06:37,000 --> 00:06:40,000
+Nosotros llamamos corpus,
+
+87
+00:06:40,000 --> 00:06:44,000
+o el plural corpora,
+
+88
+00:06:44,000 --> 00:06:46,000
+cuando hablamos de un conjunto de textos.
+
+89
+00:06:46,000 --> 00:06:49,000
+Yo tengo un conjunto de textos, eso es un corpus.
+
+90
+00:06:50,000 --> 00:06:53,000
+Ahora vamos a volver a hablar de corpus,
+
+91
+00:06:54,000 --> 00:06:57,000
+pero por ahora lo que estamos hablando es un tengo textos.
+
+92
+00:07:01,000 --> 00:07:03,000
+Bien, ¿qué pasa?
+
+93
+00:07:03,000 --> 00:07:06,000
+Los lenguajes regulares están completamente estudiados
+
+94
+00:07:06,000 --> 00:07:09,000
+y yo diría que podrían considerarse un problema resuelto.
+
+95
+00:07:09,000 --> 00:07:13,000
+Ustedes vienen al curso material lenguajes
+
+96
+00:07:13,000 --> 00:07:22,000
+y saben lo que un ingeniero tiene que saber sobre lenguajes regulares,
+
+97
+00:07:22,000 --> 00:07:27,000
+y eso está en un libro de 1979,
+
+98
+00:07:27,000 --> 00:07:33,000
+o sea, y de hecho toda la teoría anterior al año 1970,
+
+99
+00:07:33,000 --> 00:07:36,000
+si no me equivoco.
+
+100
+00:07:36,000 --> 00:07:39,000
+O sea que están muy bien estudiados,
+
+101
+00:07:39,000 --> 00:07:42,000
+y además están desde Unix incorporados los lenguajes para la amación.
+
+102
+00:07:42,000 --> 00:07:50,000
+Unix ya venía con expresiones regulares, con C, con Greb,
+
+103
+00:07:51,000 --> 00:07:56,000
+con AWS, todos, herramientas que incluían la expresión regulares dentro.
+
+104
+00:07:56,000 --> 00:08:01,000
+Era en épocas maravillosa porque los mismos que definían la teoría
+
+105
+00:08:01,000 --> 00:08:03,000
+de la expresión regulares, los que trabajaban implementar,
+
+106
+00:08:03,000 --> 00:08:06,000
+la eso hoy ya no se ve tanto.
+
+107
+00:08:08,000 --> 00:08:10,000
+Es decir, los que estaban creando los fundamentos
+
+108
+00:08:10,000 --> 00:08:17,000
+eran los mismos riches, querrían que eran los que los implementaban en Unix.
+
+109
+00:08:18,000 --> 00:08:22,000
+Y bueno, y lo que les decía, todos los lenguajes o los inclusions.
+
+110
+00:08:25,000 --> 00:08:29,000
+Bueno, ¿y cómo son? ¿Cómo les usen las expresiones regulares?
+
+111
+00:08:29,000 --> 00:08:32,000
+Y bueno, por ejemplo, una expresión regular,
+
+112
+00:08:32,000 --> 00:08:38,000
+esto es como aparece en la expresión regulares en los lenguajes de formación,
+
+113
+00:08:38,000 --> 00:08:41,000
+que no es lo mismo que las expresiones regulares que vieron
+
+114
+00:08:41,000 --> 00:08:46,000
+en el juicio de los lenguajes que era con mucho menos operadores,
+
+115
+00:08:47,000 --> 00:08:52,000
+que permitían definirla, pero la expresidad de la misma,
+
+116
+00:08:52,000 --> 00:08:55,000
+acá es lo que hay es forma de abreviar cosas,
+
+117
+00:08:55,000 --> 00:08:58,000
+digamos, para no escribir expresiones regulares monstruosas, digamos, ¿no?
+
+118
+00:08:58,000 --> 00:09:01,000
+Entonces, hay cosas como la expresión regular cabeza,
+
+119
+00:09:01,000 --> 00:09:04,000
+encuentra el patrón acá a cabeza, la palabra en esta escrita.
+
+120
+00:09:06,000 --> 00:09:08,000
+Este signo exclamación, reconocer signo exclamación,
+
+121
+00:09:09,000 --> 00:09:14,000
+este corta velarga, ve minúcula, ve mayúscula,
+
+122
+00:09:14,000 --> 00:09:19,000
+entre corchetes es como un or, digamos, ¿si?
+
+123
+00:09:19,000 --> 00:09:23,000
+Que seguía lo mismo que buscar, va a un gongo en mi corta o va a un gongo en mi larga.
+
+124
+00:09:25,000 --> 00:09:29,000
+Esto busca A, B y O C, ¿si? Fíjese que acá es lo que está devolviendo
+
+125
+00:09:29,000 --> 00:09:34,000
+en la primera ocurrencia, eso depende como yo programé la función de buscar.
+
+126
+00:09:35,000 --> 00:09:39,000
+Número del ser al 9, hay algo que no sea mayúscula,
+
+127
+00:09:40,000 --> 00:09:43,000
+este corchete funciona como un dot,
+
+128
+00:09:45,000 --> 00:09:47,000
+y esto es que no sea una S.
+
+129
+00:09:50,000 --> 00:09:53,000
+Esto no, no voy a entrar mucho en detalle, veamos, la idea que...
+
+130
+00:09:53,000 --> 00:09:56,000
+Y acá es como el uso una búsqueda en Python, por ejemplo,
+
+131
+00:09:57,000 --> 00:10:00,000
+con la biblioteca de expresiones regulares de Python,
+
+132
+00:10:01,000 --> 00:10:05,000
+a un search del patrón, y esto se llama nuestro corpo, digamos.
+
+133
+00:10:06,000 --> 00:10:09,000
+Y ahí devuelve la ocurrencia.
+
+134
+00:10:10,000 --> 00:10:13,000
+Más cosas, ¿no?
+
+135
+00:10:14,000 --> 00:10:17,000
+ahí sí, fíjense que el símbolo de...
+
+136
+00:10:18,000 --> 00:10:23,000
+de circunflejo al final no tiene ningún significado especial,
+
+137
+00:10:24,000 --> 00:10:26,000
+y en el medio de a poco,
+
+138
+00:10:27,000 --> 00:10:31,000
+este signo de pregunta quiere decir que el carácter anterior es opcional,
+
+139
+00:10:33,000 --> 00:10:36,000
+el punto maché a cualquier carácter, etcétera.
+
+140
+00:10:40,000 --> 00:10:42,000
+Bueno, estos operadores son sintactic sugar,
+
+141
+00:10:42,000 --> 00:10:45,000
+son formas de abreviar otras cosas, digamos, ¿no?
+
+142
+00:10:45,000 --> 00:10:46,000
+Si yo pongo barra de,
+
+143
+00:10:46,000 --> 00:10:48,000
+estoy pensando en un número,
+
+144
+00:10:48,000 --> 00:10:50,000
+el ser al 9 es otra forma escribirse,
+
+145
+00:10:50,000 --> 00:10:52,000
+el 9 son facilidades, ¿no?
+
+146
+00:10:53,000 --> 00:10:55,000
+No agrega expresividad, pero vuelve la vida más fácil
+
+147
+00:10:55,000 --> 00:10:57,000
+de que está programando.
+
+148
+00:10:59,000 --> 00:11:01,000
+Y aquí hay forma de sustituir,
+
+149
+00:11:01,000 --> 00:11:03,000
+esto es utilizar un nudo,
+
+150
+00:11:03,000 --> 00:11:05,000
+y aquí hay forma de sustituir,
+
+151
+00:11:05,000 --> 00:11:07,000
+esto es utilizar un nudo,
+
+152
+00:11:07,000 --> 00:11:09,000
+y aquí hay forma de sustituir,
+
+153
+00:11:09,000 --> 00:11:11,000
+esto es utilizar una expresión en una sustitución.
+
+154
+00:11:18,000 --> 00:11:20,000
+Y casi todos los lenguajes de promoción,
+
+155
+00:11:20,000 --> 00:11:22,000
+además uno puede incluir cosas como decir,
+
+156
+00:11:22,000 --> 00:11:24,000
+quiero que lo que dice acá,
+
+157
+00:11:24,000 --> 00:11:27,000
+sea exactamente lo mismo que lo que dice acá.
+
+158
+00:11:28,000 --> 00:11:30,000
+¿Se tiene?
+
+159
+00:11:31,000 --> 00:11:33,000
+Por ejemplo, acá dice,
+
+160
+00:11:33,000 --> 00:11:36,000
+quiero estar aquí mañana, quiero,
+
+161
+00:11:36,000 --> 00:11:38,000
+porque estamos apiando el chie,
+
+162
+00:11:39,000 --> 00:11:40,000
+¿sí?
+
+163
+00:11:40,000 --> 00:11:41,000
+con este.
+
+164
+00:11:43,000 --> 00:11:45,000
+Aguardo, ¿en quién es?
+
+165
+00:11:45,000 --> 00:11:48,000
+Esto formalmente no son expresiones regulares,
+
+166
+00:11:50,000 --> 00:11:52,000
+sino que son extensiones.
+
+167
+00:11:52,000 --> 00:11:55,000
+De hecho, esto es más expresivo que la expresión regulares.
+
+168
+00:11:58,000 --> 00:12:01,000
+Esto es un poco de repaso, digamos, ¿no?
+
+169
+00:12:01,000 --> 00:12:03,000
+del tipo de cosas que puedo hacer,
+
+170
+00:12:03,000 --> 00:12:05,000
+pero lo que nos interesa para este curso es que yo puedo
+
+171
+00:12:05,000 --> 00:12:06,000
+buscar rápidamente,
+
+172
+00:12:06,000 --> 00:12:08,000
+y especificar muchas cosas a la vez buscar.
+
+173
+00:12:09,000 --> 00:12:11,000
+Si yo, el asunto es,
+
+174
+00:12:11,000 --> 00:12:14,000
+si yo puedo resolver algo de expresión en regular,
+
+175
+00:12:14,000 --> 00:12:16,000
+debería resolverlo con la expresión en regular.
+
+176
+00:12:16,000 --> 00:12:17,000
+¿Por qué?
+
+177
+00:12:17,000 --> 00:12:19,000
+Porque hacerlo más complejo,
+
+178
+00:12:20,000 --> 00:12:22,000
+me voy a perder eficiencia,
+
+179
+00:12:22,000 --> 00:12:24,000
+porque no hay nada más eficiente que la expresión en regular.
+
+180
+00:12:25,000 --> 00:12:26,000
+Aguardo,
+
+181
+00:12:26,000 --> 00:12:28,000
+más que muchas veces no puedo,
+
+182
+00:12:28,000 --> 00:12:30,000
+o me queda muy complicado escribirlo.
+
+183
+00:12:32,000 --> 00:12:34,000
+Porque la expresión regular,
+
+184
+00:12:34,000 --> 00:12:40,000
+fíjense que uno tiene que cubrir toda la casuistia
+
+185
+00:12:40,000 --> 00:12:41,000
+que quiere identificar,
+
+186
+00:12:42,000 --> 00:12:45,000
+lo cual es muy fácil cuando digo toda la palabra que empiezan con C,
+
+187
+00:12:45,000 --> 00:12:47,000
+pero cuando yo quiero empezar a hacer cosas más complicadas,
+
+188
+00:12:47,000 --> 00:12:48,000
+como identificar,
+
+189
+00:12:48,000 --> 00:12:50,000
+y ahora lo vamos a ver,
+
+190
+00:12:51,000 --> 00:12:53,000
+separar palabras, por ejemplo,
+
+191
+00:12:54,000 --> 00:12:56,000
+ahí, bueno, ¿pero qué separa una palabra, un espacio?
+
+192
+00:12:56,000 --> 00:12:58,000
+Sí, pero también puede ser un signo de puntuación,
+
+193
+00:12:59,000 --> 00:13:01,000
+sí, y un dos puntos también.
+
+194
+00:13:01,000 --> 00:13:02,000
+Entonces yo podría decir,
+
+195
+00:13:02,000 --> 00:13:04,000
+buscar todos los signos de puntuación entre dos palabras,
+
+196
+00:13:05,000 --> 00:13:07,000
+pero ¿y qué pasa si dieron enter?
+
+197
+00:13:07,000 --> 00:13:10,000
+Es decir, representar todo por un expresión regular
+
+198
+00:13:10,000 --> 00:13:12,000
+a veces es bastante complicado.
+
+199
+00:13:12,000 --> 00:13:14,000
+Ahora vamos a hablar un poco más de eso.
+
+200
+00:13:15,000 --> 00:13:17,000
+¿De cómo se usan las expresiones regular?
+
+201
+00:13:20,000 --> 00:13:21,000
+Pero como le decía,
+
+202
+00:13:22,000 --> 00:13:25,000
+las expresiones regulares definen un conjunto de tiras
+
+203
+00:13:25,000 --> 00:13:27,000
+que se llaman lenguajes regulares.
+
+204
+00:13:29,000 --> 00:13:30,000
+¿Sí?
+
+205
+00:13:32,000 --> 00:13:34,000
+¿Y qué tienen interesantes y más propiedades de clausura
+
+206
+00:13:34,000 --> 00:13:36,000
+como viernes de curso de tiras de lenguajes?
+
+207
+00:13:37,000 --> 00:13:39,000
+Lo cual hace que yo pueda, por ejemplo,
+
+208
+00:13:39,000 --> 00:13:41,000
+si quiero buscar una cosa,
+
+209
+00:13:42,000 --> 00:13:45,000
+algo que está representado por una expresión regular
+
+210
+00:13:46,000 --> 00:13:48,000
+y dos cosas que están representadas por la expresión,
+
+211
+00:13:48,000 --> 00:13:50,000
+el or de ambas es cerrado,
+
+212
+00:13:50,000 --> 00:13:51,000
+o sea que tenga una forma,
+
+213
+00:13:51,000 --> 00:13:52,000
+no lo puse acá,
+
+214
+00:13:52,000 --> 00:13:56,000
+tiene una forma inmediata de buscar ambos a la vez.
+
+215
+00:13:57,000 --> 00:14:00,000
+Es decir, están fácil buscar una cosa como buscar una cosa u otra.
+
+216
+00:14:01,000 --> 00:14:02,000
+Siempre es determinístico,
+
+217
+00:14:02,000 --> 00:14:04,000
+porque son cerrados bajo todas estas propiedades.
+
+218
+00:14:04,000 --> 00:14:05,000
+O si yo quiero buscar,
+
+219
+00:14:07,000 --> 00:14:08,000
+es tan fácil buscar algo que sea,
+
+220
+00:14:10,000 --> 00:14:12,000
+que si encuentro el estrín perro,
+
+221
+00:14:12,000 --> 00:14:13,000
+como algo que no sea perro,
+
+222
+00:14:14,000 --> 00:14:15,000
+lo explicó,
+
+223
+00:14:16,000 --> 00:14:17,000
+porque son cerrados,
+
+224
+00:14:17,000 --> 00:14:19,000
+porque si yo tengo un lenguaje regular
+
+225
+00:14:20,000 --> 00:14:21,000
+que representa perro
+
+226
+00:14:21,000 --> 00:14:23,000
+y media también tengo la negación.
+
+227
+00:14:24,000 --> 00:14:26,000
+Pero lo más interesante de eso,
+
+228
+00:14:26,000 --> 00:14:29,000
+es que la demostración de que son clausuras,
+
+229
+00:14:30,000 --> 00:14:32,000
+son constructivas,
+
+230
+00:14:32,000 --> 00:14:33,000
+porque,
+
+231
+00:14:34,000 --> 00:14:35,000
+porque los lenguajes regulares,
+
+232
+00:14:35,000 --> 00:14:38,000
+además de poder ser expresados con una expresión regular,
+
+233
+00:14:40,000 --> 00:14:42,000
+también pueden ser representados
+
+234
+00:14:43,000 --> 00:14:45,000
+por una automata finito.
+
+235
+00:14:46,000 --> 00:14:47,000
+Claro, vamos a ver lo que es,
+
+236
+00:14:47,000 --> 00:14:49,000
+pero me seguro que se acuerdan de tirar el lenguaje.
+
+237
+00:14:50,000 --> 00:14:52,000
+Es decir, exactamente las mismas tiras
+
+238
+00:14:52,000 --> 00:14:53,000
+que yo expreso con una expresión regular,
+
+239
+00:14:54,000 --> 00:14:55,000
+hay una automata,
+
+240
+00:14:56,000 --> 00:14:57,000
+una máquina de estado,
+
+241
+00:14:58,000 --> 00:14:59,000
+que la reconoce.
+
+242
+00:15:00,000 --> 00:15:01,000
+Sí, un lenguaje regular
+
+243
+00:15:01,000 --> 00:15:03,000
+es el conjunto de estrín sobre un alfabeto
+
+244
+00:15:04,000 --> 00:15:06,000
+sin más reconocidos por un automata finito.
+
+245
+00:15:08,000 --> 00:15:10,000
+O sea, es una definición alternativa de lo mismo.
+
+246
+00:15:13,000 --> 00:15:14,000
+Entonces,
+
+247
+00:15:15,000 --> 00:15:17,000
+¿Cómo seguí una automata finito para dirección?
+
+248
+00:15:18,000 --> 00:15:20,000
+¿Se acuerdan de cómo son las automatas finito?
+
+249
+00:15:21,000 --> 00:15:22,000
+Este pizarro.
+
+250
+00:15:26,000 --> 00:15:28,000
+Se acuerdan de los automatas finito,
+
+251
+00:15:28,000 --> 00:15:31,000
+son, esencialmente, un conjunto de estados.
+
+252
+00:15:35,000 --> 00:15:36,000
+Sí,
+
+253
+00:15:37,000 --> 00:15:39,000
+un estado por donde se comienza,
+
+254
+00:15:40,000 --> 00:15:41,000
+sí,
+
+255
+00:15:42,000 --> 00:15:44,000
+un estado por donde se comienza,
+
+256
+00:15:46,000 --> 00:15:47,000
+sí,
+
+257
+00:15:48,000 --> 00:15:50,000
+transiciones que tienen símbolos
+
+258
+00:15:52,000 --> 00:15:53,000
+y que van de un estado al otro,
+
+259
+00:15:54,000 --> 00:15:55,000
+sí,
+
+260
+00:15:56,000 --> 00:15:58,000
+y algunos estados especiales que se llaman estados finales.
+
+261
+00:16:01,000 --> 00:16:02,000
+¿Se acuerdan de esto, no?
+
+262
+00:16:03,000 --> 00:16:04,000
+Todos símbolos sobre el alfabeto.
+
+263
+00:16:05,000 --> 00:16:07,000
+¿Cómo seguimos una automata finito para direcciones de correo?
+
+264
+00:16:08,000 --> 00:16:09,000
+¿Más o menos?
+
+265
+00:16:15,000 --> 00:16:16,000
+Este automata.
+
+266
+00:16:17,000 --> 00:16:19,000
+Vamos a suponer que yo acá escribo todos los símbolos,
+
+267
+00:16:19,000 --> 00:16:21,000
+tengo que hacer un arco por cada símbolo.
+
+268
+00:16:27,000 --> 00:16:29,000
+Supongamos que en el alfabeto son mi núcleo,
+
+269
+00:16:29,000 --> 00:16:30,000
+masúscula de arroz y punto, ¿no?
+
+270
+00:16:31,000 --> 00:16:32,000
+Este automata.
+
+271
+00:16:33,000 --> 00:16:36,000
+¿Reconoce de direcciones de correo?
+
+272
+00:16:38,000 --> 00:16:41,000
+Yo iría que sí, pero,
+
+273
+00:16:42,000 --> 00:16:43,000
+pero exactamente,
+
+274
+00:16:44,000 --> 00:16:46,000
+reconoce eso y mucho más, o sea que no es lo que queremos.
+
+275
+00:16:47,000 --> 00:16:49,000
+Nosotros queremos una automata que genere exactamente,
+
+276
+00:16:50,000 --> 00:16:51,000
+o tan exactamente como podamos,
+
+277
+00:16:52,000 --> 00:16:53,000
+las direcciones de correo.
+
+278
+00:16:54,000 --> 00:16:55,000
+Entonces, ¿cómo sería?
+
+279
+00:17:04,000 --> 00:17:05,000
+¿Qué hago?
+
+280
+00:17:08,000 --> 00:17:09,000
+¿Qué sería?
+
+281
+00:17:10,000 --> 00:17:11,000
+¿Aseta? ¿Aseta?
+
+282
+00:17:13,000 --> 00:17:14,000
+¿Sí? ¿Y después?
+
+283
+00:17:15,000 --> 00:17:17,000
+Bueno, sacamos los puntos, tenemos letras, puntos y arroba.
+
+284
+00:17:19,000 --> 00:17:20,000
+¿Aboir una arroba?
+
+285
+00:17:28,000 --> 00:17:29,000
+¿Sí?
+
+286
+00:17:30,000 --> 00:17:31,000
+¿Punto?
+
+287
+00:17:34,000 --> 00:17:35,000
+¿Lo mismo?
+
+288
+00:17:35,000 --> 00:17:37,000
+Vamos a poner que el arco ya sale muy rápido, ¿sí?
+
+289
+00:17:44,000 --> 00:17:45,000
+¿Con qué símbolo?
+
+290
+00:17:48,000 --> 00:17:49,000
+¿Hay que ir a esto?
+
+291
+00:17:53,000 --> 00:17:54,000
+¿Qué le parece?
+
+292
+00:17:56,000 --> 00:17:57,000
+¿Qué le parece?
+
+293
+00:17:59,000 --> 00:18:00,000
+¿Me?
+
+294
+00:18:01,000 --> 00:18:02,000
+Por...
+
+295
+00:18:03,000 --> 00:18:05,000
+¿Cómo compramos?
+
+296
+00:18:06,000 --> 00:18:08,000
+¿Un problema que tiene que te pueden poner arroba algo?
+
+297
+00:18:09,000 --> 00:18:11,000
+¿Sí? ¿Qué otra? ¿Tiene un otro problema más?
+
+298
+00:18:15,000 --> 00:18:16,000
+¿Qué otra cosa pasa?
+
+299
+00:18:17,000 --> 00:18:20,000
+Que de sólo más mate algo, punto con, punto a algo, ¿no?
+
+300
+00:18:20,000 --> 00:18:22,000
+Sólo un punto y podría tener más de uno.
+
+301
+00:18:26,000 --> 00:18:29,000
+Y acá, si no le ponemos el lepsilón, necesariamente tiene que tener una letra,
+
+302
+00:18:29,000 --> 00:18:30,000
+lo cual no se necesita mal.
+
+303
+00:18:31,000 --> 00:18:34,000
+Especificar una expresión regular no siempre es este,
+
+304
+00:18:35,000 --> 00:18:37,000
+del todo sencillo y determina,
+
+305
+00:18:38,000 --> 00:18:41,000
+y es parte de nuestro problema de especificación.
+
+306
+00:18:41,000 --> 00:18:42,000
+Igual que tuvimos bastante bien.
+
+307
+00:18:44,000 --> 00:18:47,000
+Aquí hay una que no es mucho mejor que lo que hicimos nosotros.
+
+308
+00:18:49,000 --> 00:18:51,000
+No, porque ahí es más o menos.
+
+309
+00:18:52,000 --> 00:18:55,000
+Ahí anda con mi Gmail.com, pero no anda con...
+
+310
+00:18:56,000 --> 00:18:58,000
+No te digo muy.
+
+311
+00:19:00,000 --> 00:19:01,000
+Pero está.
+
+312
+00:19:01,000 --> 00:19:04,000
+Es decir, lo que tiene de bueno es que, a ver,
+
+313
+00:19:04,000 --> 00:19:07,000
+lo que tiene de bueno y reitero es que si yo tengo eso rápidamente,
+
+314
+00:19:07,000 --> 00:19:09,000
+puedo encontrar esas expresiones,
+
+315
+00:19:10,000 --> 00:19:12,000
+la dirección y el correo, como la especificé,
+
+316
+00:19:12,000 --> 00:19:14,000
+la puedo rápidamente encontrar en un cuerpo.
+
+317
+00:19:17,000 --> 00:19:19,000
+¿Por qué las puedo ver? ¿Por qué las puedo?
+
+318
+00:19:19,000 --> 00:19:21,000
+Porque yo siempre tengo la forma,
+
+319
+00:19:21,000 --> 00:19:23,000
+y acá viene la explicación de por qué es eficiente,
+
+320
+00:19:23,000 --> 00:19:25,000
+porque yo siempre tengo la forma de esto,
+
+321
+00:19:26,000 --> 00:19:28,000
+esto es un automata finito de terminista.
+
+322
+00:19:29,000 --> 00:19:30,000
+Quiere decir que yo,
+
+323
+00:19:32,000 --> 00:19:35,000
+simplemente leo la entrada, voy recorriendo el automata
+
+324
+00:19:35,000 --> 00:19:36,000
+y si cuando terminé,
+
+325
+00:19:37,000 --> 00:19:40,000
+llegué a un estado final, quiere decir que reconoci esa entrada.
+
+326
+00:19:41,000 --> 00:19:42,000
+Eso lo hago en orden,
+
+327
+00:19:43,000 --> 00:19:45,000
+en tantos pasos como en largo tenga la entrada.
+
+328
+00:19:47,000 --> 00:19:49,000
+No importa, lo...
+
+329
+00:19:49,000 --> 00:19:51,000
+Y voy recorriendo el texto, digamos, ¿no?
+
+330
+00:19:51,000 --> 00:19:53,000
+¿Cómo se hace la búsqueda de otra cosa?
+
+331
+00:19:53,000 --> 00:19:54,000
+Pero, pero...
+
+332
+00:19:54,000 --> 00:19:56,000
+Les voy recorriendo y intentando detectarse a parisono de eso.
+
+333
+00:20:01,000 --> 00:20:02,000
+Entonces,
+
+334
+00:20:03,000 --> 00:20:04,000
+en asuntos así,
+
+335
+00:20:05,000 --> 00:20:06,000
+los lenguajes regulares,
+
+336
+00:20:08,000 --> 00:20:11,000
+siempre pueden ser representados por una expresión regular,
+
+337
+00:20:12,000 --> 00:20:14,000
+es mucho más fácil escribir una expresión regular,
+
+338
+00:20:15,000 --> 00:20:16,000
+en general,
+
+339
+00:20:16,000 --> 00:20:19,000
+que dibujar el automata, que es una cosa que va a poder creciendo
+
+340
+00:20:19,000 --> 00:20:20,000
+y quedar enorme, ¿no?
+
+341
+00:20:20,000 --> 00:20:22,000
+Porque yo puedo hacer una expresión regular,
+
+342
+00:20:23,000 --> 00:20:26,000
+como le decía la demostración de la clausura es contrutiva,
+
+343
+00:20:26,000 --> 00:20:29,000
+entonces yo hago, si yo quiero conocer, quiero reconocer expresiones de correo,
+
+344
+00:20:29,000 --> 00:20:31,000
+o nombre de países de África,
+
+345
+00:20:32,000 --> 00:20:34,000
+o una expresión regular para la dirección de correo,
+
+346
+00:20:35,000 --> 00:20:36,000
+otra expresión regular,
+
+347
+00:20:37,000 --> 00:20:39,000
+para los países de África,
+
+348
+00:20:40,000 --> 00:20:42,000
+generos los automatas de ambos,
+
+349
+00:20:43,000 --> 00:20:45,000
+que hay algoritmos para convertir expresión,
+
+350
+00:20:45,000 --> 00:20:46,000
+por eso le decía que acá está,
+
+351
+00:20:46,000 --> 00:20:48,000
+lo que tiene bueno que acá está todo resuelto.
+
+352
+00:20:49,000 --> 00:20:50,000
+Generos los automatas de ambos,
+
+353
+00:20:51,000 --> 00:20:52,000
+y simplemente,
+
+354
+00:20:52,000 --> 00:20:53,000
+creo una automata nuevo,
+
+355
+00:20:54,000 --> 00:20:55,000
+que lo que tiene es un estado inicial
+
+356
+00:20:55,000 --> 00:20:57,000
+y que me manda a una automata o al otro.
+
+357
+00:21:00,000 --> 00:21:01,000
+Y eso me da el horro.
+
+358
+00:21:01,000 --> 00:21:03,000
+Ahora vamos a lo que se le decía, pero está.
+
+359
+00:21:04,000 --> 00:21:05,000
+De acuerdo?
+
+360
+00:21:05,000 --> 00:21:06,000
+Es decir, siempre puedo construir algo eficiente
+
+361
+00:21:06,000 --> 00:21:08,000
+para reconocer cualquier cosa expresada con la expresión regular.
+
+362
+00:21:12,000 --> 00:21:13,000
+¿Alguna duda?
+
+363
+00:21:15,000 --> 00:21:16,000
+Bueno, esa es la definición de automata finito
+
+364
+00:21:16,000 --> 00:21:17,000
+que coincide con lo que hablamos ¿no?
+
+365
+00:21:18,000 --> 00:21:20,000
+Tengo un conjunto finito de estados,
+
+366
+00:21:21,000 --> 00:21:22,000
+un alfabeto,
+
+367
+00:21:22,000 --> 00:21:23,000
+un estado inicial,
+
+368
+00:21:23,000 --> 00:21:25,000
+y un conjunto de estados y finales.
+
+369
+00:21:26,000 --> 00:21:27,000
+¿De acuerdo?
+
+370
+00:21:28,000 --> 00:21:30,000
+Y cuando reconozco, y bueno,
+
+371
+00:21:30,000 --> 00:21:31,000
+sí,
+
+372
+00:21:33,000 --> 00:21:34,000
+la función que me dice,
+
+373
+00:21:34,000 --> 00:21:37,000
+ir desde una función
+
+374
+00:21:38,000 --> 00:21:39,000
+denta extendida,
+
+375
+00:21:39,000 --> 00:21:40,000
+que va al estado inicial,
+
+376
+00:21:41,000 --> 00:21:43,000
+lee una tira y llegado a otro estado,
+
+377
+00:21:43,000 --> 00:21:44,000
+si esa función me siga un final.
+
+378
+00:21:45,000 --> 00:21:46,000
+Bueno,
+
+379
+00:21:47,000 --> 00:21:49,000
+o sea, no importa si yo paso por un final en el camino,
+
+380
+00:21:49,000 --> 00:21:51,000
+tengo que terminar mi tira en el estado final.
+
+381
+00:21:56,000 --> 00:21:58,000
+La pregunta que le dejo de ver es cuál sería
+
+382
+00:21:58,000 --> 00:22:00,000
+la expresión regular para las direcciones del correo.
+
+383
+00:22:02,000 --> 00:22:03,000
+Y no solo eso,
+
+384
+00:22:03,000 --> 00:22:05,000
+hay una tercera forma de representar lo que es
+
+385
+00:22:05,000 --> 00:22:07,000
+a través de gramáticas regulares.
+
+386
+00:22:08,000 --> 00:22:09,000
+Sí.
+
+387
+00:22:09,000 --> 00:22:10,000
+Ya vamos a hablar luego de gramáticas.
+
+388
+00:22:10,000 --> 00:22:12,000
+Pero hay una gramática que permite expresar
+
+389
+00:22:13,000 --> 00:22:14,000
+los lenguajes regulares,
+
+390
+00:22:14,000 --> 00:22:16,000
+es altamente las mismas tiras.
+
+391
+00:22:19,000 --> 00:22:21,000
+Pero siempre son visiones alternativas
+
+392
+00:22:21,000 --> 00:22:23,000
+de un conjunto de tiras.
+
+393
+00:22:24,000 --> 00:22:26,000
+Siempre vamos a estar hablando de conjuntos de tira.
+
+394
+00:22:26,000 --> 00:22:27,000
+En todos los lenguajes,
+
+395
+00:22:27,000 --> 00:22:29,000
+un lenguaje es un conjunto de tiras.
+
+396
+00:22:31,000 --> 00:22:33,000
+Incluido los lenguajes naturales.
+
+397
+00:22:38,000 --> 00:22:39,000
+Los autómetas finitos además pueden ser,
+
+398
+00:22:39,000 --> 00:22:41,000
+nosotros hablamos de no deterministas,
+
+399
+00:22:41,000 --> 00:22:42,000
+de deterministas, perdón.
+
+400
+00:22:43,000 --> 00:22:45,000
+Pero pueden ser no deterministas.
+
+401
+00:22:45,000 --> 00:22:47,000
+El lenguaje de las sovejas que tengo acá
+
+402
+00:22:47,000 --> 00:22:50,000
+es ver una cierta cantidad de es
+
+403
+00:22:51,000 --> 00:22:52,000
+y una última es.
+
+404
+00:22:53,000 --> 00:22:54,000
+Esto es no determinista,
+
+405
+00:22:54,000 --> 00:22:56,000
+porque no sé cuándo es la última.
+
+406
+00:22:57,000 --> 00:22:59,000
+¿Aca puedo arvuelta o no?
+
+407
+00:23:00,000 --> 00:23:01,000
+¿De acuerdo?
+
+408
+00:23:01,000 --> 00:23:03,000
+Los autómetas finitos no deterministas reconoce
+
+409
+00:23:03,000 --> 00:23:05,000
+en una tira cuando algún camino lleva un estado final.
+
+410
+00:23:07,000 --> 00:23:09,000
+Parecen más expresivos que los lenguajes de deterministas,
+
+411
+00:23:10,000 --> 00:23:11,000
+pero no lo son.
+
+412
+00:23:13,000 --> 00:23:15,000
+Conocemos algoritmos para transformar
+
+413
+00:23:15,000 --> 00:23:19,000
+de esto a un automata finito de determinista.
+
+414
+00:23:21,000 --> 00:23:22,000
+Y no sólo eso,
+
+415
+00:23:22,000 --> 00:23:24,000
+es como hacer para que esto,
+
+416
+00:23:25,000 --> 00:23:26,000
+este automata,
+
+417
+00:23:26,000 --> 00:23:27,000
+que no solo es no determinista,
+
+418
+00:23:27,000 --> 00:23:29,000
+sino que tiene transiciones cerocilogueares
+
+419
+00:23:29,000 --> 00:23:30,000
+y que yo no puedo mover de este estado,
+
+420
+00:23:30,000 --> 00:23:31,000
+este estado,
+
+421
+00:23:31,000 --> 00:23:34,000
+sin consumir la entrada.
+
+422
+00:23:35,000 --> 00:23:36,000
+Esto aparece más expresivo,
+
+423
+00:23:36,000 --> 00:23:37,000
+pero no lo es.
+
+424
+00:23:37,000 --> 00:23:39,000
+Todos son los mismos lenguajes regulares.
+
+425
+00:23:40,000 --> 00:23:41,000
+De acuerdo,
+
+426
+00:23:41,000 --> 00:23:43,000
+entonces yo siempre puedo transformar
+
+427
+00:23:44,000 --> 00:23:45,000
+una automata finito,
+
+428
+00:23:45,000 --> 00:23:46,000
+no determinista,
+
+429
+00:23:46,000 --> 00:23:48,000
+que a veces me queda más fácil para pacificar.
+
+430
+00:23:48,000 --> 00:23:49,000
+El lenguaje de la oveja es más fácil
+
+431
+00:23:49,000 --> 00:23:51,000
+de pacificar con uno determinista.
+
+432
+00:23:53,000 --> 00:23:55,000
+Por lenguajes cuyo último letra es una A.
+
+433
+00:23:58,000 --> 00:24:00,000
+Yo puedo transformar esto a
+
+434
+00:24:01,000 --> 00:24:04,000
+uno determinista y reconocer en tiempo lineal.
+
+435
+00:24:05,000 --> 00:24:08,000
+¿Por qué no siempre me conviene
+
+436
+00:24:08,000 --> 00:24:10,000
+me convendría hacer eso?
+
+437
+00:24:11,000 --> 00:24:13,000
+¿Por qué no siempre me convendría
+
+438
+00:24:13,000 --> 00:24:15,000
+y hay algoritmo para reconocer
+
+439
+00:24:15,000 --> 00:24:17,000
+automatas no deterministas?
+
+440
+00:24:19,000 --> 00:24:21,000
+Una forma que yo tengo es,
+
+441
+00:24:22,000 --> 00:24:24,000
+quiero reconocer una expresión regular,
+
+442
+00:24:25,000 --> 00:24:27,000
+la específico con una automata no determinista,
+
+443
+00:24:29,000 --> 00:24:30,000
+lo convierto a determinista
+
+444
+00:24:30,000 --> 00:24:32,000
+y el algoritmo de ese sencillo de buscar,
+
+445
+00:24:33,000 --> 00:24:35,000
+recorrer los arcos como hicimos con el dedo, ¿no?
+
+446
+00:24:35,000 --> 00:24:36,000
+Programar eso.
+
+447
+00:24:37,000 --> 00:24:39,000
+¿Por qué a mí me podía convenir directamente
+
+448
+00:24:39,000 --> 00:24:41,000
+tratar un algoritmo de que recorra esto?
+
+449
+00:24:53,000 --> 00:24:54,000
+¿Por qué?
+
+450
+00:24:54,000 --> 00:24:56,000
+Nada, el lenguaje se quedó con la idea
+
+451
+00:24:56,000 --> 00:24:58,000
+de que era siempre mejor voluarlo de terministas,
+
+452
+00:24:58,000 --> 00:24:59,000
+pues son mucho mejor y malino,
+
+453
+00:24:59,000 --> 00:25:01,000
+pero también son mucho más grandes.
+
+454
+00:25:02,000 --> 00:25:05,000
+Porque yo para resolver el no determinismo
+
+455
+00:25:05,000 --> 00:25:07,000
+si bien puedo lo resuelvo creando
+
+456
+00:25:07,000 --> 00:25:08,000
+Estados nuevos.
+
+457
+00:25:09,000 --> 00:25:11,000
+Y a mí me puede convenir en lugar de crear
+
+458
+00:25:11,000 --> 00:25:13,000
+una nueva automata mucho más grande
+
+459
+00:25:13,000 --> 00:25:15,000
+y que es más tengo el costo de conversión, ¿no?
+
+460
+00:25:16,000 --> 00:25:19,000
+Es mantener en memoria en qué posición estoy,
+
+461
+00:25:19,000 --> 00:25:21,000
+mantener el no determinismo.
+
+462
+00:25:22,000 --> 00:25:24,000
+Si ustedes se acuerdan,
+
+463
+00:25:24,000 --> 00:25:25,000
+el algoritmo de Thompson,
+
+464
+00:25:26,000 --> 00:25:28,000
+lo que permitiera pasar de este automata,
+
+465
+00:25:28,000 --> 00:25:29,000
+uno determinista y lo que se era,
+
+466
+00:25:29,000 --> 00:25:30,000
+en qué estado estoy,
+
+467
+00:25:30,000 --> 00:25:31,000
+en tu incusero,
+
+468
+00:25:31,000 --> 00:25:33,000
+viene una B, estoy en C1.
+
+469
+00:25:33,000 --> 00:25:34,000
+Si viene una E,
+
+470
+00:25:34,000 --> 00:25:35,000
+estoy en C2.
+
+471
+00:25:36,000 --> 00:25:37,000
+Si viene una E,
+
+472
+00:25:37,000 --> 00:25:38,000
+en C2,
+
+473
+00:25:38,000 --> 00:25:40,000
+yo puedo estar en C2 o en C3.
+
+474
+00:25:42,000 --> 00:25:44,000
+Recuerdo la lista de los estados en que estoy.
+
+475
+00:25:44,000 --> 00:25:46,000
+Seguramente lo aprendieron para hacerlo
+
+476
+00:25:46,000 --> 00:25:48,000
+en el segundo parcial y después se olvidaron.
+
+477
+00:25:51,000 --> 00:25:52,000
+No, no.
+
+478
+00:25:53,000 --> 00:25:54,000
+Entonces,
+
+479
+00:25:54,000 --> 00:25:55,000
+en estos modelos,
+
+480
+00:25:55,000 --> 00:25:57,000
+el problema es elegir el camino adecuado
+
+481
+00:25:57,000 --> 00:25:58,000
+para procesar la tira.
+
+482
+00:25:58,000 --> 00:26:00,000
+Eso no voy a entrar mucho en detalle en esto,
+
+483
+00:26:01,000 --> 00:26:05,000
+pero como puedo elegir el camino adecuado
+
+484
+00:26:05,000 --> 00:26:06,000
+para procesar la tira.
+
+485
+00:26:08,000 --> 00:26:11,000
+Como digo,
+
+486
+00:26:11,000 --> 00:26:13,000
+si una automata reconoce una tira.
+
+487
+00:26:15,000 --> 00:26:16,000
+Y los caminos son varios,
+
+488
+00:26:16,000 --> 00:26:17,000
+esencialmente uno,
+
+489
+00:26:17,000 --> 00:26:18,000
+si ya es
+
+490
+00:26:19,000 --> 00:26:20,000
+backup,
+
+491
+00:26:20,000 --> 00:26:21,000
+es como
+
+492
+00:26:22,000 --> 00:26:23,000
+es el viejo querido backtracking,
+
+493
+00:26:24,000 --> 00:26:25,000
+es decir,
+
+494
+00:26:26,000 --> 00:26:27,000
+si yo tengo
+
+495
+00:26:28,000 --> 00:26:29,000
+este automata.
+
+496
+00:26:31,000 --> 00:26:32,000
+¿Verdad?
+
+497
+00:26:33,000 --> 00:26:34,000
+Cuando tengo una duda,
+
+498
+00:26:35,000 --> 00:26:37,000
+toma un camino.
+
+499
+00:26:37,000 --> 00:26:38,000
+Vino una E,
+
+500
+00:26:38,000 --> 00:26:39,000
+me fui acá,
+
+501
+00:26:39,000 --> 00:26:40,000
+o me quedé acá.
+
+502
+00:26:40,000 --> 00:26:41,000
+Bueno,
+
+503
+00:26:41,000 --> 00:26:42,000
+yo supongo que me quedé acá.
+
+504
+00:26:44,000 --> 00:26:45,000
+Y si después,
+
+505
+00:26:45,000 --> 00:26:46,000
+si no es clamación quedó trancado,
+
+506
+00:26:46,000 --> 00:26:47,000
+o sea que ese camino no me servía,
+
+507
+00:26:47,000 --> 00:26:48,000
+servía,
+
+508
+00:26:49,000 --> 00:26:51,000
+y tomó el camino alternativo.
+
+509
+00:26:52,000 --> 00:26:53,000
+Recuerdo?
+
+510
+00:26:54,000 --> 00:26:55,000
+O sea, va a entrar.
+
+511
+00:26:56,000 --> 00:26:58,000
+Pero también puedo hacer lucajed
+
+512
+00:26:58,000 --> 00:26:59,000
+y es
+
+513
+00:26:59,000 --> 00:27:01,000
+mirar adelante las transiciones que tengo,
+
+514
+00:27:01,000 --> 00:27:03,000
+mirar los siguientes símbolos que vienen en la entrada
+
+515
+00:27:03,000 --> 00:27:05,000
+para ver si yo es compatible con lo que tengo,
+
+516
+00:27:05,000 --> 00:27:06,000
+en el automata.
+
+517
+00:27:08,000 --> 00:27:10,000
+O eso que les contaba reciente el algoritmo de Thompson,
+
+518
+00:27:10,000 --> 00:27:11,000
+hacer paralelismo,
+
+519
+00:27:11,000 --> 00:27:12,000
+es decir,
+
+520
+00:27:12,000 --> 00:27:14,000
+contar todos los caminos que tengo,
+
+521
+00:27:15,000 --> 00:27:16,000
+posibles.
+
+522
+00:27:17,000 --> 00:27:18,000
+Aguardo.
+
+523
+00:27:26,000 --> 00:27:28,000
+Bueno, esto es lo que ya les dije, ¿no?
+
+524
+00:27:30,000 --> 00:27:32,000
+En general, si utiliza una automata finito,
+
+525
+00:27:32,000 --> 00:27:33,000
+no le termita con el algoritmo de cual.
+
+526
+00:27:33,000 --> 00:27:34,000
+Esto es solo una introducción,
+
+527
+00:27:34,000 --> 00:27:35,000
+no, no, no.
+
+528
+00:27:36,000 --> 00:27:38,000
+No pretende ser más que eso.
+
+529
+00:27:38,000 --> 00:27:39,000
+Hay un curso para eso.
+
+530
+00:27:39,000 --> 00:27:40,000
+Como yo les decía,
+
+531
+00:27:40,000 --> 00:27:41,000
+para cada cosa que yo,
+
+532
+00:27:41,000 --> 00:27:42,000
+cada tema quedamos acá,
+
+533
+00:27:42,000 --> 00:27:43,000
+hay un curso.
+
+534
+00:27:44,000 --> 00:27:46,000
+No es que siempre exista un curso,
+
+535
+00:27:46,000 --> 00:27:47,000
+pero digamos,
+
+536
+00:27:47,000 --> 00:27:48,000
+se podría dar un curso.
+
+537
+00:27:50,000 --> 00:27:51,000
+Y acá,
+
+538
+00:27:51,000 --> 00:27:53,000
+volvemos a lo que nos interesa
+
+539
+00:27:53,000 --> 00:27:54,000
+en este curso y eso.
+
+540
+00:27:55,000 --> 00:27:56,000
+Esto que hablamos,
+
+541
+00:27:56,000 --> 00:27:57,000
+los lenguajes regulares
+
+542
+00:27:57,000 --> 00:27:58,000
+son lenguajes formales.
+
+543
+00:27:59,000 --> 00:28:00,000
+¿Sí?
+
+544
+00:28:00,000 --> 00:28:01,000
+O sea,
+
+545
+00:28:03,000 --> 00:28:04,000
+los lenguajes formales
+
+546
+00:28:04,000 --> 00:28:05,000
+son conjunto de tiras
+
+547
+00:28:05,000 --> 00:28:06,000
+sobre un alfabeto finito o palabras.
+
+548
+00:28:08,000 --> 00:28:10,000
+Y esto conjunto tiene ni general gramáticas
+
+549
+00:28:10,000 --> 00:28:12,000
+que los generan exactamente.
+
+550
+00:28:12,000 --> 00:28:13,000
+Sabemos exactamente como generarlos.
+
+551
+00:28:16,000 --> 00:28:17,000
+Y eso son los lenguajes formales,
+
+552
+00:28:17,000 --> 00:28:19,000
+que son los lenguajes que ustedes
+
+553
+00:28:19,000 --> 00:28:20,000
+han conocido hasta el momento de la carrera.
+
+554
+00:28:21,000 --> 00:28:23,000
+Todos los lenguajes de promoción son lenguajes formales.
+
+555
+00:28:24,000 --> 00:28:26,000
+Esencialmente son no ambigos.
+
+556
+00:28:26,000 --> 00:28:27,000
+Van a empezar.
+
+557
+00:28:29,000 --> 00:28:31,000
+No puedo fácilmente dar dos interpretaciones.
+
+558
+00:28:31,000 --> 00:28:32,000
+No, no puedo dar dos interpretaciones.
+
+559
+00:28:32,000 --> 00:28:34,000
+Yo tiene que compilar a código máquina.
+
+560
+00:28:34,000 --> 00:28:35,000
+No, no puedo hacer dos cosas a la vega.
+
+561
+00:28:37,000 --> 00:28:38,000
+Los lenguajes naturales
+
+562
+00:28:40,000 --> 00:28:41,000
+son los que la gente habla.
+
+563
+00:28:43,000 --> 00:28:44,000
+Es muy difícil
+
+564
+00:28:44,000 --> 00:28:46,000
+revelar con los lenguajes formales,
+
+565
+00:28:46,000 --> 00:28:47,000
+los lenguajes naturales.
+
+566
+00:28:48,000 --> 00:28:49,000
+¿Por qué?
+
+567
+00:28:50,000 --> 00:28:51,000
+¿Por qué son ambigos?
+
+568
+00:28:53,000 --> 00:28:54,000
+¿Más se guardan tener el tío?
+
+569
+00:28:56,000 --> 00:28:57,000
+¿Por qué son vagos?
+
+570
+00:28:57,000 --> 00:28:59,000
+¿Por qué hay cosas que uno dice
+
+571
+00:28:59,000 --> 00:29:01,000
+que se puede interper dar una forma
+
+572
+00:29:01,000 --> 00:29:02,000
+que no son clara,
+
+573
+00:29:02,000 --> 00:29:04,000
+que uno la interpreta por el contexto?
+
+574
+00:29:04,000 --> 00:29:05,000
+¿Sagueras de lo que vimos?
+
+575
+00:29:05,000 --> 00:29:06,000
+¿No?
+
+576
+00:29:06,000 --> 00:29:07,000
+Que según como yo diga...
+
+577
+00:29:11,000 --> 00:29:12,000
+Venía a cenarte,
+
+578
+00:29:12,000 --> 00:29:13,000
+espero...
+
+579
+00:29:13,000 --> 00:29:14,000
+Venía que te espero,
+
+580
+00:29:14,000 --> 00:29:15,000
+digamos, depende del contexto,
+
+581
+00:29:15,000 --> 00:29:16,000
+pues son diferentes.
+
+582
+00:29:18,000 --> 00:29:19,000
+Bueno, y un poco esto, ¿no?
+
+583
+00:29:19,000 --> 00:29:20,000
+Depende del contexto.
+
+584
+00:29:20,000 --> 00:29:21,000
+Las cosas que se dicen,
+
+585
+00:29:21,000 --> 00:29:22,000
+dependen de dónde le estoy diciendo.
+
+586
+00:29:24,000 --> 00:29:26,000
+Sin embargo, y yo acá les dejo algún link,
+
+587
+00:29:27,000 --> 00:29:29,000
+uno podría llegar a discutir,
+
+588
+00:29:29,000 --> 00:29:31,000
+sino puede representarlo con un...
+
+589
+00:29:31,000 --> 00:29:32,000
+con un lenguaje de aula.
+
+590
+00:29:33,000 --> 00:29:34,000
+Entonces, no es fácil.
+
+591
+00:29:34,000 --> 00:29:35,000
+Es otra claricia.
+
+592
+00:29:35,000 --> 00:29:36,000
+Que no es sencillo,
+
+593
+00:29:36,000 --> 00:29:37,000
+yo no puedo hacer expresiones regulares
+
+594
+00:29:37,000 --> 00:29:38,000
+para todo lo...
+
+595
+00:29:38,000 --> 00:29:39,000
+para todo lo...
+
+596
+00:29:39,000 --> 00:29:40,000
+el lenguaje natural.
+
+597
+00:29:42,000 --> 00:29:44,000
+Pero dado que la cantidad de palabras
+
+598
+00:29:44,000 --> 00:29:45,000
+es finita,
+
+599
+00:29:45,000 --> 00:29:47,000
+yo eventualmente podría llegar a armar algo,
+
+600
+00:29:47,000 --> 00:29:49,000
+que a representar a todas las palabras
+
+601
+00:29:49,000 --> 00:29:50,000
+que se pudieran decir,
+
+602
+00:29:50,000 --> 00:29:51,000
+sería muy difícil.
+
+603
+00:29:52,000 --> 00:29:53,000
+Sobre todo por la creatividad,
+
+604
+00:29:53,000 --> 00:29:54,000
+el lenguaje,
+
+605
+00:29:54,000 --> 00:29:55,000
+porque el lenguaje está aumentando
+
+606
+00:29:55,000 --> 00:29:56,000
+el palabra todo el tiempo.
+
+607
+00:30:00,000 --> 00:30:04,000
+Hay un artículo que es de 1969, ¿verdad?
+
+608
+00:30:04,000 --> 00:30:06,000
+Que discuto un poquito eso.
+
+609
+00:30:11,000 --> 00:30:13,000
+¿Y qué pasa con las expresiones regulares
+
+610
+00:30:13,000 --> 00:30:14,000
+y el lenguaje natural?
+
+611
+00:30:14,000 --> 00:30:15,000
+Bueno, hay un fenómeno.
+
+612
+00:30:16,000 --> 00:30:18,000
+En el lenguaje natural que se amacenten en Bedding,
+
+613
+00:30:20,000 --> 00:30:22,000
+que es, yo puedo decir un hombre llora,
+
+614
+00:30:23,000 --> 00:30:26,000
+puede decir un hombre que una mujer ama llora,
+
+615
+00:30:27,000 --> 00:30:31,000
+puede decir un hombre que una mujer que un niño adora ama llora.
+
+616
+00:30:32,000 --> 00:30:33,000
+Y así puedo seguir
+
+617
+00:30:36,000 --> 00:30:37,000
+a infinito.
+
+618
+00:30:39,000 --> 00:30:42,000
+Esa estructura de estas oraciones es
+
+619
+00:30:42,000 --> 00:30:44,000
+Grupo nominal verbo.
+
+620
+00:30:46,000 --> 00:30:47,000
+¿Sí?
+
+621
+00:30:47,000 --> 00:30:48,000
+Grupo nominal 1, verbo 1.
+
+622
+00:30:48,000 --> 00:30:49,000
+Grupo nominal 1,
+
+623
+00:30:49,000 --> 00:30:51,000
+Grupo nominal 2, verbo 2, verbo 1.
+
+624
+00:30:52,000 --> 00:30:53,000
+¿No?
+
+625
+00:30:53,000 --> 00:30:54,000
+Grupo nominal 1
+
+626
+00:30:54,000 --> 00:30:55,000
+y supuestamente,
+
+627
+00:30:56,000 --> 00:30:57,000
+de alguna forma,
+
+628
+00:30:57,000 --> 00:30:59,000
+yo tengo que mostrar que este verbo
+
+629
+00:30:59,000 --> 00:31:01,000
+está pegado a este grupo nominal.
+
+630
+00:31:02,000 --> 00:31:03,000
+Este verbo está pegado a este grupo nominal
+
+631
+00:31:03,000 --> 00:31:05,000
+y este verbo está pegado a este grupo nominal.
+
+632
+00:31:07,000 --> 00:31:08,000
+¿Sí?
+
+633
+00:31:08,000 --> 00:31:10,000
+Tan relacionado desde el punto de vista sin que llora,
+
+634
+00:31:10,000 --> 00:31:11,000
+¿Quién es que llora?
+
+635
+00:31:12,000 --> 00:31:13,000
+¿Quién llora, acá?
+
+636
+00:31:14,000 --> 00:31:15,000
+¿Qué un hombre?
+
+637
+00:31:16,000 --> 00:31:17,000
+No hay la mujer la que está llora.
+
+638
+00:31:20,000 --> 00:31:21,000
+Si ustedes ven esta estructura,
+
+639
+00:31:22,000 --> 00:31:25,000
+1, 2, 3, 3, 2, 1, es muy parecido de esto,
+
+640
+00:31:25,000 --> 00:31:26,000
+debemos ver, como que lo borré.
+
+641
+00:31:27,000 --> 00:31:28,000
+W, W, W, R, verso.
+
+642
+00:31:29,000 --> 00:31:31,000
+Que es el tipo de cosa que sabemos
+
+643
+00:31:31,000 --> 00:31:33,000
+que no se pueden representar con el precio de regular.
+
+644
+00:31:34,000 --> 00:31:35,000
+Esto fue lo que hizo,
+
+645
+00:31:35,000 --> 00:31:36,000
+si yo más no recuerdo,
+
+646
+00:31:36,000 --> 00:31:40,000
+decir a Chonky que al lenguaje natural,
+
+647
+00:31:40,000 --> 00:31:43,000
+si yo no tengo forma de modelar
+
+648
+00:31:43,000 --> 00:31:44,000
+con el precio de regular,
+
+649
+00:31:44,000 --> 00:31:46,000
+es esto teóricamente no puedo.
+
+650
+00:31:47,000 --> 00:31:48,000
+¿Sí?
+
+651
+00:31:50,000 --> 00:31:52,000
+Ahora, también yo puedo decir que
+
+652
+00:31:52,000 --> 00:31:53,000
+yo lo des...
+
+653
+00:31:53,000 --> 00:31:55,000
+A mí no saben lo que me cotó armar este ejemplo.
+
+654
+00:31:56,000 --> 00:31:58,000
+Porque yo conletas a mi mareo.
+
+655
+00:31:59,000 --> 00:32:02,000
+Y probablemente una masa no seamos capaces de entenderlo.
+
+656
+00:32:03,000 --> 00:32:05,000
+No seamos capaces de procesarlo entonces.
+
+657
+00:32:05,000 --> 00:32:07,000
+Si yo digo bueno, pero
+
+658
+00:32:07,000 --> 00:32:09,000
+esto sí es arbitrariamente largo,
+
+659
+00:32:09,000 --> 00:32:11,000
+pero si yo supongo que lo más que puedo llegar es a 3,
+
+660
+00:32:12,000 --> 00:32:14,000
+ahí sí puedo apresar una expresión regular.
+
+661
+00:32:16,000 --> 00:32:17,000
+¿De acuerdo?
+
+662
+00:32:17,000 --> 00:32:18,000
+¿Se entiende?
+
+663
+00:32:18,000 --> 00:32:19,000
+Es decir, nuestra capacidad
+
+664
+00:32:20,000 --> 00:32:22,000
+teóricamente podemos armar a Chonky,
+
+665
+00:32:22,000 --> 00:32:23,000
+pero no las puedo volver,
+
+666
+00:32:23,000 --> 00:32:24,000
+no las podemos compilar, digamos.
+
+667
+00:32:25,000 --> 00:32:27,000
+Entonces, eso un poco pone en discusión que
+
+668
+00:32:27,000 --> 00:32:28,000
+o no puedas...
+
+669
+00:32:29,000 --> 00:32:30,000
+Esto como argumento de,
+
+670
+00:32:30,000 --> 00:32:32,000
+bueno, deja de estudiar el precio de regular
+
+671
+00:32:32,000 --> 00:32:34,000
+y para el lenguaje natural nunca te va a seguir pagando.
+
+672
+00:32:40,000 --> 00:32:41,000
+Eh...
+
+673
+00:32:41,000 --> 00:32:42,000
+¿Qué toco pasó?
+
+674
+00:32:46,000 --> 00:32:48,000
+No podemos modelar el lenguaje natural con expresiones regulares.
+
+675
+00:32:52,000 --> 00:32:54,000
+Pero sí podemos modelar a algunos fenómenos.
+
+676
+00:32:55,000 --> 00:32:57,000
+Típicamente se modelan con expresiones regulares.
+
+677
+00:32:58,000 --> 00:33:00,000
+La fonoilogía se ha representado durante mucho tiempo
+
+678
+00:33:00,000 --> 00:33:02,000
+el estudio de los sonidos, ¿no?
+
+679
+00:33:03,000 --> 00:33:05,000
+¿De cómo los sonidos forman las palabras?
+
+680
+00:33:05,000 --> 00:33:06,000
+La amor fonogea que lo vamos a ver,
+
+681
+00:33:06,000 --> 00:33:07,000
+la verdad es que viene.
+
+682
+00:33:09,000 --> 00:33:11,000
+Y las sintaxis...
+
+683
+00:33:14,000 --> 00:33:17,000
+de superficie, digamos, superficial,
+
+684
+00:33:17,000 --> 00:33:20,000
+reconocer los grupos nominales y grupos verbales
+
+685
+00:33:20,000 --> 00:33:23,000
+se ha resuelto con expresiones regulares.
+
+686
+00:33:23,000 --> 00:33:24,000
+Si es cierto,
+
+687
+00:33:24,000 --> 00:33:26,000
+sus grupos de problemas se pueden resuelar.
+
+688
+00:33:27,000 --> 00:33:28,000
+¿De acuerdo?
+
+689
+00:33:29,000 --> 00:33:30,000
+¿Hasta acá?
+
+690
+00:33:32,000 --> 00:33:33,000
+¿Hay una pregunta?
+
+691
+00:33:37,000 --> 00:33:38,000
+¿No? ¿Un lado?
+
+692
+00:33:40,000 --> 00:33:42,000
+Esas son nuestras,
+
+693
+00:33:42,000 --> 00:33:45,000
+nuestro primer modelo que es de las expresiones regulares.
+
+694
+00:33:48,000 --> 00:33:51,000
+Ahí tienen el capítulo 2
+
+695
+00:33:53,000 --> 00:33:56,000
+del libro de Martin Yuravsky,
+
+696
+00:33:56,000 --> 00:33:58,000
+lo que buscamos para la clase de hoy.
+
+697
+00:33:59,000 --> 00:34:01,000
+Si lo pueden encontrar en línea,
+
+698
+00:34:01,000 --> 00:34:03,000
+porque está en la tercera edición,
+
+699
+00:34:03,000 --> 00:34:05,000
+están los drafts de algunos capítulos de la tercera edición,
+
+700
+00:34:05,000 --> 00:34:07,000
+lo pueden encontrar si no aparecen por ahí.
+
+701
+00:34:08,000 --> 00:34:09,000
+Yo vuelvo.
+
+702
+00:34:09,000 --> 00:34:10,000
+Bien.
+
+703
+00:34:27,000 --> 00:34:28,000
+Bueno.
+
+704
+00:34:29,000 --> 00:34:32,000
+Eso fue un poco el repaso de expresiones regulares.
+
+705
+00:34:33,000 --> 00:34:35,000
+Y ahora vamos a ir a...
+
+706
+00:34:41,000 --> 00:34:44,000
+a la primera tarea que enfrentamos como
+
+707
+00:34:44,000 --> 00:34:46,000
+en el procedimiento de la tercera edición.
+
+708
+00:34:46,000 --> 00:34:48,000
+Hay una realidad y una primera tarea
+
+709
+00:34:48,000 --> 00:34:50,000
+que está siempre subestimada
+
+710
+00:34:51,000 --> 00:34:53,000
+y que lleva mucho tiempo general
+
+711
+00:34:53,000 --> 00:34:55,000
+que es la de preprocesamiento.
+
+712
+00:34:56,000 --> 00:35:00,000
+Es decir, yo puedo partir de un texto escrito
+
+713
+00:35:01,000 --> 00:35:06,000
+en un formato electrónicamente amigable,
+
+714
+00:35:06,000 --> 00:35:09,000
+un texto en ánci o en un hícode.
+
+715
+00:35:10,000 --> 00:35:12,000
+Pero, generalmente, para llegar del mundo real,
+
+716
+00:35:12,000 --> 00:35:14,000
+a ese texto yo tengo que hacer todo el procedimiento
+
+717
+00:35:14,000 --> 00:35:19,000
+porque los textos vienen en páginas huevos,
+
+718
+00:35:19,000 --> 00:35:21,000
+con marcas de HTML,
+
+719
+00:35:21,000 --> 00:35:23,000
+o hay que extraerlo de un PDF.
+
+720
+00:35:23,000 --> 00:35:24,000
+Yo me acuerdo que...
+
+721
+00:35:26,000 --> 00:35:29,000
+En una época que hacíamos algunos trabajos agujentes del pastor,
+
+722
+00:35:29,000 --> 00:35:30,000
+la gente...
+
+723
+00:35:31,000 --> 00:35:33,000
+Había un compañero y dice, pero no sabe nada,
+
+724
+00:35:33,000 --> 00:35:35,000
+me venía a decir que venía a ese procedimiento de reglas natural
+
+725
+00:35:35,000 --> 00:35:37,000
+y no sabía sacar el texto en un PDF.
+
+726
+00:35:37,000 --> 00:35:39,000
+Tiened bueno, porque su problema antes de eso
+
+727
+00:35:39,000 --> 00:35:42,000
+era sacar de los PDFs, de los paper, a texto puro.
+
+728
+00:35:43,000 --> 00:35:44,000
+Qué es bastante difícil,
+
+729
+00:35:44,000 --> 00:35:47,000
+por lo tanto, paréntese porque el PDF es una cosa de imprimir, ¿no?
+
+730
+00:35:49,000 --> 00:35:51,000
+Ese trabajo lleva mucho, es muy engorroso,
+
+731
+00:35:51,000 --> 00:35:53,000
+lleva mucho tiempo y está generalmente subestimado
+
+732
+00:35:54,000 --> 00:35:55,000
+el tiempo que lleva
+
+733
+00:35:55,000 --> 00:35:57,000
+y en este curso lo vamos a seguir subestimando
+
+734
+00:35:57,000 --> 00:36:00,000
+porque vamos a sumir que partimos un texto como la gente, digamos,
+
+735
+00:36:00,000 --> 00:36:02,000
+sin ese tipo de cosas.
+
+736
+00:36:03,000 --> 00:36:05,000
+O sea que yo tengo un texto escrito, ¿no?
+
+737
+00:36:06,000 --> 00:36:08,000
+Vamos a suponer también...
+
+738
+00:36:11,000 --> 00:36:12,000
+Bueno, no tenemos que suponarlo, pero...
+
+739
+00:36:13,000 --> 00:36:17,000
+Si les queda como ahora, que es un texto razonable,
+
+740
+00:36:17,000 --> 00:36:21,000
+que no tiene cosas muy raras como Twitter o...
+
+741
+00:36:23,000 --> 00:36:25,000
+o como, pues sí, incluso, ¿no?
+
+742
+00:36:25,000 --> 00:36:27,000
+Yo tengo que analizar, pues sí,
+
+743
+00:36:27,000 --> 00:36:29,000
+había que tener otros problemas, seguramente.
+
+744
+00:36:29,000 --> 00:36:31,000
+De hecho, se hace, de hecho, tenemos un proyecto de grado,
+
+745
+00:36:31,000 --> 00:36:33,000
+varios que analizan cosas de Twitter,
+
+746
+00:36:33,000 --> 00:36:35,000
+pero ahí cambian un poquito las reglas.
+
+747
+00:36:36,000 --> 00:36:39,000
+Ahora vamos a suponer de un texto como un texto narrativo,
+
+748
+00:36:39,000 --> 00:36:42,000
+una noticia, pues así.
+
+749
+00:36:43,000 --> 00:36:44,000
+Gente normal.
+
+750
+00:36:45,000 --> 00:36:47,000
+Y lo que nos va a interesar es ver el tema
+
+751
+00:36:47,000 --> 00:36:49,000
+de la normalización de los textos.
+
+752
+00:36:49,000 --> 00:36:52,000
+Es decir, yo agarro ese texto y quiero dar alguna forma...
+
+753
+00:36:53,000 --> 00:36:55,000
+eh...
+
+754
+00:36:56,000 --> 00:36:58,000
+analizablo.
+
+755
+00:36:58,000 --> 00:36:59,000
+Bueno,
+
+756
+00:36:59,000 --> 00:37:01,000
+para empezar,
+
+757
+00:37:01,000 --> 00:37:03,000
+tenemos que ver cuáles son las unidades del texto.
+
+758
+00:37:03,000 --> 00:37:06,000
+Y ahí yo puse una definición que dice ese segmento
+
+759
+00:37:06,000 --> 00:37:09,000
+del discurso unificado...
+
+760
+00:37:11,000 --> 00:37:12,000
+Perdón.
+
+761
+00:37:12,000 --> 00:37:14,000
+El segmento del discurso, todos los años,
+
+762
+00:37:14,000 --> 00:37:15,000
+me pongo la cosa de no.
+
+763
+00:37:15,000 --> 00:37:18,000
+El segmento del discurso unificado habitualmente por el asento,
+
+764
+00:37:18,000 --> 00:37:21,000
+el significado y pausas potenciales, inicial y final.
+
+765
+00:37:21,000 --> 00:37:23,000
+Eso es la definición de...
+
+766
+00:37:29,000 --> 00:37:30,000
+¿Qué es eso?
+
+767
+00:37:32,000 --> 00:37:33,000
+Asento?
+
+768
+00:37:33,000 --> 00:37:34,000
+No.
+
+769
+00:37:34,000 --> 00:37:35,000
+Más chico.
+
+770
+00:37:35,000 --> 00:37:37,000
+Porque la pregunta de cuál son las más pequeñas, ¿no?
+
+771
+00:37:38,000 --> 00:37:40,000
+Palabras, ¿no?
+
+772
+00:37:40,000 --> 00:37:41,000
+Las palabras.
+
+773
+00:37:42,000 --> 00:37:45,000
+Ustedes vieron que todas estas definiciones siempre se ponen muy cuidadosos
+
+774
+00:37:45,000 --> 00:37:47,000
+porque siempre aparecen, pero está el costo,
+
+775
+00:37:47,000 --> 00:37:48,000
+una palabra y no.
+
+776
+00:37:48,000 --> 00:37:50,000
+Unificado habitualmente por el asento,
+
+777
+00:37:50,000 --> 00:37:51,000
+no sé por qué el asento.
+
+778
+00:37:51,000 --> 00:37:53,000
+Ah, porque por claro, porque tiene brujo,
+
+779
+00:37:53,000 --> 00:37:54,000
+las esas cosas, ¿no?
+
+780
+00:37:56,000 --> 00:37:58,000
+El significado tiene un significado,
+
+781
+00:37:58,000 --> 00:38:01,000
+la clase que viene a molar de morfología,
+
+782
+00:38:01,000 --> 00:38:03,000
+donde hay parte más chica en la palabra,
+
+783
+00:38:03,000 --> 00:38:04,000
+pero que no tiene significado independiente.
+
+784
+00:38:05,000 --> 00:38:07,000
+Y pausas potenciales, inicial y final.
+
+785
+00:38:07,000 --> 00:38:10,000
+Porque nosotros nos creemos que las palabras tienen espacios.
+
+786
+00:38:10,000 --> 00:38:13,000
+Pausas, pero nosotros no hablamos.
+
+787
+00:38:13,000 --> 00:38:16,000
+Ah, sí, no, así no, así.
+
+788
+00:38:16,000 --> 00:38:19,000
+Bueno, eso es la definición de palabra.
+
+789
+00:38:19,000 --> 00:38:22,000
+O sea, nuestra primera aproximación va a ser, bueno,
+
+790
+00:38:22,000 --> 00:38:25,000
+vamos a modificar las palabras dentro del texto, ¿sí?
+
+791
+00:38:29,000 --> 00:38:31,000
+Y vamos a ver ahí, por ejemplo,
+
+792
+00:38:34,000 --> 00:38:38,000
+un pedacito, un texto de un incuento muy lindo de Jorge,
+
+793
+00:38:38,000 --> 00:38:39,000
+que se llama la elef.
+
+794
+00:38:45,000 --> 00:38:47,000
+¿Qué palabras hay ahí? Díganme palabras.
+
+795
+00:38:47,000 --> 00:38:48,000
+¿Qué palabras vamos contando?
+
+796
+00:38:48,000 --> 00:38:58,000
+Bueno, yo les digo, si no se anima la candente mañana,
+
+797
+00:38:58,000 --> 00:39:00,000
+fácil, ¿no? Los espacios se paran palabras.
+
+798
+00:39:02,000 --> 00:39:05,000
+El febrero, en qué, ¿verdad?
+
+799
+00:39:05,000 --> 00:39:07,000
+Pues seguir hasta el final.
+
+800
+00:39:07,000 --> 00:39:09,000
+Ve a tributer, son dos palabras o una sola.
+
+801
+00:39:14,000 --> 00:39:15,000
+Son dos palabras, ¿no?
+
+802
+00:39:19,000 --> 00:39:24,000
+Pero, a mí me podría interesar para posteriores análisis,
+
+803
+00:39:24,000 --> 00:39:27,000
+decir que esto se comporta como un nombre propio sol, ¿no?
+
+804
+00:39:29,000 --> 00:39:30,000
+Eso podría ser interesante.
+
+805
+00:39:30,000 --> 00:39:32,000
+Yo quiero saber todos los textos que hablan de Beatriz Viterbo.
+
+806
+00:39:34,000 --> 00:39:37,000
+Me podría interesar y identificarlo como una sola cosa.
+
+807
+00:39:37,000 --> 00:39:40,000
+Es que llama multiguor desprecion o entidades con nombre,
+
+808
+00:39:40,000 --> 00:39:43,000
+que muchas veces me puede interesar y identificarla.
+
+809
+00:39:44,000 --> 00:39:49,000
+¿No? ¿Murió? ¿Cómo? ¿Cómo es palabras o no es palabras?
+
+810
+00:39:52,000 --> 00:39:54,000
+¿Pende pa qué? ¿No?
+
+811
+00:39:57,000 --> 00:40:01,000
+No tiene ascento, o sea, de la definición de la Academia de Panyola,
+
+812
+00:40:01,000 --> 00:40:03,000
+no es una palabra perta.
+
+813
+00:40:03,000 --> 00:40:05,000
+Pero a mí me puede meter cómo algo hace ahí, ¿no?
+
+814
+00:40:05,000 --> 00:40:09,000
+Se parado enunciado, creo.
+
+815
+00:40:10,000 --> 00:40:13,000
+Después de una imperiosa hablar,
+
+816
+00:40:13,000 --> 00:40:18,000
+acá tenemos la plaza constitución que es su lugar,
+
+817
+00:40:20,000 --> 00:40:21,000
+puticoma.
+
+818
+00:40:27,000 --> 00:40:31,000
+Y acá hay otra cosa muy interesante, ¿qué es lo que termina acá?
+
+819
+00:40:33,000 --> 00:40:35,000
+La operación, ¿no? ¿Cómo saben que termina la operación?
+
+820
+00:40:40,000 --> 00:40:43,000
+¿Pueden un punto? ¿No? ¿Punto? Si no es pregunta,
+
+821
+00:40:43,000 --> 00:40:45,000
+o si no es clamación, termina la operación.
+
+822
+00:40:47,000 --> 00:40:49,000
+A través de punto podría ser una abreviatura, ¿no?
+
+823
+00:40:51,000 --> 00:40:53,000
+Podemos cortar la voz al medio y tenemos problemas.
+
+824
+00:40:57,000 --> 00:40:59,000
+¿El puticoma separa a oraciones?
+
+825
+00:41:02,000 --> 00:41:05,000
+Sí, yo que sé. ¿Por qué sí? ¿No?
+
+826
+00:41:06,000 --> 00:41:09,000
+No, yo les avise que en este curso no os pere en todas las respuestas,
+
+827
+00:41:09,000 --> 00:41:11,000
+porque no siempre están.
+
+828
+00:41:11,000 --> 00:41:13,000
+Trabajamos con un lenguaje a ver.
+
+829
+00:41:13,000 --> 00:41:16,000
+Trabajamos con un material que es ambivo o que es es,
+
+830
+00:41:16,000 --> 00:41:20,000
+es movedizo, digamos, no podemos pretender tener todo determinismo.
+
+831
+00:41:20,000 --> 00:41:22,000
+Pero si no sería muy fácil,
+
+832
+00:41:22,000 --> 00:41:25,000
+por eso un cuerpo en español no es igual que un cuerpo en inglés,
+
+833
+00:41:25,000 --> 00:41:30,000
+porque las características son diferentes y ni les dio un cuerpo en chino.
+
+834
+00:41:31,000 --> 00:41:32,000
+Acá hay más cosas.
+
+835
+00:41:34,000 --> 00:41:36,000
+Realmente no sé qué aporta esto, pero estoy lindos,
+
+836
+00:41:36,000 --> 00:41:37,000
+te cuento.
+
+837
+00:41:37,000 --> 00:41:40,000
+Mentón son tres puntos subvencidos, al final eso termino la acción.
+
+838
+00:41:41,000 --> 00:41:44,000
+Bueno, toquenizar es un problema que en general es bastante fácil,
+
+839
+00:41:45,000 --> 00:41:49,000
+pero para llegar a un nivel completo de análisis,
+
+840
+00:41:49,000 --> 00:41:50,000
+tiene su problemitas.
+
+841
+00:41:50,000 --> 00:41:56,000
+Hay un paper muy clásico que se llama What is a War, What is a Sentence,
+
+842
+00:41:57,000 --> 00:42:00,000
+que están las referencias que habla de los problemas,
+
+843
+00:42:00,000 --> 00:42:03,000
+que hay al toquenizar, que no son tan sencillos como,
+
+844
+00:42:03,000 --> 00:42:05,000
+que hace que no sea un problema tan sencillo,
+
+845
+00:42:05,000 --> 00:42:07,000
+un problema típico,
+
+846
+00:42:07,000 --> 00:42:09,000
+un problema típico que en realidad con la,
+
+847
+00:42:09,000 --> 00:42:13,000
+problema típico, en realidad con el adenimiento de los formatos,
+
+848
+00:42:14,000 --> 00:42:16,000
+directamente digitales,
+
+849
+00:42:16,000 --> 00:42:18,000
+eso es lo menos que es el corte de guiones,
+
+850
+00:42:18,000 --> 00:42:19,000
+en el borde.
+
+851
+00:42:19,000 --> 00:42:21,000
+Yo creo que me tiene una artificial por acá,
+
+852
+00:42:21,000 --> 00:42:22,000
+porque esto no lo tenía.
+
+853
+00:42:22,000 --> 00:42:25,000
+La primera como un nión, ¿sí?
+
+854
+00:42:27,000 --> 00:42:31,000
+Comun, nión es una palabra sólida,
+
+855
+00:42:31,000 --> 00:42:34,000
+pero yo en el texto la tengo separado por un nión.
+
+856
+00:42:36,000 --> 00:42:39,000
+Y yo tengo que ver si ese nión se parte una palabra al medio,
+
+857
+00:42:39,000 --> 00:42:41,000
+o es una palabra compuesta con un nión.
+
+858
+00:42:41,000 --> 00:42:43,000
+Que esto se pasa en el pañón, ¿no hay pero?
+
+859
+00:42:45,000 --> 00:42:47,000
+Pero bueno, para no siempre trabajamos en el pañón.
+
+860
+00:42:50,000 --> 00:42:52,000
+Bueno, y entonces un poquito de,
+
+861
+00:42:52,000 --> 00:42:54,000
+hay más y otra cosa, ¿no?
+
+862
+00:42:54,000 --> 00:42:57,000
+Yo tengo que identificar para el análisis.
+
+863
+00:42:58,000 --> 00:43:00,000
+¿Cuáles son las palabras que aparecen?
+
+864
+00:43:00,000 --> 00:43:01,000
+Ay, hay otra pregunta, ¿ver?
+
+865
+00:43:02,000 --> 00:43:03,000
+Por ejemplo,
+
+866
+00:43:04,000 --> 00:43:05,000
+este d,
+
+867
+00:43:06,000 --> 00:43:08,000
+y este d, son el mismo.
+
+868
+00:43:10,000 --> 00:43:13,000
+Va justo a arreglar una, porque d nuevo es una multivisión.
+
+869
+00:43:13,000 --> 00:43:15,000
+No es lo que hice pregunta.
+
+870
+00:43:15,000 --> 00:43:16,000
+Esto es una expresión, ¿no?
+
+871
+00:43:16,000 --> 00:43:17,000
+Que se interpreta a tu ajunta,
+
+872
+00:43:17,000 --> 00:43:19,000
+a mí me podría convenir entre mi edad.
+
+873
+00:43:19,000 --> 00:43:21,000
+Pero más allá de eso, a ver, es mi buscar otro.
+
+874
+00:43:25,000 --> 00:43:31,000
+Ah, no lo tengo. Bueno, pero a parte de lo que es de nuevo,
+
+875
+00:43:31,000 --> 00:43:32,000
+que es una expresión,
+
+876
+00:43:32,000 --> 00:43:34,000
+este edad más yúscula es de la minúscula.
+
+877
+00:43:35,000 --> 00:43:37,000
+Son la misma palabra o no.
+
+878
+00:43:40,000 --> 00:43:42,000
+Son, en general, son.
+
+879
+00:43:42,000 --> 00:43:46,000
+Me interesa pasarlas a minúscula.
+
+880
+00:43:49,000 --> 00:43:50,000
+¿Aladó?
+
+881
+00:43:50,000 --> 00:43:52,000
+Para pensando en cómo analizar.
+
+882
+00:43:52,000 --> 00:43:54,000
+Cuando yo normalizo, trato de dejar el texto,
+
+883
+00:43:54,000 --> 00:43:56,000
+lo más fácil de analizar para después.
+
+884
+00:43:57,000 --> 00:43:59,000
+Separon las palabras claramente y digo,
+
+885
+00:43:59,000 --> 00:44:00,000
+esto es una palabra.
+
+886
+00:44:00,000 --> 00:44:01,000
+No me confío, son los espacios,
+
+887
+00:44:01,000 --> 00:44:02,000
+porque si acá hay dos espacios,
+
+888
+00:44:03,000 --> 00:44:05,000
+sigue siendo una separación entre palabras.
+
+889
+00:44:10,000 --> 00:44:13,000
+Lo importante es la distinción entre lo que se llama WordType.
+
+890
+00:44:15,000 --> 00:44:17,000
+Si en español le decimos más bien palabra,
+
+891
+00:44:17,000 --> 00:44:21,000
+o palabra diferente, no hay una traducción directa que es.
+
+892
+00:44:22,000 --> 00:44:23,000
+Si yo tengo un texto,
+
+893
+00:44:23,000 --> 00:44:26,000
+las palabras son las palabras diferentes que hay.
+
+894
+00:44:27,000 --> 00:44:29,000
+Y a cada uno de estos, como lo llamamos,
+
+895
+00:44:29,000 --> 00:44:30,000
+los llamamos Tokens.
+
+896
+00:44:31,000 --> 00:44:33,000
+Es las apariciones,
+
+897
+00:44:33,000 --> 00:44:35,000
+una palabra en un texto llama Tokens.
+
+898
+00:44:35,000 --> 00:44:37,000
+Y la tarea de partir esto,
+
+899
+00:44:38,000 --> 00:44:40,000
+es la matóquenización.
+
+900
+00:44:41,000 --> 00:44:43,000
+No es lo mismo, la palabra que el Tokens.
+
+901
+00:44:44,000 --> 00:44:45,000
+Geramente un corpus,
+
+902
+00:44:45,000 --> 00:44:46,000
+que es un conjunto de textos,
+
+903
+00:44:46,000 --> 00:44:49,000
+tiene muchísimas más Tokens que palabras,
+
+904
+00:44:49,000 --> 00:44:51,000
+porque se repiten.
+
+905
+00:44:53,000 --> 00:44:54,000
+Vamos a ver algunas definiciones.
+
+906
+00:44:56,000 --> 00:44:57,000
+De cosas que sobre las que vamos a ver,
+
+907
+00:44:57,000 --> 00:44:58,000
+bueno, como les decía,
+
+908
+00:44:58,000 --> 00:44:59,000
+el corpus es una colección de textos,
+
+909
+00:44:59,000 --> 00:45:01,000
+seguramente lo vamos a...
+
+910
+00:45:01,000 --> 00:45:02,000
+seguramente no,
+
+911
+00:45:02,000 --> 00:45:03,000
+lo vamos a usar en todo el curso.
+
+912
+00:45:07,000 --> 00:45:08,000
+La oración,
+
+913
+00:45:08,000 --> 00:45:10,000
+yo con mis recursos de español uno me dijeron,
+
+914
+00:45:10,000 --> 00:45:12,000
+la oración es una estructura,
+
+915
+00:45:13,000 --> 00:45:14,000
+anidad por un verbo,
+
+916
+00:45:14,000 --> 00:45:18,000
+lo cual me suena a definición más intacta y la otra cosa.
+
+917
+00:45:19,000 --> 00:45:21,000
+Bueno, ¿qué la definición que hay en la Wikipedia?
+
+918
+00:45:21,000 --> 00:45:23,000
+No, la puedo comprar todo,
+
+919
+00:45:23,000 --> 00:45:24,000
+la he demasiado.
+
+920
+00:45:24,000 --> 00:45:25,000
+Pero más o menos es...
+
+921
+00:45:28,000 --> 00:45:29,000
+un constituyente...
+
+922
+00:45:29,000 --> 00:45:30,000
+el sí, el sí,
+
+923
+00:45:30,000 --> 00:45:31,000
+el sí, el sí, el sí, el sí,
+
+924
+00:45:31,000 --> 00:45:33,000
+tengo más pequeño necesario para expresar un predicado completo.
+
+925
+00:45:35,000 --> 00:45:36,000
+Lo que quiere que eso sea.
+
+926
+00:45:38,000 --> 00:45:40,000
+No, decir afirmamos algo,
+
+927
+00:45:40,000 --> 00:45:41,000
+no me quiero,
+
+928
+00:45:41,000 --> 00:45:42,000
+me da miedo a meter el pato.
+
+929
+00:45:43,000 --> 00:45:44,000
+No es otra de oración,
+
+930
+00:45:44,000 --> 00:45:45,000
+de oración,
+
+931
+00:45:45,000 --> 00:45:46,000
+de oración, ¿no?
+
+932
+00:45:47,000 --> 00:45:49,000
+El perro comió el hueso,
+
+933
+00:45:49,000 --> 00:45:50,000
+oración.
+
+934
+00:45:51,000 --> 00:45:52,000
+Tiene un verbo,
+
+935
+00:45:52,000 --> 00:45:53,000
+yo un verbo tiene,
+
+936
+00:45:53,000 --> 00:45:54,000
+llueve,
+
+937
+00:45:54,000 --> 00:45:55,000
+esa oración.
+
+938
+00:45:56,000 --> 00:45:57,000
+Tenemos la versión,
+
+939
+00:45:57,000 --> 00:45:58,000
+este,
+
+940
+00:45:59,000 --> 00:46:00,000
+o la de hablada,
+
+941
+00:46:00,000 --> 00:46:01,000
+que son los anunciados,
+
+942
+00:46:01,000 --> 00:46:02,000
+o,
+
+943
+00:46:02,000 --> 00:46:03,000
+uterans,
+
+944
+00:46:04,000 --> 00:46:05,000
+¿sí?
+
+945
+00:46:05,000 --> 00:46:06,000
+¿Qué es la versión para el lenguaje hablado?
+
+946
+00:46:06,000 --> 00:46:08,000
+¿Qué por ahora queda como conocimiento general?
+
+947
+00:46:08,000 --> 00:46:10,000
+Porque acá no vamos a la lenguaje hablado.
+
+948
+00:46:12,000 --> 00:46:14,000
+Y, después tenemos también los lemas,
+
+949
+00:46:14,000 --> 00:46:18,000
+la forma de superficie,
+
+950
+00:46:18,000 --> 00:46:20,000
+la palabra como la conocemos,
+
+951
+00:46:20,000 --> 00:46:22,000
+la palabra como la conoce,
+
+952
+00:46:22,000 --> 00:46:24,000
+con todas sus flexiones,
+
+953
+00:46:24,000 --> 00:46:26,000
+vamos a hablar la clase que viene de flexiones derivaciones,
+
+954
+00:46:26,000 --> 00:46:27,000
+pero es,
+
+955
+00:46:27,000 --> 00:46:29,000
+las flexiones son las que, por ejemplo,
+
+956
+00:46:29,000 --> 00:46:30,000
+dan el género y el lúmero,
+
+957
+00:46:30,000 --> 00:46:33,000
+y las derivaciones son las que construyen la palabra
+
+958
+00:46:33,000 --> 00:46:34,000
+a partir de otra,
+
+959
+00:46:34,000 --> 00:46:36,000
+como velojmente,
+
+960
+00:46:38,000 --> 00:46:40,000
+mente es una derivación,
+
+961
+00:46:40,000 --> 00:46:41,000
+inflesión de derivativo,
+
+962
+00:46:41,000 --> 00:46:42,000
+una derivación.
+
+963
+00:46:42,000 --> 00:46:44,000
+La palabra como tal,
+
+964
+00:46:44,000 --> 00:46:45,000
+pero,
+
+965
+00:46:45,000 --> 00:46:47,000
+el lema es cuando,
+
+966
+00:46:47,000 --> 00:46:49,000
+nosotros,
+
+967
+00:46:49,000 --> 00:46:51,000
+representamos por una palabra,
+
+968
+00:46:51,000 --> 00:46:54,000
+a un conjunto de ellas que tienen el mismo significado,
+
+969
+00:46:54,000 --> 00:46:56,000
+que tienen la misma raíz,
+
+970
+00:46:56,000 --> 00:46:58,000
+la misma categoría gramatical,
+
+971
+00:46:58,000 --> 00:47:00,000
+que era la categoría gramatical.
+
+972
+00:47:00,000 --> 00:47:03,000
+¿Qué es la categoría gramatical?
+
+973
+00:47:03,000 --> 00:47:07,000
+Es saber eso, ¿quién que es saber eso?
+
+974
+00:47:07,000 --> 00:47:09,000
+El ver, si es un verbo,
+
+975
+00:47:09,000 --> 00:47:10,000
+si es un sustantivo,
+
+976
+00:47:11,000 --> 00:47:13,000
+y el mismo significado,
+
+977
+00:47:13,000 --> 00:47:14,000
+o sea,
+
+978
+00:47:14,000 --> 00:47:18,000
+gato, gato, gato, gato, gato, gato, gato,
+
+979
+00:47:18,000 --> 00:47:21,000
+todos tienen un lema que gato.
+
+980
+00:47:22,000 --> 00:47:24,000
+¿Para qué puede servir,
+
+981
+00:47:24,000 --> 00:47:28,000
+identificar el lema de una palabra?
+
+982
+00:47:34,000 --> 00:47:35,000
+Por ejemplo,
+
+983
+00:47:40,000 --> 00:47:42,000
+¿Por qué me interesa reconocer
+
+984
+00:47:42,000 --> 00:47:44,000
+distinguir gato,
+
+985
+00:47:44,000 --> 00:47:46,000
+de gato, de gato, y de gatos?
+
+986
+00:47:51,000 --> 00:47:52,000
+Típicamente,
+
+987
+00:47:52,000 --> 00:47:54,000
+en la recuperación de información,
+
+988
+00:47:54,000 --> 00:47:57,000
+cuando yo quiero traer los documentos que hablan de gato,
+
+989
+00:47:57,000 --> 00:47:59,000
+yo pongo gato,
+
+990
+00:47:59,000 --> 00:48:01,000
+si hay un documento que dice gatos,
+
+991
+00:48:01,000 --> 00:48:03,000
+seguramente me da salir,
+
+992
+00:48:03,000 --> 00:48:04,000
+por eso me interesa
+
+993
+00:48:04,000 --> 00:48:06,000
+y es típico de recuperación de información,
+
+994
+00:48:06,000 --> 00:48:07,000
+buscar problemas,
+
+995
+00:48:08,000 --> 00:48:09,000
+no por la palabra,
+
+996
+00:48:09,000 --> 00:48:10,000
+por la forma oprecionada,
+
+997
+00:48:10,000 --> 00:48:11,000
+por la
+
+998
+00:48:11,000 --> 00:48:12,000
+Surface Phone.
+
+999
+00:48:14,000 --> 00:48:15,000
+Entonces,
+
+1000
+00:48:15,000 --> 00:48:16,000
+estos son conceptos,
+
+1001
+00:48:18,000 --> 00:48:19,000
+el lema es como el,
+
+1002
+00:48:21,000 --> 00:48:23,000
+el representante canónico de,
+
+1003
+00:48:23,000 --> 00:48:26,000
+de, de, de las formas,
+
+1004
+00:48:26,000 --> 00:48:28,000
+de superficie flexionada, digamos.
+
+1005
+00:48:28,000 --> 00:48:29,000
+Bueno, vamos a hablar más de eso
+
+1006
+00:48:29,000 --> 00:48:30,000
+en la clase que viene.
+
+1007
+00:48:33,000 --> 00:48:35,000
+Bien, como le decía en un corpucho,
+
+1008
+00:48:35,000 --> 00:48:36,000
+tengo los word types,
+
+1009
+00:48:36,000 --> 00:48:38,000
+que son las palabras distintas en el corpucho,
+
+1010
+00:48:38,000 --> 00:48:41,000
+y los toques que son el total de palabras en el corpucho.
+
+1011
+00:48:42,000 --> 00:48:43,000
+¿Sí?
+
+1012
+00:48:43,000 --> 00:48:45,000
+Total de apariciones de palabras en el corpucho.
+
+1013
+00:48:46,000 --> 00:48:47,000
+¿Qué pasa?
+
+1014
+00:48:48,000 --> 00:48:49,000
+Por ejemplo,
+
+1015
+00:48:55,000 --> 00:48:56,000
+bueno, esto que debe ver,
+
+1016
+00:48:56,000 --> 00:48:57,000
+porque es muy fácil.
+
+1017
+00:48:57,000 --> 00:48:58,000
+Cuánta palabra hay ahí,
+
+1018
+00:48:58,000 --> 00:48:59,000
+cuántos toques,
+
+1019
+00:48:59,000 --> 00:49:00,000
+y la discusión que tuvimos,
+
+1020
+00:49:00,000 --> 00:49:02,000
+tengo que ver si cuento como toques en las comas,
+
+1021
+00:49:02,000 --> 00:49:05,000
+realmente se consideran toques en las comas,
+
+1022
+00:49:05,000 --> 00:49:07,000
+porque a mí me interesa que aparezcan en el texto.
+
+1023
+00:49:08,000 --> 00:49:10,000
+A veces las unifico,
+
+1024
+00:49:10,000 --> 00:49:11,000
+como signos de puntuación,
+
+1025
+00:49:11,000 --> 00:49:12,000
+en el análisis,
+
+1026
+00:49:12,000 --> 00:49:13,000
+muchas veces ya sé eso.
+
+1027
+00:49:14,000 --> 00:49:15,000
+Pero yo creo que eso lo hace,
+
+1028
+00:49:15,000 --> 00:49:17,000
+se hace para facilitar el análisis,
+
+1029
+00:49:17,000 --> 00:49:18,000
+no porque esté bien,
+
+1030
+00:49:18,000 --> 00:49:19,000
+porque yo a mí me interesaría
+
+1031
+00:49:19,000 --> 00:49:21,000
+separar una coma de un punto.
+
+1032
+00:49:21,000 --> 00:49:22,000
+Muchas veces no se hace.
+
+1033
+00:49:23,000 --> 00:49:24,000
+Es decir, para etapa subsiguiente,
+
+1034
+00:49:24,000 --> 00:49:25,000
+esto se identifica con una marca
+
+1035
+00:49:25,000 --> 00:49:26,000
+que es un signo de puntuación.
+
+1036
+00:49:30,000 --> 00:49:31,000
+Pero por acá hay palabras que,
+
+1037
+00:49:31,000 --> 00:49:33,000
+seguramente haber más toques en que palabra,
+
+1038
+00:49:34,000 --> 00:49:35,000
+porque acá hay la,
+
+1039
+00:49:38,000 --> 00:49:39,000
+acá hay dos a,
+
+1040
+00:49:45,000 --> 00:49:46,000
+bueno,
+
+1041
+00:49:48,000 --> 00:49:49,000
+y bueno, por ejemplo,
+
+1042
+00:49:49,000 --> 00:49:52,000
+ahí tradicionalmente,
+
+1043
+00:49:52,000 --> 00:49:54,000
+uno en este tipo de análisis trabaja
+
+1044
+00:49:54,000 --> 00:49:55,000
+sobre corpus grandes,
+
+1045
+00:49:57,000 --> 00:49:58,000
+los corpus,
+
+1046
+00:49:59,000 --> 00:50:00,000
+que nos permiten analizar
+
+1047
+00:50:00,000 --> 00:50:02,000
+las diferentes ocurrencias de cosas,
+
+1048
+00:50:02,000 --> 00:50:03,000
+en la lenguaje,
+
+1049
+00:50:03,000 --> 00:50:04,000
+son corpus grandes,
+
+1050
+00:50:04,000 --> 00:50:06,000
+porque yo necesito ver la casuística,
+
+1051
+00:50:06,000 --> 00:50:08,000
+los linguistas hacen muchos,
+
+1052
+00:50:08,000 --> 00:50:09,000
+hace becas,
+
+1053
+00:50:09,000 --> 00:50:10,000
+que trabajan sobre corpus,
+
+1054
+00:50:11,000 --> 00:50:12,000
+donde identifican la,
+
+1055
+00:50:13,000 --> 00:50:15,000
+si yo, como se comporta el verbo,
+
+1056
+00:50:17,000 --> 00:50:18,000
+ser en el español,
+
+1057
+00:50:18,000 --> 00:50:19,000
+bueno,
+
+1058
+00:50:19,000 --> 00:50:20,000
+entonces que ver todas las ocurrencias
+
+1059
+00:50:20,000 --> 00:50:21,000
+de ser que aparecen y estudiar,
+
+1060
+00:50:21,000 --> 00:50:22,000
+como se,
+
+1061
+00:50:22,000 --> 00:50:23,000
+es bien empilco esto.
+
+1062
+00:50:25,000 --> 00:50:26,000
+Si nosotros nos creemos
+
+1063
+00:50:26,000 --> 00:50:27,000
+que la realidad acá en mi español
+
+1064
+00:50:27,000 --> 00:50:28,000
+la sabe todo,
+
+1065
+00:50:28,000 --> 00:50:29,000
+pero en realidad,
+
+1066
+00:50:29,000 --> 00:50:30,000
+primero que ya en un lado
+
+1067
+00:50:30,000 --> 00:50:31,000
+tuvo que aprender y,
+
+1068
+00:50:32,000 --> 00:50:33,000
+y luego que,
+
+1069
+00:50:34,000 --> 00:50:36,000
+uno tiene que estudiar la casística,
+
+1070
+00:50:36,000 --> 00:50:37,000
+la casuística.
+
+1071
+00:50:37,000 --> 00:50:38,000
+Bueno,
+
+1072
+00:50:38,000 --> 00:50:39,000
+entonces,
+
+1073
+00:50:39,000 --> 00:50:40,000
+hay un corpo bastante conocido
+
+1074
+00:50:40,000 --> 00:50:41,000
+que si el corpo crea el corpo de referencia
+
+1075
+00:50:41,000 --> 00:50:42,000
+del español actual,
+
+1076
+00:50:43,000 --> 00:50:45,000
+que junta acá tiene un link
+
+1077
+00:50:45,000 --> 00:50:46,000
+para verlo,
+
+1078
+00:50:46,000 --> 00:50:47,000
+lo detalle pero,
+
+1079
+00:50:47,000 --> 00:50:49,000
+junta textos de diferentes lugares,
+
+1080
+00:50:51,000 --> 00:50:52,000
+mayormente España,
+
+1081
+00:50:52,000 --> 00:50:53,000
+pero también América Latina,
+
+1082
+00:50:53,000 --> 00:50:54,000
+de diferentes temas,
+
+1083
+00:50:55,000 --> 00:50:56,000
+cuando uno coge,
+
+1084
+00:50:56,000 --> 00:50:57,000
+construye un corpo,
+
+1085
+00:50:57,000 --> 00:50:58,000
+es todo un trabajo,
+
+1086
+00:50:59,000 --> 00:51:01,000
+porque primero uno tiene que identificar
+
+1087
+00:51:01,000 --> 00:51:02,000
+de qué quiere armar el corpo,
+
+1088
+00:51:02,000 --> 00:51:03,000
+porque como le decía,
+
+1089
+00:51:03,000 --> 00:51:04,000
+un corpo de ingleno
+
+1090
+00:51:04,000 --> 00:51:05,000
+es igual que un corpo de español,
+
+1091
+00:51:05,000 --> 00:51:06,000
+obviamente,
+
+1092
+00:51:06,000 --> 00:51:07,000
+pero un corpo de noticias,
+
+1093
+00:51:07,000 --> 00:51:10,000
+no es lo mismo con un corpo de poemas,
+
+1094
+00:51:12,000 --> 00:51:13,000
+porque las cosas que hay,
+
+1095
+00:51:13,000 --> 00:51:14,000
+incluso las frecuencias,
+
+1096
+00:51:14,000 --> 00:51:15,000
+la palabra van a ser diferentes.
+
+1097
+00:51:16,000 --> 00:51:17,000
+Seguramente,
+
+1098
+00:51:17,000 --> 00:51:18,000
+la cantidad de palabras desconocidas
+
+1099
+00:51:18,000 --> 00:51:19,000
+en un corpo de noticias
+
+1100
+00:51:19,000 --> 00:51:21,000
+sea muchísimo menor
+
+1101
+00:51:21,000 --> 00:51:23,000
+que a la cantidad de palabras desconocidas
+
+1102
+00:51:23,000 --> 00:51:24,000
+en un corpo de poemas,
+
+1103
+00:51:25,000 --> 00:51:26,000
+porque uno cuando cree poemas
+
+1104
+00:51:26,000 --> 00:51:27,000
+se le da por inventar.
+
+1105
+00:51:29,000 --> 00:51:31,000
+Por inventar palabras,
+
+1106
+00:51:31,000 --> 00:51:32,000
+cosas también.
+
+1107
+00:51:32,000 --> 00:51:34,000
+Por ejemplo, el corpo crea tiene
+
+1108
+00:51:35,000 --> 00:51:37,000
+125 millones de tokens,
+
+1109
+00:51:38,000 --> 00:51:40,000
+es un corpo bastante grande,
+
+1110
+00:51:40,000 --> 00:51:42,000
+para los parámetros de año 2000,
+
+1111
+00:51:42,000 --> 00:51:43,000
+para este, ahora no,
+
+1112
+00:51:43,000 --> 00:51:45,000
+ahora vamos a ver un poquito más.
+
+1113
+00:51:45,000 --> 00:51:50,000
+Y tiene 737.799 palabras distintos.
+
+1114
+00:51:51,000 --> 00:51:54,000
+Esto debería converger, digamos,
+
+1115
+00:51:54,000 --> 00:51:56,000
+al tamaño del vocabulario que existe,
+
+1116
+00:51:57,000 --> 00:51:59,000
+que no es lo mismo que el vocabulario
+
+1117
+00:51:59,000 --> 00:52:00,000
+que no lo tiene número,
+
+1118
+00:52:00,000 --> 00:52:02,000
+porque no me lo acuerdo,
+
+1119
+00:52:02,000 --> 00:52:03,000
+de un diccionario,
+
+1120
+00:52:03,000 --> 00:52:05,000
+porque otra forma mira un diccionario.
+
+1121
+00:52:06,000 --> 00:52:08,000
+El diccionario me dice todas las palabras,
+
+1122
+00:52:08,000 --> 00:52:09,000
+pero me lo dice,
+
+1123
+00:52:09,000 --> 00:52:10,000
+me trae los lemas.
+
+1124
+00:52:12,000 --> 00:52:14,000
+Entonces, va a ser más chico, digamos, ¿no?
+
+1125
+00:52:14,000 --> 00:52:15,000
+Esto es un comundicionario
+
+1126
+00:52:15,000 --> 00:52:16,000
+para la palabra flexionada.
+
+1127
+00:52:17,000 --> 00:52:18,000
+Por supuesto, no es,
+
+1128
+00:52:20,000 --> 00:52:23,000
+no son las palabras lenguajes,
+
+1129
+00:52:23,000 --> 00:52:25,000
+porque si yo no lo emití en este corpo,
+
+1130
+00:52:25,000 --> 00:52:26,000
+no, no existe.
+
+1131
+00:52:26,000 --> 00:52:27,000
+Sí.
+
+1132
+00:52:30,000 --> 00:52:32,000
+El corpo crea esta separado
+
+1133
+00:52:32,000 --> 00:52:34,000
+en diferentes secciones,
+
+1134
+00:52:34,000 --> 00:52:35,000
+es típico de los corpos,
+
+1135
+00:52:35,000 --> 00:52:36,000
+si eso también,
+
+1136
+00:52:36,000 --> 00:52:37,000
+como tiene diferentes secciones,
+
+1137
+00:52:37,000 --> 00:52:39,000
+estos son de Venezuela,
+
+1138
+00:52:39,000 --> 00:52:40,000
+estos son de Venezuela.
+
+1139
+00:52:43,000 --> 00:52:44,000
+Generalmente vos en los corpos
+
+1140
+00:52:44,000 --> 00:52:45,000
+tenés eso,
+
+1141
+00:52:45,000 --> 00:52:47,000
+de dividir su corpo, digamos.
+
+1142
+00:52:48,000 --> 00:52:49,000
+Por si vos querés especificar,
+
+1143
+00:52:49,000 --> 00:52:50,000
+por ejemplo,
+
+1144
+00:52:50,000 --> 00:52:51,000
+si querés hablar del español
+
+1145
+00:52:51,000 --> 00:52:52,000
+del rey de la plata,
+
+1146
+00:52:52,000 --> 00:52:54,000
+te remití a ese corpo.
+
+1147
+00:52:55,000 --> 00:52:57,000
+Y todos los análisis que uno hace
+
+1148
+00:52:57,000 --> 00:52:59,000
+en esto, de todo lo que, como en el curso,
+
+1149
+00:52:59,000 --> 00:53:01,000
+siempre tiene que decir sobre qué corpo lo hizo.
+
+1150
+00:53:02,000 --> 00:53:03,000
+Porque uno,
+
+1151
+00:53:04,000 --> 00:53:05,000
+en trena,
+
+1152
+00:53:05,000 --> 00:53:06,000
+lo que sea que significa en trena,
+
+1153
+00:53:06,000 --> 00:53:07,000
+es para mover,
+
+1154
+00:53:08,000 --> 00:53:10,000
+porque uno aprende,
+
+1155
+00:53:10,000 --> 00:53:11,000
+ya sea mano
+
+1156
+00:53:11,000 --> 00:53:12,000
+o automáticamente,
+
+1157
+00:53:12,000 --> 00:53:13,000
+de un corpo,
+
+1158
+00:53:13,000 --> 00:53:14,000
+pero además tiene que evaluar
+
+1159
+00:53:14,000 --> 00:53:15,000
+sobre un corpo.
+
+1160
+00:53:15,000 --> 00:53:16,000
+A ver cómo le fue,
+
+1161
+00:53:16,000 --> 00:53:17,000
+eso lo vamos a hablar luego.
+
+1162
+00:53:18,000 --> 00:53:19,000
+Siempre va a hacer sobre un,
+
+1163
+00:53:19,000 --> 00:53:20,000
+uno tiene que decir sobre el corpo,
+
+1164
+00:53:20,000 --> 00:53:21,000
+que corpo es,
+
+1165
+00:53:21,000 --> 00:53:22,000
+a mí esto me dio tal resultado
+
+1166
+00:53:22,000 --> 00:53:23,000
+en el corpo crea.
+
+1167
+00:53:24,000 --> 00:53:25,000
+Lo cual no quiere decir
+
+1168
+00:53:25,000 --> 00:53:26,000
+que me va a dar igual resultado
+
+1169
+00:53:26,000 --> 00:53:27,000
+en un corpo de Twitter.
+
+1170
+00:53:30,000 --> 00:53:31,000
+Hace poquito,
+
+1171
+00:53:31,000 --> 00:53:32,000
+se aprobó,
+
+1172
+00:53:32,000 --> 00:53:33,000
+es un proyecto de grado
+
+1173
+00:53:33,000 --> 00:53:34,000
+del grupo nuestro,
+
+1174
+00:53:35,000 --> 00:53:36,000
+se aprobó ahora,
+
+1175
+00:53:36,000 --> 00:53:37,000
+es un par de meses,
+
+1176
+00:53:37,000 --> 00:53:38,000
+que construyeron,
+
+1177
+00:53:38,000 --> 00:53:39,000
+a partir de,
+
+1178
+00:53:41,000 --> 00:53:42,000
+fuentes de noticias
+
+1179
+00:53:42,000 --> 00:53:43,000
+de la Wikipedia,
+
+1180
+00:53:44,000 --> 00:53:45,000
+y otros foros,
+
+1181
+00:53:45,000 --> 00:53:46,000
+y otros fuentes,
+
+1182
+00:53:46,000 --> 00:53:48,000
+un corpo de
+
+1183
+00:53:48,000 --> 00:53:50,000
+6.000 millones de tokens,
+
+1184
+00:53:51,000 --> 00:53:52,000
+esto es un muy buen corpo.
+
+1185
+00:53:53,000 --> 00:53:54,000
+Incluso,
+
+1186
+00:53:54,000 --> 00:53:56,000
+a nivel de lo que hay para el inglés,
+
+1187
+00:53:56,000 --> 00:53:57,000
+que son de 8.000 millones,
+
+1188
+00:53:57,000 --> 00:53:58,000
+más o menos.
+
+1189
+00:53:59,000 --> 00:54:00,000
+Y,
+
+1190
+00:54:01,000 --> 00:54:04,000
+ahí aparecieron 1.460 millones
+
+1191
+00:54:04,000 --> 00:54:05,000
+de palabras de ti.
+
+1192
+00:54:06,000 --> 00:54:07,000
+No,
+
+1193
+00:54:07,000 --> 00:54:08,000
+no puede ser.
+
+1194
+00:54:08,000 --> 00:54:09,000
+Perdón,
+
+1195
+00:54:10,000 --> 00:54:12,000
+1.460,
+
+1196
+00:54:12,000 --> 00:54:13,000
+quedo malito,
+
+1197
+00:54:13,000 --> 00:54:14,000
+no me lo voy.
+
+1198
+00:54:15,000 --> 00:54:16,000
+1.4,
+
+1199
+00:54:16,000 --> 00:54:18,000
+1.5 millones de palabras de tinta.
+
+1200
+00:54:18,000 --> 00:54:19,000
+Fíjense,
+
+1201
+00:54:21,000 --> 00:54:22,000
+que,
+
+1202
+00:54:22,000 --> 00:54:23,000
+para
+
+1203
+00:54:23,000 --> 00:54:25,000
+125 millones de tokens,
+
+1204
+00:54:25,000 --> 00:54:26,000
+había 737.000 palabras,
+
+1205
+00:54:27,000 --> 00:54:28,000
+para
+
+1206
+00:54:28,000 --> 00:54:29,000
+6.000 millones,
+
+1207
+00:54:29,000 --> 00:54:30,000
+había
+
+1208
+00:54:30,000 --> 00:54:31,000
+el doble.
+
+1209
+00:54:32,000 --> 00:54:33,000
+Lo que decíamos,
+
+1210
+00:54:33,000 --> 00:54:34,000
+deberían convergiendo,
+
+1211
+00:54:34,000 --> 00:54:35,000
+pero sí nos parecieron cosas raras.
+
+1212
+00:54:37,000 --> 00:54:38,000
+Esto es un corpo del español.
+
+1213
+00:54:38,000 --> 00:54:39,000
+Es un corpo
+
+1214
+00:54:39,000 --> 00:54:41,000
+no anotado,
+
+1215
+00:54:41,000 --> 00:54:43,000
+quiere decir que nadie
+
+1216
+00:54:43,000 --> 00:54:44,000
+lo miró a mano,
+
+1217
+00:54:44,000 --> 00:54:45,000
+obviamente.
+
+1218
+00:54:45,000 --> 00:54:46,000
+Es solamente,
+
+1219
+00:54:46,000 --> 00:54:47,000
+y no es poco
+
+1220
+00:54:47,000 --> 00:54:49,000
+una gran cantidad de textos.
+
+1221
+00:54:49,000 --> 00:54:50,000
+¿Qué cosa puedo aprender
+
+1222
+00:54:50,000 --> 00:54:52,000
+yo de un corpo de ese tipo de cosas?
+
+1223
+00:54:52,000 --> 00:54:53,000
+Bueno,
+
+1224
+00:54:53,000 --> 00:54:54,000
+¿cómo se agrupan las palabras?
+
+1225
+00:54:56,000 --> 00:54:58,000
+La frecuencia de las palabras,
+
+1226
+00:54:58,000 --> 00:54:59,000
+como voy a poter,
+
+1227
+00:54:59,000 --> 00:55:00,000
+cuanto más grande,
+
+1228
+00:55:00,000 --> 00:55:01,000
+si el corpo es más
+
+1229
+00:55:01,000 --> 00:55:02,000
+clara va a ser minución
+
+1230
+00:55:02,000 --> 00:55:03,000
+de la frecuencia de las palabras.
+
+1231
+00:55:03,000 --> 00:55:04,000
+El palabra es más común y pañez,
+
+1232
+00:55:04,000 --> 00:55:05,000
+creo que es bien.
+
+1233
+00:55:06,000 --> 00:55:08,000
+Saber esas frecuencias,
+
+1234
+00:55:08,000 --> 00:55:09,000
+sabrarlas contando,
+
+1235
+00:55:09,000 --> 00:55:11,000
+supongo que es muy representativo
+
+1236
+00:55:11,000 --> 00:55:12,000
+de mi lenguaje,
+
+1237
+00:55:12,000 --> 00:55:13,000
+porque es todo,
+
+1238
+00:55:13,000 --> 00:55:14,000
+la cantidad,
+
+1239
+00:55:14,000 --> 00:55:15,000
+es una cantidad de cosas
+
+1240
+00:55:15,000 --> 00:55:16,000
+que ha dicho una cantidad de gente.
+
+1241
+00:55:17,000 --> 00:55:20,000
+Esto,
+
+1242
+00:55:20,000 --> 00:55:21,000
+este tipo de cosas,
+
+1243
+00:55:21,000 --> 00:55:22,000
+son los que ha hecho,
+
+1244
+00:55:22,000 --> 00:55:23,000
+que,
+
+1245
+00:55:23,000 --> 00:55:24,000
+radicalmente,
+
+1246
+00:55:24,000 --> 00:55:25,000
+cambiar el procedimiento
+
+1247
+00:55:25,000 --> 00:55:26,000
+de boba de natural
+
+1248
+00:55:26,000 --> 00:55:27,000
+en los últimos años.
+
+1249
+00:55:27,000 --> 00:55:28,000
+Porque,
+
+1250
+00:55:28,000 --> 00:55:30,000
+porque tengo muchos elementos nuevos.
+
+1251
+00:55:30,000 --> 00:55:32,000
+Y hoy en día es prácticamente,
+
+1252
+00:55:32,000 --> 00:55:35,000
+impensable hacer análisis a mano,
+
+1253
+00:55:35,000 --> 00:55:38,000
+a ver,
+
+1254
+00:55:38,000 --> 00:55:40,000
+subestimando el poder
+
+1255
+00:55:40,000 --> 00:55:41,000
+de todas estas cosas,
+
+1256
+00:55:41,000 --> 00:55:42,000
+lo cual no quiere decir que uno,
+
+1257
+00:55:42,000 --> 00:55:43,000
+nada,
+
+1258
+00:55:43,000 --> 00:55:44,000
+estudios analístico,
+
+1259
+00:55:44,000 --> 00:55:45,000
+pero tiene otra herramienta
+
+1260
+00:55:45,000 --> 00:55:46,000
+totalmente nueva.
+
+1261
+00:55:46,000 --> 00:55:47,000
+Si yo quiero saber,
+
+1262
+00:55:47,000 --> 00:55:49,000
+cómo es el verbo ser
+
+1263
+00:55:49,000 --> 00:55:50,000
+en el español,
+
+1264
+00:55:50,000 --> 00:55:51,000
+bueno, tengo herramienta,
+
+1265
+00:55:51,000 --> 00:55:52,000
+tengo corpos muy grande
+
+1266
+00:55:52,000 --> 00:55:53,000
+para probar mis hipótesis.
+
+1267
+00:55:59,000 --> 00:56:00,000
+Bueno,
+
+1268
+00:56:00,000 --> 00:56:01,000
+la tokenización es
+
+1269
+00:56:01,000 --> 00:56:02,000
+identificar las palabras,
+
+1270
+00:56:02,000 --> 00:56:03,000
+dijimos que era bastante fácil,
+
+1271
+00:56:03,000 --> 00:56:04,000
+pero parecían cosas
+
+1272
+00:56:04,000 --> 00:56:06,000
+como los que fuimos encontrando.
+
+1273
+00:56:07,000 --> 00:56:08,000
+Por ejemplo,
+
+1274
+00:56:10,000 --> 00:56:12,000
+esto que está entre comillas,
+
+1275
+00:56:12,000 --> 00:56:13,000
+tengo que ver si
+
+1276
+00:56:13,000 --> 00:56:15,000
+no puedo considerar un token solo,
+
+1277
+00:56:15,000 --> 00:56:16,000
+o una entidad,
+
+1278
+00:56:16,000 --> 00:56:18,000
+o varios tokens con una entidad.
+
+1279
+00:56:18,000 --> 00:56:19,000
+Toco que ver si las comillas
+
+1280
+00:56:19,000 --> 00:56:21,000
+las considero toque en la parte.
+
+1281
+00:56:21,000 --> 00:56:22,000
+Las fechas,
+
+1282
+00:56:22,000 --> 00:56:23,000
+los números,
+
+1283
+00:56:23,000 --> 00:56:25,000
+las direcciones jueves,
+
+1284
+00:56:25,000 --> 00:56:27,000
+fenómenos que en el español
+
+1285
+00:56:27,000 --> 00:56:29,000
+no tenemos que son estos,
+
+1286
+00:56:29,000 --> 00:56:30,000
+como que saben,
+
+1287
+00:56:30,000 --> 00:56:31,000
+son,
+
+1288
+00:56:31,000 --> 00:56:34,000
+¿eh?
+
+1289
+00:56:34,000 --> 00:56:35,000
+Contraacciones,
+
+1290
+00:56:35,000 --> 00:56:36,000
+pero con,
+
+1291
+00:56:36,000 --> 00:56:38,000
+con apóstol,
+
+1292
+00:56:38,000 --> 00:56:40,000
+parecían el útil.
+
+1293
+00:56:40,000 --> 00:56:41,000
+Nosotros tenemos
+
+1294
+00:56:41,000 --> 00:56:42,000
+contraacciones que son dos,
+
+1295
+00:56:42,000 --> 00:56:43,000
+como sabe de cualquiera
+
+1296
+00:56:43,000 --> 00:56:44,000
+que hizo crucigramos,
+
+1297
+00:56:44,000 --> 00:56:45,000
+al ideal,
+
+1298
+00:56:45,000 --> 00:56:48,000
+pero esto no los tenemos.
+
+1299
+00:56:48,000 --> 00:56:50,000
+Esto también hay que ver como separarlo,
+
+1300
+00:56:50,000 --> 00:56:51,000
+y al ideal,
+
+1301
+00:56:51,000 --> 00:56:52,000
+es un tome problema,
+
+1302
+00:56:52,000 --> 00:56:53,000
+al ideal,
+
+1303
+00:56:53,000 --> 00:56:54,000
+en el mundo real,
+
+1304
+00:56:54,000 --> 00:56:55,000
+del análisis,
+
+1305
+00:56:55,000 --> 00:56:57,000
+porque uno viene muy contento,
+
+1306
+00:56:57,000 --> 00:56:58,000
+separando por palabras,
+
+1307
+00:56:58,000 --> 00:56:59,000
+y se encuentra con al,
+
+1308
+00:56:59,000 --> 00:57:00,000
+que es una palabra,
+
+1309
+00:57:00,000 --> 00:57:01,000
+pues son dos.
+
+1310
+00:57:01,000 --> 00:57:02,000
+Entonces,
+
+1311
+00:57:02,000 --> 00:57:04,000
+después,
+
+1312
+00:57:04,000 --> 00:57:06,000
+uno armó un modelo de token,
+
+1313
+00:57:06,000 --> 00:57:07,000
+es decir,
+
+1314
+00:57:07,000 --> 00:57:08,000
+es una lista de palabras,
+
+1315
+00:57:08,000 --> 00:57:09,000
+es decir,
+
+1316
+00:57:09,000 --> 00:57:10,000
+bueno,
+
+1317
+00:57:10,000 --> 00:57:11,000
+las palabras me olvidé
+
+1318
+00:57:11,000 --> 00:57:12,000
+de la separación,
+
+1319
+00:57:12,000 --> 00:57:13,000
+sí,
+
+1320
+00:57:13,000 --> 00:57:15,000
+pero cuando lo quiere machar contra el,
+
+1321
+00:57:15,000 --> 00:57:16,000
+texto original,
+
+1322
+00:57:16,000 --> 00:57:17,000
+dice bueno,
+
+1323
+00:57:17,000 --> 00:57:18,000
+primera palabra,
+
+1324
+00:57:18,000 --> 00:57:19,000
+segunda palabra, no,
+
+1325
+00:57:19,000 --> 00:57:20,000
+para, para,
+
+1326
+00:57:20,000 --> 00:57:21,000
+después que hizo el análisis,
+
+1327
+00:57:21,000 --> 00:57:22,000
+quiere volver al texto,
+
+1328
+00:57:22,000 --> 00:57:23,000
+para mostrarlo.
+
+1329
+00:57:23,000 --> 00:57:24,000
+Cuando vuelve,
+
+1330
+00:57:24,000 --> 00:57:25,000
+hubo dos palabras,
+
+1331
+00:57:25,000 --> 00:57:26,000
+que se le transformaron en una,
+
+1332
+00:57:26,000 --> 00:57:27,000
+o, mejor dicho,
+
+1333
+00:57:27,000 --> 00:57:28,000
+una palabra,
+
+1334
+00:57:28,000 --> 00:57:29,000
+que se le transformaron
+
+1335
+00:57:29,000 --> 00:57:30,000
+todo,
+
+1336
+00:57:30,000 --> 00:57:31,000
+cuando vuelve ese equivo,
+
+1337
+00:57:31,000 --> 00:57:32,000
+que muestra la,
+
+1338
+00:57:32,000 --> 00:57:33,000
+las cosas corridas,
+
+1339
+00:57:33,000 --> 00:57:34,000
+de hecho,
+
+1340
+00:57:34,000 --> 00:57:35,000
+sucede.
+
+1341
+00:57:35,000 --> 00:57:36,000
+Todo por qué,
+
+1342
+00:57:36,000 --> 00:57:37,000
+por al ideal,
+
+1343
+00:57:37,000 --> 00:57:38,000
+que son,
+
+1344
+00:57:38,000 --> 00:57:39,000
+una palabra,
+
+1345
+00:57:39,000 --> 00:57:40,000
+y bien,
+
+1346
+00:57:40,000 --> 00:57:41,000
+ese es otro problema
+
+1347
+00:57:41,000 --> 00:57:42,000
+de los críticos.
+
+1348
+00:57:42,000 --> 00:57:43,000
+Si a usted,
+
+1349
+00:57:43,000 --> 00:57:44,000
+puede interesar,
+
+1350
+00:57:44,000 --> 00:57:45,000
+sacar el decil,
+
+1351
+00:57:45,000 --> 00:57:46,000
+porque para el análisis,
+
+1352
+00:57:46,000 --> 00:57:47,000
+es muy importante,
+
+1353
+00:57:47,000 --> 00:57:48,000
+exactamente,
+
+1354
+00:57:48,000 --> 00:57:49,000
+para el análisis,
+
+1355
+00:57:49,000 --> 00:57:51,000
+son dos palabras.
+
+1356
+00:57:51,000 --> 00:57:52,000
+Y yo,
+
+1357
+00:57:52,000 --> 00:57:53,000
+yo tengo que conservar
+
+1358
+00:57:53,000 --> 00:57:54,000
+de alguna forma,
+
+1359
+00:57:54,000 --> 00:57:55,000
+y perdón,
+
+1360
+00:57:55,000 --> 00:57:56,000
+porque parece,
+
+1361
+00:57:56,000 --> 00:57:57,000
+parece trivial,
+
+1362
+00:57:57,000 --> 00:57:58,000
+y yo no tengo,
+
+1363
+00:57:58,000 --> 00:57:59,000
+dice bueno,
+
+1364
+00:57:59,000 --> 00:58:00,000
+ya una lista,
+
+1365
+00:58:00,000 --> 00:58:01,000
+dice paro con los espacios,
+
+1366
+00:58:01,000 --> 00:58:02,000
+pero no,
+
+1367
+00:58:02,000 --> 00:58:03,000
+pues yo tengo de alguna forma,
+
+1368
+00:58:03,000 --> 00:58:04,000
+tengo que tener,
+
+1369
+00:58:04,000 --> 00:58:05,000
+y es un lío de implementación,
+
+1370
+00:58:05,000 --> 00:58:06,000
+le digo,
+
+1371
+00:58:06,000 --> 00:58:07,000
+vuelve bien carne propia,
+
+1372
+00:58:07,000 --> 00:58:08,000
+muchas veces.
+
+1373
+00:58:08,000 --> 00:58:09,000
+Cuando su lista pala,
+
+1374
+00:58:09,000 --> 00:58:10,000
+ahora, después,
+
+1375
+00:58:10,000 --> 00:58:11,000
+hace,
+
+1376
+00:58:11,000 --> 00:58:13,000
+ahora,
+
+1377
+00:58:13,000 --> 00:58:14,000
+después,
+
+1378
+00:58:14,000 --> 00:58:15,000
+el clase que viene lo va a mover,
+
+1379
+00:58:15,000 --> 00:58:16,000
+le hace,
+
+1380
+00:58:16,000 --> 00:58:17,000
+análisis gramatical,
+
+1381
+00:58:17,000 --> 00:58:19,000
+análisis sintáctico,
+
+1382
+00:58:19,000 --> 00:58:20,000
+arma,
+
+1383
+00:58:20,000 --> 00:58:21,000
+largolito,
+
+1384
+00:58:21,000 --> 00:58:22,000
+pla pla,
+
+1385
+00:58:22,000 --> 00:58:23,000
+cuando quiere volver a mostrar la oración,
+
+1386
+00:58:23,000 --> 00:58:24,000
+no sabe donde la tenía.
+
+1387
+00:58:24,000 --> 00:58:26,000
+De un punto de implementación,
+
+1388
+00:58:26,000 --> 00:58:27,000
+estamos hablando, ¿no?
+
+1389
+00:58:27,000 --> 00:58:28,000
+Sí.
+
+1390
+00:58:28,000 --> 00:58:30,000
+¿Este criterio de requerización,
+
+1391
+00:58:30,000 --> 00:58:32,000
+cuando vamos a presentar un texto?
+
+1392
+00:58:32,000 --> 00:58:34,000
+¿Pas tardado?
+
+1393
+00:58:34,000 --> 00:58:35,000
+¿No?
+
+1394
+00:58:35,000 --> 00:58:36,000
+¿No?
+
+1395
+00:58:36,000 --> 00:58:37,000
+No.
+
+1396
+00:58:38,000 --> 00:58:40,000
+¿Vas tardado por lo que vos quieras hacer?
+
+1397
+00:58:41,000 --> 00:58:43,000
+Es decir, depende más de la tarea
+
+1398
+00:58:43,000 --> 00:58:44,000
+que estés completando.
+
+1399
+00:58:44,000 --> 00:58:46,000
+Por ejemplo, si vamos a hacer,
+
+1400
+00:58:49,000 --> 00:58:51,000
+un conteo simple de palabras,
+
+1401
+00:58:51,000 --> 00:58:53,000
+no te calienta esto.
+
+1402
+00:58:54,000 --> 00:58:55,000
+De hecho, capaz que te interesa,
+
+1403
+00:58:55,000 --> 00:58:56,000
+tendrán lo junto,
+
+1404
+00:58:56,000 --> 00:58:57,000
+porque tengo,
+
+1405
+00:58:59,000 --> 00:59:00,000
+es algo que se da muy,
+
+1406
+00:59:00,000 --> 00:59:02,000
+es una colocación,
+
+1407
+00:59:02,000 --> 00:59:03,000
+digamos, un dos palabras,
+
+1408
+00:59:03,000 --> 00:59:04,000
+se da mucho junta,
+
+1409
+00:59:04,000 --> 00:59:05,000
+yo creo que sea.
+
+1410
+00:59:06,000 --> 00:59:07,000
+Ahora, si yo creaciera,
+
+1411
+00:59:07,000 --> 00:59:08,000
+análisis sintáctico,
+
+1412
+00:59:09,000 --> 00:59:11,000
+cómo se organiza el largo del oración,
+
+1413
+00:59:11,000 --> 00:59:13,000
+esto te va a interesar separar lo sin duda.
+
+1414
+00:59:14,000 --> 00:59:15,000
+¿De acuerdo?
+
+1415
+00:59:16,000 --> 00:59:18,000
+Eso depende mucho de tu tarea.
+
+1416
+00:59:21,000 --> 00:59:22,000
+Si de todos,
+
+1417
+00:59:22,000 --> 00:59:24,000
+es bastante estándar estas cosas,
+
+1418
+00:59:24,000 --> 00:59:25,000
+tenerlas separadas.
+
+1419
+00:59:25,000 --> 00:59:27,000
+De hecho, hay un estándar muy sencillo.
+
+1420
+00:59:28,000 --> 00:59:29,000
+Ah, bueno,
+
+1421
+00:59:29,000 --> 00:59:30,000
+porque además hay otro problema,
+
+1422
+00:59:30,000 --> 00:59:31,000
+y eso también lo he vivido,
+
+1423
+00:59:32,000 --> 00:59:33,000
+que es,
+
+1424
+00:59:33,000 --> 00:59:35,000
+vos toquenizas con una herramienta,
+
+1425
+00:59:37,000 --> 00:59:39,000
+esto suponema bien de herramientas,
+
+1426
+00:59:39,000 --> 00:59:41,000
+uno toqueniza de una forma de su programa,
+
+1427
+00:59:41,000 --> 00:59:43,000
+y después utiliza una,
+
+1428
+00:59:43,000 --> 00:59:45,000
+una otra herramienta para poner
+
+1429
+00:59:45,000 --> 00:59:47,000
+en la categoría gamaticada cada palabra.
+
+1430
+00:59:48,000 --> 00:59:49,000
+Si esta herramienta,
+
+1431
+00:59:50,000 --> 00:59:51,000
+al hacer el análisis gramatical,
+
+1432
+00:59:51,000 --> 00:59:53,000
+a la vez toqueniza, según su criterio,
+
+1433
+00:59:53,000 --> 00:59:55,000
+que es lo que sucede muchas veces.
+
+1434
+00:59:56,000 --> 00:59:57,000
+Ahora, yo tenía un tager para,
+
+1435
+00:59:57,000 --> 01:00:00,000
+para, yo hice mi tesis en textos biológicos,
+
+1436
+01:00:00,000 --> 01:00:02,000
+digamos, que son biología molecular,
+
+1437
+01:00:02,000 --> 01:00:04,000
+que aparece muchas palabras raras.
+
+1438
+01:00:06,000 --> 01:00:08,000
+Y habéis tenido un toquen,
+
+1439
+01:00:08,000 --> 01:00:10,000
+un tiquetador gramatical propio,
+
+1440
+01:00:12,000 --> 01:00:14,000
+específico de los entrenados
+
+1441
+01:00:14,000 --> 01:00:15,000
+sobre un corpus de ese tipo,
+
+1442
+01:00:16,000 --> 01:00:18,000
+y tipo, no era una herramienta cerrada,
+
+1443
+01:00:18,000 --> 01:00:19,000
+digamos, lo que haciera,
+
+1444
+01:00:19,000 --> 01:00:21,000
+tomó el texto, lo toquenizaba y lo notaba.
+
+1445
+01:00:22,000 --> 01:00:24,000
+Para machiar este texto que me había toquenizado
+
+1446
+01:00:24,000 --> 01:00:25,000
+con mi texto original,
+
+1447
+01:00:25,000 --> 01:00:27,000
+como no toquenizaba igual,
+
+1448
+01:00:28,000 --> 01:00:29,000
+yo me ponía,
+
+1449
+01:00:29,000 --> 01:00:30,000
+había cosas que fue, por ejemplo,
+
+1450
+01:00:30,000 --> 01:00:33,000
+decía, 25 guion y hidro,
+
+1451
+01:00:33,000 --> 01:00:35,000
+nunca entendía nada de lo que estaban haciendo, ¿no?
+
+1452
+01:00:35,000 --> 01:00:38,000
+25 y hidroxil, no sé qué.
+
+1453
+01:00:39,000 --> 01:00:41,000
+Y mito-quenizador,
+
+1454
+01:00:41,000 --> 01:00:43,000
+es mi método de toquenización de 7 guion,
+
+1455
+01:00:43,000 --> 01:00:44,000
+es una palabra.
+
+1456
+01:00:45,000 --> 01:00:46,000
+El toquenizador,
+
+1457
+01:00:48,000 --> 01:00:49,000
+el toquenizador del tager,
+
+1458
+01:00:49,000 --> 01:00:50,000
+el otro tager,
+
+1459
+01:00:50,000 --> 01:00:52,000
+lo partía acá para devaluar el 25 por un lado,
+
+1460
+01:00:53,000 --> 01:00:55,000
+y yo después tenía que volver a unificarlos
+
+1461
+01:00:55,000 --> 01:00:57,000
+para poder seguir trabajando.
+
+1462
+01:00:58,000 --> 01:01:00,000
+Bueno, esto era un hombre y esto era un número, yo quese.
+
+1463
+01:01:04,000 --> 01:01:05,000
+Bueno,
+
+1464
+01:01:06,000 --> 01:01:08,000
+acá hay un estándar de toquenización
+
+1465
+01:01:08,000 --> 01:01:09,000
+bastante conocido,
+
+1466
+01:01:09,000 --> 01:01:10,000
+es el pen triban.
+
+1467
+01:01:11,000 --> 01:01:15,000
+El pen triban es un corpus de Pamo,
+
+1468
+01:01:15,000 --> 01:01:16,000
+porque es anotado,
+
+1469
+01:01:17,000 --> 01:01:19,000
+es decir, no solo tomaron texto,
+
+1470
+01:01:19,000 --> 01:01:21,000
+sino que analizaron cada oración,
+
+1471
+01:01:21,000 --> 01:01:23,000
+le pusieron la categoría gramatical a cada palabra.
+
+1472
+01:01:24,000 --> 01:01:27,000
+Y para eso tuvieron primero que toquenizar,
+
+1473
+01:01:27,000 --> 01:01:29,000
+la toquenización del pen triban es muy sencilla.
+
+1474
+01:01:31,000 --> 01:01:33,000
+Se separan los signos de fundación de las palabras,
+
+1475
+01:01:34,000 --> 01:01:36,000
+se separan las contraacciones
+
+1476
+01:01:36,000 --> 01:01:38,000
+y las separan en it.
+
+1477
+01:01:40,000 --> 01:01:42,000
+Y las comillas doles se transforman
+
+1478
+01:01:43,000 --> 01:01:46,000
+en comillas de apertura de cierre para separarlas,
+
+1479
+01:01:47,000 --> 01:01:49,000
+y las parentes y los corchetes
+
+1480
+01:01:49,000 --> 01:01:51,000
+las llaves se transforman en símbolo así.
+
+1481
+01:01:51,000 --> 01:01:53,000
+Esto es por un tema de facilitar el parcinama.
+
+1482
+01:01:54,000 --> 01:01:55,000
+Es un estándar.
+
+1483
+01:01:55,000 --> 01:01:57,000
+Lo que tiene de bueno es que es un estándar,
+
+1484
+01:01:57,000 --> 01:01:59,000
+que si yo aplico el pen triban, se lo que me da.
+
+1485
+01:02:00,000 --> 01:02:02,000
+Me voy a andar inventando yo,
+
+1486
+01:02:02,000 --> 01:02:05,000
+mi propio algoritmo de toquenización.
+
+1487
+01:02:08,000 --> 01:02:10,000
+Pero bueno, después yo puedo querer
+
+1488
+01:02:10,000 --> 01:02:12,000
+post-processar, digamos, ¿no?
+
+1489
+01:02:12,000 --> 01:02:13,000
+Porque me parece en cierta realidad,
+
+1490
+01:02:13,000 --> 01:02:15,000
+por ejemplo, si quiero identificar nombre o cosas así.
+
+1491
+01:02:15,000 --> 01:02:19,000
+Bueno, el chino de japonés tienen algún problema
+
+1492
+01:02:19,000 --> 01:02:22,000
+y es que no marcan los límites de las palabras,
+
+1493
+01:02:23,000 --> 01:02:29,000
+sino que cada simbolito Jansi del chino representa morfema
+
+1494
+01:02:29,000 --> 01:02:31,000
+o sílabas.
+
+1495
+01:02:33,000 --> 01:02:38,000
+Entonces, toquenizar acá es un poco más difícil.
+
+1496
+01:02:46,000 --> 01:02:47,000
+¿Cómo probo?
+
+1497
+01:02:50,000 --> 01:02:52,000
+No son normales para eso, son normales.
+
+1498
+01:02:53,000 --> 01:02:55,000
+Ah, Roman, normal.
+
+1499
+01:02:55,000 --> 01:02:57,000
+No, no, no, no, no.
+
+1500
+01:02:57,000 --> 01:02:59,000
+Acá hay una palabra de hecho.
+
+1501
+01:02:59,000 --> 01:03:00,000
+¿De hecho hay palabras?
+
+1502
+01:03:03,000 --> 01:03:05,000
+¿Tenés una analizadora que va sobre el chino?
+
+1503
+01:03:10,000 --> 01:03:12,000
+No, analizan derecho.
+
+1504
+01:03:13,000 --> 01:03:16,000
+Sí, analizan, analizan derecho sobre los caracteres Jansi.
+
+1505
+01:03:19,000 --> 01:03:21,000
+Y ahora vamos a ver cómo.
+
+1506
+01:03:21,000 --> 01:03:23,000
+El problema que no tenemos espacio para separar,
+
+1507
+01:03:23,000 --> 01:03:26,000
+pero de hecho las palabras existen en tanto unidades con significado.
+
+1508
+01:03:26,000 --> 01:03:28,000
+Pero no la ve en el texto.
+
+1509
+01:03:28,000 --> 01:03:30,000
+Es lo mismo que nos pasa cuando hablamos.
+
+1510
+01:03:30,000 --> 01:03:33,000
+Si vos crees toquenizar el texto hablado,
+
+1511
+01:03:33,000 --> 01:03:35,000
+vas a tener un problema.
+
+1512
+01:03:38,000 --> 01:03:40,000
+Hay un algoritmo muy popular,
+
+1513
+01:03:41,000 --> 01:03:45,000
+que tiene una lista de palabras, de palabras.
+
+1514
+01:03:45,000 --> 01:03:47,000
+Digamos, ¿no?
+
+1515
+01:03:47,000 --> 01:03:49,000
+No hay morfema como de nada.
+
+1516
+01:03:49,000 --> 01:03:52,000
+Y es muy sencillo, comienza al principio de la entrada.
+
+1517
+01:03:52,000 --> 01:03:54,000
+De la entrada que tiene el texto,
+
+1518
+01:03:54,000 --> 01:03:58,000
+elige siempre la palabra más larga en la posición actual de la entrada.
+
+1519
+01:04:00,000 --> 01:04:03,000
+Y si no encuentran ninguna, se queda con una letra suave.
+
+1520
+01:04:04,000 --> 01:04:06,000
+Y avanza.
+
+1521
+01:04:07,000 --> 01:04:08,000
+Bra.
+
+1522
+01:04:09,000 --> 01:04:10,000
+Por ejemplo,
+
+1523
+01:04:12,000 --> 01:04:15,000
+si yo tengo la entrada, me saca de la cancha, sin motivo.
+
+1524
+01:04:17,000 --> 01:04:18,000
+Acá ubica en mesa.
+
+1525
+01:04:24,000 --> 01:04:27,000
+C, el símbolo del calcio,
+
+1526
+01:04:28,000 --> 01:04:29,000
+D,
+
+1527
+01:04:32,000 --> 01:04:34,000
+y la cancha de la letra.
+
+1528
+01:04:34,000 --> 01:04:36,000
+Y a cada vez a mesa,
+
+1529
+01:04:37,000 --> 01:04:39,000
+no anda muy bien.
+
+1530
+01:04:39,000 --> 01:04:41,000
+En español en inglés no funciona más mal,
+
+1531
+01:04:41,000 --> 01:04:43,000
+pues la palabra es más larga,
+
+1532
+01:04:43,000 --> 01:04:45,000
+pero en el chino funciona bastante bien.
+
+1533
+01:04:46,000 --> 01:04:48,000
+Nadie usa esto en un español.
+
+1534
+01:04:49,000 --> 01:04:52,000
+Y si el método más básico de cosas,
+
+1535
+01:04:52,000 --> 01:04:54,000
+y hay mejoras sobre esto,
+
+1536
+01:04:54,000 --> 01:04:56,000
+empezando a la vez de izquierda de derecha,
+
+1537
+01:04:56,000 --> 01:04:58,000
+por ejemplo, de izquierda de la derecha
+
+1538
+01:04:58,000 --> 01:05:00,000
+o de derecha de izquierda,
+
+1539
+01:05:00,000 --> 01:05:02,000
+al mismo tiempo de lado,
+
+1540
+01:05:02,000 --> 01:05:03,000
+como yo le decía, hay variantes.
+
+1541
+01:05:04,000 --> 01:05:06,000
+Y esto no lleva una cosa bastante interesante que es.
+
+1542
+01:05:09,000 --> 01:05:11,000
+Si yo tengo, ¿qué tan bueno?
+
+1543
+01:05:11,000 --> 01:05:14,000
+Ah, hay todo un tema en el posimiento de la hoja natural.
+
+1544
+01:05:14,000 --> 01:05:15,000
+¿Qué es la evaluación?
+
+1545
+01:05:15,000 --> 01:05:17,000
+Yo cuando ejecuto una tarea,
+
+1546
+01:05:18,000 --> 01:05:20,000
+tengo que evaluar mi resultado.
+
+1547
+01:05:24,000 --> 01:05:25,000
+¿Sí?
+
+1548
+01:05:27,000 --> 01:05:29,000
+Sobre qué la tengo de evaluar y esto vale siempre,
+
+1549
+01:05:29,000 --> 01:05:31,000
+sobre un cuerpo que no sé para aprender.
+
+1550
+01:05:34,000 --> 01:05:36,000
+Si de alguna forma yo aprendo a toquenizar,
+
+1551
+01:05:36,000 --> 01:05:38,000
+viendo cómo se sepan a las palabras con los textos de esto
+
+1552
+01:05:38,000 --> 01:05:39,000
+que tuve mirando,
+
+1553
+01:05:39,000 --> 01:05:40,000
+y no sé qué,
+
+1554
+01:05:40,000 --> 01:05:42,000
+no puede utilizar esto vale,
+
+1555
+01:05:42,000 --> 01:05:43,000
+como regla general,
+
+1556
+01:05:43,000 --> 01:05:44,000
+después lo mover más,
+
+1557
+01:05:44,000 --> 01:05:46,000
+en detalle con los métodos de la presa automático,
+
+1558
+01:05:46,000 --> 01:05:49,000
+pero yo no puedo utilizar el mismo texto del que aprendí
+
+1559
+01:05:49,000 --> 01:05:51,000
+para evaluar mi resultado.
+
+1560
+01:05:51,000 --> 01:05:52,000
+¿Por qué?
+
+1561
+01:05:55,000 --> 01:05:56,000
+Me va a dar todo bien,
+
+1562
+01:05:56,000 --> 01:05:57,000
+o por lo menos,
+
+1563
+01:05:57,000 --> 01:05:59,000
+me va a dar mejor,
+
+1564
+01:05:59,000 --> 01:06:02,000
+que siempre tengo que evaluar sobre texto no visto.
+
+1565
+01:06:03,000 --> 01:06:06,000
+O sea, yo siempre que tengo un cuerpo sobre el cual trabajar
+
+1566
+01:06:06,000 --> 01:06:09,000
+tengo que agarrar una porción del texto típicamente aquí
+
+1567
+01:06:09,000 --> 01:06:10,000
+y 70 por ciento.
+
+1568
+01:06:10,000 --> 01:06:11,000
+Vamos a ver más de detalle.
+
+1569
+01:06:11,000 --> 01:06:16,000
+Y lo guardo a un costado hasta que llegue el momento de evaluar.
+
+1570
+01:06:17,000 --> 01:06:19,000
+¿Y cómo evaluó la toquenización?
+
+1571
+01:06:19,000 --> 01:06:22,000
+Y bueno, si yo tengo el nuestra entrada
+
+1572
+01:06:24,000 --> 01:06:27,000
+y tengo lo que se llama un gol standard,
+
+1573
+01:06:28,000 --> 01:06:32,000
+un texto correctamente segmentado.
+
+1574
+01:06:32,000 --> 01:06:34,000
+A alguien, un ser humano,
+
+1575
+01:06:34,000 --> 01:06:35,000
+me dijo bueno,
+
+1576
+01:06:35,000 --> 01:06:37,000
+la toquenización correcta es
+
+1577
+01:06:37,000 --> 01:06:39,000
+me saca de la cancha sin motivo.
+
+1578
+01:06:43,000 --> 01:06:48,000
+Y cómo se calcula la performance de un toquenizador
+
+1579
+01:06:48,000 --> 01:06:50,000
+y bueno, con la word error rate,
+
+1580
+01:06:50,000 --> 01:06:54,000
+o sea, el ratio de error de las palabras,
+
+1581
+01:06:54,000 --> 01:06:57,000
+que es entre estos dos,
+
+1582
+01:06:58,000 --> 01:07:01,000
+entre estos dos,
+
+1583
+01:07:03,000 --> 01:07:05,000
+lista de palabras.
+
+1584
+01:07:06,000 --> 01:07:09,000
+¿Qué tengo que cambiar para llegar de esta ésta?
+
+1585
+01:07:10,000 --> 01:07:11,000
+¿Sí?
+
+1586
+01:07:12,000 --> 01:07:16,000
+¿Cómo sería? ¿Qué sería lo que tendría que hacer yo?
+
+1587
+01:07:17,000 --> 01:07:21,000
+¿Y dónde cambiar quiere sin insertar borrar o sustituir?
+
+1588
+01:07:23,000 --> 01:07:24,000
+¿Qué tengo que hacer?
+
+1589
+01:07:27,000 --> 01:07:29,000
+Mesa por M
+
+1590
+01:07:30,000 --> 01:07:31,000
+y qué más.
+
+1591
+01:07:32,000 --> 01:07:34,000
+Y K por saca, ¿no?
+
+1592
+01:07:37,000 --> 01:07:39,000
+Ah, por que me gobe, y eso es por que me gobe.
+
+1593
+01:07:41,000 --> 01:07:42,000
+¿De acuerdo?
+
+1594
+01:07:43,000 --> 01:07:45,000
+Entonces, eso es la tasa de error.
+
+1595
+01:07:45,000 --> 01:07:47,000
+Acá tengo un error de 2.
+
+1596
+01:07:47,000 --> 01:07:48,000
+Cuando toma baja mejor, ¿no?
+
+1597
+01:07:48,000 --> 01:07:50,000
+Y tengo 0 porque es 1 igual.
+
+1598
+01:07:51,000 --> 01:07:53,000
+Luego, eso se llama distancia mínima de edición
+
+1599
+01:07:54,000 --> 01:07:55,000
+y luego vamos a agarrar luego.
+
+1600
+01:07:56,000 --> 01:07:58,000
+Distancia mínima de edición, pero en palabras.
+
+1601
+01:08:00,000 --> 01:08:01,000
+¿De acuerdo?
+
+1602
+01:08:01,000 --> 01:08:02,000
+Que sorvido.
+
+1603
+01:08:06,000 --> 01:08:08,000
+Bueno, además de tokenizar.
+
+1604
+01:08:08,000 --> 01:08:09,000
+No tengo nada.
+
+1605
+01:08:11,000 --> 01:08:12,000
+Además de tokenizar.
+
+1606
+01:08:17,000 --> 01:08:18,000
+Bueno, ya lo he movilado,
+
+1607
+01:08:18,000 --> 01:08:19,000
+prácticamente todo.
+
+1608
+01:08:21,000 --> 01:08:23,000
+La normalización implica llevar la palabra
+
+1609
+01:08:23,000 --> 01:08:25,000
+a un formato estándar para procesarlas.
+
+1610
+01:08:26,000 --> 01:08:28,000
+Llevar los números a un formato único
+
+1611
+01:08:28,000 --> 01:08:31,000
+porque así no metemos ruido para nuestro análisis posterior.
+
+1612
+01:08:33,000 --> 01:08:35,000
+Por decir que esto es la base de una cascada de tarea,
+
+1613
+01:08:35,000 --> 01:08:37,000
+el principio de una cascada de tarea.
+
+1614
+01:08:38,000 --> 01:08:40,000
+La URL y otra forma con estructura,
+
+1615
+01:08:40,000 --> 01:08:44,000
+identificarlas y marcarlas, detectar entidades con nombre
+
+1616
+01:08:45,000 --> 01:08:46,000
+y este cash folding,
+
+1617
+01:08:46,000 --> 01:08:48,000
+llevar toda mi núscula a mayúscula
+
+1618
+01:08:48,000 --> 01:08:49,000
+que a veces lo hacemos a veces no.
+
+1619
+01:08:51,000 --> 01:08:52,000
+Según nuestra tarea.
+
+1620
+01:08:53,000 --> 01:08:55,000
+Bueno, tradicionalmente la tokenización
+
+1621
+01:08:57,000 --> 01:08:59,000
+y la normalización se ha realizado
+
+1622
+01:08:59,000 --> 01:09:00,000
+utilizando automata finito.
+
+1623
+01:09:01,000 --> 01:09:03,000
+Porque son problemas bastante sencillos
+
+1624
+01:09:04,000 --> 01:09:08,000
+y porque además son como son el comienzo de la cascada,
+
+1625
+01:09:08,000 --> 01:09:09,000
+necesitamos que sean rápido.
+
+1626
+01:09:11,000 --> 01:09:14,000
+Yo necesito tokenizar rápidamente para poder después empezar
+
+1627
+01:09:14,000 --> 01:09:15,000
+el análisis.
+
+1628
+01:09:16,000 --> 01:09:18,000
+Y porque además la automata desde hecho funciona.
+
+1629
+01:09:18,000 --> 01:09:22,000
+Esa especificación
+
+1630
+01:09:22,000 --> 01:09:26,000
+del algoritmo del pen-tribank.
+
+1631
+01:09:27,000 --> 01:09:30,000
+Tiene su equivalente en un pequeño programista en sed,
+
+1632
+01:09:30,000 --> 01:09:32,000
+es la herramienta UNICE para tokenizar con eso.
+
+1633
+01:09:34,000 --> 01:09:36,000
+Y cualquier biblioteca,
+
+1634
+01:09:36,000 --> 01:09:38,000
+procedimiento de lenguaje natural de sente,
+
+1635
+01:09:38,000 --> 01:09:39,000
+por ejemplo en LTC,
+
+1636
+01:09:40,000 --> 01:09:43,000
+te permite especificar un tokenizador en base de una expresión regular.
+
+1637
+01:09:43,000 --> 01:09:45,000
+Por decir cómo crece para las palabras
+
+1638
+01:09:49,000 --> 01:09:50,000
+y lo hace.
+
+1639
+01:09:53,000 --> 01:09:57,000
+Bueno, también le matizar,
+
+1640
+01:09:58,000 --> 01:10:01,000
+es decir a veces nos puede interesarte en el solo el lema.
+
+1641
+01:10:01,000 --> 01:10:03,000
+Por ejemplo, si mis documentos le voy a usar
+
+1642
+01:10:03,000 --> 01:10:04,000
+para recuperar información,
+
+1643
+01:10:05,000 --> 01:10:06,000
+contener lo el mismo alcanza.
+
+1644
+01:10:08,000 --> 01:10:09,000
+Hay una forma mucho más sencilla
+
+1645
+01:10:09,000 --> 01:10:12,000
+porque le matizar implica hacer un análisis morfológico
+
+1646
+01:10:12,000 --> 01:10:13,000
+de la palabra,
+
+1647
+01:10:13,000 --> 01:10:16,000
+es decir, sacar lo como la clase que viene al otro,
+
+1648
+01:10:16,000 --> 01:10:19,000
+es la Carla Reis y las derivaciones.
+
+1649
+01:10:20,000 --> 01:10:21,000
+Hola, a los afijos.
+
+1650
+01:10:22,000 --> 01:10:23,000
+O sea, la p...
+
+1651
+01:10:23,000 --> 01:10:24,000
+Puedes ver esto de cosas bien,
+
+1652
+01:10:24,000 --> 01:10:25,000
+después vamos a lo ver.
+
+1653
+01:10:26,000 --> 01:10:27,000
+Es un poco más costoso.
+
+1654
+01:10:28,000 --> 01:10:29,000
+Hay un método muy viejo,
+
+1655
+01:10:30,000 --> 01:10:31,000
+menos de 180 que se llama Steming,
+
+1656
+01:10:31,000 --> 01:10:32,000
+que es mucho más simple,
+
+1657
+01:10:32,000 --> 01:10:34,000
+que simplemente corta las palabras.
+
+1658
+01:10:35,000 --> 01:10:37,000
+Si yo sé que perros,
+
+1659
+01:10:38,000 --> 01:10:40,000
+perritos, perra, no sé qué.
+
+1660
+01:10:40,000 --> 01:10:42,000
+Yo sé que per es el Stem
+
+1661
+01:10:43,000 --> 01:10:45,000
+y yo lo puedo utilizar como una aproximación al lema.
+
+1662
+01:10:46,000 --> 01:10:48,000
+Va a cometer errores, claro.
+
+1663
+01:10:48,000 --> 01:10:49,000
+Pero...
+
+1664
+01:10:50,000 --> 01:10:52,000
+es muchísimo más rápido.
+
+1665
+01:10:53,000 --> 01:10:55,000
+Y no necesito ningún tipo de análisis morfológico pasar.
+
+1666
+01:10:57,000 --> 01:11:00,000
+Eso es el famoso Porter Stemer
+
+1667
+01:11:00,000 --> 01:11:02,000
+que mal que bien se sigues usando
+
+1668
+01:11:02,000 --> 01:11:05,000
+y ya pasaron como 30 y pico de año.
+
+1669
+01:11:05,000 --> 01:11:06,000
+¿De qué se le hizo?
+
+1670
+01:11:07,000 --> 01:11:08,000
+Ahora, una pregunta.
+
+1671
+01:11:08,000 --> 01:11:09,000
+Sí.
+
+1672
+01:11:09,000 --> 01:11:12,000
+Hay que necesitar por lo que contiene mucho con que se le di una
+
+1673
+01:11:12,000 --> 01:11:13,000
+de las seguridades.
+
+1674
+01:11:13,000 --> 01:11:15,000
+Sí, de eso vamos a hablar en la clase que viene
+
+1675
+01:11:15,000 --> 01:11:16,000
+que es morfología.
+
+1676
+01:11:16,000 --> 01:11:17,000
+Sí, claro.
+
+1677
+01:11:17,000 --> 01:11:18,000
+Y la...
+
+1678
+01:11:18,000 --> 01:11:20,000
+No solo la irregularidad de lo bueno,
+
+1679
+01:11:20,000 --> 01:11:21,000
+sino la ortográfica también.
+
+1680
+01:11:22,000 --> 01:11:23,000
+Lo imposible y eso.
+
+1681
+01:11:23,000 --> 01:11:24,000
+Morir y muerto.
+
+1682
+01:11:24,000 --> 01:11:25,000
+Sí, claro.
+
+1683
+01:11:25,000 --> 01:11:26,000
+Claro.
+
+1684
+01:11:26,000 --> 01:11:27,000
+Sí.
+
+1685
+01:11:27,000 --> 01:11:28,000
+Sí.
+
+1686
+01:11:28,000 --> 01:11:29,000
+Lo vamos a hablar la clase que viene.
+
+1687
+01:11:30,000 --> 01:11:32,000
+Igual se resuelve con...
+
+1688
+01:11:32,000 --> 01:11:33,000
+también es...
+
+1689
+01:11:34,000 --> 01:11:36,000
+se puede resolver con el agonismo de esta ufinita.
+
+1690
+01:11:38,000 --> 01:11:40,000
+Bueno, también hay otro tema
+
+1691
+01:11:40,000 --> 01:11:42,000
+y con esto vamos a irse como también...
+
+1692
+01:11:42,000 --> 01:11:44,000
+No, no vamos a terminar y voy a hacer trabajar hoy.
+
+1693
+01:11:45,000 --> 01:11:49,000
+Y con esto vamos al último tema de esto de la cosa que además no interesa
+
+1694
+01:11:49,000 --> 01:11:51,000
+se inventar en oraciones.
+
+1695
+01:11:52,000 --> 01:11:54,000
+Y ustedes, a mí, ¿cómo separamos en oraciones?
+
+1696
+01:11:59,000 --> 01:12:00,000
+¿Cómo separamos?
+
+1697
+01:12:00,000 --> 01:12:01,000
+¿Dónde están las oraciones ahí?
+
+1698
+01:12:02,000 --> 01:12:04,000
+Su mamá porque lo punticoma en los honoraciones.
+
+1699
+01:12:04,000 --> 01:12:05,000
+¿Más fácil de la humía?
+
+1700
+01:12:05,000 --> 01:12:07,000
+¿Eh?
+
+1701
+01:12:08,000 --> 01:12:09,000
+¿Esten comas siempre?
+
+1702
+01:12:11,000 --> 01:12:13,000
+Empiezan con masúscula y terminan?
+
+1703
+01:12:13,000 --> 01:12:14,000
+¿Y terminan?
+
+1704
+01:12:15,000 --> 01:12:16,000
+Con un punto.
+
+1705
+01:12:17,000 --> 01:12:18,000
+Problemas.
+
+1706
+01:12:19,000 --> 01:12:22,000
+Ahí se llamamos un 90 y pico de precisión.
+
+1707
+01:12:23,000 --> 01:12:25,000
+Pero algún problema tiene. ¿Cuál?
+
+1708
+01:12:27,000 --> 01:12:28,000
+Las abreviaturas?
+
+1709
+01:12:29,000 --> 01:12:31,000
+¿Qué pasa con la abreviatura?
+
+1710
+01:12:33,000 --> 01:12:34,000
+¿Tienes punto?
+
+1711
+01:12:34,000 --> 01:12:36,000
+Hay punto que son internos en la oración.
+
+1712
+01:12:37,000 --> 01:12:39,000
+¿Qué pasa con un número?
+
+1713
+01:12:40,000 --> 01:12:43,000
+Nombres propios, se pueden mariar con el tema de las masúsculas, claro.
+
+1714
+01:12:46,000 --> 01:12:50,000
+¿Esten, si todo el mundo es más bueno encontrar problemas de bucado de sución?
+
+1715
+01:12:51,000 --> 01:12:52,000
+¿Qué hay otro problema más?
+
+1716
+01:12:54,000 --> 01:12:56,000
+Si empieza con un número, por ejemplo...
+
+1717
+01:12:58,000 --> 01:12:59,000
+¿No?
+
+1718
+01:12:59,000 --> 01:13:00,000
+¿Qué empieza con minúsculas más difícil?
+
+1719
+01:13:00,000 --> 01:13:01,000
+¿No se me ocurre?
+
+1720
+01:13:01,000 --> 01:13:02,000
+Pero puede haber.
+
+1721
+01:13:02,000 --> 01:13:04,000
+Si buscan los cuerpos de 6.000 millones de palabras,
+
+1722
+01:13:04,000 --> 01:13:06,000
+de euros de vuelta a todos los casos.
+
+1723
+01:13:09,000 --> 01:13:11,000
+Y es eso, efectivamente es eso.
+
+1724
+01:13:11,000 --> 01:13:13,000
+Reconocer a oraciones.
+
+1725
+01:13:14,000 --> 01:13:16,000
+Se puede hacer con expresión regular, como dice él,
+
+1726
+01:13:17,000 --> 01:13:22,000
+tratando de buscar algunos casos especiales.
+
+1727
+01:13:24,000 --> 01:13:26,000
+Pero esta gente...
+
+1728
+01:13:28,000 --> 01:13:29,000
+Los métodos más...
+
+1729
+01:13:29,000 --> 01:13:32,000
+Lo he estado del arte en separación de oraciones.
+
+1730
+01:13:33,000 --> 01:13:34,000
+Es...
+
+1731
+01:13:35,000 --> 01:13:36,000
+Utiliza...
+
+1732
+01:13:38,000 --> 01:13:39,000
+Una especie de...
+
+1733
+01:13:39,000 --> 01:13:40,000
+Una especie de análisis.
+
+1734
+01:13:40,000 --> 01:13:43,000
+Lo que sea análisis no es supervisado o clasificación no es supervisado.
+
+1735
+01:13:44,000 --> 01:13:47,000
+Cuando yo digo análisis, no es supervisado.
+
+1736
+01:13:48,000 --> 01:13:53,000
+Luego el curso movió mucho esto, pero no es supervisado, quiere decir que yo no tengo ningún texto anotado.
+
+1737
+01:13:53,000 --> 01:13:55,000
+Nadie me dijo cómo eran las palabras.
+
+1738
+01:13:55,000 --> 01:13:59,000
+Yo simplemente miró en el texto en crudo y yo hice mi análisis dentro de ese texto.
+
+1739
+01:14:00,000 --> 01:14:03,000
+Cuando yo hablo de la clasificación supervisada, alguien me dijo,
+
+1740
+01:14:04,000 --> 01:14:06,000
+acá empieza la oración y acá termina.
+
+1741
+01:14:06,000 --> 01:14:07,000
+¿De acuerdo?
+
+1742
+01:14:07,000 --> 01:14:09,000
+Hay una notadora humana.
+
+1743
+01:14:09,000 --> 01:14:12,000
+Como cuando comparamos hoy con el tokenizador,
+
+1744
+01:14:12,000 --> 01:14:14,000
+tengo un gol de estándar, acá no.
+
+1745
+01:14:17,000 --> 01:14:22,000
+Estas gente, lo que hizo fue crear un tokenizador entrenado a dar un gran conjunto de testos
+
+1746
+01:14:23,000 --> 01:14:26,000
+y tomo ciertas hipótesis y dijo bueno.
+
+1747
+01:14:29,000 --> 01:14:32,000
+Identifica candidatos a abbreviaturas.
+
+1748
+01:14:33,000 --> 01:14:36,000
+Y dice bueno, en general,
+
+1749
+01:14:37,000 --> 01:14:42,000
+las palabras que terminan en punto son abbreviaturas.
+
+1750
+01:14:45,000 --> 01:14:47,000
+En general, las abbreviaturas son cortas,
+
+1751
+01:14:47,000 --> 01:14:52,000
+o sea que si una palabra es corta es más probable que sea abbreviatura que no, o que otra vez se.
+
+1752
+01:14:53,000 --> 01:14:56,000
+Y en general tienen puntos internos.
+
+1753
+01:14:57,000 --> 01:14:59,000
+¿La guardó?
+
+1754
+01:15:00,000 --> 01:15:03,000
+Y con eso
+
+1755
+01:15:04,000 --> 01:15:08,000
+trataron de ver contar en un texto de las frecuencias.
+
+1756
+01:15:08,000 --> 01:15:11,000
+Ahí está el link al ver.
+
+1757
+01:15:11,000 --> 01:15:17,000
+Contar en un texto de la cantidad de veces que esa palabra, la misma palabra aparecía con y sin punto.
+
+1758
+01:15:18,000 --> 01:15:20,000
+Si yo, por ejemplo,
+
+1759
+01:15:21,000 --> 01:15:26,000
+la palabra etcétera casi todas las veces aparecen con punto.
+
+1760
+01:15:26,000 --> 01:15:29,000
+O de hecho todas las veces aparecen con punto.
+
+1761
+01:15:29,000 --> 01:15:34,000
+En el corpus. O sea que fuertemente candidata a hacer una abbreviatura.
+
+1762
+01:15:35,000 --> 01:15:39,000
+Pero si yo parece guillermo con un punto al final,
+
+1763
+01:15:41,000 --> 01:15:46,000
+seguramente no sea una abbreviatura sino que sea el final de noración.
+
+1764
+01:15:47,000 --> 01:15:49,000
+¿La guardó?
+
+1765
+01:15:49,000 --> 01:15:52,000
+Entonces lo que hacían en ese tipo de conteos en el texto,
+
+1766
+01:15:52,000 --> 01:15:59,000
+para ver cuáles giran más candidatas, digamos, a priori hacer abbreviaturas.
+
+1767
+01:15:59,000 --> 01:16:02,000
+Porque ¿qué se trataba esto de desambiguar el punto?
+
+1768
+01:16:02,000 --> 01:16:05,000
+Que es nuestro problema que mencionamos hoy, ¿no?
+
+1769
+01:16:05,000 --> 01:16:08,000
+Desambiguar el punto y la masúscula.
+
+1770
+01:16:10,000 --> 01:16:13,000
+Lo mismo hacía cuando era palabras cortas, palabras largas.
+
+1771
+01:16:17,000 --> 01:16:21,000
+Con esa lista de candidato después se veían en qué contexto aparecían.
+
+1772
+01:16:21,000 --> 01:16:24,000
+Me dijeron una segunda fase y dice bueno, si si perdiste guillermo punto
+
+1773
+01:16:24,000 --> 01:16:27,000
+y la palabra que la siguen, empiezan minúsculas,
+
+1774
+01:16:27,000 --> 01:16:30,000
+entonces capaz que sí era una abbreviatura.
+
+1775
+01:16:31,000 --> 01:16:34,000
+No se me ocurre, porque guillermo punto es una abbreviatura,
+
+1776
+01:16:34,000 --> 01:16:36,000
+pero está, es que si yo hacía una abbreviatura.
+
+1777
+01:16:36,000 --> 01:16:37,000
+¿De acuerdo?
+
+1778
+01:16:39,000 --> 01:16:41,000
+O colocaciones.
+
+1779
+01:16:41,000 --> 01:16:43,000
+Por ejemplo, cuando yo digo,
+
+1780
+01:16:43,000 --> 01:16:46,000
+en lo que son las colocaciones son palabras que aparecen juntas, usualmente.
+
+1781
+01:16:47,000 --> 01:16:49,000
+De nuevo, es una colocación.
+
+1782
+01:16:50,000 --> 01:16:53,000
+No sé si se dice colocación, pero en inglés se dice colocación.
+
+1783
+01:16:54,000 --> 01:16:56,000
+Una de ser colocación.
+
+1784
+01:16:56,000 --> 01:16:58,000
+Por ejemplo, si yo digo, y etcétera,
+
+1785
+01:17:01,000 --> 01:17:04,000
+y etcétera, no sé si es como, etcétera,
+
+1786
+01:17:05,000 --> 01:17:07,000
+y etcétera aparecen muchas veces juntas.
+
+1787
+01:17:08,000 --> 01:17:09,000
+Entonces,
+
+1788
+01:17:10,000 --> 01:17:13,000
+y entonces digamos,
+
+1789
+01:17:14,000 --> 01:17:17,000
+es muy raro que si aparece con un punto en el medio,
+
+1790
+01:17:18,000 --> 01:17:20,000
+ese punto sea de separación.
+
+1791
+01:17:21,000 --> 01:17:23,000
+El ejemplo que dijiste horrible el año que viene o que elegí uno bueno,
+
+1792
+01:17:24,000 --> 01:17:27,000
+pero ese punto es raro que sea de separación,
+
+1793
+01:17:28,000 --> 01:17:30,000
+porque siempre que aparecen juntas, digamos,
+
+1794
+01:17:31,000 --> 01:17:32,000
+yo digo,
+
+1795
+01:17:35,000 --> 01:17:36,000
+de nuevo,
+
+1796
+01:17:36,000 --> 01:17:39,000
+esto es horrible, pero no es tan malo como el anterior.
+
+1797
+01:17:39,000 --> 01:17:41,000
+De nuevo, siempre aparece así.
+
+1798
+01:17:42,000 --> 01:17:43,000
+¿De acuerdo?
+
+1799
+01:17:43,000 --> 01:17:45,000
+Si hay ningún momento aparece con un punto acá,
+
+1800
+01:17:45,000 --> 01:17:47,000
+probablemente esto hace un fin de ración.
+
+1801
+01:17:49,000 --> 01:17:50,000
+¿De acuerdo?
+
+1802
+01:17:51,000 --> 01:17:52,000
+Pésimo el ejemplo.
+
+1803
+01:17:53,000 --> 01:17:55,000
+Y luego las palabras iniciales frecuentes,
+
+1804
+01:17:56,000 --> 01:17:58,000
+es decir, cuando aparece una malleúscula,
+
+1805
+01:18:01,000 --> 01:18:03,000
+digamos, esa palabra que apareció,
+
+1806
+01:18:04,000 --> 01:18:07,000
+que tan candidata es hacer el comienzo de una oración,
+
+1807
+01:18:07,000 --> 01:18:09,000
+a hacer una malleúscula,
+
+1808
+01:18:09,000 --> 01:18:10,000
+en vez de ser un nombre,
+
+1809
+01:18:10,000 --> 01:18:11,000
+es ser un comienzo de oración.
+
+1810
+01:18:12,000 --> 01:18:14,000
+Y vemos que hay palabras que es mucho más frecuentemente aparecen
+
+1811
+01:18:14,000 --> 01:18:15,000
+al comienzo de oración.
+
+1812
+01:18:15,000 --> 01:18:17,000
+La con malleúscula,
+
+1813
+01:18:18,000 --> 01:18:22,000
+es una buena candidata a hacer comienzo de oración.
+
+1814
+01:18:23,000 --> 01:18:26,000
+Porque hay muchos lá al comienzo de las oraciones.
+
+1815
+01:18:27,000 --> 01:18:30,000
+Entonces, eso aumenta mi probabilidad de que sea entonces,
+
+1816
+01:18:30,000 --> 01:18:32,000
+en base un estudio de conteo y de frecuencias
+
+1817
+01:18:33,000 --> 01:18:35,000
+y de lo que se llama la Eclipse Jude,
+
+1818
+01:18:35,000 --> 01:18:36,000
+o verosimilitud,
+
+1819
+01:18:38,000 --> 01:18:39,000
+de San Vivo en el punto.
+
+1820
+01:18:39,000 --> 01:18:41,000
+Dice, bueno, esto es un punto de abreviatura
+
+1821
+01:18:41,000 --> 01:18:43,000
+o es un punto de oración.
+
+1822
+01:18:45,000 --> 01:18:48,000
+Y de esa forma, separan oraciones.
+
+1823
+01:18:52,000 --> 01:18:54,000
+Eso en el Entecac existe.
+
+1824
+01:18:54,000 --> 01:18:56,000
+Y yo le voy a mostrar un poco el corpus.
+
+1825
+01:19:02,000 --> 01:19:05,000
+No está, ¿y feisu no, ¿no lo吗o yo?
+
+1826
+01:19:32,000 --> 01:19:40,000
+Esto es la base de jurisprudencia del Poder Judicial del Uruguay.
+
+1827
+01:19:55,000 --> 01:19:56,000
+Esto está publicado.
+
+1828
+01:19:56,000 --> 01:19:57,000
+¿Dónde dice Paul?
+
+1829
+01:19:59,000 --> 01:20:00,000
+Ah, por favor.
+
+1830
+01:20:13,000 --> 01:20:14,000
+¿Qué dice?
+
+1831
+01:20:19,000 --> 01:20:21,000
+Esto es una sentencia del...
+
+1832
+01:20:27,000 --> 01:20:31,000
+La base de sentencias de ejemplo del Poder Judicial del Uruguay.
+
+1833
+01:20:32,000 --> 01:20:33,000
+¿Si se fijan?
+
+1834
+01:20:35,000 --> 01:20:36,000
+Este es el texto.
+
+1835
+01:20:39,000 --> 01:20:40,000
+No era interesante.
+
+1836
+01:20:41,000 --> 01:20:42,000
+No eran todas iguales.
+
+1837
+01:20:44,000 --> 01:20:47,000
+Fíjese que si yo quiero separar el texto acá...
+
+1838
+01:20:48,000 --> 01:20:50,000
+No tengo mucho problema, pero acá aparecen cosas raras.
+
+1839
+01:20:50,000 --> 01:20:53,000
+No como este es punto que me interesa.
+
+1840
+01:20:54,000 --> 01:20:55,000
+Fue de dentro de la relación.
+
+1841
+01:20:56,000 --> 01:21:01,000
+Pero me sorprendió un poco, acá hay un número que aparece con punto también.
+
+1842
+01:21:02,000 --> 01:21:07,000
+Pero además hay otras sentencias que terminan en punto y raya, ¿no?
+
+1843
+01:21:08,000 --> 01:21:09,000
+punto y guión.
+
+1844
+01:21:10,000 --> 01:21:13,000
+punto y guión, o sea que hay el separador totalmente raro.
+
+1845
+01:21:14,000 --> 01:21:17,000
+Para lo que se le está a andar y que uno tiene que ver cómo modificar la tokenización.
+
+1846
+01:21:18,000 --> 01:21:22,000
+Este corpus es el que van a usar usted para el laboratorio.
+
+1847
+01:21:23,000 --> 01:21:25,000
+Así que vayan a ser haciendo amigos de él.
+
+1848
+01:21:28,000 --> 01:21:30,000
+Mira referencias de tan por ahí.
+
+1849
+01:21:31,000 --> 01:21:32,000
+Los invito a leerlas.
+
+1850
+01:21:36,000 --> 01:21:37,000
+¿Alguna pregunta?
+
+1851
+01:21:40,000 --> 01:21:41,000
+Acá, que...
+
+1852
+01:21:48,000 --> 01:21:50,000
+Bueno, tal vez ya ha sido demasiado para ustedes.
+
+1853
+01:21:52,000 --> 01:21:54,000
+Si no hay dudas, dejamos por acá en la clase que viene.
+
+1854
+01:21:55,000 --> 01:21:59,000
+Vamos a hablar de distancia mínima edición para empezar.
+
+1855
+01:22:01,000 --> 01:22:05,000
+¿Qué es cómo ver cuál es la distancia entre dos palabras?
+
+1856
+01:22:06,000 --> 01:22:08,000
+Una noción de distancia entre dos palabras.
+
+1857
+01:22:09,000 --> 01:22:11,000
+Que esencialmente captura la idea de parecido.
+
+1858
+01:22:12,000 --> 01:22:14,000
+Es un punto de vista ortográfico.
+
+1859
+01:22:15,000 --> 01:22:19,000
+Y podemos seguir hablando de morfología.
+
+1860
+01:22:21,000 --> 01:22:22,000
+Gracias.
+
