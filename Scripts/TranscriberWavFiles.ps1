@@ -8,19 +8,25 @@ if (-Not (Test-Path $transcriptionOutputFolder)) {
 }
 
 # Define the model to use
-$model = "tiny"
+$model = "medium"
 
-# Loop through each .wav file in the folder
-Get-ChildItem -Path $audioFolderPath -Filter "*.wav" | ForEach-Object {
+$files = Get-ChildItem -Path $audioFolderPath -Filter "*.wav" | Sort-Object Name -Descending
+$files | ForEach-Object {
     $audioFile = $_.FullName
     $fileNameWithoutExtension = [System.IO.Path]::GetFileNameWithoutExtension($_.Name)
     $finalOutputPath = Join-Path $transcriptionOutputFolder "$fileNameWithoutExtension`_$model.txt"
+
+    # Check if the result file already exists
+    if (Test-Path $finalOutputPath) {
+        Write-Host "Transcription for $fileNameWithoutExtension using model $model already exists. Skipping..."
+        return
+    }
 
     # Start measuring time
     $startTime = Get-Date
 
     # Construct the whisper command to transcribe the audio
-    $whisperCommand = "whisper '$audioFile' --model $model --language es --output_dir '$transcriptionOutputFolder' --output_format txt"
+    $whisperCommand = "whisper '$audioFile' --model $model --language es --output_dir '$transcriptionOutputFolder' --verbose False --threads 4"
 
     # Run the whisper command
     Invoke-Expression $whisperCommand
@@ -34,6 +40,22 @@ Get-ChildItem -Path $audioFolderPath -Filter "*.wav" | ForEach-Object {
     if (Test-Path $generatedFilePath) {
         Rename-Item -Path $generatedFilePath -NewName "$fileNameWithoutExtension`_$model.txt"
     }
+    $generatedFilePath = Join-Path $transcriptionOutputFolder "$fileNameWithoutExtension.json"
+    if (Test-Path $generatedFilePath) {
+        Rename-Item -Path $generatedFilePath -NewName "$fileNameWithoutExtension`_$model.json"
+    }
+    $generatedFilePath = Join-Path $transcriptionOutputFolder "$fileNameWithoutExtension.tsv"
+    if (Test-Path $generatedFilePath) {
+        Rename-Item -Path $generatedFilePath -NewName "$fileNameWithoutExtension`_$model.tsv"
+    }
+    $generatedFilePath = Join-Path $transcriptionOutputFolder "$fileNameWithoutExtension.vtt"
+    if (Test-Path $generatedFilePath) {
+        Rename-Item -Path $generatedFilePath -NewName "$fileNameWithoutExtension`_$model.srt"
+    }
+    if (Test-Path $generatedFilePath) {
+        Rename-Item -Path $generatedFilePath -NewName "$fileNameWithoutExtension`_$model.srt"
+    }
+
 
     # Print the output path and time taken
     Write-Host "Transcription saved to: $finalOutputPath"

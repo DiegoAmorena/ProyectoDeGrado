@@ -1,0 +1,7792 @@
+1
+00:00:00,000 --> 00:00:21,640
+La clase de hoy y la clase que viene vamos a dar el tema de traducción automática.
+
+2
+00:00:21,640 --> 00:00:30,040
+Por esto que se conoce como la nota de Weaver, o el memorando de Weaver,
+
+3
+00:00:30,040 --> 00:00:36,600
+Warren Weaver era un matemático norteamericano de primera mitad de siglo XX, y el tipo
+
+4
+00:00:36,600 --> 00:00:41,000
+trabajó durante la guerra especialmente en cosas de criptografía, análisis estadístico,
+
+5
+00:00:41,000 --> 00:00:45,280
+de código etcétera, entonces en un momento dijo lo siguiente, dijo es muy tentador decir que
+
+6
+00:00:45,280 --> 00:00:49,880
+un libro escrito en China es simplemente un libro escrito en inglés que ha sido codificado
+
+7
+00:00:49,880 --> 00:00:53,960
+en el código China. Si tenemos métodos útiles para resolver casi cualquier problema
+
+8
+00:00:53,960 --> 00:00:57,680
+criptográfico, no será que con la interpretación apropiada ya tendríamos métodos útiles
+
+9
+00:00:57,680 --> 00:01:07,520
+para traducción. El opinaba digamos en este memorando que los códigos o los métodos que se
+
+10
+00:01:07,520 --> 00:01:11,680
+utilizan para romper código criptográfico, que son métodos estadísticos se podían aplicar
+
+11
+00:01:11,680 --> 00:01:16,640
+al problema de la traducción automática. Y bueno esto introduce alguna cidad clave como que
+
+12
+00:01:16,720 --> 00:01:22,400
+puede existir un mapeo automático entre un lenguaje y otro, y que codificarlo de codificar
+
+13
+00:01:22,400 --> 00:01:28,400
+en un lenguaje de sanálogo, codificado de codificar en un acorismo criptográfico.
+
+14
+00:01:28,400 --> 00:01:33,880
+Y bueno está, el tiro de esa idea de 1990, tomó como 50 años para que esa idea
+
+15
+00:01:33,880 --> 00:01:39,720
+madurara digamos y después de 50 años los métodos más utilizados, hoy en día son
+
+16
+00:01:39,720 --> 00:01:44,360
+métodos estadísticos que se basan un poco en estos principios, pero claro en esa
+
+17
+00:01:44,360 --> 00:01:50,080
+época era como muy difícil lugar que era lo que iba a ocurrir. Entonces bueno vamos a
+
+18
+00:01:50,080 --> 00:01:53,840
+ver un poco esta esta la agenda de lo que vamos a mirar, vamos a llegar a un menos hasta
+
+19
+00:01:53,840 --> 00:01:59,200
+la mitad hoy y después la clase siguiente y empecemos con un poco de historia de lo que
+
+20
+00:01:59,200 --> 00:02:03,920
+la traducción automática, esto empezó como muchas otras tecnologías como una tecnología militar
+
+21
+00:02:03,920 --> 00:02:08,600
+con fines militares, inicialmente era de una de la carrera fría, era resultado de interés
+
+22
+00:02:08,600 --> 00:02:14,040
+traducir rápidamente y abajo costa traducir entre el ruso del inglés, digamos la
+
+23
+00:02:14,040 --> 00:02:18,560
+laldo, norteamericanos, les convenía, puede traducir entre el inglés y el ruso y bueno en
+
+24
+00:02:18,560 --> 00:02:21,600
+aquella época se imaginan lo que era los inicios de la computación, las computadoras
+
+25
+00:02:21,600 --> 00:02:25,600
+serán caras en las lentes, no tenía mucho podero el computador, pero igual había como
+
+26
+00:02:25,600 --> 00:02:28,640
+mucho optimismo, de que en poco tiempo se iba a poder resolver los problemas y vamos a
+
+27
+00:02:28,640 --> 00:02:34,920
+tener sistemas que llevan a traducir barbaro, y bueno verá más o menos la época de desarrollo
+
+28
+00:02:34,920 --> 00:02:39,440
+de la lingüística comutacional, inspirado un poco en las teorías de Chonsky, estaba la idea
+
+29
+00:02:39,440 --> 00:02:43,320
+que se podía escribir reglas para todo y que se a partir de eso se podría llegar a hacer
+
+30
+00:02:43,320 --> 00:02:50,640
+cosas muy buenas, en particular para la traducción, hasta que en 1994 pareció el reporte
+
+31
+00:02:50,640 --> 00:02:55,320
+al pat, al pat que era un comité que estaba estudiando, golecía en los avances, en
+
+32
+00:02:55,320 --> 00:02:59,960
+inguística computacional, porque se estaba poniendo mucha plata en muchas esas cosas, y eso
+
+33
+00:02:59,960 --> 00:03:04,040
+se mostraba un esepdicos acerca de la traducción automática, acerca de los logros, se habían
+
+34
+00:03:04,040 --> 00:03:09,240
+logrado después de todos esos años de metar plata, y decía bueno, pero se puso mucho dinero,
+
+35
+00:03:09,240 --> 00:03:12,680
+pasó en el pasado muchos años, pero todavía los humanos lo hacen más barato, con
+
+36
+00:03:12,680 --> 00:03:17,600
+mayor precisión, más rápido, entonces, como que para que estamos gastando en esto, como
+
+37
+00:03:17,600 --> 00:03:21,440
+resultado de eso, hubo un recorte de fondos, especialmente en Estados Unidos, para todo lo
+
+38
+00:03:21,440 --> 00:03:25,120
+que es traducción automática, ahí esto fue parte de lo que se conoció como el invierno
+
+39
+00:03:25,120 --> 00:03:29,520
+de la inteligencia artificial, que un montón de proyecto de inteligencia artificial, también
+
+40
+00:03:29,520 --> 00:03:34,320
+no tenía buenos resultados, entonces he paro la financiación que había para todo eso durante
+
+41
+00:03:34,320 --> 00:03:38,180
+unos cuantos años, entonces se detuvo desarrollando unas cuantas cosas durante unos cuantos
+
+42
+00:03:38,180 --> 00:03:44,420
+años, y bueno, después empezaron a resurgir de apoco, pero después de esto, digamos, en
+
+43
+00:03:44,420 --> 00:03:49,860
+los 70 y hasta los 90 más o menos, eso logró que la investigación se frenaron, un poco
+
+44
+00:03:49,860 --> 00:03:52,900
+en Estados Unidos, pero empezaron a aparecer en otros lados del mundo, como por ejemplo,
+
+45
+00:03:52,900 --> 00:03:58,460
+neuropa o en Japón, y ahí empezó llano con files bélicos, sino más bien con fines comerciales,
+
+46
+00:03:58,460 --> 00:04:04,260
+entonces había necesidad de tener traducciones o por lo menos darso porte a los traducciones
+
+47
+00:04:04,260 --> 00:04:09,460
+humanos, con algunas traducciones, aunque no estuvieran del todo bien, pero bueno, dar a algunas traducciones
+
+48
+00:04:09,460 --> 00:04:12,980
+de inicio, para que los traducciones pudieran los traducciones humanos, pudieran continuar,
+
+49
+00:04:12,980 --> 00:04:16,140
+además, las computadoras empezaron a dejar de precio, a tener mayor poder de computo,
+
+50
+00:04:16,140 --> 00:04:22,300
+y esta fue como la era de héroe de los sistemas de traducción basados en reglas, digamos
+
+51
+00:04:22,300 --> 00:04:25,980
+acá en los ejemplos, sistemas distranques, todavía se desarrolla, aunque ya no está completamente
+
+52
+00:04:25,980 --> 00:04:33,340
+basados en reglas, y bueno, el sistema que se realizaron en Japón y en Europa, y bueno,
+
+53
+00:04:33,420 --> 00:04:39,500
+o sea, estos sistemas tenían fines comerciales y no tanto fines militares, pero bueno,
+
+54
+00:04:39,500 --> 00:04:44,740
+a fines de los 90, después del 2000, en adelante empezaron a dejarse de usar un poco los sistemas
+
+55
+00:04:44,740 --> 00:04:49,300
+basados en reglas porque empezó a haber mayor poder de computo y mayor cantidad de datos
+
+56
+00:04:49,300 --> 00:04:55,340
+disponibles, especialmente con la aparición de internet, empezaron a haber muchísimos datos de texto
+
+57
+00:04:55,340 --> 00:05:00,900
+disponibles, y eso permitía construir buenos modelos estadísticos que pudieran explotar las
+
+58
+00:05:00,900 --> 00:05:04,980
+regularidades de los idiomas, entonces aparecieron distintos tipos de modelos estadísticos,
+
+59
+00:05:04,980 --> 00:05:08,420
+los primeros, los que llamamos traducciones automáticas estadísticos, el otro traducción
+
+60
+00:05:08,420 --> 00:05:12,540
+basado en ejemplos, y apareció en las primeras aplicaciones comerciales que funcionaban bien
+
+61
+00:05:12,540 --> 00:05:17,260
+que utilizaban modelos estadísticos, la primera fue el engochujudor, y después los traductores
+
+62
+00:05:17,260 --> 00:05:21,700
+que más conocemos hoy en día, el Bing Translate de Microsoft, y bueno, el Google Translate,
+
+63
+00:05:21,700 --> 00:05:26,340
+que probablemente lo conozcan, lo ha se ha nosado en algún momento, y son traductores que
+
+64
+00:05:26,420 --> 00:05:31,740
+la verdad que hoy en día se puede decir que funcionan bastante bien, entonces bueno, los métodos
+
+65
+00:05:31,740 --> 00:05:36,300
+estadísticos empezaron su boom alrededor de la year 2000 y siguen siendo el estado del arte,
+
+66
+00:05:38,300 --> 00:05:42,180
+pero bueno, primero vamos a ver un poco de lo que son los sistemas basados en reglas que eran
+
+67
+00:05:42,180 --> 00:05:49,780
+estos primeros sistemas que mencionamos antes, en 1980, un investigador de traducción automática
+
+68
+00:05:49,860 --> 00:05:55,220
+se llamaba Bernardo Boquá, y son relegamiento de todos los sistemas que se habían construido,
+
+69
+00:05:55,220 --> 00:06:01,540
+mas o menos por la época, y los clasificotos dentro de este diagrama, el dibujo triángulo que
+
+70
+00:06:01,540 --> 00:06:06,100
+ahora se llama el triángulo de Boquá, y bueno, en este triángulo se ubican los distintos tipos
+
+71
+00:06:06,100 --> 00:06:10,940
+de sistemas de traducción basados en reglas, se pone como escalones dentro de este triángulo,
+
+72
+00:06:11,940 --> 00:06:16,260
+y los lados del triángulo tienen como desintente de apretación, el lado izquierdo, si yo voy
+
+73
+00:06:16,260 --> 00:06:21,300
+subiendo por este lado, en realidad lo que aumenta es la cantidad o el esfuerzo de análisis que
+
+74
+00:06:21,300 --> 00:06:25,140
+debe acargar del lenguaje origen, yo siempre quiero traducir el lenguaje origen o el lenguaje destino,
+
+75
+00:06:25,140 --> 00:06:29,700
+bueno, entonces de este lado aumenta el esfuerzo de traducción del lenguaje origen, y si voy bajando
+
+76
+00:06:29,700 --> 00:06:34,300
+del lado derecho aumenta, bueno, si voy subiendo el lado derecho, quiero decir, aumenta el esfuerzo
+
+77
+00:06:34,300 --> 00:06:42,700
+de generación en el lenguaje destino, entonces ¿qué quiere decir esto? yo ubico distintos sistemas de traducción,
+
+78
+00:06:43,380 --> 00:06:48,060
+la traducción directa es simplemente buscar el diccionario de las palabras, si traducir palabra palabra
+
+79
+00:06:48,060 --> 00:06:53,580
+con poca información más, entonces eso casi no necesita ningún tipo de análisis y casi no necesita
+
+80
+00:06:53,580 --> 00:06:59,220
+generación, pero para que son de bien, yo necesito ponerle muchas ganas a las reglas,
+
+81
+00:06:59,220 --> 00:07:02,940
+o sea, las reglas de traducción tienen que ser muy buenas y tienen que tomar en cuenta muchos casos
+
+82
+00:07:02,940 --> 00:07:07,780
+para que esa traducción llega a ser buena, entonces es como que la flecha de la transferencia,
+
+83
+00:07:07,780 --> 00:07:11,700
+la flecha de la traducción es mucho más larga, en cambio, si yo hago un poco de análisis,
+
+84
+00:07:11,700 --> 00:07:17,140
+por ejemplo, lleva hasta el nivel de análisis intactico, tengo un parcer, puedo escribir otro tipo de reglas
+
+85
+00:07:17,140 --> 00:07:21,340
+que pueden ser un poco más expresivo, me resulta un poco más fácil y después, si tengo un generador,
+
+86
+00:07:21,340 --> 00:07:27,700
+puedo llegar a traducir, entonces si sigo subiendo de vuelta voy a necesitar mayor esfuerzo de análisis de generación,
+
+87
+00:07:27,700 --> 00:07:32,820
+pero las reglas pueden ser más expresivas y más fácil de escribir y probablemente la traducción sea mejor,
+
+88
+00:07:33,500 --> 00:07:41,660
+hasta que si llegamos al lo artista del triángulo, llegamos al interlingo, que es una especie de noción en la cual no necesito ningún tipo de transferencia,
+
+89
+00:07:41,660 --> 00:07:49,700
+vamos a ver un poco dentro de un rato de que se trata eso, pero bueno, empecemos a ver los distintos niveles de este triángulo de focoa,
+
+90
+00:07:49,700 --> 00:07:57,140
+el de más abajo era la traducción directa, se le enfoque más simple, lo único que necesito para este enfoque es un diccionario bilingo,
+
+91
+00:07:57,140 --> 00:08:03,460
+yo quiero traducir entre los idiomas, si necesito un diccionario que tenga la correspondencia entre palabras de un idioma y palabras del otro,
+
+92
+00:08:03,460 --> 00:08:09,100
+y lo que voy a hacer es traducir palabra palabra palabra, o sea, puedo agregarle alguna cosa extra, como por ejemplo,
+
+93
+00:08:09,100 --> 00:08:17,540
+hay un reordenamiento local, yo que se en para traducir entre español inglés, yo diría que en español el nombre se sigue a la objetivo y en inglés en realidad los anarrés,
+
+94
+00:08:17,540 --> 00:08:22,700
+pone a la objetivo seguida en nombre, entonces si ese tipo de reglas simples se las puedo agregar el sistema,
+
+95
+00:08:23,020 --> 00:08:30,740
+y bueno, y el sistema funcionaría un poco así, yo tengo una oración de entrada en el idioma origen, Mary Eden Slap de Greenwich,
+
+96
+00:08:30,740 --> 00:08:40,100
+le paso en analizador morfológico, bastante de superficie, que no hace mucho, en realidad simplemente me dice que esto era el barbodú empazado y seguido por un not,
+
+97
+00:08:40,100 --> 00:08:47,740
+y bueno, el resto de los toques, sí, en igual, y acá viene la parte de diccionario, digamos, lo siguiente que tengo que hacer es buscar en diccionario,
+
+98
+00:08:47,740 --> 00:08:52,340
+que cada una de las palabras, y poner la palabra correspondiente y lo que lo hago, entonces Mary queda María,
+
+99
+00:08:52,340 --> 00:09:01,140
+duven pasado, como en español no se usa el du, usamos simplemente el marcador de pasado, no, es no, Slap es dar una ofetada de, es la green es verde,
+
+100
+00:09:01,140 --> 00:09:10,940
+witch es bruja, con el diccionario hoy, poniendo todas las traducciones, y después puedo usar mis reglas de reordenamiento local,
+
+101
+00:09:11,860 --> 00:09:18,340
+como por ejemplo, que el adjetivo se ha ido en nombre en inglés, en realidad en español se corresponde con nombre se ha ido adjetivo,
+
+102
+00:09:18,340 --> 00:09:25,340
+entonces es verdad de bruja, lo cambió por bruja verde, acá yo toro el ordenamiento, digamos, donde tengo una marca de pasado y se le paso para adelante a lo largo,
+
+103
+00:09:25,340 --> 00:09:34,540
+y finalmente lo que hago es una pequeña generación morfológica con estas marcas, y digo bueno, este dar en pasado se transforma en Dios,
+
+104
+00:09:34,540 --> 00:09:42,940
+entonces me queda María no dio una ofetada a la bruja verde, así que partí de el texto en el idioma origen Meritiden Slap de Greenwich,
+
+105
+00:09:42,940 --> 00:09:49,340
+y llegue a una oración en el idioma de estino, María no dio una ofetada a la bruja verde, ¿qué parece esta bastante bien?
+
+106
+00:09:49,340 --> 00:09:54,940
+digamos, bastante bien la traducción, entonces así como funcionaría un poco un sistema de traducción directa,
+
+107
+00:09:54,940 --> 00:10:01,340
+como les parece que funciona en estos sistemas en la práctica, digamos que también se comportan en la práctica este tipo de sistemas,
+
+108
+00:10:02,140 --> 00:10:05,740
+pues acá vimos un ejemplo que quedan bastante bien, digamos, pero no sé qué,
+
+109
+00:10:14,140 --> 00:10:17,740
+claro, y hay otro problema más, y es lo que,
+
+110
+00:10:18,940 --> 00:10:22,540
+que no tengas todas las palabras, pero además que palabras que se pueden traducir de más de una manera,
+
+111
+00:10:22,540 --> 00:10:27,540
+entonces necesitas saber qué palabras tenéis que usar, entonces bueno,
+
+112
+00:10:28,500 --> 00:10:33,940
+la hueva está llena de ejemplos de lo que puedes salir más y yo utilizo un sistema de traducción directa, como este,
+
+113
+00:10:34,340 --> 00:10:43,300
+entonces lo que estaba moviendo recién era el sistema de traducción directa, vamos a subir un poco en la complejidad de los sistemas y llegar a la transferencia
+
+114
+00:10:43,940 --> 00:10:50,060
+sintáctica, entonces para la transferencia sintáctica, yo lo que voy a necesitar primero estener un parcer
+
+115
+00:10:50,260 --> 00:10:56,460
+del lenguaje origen que me lleva a una análisis sintáctico, y además voy a necesitar un generador,
+
+116
+00:10:56,460 --> 00:11:00,660
+el lenguaje destino que agarra, un algo sintáctico del lenguaje destino de genera, una operación.
+
+117
+00:11:01,860 --> 00:11:08,660
+Entonces, yo lo que puedo hacer es escribir reglas que transformer un árbol en el otro y esas reglas son un poco más fáciles,
+
+118
+00:11:08,660 --> 00:11:11,260
+digamos que lo que necesitaría para un sistema de traducción directa,
+
+119
+00:11:12,260 --> 00:11:17,460
+para el inglés, por ejemplo, para todo el siente del inglés, el español, yo diría que si tengo un nominal que es un adjetivo nombre,
+
+120
+00:11:17,460 --> 00:11:22,260
+un adjetivo de un nombre en inglés y lo transformaría en un nombre seguido en el objetivo, en español.
+
+121
+00:11:23,660 --> 00:11:29,460
+Y la reglas escribiría algo así, diría, tengo un nominal, adjetivo en nombre, entonces lo cambio por un nominal nombre adjetivo.
+
+122
+00:11:32,060 --> 00:11:41,460
+Entonces, ahora que sabemos cómo funciona esto, tratemos de hacer el ejemplo en japonés, digamos, ¿cómo serían las reglas para transformar el árbol en inglés de ejiador,
+
+123
+00:11:41,460 --> 00:11:46,860
+se le hicieron en su música a japonés, carje a un gaku o kiku, no cada y su quidesu.
+
+124
+00:11:47,660 --> 00:11:50,660
+¿Dónde está? Tenemos la correspondencia de cada una de las palabras.
+
+125
+00:11:51,260 --> 00:12:00,460
+Pero, claro, los árboles son un poco distintos, el inglés y el español se caracterizan por ser la lenguaje de tipo, no sé si esto lo hemos visto,
+
+126
+00:12:00,460 --> 00:12:06,060
+ya en curso, pero son lenguaje de tipo SBO, que significa que habidamente yo sobrecribir un sujeto,
+
+127
+00:12:06,060 --> 00:12:10,460
+se vio un vero o seguido de un objeto. Escapones en cambio, es un lenguaje de tipo SBO,
+
+128
+00:12:10,460 --> 00:12:14,060
+porque, habitualmente, se escribió el sujeto, seguido del objeto, seguido del baro.
+
+129
+00:12:14,660 --> 00:12:17,060
+Hay muchos lenguajes que pertenecen a esta otra categoría.
+
+130
+00:12:18,460 --> 00:12:24,260
+Entonces, bueno, queremos escribir reglas de transferencia para transformar este árbol en aquel otro árbol,
+
+131
+00:12:24,260 --> 00:12:27,460
+como escribiríamos esas reglas, que les parece.
+
+132
+00:12:29,460 --> 00:12:33,460
+Que reglas utilizaría yo para transformar un árbol en el otro.
+
+133
+00:12:33,460 --> 00:12:53,460
+Hay esta una de esas reglas en inglés, yo escribo una frasoroba, un grupo global, como un vero,
+
+134
+00:12:53,460 --> 00:12:59,460
+seguido de un grupo profesional, esta es la que decía, y la cambio por qué otra cosa.
+
+135
+00:13:04,460 --> 00:13:10,460
+La cambio por un grupo profesional que sigue con vero.
+
+136
+00:13:10,460 --> 00:13:13,460
+Esa es una, qué otras reglas tendría que agregar.
+
+137
+00:13:16,460 --> 00:13:19,460
+¿Cuál? La elaboración, qué tiene la elaboración.
+
+138
+00:13:19,460 --> 00:13:27,460
+La elaboración, según esto en inglés, es un pueblo nombre, seguido de un verbo, seguido de un grupo global,
+
+139
+00:13:27,460 --> 00:13:29,460
+por qué tendría que cambiarlo.
+
+140
+00:13:30,460 --> 00:13:38,460
+Ahora, en Japones, la elaboración va a ser el pronombre, seguido del verfres, seguido del verbo.
+
+141
+00:13:38,460 --> 00:13:41,460
+Bien, alguna otra.
+
+142
+00:13:42,460 --> 00:13:50,460
+A esta, el grupo preposicional que está formado por un tú, seguido un nombre, eso es en inglés y en Japones que va a pasar.
+
+143
+00:13:52,460 --> 00:13:57,460
+Voy a tener un grupo profesional que es un nombre, seguido de tú.
+
+144
+00:13:58,460 --> 00:14:03,460
+Bien, entonces con eso, más o menos, creo que tendría las reglas suficientes para transformar una roba en el otro.
+
+145
+00:14:03,460 --> 00:14:06,460
+Los sistemas de traducción, vamos a ver si está bien.
+
+146
+00:14:07,460 --> 00:14:09,460
+Está, son los que creimos.
+
+147
+00:14:09,460 --> 00:14:11,460
+Esta es la solución del ejercicio.
+
+148
+00:14:12,460 --> 00:14:16,460
+Los sistemas de traducción basados en syntax y en realidad,
+
+149
+00:14:16,460 --> 00:14:19,460
+los sistemas de traducción de reglas basados en syntax, hacen esto,
+
+150
+00:14:19,460 --> 00:14:23,460
+a alto nivel, digamos, tienen un montón de pares de árboles, hay gente que lo se analiza,
+
+151
+00:14:23,460 --> 00:14:26,460
+y escriba reglas de cómo se transforma uno en el otro.
+
+152
+00:14:26,460 --> 00:14:30,460
+A veces las reglas son complicadas, porque se pueden suparponer,
+
+153
+00:14:30,460 --> 00:14:33,460
+entonces hay que definir prioridades y ese tipo de cosas.
+
+154
+00:14:34,460 --> 00:14:36,460
+Bueno, a esos transferencias intacticas.
+
+155
+00:14:36,460 --> 00:14:39,460
+Si seguimos subiendo en el triángulo de foco,
+
+156
+00:14:39,460 --> 00:14:42,460
+llegamos a lo que ella transferencia se mántica.
+
+157
+00:14:42,460 --> 00:14:45,460
+Tapereza se mántica, uno puede pensarla un poco,
+
+158
+00:14:45,460 --> 00:14:48,460
+como lo que habíamos en la clase pasada, utilizando roles se mánticos,
+
+159
+00:14:48,460 --> 00:14:50,460
+yo tengo un etiquetador de roles se mánticos,
+
+160
+00:14:50,460 --> 00:14:53,460
+que a la relación Juan fue la tienda y me devuelve
+
+161
+00:14:53,460 --> 00:14:55,460
+los roles de los constituyentes.
+
+162
+00:14:55,460 --> 00:14:59,460
+Me dice que Juan es el agente, y a la tienda es el objetivo o gole,
+
+163
+00:14:59,460 --> 00:15:01,460
+digamos, es el nombre del role.
+
+164
+00:15:01,460 --> 00:15:05,460
+Entonces yo para cierto sido más podría escribir reglas más específicas.
+
+165
+00:15:05,460 --> 00:15:09,460
+Por ejemplo, en Chino, ocurre que los síntomas preposionales,
+
+166
+00:15:09,460 --> 00:15:12,460
+que son de tipo objetivo, se escriben antes del largo,
+
+167
+00:15:12,460 --> 00:15:14,460
+pero los demás síntomas preposionales se escriben después,
+
+168
+00:15:14,460 --> 00:15:18,460
+o sea, el Chino es un lenguaje tipo ese deo igual que el inglés o el español,
+
+169
+00:15:18,460 --> 00:15:22,460
+pero cuando el objeto es de tipo gole,
+
+170
+00:15:22,460 --> 00:15:24,460
+lo que hacen es ponerlo antes del largo.
+
+171
+00:15:24,460 --> 00:15:28,460
+Entonces yo podría escribir una regla un poco más específico,
+
+172
+00:15:28,460 --> 00:15:30,460
+para este caso del Chino,
+
+173
+00:15:30,460 --> 00:15:32,460
+si yo tuviera los roles se mánticos.
+
+174
+00:15:32,460 --> 00:15:36,460
+Yo diría que un grupo global es un verbo seguido de
+
+175
+00:15:36,460 --> 00:15:39,460
+esta, esto no está tachados, sino que era la barraita que quedó arriba.
+
+176
+00:15:39,460 --> 00:15:43,460
+Es un verbo seguido de una de un grupo preposional de tipo gole,
+
+177
+00:15:43,460 --> 00:15:47,460
+en Chino lo cambiaría por un verbo seguido de barón.
+
+178
+00:15:47,460 --> 00:15:50,460
+Por un grupo preposional de tipo gole seguido de un verbo.
+
+179
+00:15:51,460 --> 00:15:54,460
+Es más costoso para generar y para parciar,
+
+180
+00:15:54,460 --> 00:15:56,460
+digamos, necesito tener más esfuerzo de parci,
+
+181
+00:15:56,460 --> 00:15:57,460
+más de esfuerzo de generación,
+
+182
+00:15:57,460 --> 00:16:00,460
+pero puedes creir mejores reglas que capturan ciertas
+
+183
+00:16:00,460 --> 00:16:02,460
+particularidades de los lenguajes.
+
+184
+00:16:03,460 --> 00:16:06,460
+Y si yo sigo subiendo en el triángulo,
+
+185
+00:16:06,460 --> 00:16:08,460
+algo que se conoce como interlingua.
+
+186
+00:16:08,460 --> 00:16:09,460
+¿Cuál es la gracia de interlingua?
+
+187
+00:16:09,460 --> 00:16:10,460
+¿Cuál es la idea?
+
+188
+00:16:10,460 --> 00:16:13,460
+Esto sirve, si nosotros estamos en un contexto muy cultural,
+
+189
+00:16:13,460 --> 00:16:17,460
+estamos trabajando, por ejemplo, en la ONO, en el Parlamento Europeo,
+
+190
+00:16:17,460 --> 00:16:19,460
+cuando se habla mucho cidio más.
+
+191
+00:16:19,460 --> 00:16:21,460
+Si yo quiero mantener un montón de documentos
+
+192
+00:16:21,460 --> 00:16:23,460
+que estén en todos los cidio más a la vez,
+
+193
+00:16:23,460 --> 00:16:26,460
+voy a necesitar para los sistemas que tuve en el Parlamento,
+
+194
+00:16:26,460 --> 00:16:29,460
+voy a necesitar tener eneparcer uno para cada idioma,
+
+195
+00:16:29,460 --> 00:16:32,460
+enegeneradores, también uno para cada idioma,
+
+196
+00:16:32,460 --> 00:16:34,460
+y después para cada parte de idiomas,
+
+197
+00:16:34,460 --> 00:16:36,460
+voy a necesitar reglas de transferencia.
+
+198
+00:16:36,460 --> 00:16:38,460
+Entonces, voy a necesitar tener un total eneporé
+
+199
+00:16:38,460 --> 00:16:40,460
+menos un set de transferencia.
+
+200
+00:16:40,460 --> 00:16:43,460
+Yo tengo 20 idiomas, voy a necesitar 3800
+
+201
+00:16:43,460 --> 00:16:45,460
+conjuntos de reglas de transferencia.
+
+202
+00:16:45,460 --> 00:16:47,460
+Entonces, con que tu rea de transferencia son largos,
+
+203
+00:16:47,460 --> 00:16:49,460
+son grandes son complejos, hay que mantenerlos,
+
+204
+00:16:49,460 --> 00:16:50,460
+pueden tener errores.
+
+205
+00:16:50,460 --> 00:16:52,460
+Entonces, esto es claramente no es cada.
+
+206
+00:16:52,460 --> 00:16:55,460
+La es como muy difícil poder mantener un entorno
+
+207
+00:16:55,460 --> 00:16:57,460
+de todos los cidio más, poder mantener la traducción
+
+208
+00:16:57,460 --> 00:16:58,460
+en base a reglas.
+
+209
+00:16:58,460 --> 00:17:01,460
+Entonces, la idea del interlingua es decir,
+
+210
+00:17:01,460 --> 00:17:05,460
+¿qué tal si pudiéramos parcerlo suficiente o analizarlo
+
+211
+00:17:05,460 --> 00:17:08,460
+lo suficiente como para llevar a una representación común?
+
+212
+00:17:08,460 --> 00:17:10,460
+Una representación que capture el significado
+
+213
+00:17:10,460 --> 00:17:12,460
+de todos los cidio más a la vez.
+
+214
+00:17:12,460 --> 00:17:14,460
+Y además, tuviera un generador para cada uno de los cidio más.
+
+215
+00:17:14,460 --> 00:17:18,460
+Si eso pasara, si nosotros pudiéramos capturar
+
+216
+00:17:18,460 --> 00:17:20,460
+con una representación significado de todos los cidios más a la vez,
+
+217
+00:17:20,460 --> 00:17:22,460
+no necesitaríamos transferencias.
+
+218
+00:17:22,460 --> 00:17:25,460
+Simplemente parciamos y llevamos a esa interlingua
+
+219
+00:17:25,460 --> 00:17:27,460
+y después generamos en el otro idioma.
+
+220
+00:17:27,460 --> 00:17:31,460
+Esto está muy bien, digamos, de punto de vista ideal
+
+221
+00:17:31,460 --> 00:17:34,460
+pero es muy difícil lo tener en la práctica.
+
+222
+00:17:34,460 --> 00:17:37,460
+¿Qué se podría usar como representación
+
+223
+00:17:37,460 --> 00:17:39,460
+de interlingua? ¿Qué podría ser un candidato?
+
+224
+00:17:39,460 --> 00:17:41,460
+Bueno, podríamos usar la lógica de primero
+
+225
+00:17:41,460 --> 00:17:44,460
+de que era lo que veíamos en las primeras clases de semántica
+
+226
+00:17:44,460 --> 00:17:46,460
+como representar veraciones en los cidios primeros orden.
+
+227
+00:17:46,460 --> 00:17:49,460
+O alguna de sus variantes que dan cuenta mejor
+
+228
+00:17:49,460 --> 00:17:51,460
+de lo que es la lógica de la lenguaje natural
+
+229
+00:17:51,460 --> 00:17:54,460
+como la mínimo recurso semánticos o las joules semántics.
+
+230
+00:17:54,460 --> 00:17:57,460
+O si no, algo más pareció lo que veíamos en la clase anterior
+
+231
+00:17:57,460 --> 00:18:00,460
+de frames, construirme frames con el estado de las cosas.
+
+232
+00:18:00,460 --> 00:18:02,460
+Como por ejemplo, esta era la misma oración de hoy,
+
+233
+00:18:02,460 --> 00:18:05,460
+Mary Tinslape de Greenwich, pero escrita como un frames
+
+234
+00:18:05,460 --> 00:18:07,460
+hay un evento de slapping, el agentes Mary,
+
+235
+00:18:07,460 --> 00:18:10,460
+o ocurre en pasado, la polaridad negativa
+
+236
+00:18:10,460 --> 00:18:13,460
+el tema de ese evento, es la bruja y la bruja de masa es verde.
+
+237
+00:18:13,460 --> 00:18:15,460
+Yo podría construirme este tipo de frames
+
+238
+00:18:15,460 --> 00:18:17,460
+y usar los como representaciones.
+
+239
+00:18:21,460 --> 00:18:23,460
+Pero bueno, hay problema que tiene
+
+240
+00:18:23,460 --> 00:18:25,460
+crear o pensar en crear un interlingua
+
+241
+00:18:25,460 --> 00:18:28,460
+es que esa interlingua seguro que va a ser muy compleja
+
+242
+00:18:28,460 --> 00:18:31,460
+y seguro que va a tener que modelar las características
+
+243
+00:18:31,460 --> 00:18:33,460
+de todos los cidios más anismo tiempo.
+
+244
+00:18:33,460 --> 00:18:38,460
+Y hay características que son complicadas en los cintos cidios
+
+245
+00:18:38,460 --> 00:18:41,460
+y algunas que ni nos imaginamos, o sea,
+
+246
+00:18:41,460 --> 00:18:44,460
+por ejemplo en Chino, existen palabras distintas
+
+247
+00:18:44,460 --> 00:18:46,460
+para decir hermano mayor y hermano menor
+
+248
+00:18:46,460 --> 00:18:48,460
+y no hay una palabra para decir hermano.
+
+249
+00:18:48,460 --> 00:18:50,460
+O sea, no hay una palabra que quiere decir solamente hermano,
+
+250
+00:18:50,460 --> 00:18:52,460
+en español sí y en inglés también en inglés
+
+251
+00:18:52,460 --> 00:18:55,460
+puede decir brado, pero en Chino no, en Chino
+
+252
+00:18:55,460 --> 00:18:57,460
+tienes que elegir cuando vas a decir hermano
+
+253
+00:18:57,460 --> 00:18:59,460
+si es hermano mayor o hermano menor.
+
+254
+00:18:59,460 --> 00:19:01,460
+Entonces, imagínense que si yo estoy traduciendo
+
+255
+00:19:01,460 --> 00:19:04,460
+del español al inglés y estoy utilizando un interlingua
+
+256
+00:19:04,460 --> 00:19:07,460
+la interlingua en su parcer necesita poder distinguir
+
+257
+00:19:07,460 --> 00:19:09,460
+en algún momento si estoy hablando de un hermano mayor
+
+258
+00:19:09,460 --> 00:19:11,460
+en el hermano menor porque tiene que lograr
+
+259
+00:19:11,460 --> 00:19:14,460
+la representación suficiente como para poder traducir al Chino.
+
+260
+00:19:14,460 --> 00:19:17,460
+Entonces necesita esa información y no sé dónde lo vas a carla
+
+261
+00:19:17,460 --> 00:19:20,460
+puedes sacar de contexto, lo puedes sacar inventar,
+
+262
+00:19:20,460 --> 00:19:23,460
+pero en algún momento va a tener que averiguar el hermano
+
+263
+00:19:23,460 --> 00:19:25,460
+que si estaba hablando en español si es un hermano mayor o menor
+
+264
+00:19:25,460 --> 00:19:27,460
+como para poder tener la representación
+
+265
+00:19:27,460 --> 00:19:29,460
+y después esa información se va a perder
+
+266
+00:19:29,460 --> 00:19:31,460
+por lo que cuando baja de vuelta a la del inglés
+
+267
+00:19:31,460 --> 00:19:34,460
+de vuelta vuelve a ser brado a dar y no importa si es mayor o menor.
+
+268
+00:19:34,460 --> 00:19:37,460
+Y esto solamente un caso de un fenómeno que ocurre en Chino
+
+269
+00:19:37,460 --> 00:19:40,460
+pero digamos si imagínense lo fenómeno que ocurren en el idioma
+
+270
+00:19:40,460 --> 00:19:44,460
+en todo el tiempo digamos si todas las pequeñas variantes que hay
+
+271
+00:19:44,460 --> 00:19:48,460
+y como en realidad no es cierto que podemos traducir
+
+272
+00:19:48,460 --> 00:19:51,460
+exactamente los mismos conceptos, como que es muy difícil encontrar
+
+273
+00:19:51,460 --> 00:19:54,460
+conceptos que se corresponde al 100% de un idioma y otro.
+
+274
+00:19:54,460 --> 00:19:57,460
+Hay una cosa de llamas principios, incertidumbre de la traducción
+
+275
+00:19:57,460 --> 00:19:59,460
+y dice eso que en realidad cuando no se tiene un idioma y otro
+
+276
+00:19:59,460 --> 00:20:02,460
+los conceptos no siempre se van a traducir 100% bien
+
+277
+00:20:02,460 --> 00:20:05,460
+no siempre la traducción es exacta
+
+278
+00:20:05,460 --> 00:20:08,460
+sino que hay ciertos el opamiento y a veces no.
+
+279
+00:20:11,460 --> 00:20:14,460
+Pero a pesar de que es una autopía
+
+280
+00:20:14,460 --> 00:20:17,460
+tener un interlingo que funciona para todos los lenguajes bien
+
+281
+00:20:17,460 --> 00:20:20,460
+este tipo de tecnología si se utilizan para dominios más acotados
+
+282
+00:20:20,460 --> 00:20:22,460
+para dominios pequeños como por ejemplo
+
+283
+00:20:22,460 --> 00:20:25,460
+el de meteorología yo puedo escribir
+
+284
+00:20:25,460 --> 00:20:27,460
+perfectamente por construir una representación
+
+285
+00:20:27,460 --> 00:20:29,460
+de todos los Estados meteorológicos que hay
+
+286
+00:20:29,460 --> 00:20:31,460
+de todos los que yo hubies y nievas y hay granizo,
+
+287
+00:20:31,460 --> 00:20:33,460
+la temperatura de la presión etcétera
+
+288
+00:20:33,460 --> 00:20:35,460
+y traducir los distintos,
+
+289
+00:20:35,460 --> 00:20:37,460
+la distinta palabra que se los han listintos
+
+290
+00:20:37,460 --> 00:20:38,460
+y yo me apara dar cuenta de estos conceptos
+
+291
+00:20:38,460 --> 00:20:40,460
+entonces ese dominio acotado
+
+292
+00:20:40,460 --> 00:20:43,460
+es bastante bien manejable con un interlingo
+
+293
+00:20:43,460 --> 00:20:45,460
+y otros ejemplo son los manos el técnicos
+
+294
+00:20:45,460 --> 00:20:48,460
+hay empresas que un montón de documentación técnica
+
+295
+00:20:48,460 --> 00:20:51,460
+o describen a las apes de sus productos etcétera
+
+296
+00:20:51,460 --> 00:20:54,460
+y uno suele dar cuando cuando mira la página web
+
+297
+00:20:54,460 --> 00:20:57,460
+digamos que aparece como que con su fijo es
+
+298
+00:20:57,460 --> 00:21:00,300
+porque está en español, pero si lo se lo cambias por en automáticamente
+
+299
+00:21:00,300 --> 00:21:02,860
+de de genera otra página exactamente igual, pero en inglés
+
+300
+00:21:02,860 --> 00:21:05,260
+y en realidad lo que hacen es como mantener una representación
+
+301
+00:21:05,260 --> 00:21:08,460
+abstracta de lo que está en escribiendo y generarla en los distintos idiomas.
+
+302
+00:21:11,660 --> 00:21:14,860
+Bien, entonces, hasta ahí lo que vimos será como un paneo de lo que son
+
+303
+00:21:14,860 --> 00:21:16,860
+los distintos sistemas basados en reglas.
+
+304
+00:21:16,860 --> 00:21:20,060
+Ahora vamos a pasar a hablar de lo que es la traducción estadística,
+
+305
+00:21:20,060 --> 00:21:22,460
+que es el estado del arte hoy en día.
+
+306
+00:21:22,460 --> 00:21:26,660
+Y vamos a empezar con un ejemplo, un ejemplo de una frase en hebreo,
+
+307
+00:21:27,460 --> 00:21:30,860
+que es Adona y Roy, que la traducción sería el señor
+
+308
+00:21:30,860 --> 00:21:32,860
+en impastor o del orisme y Shepherd.
+
+309
+00:21:34,260 --> 00:21:38,460
+Y esta frase en realidad funciona bien, porque nosotros conocemos
+
+310
+00:21:38,460 --> 00:21:41,860
+que son las obéjas, digamos, la cultura en la que surgió esta frase
+
+311
+00:21:41,860 --> 00:21:44,660
+conocía que eran las obéjas, tenían pastores, los pastores,
+
+312
+00:21:44,660 --> 00:21:47,460
+cuidaban las obéjas, la llegaban a donde ha estado a los mejores pasos,
+
+313
+00:21:47,460 --> 00:21:52,460
+etc., entonces esta metáfora funcionaba bien, digamos,
+
+314
+00:21:52,460 --> 00:21:56,260
+o sea, la gente describía como se sentían, respecto a Dios utilizando esta metáfora.
+
+315
+00:21:57,460 --> 00:22:01,460
+Pero ¿qué tal si quisieramos expresar esta misma frase,
+
+316
+00:22:01,460 --> 00:22:03,660
+a una cultura que no conoce a las obéjas?
+
+317
+00:22:03,660 --> 00:22:07,460
+Por ejemplo, los primeros misioneros que vendrían de Europa,
+
+318
+00:22:07,460 --> 00:22:10,260
+ahí tendrían contactos con los indígenas americanos,
+
+319
+00:22:10,260 --> 00:22:12,260
+los indígenas americanos no conocían oéjas.
+
+320
+00:22:12,260 --> 00:22:18,460
+Entonces, ¿cómo hacemos para expresarles el concepto de Adona y Roy?
+
+321
+00:22:18,460 --> 00:22:22,060
+Una forma de expresarlo es decir, bueno, traduzco la metáfora,
+
+322
+00:22:22,060 --> 00:22:26,060
+el significador de metáfora, digo significa el señor me cuidara,
+
+323
+00:22:26,060 --> 00:22:28,460
+que en definitiva es un poco la metáfora quiere decir eso,
+
+324
+00:22:28,460 --> 00:22:31,060
+aunque pierda un poco del contenido.
+
+325
+00:22:31,060 --> 00:22:36,060
+O sino, lo otro que puedo hacer es tratar de ser más fiel al significador original
+
+326
+00:22:36,060 --> 00:22:38,660
+y tratar de traducirlo más literalmente, decir, bueno,
+
+327
+00:22:38,660 --> 00:22:43,660
+el señor será para mí como un hombre que cuida de animales que tienen el pelo como algodón.
+
+328
+00:22:44,860 --> 00:22:47,860
+¿Qué es bastante más fiel al original,
+
+329
+00:22:47,860 --> 00:22:49,660
+pero sin embargo, se entiende mucho menos,
+
+330
+00:22:49,660 --> 00:22:53,460
+como te van a mirar y decir, ¿qué me estás hablando?
+
+331
+00:22:54,460 --> 00:22:59,460
+Y bueno, un poco este es el problema que hay que ser enfrenta a los tradutores humanos todos los días.
+
+332
+00:22:59,460 --> 00:23:03,460
+O sea, es muy difícil tener las dos cosas,
+
+333
+00:23:03,460 --> 00:23:08,460
+sérfiel al original y sonar natural que suene bien en el lenguaje destino.
+
+334
+00:23:08,460 --> 00:23:11,460
+Una traducción, queremos que tenga esas dos propiedades,
+
+335
+00:23:11,460 --> 00:23:13,460
+pero muy difícil lograrlo a la vez.
+
+336
+00:23:13,460 --> 00:23:16,460
+Entonces, los tradutores humanos saben que esto es imposible en la práctica,
+
+337
+00:23:16,460 --> 00:23:19,460
+lo que hacen es tratar de traducir de manera,
+
+338
+00:23:19,460 --> 00:23:22,460
+de encontrar un punto intermedio en el cual, bueno,
+
+339
+00:23:22,460 --> 00:23:26,460
+es bastante bien, pero además sea fiel al significado original.
+
+340
+00:23:27,460 --> 00:23:30,460
+Entonces, esto significa que lo que estamos tratando de hacer
+
+341
+00:23:30,460 --> 00:23:34,460
+al traducir es que estamos tratando de maximizar dos cosas a la vez,
+
+342
+00:23:34,460 --> 00:23:37,460
+como dos medidas que queremos maximizar.
+
+343
+00:23:37,460 --> 00:23:41,460
+Una medida es que tan fiel es mi oración traducida a la operación original,
+
+344
+00:23:41,460 --> 00:23:44,460
+a esa medida le vamos a llamar adecuación o fidelidad,
+
+345
+00:23:44,460 --> 00:23:47,460
+y en inglés es adecuación, fidelity o faithfulness.
+
+346
+00:23:47,460 --> 00:23:50,460
+Y la otra medida es que tan natural suena
+
+347
+00:23:50,460 --> 00:23:52,460
+la oración que yo traducen en el lenguaje destino,
+
+348
+00:23:52,460 --> 00:23:56,460
+y a esa medida le voy a llamar fluidez o en inglés fluency.
+
+349
+00:23:57,460 --> 00:24:01,460
+Entonces, esta idea de que estoy tratando de maximizar dos medidas a la vez,
+
+350
+00:24:01,460 --> 00:24:04,460
+después vamos a ver que realidad lo que vamos a total maximizar
+
+351
+00:24:04,460 --> 00:24:08,460
+es el producto de las dos medidas, porque eso significa maximizar ambas al mismo tiempo.
+
+352
+00:24:08,460 --> 00:24:13,460
+Es una idea que sirve para poder inferir o para poder construir
+
+353
+00:24:13,460 --> 00:24:17,460
+mecanismos para crear los tradutores automáticos y también mecanismos para testiarlos.
+
+354
+00:24:17,460 --> 00:24:20,460
+Y vamos a ver un poco cómo es que funciona eso.
+
+355
+00:24:21,460 --> 00:24:25,460
+Yo voy a intentar traducir a partir de ahora el resto de la clase
+
+356
+00:24:25,460 --> 00:24:27,460
+y la clase que viene, vamos a hablar siempre
+
+357
+00:24:27,460 --> 00:24:29,460
+de que voy a traducir un lenguaje origen f,
+
+358
+00:24:29,460 --> 00:24:31,460
+a un lenguaje destino, e.
+
+359
+00:24:31,460 --> 00:24:33,460
+Ah, a la mano acá.
+
+360
+00:24:33,460 --> 00:24:35,460
+Se que estamos, sino en los soledos.
+
+361
+00:24:41,460 --> 00:24:43,460
+F es el lenguaje origen.
+
+362
+00:24:48,460 --> 00:24:50,460
+Y es el lenguaje destino.
+
+363
+00:24:55,460 --> 00:24:58,460
+Eso es nombre surgen porque el paper inicial,
+
+364
+00:24:58,460 --> 00:25:01,460
+en donde se empezaba a hablar de estas cosas en los métodos estadísticos,
+
+365
+00:25:01,460 --> 00:25:02,460
+traducía del francés al inglés,
+
+366
+00:25:02,460 --> 00:25:04,460
+entonces, a color nombre de ahí dijo,
+
+367
+00:25:04,460 --> 00:25:06,460
+el francés de F, el inglés, entonces traducimos
+
+368
+00:25:06,460 --> 00:25:08,460
+del origen al destino.
+
+369
+00:25:09,460 --> 00:25:12,460
+Bueno, yo quiero traducir una frase del idioma F
+
+370
+00:25:12,460 --> 00:25:15,460
+a otra frase del idioma F, lo que quiero tratar de encontrar
+
+371
+00:25:15,460 --> 00:25:19,460
+es el mejor etecho que maximise a la vez
+
+372
+00:25:19,460 --> 00:25:21,460
+la adecuación y las fluidez.
+
+373
+00:25:21,460 --> 00:25:23,460
+O sea, de todos los éposibles del lenguaje destino,
+
+374
+00:25:23,460 --> 00:25:26,460
+quiero encontrar el que maximise la fluidez de E,
+
+375
+00:25:26,460 --> 00:25:27,460
+o sea, que son en natural,
+
+376
+00:25:27,460 --> 00:25:30,460
+y además la adecuación entre la orición F
+
+377
+00:25:30,460 --> 00:25:33,460
+y ese E que estoy buscando.
+
+378
+00:25:35,460 --> 00:25:37,460
+Esto, esta forma, le hacía escrita de esa manera
+
+379
+00:25:37,460 --> 00:25:39,460
+de esta acordada a algo que hacíamos visto ya en el curso
+
+380
+00:25:39,460 --> 00:25:42,460
+en el momento, les suena algún lado.
+
+381
+00:25:43,460 --> 00:25:45,460
+Entropía, sí,
+
+382
+00:25:47,460 --> 00:25:50,460
+vaches, sí, o sea viene por ese lado.
+
+383
+00:25:50,460 --> 00:25:52,460
+Se parece al modelo de vaches, porque esto es otra aplicación
+
+384
+00:25:52,460 --> 00:25:53,460
+del modelo de canal ruidoso.
+
+385
+00:25:53,460 --> 00:25:55,460
+El modelo de canal ruidoso lo habíamos visto en el curso
+
+386
+00:25:55,460 --> 00:25:57,460
+cuando vimos corregciones de errores,
+
+387
+00:25:57,460 --> 00:25:59,460
+así ya, a donde tiempo.
+
+388
+00:25:59,460 --> 00:26:02,460
+Y también es una aplicación de lo que le regla de vaches.
+
+389
+00:26:03,460 --> 00:26:05,460
+Entonces, el modelo de canal ruidoso aplicado
+
+390
+00:26:05,460 --> 00:26:07,460
+acá funciona de la siguiente manera.
+
+391
+00:26:07,460 --> 00:26:09,460
+Yo tengo una operación origen en el lenguaje F
+
+392
+00:26:09,460 --> 00:26:12,460
+que es Efechica, que tiene M palabras.
+
+393
+00:26:12,460 --> 00:26:14,460
+Y es bueno, F subun, F subun, F subun, F subun.
+
+394
+00:26:14,460 --> 00:26:18,460
+Y que no encontrar la mejor oración en el lenguaje de estino
+
+395
+00:26:18,460 --> 00:26:21,460
+es techo, que es E subun, hasta veces suben,
+
+396
+00:26:21,460 --> 00:26:22,460
+hasta E suben.
+
+397
+00:26:22,460 --> 00:26:24,460
+Que maximiza y en realidad,
+
+398
+00:26:24,460 --> 00:26:26,460
+lo que yo quiero maximizar originalmente,
+
+399
+00:26:26,460 --> 00:26:28,460
+como todos esperaremos, es decir,
+
+400
+00:26:28,460 --> 00:26:29,460
+bueno, yo quiero encontrar
+
+401
+00:26:29,460 --> 00:26:33,460
+la oración E que maximise la probabilidad de E da do Efe.
+
+402
+00:26:33,460 --> 00:26:35,460
+Díamos eso, lo que uno se lo ocurriría primero,
+
+403
+00:26:35,460 --> 00:26:38,460
+diría bueno, yo quiero esto traduciendo la oración F
+
+404
+00:26:38,460 --> 00:26:40,460
+que no encontrar la E que me demáximos,
+
+405
+00:26:40,460 --> 00:26:42,460
+la probabilidad de E da do Efe.
+
+406
+00:26:42,460 --> 00:26:45,460
+Bien, pero en realidad, yo esto lo puedo descomponer
+
+407
+00:26:45,460 --> 00:26:46,460
+por vaches, digamos,
+
+408
+00:26:46,460 --> 00:26:48,460
+y por definición de probabilidad condicional,
+
+409
+00:26:48,460 --> 00:26:50,460
+por decir que la probabilidad de E da do Efe
+
+410
+00:26:50,460 --> 00:26:52,460
+es igual a la probabilidad de Efe da do E
+
+411
+00:26:52,460 --> 00:26:55,460
+por la probabilidad de E de do la probabilidad de Efe.
+
+412
+00:26:55,460 --> 00:26:58,460
+Y vamos a esa equivalencia directa
+
+413
+00:26:58,460 --> 00:27:00,460
+por definición de probabilidad condicional.
+
+414
+00:27:00,460 --> 00:27:02,460
+Y además, como estoy maximizando,
+
+415
+00:27:02,460 --> 00:27:05,460
+E esta Efe se mantiene constante porque lo que voy
+
+416
+00:27:05,460 --> 00:27:06,460
+a variando es la E.
+
+417
+00:27:06,460 --> 00:27:07,460
+Entonces, la atacho,
+
+418
+00:27:07,460 --> 00:27:09,460
+o sea, maximizar sobre una constante,
+
+419
+00:27:09,460 --> 00:27:11,460
+no hacen ningún cambio.
+
+420
+00:27:11,460 --> 00:27:14,460
+Entonces, lo que me queda al final es que
+
+421
+00:27:14,460 --> 00:27:16,460
+yo busco un E techo,
+
+422
+00:27:16,460 --> 00:27:18,460
+que es el E que hace máximo
+
+423
+00:27:18,460 --> 00:27:21,460
+la probabilidad de Efe da do E por la probabilidad de E.
+
+424
+00:27:21,460 --> 00:27:23,460
+Y eso que tenemos escrito E,
+
+425
+00:27:23,460 --> 00:27:25,460
+se parece mucho a
+
+426
+00:27:25,460 --> 00:27:27,460
+la otra ecuación que teníamos antes,
+
+427
+00:27:27,460 --> 00:27:31,460
+digamos, parece mucho a esta ecuación de Efe
+
+428
+00:27:31,460 --> 00:27:33,460
+y fluidez de E.
+
+429
+00:27:36,460 --> 00:27:38,460
+Entonces,
+
+430
+00:27:38,460 --> 00:27:40,460
+esto se conoce como la ecuación fundamental
+
+431
+00:27:40,460 --> 00:27:42,460
+de la traducción automática estadística.
+
+432
+00:27:42,460 --> 00:27:45,460
+Le vamos a ver unas cuantas veces en estas dos clases.
+
+433
+00:27:45,460 --> 00:27:47,460
+Le vamos a estar refrescando.
+
+434
+00:27:47,460 --> 00:27:50,460
+Y funciona así de manera.
+
+435
+00:27:50,460 --> 00:27:52,460
+Yo quiero encontrar el E techo
+
+436
+00:27:52,460 --> 00:27:54,460
+que es el E que maximiza
+
+437
+00:27:54,460 --> 00:27:55,460
+el producto de estas dos probabilidades.
+
+438
+00:27:55,460 --> 00:27:58,460
+La primera probabilidad de Efe da do E
+
+439
+00:27:58,460 --> 00:28:00,460
+es la que se encarga de medir que tal
+
+440
+00:28:00,460 --> 00:28:01,460
+la adecuación digamos de la frase.
+
+441
+00:28:01,460 --> 00:28:02,460
+Que tan adecuadas,
+
+442
+00:28:02,460 --> 00:28:04,460
+la frase Efe para la frase E.
+
+443
+00:28:04,460 --> 00:28:06,460
+La segunda probabilidad,
+
+444
+00:28:06,460 --> 00:28:08,460
+PD, es la que se encarga de las fluidez,
+
+445
+00:28:08,460 --> 00:28:12,460
+que tan natural suena esa frase en el lenguaje destino.
+
+446
+00:28:12,460 --> 00:28:15,460
+Y se calculan con modelo de distintos.
+
+447
+00:28:15,460 --> 00:28:17,460
+La primera se calcula con lo que se conoce como modelo de traducción
+
+448
+00:28:17,460 --> 00:28:20,460
+y la segunda con lo que se conoce como modelo de lenguaje
+
+449
+00:28:20,460 --> 00:28:22,460
+de hechos, los modelos del lenguaje,
+
+450
+00:28:22,460 --> 00:28:24,460
+ya lo hemos visto en el curso.
+
+451
+00:28:24,460 --> 00:28:27,460
+Vamos a dar un breve repaso de que se trataba.
+
+452
+00:28:27,460 --> 00:28:30,460
+Bueno, porque esto es una aplicación de canal ruidoso.
+
+453
+00:28:30,460 --> 00:28:33,460
+Es una aplicación de canal ruidoso por lo siguiente.
+
+454
+00:28:33,460 --> 00:28:35,460
+Nosotros estamos tratando de traducir
+
+455
+00:28:35,460 --> 00:28:38,460
+del lenguaje Efe, efer al lenguaje origen al lenguaje E
+
+456
+00:28:38,460 --> 00:28:39,460
+que se lenguaje destino.
+
+457
+00:28:39,460 --> 00:28:41,460
+Y lo estamos pensando al revés.
+
+458
+00:28:41,460 --> 00:28:43,460
+Estamos pensando como que alguien emitió
+
+459
+00:28:43,460 --> 00:28:45,460
+los sonidos de la oración E,
+
+460
+00:28:45,460 --> 00:28:47,460
+la oración del lenguaje destino.
+
+461
+00:28:47,460 --> 00:28:48,460
+Eso pasó a través de un canal ruidoso
+
+462
+00:28:48,460 --> 00:28:49,460
+y cuando llegó hasta mí,
+
+463
+00:28:49,460 --> 00:28:52,460
+yo escuché los sonidos de la oración Efe.
+
+464
+00:28:52,460 --> 00:28:54,460
+Estoy pensando como esa especie de metáfora.
+
+465
+00:28:54,460 --> 00:28:55,460
+Hay que emitió E,
+
+466
+00:28:55,460 --> 00:28:58,460
+pasó por un canal ruidoso y llegaron los ruidos de Efe.
+
+467
+00:28:58,460 --> 00:28:59,460
+Entonces, lo que yo trató a hacer
+
+468
+00:28:59,460 --> 00:29:01,460
+como proceso de traducción es encontrar
+
+469
+00:29:01,460 --> 00:29:03,460
+cuál tiene que haber sido esa E original
+
+470
+00:29:03,460 --> 00:29:06,460
+para que yo haya escuchado la Efe.
+
+471
+00:29:06,460 --> 00:29:08,460
+¿Cuál es la E original que me da
+
+472
+00:29:08,460 --> 00:29:10,460
+probabilidad máxima de que yo se escucha o está Efe?
+
+473
+00:29:12,460 --> 00:29:13,460
+Y, bueno, está.
+
+474
+00:29:13,460 --> 00:29:15,460
+Por eso es una aplicación de canal ruidoso.
+
+475
+00:29:15,460 --> 00:29:17,460
+Y, bueno, la realidad es que en realidad
+
+476
+00:29:17,460 --> 00:29:19,460
+damos vuelta a esta probabilidad
+
+477
+00:29:19,460 --> 00:29:21,460
+porque nos da todo otra forma de calcularlo
+
+478
+00:29:21,460 --> 00:29:24,460
+que no podríamos hacerlo y calcular la probabilidad directa.
+
+479
+00:29:24,460 --> 00:29:27,460
+Es como que hay mejores herramientas para hacer eso.
+
+480
+00:29:27,460 --> 00:29:28,460
+Bueno, de vuelta.
+
+481
+00:29:28,460 --> 00:29:30,460
+Esto es la ecuación fundamental de la traducción
+
+482
+00:29:30,460 --> 00:29:32,460
+automática estadística E.
+
+483
+00:29:32,460 --> 00:29:35,460
+Techo es el argumento que hace máximo
+
+484
+00:29:35,460 --> 00:29:37,460
+la probabilidad de Efe de D
+
+485
+00:29:37,460 --> 00:29:39,460
+y para poder resolver esta ecuación
+
+486
+00:29:39,460 --> 00:29:41,460
+necesitamos tres cosas.
+
+487
+00:29:41,460 --> 00:29:43,460
+Nezitamos un modelo de lenguaje PD
+
+488
+00:29:43,460 --> 00:29:47,460
+que se que se van cargal de la fluidez.
+
+489
+00:29:47,460 --> 00:29:50,460
+Esto se calcula mediante la técnica
+
+490
+00:29:50,460 --> 00:29:53,460
+de negra más en general.
+
+491
+00:29:53,460 --> 00:29:55,460
+Los negra más son bastante fáciles de construir
+
+492
+00:29:55,460 --> 00:29:58,460
+digamos porque yo necesito texto en un solo idioma.
+
+493
+00:29:58,460 --> 00:30:00,460
+Solo en el idioma destino.
+
+494
+00:30:00,460 --> 00:30:03,460
+PDF da doe es el...
+
+495
+00:30:03,460 --> 00:30:05,460
+la componente que se encarga de la adecuación
+
+496
+00:30:05,460 --> 00:30:07,460
+y se resuelve mediante el modelo de traducción.
+
+497
+00:30:07,460 --> 00:30:09,460
+El modelo de traducción no es tan fácil de construir
+
+498
+00:30:09,460 --> 00:30:11,460
+como el modelo de lenguaje porque
+
+499
+00:30:11,460 --> 00:30:13,460
+para el modelo de traducción voy a necesitar texto
+
+500
+00:30:13,460 --> 00:30:15,460
+y lingue de hecho voy a necesitar un corpus paralelo
+
+501
+00:30:15,460 --> 00:30:16,460
+que sea texto en dos idiomas
+
+502
+00:30:16,460 --> 00:30:18,460
+que además tengan su correspondencia.
+
+503
+00:30:18,460 --> 00:30:21,460
+Y además necesito una tercera componente.
+
+504
+00:30:21,460 --> 00:30:24,460
+Esta tercera componente se llama adecodificador.
+
+505
+00:30:24,460 --> 00:30:25,460
+Y se trata de lo siguiente.
+
+506
+00:30:25,460 --> 00:30:27,460
+Yo cuando estoy buscando
+
+507
+00:30:27,460 --> 00:30:29,460
+con nosotros hoy en esta ecuación
+
+508
+00:30:29,460 --> 00:30:31,460
+yo veo la operación F y quiero buscar
+
+509
+00:30:31,460 --> 00:30:33,460
+la mejor E que maximise esta ecuación.
+
+510
+00:30:33,460 --> 00:30:35,460
+Pero en realidad lo que tendría a gastar
+
+511
+00:30:35,460 --> 00:30:38,460
+es probar con todas las oraciones E del idioma destino.
+
+512
+00:30:38,460 --> 00:30:39,460
+Todas las oraciones posibles
+
+513
+00:30:39,460 --> 00:30:42,460
+que cuántas son las oraciones del idioma destino.
+
+514
+00:30:42,460 --> 00:30:45,460
+Son infinitas oraciones posibles en el idioma destino.
+
+515
+00:30:45,460 --> 00:30:47,460
+Entonces yo estaría probando con infinitas oraciones
+
+516
+00:30:47,460 --> 00:30:49,460
+hasta que una de ellas me del máximo.
+
+517
+00:30:49,460 --> 00:30:51,460
+Obviamente esto no es un problema tratable
+
+518
+00:30:51,460 --> 00:30:53,460
+yo no puedo probar con infinitas oraciones.
+
+519
+00:30:53,460 --> 00:30:55,460
+Lo que necesito es un proceso que
+
+520
+00:30:55,460 --> 00:30:57,460
+me limites a cantidad de busquetas de infinitas oraciones
+
+521
+00:30:57,460 --> 00:30:58,460
+a algo tratable.
+
+522
+00:30:58,460 --> 00:31:00,460
+Entonces el lo que puedeificador
+
+523
+00:31:00,460 --> 00:31:01,460
+va a ser un algoritmo de busquetas
+
+524
+00:31:01,460 --> 00:31:04,460
+que va a agarrar la oración origen
+
+525
+00:31:04,460 --> 00:31:06,460
+y me va a devolver
+
+526
+00:31:06,460 --> 00:31:09,460
+las 100, 200,000 oraciones de estino
+
+527
+00:31:09,460 --> 00:31:11,460
+candidatas más probable que al celocurra
+
+528
+00:31:11,460 --> 00:31:13,460
+para que yo pueda resolver
+
+529
+00:31:13,460 --> 00:31:16,460
+y calcular esa ecuación para esas oraciones
+
+530
+00:31:16,460 --> 00:31:17,460
+en vez de para todas las posibles.
+
+531
+00:31:17,460 --> 00:31:18,460
+Entonces lo que hace
+
+532
+00:31:18,460 --> 00:31:20,460
+volver este problema tratable.
+
+533
+00:31:20,460 --> 00:31:21,460
+Vamos a ver también una ecuación
+
+534
+00:31:21,460 --> 00:31:23,460
+que se llama Vim Search.
+
+535
+00:31:26,460 --> 00:31:27,460
+Bueno, entonces
+
+536
+00:31:29,460 --> 00:31:31,460
+un poco más sobre modelos del lenguaje.
+
+537
+00:31:31,460 --> 00:31:33,460
+La componente pd de la ecuación
+
+538
+00:31:33,460 --> 00:31:34,460
+era la que medía a las fluidez
+
+539
+00:31:34,460 --> 00:31:36,460
+y se calculaba mediante un modelo del lenguaje.
+
+540
+00:31:36,460 --> 00:31:38,460
+Los modelos del lenguaje son relativamente fácil
+
+541
+00:31:38,460 --> 00:31:40,460
+y les de construir porque necesitamos
+
+542
+00:31:40,460 --> 00:31:41,460
+información monolingo
+
+543
+00:31:41,460 --> 00:31:43,460
+información solamente en el lenguaje destino
+
+544
+00:31:43,460 --> 00:31:44,460
+entonces en la web
+
+545
+00:31:44,460 --> 00:31:46,460
+tenemos monton, toneladas,
+
+546
+00:31:46,460 --> 00:31:47,460
+información
+
+547
+00:31:47,460 --> 00:31:48,460
+de muchos idiomas.
+
+548
+00:31:48,460 --> 00:31:49,460
+Entonces como solunitamos
+
+549
+00:31:49,460 --> 00:31:50,460
+información de un idioma
+
+550
+00:31:50,460 --> 00:31:53,460
+sacamos texto, web, noticias, blogs, etcétera
+
+551
+00:31:53,460 --> 00:31:56,460
+y compilamos un gran corpus
+
+552
+00:31:56,460 --> 00:31:57,460
+del lenguaje destino.
+
+553
+00:31:57,460 --> 00:31:59,460
+Los modelos que se utilizan
+
+554
+00:31:59,460 --> 00:32:01,460
+para traducción automática en general
+
+555
+00:32:01,460 --> 00:32:02,460
+son modelos basados en enegramas
+
+556
+00:32:02,460 --> 00:32:03,460
+que ya hemos visto
+
+557
+00:32:03,460 --> 00:32:04,460
+en el curso como funcionaban
+
+558
+00:32:04,460 --> 00:32:07,460
+se suele usar orden de 4 o 5
+
+559
+00:32:07,460 --> 00:32:09,460
+en otras tareas de peleones
+
+560
+00:32:09,460 --> 00:32:11,460
+se suele usar ordenes mas chicos
+
+561
+00:32:11,460 --> 00:32:12,460
+pero para acá
+
+562
+00:32:12,460 --> 00:32:14,460
+da buenos resultados con 4 o 5
+
+563
+00:32:14,460 --> 00:32:15,460
+y bueno, lo importante es tener
+
+564
+00:32:15,460 --> 00:32:17,460
+una gran cantidad de material de entrenamiento
+
+565
+00:32:17,460 --> 00:32:19,460
+o sea, los mejores modelos
+
+566
+00:32:19,460 --> 00:32:21,460
+que usan Google Translate otras empresas
+
+567
+00:32:22,460 --> 00:32:23,460
+usan trichones de palabras
+
+568
+00:32:23,460 --> 00:32:25,460
+y bueno, son necesitan jargo especial
+
+569
+00:32:25,460 --> 00:32:26,460
+especialmente diseñado
+
+570
+00:32:26,460 --> 00:32:28,460
+para poder ir rápido
+
+571
+00:32:28,460 --> 00:32:30,460
+y recuperar la información
+
+572
+00:32:30,460 --> 00:32:32,460
+o si no, bueno, si estoy
+
+573
+00:32:32,460 --> 00:32:33,460
+hablando un dominio
+
+574
+00:32:33,460 --> 00:32:34,460
+acotado por usar datos
+
+575
+00:32:34,460 --> 00:32:35,460
+de dominio para entrenar
+
+576
+00:32:35,460 --> 00:32:36,460
+que también va a ser
+
+577
+00:32:36,460 --> 00:32:38,460
+buenos resultados
+
+578
+00:32:40,460 --> 00:32:41,460
+Las técnicas de mudines
+
+579
+00:32:41,460 --> 00:32:42,460
+cuando hay algún enegramas
+
+580
+00:32:42,460 --> 00:32:43,460
+que no viste
+
+581
+00:32:43,460 --> 00:32:44,460
+lo que te va a pasar
+
+582
+00:32:44,460 --> 00:32:45,460
+que la probabilidad cero
+
+583
+00:32:45,460 --> 00:32:47,460
+y ahí te va a dar todo cero
+
+584
+00:32:47,460 --> 00:32:48,460
+en realidad, las mejores técnicas
+
+585
+00:32:48,460 --> 00:32:49,460
+muy científicas
+
+586
+00:32:49,460 --> 00:32:50,460
+da una buena probabilidad
+
+587
+00:32:50,460 --> 00:32:52,460
+de eso, a pesar de que nunca lo yo ha visto
+
+588
+00:32:52,460 --> 00:32:55,460
+se dice que las mejores
+
+589
+00:32:55,460 --> 00:32:56,460
+de ambos las más grandes mejoras
+
+590
+00:32:56,460 --> 00:32:57,460
+en los modelos
+
+591
+00:32:57,460 --> 00:32:59,460
+en la traducción automática
+
+592
+00:32:59,460 --> 00:33:00,460
+y los últimos años se han dado
+
+593
+00:33:00,460 --> 00:33:02,460
+porque hay mejores modelos en el lenguaje
+
+594
+00:33:02,460 --> 00:33:04,460
+que me han traducciones que son más fluidas
+
+595
+00:33:04,460 --> 00:33:06,460
+y bueno, y usualmente hay
+
+596
+00:33:06,460 --> 00:33:08,460
+como cierta correlación
+
+597
+00:33:08,460 --> 00:33:09,460
+o cierta inclinación
+
+598
+00:33:09,460 --> 00:33:10,460
+hacia las fluidas
+
+599
+00:33:10,460 --> 00:33:12,460
+la gente prefiere
+
+600
+00:33:12,460 --> 00:33:13,460
+cuando las oraciones
+
+601
+00:33:13,460 --> 00:33:15,460
+son suena más naturales
+
+602
+00:33:15,460 --> 00:33:16,460
+acá en ejemplo
+
+603
+00:33:16,460 --> 00:33:17,460
+esto era atacado un sistema
+
+604
+00:33:17,460 --> 00:33:19,460
+de traducción del chino al inglés
+
+605
+00:33:20,460 --> 00:33:22,460
+el sistema estadístico de San Sintaxis
+
+606
+00:33:22,460 --> 00:33:25,460
+que cuando no utilizamos el lenguaje
+
+607
+00:33:25,460 --> 00:33:27,460
+tenía un puntaje de 25 con 2
+
+608
+00:33:27,460 --> 00:33:29,460
+al incorporar el modelo de lenguaje subió
+
+609
+00:33:29,460 --> 00:33:30,460
+como 20 por ciento
+
+610
+00:33:30,460 --> 00:33:31,460
+su performance
+
+611
+00:33:31,460 --> 00:33:33,460
+si llegó a 31 con 2
+
+612
+00:33:33,460 --> 00:33:34,460
+como 6 puntos
+
+613
+00:33:34,460 --> 00:33:36,460
+esos puntos corresponden a una medida
+
+614
+00:33:36,460 --> 00:33:37,460
+que vamos a ver dentro de un rato
+
+615
+00:33:37,460 --> 00:33:38,460
+que se llama medía blue
+
+616
+00:33:38,460 --> 00:33:39,460
+que es una medía muy utilizada
+
+617
+00:33:39,460 --> 00:33:41,460
+en lo que es traducción estadística
+
+618
+00:33:43,460 --> 00:33:45,460
+traducción automática general
+
+619
+00:33:45,460 --> 00:33:46,460
+pero bueno, ahora
+
+620
+00:33:46,460 --> 00:33:48,460
+solamente saber que 6 puntos
+
+621
+00:33:48,460 --> 00:33:51,460
+es una mejorada que es muchísimo
+
+622
+00:33:51,460 --> 00:33:53,460
+y como es que mejora esto
+
+623
+00:33:53,460 --> 00:33:55,460
+mejora haciendo que las traducciones
+
+624
+00:33:55,460 --> 00:33:57,460
+que devuelve en general sean más fluidas
+
+625
+00:33:57,460 --> 00:33:59,460
+son en más natural en el lenguaje estino
+
+626
+00:33:59,460 --> 00:34:00,460
+y acá hay un ejemplo
+
+627
+00:34:00,460 --> 00:34:02,460
+de traducciones de ese mismo sistema
+
+628
+00:34:02,460 --> 00:34:04,460
+yo tenía una traducción de referencia que era
+
+629
+00:34:04,460 --> 00:34:06,460
+hay Don Havana of Man and with me
+
+630
+00:34:06,460 --> 00:34:08,460
+to buy a newer play in ticket
+
+631
+00:34:08,460 --> 00:34:10,460
+el sistema sin el modelo lenguaje
+
+632
+00:34:10,460 --> 00:34:11,460
+devolvía esta traducción
+
+633
+00:34:11,460 --> 00:34:13,460
+de si a Don Havana of Bago
+
+634
+00:34:13,460 --> 00:34:15,460
+and meach a inch please go a new by plane
+
+635
+00:34:15,460 --> 00:34:17,460
+que no nos entiende mucho que lo que dice
+
+636
+00:34:17,460 --> 00:34:19,460
+no era matical
+
+637
+00:34:19,460 --> 00:34:21,460
+pero la gregar el modelo de traducción
+
+638
+00:34:21,460 --> 00:34:22,460
+su traducción es la siguiente
+
+639
+00:34:22,460 --> 00:34:23,460
+hay Havana of Man
+
+640
+00:34:23,460 --> 00:34:25,460
+y to buy a new one by air
+
+641
+00:34:25,460 --> 00:34:27,460
+que suena mucho mejor
+
+642
+00:34:27,460 --> 00:34:30,460
+que les parece acerca del significado
+
+643
+00:34:34,460 --> 00:34:35,460
+el significado es el opuesto
+
+644
+00:34:35,460 --> 00:34:37,460
+digamos, acá está diciendo que tienes suficiente plata
+
+645
+00:34:37,460 --> 00:34:38,460
+para comprar uno por aire
+
+646
+00:34:38,460 --> 00:34:40,460
+y acá dice que no tienes suficiente plata
+
+647
+00:34:40,460 --> 00:34:42,460
+para comprar un pasaje de avión
+
+648
+00:34:42,460 --> 00:34:44,460
+o sea, este suena muchísimo mejor
+
+649
+00:34:44,460 --> 00:34:46,460
+porque esta ni siquiera era matical
+
+650
+00:34:46,460 --> 00:34:48,460
+pero esta por lo menos mantenía la negación
+
+651
+00:34:48,460 --> 00:34:50,460
+digamos, mantenía que era una oración negativa
+
+652
+00:34:50,460 --> 00:34:52,460
+entonces hay que tener cuidado con esto
+
+653
+00:34:52,460 --> 00:34:54,460
+la traducción suena mucho mejor
+
+654
+00:34:54,460 --> 00:34:56,460
+pero a veces podemos estar sacrificando
+
+655
+00:34:56,460 --> 00:34:57,460
+fidelidad
+
+656
+00:34:57,460 --> 00:34:59,460
+sacrificando adecuación de la traducción
+
+657
+00:35:02,460 --> 00:35:04,460
+bien, eso sobre modelos lenguajes
+
+658
+00:35:04,460 --> 00:35:07,460
+ahora pasemos a la vota, los modelos de traducción
+
+659
+00:35:07,460 --> 00:35:11,460
+la componente pdf de la ecuación
+
+660
+00:35:11,460 --> 00:35:13,460
+mide lo que es la adecuación o fidelidad
+
+661
+00:35:13,460 --> 00:35:15,460
+de una traducción y la otra
+
+662
+00:35:15,460 --> 00:35:17,460
+y para esto necesito corpos paralelos
+
+663
+00:35:17,460 --> 00:35:19,460
+corpos y língues
+
+664
+00:35:19,460 --> 00:35:21,460
+para poder entrenar estos modelos
+
+665
+00:35:21,460 --> 00:35:23,460
+los corpos y língues son bastante difíciles de construir
+
+666
+00:35:23,460 --> 00:35:24,460
+que los corpos monolíngues
+
+667
+00:35:24,460 --> 00:35:25,460
+digamos, no alcanza
+
+668
+00:35:25,460 --> 00:35:27,460
+con hacer una pasada por la web
+
+669
+00:35:27,460 --> 00:35:29,460
+y obtener texto un idioma
+
+670
+00:35:29,460 --> 00:35:31,460
+y bueno, los modelos que vamos a ver
+
+671
+00:35:31,460 --> 00:35:34,460
+son los propuestos por Brown
+
+672
+00:35:34,460 --> 00:35:35,460
+Brown y Syraclipo
+
+673
+00:35:35,460 --> 00:35:37,460
+en 1923 que trabajan en IBM
+
+674
+00:35:37,460 --> 00:35:39,460
+eso construyeron 5 modelos de cómo construir
+
+675
+00:35:39,460 --> 00:35:41,460
+5 modelos digamos en creciente complejidad
+
+676
+00:35:41,460 --> 00:35:44,460
+de cómo construir un modelo de traducción
+
+677
+00:35:44,460 --> 00:35:46,460
+para traducción estadística
+
+678
+00:35:46,460 --> 00:35:48,460
+y bueno, los modelos
+
+679
+00:35:48,460 --> 00:35:49,460
+las diferencias de cada modelo
+
+680
+00:35:49,460 --> 00:35:51,460
+se es en la historia de generación
+
+681
+00:35:51,460 --> 00:35:53,460
+de las relaciones candidatas
+
+682
+00:35:53,460 --> 00:35:55,460
+y bueno, después vamos a ver también otro modelo
+
+683
+00:35:55,460 --> 00:35:56,460
+un poco más moderno
+
+684
+00:35:56,460 --> 00:35:58,460
+pero bueno, vamos a empezar
+
+685
+00:35:58,460 --> 00:36:00,460
+viendo más bien los modelos de Brown
+
+686
+00:36:00,460 --> 00:36:02,460
+a que me refiero con la historia de generación
+
+687
+00:36:02,460 --> 00:36:04,460
+de las relaciones candidatas
+
+688
+00:36:04,460 --> 00:36:06,460
+una historia de generación
+
+689
+00:36:06,460 --> 00:36:07,460
+esto lo digo ahora
+
+690
+00:36:07,460 --> 00:36:09,460
+pero en realidad lo vamos a profundizar después
+
+691
+00:36:09,460 --> 00:36:10,460
+una historia de generación en realidad
+
+692
+00:36:10,460 --> 00:36:12,460
+como una especie de proceso mental
+
+693
+00:36:12,460 --> 00:36:13,460
+que seguiría un traductor
+
+694
+00:36:13,460 --> 00:36:15,460
+cuando quiere pasar de una oración
+
+695
+00:36:15,460 --> 00:36:16,460
+a la otra
+
+696
+00:36:16,460 --> 00:36:17,460
+entonces
+
+697
+00:36:17,460 --> 00:36:19,460
+estas historias se basan en decir
+
+698
+00:36:19,460 --> 00:36:20,460
+bueno, un traductor
+
+699
+00:36:20,460 --> 00:36:21,460
+agar una oración en el idioma origen
+
+700
+00:36:21,460 --> 00:36:22,460
+y después
+
+701
+00:36:22,460 --> 00:36:23,460
+elige
+
+702
+00:36:23,460 --> 00:36:25,460
+la cantidad de palabras que voy a tener
+
+703
+00:36:25,460 --> 00:36:26,460
+de idioma de estinos
+
+704
+00:36:26,460 --> 00:36:27,460
+reordina palabras
+
+705
+00:36:27,460 --> 00:36:28,460
+después va traduciendo
+
+706
+00:36:28,460 --> 00:36:29,460
+una una segunda indiccionario
+
+707
+00:36:29,460 --> 00:36:31,460
+después agrega a palabras nuevos
+
+708
+00:36:31,460 --> 00:36:32,460
+que no estaban en la oración
+
+709
+00:36:32,460 --> 00:36:33,460
+ese tipo de cosas
+
+710
+00:36:33,460 --> 00:36:34,460
+digamos ese tipo de pasos
+
+711
+00:36:34,460 --> 00:36:35,460
+me los voy a escribir
+
+712
+00:36:35,460 --> 00:36:37,460
+en la historia de generación
+
+713
+00:36:37,460 --> 00:36:38,460
+y para que sirve eso
+
+714
+00:36:38,460 --> 00:36:39,460
+sirve para que
+
+715
+00:36:39,460 --> 00:36:40,460
+a cada uno de esos pasos
+
+716
+00:36:40,460 --> 00:36:42,460
+yo le puedo dar un valor numerico
+
+717
+00:36:42,460 --> 00:36:43,460
+en cuanto a probabilidades
+
+718
+00:36:43,460 --> 00:36:44,460
+y después lo voy a hacer
+
+719
+00:36:44,460 --> 00:36:45,460
+cuando entre no mi sistema
+
+720
+00:36:45,460 --> 00:36:46,460
+es
+
+721
+00:36:46,460 --> 00:36:47,460
+túnelar
+
+722
+00:36:47,460 --> 00:36:48,460
+es valor en un médico
+
+723
+00:36:48,460 --> 00:36:49,460
+túnelar todas las probabilidades
+
+724
+00:36:49,460 --> 00:36:51,460
+para darme el cálculo de probabilidad total
+
+725
+00:36:51,460 --> 00:36:53,460
+vamos a profundizar más
+
+726
+00:36:53,460 --> 00:36:54,460
+de en esto
+
+727
+00:36:54,460 --> 00:36:55,460
+después
+
+728
+00:36:55,460 --> 00:36:57,460
+pero antes
+
+729
+00:36:57,460 --> 00:36:58,460
+de pasar a lo que son
+
+730
+00:36:58,460 --> 00:36:59,460
+las modelos traducción
+
+731
+00:36:59,460 --> 00:37:00,460
+vamos a hablar un poco de cómo
+
+732
+00:37:00,460 --> 00:37:01,460
+se valúan estos sistemas
+
+733
+00:37:01,460 --> 00:37:03,460
+en general siempre es importante
+
+734
+00:37:03,460 --> 00:37:04,460
+evaluar o
+
+735
+00:37:04,460 --> 00:37:05,460
+en p lgne de ambos
+
+736
+00:37:05,460 --> 00:37:06,460
+porque no hay soluciones perfectas
+
+737
+00:37:06,460 --> 00:37:07,460
+entonces voy a tener sistemas
+
+738
+00:37:07,460 --> 00:37:08,460
+que andan mejor
+
+739
+00:37:08,460 --> 00:37:09,460
+o peor que otros
+
+740
+00:37:09,460 --> 00:37:10,460
+y bueno
+
+741
+00:37:10,460 --> 00:37:11,460
+la traducción automática
+
+742
+00:37:11,460 --> 00:37:13,460
+obviamente no hay la sección
+
+743
+00:37:13,460 --> 00:37:15,460
+entonces
+
+744
+00:37:15,460 --> 00:37:16,460
+me sirve poder evaluar los sistemas
+
+745
+00:37:16,460 --> 00:37:17,460
+para poder saber que
+
+746
+00:37:17,460 --> 00:37:18,460
+si tenemos mejor que el otro
+
+747
+00:37:18,460 --> 00:37:19,460
+y además si yo hago cambio
+
+748
+00:37:19,460 --> 00:37:20,460
+es el sistema poder evaluar
+
+749
+00:37:20,460 --> 00:37:21,460
+de vuelse a ver si mejoré
+
+750
+00:37:21,460 --> 00:37:22,460
+o no
+
+751
+00:37:22,460 --> 00:37:23,460
+entonces
+
+752
+00:37:23,460 --> 00:37:25,460
+¿qué puedo considera una buena traducción
+
+753
+00:37:25,460 --> 00:37:26,460
+para empezar?
+
+754
+00:37:26,460 --> 00:37:27,460
+eso es una pregunta que
+
+755
+00:37:27,460 --> 00:37:29,460
+es abierto en su
+
+756
+00:37:31,460 --> 00:37:32,460
+digamos
+
+757
+00:37:32,460 --> 00:37:33,460
+es abierto en su respuesta
+
+758
+00:37:33,460 --> 00:37:34,460
+o sea yo tenía
+
+759
+00:37:34,460 --> 00:37:35,460
+en un sistema de traducción
+
+760
+00:37:35,460 --> 00:37:36,460
+tenía una referencia
+
+761
+00:37:36,460 --> 00:37:37,460
+un candidato referencia
+
+762
+00:37:37,460 --> 00:37:38,460
+que era de Catsat
+
+763
+00:37:38,460 --> 00:37:39,460
+o de Mat
+
+764
+00:37:39,460 --> 00:37:40,460
+y vamos a ser una traducción
+
+765
+00:37:40,460 --> 00:37:41,460
+de referencia
+
+766
+00:37:41,460 --> 00:37:42,460
+y un sistema
+
+767
+00:37:42,460 --> 00:37:43,460
+medio seis posibles
+
+768
+00:37:43,460 --> 00:37:44,460
+candidatos
+
+769
+00:37:44,460 --> 00:37:45,460
+para esa traducción
+
+770
+00:37:45,460 --> 00:37:46,460
+o sea
+
+771
+00:37:46,460 --> 00:37:47,460
+originalmente había
+
+772
+00:37:47,460 --> 00:37:48,460
+una frase, por ejemplo
+
+773
+00:37:48,460 --> 00:37:49,460
+en Chino
+
+774
+00:37:49,460 --> 00:37:51,460
+la traducción de referencia
+
+775
+00:37:51,460 --> 00:37:52,460
+a la de Catsat o de Mat
+
+776
+00:37:52,460 --> 00:37:53,460
+y mi sistema
+
+777
+00:37:53,460 --> 00:37:54,460
+a traducción del Chino
+
+778
+00:37:54,460 --> 00:37:55,460
+medio estas opciones
+
+779
+00:37:55,460 --> 00:37:56,460
+tengo de Catsat
+
+780
+00:37:56,460 --> 00:37:58,460
+o en Mat de Catsat
+
+781
+00:37:58,460 --> 00:38:00,460
+de Catsat o en Mat
+
+782
+00:38:00,460 --> 00:38:02,460
+de Catsat o en Mat
+
+783
+00:38:02,460 --> 00:38:03,460
+con minúscula o
+
+784
+00:38:03,460 --> 00:38:05,460
+de Catsat o en Dstromat
+
+785
+00:38:05,460 --> 00:38:07,460
+¿Cuáles les parece
+
+786
+00:38:07,460 --> 00:38:08,460
+en que son
+
+787
+00:38:08,460 --> 00:38:09,460
+buenas traducciones
+
+788
+00:38:09,460 --> 00:38:10,460
+de estos candidatos
+
+789
+00:38:10,460 --> 00:38:11,460
+que me dio el sistema
+
+790
+00:38:11,460 --> 00:38:13,460
+¿Cuáles les gusta
+
+791
+00:38:13,460 --> 00:38:14,460
+más?
+
+792
+00:38:16,460 --> 00:38:17,460
+La E que es de Catsat
+
+793
+00:38:17,460 --> 00:38:18,460
+de Mat
+
+794
+00:38:18,460 --> 00:38:19,460
+pero con minúscula
+
+795
+00:38:19,460 --> 00:38:20,460
+me de como hayúscula
+
+796
+00:38:20,460 --> 00:38:21,460
+que otra
+
+797
+00:38:21,460 --> 00:38:22,460
+la B
+
+798
+00:38:22,460 --> 00:38:23,460
+donde matza de Cats
+
+799
+00:38:23,460 --> 00:38:25,460
+que otra
+
+800
+00:38:25,460 --> 00:38:26,460
+la D
+
+801
+00:38:26,460 --> 00:38:27,460
+les gusta también
+
+802
+00:38:27,460 --> 00:38:28,460
+a Catsat de Mat
+
+803
+00:38:34,460 --> 00:38:35,460
+¿Capa es que no calienta
+
+804
+00:38:35,460 --> 00:38:36,460
+tanto dependiendo
+
+805
+00:38:36,460 --> 00:38:37,460
+el uso que le vas a dar
+
+806
+00:38:37,460 --> 00:38:38,460
+esa frase en contexto
+
+807
+00:38:38,460 --> 00:38:39,460
+que no calienta tanto
+
+808
+00:38:39,460 --> 00:38:40,460
+y bueno
+
+809
+00:38:40,460 --> 00:38:41,460
+sí
+
+810
+00:38:41,460 --> 00:38:42,460
+la verdad no se ve nada
+
+811
+00:38:42,460 --> 00:38:43,460
+cuando están las cosas
+
+812
+00:38:43,460 --> 00:38:44,460
+marcadas tan rojo
+
+813
+00:38:44,460 --> 00:38:45,460
+pero bueno
+
+814
+00:38:45,460 --> 00:38:46,460
+creo que a Catsat o en Catsat
+
+815
+00:38:46,460 --> 00:38:48,460
+las que acaban de decir
+
+816
+00:38:48,460 --> 00:38:50,460
+una traducción
+
+817
+00:38:50,460 --> 00:38:51,460
+podemos decir que es una traducción
+
+818
+00:38:51,460 --> 00:38:52,460
+que le gusta la gente
+
+819
+00:38:52,460 --> 00:38:53,460
+que la gente dice
+
+820
+00:38:53,460 --> 00:38:54,460
+si es una buena traducción
+
+821
+00:38:54,460 --> 00:38:55,460
+entonces acá
+
+822
+00:38:55,460 --> 00:38:56,460
+se lige
+
+823
+00:38:56,460 --> 00:38:58,460
+donde matza de Catsat
+
+824
+00:38:58,460 --> 00:38:59,460
+donde mat
+
+825
+00:38:59,460 --> 00:39:00,460
+y de Catsat o en Mat
+
+826
+00:39:00,460 --> 00:39:01,460
+en minúscula
+
+827
+00:39:01,460 --> 00:39:02,460
+y bueno
+
+828
+00:39:02,460 --> 00:39:03,460
+como decimos
+
+829
+00:39:03,460 --> 00:39:04,460
+le preguntamos a la gente
+
+830
+00:39:04,460 --> 00:39:05,460
+de haber que traducciones
+
+831
+00:39:05,460 --> 00:39:06,460
+le gustan
+
+832
+00:39:06,460 --> 00:39:07,460
+y bueno
+
+833
+00:39:07,460 --> 00:39:08,460
+y ahí ponemos
+
+834
+00:39:08,460 --> 00:39:09,460
+cuáles son las mejores traducciones
+
+835
+00:39:09,460 --> 00:39:10,460
+o sino
+
+836
+00:39:10,460 --> 00:39:11,460
+le damos a un conjunto
+
+837
+00:39:11,460 --> 00:39:12,460
+de jurados
+
+838
+00:39:12,460 --> 00:39:13,460
+las traducciones
+
+839
+00:39:13,460 --> 00:39:14,460
+y le decimos que
+
+840
+00:39:14,460 --> 00:39:15,460
+hagan una análisis un poco más
+
+841
+00:39:15,460 --> 00:39:16,460
+preciso y nos digan
+
+842
+00:39:16,460 --> 00:39:17,460
+bueno
+
+843
+00:39:17,460 --> 00:39:18,460
+cuánto le dan en uno alí es
+
+844
+00:39:18,460 --> 00:39:19,460
+de adecuación
+
+845
+00:39:19,460 --> 00:39:20,460
+y cuánto le dan en uno alí es
+
+846
+00:39:20,460 --> 00:39:21,460
+de fluidez
+
+847
+00:39:23,460 --> 00:39:25,460
+esta es otra forma de evaluar
+
+848
+00:39:25,460 --> 00:39:26,460
+digamos
+
+849
+00:39:26,460 --> 00:39:27,460
+y ahí se están dando
+
+850
+00:39:27,460 --> 00:39:28,460
+las dos medidas
+
+851
+00:39:28,460 --> 00:39:29,460
+en general
+
+852
+00:39:29,460 --> 00:39:30,460
+a los humanos
+
+853
+00:39:30,460 --> 00:39:31,460
+nos cuesta
+
+854
+00:39:31,460 --> 00:39:32,460
+realiza esta evaluación
+
+855
+00:39:32,460 --> 00:39:33,460
+en general
+
+856
+00:39:33,460 --> 00:39:34,460
+y en general
+
+857
+00:39:34,460 --> 00:39:35,460
+como pasaba hoy
+
+858
+00:39:35,460 --> 00:39:36,460
+con el caso
+
+859
+00:39:36,460 --> 00:39:37,460
+de traducción
+
+860
+00:39:37,460 --> 00:39:38,460
+del chino al inglés
+
+861
+00:39:38,460 --> 00:39:39,460
+para los
+
+862
+00:39:39,460 --> 00:39:41,460
+pasajes de avión
+
+863
+00:39:41,460 --> 00:39:42,460
+además de gente
+
+864
+00:39:42,460 --> 00:39:43,460
+no se pone a acuerdo
+
+865
+00:39:43,460 --> 00:39:44,460
+además hay un problema
+
+866
+00:39:44,460 --> 00:39:45,460
+que
+
+867
+00:39:45,460 --> 00:39:46,460
+hacer este tipo de evaluaciones
+
+868
+00:39:46,460 --> 00:39:47,460
+con usuarios humanos
+
+869
+00:39:47,460 --> 00:39:48,460
+llegó tiempo
+
+870
+00:39:48,460 --> 00:39:49,460
+digamos
+
+871
+00:39:49,460 --> 00:39:50,460
+hay que pagarles a los usuarios
+
+872
+00:39:50,460 --> 00:39:51,460
+por hora
+
+873
+00:39:51,460 --> 00:39:52,460
+para que estén evaluando
+
+874
+00:39:52,460 --> 00:39:53,460
+sistemas
+
+875
+00:39:53,460 --> 00:39:54,460
+y después
+
+876
+00:39:54,460 --> 00:39:55,460
+yo le digo un conjunto
+
+877
+00:39:55,460 --> 00:39:56,460
+de traducciones
+
+878
+00:39:56,460 --> 00:39:57,460
+ellos me la se evaluaron
+
+879
+00:39:57,460 --> 00:39:58,460
+y se hay un cambio
+
+880
+00:39:58,460 --> 00:39:59,460
+en mi sistema
+
+881
+00:39:59,460 --> 00:40:00,460
+para mejorarlo
+
+882
+00:40:00,460 --> 00:40:02,460
+y de vuelta
+
+883
+00:40:02,460 --> 00:40:04,460
+tengo que pagar
+
+884
+00:40:04,460 --> 00:40:05,460
+horas
+
+885
+00:40:05,460 --> 00:40:06,460
+de usuarios humanos
+
+886
+00:40:06,460 --> 00:40:07,460
+para que lo evaluen
+
+887
+00:40:07,460 --> 00:40:08,460
+entonces
+
+888
+00:40:08,460 --> 00:40:09,460
+es difícil de utilizar
+
+889
+00:40:09,460 --> 00:40:10,460
+yo voy a estar haciendo
+
+890
+00:40:10,460 --> 00:40:11,460
+cambios
+
+891
+00:40:11,460 --> 00:40:12,460
+constantemente del sistema
+
+892
+00:40:12,460 --> 00:40:13,460
+y bueno
+
+893
+00:40:13,460 --> 00:40:14,460
+y necesito tener una forma
+
+894
+00:40:14,460 --> 00:40:15,460
+más rápida
+
+895
+00:40:15,460 --> 00:40:16,460
+de evaluar a ver si estoy haciendo
+
+896
+00:40:16,460 --> 00:40:17,460
+las cosas mejor
+
+897
+00:40:17,460 --> 00:40:18,460
+entonces
+
+898
+00:40:18,460 --> 00:40:19,460
+como este proceso de evaluación
+
+899
+00:40:19,460 --> 00:40:20,460
+es largo
+
+900
+00:40:20,460 --> 00:40:21,460
+en los rosos
+
+901
+00:40:21,460 --> 00:40:22,460
+es caro
+
+902
+00:40:22,460 --> 00:40:23,460
+lo que se ha vuelto a popular
+
+903
+00:40:23,460 --> 00:40:24,460
+son los métodos automáticos
+
+904
+00:40:24,460 --> 00:40:25,460
+de evaluación
+
+905
+00:40:25,460 --> 00:40:27,460
+y cuando nació vamos a ver uno
+
+906
+00:40:27,460 --> 00:40:28,460
+que es
+
+907
+00:40:28,460 --> 00:40:29,460
+muy utilizado
+
+908
+00:40:29,460 --> 00:40:30,460
+en lo que es
+
+909
+00:40:30,460 --> 00:40:31,460
+la traducción automática
+
+910
+00:40:33,460 --> 00:40:34,460
+bueno
+
+911
+00:40:34,460 --> 00:40:35,460
+cómo funciona
+
+912
+00:40:35,460 --> 00:40:37,460
+un método de evaluación
+
+913
+00:40:37,460 --> 00:40:38,460
+en realidad
+
+914
+00:40:38,460 --> 00:40:39,460
+lo que hace alguien
+
+915
+00:40:39,460 --> 00:40:40,460
+que está diseñando
+
+916
+00:40:40,460 --> 00:40:42,460
+un sistema
+
+917
+00:40:42,460 --> 00:40:43,460
+es crearse
+
+918
+00:40:43,460 --> 00:40:45,460
+un conjunto de oraciones
+
+919
+00:40:45,460 --> 00:40:46,460
+con una traducción
+
+920
+00:40:46,460 --> 00:40:47,460
+cada uno
+
+921
+00:40:47,460 --> 00:40:48,460
+con una traducción de referencia
+
+922
+00:40:48,460 --> 00:40:49,460
+que está bien
+
+923
+00:40:49,460 --> 00:40:50,460
+digamos
+
+924
+00:40:50,460 --> 00:40:52,460
+una traducción
+
+925
+00:40:52,460 --> 00:40:54,460
+hechamano
+
+926
+00:40:54,460 --> 00:40:55,460
+entonces yo quiero
+
+927
+00:40:55,460 --> 00:40:56,460
+de evaluar un sistema
+
+928
+00:40:56,460 --> 00:40:57,460
+que va
+
+929
+00:40:57,460 --> 00:40:58,460
+del español en inglés
+
+930
+00:40:58,460 --> 00:40:59,460
+lo que tengo es
+
+931
+00:40:59,460 --> 00:41:01,460
+un conjunto de oraciones
+
+932
+00:41:01,460 --> 00:41:02,460
+o más candidatos
+
+933
+00:41:02,460 --> 00:41:03,460
+tal vez para cada una
+
+934
+00:41:03,460 --> 00:41:04,460
+digamos
+
+935
+00:41:04,460 --> 00:41:05,460
+a eso le voy a llamar
+
+936
+00:41:05,460 --> 00:41:06,460
+referencias
+
+937
+00:41:06,460 --> 00:41:07,460
+traducciones de referencia
+
+938
+00:41:07,460 --> 00:41:08,460
+lo siguiente que tengo
+
+939
+00:41:08,460 --> 00:41:09,460
+es poder diseñar
+
+940
+00:41:09,460 --> 00:41:10,460
+una métrica
+
+941
+00:41:10,460 --> 00:41:11,460
+de similitud
+
+942
+00:41:11,460 --> 00:41:12,460
+para que cuando
+
+943
+00:41:12,460 --> 00:41:13,460
+mi sistema me da
+
+944
+00:41:13,460 --> 00:41:14,460
+un candidato a traducción
+
+945
+00:41:14,460 --> 00:41:15,460
+yo puedo establecer
+
+946
+00:41:15,460 --> 00:41:16,460
+una similitud
+
+947
+00:41:16,460 --> 00:41:17,460
+entre ese candidato
+
+948
+00:41:17,460 --> 00:41:18,460
+y algunas de las referencias
+
+949
+00:41:18,460 --> 00:41:19,460
+y bueno después lo que voy
+
+950
+00:41:19,460 --> 00:41:20,460
+a hacer es aplicar
+
+951
+00:41:20,460 --> 00:41:21,460
+esa métrica
+
+952
+00:41:21,460 --> 00:41:22,460
+para los pares
+
+953
+00:41:22,460 --> 00:41:23,460
+candidatos
+
+954
+00:41:23,460 --> 00:41:24,460
+referencias
+
+955
+00:41:24,460 --> 00:41:25,460
+y bueno
+
+956
+00:41:25,460 --> 00:41:26,460
+y sacar como un promedio
+
+957
+00:41:26,460 --> 00:41:28,460
+de todos los
+
+958
+00:41:28,460 --> 00:41:29,460
+los valores
+
+959
+00:41:29,460 --> 00:41:30,460
+de similitud que tengo
+
+960
+00:41:30,460 --> 00:41:32,460
+muchos métodos de este estilo
+
+961
+00:41:32,460 --> 00:41:33,460
+muchos métodos automáticos
+
+962
+00:41:33,460 --> 00:41:34,460
+y que vamos a ver
+
+963
+00:41:34,460 --> 00:41:35,460
+en particular
+
+964
+00:41:35,460 --> 00:41:36,460
+se llama blue
+
+965
+00:41:36,460 --> 00:41:37,460
+que es
+
+966
+00:41:37,460 --> 00:41:38,460
+una metrica
+
+967
+00:41:38,460 --> 00:41:39,460
+muy difundida
+
+968
+00:41:39,460 --> 00:41:41,460
+en lo que la traducción automática
+
+969
+00:41:41,460 --> 00:41:42,460
+está distiga
+
+970
+00:41:42,460 --> 00:41:43,460
+y bueno primero algunas
+
+971
+00:41:43,460 --> 00:41:44,460
+definiciones
+
+972
+00:41:44,460 --> 00:41:45,460
+le vamos a llamar
+
+973
+00:41:45,460 --> 00:41:46,460
+referencia
+
+974
+00:41:46,460 --> 00:41:47,460
+a una traducción
+
+975
+00:41:47,460 --> 00:41:48,460
+que está traducida
+
+976
+00:41:48,460 --> 00:41:49,460
+manualmente
+
+977
+00:41:49,460 --> 00:41:50,460
+o sea consideramos
+
+978
+00:41:50,460 --> 00:41:51,460
+que es una operación correcta
+
+979
+00:41:51,460 --> 00:41:52,460
+es una referencia
+
+980
+00:41:52,460 --> 00:41:53,460
+y le vamos a llamar candidato
+
+981
+00:41:53,460 --> 00:41:54,460
+a una traducción
+
+982
+00:41:54,460 --> 00:41:55,460
+que no tiene porque está correcta
+
+983
+00:41:55,460 --> 00:41:56,460
+porque la traducción
+
+984
+00:41:56,460 --> 00:41:57,460
+es sistema automático
+
+985
+00:41:57,460 --> 00:41:58,460
+y le vamos a llamar
+
+986
+00:41:58,460 --> 00:41:59,460
+documento
+
+987
+00:41:59,460 --> 00:42:00,460
+para el conjunto de todas las
+
+988
+00:42:00,460 --> 00:42:02,460
+operaciones candidatas
+
+989
+00:42:02,460 --> 00:42:03,460
+al conjunto de todas las
+
+990
+00:42:03,460 --> 00:42:04,460
+operaciones traducidas
+
+991
+00:42:04,460 --> 00:42:05,460
+por el sistema
+
+992
+00:42:05,460 --> 00:42:06,460
+que es lo que vamos a estar
+
+993
+00:42:06,460 --> 00:42:07,460
+evaluando
+
+994
+00:42:07,460 --> 00:42:08,460
+si que recuerden
+
+995
+00:42:08,460 --> 00:42:09,460
+tenemos referencia
+
+996
+00:42:09,460 --> 00:42:11,460
+candidato y documento
+
+997
+00:42:11,460 --> 00:42:12,460
+y bueno
+
+998
+00:42:12,460 --> 00:42:13,460
+que es lo primero
+
+999
+00:42:13,460 --> 00:42:14,460
+que se nos puede ocurrir
+
+1000
+00:42:14,460 --> 00:42:15,460
+a hacer
+
+1001
+00:42:15,460 --> 00:42:16,460
+cuando queremos saber
+
+1002
+00:42:16,460 --> 00:42:17,460
+si un candidato
+
+1003
+00:42:17,460 --> 00:42:18,460
+es bueno
+
+1004
+00:42:18,460 --> 00:42:19,460
+para la referencia o no
+
+1005
+00:42:19,460 --> 00:42:20,460
+lo primero que podemos
+
+1006
+00:42:20,460 --> 00:42:21,460
+hacer es tratar
+
+1007
+00:42:21,460 --> 00:42:22,460
+de contar
+
+1008
+00:42:22,460 --> 00:42:23,460
+las palabras que ocurren
+
+1009
+00:42:23,460 --> 00:42:24,460
+en ambos
+
+1010
+00:42:24,460 --> 00:42:25,460
+entonces yo puedo
+
+1011
+00:42:25,460 --> 00:42:28,460
+tratar de contar
+
+1012
+00:42:28,460 --> 00:42:29,460
+las palabras que ocurren
+
+1013
+00:42:29,460 --> 00:42:30,460
+en el candidato
+
+1014
+00:42:30,460 --> 00:42:32,460
+y palabras que ocurren en la referencia
+
+1015
+00:42:32,460 --> 00:42:33,460
+y ahí diría que
+
+1016
+00:42:33,460 --> 00:42:34,460
+la elección de las palabras
+
+1017
+00:42:34,460 --> 00:42:35,460
+de candidato
+
+1018
+00:42:35,460 --> 00:42:36,460
+si están, la palabra candidato
+
+1019
+00:42:36,460 --> 00:42:37,460
+si están también en la referencia
+
+1020
+00:42:37,460 --> 00:42:38,460
+yo diría que eso
+
+1021
+00:42:38,460 --> 00:42:39,460
+se hace un poco de adecuación
+
+1022
+00:42:39,460 --> 00:42:40,460
+se acerca que bueno
+
+1023
+00:42:40,460 --> 00:42:41,460
+por lo menos uso
+
+1024
+00:42:41,460 --> 00:42:42,460
+palabras que son fieles
+
+1025
+00:42:42,460 --> 00:42:44,460
+a la traducción de referencia
+
+1026
+00:42:44,460 --> 00:42:45,460
+pero si además
+
+1027
+00:42:45,460 --> 00:42:46,460
+esas palabras
+
+1028
+00:42:46,460 --> 00:42:47,460
+están usadas en el mismo orden
+
+1029
+00:42:47,460 --> 00:42:49,460
+ahí se hace un poco más
+
+1030
+00:42:49,460 --> 00:42:50,460
+a la fluidez
+
+1031
+00:42:50,460 --> 00:42:51,460
+o sea si están usadas en el mismo orden
+
+1032
+00:42:51,460 --> 00:42:52,460
+puede sonar
+
+1033
+00:42:52,460 --> 00:42:54,460
+tan natural como la referencia
+
+1034
+00:42:54,460 --> 00:42:56,460
+y esto se puede hacer
+
+1035
+00:42:56,460 --> 00:42:57,460
+automáticamente
+
+1036
+00:42:57,460 --> 00:42:58,460
+haciendo contéos de
+
+1037
+00:42:58,460 --> 00:43:00,460
+enegramas
+
+1038
+00:43:00,460 --> 00:43:02,460
+acá yo tengo
+
+1039
+00:43:02,460 --> 00:43:03,460
+una referencia
+
+1040
+00:43:03,460 --> 00:43:04,460
+que es
+
+1041
+00:43:04,460 --> 00:43:05,460
+de cazad
+
+1042
+00:43:05,460 --> 00:43:06,460
+mi sistema me tenía
+
+1043
+00:43:06,460 --> 00:43:07,460
+cabr de vuelta
+
+1044
+00:43:07,460 --> 00:43:08,460
+de cazad
+
+1045
+00:43:08,460 --> 00:43:09,460
+y tenía dos candidatos
+
+1046
+00:43:09,460 --> 00:43:10,460
+candidatos
+
+1047
+00:43:10,460 --> 00:43:11,460
+era de cazad
+
+1048
+00:43:11,460 --> 00:43:12,460
+y el candidato
+
+1049
+00:43:12,460 --> 00:43:13,460
+era sátca de
+
+1050
+00:43:13,460 --> 00:43:14,460
+entonces lo que puedo
+
+1051
+00:43:14,460 --> 00:43:15,460
+hacer es contéo
+
+1052
+00:43:15,460 --> 00:43:16,460
+de enegramas
+
+1053
+00:43:16,460 --> 00:43:17,460
+de los candidatos
+
+1054
+00:43:17,460 --> 00:43:18,460
+pertenecen
+
+1055
+00:43:18,460 --> 00:43:19,460
+a la referencia
+
+1056
+00:43:19,460 --> 00:43:20,460
+entonces para el caso de
+
+1057
+00:43:20,460 --> 00:43:21,460
+de cazad
+
+1058
+00:43:21,460 --> 00:43:22,460
+el enegramas de
+
+1059
+00:43:22,460 --> 00:43:23,460
+pertenece la referencia
+
+1060
+00:43:23,460 --> 00:43:24,460
+el enegramas cazad
+
+1061
+00:43:24,460 --> 00:43:25,460
+pertenece la referencia
+
+1062
+00:43:25,460 --> 00:43:26,460
+y el enegramas de cazad
+
+1063
+00:43:26,460 --> 00:43:27,460
+o sea el vígrafa de cazad
+
+1064
+00:43:27,460 --> 00:43:29,460
+también pertenece la referencia
+
+1065
+00:43:29,460 --> 00:43:31,460
+para el caso del candidato
+
+1066
+00:43:31,460 --> 00:43:32,460
+de
+
+1067
+00:43:32,460 --> 00:43:33,460
+el enegramas cazad
+
+1068
+00:43:33,460 --> 00:43:34,460
+pertenece el enegramas cazad
+
+1069
+00:43:34,460 --> 00:43:35,460
+pertenece el enegramas de
+
+1070
+00:43:35,460 --> 00:43:36,460
+pertenece
+
+1071
+00:43:36,460 --> 00:43:38,460
+pero cazad
+
+1072
+00:43:38,460 --> 00:43:40,460
+este vígrafa no pertenece la referencia
+
+1073
+00:43:40,460 --> 00:43:41,460
+y cazad de
+
+1074
+00:43:41,460 --> 00:43:42,460
+tampoco pertenece la referencia
+
+1075
+00:43:42,460 --> 00:43:45,460
+y además el enegramas cazad de
+
+1076
+00:43:45,460 --> 00:43:46,460
+tampoco están a referencia
+
+1077
+00:43:46,460 --> 00:43:47,460
+entonces lo que aparecía
+
+1078
+00:43:47,460 --> 00:43:48,460
+la derecha son
+
+1079
+00:43:48,460 --> 00:43:50,460
+los enegramas que sí
+
+1080
+00:43:50,460 --> 00:43:51,460
+pertenece en tanto
+
+1081
+00:43:51,460 --> 00:43:53,460
+el candidato como la referencia
+
+1082
+00:43:53,460 --> 00:43:55,460
+así que bueno
+
+1083
+00:43:55,460 --> 00:43:56,460
+resumiendo
+
+1084
+00:43:56,460 --> 00:43:58,460
+yo puedo contar la cantidad
+
+1085
+00:43:58,460 --> 00:43:59,460
+de gits de
+
+1086
+00:43:59,460 --> 00:44:00,460
+unegramas de
+
+1087
+00:44:00,460 --> 00:44:01,460
+bígrafas de
+
+1088
+00:44:01,460 --> 00:44:02,460
+trígrafas
+
+1089
+00:44:02,460 --> 00:44:03,460
+y para el candidato
+
+1090
+00:44:03,460 --> 00:44:04,460
+hace cumple que todos los
+
+1091
+00:44:04,460 --> 00:44:05,460
+unegramas que hay
+
+1092
+00:44:05,460 --> 00:44:06,460
+pertenece la referencia
+
+1093
+00:44:06,460 --> 00:44:07,460
+así que voy a tener
+
+1094
+00:44:07,460 --> 00:44:08,460
+dos de dos gits
+
+1095
+00:44:08,460 --> 00:44:09,460
+para los bígrafas voy a tener
+
+1096
+00:44:09,460 --> 00:44:10,460
+uno de uno
+
+1097
+00:44:10,460 --> 00:44:11,460
+pero para el candidato
+
+1098
+00:44:11,460 --> 00:44:12,460
+bé
+
+1099
+00:44:12,460 --> 00:44:13,460
+los unegramas
+
+1100
+00:44:13,460 --> 00:44:14,460
+me dan tres de tres
+
+1101
+00:44:14,460 --> 00:44:15,460
+leamos trígits
+
+1102
+00:44:15,460 --> 00:44:16,460
+los bígrafas no
+
+1103
+00:44:16,460 --> 00:44:17,460
+o sea tengo dos
+
+1104
+00:44:17,460 --> 00:44:18,460
+bígrafas posible
+
+1105
+00:44:18,460 --> 00:44:19,460
+sin ningún estado bien
+
+1106
+00:44:19,460 --> 00:44:20,460
+y los trígrafas tampoco
+
+1107
+00:44:20,460 --> 00:44:21,460
+tengo un trígrafas posible
+
+1108
+00:44:21,460 --> 00:44:22,460
+y no estaba bien
+
+1109
+00:44:22,460 --> 00:44:24,460
+entonces por ahora
+
+1110
+00:44:24,460 --> 00:44:25,460
+de vacanando de cat
+
+1111
+00:44:25,460 --> 00:44:26,460
+la candidato va de cat
+
+1112
+00:44:26,460 --> 00:44:27,460
+le va ganando
+
+1113
+00:44:27,460 --> 00:44:28,460
+a cat
+
+1114
+00:44:28,460 --> 00:44:30,460
+de cómo traducción
+
+1115
+00:44:30,460 --> 00:44:32,460
+bien
+
+1116
+00:44:32,460 --> 00:44:33,460
+qué puedo hacer con los
+
+1117
+00:44:33,460 --> 00:44:34,460
+contéos de
+
+1118
+00:44:34,460 --> 00:44:35,460
+enegramas
+
+1119
+00:44:35,460 --> 00:44:36,460
+lo que hago
+
+1120
+00:44:36,460 --> 00:44:37,460
+habitualmente
+
+1121
+00:44:37,460 --> 00:44:38,460
+o sea
+
+1122
+00:44:38,460 --> 00:44:40,460
+contar enegramas
+
+1123
+00:44:40,460 --> 00:44:42,460
+contará un
+
+1124
+00:44:42,460 --> 00:44:43,460
+grama, bígrafas
+
+1125
+00:44:43,460 --> 00:44:44,460
+tiramos
+
+1126
+00:44:44,460 --> 00:44:45,460
+si hacer con un poco
+
+1127
+00:44:45,460 --> 00:44:47,460
+lo que es de una presición
+
+1128
+00:44:47,460 --> 00:44:48,460
+de algo
+
+1129
+00:44:48,460 --> 00:44:49,460
+entonces
+
+1130
+00:44:49,460 --> 00:44:50,460
+lo que voy a hacer es
+
+1131
+00:44:50,460 --> 00:44:51,460
+contar los por separado
+
+1132
+00:44:51,460 --> 00:44:52,460
+voy a decir voy a contar
+
+1133
+00:44:52,460 --> 00:44:53,460
+todos los unegramas
+
+1134
+00:44:53,460 --> 00:44:55,460
+con una presición
+
+1135
+00:44:55,460 --> 00:44:57,460
+voy a decir que tengo
+
+1136
+00:44:57,460 --> 00:44:59,460
+el candidato se subí
+
+1137
+00:44:59,460 --> 00:45:00,460
+digamos un candidato que voy a
+
+1138
+00:45:00,460 --> 00:45:01,460
+considerar
+
+1139
+00:45:01,460 --> 00:45:02,460
+voy a contar
+
+1140
+00:45:02,460 --> 00:45:03,460
+los hits de orden n
+
+1141
+00:45:03,460 --> 00:45:04,460
+de ese subí
+
+1142
+00:45:04,460 --> 00:45:05,460
+digamos
+
+1143
+00:45:05,460 --> 00:45:06,460
+los hits de unigramas
+
+1144
+00:45:06,460 --> 00:45:08,460
+de ese subí
+
+1145
+00:45:08,460 --> 00:45:10,460
+voy a contar la candidata
+
+1146
+00:45:10,460 --> 00:45:11,460
+de unigramas
+
+1147
+00:45:11,460 --> 00:45:12,460
+totales que hay
+
+1148
+00:45:12,460 --> 00:45:13,460
+le voy a llamarte
+
+1149
+00:45:13,460 --> 00:45:14,460
+de ese subí
+
+1150
+00:45:14,460 --> 00:45:15,460
+pero además voy a
+
+1151
+00:45:15,460 --> 00:45:16,460
+hacer esto
+
+1152
+00:45:16,460 --> 00:45:17,460
+en vez de hacerlo
+
+1153
+00:45:17,460 --> 00:45:18,460
+para una sola oración
+
+1154
+00:45:18,460 --> 00:45:20,460
+para un candidato
+
+1155
+00:45:20,460 --> 00:45:21,460
+y su referencia
+
+1156
+00:45:21,460 --> 00:45:22,460
+le voy a hacer
+
+1157
+00:45:22,460 --> 00:45:23,460
+todos los unigramas
+
+1158
+00:45:23,460 --> 00:45:25,460
+que estaban en mis candidatos
+
+1159
+00:45:25,460 --> 00:45:26,460
+voy a ver cuanto
+
+1160
+00:45:26,460 --> 00:45:27,460
+de eso estaba bien
+
+1161
+00:45:27,460 --> 00:45:28,460
+y voy a hacer
+
+1162
+00:45:28,460 --> 00:45:29,460
+esta división
+
+1163
+00:45:29,460 --> 00:45:30,460
+entonces me va a dar
+
+1164
+00:45:30,460 --> 00:45:31,460
+que cuál es la presición
+
+1165
+00:45:31,460 --> 00:45:33,460
+en unigramas
+
+1166
+00:45:33,460 --> 00:45:34,460
+que va a hacer
+
+1167
+00:45:34,460 --> 00:45:35,460
+bueno
+
+1168
+00:45:35,460 --> 00:45:36,460
+tanta cantidad de unigramas
+
+1169
+00:45:36,460 --> 00:45:37,460
+estaban bien
+
+1170
+00:45:37,460 --> 00:45:38,460
+divididos
+
+1171
+00:45:38,460 --> 00:45:39,460
+toda la cantidad de unigramas
+
+1172
+00:45:39,460 --> 00:45:41,460
+que generó en los candidatos
+
+1173
+00:45:41,460 --> 00:45:42,460
+después voy a hacer eso
+
+1174
+00:45:42,460 --> 00:45:43,460
+para viramos
+
+1175
+00:45:43,460 --> 00:45:44,460
+voy a contar
+
+1176
+00:45:44,460 --> 00:45:45,460
+toda la cantidad de
+
+1177
+00:45:45,460 --> 00:45:46,460
+gramas que estaban bien
+
+1178
+00:45:46,460 --> 00:45:47,460
+porque estaban en el candidato
+
+1179
+00:45:47,460 --> 00:45:48,460
+en la referencia
+
+1180
+00:45:48,460 --> 00:45:49,460
+dividido toda la cantidad de
+
+1181
+00:45:49,460 --> 00:45:50,460
+gramas que en el candidato
+
+1182
+00:45:50,460 --> 00:45:51,460
+y voy a hacer lo mismo
+
+1183
+00:45:51,460 --> 00:45:52,460
+para 4 gramas
+
+1184
+00:45:52,460 --> 00:45:53,460
+en general se suele llegar
+
+1185
+00:45:53,460 --> 00:45:54,460
+hasta 4
+
+1186
+00:45:54,460 --> 00:45:55,460
+digamos entre el uso
+
+1187
+00:45:55,460 --> 00:45:56,460
+automática estadística
+
+1188
+00:45:56,460 --> 00:45:57,460
+la medida blue
+
+1189
+00:45:57,460 --> 00:45:58,460
+llega a calcular hasta
+
+1190
+00:45:58,460 --> 00:45:59,460
+4
+
+1191
+00:45:59,460 --> 00:46:00,460
+entonces bueno
+
+1192
+00:46:00,460 --> 00:46:01,460
+lo que me define
+
+1193
+00:46:01,460 --> 00:46:02,460
+es lo que se llama
+
+1194
+00:46:02,460 --> 00:46:03,460
+probabilidad de orden
+
+1195
+00:46:03,460 --> 00:46:04,460
+n
+
+1196
+00:46:04,460 --> 00:46:06,460
+la probabilidad
+
+1197
+00:46:06,460 --> 00:46:07,460
+precisión de orden n
+
+1198
+00:46:07,460 --> 00:46:08,460
+la precisión para unigramas
+
+1199
+00:46:08,460 --> 00:46:09,460
+la predición para virama
+
+1200
+00:46:09,460 --> 00:46:10,460
+la predición para
+
+1201
+00:46:10,460 --> 00:46:11,460
+3 gramas etcétera
+
+1202
+00:46:13,460 --> 00:46:14,460
+bien
+
+1203
+00:46:14,460 --> 00:46:15,460
+esta metrica
+
+1204
+00:46:15,460 --> 00:46:16,460
+que estamos construyendo
+
+1205
+00:46:16,460 --> 00:46:17,460
+es bastante
+
+1206
+00:46:17,460 --> 00:46:18,460
+fácil de engañar
+
+1207
+00:46:18,460 --> 00:46:19,460
+en realidad
+
+1208
+00:46:19,460 --> 00:46:20,460
+es una probabilidad
+
+1209
+00:46:20,460 --> 00:46:21,460
+por ejemplo
+
+1210
+00:46:21,460 --> 00:46:22,460
+la probabilidad de orden 1
+
+1211
+00:46:22,460 --> 00:46:23,460
+y la pueden ganhar
+
+1212
+00:46:23,460 --> 00:46:24,460
+muy fácil porque
+
+1213
+00:46:24,460 --> 00:46:25,460
+yo me puedo construir
+
+1214
+00:46:25,460 --> 00:46:26,460
+un candidato
+
+1215
+00:46:26,460 --> 00:46:27,460
+que tiene siempre
+
+1216
+00:46:27,460 --> 00:46:28,460
+la misma palabra
+
+1217
+00:46:28,460 --> 00:46:29,460
+puede decir bueno
+
+1218
+00:46:29,460 --> 00:46:30,460
+un candidato para
+
+1219
+00:46:30,460 --> 00:46:31,460
+la referencia de cazato
+
+1220
+00:46:31,460 --> 00:46:32,460
+de mat es
+
+1221
+00:46:32,460 --> 00:46:33,460
+el candidato
+
+1222
+00:46:33,460 --> 00:46:34,460
+desde desde
+
+1223
+00:46:34,460 --> 00:46:36,460
+como yo justo
+
+1224
+00:46:36,460 --> 00:46:37,460
+le emboqué a una palabra
+
+1225
+00:46:37,460 --> 00:46:38,460
+que está en la referencia
+
+1226
+00:46:38,460 --> 00:46:39,460
+entonces cuento
+
+1227
+00:46:39,460 --> 00:46:40,460
+los unigramas
+
+1228
+00:46:40,460 --> 00:46:41,460
+y me da que hay
+
+1229
+00:46:41,460 --> 00:46:42,460
+6 hits
+
+1230
+00:46:42,460 --> 00:46:43,460
+de 6
+
+1231
+00:46:43,460 --> 00:46:44,460
+a pesar de que la traducción
+
+1232
+00:46:44,460 --> 00:46:45,460
+es horrible
+
+1233
+00:46:45,460 --> 00:46:46,460
+entonces como va
+
+1234
+00:46:46,460 --> 00:46:47,460
+para evitar esto
+
+1235
+00:46:47,460 --> 00:46:48,460
+lo que se suele hacer
+
+1236
+00:46:48,460 --> 00:46:49,460
+es que significa que
+
+1237
+00:46:49,460 --> 00:46:50,460
+cuento cuanto es
+
+1238
+00:46:50,460 --> 00:46:51,460
+la cantidad máxima
+
+1239
+00:46:51,460 --> 00:46:52,460
+de palabras en la referencia
+
+1240
+00:46:52,460 --> 00:46:53,460
+y no permito que haya
+
+1241
+00:46:53,460 --> 00:46:54,460
+más de eso
+
+1242
+00:46:54,460 --> 00:46:55,460
+entonces yo tengo
+
+1243
+00:46:55,460 --> 00:46:56,460
+hasta 2 palabras de
+
+1244
+00:46:56,460 --> 00:46:57,460
+entonces no puedo
+
+1245
+00:46:57,460 --> 00:46:58,460
+contar 6 de 6
+
+1246
+00:46:58,460 --> 00:46:59,460
+tener a contar
+
+1247
+00:46:59,460 --> 00:47:00,460
+máximo 2 de 6
+
+1248
+00:47:00,460 --> 00:47:01,460
+entonces ahí
+
+1249
+00:47:01,460 --> 00:47:02,460
+evitamos
+
+1250
+00:47:02,460 --> 00:47:03,460
+ese problema
+
+1251
+00:47:03,460 --> 00:47:04,460
+de que bueno
+
+1252
+00:47:04,460 --> 00:47:05,460
+alguien se va el vivo
+
+1253
+00:47:05,460 --> 00:47:06,460
+y generé simplemente
+
+1254
+00:47:06,460 --> 00:47:07,460
+una sola palabra
+
+1255
+00:47:07,460 --> 00:47:10,460
+bien
+
+1256
+00:47:10,460 --> 00:47:11,460
+entonces hasta ahora
+
+1257
+00:47:11,460 --> 00:47:12,460
+vimos dos cosas
+
+1258
+00:47:12,460 --> 00:47:13,460
+calculamos
+
+1259
+00:47:13,460 --> 00:47:14,460
+la precisión
+
+1260
+00:47:14,460 --> 00:47:15,460
+de ordenen
+
+1261
+00:47:15,460 --> 00:47:16,460
+la precisión de
+
+1262
+00:47:16,460 --> 00:47:17,460
+cada uno de los
+
+1263
+00:47:17,460 --> 00:47:18,460
+que hemos tomado
+
+1264
+00:47:18,460 --> 00:47:19,460
+los 2
+
+1265
+00:47:19,460 --> 00:47:20,460
+seguimos que vamos
+
+1266
+00:47:20,460 --> 00:47:21,460
+a hacer clipping
+
+1267
+00:47:21,460 --> 00:47:22,460
+para evitar
+
+1268
+00:47:22,460 --> 00:47:23,460
+pasarnos
+
+1269
+00:47:23,460 --> 00:47:24,460
+de contigo
+
+1270
+00:47:24,460 --> 00:47:25,460
+las palabras que aparecen
+
+1271
+00:47:25,460 --> 00:47:27,460
+más de naves
+
+1272
+00:47:27,460 --> 00:47:29,460
+y lo tercero que pasa
+
+1273
+00:47:29,460 --> 00:47:30,460
+es
+
+1274
+00:47:30,460 --> 00:47:31,460
+veíamos en este ejemplo
+
+1275
+00:47:31,460 --> 00:47:32,460
+acá
+
+1276
+00:47:32,460 --> 00:47:33,460
+tenemos dos candidatos
+
+1277
+00:47:33,460 --> 00:47:34,460
+de cat
+
+1278
+00:47:34,460 --> 00:47:35,460
+y cat
+
+1279
+00:47:35,460 --> 00:47:36,460
+y lo que pasaba
+
+1280
+00:47:36,460 --> 00:47:37,460
+acá
+
+1281
+00:47:37,460 --> 00:47:38,460
+era que
+
+1282
+00:47:38,460 --> 00:47:39,460
+le estaba haciendo
+
+1283
+00:47:39,460 --> 00:47:40,460
+mejor
+
+1284
+00:47:40,460 --> 00:47:43,460
+a la traducción
+
+1285
+00:47:43,460 --> 00:47:44,460
+de cat
+
+1286
+00:47:44,460 --> 00:47:45,460
+porque
+
+1287
+00:47:45,460 --> 00:47:46,460
+tenía todos los unigramas
+
+1288
+00:47:46,460 --> 00:47:47,460
+en cambio el candidato
+
+1289
+00:47:47,460 --> 00:47:48,460
+veno
+
+1290
+00:47:48,460 --> 00:47:49,460
+el candidato
+
+1291
+00:47:49,460 --> 00:47:50,460
+tiene unigramas
+
+1292
+00:47:50,460 --> 00:47:51,460
+que están pero
+
+1293
+00:47:51,460 --> 00:47:52,460
+biigramas
+
+1294
+00:47:52,460 --> 00:47:53,460
+que no están
+
+1295
+00:47:53,460 --> 00:47:54,460
+entonces en cuanto a precisión
+
+1296
+00:47:54,460 --> 00:47:56,460
+el candidato va bastante
+
+1297
+00:47:56,460 --> 00:47:57,460
+mejor
+
+1298
+00:47:57,460 --> 00:47:58,460
+porque el candidato
+
+1299
+00:47:58,460 --> 00:47:59,460
+es un candidato
+
+1300
+00:47:59,460 --> 00:48:00,460
+más corto
+
+1301
+00:48:00,460 --> 00:48:01,460
+que
+
+1302
+00:48:01,460 --> 00:48:02,460
+la referencia
+
+1303
+00:48:02,460 --> 00:48:03,460
+o sea
+
+1304
+00:48:03,460 --> 00:48:04,460
+es un candidato
+
+1305
+00:48:04,460 --> 00:48:05,460
+que tiene menos palabras
+
+1306
+00:48:05,460 --> 00:48:06,460
+como venimos
+
+1307
+00:48:06,460 --> 00:48:07,460
+definiendo
+
+1308
+00:48:07,460 --> 00:48:08,460
+la metrica
+
+1309
+00:48:08,460 --> 00:48:09,460
+si yo tengo una referencia
+
+1310
+00:48:09,460 --> 00:48:10,460
+y después tengo un candidato
+
+1311
+00:48:10,460 --> 00:48:11,460
+que es justo
+
+1312
+00:48:11,460 --> 00:48:12,460
+una
+
+1313
+00:48:12,460 --> 00:48:13,460
+un prefijo
+
+1314
+00:48:13,460 --> 00:48:14,460
+de la referencia
+
+1315
+00:48:14,460 --> 00:48:15,460
+entonces va a cumplir
+
+1316
+00:48:15,460 --> 00:48:17,460
+la referencia
+
+1317
+00:48:17,460 --> 00:48:19,460
+porque todos los
+
+1318
+00:48:19,460 --> 00:48:21,460
+enegramas que tiene
+
+1319
+00:48:21,460 --> 00:48:22,460
+van a partner
+
+1320
+00:48:22,460 --> 00:48:23,460
+a la referencia
+
+1321
+00:48:23,460 --> 00:48:24,460
+así que lo que hace
+
+1322
+00:48:24,460 --> 00:48:25,460
+la medía
+
+1323
+00:48:25,460 --> 00:48:26,460
+es penalizar
+
+1324
+00:48:26,460 --> 00:48:27,460
+ese tipo de comportamientos
+
+1325
+00:48:27,460 --> 00:48:28,460
+penaliza
+
+1326
+00:48:28,460 --> 00:48:29,460
+los candidatos
+
+1327
+00:48:29,460 --> 00:48:30,460
+que son
+
+1328
+00:48:30,460 --> 00:48:31,460
+muy cortos
+
+1329
+00:48:31,460 --> 00:48:35,460
+para que digamos
+
+1330
+00:48:35,460 --> 00:48:36,460
+le de
+
+1331
+00:48:36,460 --> 00:48:37,460
+menos
+
+1332
+00:48:37,460 --> 00:48:38,460
+puntaje
+
+1333
+00:48:38,460 --> 00:48:39,460
+entonces
+
+1334
+00:48:39,460 --> 00:48:40,460
+porque se penaliza
+
+1335
+00:48:40,460 --> 00:48:41,460
+los candidatos
+
+1336
+00:48:41,460 --> 00:48:42,460
+y no los candidatos
+
+1337
+00:48:42,460 --> 00:48:43,460
+largos
+
+1338
+00:48:43,460 --> 00:48:44,460
+porque les parece
+
+1339
+00:48:44,460 --> 00:48:45,460
+penalizan
+
+1340
+00:48:45,460 --> 00:48:46,460
+pero los hemos dado largo
+
+1341
+00:48:46,460 --> 00:48:47,460
+no
+
+1342
+00:48:47,460 --> 00:48:48,460
+las respuestas están
+
+1343
+00:48:48,460 --> 00:48:49,460
+las láites
+
+1344
+00:48:49,460 --> 00:48:50,460
+pero bueno
+
+1345
+00:48:50,460 --> 00:48:51,460
+se penaliza
+
+1346
+00:48:51,460 --> 00:48:52,460
+los candidatos
+
+1347
+00:48:52,460 --> 00:48:53,460
+porque los candidatos
+
+1348
+00:48:53,460 --> 00:48:54,460
+largos
+
+1349
+00:48:54,460 --> 00:48:55,460
+y yo genero un candidato
+
+1350
+00:48:55,460 --> 00:48:56,460
+que es mucho más largo
+
+1351
+00:48:56,460 --> 00:48:57,460
+que la referencia
+
+1352
+00:48:57,460 --> 00:48:58,460
+lo que va a pasar
+
+1353
+00:48:58,460 --> 00:48:59,460
+es que ese candidato tiene
+
+1354
+00:48:59,460 --> 00:49:00,460
+negra más
+
+1355
+00:49:00,460 --> 00:49:01,460
+seguramente tiene
+
+1356
+00:49:01,460 --> 00:49:02,460
+negra más que no
+
+1357
+00:49:02,460 --> 00:49:03,460
+pertenece en la referencia
+
+1358
+00:49:03,460 --> 00:49:04,460
+entonces
+
+1359
+00:49:04,460 --> 00:49:05,460
+en el contigo
+
+1360
+00:49:05,460 --> 00:49:06,460
+de precisión
+
+1361
+00:49:06,460 --> 00:49:08,460
+me va a dar un puntaje
+
+1362
+00:49:08,460 --> 00:49:11,460
+más bajo
+
+1363
+00:49:11,460 --> 00:49:12,460
+entonces
+
+1364
+00:49:12,460 --> 00:49:14,460
+necesito otro tipo de penalización
+
+1365
+00:49:14,460 --> 00:49:15,460
+para evitar eso
+
+1366
+00:49:17,460 --> 00:49:18,460
+bien
+
+1367
+00:49:18,460 --> 00:49:19,460
+entonces
+
+1368
+00:49:19,460 --> 00:49:20,460
+lo que vamos a dar es
+
+1369
+00:49:20,460 --> 00:49:21,460
+una cosa de llama
+
+1370
+00:49:21,460 --> 00:49:22,460
+penalización
+
+1371
+00:49:22,460 --> 00:49:23,460
+private penal
+
+1372
+00:49:23,460 --> 00:49:24,460
+que es un puntaje
+
+1373
+00:49:24,460 --> 00:49:25,460
+que se le da
+
+1374
+00:49:25,460 --> 00:49:26,460
+en referencia
+
+1375
+00:49:26,460 --> 00:49:27,460
+que tan cortos
+
+1376
+00:49:27,460 --> 00:49:28,460
+un candidato
+
+1377
+00:49:28,460 --> 00:49:29,460
+respecto a la referencia
+
+1378
+00:49:29,460 --> 00:49:30,460
+y bueno
+
+1379
+00:49:30,460 --> 00:49:31,460
+se calcula
+
+1380
+00:49:31,460 --> 00:49:32,460
+teniendo en cuenta
+
+1381
+00:49:32,460 --> 00:49:33,460
+todo el largo
+
+1382
+00:49:33,460 --> 00:49:35,460
+el documento
+
+1383
+00:49:35,460 --> 00:49:38,460
+traducido
+
+1384
+00:49:38,460 --> 00:49:42,460
+y la referencia
+
+1385
+00:49:42,460 --> 00:49:44,460
+se prima es el largo total
+
+1386
+00:49:44,460 --> 00:49:46,460
+de todos los candidatos
+
+1387
+00:49:46,460 --> 00:49:47,460
+y entonces
+
+1388
+00:49:47,460 --> 00:49:48,460
+si la cantidad
+
+1389
+00:49:48,460 --> 00:49:50,460
+si el largo de los candidatos
+
+1390
+00:49:50,460 --> 00:49:51,460
+es mayor
+
+1391
+00:49:51,460 --> 00:49:52,460
+a largo de las referencias
+
+1392
+00:49:52,460 --> 00:49:53,460
+no hay penalización
+
+1393
+00:49:53,460 --> 00:49:54,460
+le pongo uno
+
+1394
+00:49:54,460 --> 00:49:56,460
+si el largo total de los candidatos
+
+1395
+00:49:56,460 --> 00:49:57,460
+es menor
+
+1396
+00:49:57,460 --> 00:49:58,460
+a largo de las referencias
+
+1397
+00:49:58,460 --> 00:49:59,460
+entonces lo calculo
+
+1398
+00:49:59,460 --> 00:50:00,460
+como ella
+
+1399
+00:50:00,460 --> 00:50:02,460
+a la un o menos
+
+1400
+00:50:02,460 --> 00:50:04,460
+la división entre los largos
+
+1401
+00:50:04,460 --> 00:50:06,460
+esto es una definición
+
+1402
+00:50:07,460 --> 00:50:08,460
+y en realidad lo que
+
+1403
+00:50:08,460 --> 00:50:09,460
+lo que trata de hacer
+
+1404
+00:50:09,460 --> 00:50:10,460
+es penalizar
+
+1405
+00:50:10,460 --> 00:50:11,460
+traducciones
+
+1406
+00:50:11,460 --> 00:50:12,460
+que son muy cortas
+
+1407
+00:50:12,460 --> 00:50:13,460
+entonces yo tenía un candidato
+
+1408
+00:50:13,460 --> 00:50:14,460
+que tenía
+
+1409
+00:50:14,460 --> 00:50:15,460
+cinco palabras
+
+1410
+00:50:15,460 --> 00:50:17,460
+mientras referencia tenía 10
+
+1411
+00:50:17,460 --> 00:50:18,460
+le voy a penalizar
+
+1412
+00:50:18,460 --> 00:50:19,460
+fuertemente
+
+1413
+00:50:19,460 --> 00:50:21,460
+le voy a dar un 0.37 de penalización
+
+1414
+00:50:21,460 --> 00:50:22,460
+si yo tenía un candidato
+
+1415
+00:50:22,460 --> 00:50:23,460
+que estaba que era menor
+
+1416
+00:50:23,460 --> 00:50:24,460
+pero era
+
+1417
+00:50:24,460 --> 00:50:25,460
+más cercano
+
+1418
+00:50:25,460 --> 00:50:26,460
+entonces la penalización
+
+1419
+00:50:26,460 --> 00:50:27,460
+no es tanta
+
+1420
+00:50:27,460 --> 00:50:28,460
+de 0.78
+
+1421
+00:50:28,460 --> 00:50:29,460
+y después
+
+1422
+00:50:29,460 --> 00:50:31,460
+si los largos oniguales
+
+1423
+00:50:31,460 --> 00:50:32,460
+o si el candidato es más largo
+
+1424
+00:50:32,460 --> 00:50:33,460
+no penalizó nada
+
+1425
+00:50:33,460 --> 00:50:34,460
+le doy uno
+
+1426
+00:50:34,460 --> 00:50:35,460
+de puntaje
+
+1427
+00:50:35,460 --> 00:50:36,460
+bueno entonces
+
+1428
+00:50:36,460 --> 00:50:37,460
+la métrica blú
+
+1429
+00:50:37,460 --> 00:50:38,460
+que es una métrica
+
+1430
+00:50:38,460 --> 00:50:39,460
+muy usada
+
+1431
+00:50:39,460 --> 00:50:41,460
+en traducción automática
+
+1432
+00:50:41,460 --> 00:50:42,460
+pone todo estos juntos
+
+1433
+00:50:42,460 --> 00:50:43,460
+digamos todos estos pedacitos
+
+1434
+00:50:43,460 --> 00:50:44,460
+que estoy moviendo
+
+1435
+00:50:44,460 --> 00:50:45,460
+los pones juntos
+
+1436
+00:50:45,460 --> 00:50:46,460
+en un solo cálculo
+
+1437
+00:50:46,460 --> 00:50:47,460
+blú se calcula
+
+1438
+00:50:47,460 --> 00:50:48,460
+como
+
+1439
+00:50:48,460 --> 00:50:49,460
+la penalización
+
+1440
+00:50:49,460 --> 00:50:50,460
+por la brevedad
+
+1441
+00:50:50,460 --> 00:50:51,460
+el brevity penalty
+
+1442
+00:50:51,460 --> 00:50:52,460
+por Eala
+
+1443
+00:50:52,460 --> 00:50:53,460
+la suma
+
+1444
+00:50:53,460 --> 00:50:55,460
+de
+
+1445
+00:50:55,460 --> 00:50:56,460
+las precisiones
+
+1446
+00:50:56,460 --> 00:50:57,460
+de ordené
+
+1447
+00:50:57,460 --> 00:50:58,460
+y yo vas a poner
+
+1448
+00:50:58,460 --> 00:50:59,460
+a cada vez
+
+1449
+00:50:59,460 --> 00:51:00,460
+un que se negaron
+
+1450
+00:51:00,460 --> 00:51:01,460
+tiene más
+
+1451
+00:51:01,460 --> 00:51:02,460
+qué palabras rollo
+
+1452
+00:51:03,460 --> 00:51:15,460
+por ejemplo
+
+1453
+00:51:15,460 --> 00:51:16,460
+bueno
+
+1454
+00:51:16,460 --> 00:51:17,460
+esta palabra
+
+1455
+00:51:17,460 --> 00:51:19,460
+no o sea es un unirama
+
+1456
+00:51:19,460 --> 00:51:20,460
+que le va a dar cero de precisión
+
+1457
+00:51:20,460 --> 00:51:21,460
+digamos
+
+1458
+00:51:21,460 --> 00:51:22,460
+porque no está
+
+1459
+00:51:22,460 --> 00:51:23,460
+además participan un
+
+1460
+00:51:23,460 --> 00:51:24,460
+grama que también le va a dar
+
+1461
+00:51:24,460 --> 00:51:25,460
+más la precisión porque tampoco
+
+1462
+00:51:25,460 --> 00:51:26,460
+está el grama
+
+1463
+00:51:26,460 --> 00:51:27,460
+entonces
+
+1464
+00:51:27,460 --> 00:51:28,460
+lo que
+
+1465
+00:51:28,460 --> 00:51:29,460
+restan realidad
+
+1466
+00:51:29,460 --> 00:51:30,460
+porque no está sumando
+
+1467
+00:51:30,460 --> 00:51:32,460
+un 2, 3, 4, 5, 6, 7
+
+1468
+00:51:32,460 --> 00:51:33,460
+uniramas
+
+1469
+00:51:33,460 --> 00:51:34,460
+de los cuales se están bien
+
+1470
+00:51:34,460 --> 00:51:35,460
+pero hay uno que no
+
+1471
+00:51:35,460 --> 00:51:37,460
+en cambio
+
+1472
+00:51:37,460 --> 00:51:38,460
+en este tengo seis uniramas
+
+1473
+00:51:38,460 --> 00:51:39,460
+de los cuales los seis
+
+1474
+00:51:39,460 --> 00:51:40,460
+también
+
+1475
+00:51:40,460 --> 00:51:41,460
+entonces acá
+
+1476
+00:51:41,460 --> 00:51:42,460
+el hecho de agregar
+
+1477
+00:51:42,460 --> 00:51:43,460
+palabras que
+
+1478
+00:51:43,460 --> 00:51:44,460
+no están bien
+
+1479
+00:51:44,460 --> 00:51:45,460
+no están en la referencia
+
+1480
+00:51:45,460 --> 00:51:47,460
+ya te penaliza
+
+1481
+00:51:48,460 --> 00:51:49,460
+la diferencia es
+
+1482
+00:51:49,460 --> 00:51:50,460
+cuando yo tengo una traducción
+
+1483
+00:51:50,460 --> 00:51:51,460
+que más corta
+
+1484
+00:51:51,460 --> 00:51:52,460
+y yo diría
+
+1485
+00:51:52,460 --> 00:51:53,460
+solo de cazatón
+
+1486
+00:51:53,460 --> 00:51:54,460
+entonces hay más corta
+
+1487
+00:51:54,460 --> 00:51:55,460
+y no tengo forma de penalizarlo
+
+1488
+00:51:55,460 --> 00:51:56,460
+solo con la precisión
+
+1489
+00:51:56,460 --> 00:51:58,460
+entonces tengo el otro penalizador
+
+1490
+00:51:58,460 --> 00:51:59,460
+que porque la traducción es
+
+1491
+00:51:59,460 --> 00:51:59,960
+muy corto.
+
+1492
+00:52:01,460 --> 00:52:03,460
+Bien, entonces
+
+1493
+00:52:03,460 --> 00:52:04,460
+se está comentando
+
+1494
+00:52:04,460 --> 00:52:06,460
+primero
+
+1495
+00:52:06,460 --> 00:52:07,460
+acá
+
+1496
+00:52:07,460 --> 00:52:09,460
+la media blusa
+
+1497
+00:52:09,460 --> 00:52:10,460
+define como
+
+1498
+00:52:10,460 --> 00:52:12,460
+una media geométrica
+
+1499
+00:52:12,460 --> 00:52:14,460
+que es una definición de
+
+1500
+00:52:14,460 --> 00:52:15,460
+media geométrica
+
+1501
+00:52:15,460 --> 00:52:16,460
+de las precisiones de orden en
+
+1502
+00:52:16,460 --> 00:52:18,460
+también tiene un peso
+
+1503
+00:52:18,460 --> 00:52:19,460
+por precisión
+
+1504
+00:52:19,460 --> 00:52:20,460
+que se puede variar
+
+1505
+00:52:20,460 --> 00:52:21,460
+pero en general se utiliza
+
+1506
+00:52:21,460 --> 00:52:22,460
+un mismo peso para todos
+
+1507
+00:52:22,460 --> 00:52:24,460
+multiplicado
+
+1508
+00:52:24,460 --> 00:52:25,460
+por la penalización
+
+1509
+00:52:25,460 --> 00:52:26,460
+pobrevedad
+
+1510
+00:52:31,460 --> 00:52:32,460
+bien
+
+1511
+00:52:32,460 --> 00:52:33,460
+eso
+
+1512
+00:52:33,460 --> 00:52:34,460
+eso
+
+1513
+00:52:34,460 --> 00:52:35,460
+eso es la definición
+
+1514
+00:52:35,460 --> 00:52:36,460
+de la media geométrica
+
+1515
+00:52:36,460 --> 00:52:37,460
+que se utiliza
+
+1516
+00:52:37,460 --> 00:52:38,460
+muchísimo
+
+1517
+00:52:38,460 --> 00:52:39,460
+esos contagios que debemos
+
+1518
+00:52:39,460 --> 00:52:40,460
+de 25 con 12
+
+1519
+00:52:40,460 --> 00:52:41,460
+y 31 con algo
+
+1520
+00:52:41,460 --> 00:52:42,460
+eran ejemplos
+
+1521
+00:52:42,460 --> 00:52:43,460
+de métrica blusa
+
+1522
+00:52:43,460 --> 00:52:44,460
+aplicados a un sistema
+
+1523
+00:52:44,460 --> 00:52:46,460
+y bueno
+
+1524
+00:52:46,460 --> 00:52:47,460
+una cosa
+
+1525
+00:52:47,460 --> 00:52:48,460
+importante
+
+1526
+00:52:48,460 --> 00:52:49,460
+algunos comentarios
+
+1527
+00:52:49,460 --> 00:52:50,460
+importantes
+
+1528
+00:52:50,460 --> 00:52:51,460
+es que en general
+
+1529
+00:52:51,460 --> 00:52:52,460
+cuando un sistema
+
+1530
+00:52:52,460 --> 00:52:53,460
+le da mejor
+
+1531
+00:52:53,460 --> 00:52:54,460
+digamos con un conjunto de traducciones
+
+1532
+00:52:54,460 --> 00:52:55,460
+le va mejor
+
+1533
+00:52:55,460 --> 00:52:56,460
+en métrica blusa
+
+1534
+00:52:56,460 --> 00:52:57,460
+también le va mejor
+
+1535
+00:52:57,460 --> 00:52:58,460
+con un conjunto de humanos
+
+1536
+00:52:58,460 --> 00:52:59,460
+que va le buen en sistema
+
+1537
+00:52:59,460 --> 00:53:01,460
+o sea que tiene una correlación bastante buena
+
+1538
+00:53:01,460 --> 00:53:02,460
+con lo que es
+
+1539
+00:53:02,460 --> 00:53:04,460
+la evaluación subjetiva humana
+
+1540
+00:53:04,460 --> 00:53:05,460
+pero como contra
+
+1541
+00:53:05,460 --> 00:53:06,460
+es difícil de interpretar
+
+1542
+00:53:06,460 --> 00:53:07,460
+estos contagios
+
+1543
+00:53:07,460 --> 00:53:08,460
+o sea, si yo tengo
+
+1544
+00:53:08,460 --> 00:53:09,460
+un contagio de
+
+1545
+00:53:09,460 --> 00:53:11,460
+como nos pasaba de tener un contagio de 31
+
+1546
+00:53:11,460 --> 00:53:12,460
+en realidad un 31
+
+1547
+00:53:12,460 --> 00:53:13,460
+es un número
+
+1548
+00:53:13,460 --> 00:53:14,460
+que puede ser muy bueno
+
+1549
+00:53:14,460 --> 00:53:15,460
+muy malo
+
+1550
+00:53:15,460 --> 00:53:16,460
+dependiendo del idioma
+
+1551
+00:53:16,460 --> 00:53:18,460
+pero
+
+1552
+00:53:18,460 --> 00:53:19,460
+o sea
+
+1553
+00:53:19,460 --> 00:53:20,460
+si todos salí la bien
+
+1554
+00:53:20,460 --> 00:53:21,460
+y yo tradujer exactamente
+
+1555
+00:53:21,460 --> 00:53:22,460
+lo mismo que están las referencias
+
+1556
+00:53:22,460 --> 00:53:23,460
+por construcción
+
+1557
+00:53:23,460 --> 00:53:24,460
+la media medaria 1
+
+1558
+00:53:24,460 --> 00:53:25,460
+pero en realidad es
+
+1559
+00:53:25,460 --> 00:53:26,460
+muy difícil traducir
+
+1560
+00:53:26,460 --> 00:53:28,460
+exactamente lo que están las referencias
+
+1561
+00:53:28,460 --> 00:53:29,460
+no es cierto que exista
+
+1562
+00:53:29,460 --> 00:53:30,460
+una única traducción posible
+
+1563
+00:53:30,460 --> 00:53:32,460
+en la traducción
+
+1564
+00:53:32,460 --> 00:53:33,460
+digamos humana
+
+1565
+00:53:33,460 --> 00:53:34,460
+oraciones
+
+1566
+00:53:34,460 --> 00:53:35,460
+pueden traducir
+
+1567
+00:53:35,460 --> 00:53:37,460
+de manera distinta y estar igualmente bien
+
+1568
+00:53:37,460 --> 00:53:38,460
+entonces es muy difícil tener
+
+1569
+00:53:38,460 --> 00:53:39,460
+un conjunto de referencia
+
+1570
+00:53:39,460 --> 00:53:41,460
+que contempla todas las posibilidades
+
+1571
+00:53:41,460 --> 00:53:42,460
+así que mi traductor
+
+1572
+00:53:42,460 --> 00:53:43,460
+capaz que anda barbaro
+
+1573
+00:53:43,460 --> 00:53:44,460
+pero
+
+1574
+00:53:44,460 --> 00:53:45,460
+el puntaje aún no es uno
+
+1575
+00:53:45,460 --> 00:53:46,460
+no es cien
+
+1576
+00:53:46,460 --> 00:53:47,460
+digamos
+
+1577
+00:53:47,460 --> 00:53:48,460
+porque
+
+1578
+00:53:48,460 --> 00:53:49,460
+está elegiendo
+
+1579
+00:53:49,460 --> 00:53:50,460
+palabras distintas
+
+1580
+00:53:50,460 --> 00:53:51,460
+o elegiendo
+
+1581
+00:53:51,460 --> 00:53:53,460
+formas de escribir las oraciones distintas
+
+1582
+00:53:53,460 --> 00:53:55,460
+entonces bueno
+
+1583
+00:53:55,460 --> 00:53:57,460
+por eso es difícil interpretar
+
+1584
+00:53:58,460 --> 00:54:00,460
+un puntaje blu
+
+1585
+00:54:00,460 --> 00:54:01,460
+de 30 o de 50
+
+1586
+00:54:01,460 --> 00:54:03,460
+o sea de 0.3 o de 0.5
+
+1587
+00:54:03,460 --> 00:54:04,460
+y puede ser buenísimo
+
+1588
+00:54:04,460 --> 00:54:05,460
+para ese sistema
+
+1589
+00:54:07,460 --> 00:54:08,460
+pero
+
+1590
+00:54:08,460 --> 00:54:10,460
+para algo que sí me sirve
+
+1591
+00:54:10,460 --> 00:54:11,460
+muchísimo el
+
+1592
+00:54:11,460 --> 00:54:12,460
+porcentaje
+
+1593
+00:54:12,460 --> 00:54:13,460
+digamos el puntaje de blu
+
+1594
+00:54:13,460 --> 00:54:14,460
+es para decir
+
+1595
+00:54:14,460 --> 00:54:15,460
+yo tengo mi sistema
+
+1596
+00:54:15,460 --> 00:54:16,460
+luego a luz
+
+1597
+00:54:16,460 --> 00:54:17,460
+después hago algunos cambios
+
+1598
+00:54:17,460 --> 00:54:18,460
+evaluado de vuelta
+
+1599
+00:54:18,460 --> 00:54:19,460
+y si subió
+
+1600
+00:54:19,460 --> 00:54:20,460
+la performa
+
+1601
+00:54:20,460 --> 00:54:21,460
+según el puntaje blu
+
+1602
+00:54:21,460 --> 00:54:22,460
+entonces estoy seguro
+
+1603
+00:54:22,460 --> 00:54:23,460
+de que mejoro
+
+1604
+00:54:23,460 --> 00:54:24,460
+porque hay una correlación
+
+1605
+00:54:24,460 --> 00:54:25,460
+con la evaluación subjetiva
+
+1606
+00:54:28,460 --> 00:54:30,460
+para pasar de español
+
+1607
+00:54:30,460 --> 00:54:34,460
+en inglés
+
+1608
+00:54:34,460 --> 00:54:37,460
+en realidad, que pasa que entre nás otro
+
+1609
+00:54:37,460 --> 00:54:39,460
+trautor
+
+1610
+00:54:39,460 --> 00:54:42,460
+no, acá estoy hablando
+
+1611
+00:54:42,460 --> 00:54:44,460
+solo
+
+1612
+00:54:44,460 --> 00:54:45,460
+acá estoy hablando
+
+1613
+00:54:45,460 --> 00:54:46,460
+solamente
+
+1614
+00:54:46,460 --> 00:54:47,460
+en un sentido
+
+1615
+00:54:47,460 --> 00:54:48,460
+yo tenía un sistema español
+
+1616
+00:54:48,460 --> 00:54:50,460
+por ejemplo
+
+1617
+00:54:50,460 --> 00:54:51,460
+digo
+
+1618
+00:54:51,460 --> 00:54:52,460
+una oración español
+
+1619
+00:54:52,460 --> 00:54:54,460
+el gato
+
+1620
+00:54:54,460 --> 00:54:56,460
+se sentó
+
+1621
+00:54:57,460 --> 00:54:58,460
+y hay que me dijo
+
+1622
+00:54:58,460 --> 00:54:59,460
+la traducción de referencia
+
+1623
+00:54:59,460 --> 00:55:00,460
+de eso es
+
+1624
+00:55:00,460 --> 00:55:01,460
+de Catsat
+
+1625
+00:55:01,460 --> 00:55:02,460
+y mi sistema me dijo
+
+1626
+00:55:02,460 --> 00:55:03,460
+bueno, primera
+
+1627
+00:55:03,460 --> 00:55:04,460
+traducción es posible
+
+1628
+00:55:04,460 --> 00:55:05,460
+son de Catsat
+
+1629
+00:55:05,460 --> 00:55:06,460
+de
+
+1630
+00:55:06,460 --> 00:55:08,460
+entonces yo tenía un sistema
+
+1631
+00:55:08,460 --> 00:55:09,460
+en español
+
+1632
+00:55:09,460 --> 00:55:10,460
+pero que traduce
+
+1633
+00:55:10,460 --> 00:55:12,460
+el inglés
+
+1634
+00:55:12,460 --> 00:55:13,460
+pero no estoy traduciendo
+
+1635
+00:55:13,460 --> 00:55:15,460
+en el otro sentido
+
+1636
+00:55:15,460 --> 00:55:16,460
+no, no es como
+
+1637
+00:55:16,460 --> 00:55:17,460
+la canción es acá
+
+1638
+00:55:17,460 --> 00:55:18,460
+partida
+
+1639
+00:55:18,460 --> 00:55:19,460
+el español y el inglés
+
+1640
+00:55:19,460 --> 00:55:20,460
+estoy hablando de evaluar
+
+1641
+00:55:20,460 --> 00:55:21,460
+comparando las frases en inglés
+
+1642
+00:55:21,460 --> 00:55:22,460
+esperadas
+
+1643
+00:55:22,460 --> 00:55:24,460
+con la frase en inglés generadas
+
+1644
+00:55:24,460 --> 00:55:25,460
+claro
+
+1645
+00:55:26,460 --> 00:55:28,460
+está en el mismo idioma
+
+1646
+00:55:28,460 --> 00:55:30,460
+o sea, lo que no hemos
+
+1647
+00:55:30,460 --> 00:55:31,460
+tramos a caer a cualar
+
+1648
+00:55:31,460 --> 00:55:32,460
+la oración origen
+
+1649
+00:55:32,460 --> 00:55:33,460
+porque para evaluar
+
+1650
+00:55:33,460 --> 00:55:34,460
+no no es importante
+
+1651
+00:55:34,460 --> 00:55:35,460
+para evaluar no es importante
+
+1652
+00:55:35,460 --> 00:55:37,460
+que comparar solamente
+
+1653
+00:55:37,460 --> 00:55:38,460
+la oración candidato
+
+1654
+00:55:38,460 --> 00:55:39,460
+con la referencia
+
+1655
+00:55:39,460 --> 00:55:40,460
+y la origen no se olvidamos
+
+1656
+00:55:40,460 --> 00:55:41,460
+sabemos que los dos
+
+1657
+00:55:41,460 --> 00:55:42,460
+intentaron traducir
+
+1658
+00:55:42,460 --> 00:55:43,460
+de la misma oración
+
+1659
+00:55:43,460 --> 00:55:45,460
+y bueno, y algunos los fue mejor que a otro
+
+1660
+00:55:49,460 --> 00:55:50,460
+bien, eso son comentarios
+
+1661
+00:55:50,460 --> 00:55:51,460
+de blu
+
+1662
+00:55:51,460 --> 00:55:53,460
+esto era evaluación
+
+1663
+00:55:53,460 --> 00:55:54,460
+de los sistemas
+
+1664
+00:55:54,460 --> 00:55:55,460
+los siguientes vamos a ver
+
+1665
+00:55:55,460 --> 00:55:57,460
+es el problema de los corpus paralelos
+
+1666
+00:55:57,460 --> 00:55:58,460
+antes de pasar a lo que son
+
+1667
+00:55:58,460 --> 00:55:59,460
+modelos de traducción
+
+1668
+00:55:59,460 --> 00:56:01,460
+vamos a hablar un poco de lo que son
+
+1669
+00:56:01,460 --> 00:56:02,460
+los corpus paralelos
+
+1670
+00:56:02,460 --> 00:56:03,460
+que son necesarios
+
+1671
+00:56:03,460 --> 00:56:05,460
+para construir un modelo de traducción
+
+1672
+00:56:05,460 --> 00:56:07,460
+un corpus paralelos
+
+1673
+00:56:07,460 --> 00:56:09,460
+consiste en pares de textos
+
+1674
+00:56:09,460 --> 00:56:10,460
+en dos idiomas
+
+1675
+00:56:10,460 --> 00:56:11,460
+por ejemplo puedo tener textos
+
+1676
+00:56:11,460 --> 00:56:12,460
+en español y en inglés
+
+1677
+00:56:12,460 --> 00:56:14,460
+pero además yo tengo que tener
+
+1678
+00:56:14,460 --> 00:56:15,460
+algún nivel
+
+1679
+00:56:15,460 --> 00:56:16,460
+tengo que tener una correspondencia
+
+1680
+00:56:16,460 --> 00:56:17,460
+entre esos textos
+
+1681
+00:56:17,460 --> 00:56:18,460
+de alguna forma
+
+1682
+00:56:18,460 --> 00:56:20,460
+y yo tengo que saber cómo se corresponde
+
+1683
+00:56:20,460 --> 00:56:22,460
+un texto con el otro
+
+1684
+00:56:22,460 --> 00:56:23,460
+entonces bueno
+
+1685
+00:56:23,460 --> 00:56:25,460
+tiene que estar con juntos
+
+1686
+00:56:25,460 --> 00:56:26,460
+digamos
+
+1687
+00:56:26,460 --> 00:56:27,460
+ordenados de textos
+
+1688
+00:56:27,460 --> 00:56:28,460
+en lenguaje origen
+
+1689
+00:56:28,460 --> 00:56:29,460
+en el lenguaje estino
+
+1690
+00:56:29,460 --> 00:56:30,460
+y bueno existen
+
+1691
+00:56:30,460 --> 00:56:32,460
+en el mundo existen
+
+1692
+00:56:32,460 --> 00:56:33,460
+corpus paralelos
+
+1693
+00:56:33,460 --> 00:56:34,460
+para algunos idiomas
+
+1694
+00:56:34,460 --> 00:56:35,460
+o sea hay
+
+1695
+00:56:35,460 --> 00:56:36,460
+muchos idiomas en el mundo
+
+1696
+00:56:36,460 --> 00:56:37,460
+pero no todos los pares
+
+1697
+00:56:37,460 --> 00:56:38,460
+idiomas tienen corpus paralelos
+
+1698
+00:56:38,460 --> 00:56:39,460
+construidos
+
+1699
+00:56:39,460 --> 00:56:40,460
+entonces existen para el ave de inglés
+
+1700
+00:56:40,460 --> 00:56:41,460
+el chino inglés
+
+1701
+00:56:41,460 --> 00:56:42,460
+para la mayoría de los lenguajes
+
+1702
+00:56:42,460 --> 00:56:43,460
+europeos
+
+1703
+00:56:43,460 --> 00:56:45,460
+debido a su uso
+
+1704
+00:56:45,460 --> 00:56:46,460
+en la unión europea
+
+1705
+00:56:46,460 --> 00:56:47,460
+digamos
+
+1706
+00:56:47,460 --> 00:56:49,460
+existe también corpus paralelos
+
+1707
+00:56:49,460 --> 00:56:50,460
+para ellos
+
+1708
+00:56:50,460 --> 00:56:51,460
+pero para la gran mayoría
+
+1709
+00:56:51,460 --> 00:56:52,460
+de pares de lenguas
+
+1710
+00:56:52,460 --> 00:56:53,460
+hay
+
+1711
+00:56:53,460 --> 00:56:54,460
+digamos
+
+1712
+00:56:54,460 --> 00:56:55,460
+este no tengo
+
+1713
+00:56:55,460 --> 00:56:56,460
+un par que traga
+
+1714
+00:56:56,460 --> 00:56:58,460
+entre el chino y el guarani
+
+1715
+00:56:58,460 --> 00:56:59,460
+por ejemplo
+
+1716
+00:56:59,460 --> 00:57:00,460
+o sea es poco probable
+
+1717
+00:57:00,460 --> 00:57:03,460
+que se construyó un par de cestillo
+
+1718
+00:57:03,460 --> 00:57:04,460
+bien
+
+1719
+00:57:04,460 --> 00:57:05,460
+que es un corpus paralelos
+
+1720
+00:57:05,460 --> 00:57:06,460
+ya que no se ve nada
+
+1721
+00:57:06,460 --> 00:57:08,460
+le gusta
+
+1722
+00:57:10,460 --> 00:57:11,460
+acá hay un ejemplo
+
+1723
+00:57:11,460 --> 00:57:12,460
+que no sé si lo conocen
+
+1724
+00:57:12,460 --> 00:57:13,460
+es un ejemplo famoso
+
+1725
+00:57:13,460 --> 00:57:14,460
+de corpus paralelos
+
+1726
+00:57:18,460 --> 00:57:19,460
+tiene idea de lo que es
+
+1727
+00:57:19,460 --> 00:57:21,460
+lo han visto alguna vez
+
+1728
+00:57:21,460 --> 00:57:23,460
+la piedra de roceta
+
+1729
+00:57:23,460 --> 00:57:25,460
+la piedra de roceta
+
+1730
+00:57:25,460 --> 00:57:27,460
+una piedra
+
+1731
+00:57:27,460 --> 00:57:29,460
+que construyeron
+
+1732
+00:57:29,460 --> 00:57:30,460
+o por lo menos
+
+1733
+00:57:30,460 --> 00:57:31,460
+la tallaron en el año
+
+1734
+00:57:31,460 --> 00:57:32,460
+1906
+
+1735
+00:57:32,460 --> 00:57:33,460
+antes de Cristo
+
+1736
+00:57:33,460 --> 00:57:34,460
+y hablaba sobre
+
+1737
+00:57:34,460 --> 00:57:35,460
+la coronación
+
+1738
+00:57:35,460 --> 00:57:36,460
+de Tolomeo Quinto
+
+1739
+00:57:36,460 --> 00:57:38,460
+y su adoración
+
+1740
+00:57:38,460 --> 00:57:39,460
+como
+
+1741
+00:57:39,460 --> 00:57:40,460
+se medió
+
+1742
+00:57:40,460 --> 00:57:41,460
+etcétera
+
+1743
+00:57:41,460 --> 00:57:42,460
+y bueno
+
+1744
+00:57:42,460 --> 00:57:43,460
+está estuvo perdido
+
+1745
+00:57:43,460 --> 00:57:44,460
+en un montón de años
+
+1746
+00:57:44,460 --> 00:57:45,460
+hasta que
+
+1747
+00:57:45,460 --> 00:57:46,460
+durante las campañas
+
+1748
+00:57:46,460 --> 00:57:47,460
+Napoleónicas
+
+1749
+00:57:47,460 --> 00:57:49,460
+este 1799
+
+1750
+00:57:49,460 --> 00:57:50,460
+la encontraron
+
+1751
+00:57:50,460 --> 00:57:52,460
+en el lugar roceta
+
+1752
+00:57:52,460 --> 00:57:53,460
+casualmente
+
+1753
+00:57:53,460 --> 00:57:54,460
+y
+
+1754
+00:57:54,460 --> 00:57:55,460
+seleccionó para Francia
+
+1755
+00:57:55,460 --> 00:57:56,460
+ahí la empezaron a analizar
+
+1756
+00:57:56,460 --> 00:57:57,460
+lingüistas
+
+1757
+00:57:57,460 --> 00:57:58,460
+empezaron a tratar de entender
+
+1758
+00:57:58,460 --> 00:57:59,460
+que es lo que decía
+
+1759
+00:57:59,460 --> 00:58:00,460
+y bueno
+
+1760
+00:58:00,460 --> 00:58:01,460
+a curir aunque tiene
+
+1761
+00:58:01,460 --> 00:58:02,460
+tres textos
+
+1762
+00:58:02,460 --> 00:58:04,460
+bien aunque tienen como tres regiones
+
+1763
+00:58:04,460 --> 00:58:05,460
+tres textos
+
+1764
+00:58:05,460 --> 00:58:06,460
+si después de estudiarla
+
+1765
+00:58:06,460 --> 00:58:07,460
+un rato
+
+1766
+00:58:07,460 --> 00:58:08,460
+seguieron cuenta que en realidad
+
+1767
+00:58:08,460 --> 00:58:09,460
+lo que tiene es
+
+1768
+00:58:09,460 --> 00:58:10,460
+el mismo texto
+
+1769
+00:58:10,460 --> 00:58:11,460
+entre cidió más distintos
+
+1770
+00:58:11,460 --> 00:58:13,460
+y los cidió más serán
+
+1771
+00:58:13,460 --> 00:58:14,460
+el de arriba
+
+1772
+00:58:14,460 --> 00:58:15,460
+eran geroglíficos
+
+1773
+00:58:15,460 --> 00:58:16,460
+egipcios
+
+1774
+00:58:16,460 --> 00:58:17,460
+del estilo de lo que uno encuentra
+
+1775
+00:58:17,460 --> 00:58:18,460
+dentro de las piramias
+
+1776
+00:58:18,460 --> 00:58:19,460
+egipcios de módicos
+
+1777
+00:58:19,460 --> 00:58:20,460
+que era el egipcio
+
+1778
+00:58:20,460 --> 00:58:21,460
+vulgar
+
+1779
+00:58:21,460 --> 00:58:22,460
+que se usaba
+
+1780
+00:58:22,460 --> 00:58:23,460
+deamos en el día a día
+
+1781
+00:58:23,460 --> 00:58:24,460
+y el de abajo
+
+1782
+00:58:24,460 --> 00:58:25,460
+el todo
+
+1783
+00:58:25,460 --> 00:58:26,460
+era grío
+
+1784
+00:58:26,460 --> 00:58:27,460
+antiguo
+
+1785
+00:58:27,460 --> 00:58:28,460
+entonces si bien
+
+1786
+00:58:28,460 --> 00:58:29,460
+ninguno de los
+
+1787
+00:58:29,460 --> 00:58:31,460
+tres cidió más
+
+1788
+00:58:31,460 --> 00:58:32,460
+se hablaban
+
+1789
+00:58:32,460 --> 00:58:33,460
+en el momento
+
+1790
+00:58:33,460 --> 00:58:34,460
+que se encontró
+
+1791
+00:58:34,460 --> 00:58:35,460
+la piedra
+
+1792
+00:58:35,460 --> 00:58:36,460
+los tres cidió más
+
+1793
+00:58:36,460 --> 00:58:37,460
+antiguos
+
+1794
+00:58:37,460 --> 00:58:39,460
+el grío antiguo
+
+1795
+00:58:39,460 --> 00:58:40,460
+por lo menos sí se sabía
+
+1796
+00:58:40,460 --> 00:58:41,460
+digamos
+
+1797
+00:58:41,460 --> 00:58:42,460
+se conocía como idiomas
+
+1798
+00:58:42,460 --> 00:58:43,460
+sabía que significaba
+
+1799
+00:58:43,460 --> 00:58:44,460
+y digamos
+
+1800
+00:58:44,460 --> 00:58:45,460
+sabía gente que lo estudiaba
+
+1801
+00:58:45,460 --> 00:58:46,460
+los otros dos
+
+1802
+00:58:46,460 --> 00:58:47,460
+pero gracias al hecho
+
+1803
+00:58:47,460 --> 00:58:48,460
+de que en realidad se descubrió
+
+1804
+00:58:48,460 --> 00:58:49,460
+que los tres textos
+
+1805
+00:58:49,460 --> 00:58:50,460
+hablan
+
+1806
+00:58:50,460 --> 00:58:51,460
+de lo mismo
+
+1807
+00:58:51,460 --> 00:58:52,460
+son el mismo texto
+
+1808
+00:58:52,460 --> 00:58:53,460
+entre cidió más
+
+1809
+00:58:53,460 --> 00:58:54,460
+entonces ahí se empezó
+
+1810
+00:58:54,460 --> 00:58:55,460
+hacer un trabajo
+
+1811
+00:58:55,460 --> 00:58:56,460
+de alineación
+
+1812
+00:58:56,460 --> 00:58:57,460
+digamos
+
+1813
+00:58:57,460 --> 00:58:58,460
+los arguiólogos
+
+1814
+00:58:58,460 --> 00:58:59,460
+empezaron a decir
+
+1815
+00:58:59,460 --> 00:59:00,460
+bueno, esta porción de texto
+
+1816
+00:59:00,460 --> 00:59:01,460
+acá se corresponde con
+
+1817
+00:59:01,460 --> 00:59:02,460
+esta acá
+
+1818
+00:59:02,460 --> 00:59:03,460
+etcétera
+
+1819
+00:59:03,460 --> 00:59:04,460
+y tratar de encontrar
+
+1820
+00:59:04,460 --> 00:59:05,460
+correspondencia
+
+1821
+00:59:05,460 --> 00:59:06,460
+en los cidió más
+
+1822
+00:59:06,460 --> 00:59:07,460
+y como sabían
+
+1823
+00:59:07,460 --> 00:59:08,460
+qué quería decir
+
+1824
+00:59:08,460 --> 00:59:09,460
+en grío antiguo
+
+1825
+00:59:09,460 --> 00:59:10,460
+empezaron a poder descubrir
+
+1826
+00:59:10,460 --> 00:59:11,460
+qué quería decir
+
+1827
+00:59:11,460 --> 00:59:12,460
+en los otros cidiós
+
+1828
+00:59:12,460 --> 00:59:13,460
+entonces a raíz de eso
+
+1829
+00:59:13,460 --> 00:59:15,460
+es que empezó
+
+1830
+00:59:15,460 --> 00:59:16,460
+para decir
+
+1831
+00:59:16,460 --> 00:59:17,460
+qué dicen
+
+1832
+00:59:17,460 --> 00:59:18,460
+por ejemplo
+
+1833
+00:59:18,460 --> 00:59:19,460
+los geográficos
+
+1834
+00:59:19,460 --> 00:59:20,460
+están en las pirámides
+
+1835
+00:59:20,460 --> 00:59:21,460
+bueno, un montón de cultura
+
+1836
+00:59:21,460 --> 00:59:22,460
+egipciantiguo
+
+1837
+00:59:22,460 --> 00:59:23,460
+se conoce gracias a que
+
+1838
+00:59:23,460 --> 00:59:24,460
+se puede decir
+
+1839
+00:59:24,460 --> 00:59:25,460
+lo que decía hasta piedra
+
+1840
+00:59:25,460 --> 00:59:26,460
+y en definitiva
+
+1841
+00:59:26,460 --> 00:59:27,460
+estos ejemplos de corpo
+
+1842
+00:59:27,460 --> 00:59:28,460
+paralelos
+
+1843
+00:59:28,460 --> 00:59:29,460
+ya tengo un mismo texto
+
+1844
+00:59:29,460 --> 00:59:30,460
+entre cidió más
+
+1845
+00:59:30,460 --> 00:59:31,460
+y con un poco de esfuerzo
+
+1846
+00:59:31,460 --> 00:59:32,460
+logró alinear
+
+1847
+00:59:32,460 --> 00:59:33,460
+cuáles son
+
+1848
+00:59:33,460 --> 00:59:34,460
+cada uno
+
+1849
+00:59:34,460 --> 00:59:36,460
+de los elementos
+
+1850
+00:59:36,460 --> 00:59:37,460
+de mis lenguajes
+
+1851
+00:59:37,460 --> 00:59:38,460
+y logró saber
+
+1852
+00:59:38,460 --> 00:59:39,460
+la traducción
+
+1853
+00:59:39,460 --> 00:59:42,460
+de los tres
+
+1854
+00:59:42,460 --> 00:59:43,460
+bueno entonces
+
+1855
+00:59:43,460 --> 00:59:44,460
+eso no se iba
+
+1856
+00:59:44,460 --> 00:59:46,460
+los corpus parallelos
+
+1857
+00:59:46,460 --> 00:59:48,460
+tienen distintos niveles
+
+1858
+00:59:48,460 --> 00:59:49,480
+de alineación
+
+1859
+00:59:49,480 --> 00:59:51,460
+lo más fácil de encontrar
+
+1860
+00:59:51,460 --> 00:59:54,620
+son corpus que están al nios al
+
+1861
+00:59:54,620 --> 00:59:56,460
+un cuestión en documento
+
+1862
+00:59:56,460 --> 00:59:57,460
+para el modo
+
+1863
+00:59:57,460 --> 00:59:59,460
+si driving
+
+1864
+00:59:59,460 --> 01:00:02,460
+¿Vloro, значит
+
+1865
+01:00:02,460 --> 01:00:03,460
+spirits en pickup
+
+1866
+01:00:03,460 --> 01:00:04,460
+ium cado
+
+1867
+01:00:04,460 --> 01:00:06,460
+que se enganvolta
+
+1868
+01:00:06,460 --> 01:00:08,460
+en los amigos
+
+1869
+01:00:08,460 --> 01:00:09,460
+el puesto del Stephen
+
+1870
+01:00:09,460 --> 01:00:12,460
+que nos llevo
+
+1871
+01:00:12,460 --> 01:00:13,460
+slim
+
+1872
+01:00:13,460 --> 01:00:16,900
+si estuvieron al lino a San Miguel de Palabra, cada uno de los caracteres que están en
+
+1873
+01:00:16,900 --> 01:00:20,140
+chinos se corresponde con qué palabra en español, lo que grupo de Palabra, si cada uno de
+
+1874
+01:00:20,140 --> 01:00:23,340
+las palabras en español con qué grupo de caracteres se corresponde en chinos.
+
+1875
+01:00:23,340 --> 01:00:28,580
+Esto es el ideal, pero claro, si ya es difícil conseguir cosas que tenen al lino a
+
+1876
+01:00:28,580 --> 01:00:32,980
+San Miguel de Ocumento, si imaginan que nadie va a ir a mano al lino a la nivel de
+
+1877
+01:00:32,980 --> 01:00:36,140
+Palabra, cada uno de las palabras de los idiomas.
+
+1878
+01:00:36,140 --> 01:00:41,620
+Entonces, en la práctica, nunca vamos a encontrar un corpus al lino a la nivel de Palabra,
+
+1879
+01:00:41,860 --> 01:00:46,580
+pero vamos a ver que, como resultado de la construcción de los modelos del lenguaje, se produce
+
+1880
+01:00:46,580 --> 01:00:51,660
+también como como un producto secundario, se produce la lineación de los corpus, entonces
+
+1881
+01:00:51,660 --> 01:00:55,620
+obtenes las dos cosas a la vez.
+
+1882
+01:00:55,620 --> 01:01:01,860
+Bueno, yo tal cosa es que a diferencia de el texto monolingo que yo usaba para los modelos del
+
+1883
+01:01:01,860 --> 01:01:07,180
+lenguaje, es muy raro que naturalmente se produzcan textos en dos idiomas a la vez,
+
+1884
+01:01:07,260 --> 01:01:14,060
+o sea, hay que buscarlos bastante cuidadosamente.
+
+1885
+01:01:14,060 --> 01:01:18,340
+Existen algunos contextos en donde eso se produce, por ejemplo, en algunos portales de noticias
+
+1886
+01:01:18,340 --> 01:01:22,900
+puede pasar que tengan versiones en distintos idiomas y lo que hagan sea traducir las noticias
+
+1887
+01:01:22,900 --> 01:01:26,180
+en distintos idiomas. Entonces, si yo puedo encontrar uno de esos, es una buena fuente para
+
+1888
+01:01:26,180 --> 01:01:30,780
+construirme un corpus paralelo anilado a nivel de documentos, o sea, esta noticia se corresponde
+
+1889
+01:01:30,780 --> 01:01:33,900
+con esta otra en el otro idioma.
+
+1890
+01:01:33,900 --> 01:01:38,820
+Pero un lugar en donde se produce naturalmente este tipo de textos es en los países que son
+
+1891
+01:01:38,820 --> 01:01:45,020
+bilíngues o muy dilíngues. Por ejemplo, en Canadá que hablan inglés y frances, las
+
+1892
+01:01:45,020 --> 01:01:49,540
+discusiones del parlamento canadiencias siempre por ley tienen que transcribirse en
+
+1893
+01:01:49,540 --> 01:01:53,180
+los idiomas, tienen que traducirse, si está en inglés, se dausan a parte de esta
+
+1894
+01:01:53,180 --> 01:01:58,940
+en frances de la usión inglés, y guardan una correspondencia entre eso, guardan el documento
+
+1895
+01:01:58,940 --> 01:02:02,980
+de todas las discusiones del parlamento en los dos idiomas. Entonces, ahí, se naturalmente
+
+1896
+01:02:02,980 --> 01:02:07,020
+se produce un corpus paralelo anilado a nivel de documentos para el inglesio de frances,
+
+1897
+01:02:07,020 --> 01:02:12,540
+ese se conoce como el corpus Hansard, eso también ocurre en con con con con conseable
+
+1898
+01:02:12,540 --> 01:02:16,340
+en inglés y chinos o no, lo dos idiomas oficiales. Entonces, el corpus más grande que
+
+1899
+01:02:16,340 --> 01:02:20,420
+se tiene para inglés y chinos, está hecho como una compilación de lo que son las discusiones
+
+1900
+01:02:20,420 --> 01:02:26,100
+del parlamento de Hong Kong. Y también pasa en la noine europea, en el parlamento europeo,
+
+1901
+01:02:26,100 --> 01:02:30,220
+también tienen la costumbre de traducir todas las discusiones a todos los idiomas, o
+
+1902
+01:02:30,220 --> 01:02:34,860
+a muchos de los idiomas que se usa en la unión europea. Entonces, hay corpus paralelo para
+
+1903
+01:02:34,860 --> 01:02:40,140
+casi todos los idiomas de la unión europea. Pero claro, todos estos están alineados a nivel
+
+1904
+01:02:40,140 --> 01:02:43,660
+de documentos. Yo sé que de documentos se corresponde con cual el otro en el otro idioma,
+
+1905
+01:02:43,660 --> 01:02:50,700
+pero no a nivel de operaciones y muchos menos a nivel de palabras. Pero, bueno,
+
+1906
+01:02:50,700 --> 01:02:56,580
+partiendo de un corpus alineado a nivel de documentos, yo puedo llegar a construirme por
+
+1907
+01:02:56,580 --> 01:03:02,060
+lo menos una alineación a nivel de operaciones, siendo un proceso relativamente sencillo.
+
+1908
+01:03:02,060 --> 01:03:10,140
+Esto se conoce como el algoritmo de que el e-church, que es un algoritmo relativamente
+
+1909
+01:03:10,140 --> 01:03:16,900
+fácil para alinear corpus o sea, para pasar corpus, porque están alineados a nivel de documentos
+
+1910
+01:03:16,900 --> 01:03:22,540
+pasarlos a que tiene alineados a nivel de operación. Y bueno, esto es un algoritmo que funciona
+
+1911
+01:03:22,620 --> 01:03:26,300
+y está un poco basado en lo que era el algoritmo de distancia de edición de Levenstein,
+
+1912
+01:03:26,300 --> 01:03:36,100
+que vivimos hace bastante tiempo en el curso, bueno, es como muy parecido, también es
+
+1913
+01:03:36,100 --> 01:03:41,140
+un algoritmo de pronomación dinámica, similar a ese, funciona de la siguiente manera, o sea,
+
+1914
+01:03:41,140 --> 01:03:44,260
+no vamos a darlo mucho en detalle, pero vamos a dar una idea de cómo es que funciona.
+
+1915
+01:03:44,260 --> 01:03:49,780
+En el algoritmo de Gail Church dice, yo voy a tener un conjunto de operaciones en un idioma,
+
+1916
+01:03:49,780 --> 01:04:01,300
+y otro conjunto de operaciones en el otro idioma, entonces considero que un reductor para
+
+1917
+01:04:01,300 --> 01:04:06,340
+a caduración pudo haber tenido tres opciones, digamos, para pasar las a otro idioma, un
+
+1918
+01:04:06,340 --> 01:04:11,580
+reductor, supongan un reductor humano, agarró operaciones que estaba en español y operaciones
+
+1919
+01:04:11,580 --> 01:04:18,300
+que estaban en frances, o sea, no ponerles el EF, porque lo que puede confundir con las otras cosas,
+
+1920
+01:04:18,300 --> 01:04:23,780
+si que vamos a decir, le lenguaje de origen era EF, frances y el lenguaje de estino, eres pañol.
+
+1921
+01:04:23,780 --> 01:04:29,660
+Bien, entonces un reductor humano, cada vez que se enfrenta a una oración tenía tres posibilidades,
+
+1922
+01:04:29,660 --> 01:04:36,300
+o bien traducía una oración por otra oración, o bien parte de esta oración en dos y traduce
+
+1923
+01:04:36,300 --> 01:04:41,500
+una oración por dos, o bien borre esta oración, decide que no es tan importante y agarrar
+
+1924
+01:04:41,500 --> 01:04:46,260
+y borre la oración, entonces las tres operaciones que se hacen a nivel de oración son la de
+
+1925
+01:04:46,260 --> 01:04:54,380
+transformarla, en cero, una o dos oraciones del otro lado, eso es una cosa, lo otro es el costo
+
+1926
+01:04:54,380 --> 01:05:02,660
+relativo de alinear estas oraciones depende de la oración, entonces si yo tengo dos oraciones
+
+1927
+01:05:02,660 --> 01:05:08,100
+que tienen un largo muy parecido, le voy a dar un costo menor para alinearlos, el
+
+1928
+01:05:08,100 --> 01:05:13,220
+menor, o mayor, sí y menor, si tienen un largo muy parecido, le voy a dar un valor menor
+
+1929
+01:05:13,220 --> 01:05:17,180
+para alinear, si tienen un largo muy distinto, una es muy corte, la otra muy larga, entonces
+
+1930
+01:05:17,180 --> 01:05:23,780
+le voy a dar un valor mayor para alinear, entonces lo que ellos hacen es pensando en todo
+
+1931
+01:05:23,780 --> 01:05:27,860
+este tipo de operaciones que hay, todas las combinaciones operaciones posibles, o sea,
+
+1932
+01:05:27,860 --> 01:05:36,540
+a partir de esta oración en dos o no partirla o eliminarla o dejarla como está, entonces
+
+1933
+01:05:36,540 --> 01:05:40,500
+con una oración dinámica, vento de las posibilidades, vento de las posibilidades de operar
+
+1934
+01:05:40,500 --> 01:05:45,260
+distinto para llegar al otro lado y calculan las que le da un costo menor, o sea, para
+
+1935
+01:05:45,260 --> 01:05:50,540
+acá una de las posibilidades, calculan cuál es el costo de cada par de oraciones, suman
+
+1936
+01:05:50,540 --> 01:05:58,060
+todos los costos del documento y se quedan con el caso que les de un costo menor en alineación,
+
+1937
+01:05:58,060 --> 01:06:02,740
+eso se puede hacer esficientemente usando por la moción dinámica lo mismo que hacíamos
+
+1938
+01:06:02,740 --> 01:06:16,820
+con la distancia de edición del eventain, bueno, y este algoritmo que es relativamente sencillo,
+
+1939
+01:06:16,820 --> 01:06:23,340
+digamos, es una solución bastante simple, logra una tasa de error muy buena, que es de un
+
+1940
+01:06:23,340 --> 01:06:27,940
+cuatro por ciento deamos, que para todo, para idiomas relacionados, para idiomas que se
+
+1941
+01:06:27,940 --> 01:06:32,020
+parece en como el inglés y lepanó el etcétera, logró una tasa bastante baja de error de un
+
+1942
+01:06:32,020 --> 01:06:34,860
+cuatro por ciento de algunas mejoras que se pueden hacer, pero en la ley de un cuatro por ciento
+
+1943
+01:06:34,860 --> 01:06:41,100
+de esa algo que está bastante bien, hay un catch que es que para sistemas de traducción
+
+1944
+01:06:41,100 --> 01:06:44,860
+distintos, traducciones no literales, esto se arrombe un poco, por ejemplo para traducir
+
+1945
+01:06:44,860 --> 01:06:49,140
+entre inglés y chino, que en chino ni siquiera está claro con les son los límites de la
+
+1946
+01:06:49,140 --> 01:06:53,260
+palabra, así eso es más difícil de ver, entonces bueno, este tipo de algoritmo no funciona
+
+1947
+01:06:53,340 --> 01:07:02,180
+también, y bueno, hay variantes que funcionen un poco mejor, así que bueno, voy vamos a dejar
+
+1948
+01:07:02,180 --> 01:07:05,340
+por acá y vamos a continuar en la próxima con modelos de traducción.
+
