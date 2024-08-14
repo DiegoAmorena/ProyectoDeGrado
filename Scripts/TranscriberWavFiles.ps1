@@ -8,9 +8,9 @@ if (-Not (Test-Path $transcriptionOutputFolder)) {
 }
 
 # Define the model to use
-$model = "tiny"
+$model = "base"
 
-$files = Get-ChildItem -Path $audioFolderPath -Filter "*.wav" 
+$files = Get-ChildItem -Path $audioFolderPath -Filter "*.wav" | Sort-Object Name -Descending
 $files | ForEach-Object {
     $audioFile = $_.FullName
     $fileNameWithoutExtension = [System.IO.Path]::GetFileNameWithoutExtension($_.Name)
