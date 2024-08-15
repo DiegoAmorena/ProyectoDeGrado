@@ -1,6 +1,6 @@
 # Define the path to the folder containing .wav files
-$audioFolderPath = "C:\Users\damorena\_Modulos\Facu\ProyectoDeGrado\ProyectoDeGrado\DB\Opens\pln"
-$transcriptionOutputFolder = "C:\Users\damorena\_Modulos\Facu\ProyectoDeGrado\ProyectoDeGrado\DB\Transcripciones\pln"
+$audioFolderPath = "sample_data"
+$transcriptionOutputFolder = "sample_data_transcribed"
 
 # Ensure the transcription output folder exists
 if (-Not (Test-Path $transcriptionOutputFolder)) {
@@ -8,9 +8,9 @@ if (-Not (Test-Path $transcriptionOutputFolder)) {
 }
 
 # Define the model to use
-$model = "base"
+$model = "small"
 
-$files = Get-ChildItem -Path $audioFolderPath -Filter "*.wav" | Sort-Object Name -Descending
+$files = Get-ChildItem -Path $audioFolderPath -Filter "*.wav"
 $files | ForEach-Object {
     $audioFile = $_.FullName
     $fileNameWithoutExtension = [System.IO.Path]::GetFileNameWithoutExtension($_.Name)
@@ -26,7 +26,7 @@ $files | ForEach-Object {
     $startTime = Get-Date
 
     # Construct the whisper command to transcribe the audio
-    $whisperCommand = "whisper '$audioFile' --model $model --language es --output_dir '$transcriptionOutputFolder' --verbose False --threads 4"
+    $whisperCommand = "whisper '$audioFile' --model $model --language es --output_dir '$transcriptionOutputFolder'"
 
     # Run the whisper command
     Invoke-Expression $whisperCommand
@@ -63,3 +63,5 @@ $files | ForEach-Object {
 }
 
 Write-Host "Transcription process completed."
+
+<th class=" valorCenEncabezado valorCenEncabezado" scope="col" style="width:7%;text-overflow: clip;">Días Etapa</th>
