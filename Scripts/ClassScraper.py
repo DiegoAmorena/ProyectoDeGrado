@@ -1,7 +1,9 @@
+from datetime import datetime, timedelta
+from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
-from pathlib import Path
-from datetime import datetime, timedelta
+
 
 class ClassScraper:
     def __init__(self, logger, db_path="../DB/Opens/"):
@@ -15,18 +17,20 @@ class ClassScraper:
         class_numbers = []
 
         if response.status_code == 200:
-            soup = BeautifulSoup(response.content, 'html.parser')
-            class_list_div = soup.find('div', class_='class-list')
+            soup = BeautifulSoup(response.content, "html.parser")
+            class_list_div = soup.find("div", class_="class-list")
 
             if class_list_div:
-                classes = class_list_div.find_all('a', class_='class-list__item')
+                classes = class_list_div.find_all("a", class_="class-list__item")
                 for class_item in classes:
-                    href = class_item.get('href')
+                    href = class_item.get("href")
                     if href:
-                        class_number = href.split('/')[-2]
+                        class_number = href.split("/")[-2]
                         class_numbers.append(class_number)
         else:
-            self.logger.log_message(f"Failed to retrieve the page for {course_acronym}. Status code: {response.status_code}")
+            self.logger.log_message(
+                f"Failed to retrieve the page for {course_acronym}. Status code: {response.status_code}"
+            )
 
         return class_numbers
 
@@ -37,22 +41,26 @@ class ClassScraper:
             output_dir.mkdir(parents=True, exist_ok=True)
             output_file = output_dir / "classes.txt"
 
-            with open(output_file, 'w') as class_file:
+            with open(output_file, "w", encoding="utf-8") as class_file:
                 for class_number in classes:
                     class_file.write(f"{class_number}\n")
 
-            self.logger.log_message(f"Class numbers for course {course_acronym} have been written to {output_file}")
+            self.logger.log_message(
+                f"Class numbers for course {course_acronym} have been written to {output_file}"
+            )
             self.update_timestamp()
         else:
-            self.logger.log_message("ClassScraper skipped as it was already run within the last week.")
+            self.logger.log_message(
+                "ClassScraper skipped as it was already run within the last week."
+            )
 
     def should_run(self):
         if self.timestamp_path.exists():
-            with open(self.timestamp_path, 'r') as f:
+            with open(self.timestamp_path, "r", encoding="utf-8") as f:
                 last_run = datetime.fromisoformat(f.read().strip())
                 return datetime.now() - last_run > timedelta(weeks=1)
         return True
 
     def update_timestamp(self):
-        with open(self.timestamp_path, 'w') as f:
+        with open(self.timestamp_path, "w", encoding="utf-8") as f:
             f.write(datetime.now().isoformat())

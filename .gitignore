@@ -6,3 +6,5 @@ activate
 DB/validation_test_pass.txt
 DB/validation_test_pass.txt
 Scripts/whisper_medium_scripted.pt
+
+.venv
