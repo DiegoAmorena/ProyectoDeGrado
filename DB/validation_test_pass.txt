@@ -223,3 +223,5 @@
 ..\DB\Opens\c1\c1_37.mp4
 ..\DB\Opens\c1\c1_38.mp4
 ..\DB\Opens\c1\c1_39.mp4
+../DB/Opens/actint/actint_01.mp4
+../DB/Opens/actint/actint_02.mp4

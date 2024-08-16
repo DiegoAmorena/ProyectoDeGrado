@@ -1,135 +1,136 @@
 Actividad Introductoria
-Administraci髇 General para Ingenieros
+Administraci贸n General para Ingenieros
 Algoritmos Evolutivos
-An醠isis Estad韘tico de Datos Clim醫icos
-An醠isis y Dise駉 de Algoritmos Distribuidos en Redes
-Antenas y Propagaci髇
-Aplicaciones de la Teor韆 de la Informaci髇 al Procesamiento de Im醙enes
-Aplicaciones del 羖gebra Lineal
-Aplicaciones Solidarias Basadas en Sistemas de Gesti髇 de Contenido
-Aprendizaje Profundo para el An醠isis de Im醙enes Biom閐icas
+An谩lisis Estad铆stico de Datos Clim谩ticos
+An谩lisis y Dise帽o de Algoritmos Distribuidos en Redes
+Antenas y Propagaci贸n
+Aplicaciones de la Teor铆a de la Informaci贸n al Procesamiento de Im谩genes
+Aplicaciones del 脕lgebra Lineal
+Aplicaciones Solidarias Basadas en Sistemas de Gesti贸n de Contenido
+Aprendizaje Profundo para el An谩lisis de Im谩genes Biom茅dicas
 Arquitectura de Computadoras
 Bases de Datos No Relacionales
 Biblioteca
-Biomec醤ica de la Rodilla en Rehabilitaci髇 y Deporte
-C醠culo 1
-C醠culo 2
-C醠culo 3
-C醠culo Diferencial e Integral en una Variable
-C醠culo Diferencial e Integral en Varias Variables
-C醠culo Vectorial
-Calidad de Datos e Informaci髇
-C骴igos para Correcci髇 de Errores
-Comportamiento Mec醤ico de Materiales 1
-Comportamiento Mec醤ico de Materiales 2
-Compresi髇 de Datos sin P閞dida
-Computaci髇 1
-Computaci髇 de Alta Performance
-Computaci髇 Gr醘ica Avanzada
-Construcci髇 Formal de Programas en Teor韆 de Tipos
-Desarrollo de la Criptograf韆, con enfoque en Latino Am閞ica
-Dise駉 de Circuitos Integrados CMOS Anal骻icos y Mixtos
-Dise駉 Hidrol骻ico
-Dise駉 L骻ico
-Econom韆
+Biomec谩nica de la Rodilla en Rehabilitaci贸n y Deporte
+C谩lculo 1
+C谩lculo 2
+C谩lculo 3
+C谩lculo Diferencial e Integral en una Variable
+C谩lculo Diferencial e Integral en Varias Variables
+C谩lculo Vectorial
+Calidad de Datos e Informaci贸n
+C贸digos para Correcci贸n de Errores
+Comportamiento Mec谩nico de Materiales 1
+Comportamiento Mec谩nico de Materiales 2
+Compresi贸n de Datos sin P茅rdida
+Computaci贸n 1
+Computaci贸n de Alta Performance
+Computaci贸n Gr谩fica Avanzada
+Construcci贸n Formal de Programas en Teor铆a de Tipos
+Desarrollo de la Criptograf铆a, con enfoque en Latino Am茅rica
+Dise帽o de Circuitos Integrados CMOS Anal贸gicos y Mixtos
+Dise帽o Hidrol贸gico
+Dise帽o L贸gico
+Econom铆a
 Ecuaciones Diferenciales
-Edici髇 de Tesis y Art韈ulos Usando LaTeX
+Edici贸n de Tesis y Art铆culos Usando LaTeX
 El Negocio del Software
 Electromagnetismo
-Electr髇ica 1
-Electr髇ica 2
-Electr髇ica Avanzada 1
-Electr髇ica de Potencia
-Electr髇ica Fundamental
-Electrot閏nica
-Electrot閏nica 1
-Elementos de M醧uinas
-Elementos de Mec醤ica de los Fluidos
-Energ韆 1
-Energ韆 Solar T閞mica
-Ensayos El閏tricos y Equipamiento de Media Tensi髇
-Estimaci髇 y Predicci髇 en Series Temporales
+Electr贸nica 1
+Electr贸nica 2
+Electr贸nica Avanzada 1
+Electr贸nica de Potencia
+Electr贸nica Fundamental
+Electrot茅cnica
+Electrot茅cnica 1
+Elementos de M谩quinas
+Elementos de Mec谩nica de los Fluidos
+Energ铆a 1
+Energ铆a Solar T茅rmica
+Ensayos El茅ctricos y Equipamiento de Media Tensi贸n
+Estimaci贸n y Predicci贸n en Series Temporales
 Estructuras de Madera
-F韘ica 1
-F韘ica 2
-F韘ica 3
-F韘ica Experimental 1 y 2: Un Giro en la Ense馻nza
-F韘ica T閞mica
-Fundamentos de Aprendizaje Autom醫ico
+F铆sica 1
+F铆sica 2
+F铆sica 3
+F铆sica Experimental 1 y 2: Un Giro en la Ense帽anza
+F铆sica T茅rmica
+Fundamentos de Aprendizaje Autom谩tico
 Fundamentos de Bases de Datos
-Fundamentos de Ingenier韆 de Software
-Fundamentos de la Seguridad Inform醫ica
-Fundamentos de Programaci髇 Entera
+Fundamentos de Ingenier铆a de Software
+Fundamentos de la Seguridad Inform谩tica
+Fundamentos de Programaci贸n Entera
 Generadores de Vapor
-Geometr韆 y 羖gebra Lineal 1
-Geometr韆 y 羖gebra Lineal 2
-Gram醫icas Formales para el Lenguaje Natural
-Hidrodin醡ica Naval
-Hormig髇 Estructural 2
+Geometr铆a y 脕lgebra Lineal 1
+Geometr铆a y 脕lgebra Lineal 2
+Gram谩ticas Formales para el Lenguaje Natural
+Hidrodin谩mica Naval
+Hormig贸n Estructural 2
 IMAGINARY Conference 2018
-Ingenier韆 Biom閐ica
-Iniciaci髇 a la Producci髇 Audiovisual y Multimedia
-Instalaciones El閏tricas
-Introducci髇 a Bases de Datos
-Introducci髇 a la F韘ica Moderna
-Introducci髇 a la Ingenier韆 Biom閐ica
-Introducci髇 a la Ingenier韆 de Producci髇
-Introducci髇 a la Ingenier韆 de Software
-Introducci髇 a la Ingenier韆 Qu韒ica
-Introducci髇 a la Investigaci髇 de Operaciones
-Introducci髇 a la Teor韆 de la Informaci髇
-Introducci髇 a los Microprocesadores
-Introducci髇 al Procesamiento de Lenguaje Natural
-L骻ica
-M醧uinas El閏tricas
-Matem醫ica 2
-Matem醫ica Discreta 1
-Matem醫ica Discreta 2
-Mec醤ica Aplicada
-Mec醤ica Newtoniana
-Metalurgia F韘ica
-M閠odos Num閞icos
-Modelado Cuantitativo para Problemas de Producci髇
-Muestreo y Procesamiento Digital de Se馻les
-N鷆leo de Red de Telecomunicaciones
-Optimizaci髇 bajo Incertidumbre
-Paralelizaci髇 de Aplicaciones de Alto Rendimiento Utilizando Arquitecturas H韇ridas
-Principios de Qu韒ica General
-Probabilidad y Estad韘tica
+Ingenier铆a Biom茅dica
+Iniciaci贸n a la Producci贸n Audiovisual y Multimedia
+Instalaciones El茅ctricas
+Introducci贸n a Bases de Datos
+Introducci贸n a la F铆sica Moderna
+Introducci贸n a la Ingenier铆a Biom茅dica
+Introducci贸n a la Ingenier铆a de Producci贸n
+Introducci贸n a la Ingenier铆a de Software
+Introducci贸n a la Ingenier铆a Qu铆mica
+Introducci贸n a la Investigaci贸n de Operaciones
+Introducci贸n a la Teor铆a de la Informaci贸n
+Introducci贸n a los Microprocesadores
+Introducci贸n al Procesamiento de Lenguaje Natural
+L贸gica
+M谩quinas El茅ctricas
+Matem谩tica 2
+Matem谩tica Discreta 1
+Matem谩tica Discreta 2
+Mec谩nica Aplicada
+Mec谩nica Newtoniana
+Metalurgia F铆sica
+M茅todos Num茅ricos
+Modelado Cuantitativo para Problemas de Producci贸n
+Muestreo y Procesamiento Digital de Se帽ales
+N煤cleo de Red de Telecomunicaciones
+Optimizaci贸n bajo Incertidumbre
+Paralelizaci贸n de Aplicaciones de Alto Rendimiento Utilizando Arquitecturas H铆bridas
+Pr谩ctica de Administraci贸n Para Ingenieros
+Principios de Qu铆mica General
+Probabilidad y Estad铆stica
 Procesadores Multicore Masivos
-Procesamiento digital de se馻les de audio
-Programaci髇 1
-Programaci髇 2
-Programaci髇 3
-Programaci髇 4
-Programaci髇 L骻ica
-Programaci髇 para Ingenier韆 El閏trica
-Propagaci髇 en Entornos Urbanos
-Recuperaci髇 de Informaci髇 y Recomendaciones en la Web
+Procesamiento digital de se帽ales de audio
+Programaci贸n 1
+Programaci贸n 2
+Programaci贸n 3
+Programaci贸n 4
+Programaci贸n L贸gica
+Programaci贸n para Ingenier铆a El茅ctrica
+Propagaci贸n en Entornos Urbanos
+Recuperaci贸n de Informaci贸n y Recomendaciones en la Web
 Red de Acceso
 Redes de Computadoras
 Redes de Datos
 Redes de Datos 2
 Resistencia de Materiales 1
-Se馻les y Sistemas
-Sistemas de Informaci髇 para el An醠isis de Grandes Vol鷐enes de Datos
+Se帽ales y Sistemas
+Sistemas de Informaci贸n para el An谩lisis de Grandes Vol煤menes de Datos
 Sistemas Embebidos para Tiempo Real
 Sistemas Lineales 1
 Sistemas Lineales 2
 Sistemas Operativos
 Sistemas y Control
-Subestaciones de Media Tensi髇
-Taller de Aprendizaje Autom醫ico
-Taller de Introducci髇 a las Ciencias de la Atm髎fera
-Taller de Programaci髇
-Taller de Sistemas Ciber F韘icos
-Talleres de Matem醫ica en UDeLaR
-Tecnolog韆s de Redes y Servicios de Telecomunicaciones
-Teor韆 de Circuitos
-Teor韆 de Lenguajes
-Teor韆 del Buque
-Teor韆, Algoritmos y Aplicaciones de Gesti髇 Log韘tica
-VI Coloquio de Matem醫ica
+Subestaciones de Media Tensi贸n
+Taller de Aprendizaje Autom谩tico
+Taller de Introducci贸n a las Ciencias de la Atm贸sfera
+Taller de Programaci贸n
+Taller de Sistemas Ciber F铆sicos
+Talleres de Matem谩tica en UDeLaR
+Tecnolog铆as de Redes y Servicios de Telecomunicaciones
+Teor铆a de Circuitos
+Teor铆a de Lenguajes
+Teor铆a del Buque
+Teor铆a, Algoritmos y Aplicaciones de Gesti贸n Log铆stica
+VI Coloquio de Matem谩tica
 Vibraciones Y Ondas
-Workshop en Sistemas Ciber-F韘icos 2022
+Workshop en Sistemas Ciber-F铆sicos 2022
 Workshop on Groups, Geometry and Dynamics, July 2018
