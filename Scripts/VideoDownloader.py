@@ -4,9 +4,11 @@ from pathlib import Path
 import cv2
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from constants import BYTES_TO_GB
+
 class VideoDownloader:
     def __init__(self, logger, transcriber, base_url="https://open.fing.edu.uy/media/{course}/{course}_{nn}.mp4",
-                 db_path="../DB/Opens/", total_max_size=15 * 1024 * 1024 * 1024):
+                 db_path="../DB/Opens/", total_max_size=15 * BYTES_TO_GB):
         self.logger = logger
         self.transcriber = transcriber
         self.base_url = base_url
@@ -34,7 +36,7 @@ class VideoDownloader:
                         headers = {'Range': f'bytes={existing_file_size}-'}
                         self.logger.log_message(f"Resuming download for {path} at byte {existing_file_size}")
                     else:
-                        self.logger.log_message(f"Existing file size {existing_file_size / 1024 / 1024 / 1024:.2f} GB is greater than or equal to expected {expected_size / 1024 / 1024 / 1024:.2f} GB. Redownloading...")
+                        self.logger.log_message(f"Existing file size {existing_file_size / BYTES_TO_GB:.2f} GB is greater than or equal to expected {expected_size / BYTES_TO_GB:.2f} GB. Redownloading...")
                         os.remove(path)
 
             response = requests.get(url, stream=True, headers=headers)
@@ -67,7 +69,7 @@ class VideoDownloader:
         """Validate that a previously downloaded file matches the expected size and is playable."""
         actual_size = os.path.getsize(video_path)
         if actual_size != expected_size:
-            self.logger.log_message(f"File {video_path} size mismatch: expected {expected_size / 1024 / 1024 / 1024:.2f} GB, got {actual_size / 1024 / 1024 / 1024:.2f} GB")
+            self.logger.log_message(f"File {video_path} size mismatch: expected {expected_size / BYTES_TO_GB:.2f} GB, got {actual_size / BYTES_TO_GB:.2f} GB")
             return False
         if not self.is_download_complete(video_path):
             self.logger.log_message(f"File {video_path} is not playable.")
@@ -135,4 +137,4 @@ class VideoDownloader:
 
                     self.transcriber.transcribe_video(video_path, course_name)
 
-        self.logger.log_message(f"Course: {course_name}, Files: {file_count}, Directory size: {folder_size / 1024 / 1024 / 1024:.2f} GB")
+        self.logger.log_message(f"Course: {course_name}, Files: {file_count}, Directory size: {folder_size / BYTES_TO_GB:.2f} GB")

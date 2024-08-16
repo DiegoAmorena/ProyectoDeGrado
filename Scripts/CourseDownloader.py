@@ -5,8 +5,9 @@ from ClassDownloader import ClassDownloader
 import os
 from Logger import Logger
 
+from constants import BYTES_TO_GB
 class CourseDownloader:
-    def __init__(self, logger, transcriber, base_url="https://open.fing.edu.uy/media/{course}/{course}_{nn}.mp4", db_path="../DB/Opens/", total_max_size=15 * 1024 * 1024 * 1024):
+    def __init__(self, logger, transcriber, base_url="https://open.fing.edu.uy/media/{course}/{course}_{nn}.mp4", db_path="../DB/Opens/", total_max_size=15 * BYTES_TO_GB):
         self.logger = logger
         self.base_url = base_url
         self.transcriber = transcriber
@@ -66,4 +67,4 @@ class CourseDownloader:
                 if total_downloaded >= self.total_max_size:
                     break
 
-        self.logger.log_message(f"Course: {course_name}, Files: {file_count}, Directory size: {folder_size / 1024 / 1024 / 1024:.2f} GB")
+        self.logger.log_message(f"Course: {course_name}, Files: {file_count}, Directory size: {folder_size / BYTES_TO_GB:.2f} GB")

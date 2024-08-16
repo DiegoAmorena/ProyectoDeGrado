@@ -4,6 +4,8 @@ from pathlib import Path
 import cv2
 import requests
 
+from constants import BYTES_TO_GB
+
 
 class ClassDownloader:
     def __init__(
@@ -31,7 +33,7 @@ class ClassDownloader:
         actual_size = os.path.getsize(video_path)
         if actual_size != expected_size:
             self.logger.log_message(
-                f"File {video_path} size mismatch: expected {expected_size / 1024 / 1024 / 1024:.2f} GB, got {actual_size / 1024 / 1024 / 1024:.2f} GB"
+                f"File {video_path} size mismatch: expected {expected_size / BYTES_TO_GB:.2f} GB, got {actual_size / BYTES_TO_GB:.2f} GB"
             )
             return False
         if not self.is_download_complete(video_path):
@@ -55,7 +57,7 @@ class ClassDownloader:
                         )
                     else:
                         self.logger.log_message(
-                            f"Existing file size {existing_file_size / 1024 / 1024 / 1024:.2f} GB is greater than or equal to expected {expected_size / 1024 / 1024 / 1024:.2f} GB. Redownloading..."
+                            f"Existing file size {existing_file_size / BYTES_TO_GB:.2f} GB is greater than or equal to expected {expected_size / BYTES_TO_GB:.2f} GB. Redownloading..."
                         )
                         os.remove(path)
 
