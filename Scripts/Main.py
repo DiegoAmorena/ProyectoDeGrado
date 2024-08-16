@@ -2,9 +2,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from ClassScraper import ClassScraper
+from constants import BYTES_TO_GB
 from CourseDownloader import CourseDownloader  # Updated import
 from CourseScraper import CourseScraper
 from Logger import Logger
+from tqdm import tqdm
 from Transcriber import Transcriber
 
 
@@ -41,9 +43,9 @@ def main():
             "CourseScraper and ClassScraper skipped as they were already run within the last week."
         )
 
-    transcriber = Transcriber(logger)
+    transcriber = Transcriber(logger, model_name="medium")
 
-    course_downloader = CourseDownloader(logger, transcriber)
+    course_downloader = CourseDownloader(logger, transcriber, total_max_size=2 * BYTES_TO_GB)
 
     if course_acronyms_path.exists():
         with open(course_acronyms_path, "r", encoding="utf-8") as file:
@@ -57,13 +59,15 @@ def main():
                 for acronym in course_acronyms
             }
 
-            for future in as_completed(futures):
-                acronym = futures[future]
-                try:
-                    future.result()
-                    logger.log_message(f"Finished processing course: {acronym}")
-                except Exception as e:
-                    logger.log_message(f"Error processing course {acronym}: {str(e)}")
+        for future in tqdm(
+            as_completed(futures), total=len(futures), desc="Downloading courses"
+        ):
+            acronym = futures[future]
+            try:
+                future.result()
+                logger.log_message(f"Finished processing course: {acronym}")
+            except Exception as e:
+                logger.log_message(f"Error processing course {acronym}: {str(e)}")
 
 
 if __name__ == "__main__":
