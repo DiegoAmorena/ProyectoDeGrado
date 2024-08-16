@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -8,13 +9,11 @@ from bs4 import BeautifulSoup
 class CourseScraper:
     def __init__(
         self,
-        logger,
         url="https://open.fing.edu.uy/courses/",
         db_path="../DB/CoursesNames/",
     ):
         self.url = url
         self.db_path = db_path
-        self.logger = logger
         self.timestamp_path = Path(db_path) / "last_run_timestamp.txt"
 
     def fetch_courses(self):
@@ -40,16 +39,16 @@ class CourseScraper:
 
                 self.write_to_file(course_acronyms, "course_acronyms.txt")
                 self.write_to_file(course_names, "course_names.txt")
-                self.logger.log_message(
+                logging.info(
                     "Course acronyms and names have been written to 'course_acronyms.txt' and 'course_names.txt'."
                 )
                 self.update_timestamp()
             else:
-                self.logger.log_message(
+                logging.info(
                     f"Failed to retrieve the page. Status code: {response.status_code}"
                 )
         else:
-            self.logger.log_message(
+            logging.info(
                 "CourseScraper skipped as it was already run within the last week."
             )
 

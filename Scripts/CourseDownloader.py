@@ -1,27 +1,22 @@
-from pathlib import Path
+import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
+
 import requests
 from ClassDownloader import ClassDownloader
-import os
-from Logger import Logger
-
 from constants import BYTES_TO_GB
+
+
 class CourseDownloader:
-    def __init__(self, logger, transcriber, base_url="https://open.fing.edu.uy/media/{course}/{course}_{nn}.mp4", db_path="../DB/Opens/", total_max_size=15 * BYTES_TO_GB):
-        self.logger = logger
+    def __init__(self, transcriber, base_url="https://open.fing.edu.uy/media/{course}/{course}_{nn}.mp4", db_path="../DB/Opens/", total_max_size=15 * BYTES_TO_GB):
         self.base_url = base_url
         self.transcriber = transcriber
         self.db_path = db_path
         self.total_max_size = total_max_size
-        self.class_downloader = ClassDownloader(transcriber,logger)
+        self.class_downloader = ClassDownloader(transcriber)
 
     def get_folder_size(self, path):
-        total_size = 0
-        for file in os.listdir(path):
-            file_path = os.path.join(path, file)
-            if os.path.isfile(file_path):
-                total_size += os.path.getsize(file_path)
-        return total_size
+        return path.stat().st_size
 
     def process_course(self, course_name):
         total_downloaded = 0
@@ -30,7 +25,7 @@ class CourseDownloader:
         classes_file_path = course_path / "classes.txt"
 
         if not classes_file_path.exists():
-            self.logger.log_message(f"No classes.txt found for {course_name}, skipping...")
+            logging.info(f"No classes.txt found for {course_name}, skipping...")
             return
 
         with open(classes_file_path, "r") as file:
@@ -39,7 +34,7 @@ class CourseDownloader:
         folder_size = self.get_folder_size(course_path)
         file_count = 0
 
-        with ThreadPoolExecutor(max_workers=5) as executor:
+        with ThreadPoolExecutor(max_workers=1) as executor:
             futures = []
             for nn in class_numbers:
                 formatted_nn = nn.zfill(2)
@@ -52,7 +47,7 @@ class CourseDownloader:
                     response = requests.head(video_url)
                     expected_size = int(response.headers.get('content-length', 0))
                 except Exception as e:
-                    self.logger.log_message(f"Failed to get expected size for {video_url}: {str(e)}")
+                    logging.info(f"Failed to get expected size for {video_url}: {str(e)}")
                     continue  # Skip this video if we can't determine the expected size
 
                 if total_downloaded >= self.total_max_size:
@@ -67,4 +62,4 @@ class CourseDownloader:
                 if total_downloaded >= self.total_max_size:
                     break
 
-        self.logger.log_message(f"Course: {course_name}, Files: {file_count}, Directory size: {folder_size / BYTES_TO_GB:.2f} GB")
+        logging.info(f"Course: {course_name}, Files: {file_count}, Directory size: {folder_size / BYTES_TO_GB:.2f} GB")

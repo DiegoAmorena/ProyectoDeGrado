@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -6,9 +7,8 @@ from bs4 import BeautifulSoup
 
 
 class ClassScraper:
-    def __init__(self, logger, db_path="../DB/Opens/"):
-        self.logger = logger
-        self.db_path = db_path
+    def __init__(self, db_path="../DB/Opens/"):
+        self.db_path = Path(db_path)
         self.timestamp_path = Path(db_path) / "last_run_timestamp.txt"
 
     def get_classes_for_course(self, course_acronym):
@@ -17,6 +17,9 @@ class ClassScraper:
         class_numbers = []
 
         if response.status_code == 200:
+            # TODO:
+            # scrapear para sacar las clases no es la mejor idea, si cambian la interfaz de la pagina se rompe todo
+            # lo mejor seria hablar con los de open fing. capaz tienen una api o generann los links con un metodo especifico.
             soup = BeautifulSoup(response.content, "html.parser")
             class_list_div = soup.find("div", class_="class-list")
 
@@ -28,7 +31,7 @@ class ClassScraper:
                         class_number = href.split("/")[-2]
                         class_numbers.append(class_number)
         else:
-            self.logger.log_message(
+            logging.info(
                 f"Failed to retrieve the page for {course_acronym}. Status code: {response.status_code}"
             )
 
@@ -45,12 +48,12 @@ class ClassScraper:
                 for class_number in classes:
                     class_file.write(f"{class_number}\n")
 
-            self.logger.log_message(
+            logging.info(
                 f"Class numbers for course {course_acronym} have been written to {output_file}"
             )
             self.update_timestamp()
         else:
-            self.logger.log_message(
+            logging.info(
                 "ClassScraper skipped as it was already run within the last week."
             )
 
