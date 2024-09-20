@@ -20,27 +20,29 @@ def calculate_metrics(real_path, asr_path):
     return {"wer": wer, "wil": wil}
 
 
-def compare_models(subject_names, transcriptions_path="../DB/Transcripciones"):
+def compare_models(subject_paths, transcriptions_path="../DB/Transcripciones"):
     """
-    subject_names = ["ad/actint/comp1-2023_01_medium.txt", ...]
+    subject_names = ["actint/comp1-2023_01_medium.txt", ...]
+    subject_paths are relative to transcriptions_path
     """
     transcriptions_path = pathlib.Path(transcriptions_path)
     data = {}
 
     for model in ["medium", "small", "base"]:
-        for subject in subject_names:
-            real_path = transcriptions_path / f"{subject}_human.txt"
-            asr_path = transcriptions_path / f"{subject}_{model}.txt"
+        for language in ["ad", "es"]:  # auto-detected, spanish
+            for subject in subject_paths:
+                real_path = transcriptions_path / language / f"{subject}_human.txt"
+                asr_path = transcriptions_path / language / f"{subject}_{model}.txt"
 
-            if not real_path.exists():
-                logging.info(f"File {real_path} not found. Skipping...")
-                continue
-            if not asr_path.exists():
-                logging.info(f"File {asr_path} not found. Skipping...")
-                continue
+                if not real_path.exists():
+                    logging.info(f"File {real_path} not found. Skipping...")
+                    continue
+                if not asr_path.exists():
+                    logging.info(f"File {asr_path} not found. Skipping...")
+                    continue
 
-            metrics = calculate_metrics(real_path, asr_path)
-            data[model][subject] = metrics
+                metrics = calculate_metrics(real_path, asr_path)
+                data[model][subject][language] = metrics
 
     return data
 
@@ -59,36 +61,36 @@ def plot(data):
         ...
     }
     """
-    wer_data = []
-    wil_data = []
+    wer_data, wil_data = [], []
 
     for model, subjects in data.items():
-        for subject, metrics in subjects.items():
-            wer_data.append(
-                {
-                    "model": model,
-                    "subject": subject,
-                    "metric": "WER",
-                    "value": metrics["wer"],
-                }
-            )
-            wil_data.append(
-                {
-                    "model": model,
-                    "subject": subject,
-                    "metric": "WIL",
-                    "value": metrics["wil"],
-                }
-            )
+        for subject, languages in subjects.items():
+            for language, metrics in languages.items():
+                wer_data.append(
+                    {
+                        "model": model,
+                        "subject": f"{subject}_{language}",
+                        "metric": "WER",
+                        "value": metrics["wer"],
+                    }
+                )
+                wil_data.append(
+                    {
+                        "model": model,
+                        "subject": f"{subject}_{language}",
+                        "metric": "WIL",
+                        "value": metrics["wil"],
+                    }
+                )
 
     df = pd.DataFrame(wer_data + wil_data)
 
-    # Plotting using seaborn
     plt.figure(figsize=(10, 6))
     sns.barplot(x="subject", y="value", hue="metric", data=df, palette="muted", ci=None)
-    plt.title("Comparison of WER and WIL Across Models and Subjects")
+    plt.title(
+        "Comparison of WER and WIL Across Models and Subjects (Auto-Detected vs Spanish)"
+    )
     plt.ylabel("Error Rate")
     plt.xticks(rotation=90)
     plt.tight_layout()
-    plt.show()
     plt.show()
